@@ -1,0 +1,78 @@
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: let
+  cfg = config.desktop.hyprland;
+  hyprland-scratchpad =
+    pkgs.writeScriptBin "hyprland-scratchpad"
+    (builtins.readFile ./scripts/hyprland-scratchpad.sh);
+  perf =
+    pkgs.writeScriptBin "perf"
+    (builtins.readFile ./scripts/perf.sh);
+in {
+  options.desktop.hyprland.enable = lib.mkEnableOption {};
+  config = lib.mkIf cfg.enable {
+    programs = {
+      hyprland = {
+        enable = true;
+        withUWSM = true;
+      };
+    };
+
+    # desktop.uwsm.waylandCompositors = {
+    #   hyprland = {
+    #     prettyName = "hyprland";
+    #     comment = "Hyprland compositor managed by UWSM";
+    #     binPath = "/run/current-system/sw/bin/Hyprland";
+    #     xdgCurrentDesktop = "Hyprland";
+    #   };
+    # };
+
+    xdg.portal.config.Hyprland.default = ["hyprland" "gtk"];
+
+    hm = {
+      imports =
+        [
+          ./dots/animations.nix
+          ./dots/decoration.nix
+          ./dots/binds.nix
+          ./dots/default_apps.nix
+          ./dots/exec-once.nix
+          ./dots/general.nix
+          ./dots/input.nix
+          ./dots/misc.nix
+          ./dots/rules.nix
+        ]
+        ++ lib.optionals config.laptop.enable [
+          ./dots/laptopoverride.nix
+        ];
+
+      xdg.configFile = {
+        "uwsm/env-hyprland".text = ''
+          export QT_QUICK_BACKEND=software
+          export AQ_DRM_DEVICES="/dev/dri/card1:/dev/dri/card0"
+        '';
+      };
+
+      wayland.windowManager.hyprland = {
+        enable = true;
+        xwayland.enable = true;
+        systemd.enable = false; # uwsm
+        extraConfig = ''
+          env = HYPRCURSOR_THEME,rose-pine-hyprcursor
+          env = HYPRCURSOR_SIZE,32
+        '';
+      };
+
+      home.packages = [
+        pkgs.hyprshot
+
+        # Scripts
+        hyprland-scratchpad
+        perf
+      ];
+    };
+  };
+}

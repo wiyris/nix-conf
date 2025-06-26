@@ -2,8 +2,15 @@
 
 <img src="./img.png">
 
-
 ## TODO
 
-- [ ] Migrate nvim config to NIXVIM
-- [ ] Declare custom Librewolf config
+### System
+
+- [ ] Port nvim config to Nixvim (or nvf)
+
+### Desktop
+
+- [x] Port Hyprland config
+- [x] Port waybar config
+- [ ] ~~Port Rofi config~~ just put dotfiles into .config with home-manager for now
+- [ ] Declare LibreWolf or Hardened FireFox config

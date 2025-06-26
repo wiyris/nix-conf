@@ -46,7 +46,7 @@ in {
           ./dots/rules.nix
         ]
         ++ lib.optionals config.laptop.enable [
-          ./laptopoverride.nix
+          ./laptop-override.nix
         ];
 
       xdg.configFile = {

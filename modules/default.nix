@@ -59,7 +59,6 @@
     ./programs/gui/goldendict
     ./programs/gui/gtk
     ./programs/gui/kitty
-    ./programs/gui/librewolf
     ./programs/gui/mpv
     ./programs/gui/pqiv
     ./programs/gui/qt

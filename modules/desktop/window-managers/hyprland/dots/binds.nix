@@ -102,14 +102,10 @@
 
     # Laptop multimedia keys for volume and LCD brightness
     bindel = [
-      ", XF86AudioRaiseVolume,  exec, swayosd-client --output-volume +5"
-      ", XF86AudioLowerVolume,  exec, swayosd-client --output-volume -5"
-      ", XF86AudioMute,         exec, swayosd-client --output-volume mute-toggle"
-      ", XF86AudioMicMute,      exec, swayosd-client --input-volume mute-toggle"
-      # ", XF86MonBrightnessUp,   exec, swayosd-client --brightness +10"
-      # ", XF86MonBrightnessDown, exec, swayosd-client --brightness -10"
-      ", XF86MonBrightnessDown, exec, hyprctl hyprsunset gamma -10"
-      ", XF86MonBrightnessUp, exec, hyprctl hyprsunset gamma +10"
+      ", XF86AudioRaiseVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+      ", XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+      ", XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+      ", XF86AudioMicMute,      exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
     ];
 
     # Audio playback

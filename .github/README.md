@@ -7,6 +7,7 @@
 ### System
 
 - [ ] Port nvim config to Nixvim (or nvf)
+- [ ] Declare secret stuff
 
 ### Desktop
 

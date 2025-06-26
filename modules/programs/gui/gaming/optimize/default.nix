@@ -2,14 +2,20 @@
   lib,
   pkgs,
   config,
+  inputs,
   ...
 }: let
   cfg = config.gaming.optimize;
 in {
+  imports = [
+    inputs.nix-gaming.nixosModules.platformOptimizations
+    inputs.nix-gaming.nixosModules.pipewireLowLatency
+  ];
   options.gaming.optimize.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     boot.kernelPackages = lib.mkForce pkgs.linuxPackages_xanmod;
     programs.gamemode.enable = true;
+    programs.steam.platformOptimizations.enable = true;
 
     services.pipewire.lowLatency = {
       # enable this module

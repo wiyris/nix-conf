@@ -13,5 +13,5 @@
 
 - [x] Port Hyprland config
 - [x] Port waybar config
-- [ ] ~~Port Rofi config~~ just put dotfiles into .config with home-manager for now
-- [ ] Declare LibreWolf or Hardened FireFox config
+- [ ] ~~Port Rofi config~~ just put dotfiles into .config/rofi with home-manager for now
+- [ ] Declare Librewolf or Hardened Firefox config

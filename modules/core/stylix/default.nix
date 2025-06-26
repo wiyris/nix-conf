@@ -3,8 +3,8 @@
   inputs,
   ...
 }: let
-  opacity = 0.4;
-  fontSize = 12;
+  opacity = 0.5;
+  fontSize = 13;
 in {
   imports = [inputs.stylix.nixosModules.stylix];
   stylix = {

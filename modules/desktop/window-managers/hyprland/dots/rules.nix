@@ -3,6 +3,7 @@
     windowrulev2 = [
       # Base Rules
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$"
+      "tag +float, class:^(mpv)$"
       "float, tag:float"
 
       # Workspace Rules

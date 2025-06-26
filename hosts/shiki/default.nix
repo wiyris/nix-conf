@@ -81,13 +81,14 @@ in {
 
     # wm-addons
     desktop.dunst.enable = true;
-    desktop.fonts.enable = true;
     desktop.fcitx.enable = true;
+    desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.hypridle.enable = true;
     desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
+    desktop.swayosd.enable = true;
     desktop.uwsm.enable = true;
     desktop.waybar.enable = true;
     desktop.wayland-session.enable = true;

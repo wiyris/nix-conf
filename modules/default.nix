@@ -16,13 +16,14 @@
     ./core/networking/networkmanager
 
     ./desktop/addons/dunst
+    ./desktop/addons/fcitx
     ./desktop/addons/fonts
     ./desktop/addons/gtk
-    ./desktop/addons/fcitx
     ./desktop/addons/hypridle
     ./desktop/addons/hyprlock
     ./desktop/addons/mime-apps
     ./desktop/addons/rofi
+    ./desktop/addons/swayosd
     ./desktop/addons/uwsm
     ./desktop/addons/waybar
     ./desktop/addons/wayland-session

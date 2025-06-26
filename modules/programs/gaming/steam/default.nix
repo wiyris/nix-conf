@@ -15,7 +15,6 @@ in {
       # remotePlay.openFirewall = true;
       # dedicatedServer.openFirewall = true;
     };
-    # programs.gamemode.enable = true;
     hm.home.packages = with pkgs; [
       # steamcmd
       # steam-tui

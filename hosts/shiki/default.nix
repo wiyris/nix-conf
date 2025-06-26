@@ -100,6 +100,7 @@ in {
 
     time.timeZone = "Asia/Tokyo";
 
+    boot.kernelPackages = pkgs.linuxPackages_xanmod;
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.timeout = 0;

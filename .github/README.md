@@ -1,6 +1,6 @@
 # Personal Nixos config
 
-<img src="./img.png">
+<img src="./assets/showcase.png">
 
 ## TODO
 

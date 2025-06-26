@@ -8,14 +8,14 @@ in {
   options.custom.programs.git.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      # programs.git = {
-      #   enable = true;
-      #   userName = "wiyris";
-      #   # userEmail = "";
-      #   extraConfig = {
-      #     init.defaultBranch = "main";
-      #   };
-      # };
+      programs.git = {
+        enable = true;
+        userName = "wiyris";
+        userEmail = "wiyris.doctrine357@slmail.me";
+        extraConfig = {
+          init.defaultBranch = "main";
+        };
+      };
       programs.fish.shellAbbrs = {
         g = "git";
         ga = "git add";

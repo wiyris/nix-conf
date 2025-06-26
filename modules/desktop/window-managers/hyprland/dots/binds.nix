@@ -98,6 +98,42 @@
       "$mainMod ALT, O, movetoworkspacesilent, 8"
       "$mainMod ALT, Y, movetoworkspacesilent, 9"
       "$mainMod ALT, B, movetoworkspacesilent, 10"
+
+      # Switching workspaces
+      "$mainMod, 1, workspace, 1"
+      "$mainMod, 2, workspace, 2"
+      "$mainMod, 3, workspace, 3"
+      "$mainMod, 4, workspace, 4"
+      "$mainMod, 5, workspace, 5"
+      "$mainMod, 6, workspace, 6"
+      "$mainMod, 7, workspace, 7"
+      "$mainMod, 8, workspace, 8"
+      "$mainMod, 9, workspace, 9"
+      "$mainMod, 0, workspace, 10"
+
+      # Moving windows to workspaces
+      "$mainMod SHIFT, 1, movetoworkspace, 1"
+      "$mainMod SHIFT, 2, movetoworkspace, 2"
+      "$mainMod SHIFT, 3, movetoworkspace, 3"
+      "$mainMod SHIFT, 4, movetoworkspace, 4"
+      "$mainMod SHIFT, 5, movetoworkspace, 5"
+      "$mainMod SHIFT, 6, movetoworkspace, 6"
+      "$mainMod SHIFT, 7, movetoworkspace, 7"
+      "$mainMod SHIFT, 8, movetoworkspace, 8"
+      "$mainMod SHIFT, 9, movetoworkspace, 9"
+      "$mainMod SHIFT, 0, movetoworkspace, 10"
+
+      # Moving windows to workspaces (silent)
+      "$mainMod ALT, 1, movetoworkspacesilent, 1"
+      "$mainMod ALT, 2, movetoworkspacesilent, 2"
+      "$mainMod ALT, 3, movetoworkspacesilent, 3"
+      "$mainMod ALT, 4, movetoworkspacesilent, 4"
+      "$mainMod ALT, 5, movetoworkspacesilent, 5"
+      "$mainMod ALT, 6, movetoworkspacesilent, 6"
+      "$mainMod ALT, 7, movetoworkspacesilent, 7"
+      "$mainMod ALT, 8, movetoworkspacesilent, 8"
+      "$mainMod ALT, 9, movetoworkspacesilent, 9"
+      "$mainMod ALT, 0, movetoworkspacesilent, 10"
     ];
 
     # Laptop multimedia keys for volume and LCD brightness

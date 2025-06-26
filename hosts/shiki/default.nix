@@ -73,6 +73,7 @@ in {
 
     # gaming
     # gaming.osu.enable = true;
+    # gaming.opimize.enable = true;
     gaming.steam.enable = true;
 
     # window-managers

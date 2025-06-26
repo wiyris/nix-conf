@@ -69,6 +69,7 @@
     ./programs/gui/zen
 
     ./programs/gaming/osu
+    ./programs/gaming/optimize
     ./programs/gaming/steam
 
     ./services/batsignal

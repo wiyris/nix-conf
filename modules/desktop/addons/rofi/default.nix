@@ -28,7 +28,7 @@ in {
         "rofi/config.rasi".source = ./dots/config.rasi;
         "rofi/style.rasi".source = ./dots/style.rasi;
         "rofi/theme/catppuccin-mocha.rasi".source = ./dots/theme/catppuccin-mocha.rasi;
-        "rofi/theme/powermunu.rasi".source = ./dots/powermenu.rasi.rasi;
+        "rofi/theme/powermenu.rasi".source = ./dots/powermenu.rasi;
         "rofi/theme/wallpaper.rasi".source = ./dots/wallpaper.rasi;
       };
     };

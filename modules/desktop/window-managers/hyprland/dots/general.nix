@@ -1,8 +1,8 @@
 {lib, ...}: {
   wayland.windowManager.hyprland.settings.general = {
     allow_tearing = false;
-    gaps_in = 8;
-    gaps_out = 16;
+    gaps_in = 5;
+    gaps_out = 10;
     border_size = 2;
     layout = "dwindle";
     resize_on_border = true;

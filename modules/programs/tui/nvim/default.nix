@@ -10,7 +10,6 @@ in {
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
-      nvim
       markdownlint-cli2
     ];
   };

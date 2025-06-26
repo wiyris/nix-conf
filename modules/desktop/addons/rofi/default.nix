@@ -8,9 +8,9 @@
   powermenu =
     pkgs.writeScriptBin "powermenu"
     (builtins.readFile ./scripts/powermenu.sh);
-  # screenshot =
-  #   pkgs.writeScriptBin "tofi-emoji"
-  #   (builtins.readFile ./scripts/tofi-emoji.sh);
+  screenshot =
+    pkgs.writeScriptBin "screenshot"
+    (builtins.readFile ./scripts/screenshot.sh);
   wallpaper =
     pkgs.writeScriptBin "wallpaper"
     (builtins.readFile ./scripts/wallpaper.sh);
@@ -22,6 +22,7 @@ in {
         pkgs.rofi-wayland
 
         powermenu
+        screenshot
         wallpaper
       ];
       xdg.configFile = {
@@ -29,6 +30,7 @@ in {
         "rofi/style.rasi".source = ./dots/style.rasi;
         "rofi/theme/catppuccin-mocha.rasi".source = ./dots/theme/catppuccin-mocha.rasi;
         "rofi/theme/powermenu.rasi".source = ./dots/powermenu.rasi;
+        "rofi/theme/screenshot.rasi".source = ./dots/screenshot.rasi;
         "rofi/theme/wallpaper.rasi".source = ./dots/wallpaper.rasi;
       };
     };

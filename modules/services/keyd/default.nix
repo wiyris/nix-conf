@@ -68,6 +68,8 @@ in {
             "space+k" = "S-3"; # #
             "space+l" = "S-4"; # $
             "space+;" = "S-7"; # &
+
+            "space+leftshift" = "S-backslash"; # |
           };
           "nav" = {
             h = "left";

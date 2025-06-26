@@ -21,6 +21,13 @@ in {
         ", XF86MonBrightnessUp,   exec, swayosd-client --brightness +10"
         ", XF86MonBrightnessDown, exec, swayosd-client --brightness -10"
       ]);
+
+      programs.waybar.settings.main.pulseaudio = lib.mkIf config.desktop.waybar.enable (lib.mkForce {
+        "on-click" = "swayosd-client --output-volume mute-toggle";
+        "on-click-right" = "swayosd-client --input-volume mute-toggle";
+        "on-scroll-up" = "swayosd-client --output-volume +1";
+        "on-scroll-down" = "swayosd-client --output-volume -1";
+      });
     };
   };
 }

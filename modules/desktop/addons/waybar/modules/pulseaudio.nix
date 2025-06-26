@@ -20,10 +20,9 @@
       "default" = [" " " " " "];
     };
     "tooltip-format" = "{desc}, {volume}%";
-    "on-click" = "swayosd-client --output-volume mute-toggle";
-    "on-click-right" = "swayosd-client --input-volume mute-toggle";
-    "on-click-middle" = "pypr toggle volume";
-    "on-scroll-up" = "swayosd-client --output-volume +1";
-    "on-scroll-down" = "swayosd-client --output-volume -1";
+    "on-click" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+    "on-click-right" = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+    "on-scroll-up" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+";
+    "on-scroll-down" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-";
   };
 }

@@ -12,11 +12,12 @@ in {
       settings = {
         general.framerate = 75;
 
-        # output = {
-        #   orientation = "horizontal";
-        #   channels = "mono";
-        # };
+        output = {
+          # orientation = "horizontal";
+          channels = "mono";
+        };
 
+        # catppuccin
         color = {
           gradient = 1;
           gradient_color_1 = "'#94e2d5'";

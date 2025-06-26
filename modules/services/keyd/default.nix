@@ -44,33 +44,30 @@ in {
             "j+k" = "S-;"; # :
             "j+l" = "S-'"; # "
             "y+u" = "S-6"; # ^
-            "u+i" = "S-5"; # %
-            "i+o" = "S-4"; # $
+            "i+o" = "S--"; # _
 
             "z+x" = "C-insert"; # copy
             "x+c" = "S-insert"; # paste
 
-            "space+tab" = "S-1"; # !
-            "space+q" = "S-2"; # @
-            "space+w" = "S-3"; # #
-            "space+e" = "S-`"; # ~
+            "space+`" = "S-1"; # ~
+            "space+q" = "S-0"; # )
+            "space+w" = "S-]"; # }
+            "space+e" = "]"; # ]
 
-            "space+u" = "`"; #
-            "space+i" = "S-8"; # *
-            "space+o" = "S-7"; # &
-            "space+p" = "S-/"; # ?
+            "space+u" = "backslash"; # \
+            "space+i" = "S-5"; # %
+            "space+o" = "S-6"; # ^
+            "space+p" = "`"; # `
 
-            "space+capslock" = "S-,"; # <
+            "space+capslock" = "S-1"; # !
             "space+a" = "S-9"; # (
             "space+s" = "S-["; # {
             "space+d" = "["; # [
-            "space+f" = "S-backslash"; # |
 
-            "space+h" = "backslash"; # \
-            "space+j" = "]"; # ]
-            "space+k" = "S-]"; # }
-            "space+l" = "S-0"; # )
-            "space+;" = "S-."; # >
+            "space+j" = "S-8"; # *
+            "space+k" = "S-3"; # #
+            "space+l" = "S-4"; # $
+            "space+;" = "S-7"; # &
           };
           "nav" = {
             h = "left";

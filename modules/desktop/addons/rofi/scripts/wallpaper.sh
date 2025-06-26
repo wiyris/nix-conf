@@ -10,7 +10,7 @@ build_theme() {
   echo "element{orientation:vertical;}element-text{horizontal-align:0.5;}element-icon{size:$icon_size.0000em;}listview{lines:$rows;columns:$cols;}"
 }
 
-theme="$HOME/.config/rofi/scripts/wallpaper/style.rasi"
+theme="$HOME/.config/rofi/theme/wallpaper.rasi"
 
 rofi_cmd="rofi -dmenu -i -show-icons -theme-str $(build_theme 4 3 12) -theme ${theme}"
 
@@ -20,7 +20,7 @@ choice=$(
     $rofi_cmd
 )
 
-if [ -z "$choice" ]; then
+-z "$choice" ]; then
   exit 1
 fi
 

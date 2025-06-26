@@ -33,8 +33,8 @@ in {
       };
     };
 
-    # environment.variables = {
-    #   VDPAU_DRIVER = "radeonsi";
-    # };
+    environment.variables = {
+      VDPAU_DRIVER = "radeonsi";
+    };
   };
 }

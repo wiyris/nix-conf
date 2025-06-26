@@ -7,7 +7,7 @@
 in {
   options.desktop.swayosd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.service.swayosd = {
+    hm.services.swayosd = {
       enable = true;
     };
   };

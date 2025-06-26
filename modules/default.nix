@@ -48,6 +48,7 @@
     ./programs/tui/cava
     ./programs/tui/gtrash
     ./programs/tui/htop
+    ./programs/tui/lazygit
     ./programs/tui/nvim
     ./programs/tui/tmux
     ./programs/tui/yazi

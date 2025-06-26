@@ -51,6 +51,7 @@ in {
     custom.programs.cava.enable = true;
     custom.programs.gtrash.enable = true;
     custom.programs.htop.enable = true;
+    custom.programs.lazygit.enable = true;
     custom.programs.nvim.enable = true;
     custom.programs.tmux.enable = true;
     custom.programs.yazi.enable = true;

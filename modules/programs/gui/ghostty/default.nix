@@ -12,9 +12,8 @@ in {
         enable = true;
         enableFishIntegration = true;
         settings = {
-          # background-blur-radius = 20;
-
-          adjust-cell-height = "28%";
+          background-blur-radius = 20;
+          # adjust-cell-height = "4%";
           cursor-style = "block";
           cursor-style-blink = true;
           cursor-invert-fg-bg = false;

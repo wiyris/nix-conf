@@ -19,11 +19,11 @@ in {
       ];
     };
 
-    # environment.systemPackages = with pkgs; [
-    #   gamescope
-    #   vulkan-tools
-    #   vulkan-validation-layers
-    # ];
+    environment.systemPackages = with pkgs; [
+      gamescope
+      vulkan-tools
+      vulkan-validation-layers
+    ];
 
     hardware.amdgpu = {
       initrd.enable = true;

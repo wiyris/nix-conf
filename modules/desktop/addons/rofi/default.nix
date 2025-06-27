@@ -20,6 +20,7 @@ in {
     hm = {
       home.packages = [
         pkgs.rofi-wayland
+        pkgs.rofi-calc
 
         powermenu
         screenshot

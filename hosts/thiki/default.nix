@@ -82,6 +82,7 @@ in {
     # desktop.niri.enable = true;
 
     # wm-addons
+    desktop.clipboard.enable = true;
     desktop.dunst.enable = true;
     # desktop.fcitx.enable = true;
     desktop.fonts.enable = true;

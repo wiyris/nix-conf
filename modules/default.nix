@@ -15,6 +15,7 @@
     ./core/networking/mullvad
     ./core/networking/networkmanager
 
+    ./desktop/addons/clipboard
     ./desktop/addons/dunst
     ./desktop/addons/fcitx
     ./desktop/addons/fonts

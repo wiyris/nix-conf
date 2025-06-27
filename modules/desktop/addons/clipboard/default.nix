@@ -4,7 +4,7 @@
   lib,
   ...
 }: let
-  cfg = config.desktop.clibboard;
+  cfg = config.desktop.clipboard;
 in {
   options.desktop.clipboard.enable = lib.mkEnableOption {};
 

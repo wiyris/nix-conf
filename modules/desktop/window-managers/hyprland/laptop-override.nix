@@ -2,6 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     "$terminal" = lib.mkForce "foot";
     animations.enabled = lib.mkForce false;
+    misc.vfr = lib.mkForce true;
     decoration = {
       blur.enabled = lib.mkForce false;
       shadow.enabled = lib.mkForce false;

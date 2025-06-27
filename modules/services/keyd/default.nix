@@ -59,7 +59,7 @@ in {
             "space+o" = "S-6"; # ^
             "space+p" = "`"; # `
 
-            "space+capslock" = "S-1"; # !
+            "space+capslock" = "S-1"; # |
             "space+a" = "S-9"; # (
             "space+s" = "S-["; # {
             "space+d" = "["; # [
@@ -69,7 +69,7 @@ in {
             "space+l" = "S-4"; # $
             "space+;" = "S-7"; # &
 
-            "space+leftshift" = "S-backslash"; # |
+            "space+leftshift" = "S-0"; # !
           };
           "nav" = {
             h = "left";

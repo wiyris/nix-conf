@@ -14,17 +14,16 @@ in {
         cliphist
         wl-clip-persist
         wl-clipboard-rs
-        clipboard-manages
       ];
 
-      systemd.user.services.cliphist = lib._custom.mkWaylandService {
-        Unit.Description = "Wayland clipboard manager";
-        Unit.Documentation = "https://github.com/sentriz/cliphist";
-        Service = {
-          Restart = "on-failure";
-          KillMode = "mixed";
-        };
-      };
+      # systemd.user.services.cliphist = lib._custom.mkWaylandService {
+      #   Unit.Description = "Wayland clipboard manager";
+      #   Unit.Documentation = "https://github.com/sentriz/cliphist";
+      #   Service = {
+      #     Restart = "on-failure";
+      #     KillMode = "mixed";
+      #   };
+      # };
     };
   };
 }

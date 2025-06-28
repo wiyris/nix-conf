@@ -10,8 +10,8 @@ in {
 
   config = lib.mkIf cfg.enable {
     hm = {
+      services.cliphist.enable = true;
       home.packages = with pkgs; [
-        cliphist
         wl-clip-persist
         wl-clipboard-rs
       ];

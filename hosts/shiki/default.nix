@@ -28,8 +28,6 @@ in {
     # custom.services.keyd.enable = true;
     # custom.services.tlp.enable = true;
 
-    programs.java.enable = true;
-
     # cli
     programs.fish.enable = true;
 

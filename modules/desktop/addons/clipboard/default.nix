@@ -15,6 +15,11 @@ in {
         wl-clip-persist
         wl-clipboard-rs
       ];
+
+      wayland.windowManager.hyprland.settings.exec-once = [
+        "exec-once = wl-paste --watch cliphist store"
+        "exec-once = wl-paste --primary --watch wl-copy --primary --clear"
+      ];
     };
   };
 }

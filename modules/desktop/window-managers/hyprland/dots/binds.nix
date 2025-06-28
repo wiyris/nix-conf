@@ -8,6 +8,7 @@
 
       # Rofi
       "$mainMod, T, exec, $launcher"
+      "$mainMod, H, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"

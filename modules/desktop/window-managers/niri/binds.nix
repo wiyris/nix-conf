@@ -3,7 +3,6 @@
     "Mod+Return".action = spawn "kitty";
     "Mod+N".action = spawn "kitty" "--class" "scratchpad";
     "Mod+J".action = spawn "zen";
-    "Mod+Ctrl+J".action = spawn "zen" "-p" "az";
     "Mod+T".action = spawn "rofi" "-show" "drun";
     "Mod+K".action = spawn "thunar";
     "Mod+Y".action = screenshot;

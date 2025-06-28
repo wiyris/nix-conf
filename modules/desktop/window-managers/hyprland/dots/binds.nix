@@ -4,15 +4,10 @@
       # Apps
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, J, exec, $browser"
-      "$mainMod CTRL, J, exec, $browser -p az"
       "$mainMod, K, exec, $explore"
 
       # Rofi
       "$mainMod, T, exec, $launcher"
-      # "$mainMod, minus, exec, $calculator"
-      # "$mainMod, apostrophe, exec, $rofi-scripts/wallpaper/wallpaper"
-      # "$mainMod, ESCAPE, exec, $rofi-scripts/powermenu/powermenu"
-      # "$mainMod, V, exec, $rofi-scripts/screenshot/screenshot"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
@@ -26,7 +21,6 @@
       "$mainMod, V, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, U, togglesplit"
       # "$mainMod, semicolon, pseudo"
-      # "$mainMod, G, exec, gamemode"
 
       # Group Control
       # "$mainMod, O, togglegroup"

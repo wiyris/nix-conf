@@ -29,6 +29,7 @@ in {
         #   accent = "mauve";
         # };
       };
+      home.sessionVariables.gtk-enable-primary-paste = false;
     };
   };
 }

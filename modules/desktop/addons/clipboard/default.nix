@@ -16,7 +16,7 @@ in {
         wl-clipboard-rs
       ];
 
-      wayland.windowManager.hyprland.settings.exec-once = [
+      wayland.windowManager.hyprland.settings.exec-once = lib.mkIf config.desktop.hyprland [
         "exec-once = wl-paste --watch cliphist store"
         "exec-once = wl-paste --primary --watch wl-copy --primary --clear"
       ];

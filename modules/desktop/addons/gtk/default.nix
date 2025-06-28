@@ -18,6 +18,7 @@ in {
         gtk-xft-hintstyle = "hintfull";
         gtk-xft-rgba = "rgb";
         gtk-recent-files-enabled = false;
+        gtk-enable-primary-paste = false;
       };
 
       iconTheme = {
@@ -29,7 +30,6 @@ in {
         #   accent = "mauve";
         # };
       };
-      home.sessionVariables.gtk-enable-primary-paste = false;
     };
   };
 }

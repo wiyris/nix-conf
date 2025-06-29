@@ -8,6 +8,7 @@ in {
   options.custom.programs.ghostty.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
+      stylix.targets.ghostty.enable = false;
       programs.ghostty = {
         enable = true;
         enableFishIntegration = true;

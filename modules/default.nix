@@ -15,6 +15,8 @@
     ./core/networking/mullvad
     ./core/networking/networkmanager
 
+    ./core/security/doas
+
     ./desktop/addons/clipboard
     ./desktop/addons/dunst
     ./desktop/addons/fcitx

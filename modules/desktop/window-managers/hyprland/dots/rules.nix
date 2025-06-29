@@ -24,6 +24,8 @@
       # Scratchpads
       "tag +scratchpad, class:kitty-scratch"
       "tag +float_md, class:kitty-scratch"
+      "tag +scratchpad, class:ghostty.scratch"
+      "tag +float_md, class:ghostty.scratch"
       "float, tag:float_md"
       "size 1280 720, tag:float_md"
 

@@ -28,7 +28,7 @@
       # "$mainMod SHIFT, O, lockactivegroup, toggle"
       # "$mainMod, TAB, changegroupactive"
 
-      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch $HOME/.config/kitty/scripts/kitty-scratch.sh"
+      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty-scratchpad"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

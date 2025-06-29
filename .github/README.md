@@ -7,11 +7,11 @@
 ### System
 
 - [ ] Port nvim config to Nixvim (or nvf)
-- [ ] Declare secret stuff
+- [ ] secret stuff
 
 ### Desktop
 
 - [x] Port Hyprland config
 - [x] Port waybar config
 - [ ] ~~Port Rofi config~~ just put dotfiles into .config/rofi with home-manager for now
-- [ ] Declare Librewolf or Hardened Firefox config
+- [ ] Librewolf or Hardened Firefox config

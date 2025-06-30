@@ -4,6 +4,7 @@
       # Apps
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, J, exec, $browser"
+      "$mainMod SHIFT, J, exec, $browser --private-window"
       "$mainMod, K, exec, $explore"
 
       # Rofi

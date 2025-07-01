@@ -48,6 +48,7 @@
     ./programs/cli/gtrash
     ./programs/cli/htop
     ./programs/cli/lazygit
+    ./programs/cli/nixvim
     ./programs/cli/nvim
     ./programs/cli/ripgrep
     ./programs/cli/starship

@@ -10,7 +10,6 @@ in {
     hm.home.shellAliases = {
       c = "clear";
       l = "ls -l";
-      v = "nvim";
       t = "tree";
 
       tree = "eza --all --long --tree";

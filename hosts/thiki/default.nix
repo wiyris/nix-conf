@@ -10,7 +10,6 @@ in {
   imports = [
     ./disko.nix
     ./hardware.nix
-    ./networking.nix
   ];
   config = {
     globals.userName = userName;

@@ -9,7 +9,7 @@ in {
   options.custom.programs.nvim.enable = lib.mkEnableOption {};
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
-    hm.home.shellAliases.vv = "NVIM_APPNAME=nvim.lazy nvim";
+    hm.home.shellAliases.vv = "NVIM_APPNAME=nvim.bak nvim";
     hm.home.shellAliases.lv = "NVIM_APPNAME=nvim.lazy nvim";
     environment.systemPackages = with pkgs; [
       gcc

@@ -13,6 +13,11 @@ in {
       gcc
       gnumake
       markdownlint-cli2
+      stylua
+      unzip
+      lua-language-server
+      bash-language-server
+      shfmt
     ];
   };
 }

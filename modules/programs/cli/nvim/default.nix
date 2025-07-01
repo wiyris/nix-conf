@@ -8,8 +8,8 @@
 in {
   options.custom.programs.nvim.enable = lib.mkEnableOption {};
   # TODO: Port nvim config to Nixvim (or nvf)
-  home.shellAliases.v = "NVIM_APPNAME=nvim.test nvim";
   config = lib.mkIf cfg.enable {
+    hm.home.shellAliases.v = "NVIM_APPNAME=nvim.test nvim";
     environment.systemPackages = with pkgs; [
       gcc
       gnumake

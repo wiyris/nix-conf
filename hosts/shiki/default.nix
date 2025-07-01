@@ -73,7 +73,6 @@ in {
 
     # window-managers
     desktop.hyprland.enable = true;
-    desktop.niri.enable = true;
 
     # wm-addons
     desktop.clipboard.enable = true;

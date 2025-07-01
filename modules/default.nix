@@ -34,7 +34,6 @@
     ./desktop/addons/xdg
 
     ./desktop/window-managers/hyprland
-    ./desktop/window-managers/niri
 
     ./programs/cli/aliases
     ./programs/cli/bat

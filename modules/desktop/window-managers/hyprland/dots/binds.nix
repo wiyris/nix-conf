@@ -10,7 +10,7 @@
       # Rofi
       "$mainMod, T, exec, $launcher"
       "$mainMod, H, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-      "$mainMod, Esc, powermenu"
+      "$mainMod, Esc, exec, powermenu"
       "$mainMod, T, exec, screenshot"
 
       # Bar

@@ -16,6 +16,7 @@ in {
 
     environment.systemPackages = with pkgs; [
       bash-language-server
+      clang-tools
       gcc
       gnumake
       lua-language-server

@@ -3,7 +3,8 @@
     bind = [
       # Apps
       "$mainMod, Return, exec, $terminal"
-      "$mainMod, C, exec, $terminal"
+      "$mainMod, space, exec, $terminal"
+      "$mainMod, BackSpace, exec, $terminal nvim"
       "$mainMod, J, exec, $browser"
       "$mainMod SHIFT, J, exec, $browser --private-window"
       "$mainMod, K, exec, $explore"

@@ -4,7 +4,7 @@
       # Apps
       "$mainMod, Return, exec, $terminal"
       "$mainMod, space, exec, $terminal"
-      "$mainMod, BackSpace, exec, $terminal nvim"
+      "$mainMod, BackSpace, exec, ghostty -e nvim"
       "$mainMod, J, exec, $browser"
       "$mainMod SHIFT, J, exec, $browser --private-window"
       "$mainMod, K, exec, $explore"

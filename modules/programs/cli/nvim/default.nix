@@ -16,10 +16,8 @@ in {
 
     environment.systemPackages = with pkgs; [
       bash-language-server
-      bash-language-server
       gcc
       gnumake
-      lua-language-server
       lua-language-server
       markdownlint-cli2
       marksman

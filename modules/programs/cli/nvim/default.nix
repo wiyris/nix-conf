@@ -14,6 +14,7 @@ in {
     environment.systemPackages = with pkgs; [
       gcc
       gnumake
+      lua-language-server
       markdownlint-cli2
       stylua
       unzip

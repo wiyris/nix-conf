@@ -9,20 +9,25 @@ in {
   options.custom.programs.nvim.enable = lib.mkEnableOption {};
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
-    hm.home.shellAliases.vv = "NVIM_APPNAME=nvim.test nvim";
+    hm.home.shellAliases = {
+      v = "nvim";
+      vv = "NVIM_APPNAME=nvim.test nvim";
+    };
+
     environment.systemPackages = with pkgs; [
+      bash-language-server
+      bash-language-server
       gcc
       gnumake
       lua-language-server
-      bash-language-server
-      nixd
-      nil
+      lua-language-server
       markdownlint-cli2
+      marksman
+      nil
+      nixd
+      shfmt
       stylua
       unzip
-      lua-language-server
-      bash-language-server
-      shfmt
     ];
   };
 }

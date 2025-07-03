@@ -1,5 +1,6 @@
 {
   lib,
+  pkgs,
   config,
   ...
 }: let
@@ -11,6 +12,12 @@ in {
   ];
   options.custom.programs.fish.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
+    environment.systemPackages = with pkgs; [
+      fishPlugins.autopair
+      fishPlugins.done
+      fishPlugins.fzf-fish
+    ];
+
     hm.programs.fish = {
       enable = true;
 

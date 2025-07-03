@@ -7,7 +7,7 @@ fi
 # variables
 theme="$HOME/.config/rofi/theme/screenshot.rasi"
 # hyprshot="$HOME/.config/hypr/scripts/hyprshot"
-save_dir="$HOME/pictures/screenshots/pc"
+save_dir="$HOME/Pictures/screenshots"
 filename="captura-$(date +%Y-%m-%d-%s).png"
 command="hyprshot -o $save_dir -f $filename $extra_args"
 

@@ -2,6 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       # Apps
+      "$mainMod, Return, exec, $terminal"
       "$mainMod, C, exec, $terminal"
       "$mainMod, J, exec, $browser"
       "$mainMod SHIFT, J, exec, $browser --private-window"

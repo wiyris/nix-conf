@@ -26,7 +26,10 @@ in {
             set -sg escape-time 0
           '';
       };
-      programs.fish.shellAbbrs.t = "tmux new-session";
+      programs.fish.shellAbbrs = {
+        tn = "tmux new-session";
+        tl = "tmux ls";
+      };
     };
   };
 }

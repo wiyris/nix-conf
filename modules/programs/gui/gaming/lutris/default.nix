@@ -10,7 +10,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm.programs.lutris = {
       enable = true;
-      protonPackages = pkgs.proton-ge-bin;
+      protonPackages = [pkgs.proton-ge-bin];
     };
   };
 }

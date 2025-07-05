@@ -8,22 +8,25 @@
 in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.tmux = {
-      enable = true;
-      mouse = true;
+    hm = {
+      programs.tmux = {
+        enable = true;
+        mouse = true;
 
-      keyMode = "vi";
+        keyMode = "vi";
 
-      plugins = with pkgs.tmuxPlugins; [
-        catppuccin
-        tmux-fzf
-      ];
+        plugins = with pkgs.tmuxPlugins; [
+          catppuccin
+          tmux-fzf
+        ];
 
-      extraConfig =
-        # fish
-        ''
-          set -sg escape-time 0
-        '';
+        extraConfig =
+          # fish
+          ''
+            set -sg escape-time 0
+          '';
+      };
+      programs.fish.shellAbbrs.t = "tmux new-session";
     };
   };
 }

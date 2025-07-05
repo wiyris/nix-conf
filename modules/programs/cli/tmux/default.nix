@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   lib,
   ...
 }: let
@@ -12,6 +13,11 @@ in {
       mouse = true;
 
       keyMode = "vi";
+
+      plugins = with pkgs.tmuxPlugins; [
+        catppuccin
+        tmux-fzf
+      ];
 
       extraConfig =
         # fish

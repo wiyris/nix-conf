@@ -11,7 +11,7 @@
 
       # Rofi
       "$mainMod, T, exec, $launcher"
-      "$mainMod, H, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+      "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
       "$mainMod, Escape, exec, powermenu"
       ", Print, exec, screenshot"
 

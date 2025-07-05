@@ -56,6 +56,7 @@
     ./programs/cli/zoxide
 
     ./programs/gui/browser/chromium
+    ./programs/gui/browser/firefox
     ./programs/gui/browser/zen
     ./programs/gui/gaming/lutris
     ./programs/gui/gaming/optimize

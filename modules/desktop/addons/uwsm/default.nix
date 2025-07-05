@@ -18,15 +18,18 @@ in {
 
     hm = {
       programs.fish = {
-        loginShellInit =
-          # fish
-          ''
-            if uwsm check may-start; and uwsm select
-             exec systemd-cat -t uwsm_start uwsm start default
-            end
-          '';
+        # loginShellInit =
+        #   # fish
+        #   ''
+        #     if uwsm check may-start; and uwsm select
+        #      exec systemd-cat -t uwsm_start uwsm start default
+        #     end
+        #   '';
       };
-      home.shellAliases.us = "uwsm stop";
+      home.shellAliases = {
+        hyp = "uwsm start hyprland-uwsm.desktop";
+        us = "uwsm stop";
+      };
       home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
       home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";
 

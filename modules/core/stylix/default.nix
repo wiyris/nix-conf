@@ -21,8 +21,8 @@ in {
     };
 
     cursor = {
-      package = pkgs.rose-pine-hyprcursor;
-      name = "rose-pine-hyprcursor";
+      package = pkgs.rose-pine-cursor;
+      name = "rose-pine-cursor";
       size = 32;
     };
 

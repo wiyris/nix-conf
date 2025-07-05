@@ -61,8 +61,6 @@ in {
         xwayland.enable = true;
         systemd.enable = false; # uwsm
         extraConfig = ''
-          env = HYPRCURSOR_THEME,rose-pine-hyprcursor
-          env = HYPRCURSOR_SIZE,32
         '';
       };
 

@@ -67,6 +67,7 @@ in {
     custom.programs.zen.enable = true;
 
     # gaming
+    gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;

@@ -1,5 +1,6 @@
 {
   lib,
+  pkgs,
   config,
   ...
 }: let
@@ -9,6 +10,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm.programs.lutris = {
       enable = true;
+      protonPackages = pkgs.proton-ge-bin;
     };
   };
 }

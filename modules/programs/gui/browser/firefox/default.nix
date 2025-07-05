@@ -5,9 +5,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.zen;
+  cfg = config.custom.programs.firefox;
 in {
-  options.custom.programs.zen.enable = lib.mkEnableOption {};
+  options.custom.programs.firefox.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
       programs.firefox = {

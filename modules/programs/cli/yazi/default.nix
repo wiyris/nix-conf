@@ -19,6 +19,19 @@ in {
       zoxide
       resvg
       imagemagick
+
+      yaziPlugins.git
+      yaziPlugins.yatline
+      yaziPlugins.starship
+      yaziPlugins.yatline-githead
+      yaziPlugins.yatline-catppuccin
+      # yaziPlugins.sudo
+      # yaziPlugins.chmod
+      # yaziPlugins.restore
+      # yaziPlugins.lazygit
+      # yaziPlugins.relative-motions
+      # yaziPlugins.jump-to-char
+      # yaziPlugins.full-border
     ];
     hm.programs.yazi = {
       enable = true;

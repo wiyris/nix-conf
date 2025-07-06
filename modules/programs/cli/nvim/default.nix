@@ -24,8 +24,10 @@ in {
       marksman
       nil
       nixd
+      nvim
       shfmt
       stylua
+      typescript-language-server
       unzip
     ];
   };

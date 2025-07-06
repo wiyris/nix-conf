@@ -15,6 +15,8 @@ in {
       noto-fonts-cjk-serif
       noto-fonts-extra
       noto-fonts-emoji
+
+      nerd-fonts.noto
       nerd-fonts.jetbrains-mono
     ];
   };

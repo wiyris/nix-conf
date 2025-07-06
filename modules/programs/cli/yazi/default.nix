@@ -21,7 +21,7 @@ in {
       imagemagick
     ];
     hm = {
-      imports = [./plugins];
+      imports = [./plugins/git];
       programs.yazi = {
         enable = true;
         enableFishIntegration = true;

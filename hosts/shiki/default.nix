@@ -53,7 +53,7 @@ in {
     # gui
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
-    custom.programs.schizofox.enable = true;
+    # custom.programs.schizofox.enable = true;
     custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;
@@ -70,8 +70,8 @@ in {
 
     # gaming
     gaming.lutris.enable = true;
-    # gaming.osu.enable = true;
-    # gaming.optimize.enable = true;
+    gaming.osu.enable = true;
+    gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     # window-managers

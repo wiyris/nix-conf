@@ -15,6 +15,7 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
+      angular-language-server
       bash-language-server
       clang-tools
       gcc

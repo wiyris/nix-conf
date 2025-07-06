@@ -24,7 +24,7 @@ in {
       marksman
       nil
       nixd
-      nvim
+      neovim
       shfmt
       stylua
       typescript-language-server

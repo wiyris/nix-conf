@@ -12,10 +12,10 @@ in {
   ];
   options.custom.programs.fish.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      fishPlugins.autopair
-      fishPlugins.done
-      fishPlugins.fzf-fish
+    environment.systemPackages = with pkgs.fishPlugins; [
+      autopair
+      done
+      fzf-fish
     ];
 
     hm.programs.fish = {

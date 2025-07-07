@@ -13,7 +13,6 @@ in {
   config = lib.mkIf cfg.enable {
     hm = {
       stylix.targets.firefox.profileNames = ["${userName}"];
-      # imports = [inputs.nur.modules.nixos.default];
       programs.firefox = {
         enable = true;
         policies = import ./dots/policies.nix;

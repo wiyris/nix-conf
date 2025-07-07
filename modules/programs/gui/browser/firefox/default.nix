@@ -6,6 +6,7 @@
   ...
 }: let
   betterfox = inputs.betterfox;
+  myOverride = ./dots/user.js;
   cfg = config.custom.programs.firefox;
   inherit (config.globals) userName;
 in {
@@ -32,6 +33,7 @@ in {
             ${builtins.readFile "${betterfox}/Fastfox.js"}
             ${builtins.readFile "${betterfox}/Peskyfox.js"}
             ${builtins.readFile "${betterfox}/Smoothfox.js"}
+            ${builtins.readFile myOverride}
           '';
         };
       };

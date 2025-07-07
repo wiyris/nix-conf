@@ -12,37 +12,22 @@ in {
       stylix.targets.firefox.profileNames = ["${userName}"];
       programs.firefox = {
         enable = true;
-        policies = {
-          DisableTelemetry = true;
-          DisablePocket = true;
-          DisableFirefoxStudies = true;
-          EnableTrackingProtection = {
-            Value = true;
-            Locked = true;
-            Cryptomining = true;
-            Fingerprinting = true;
-          };
-          OverrideFirstRunPage = "";
-          OverridePostUpdatePage = "";
-          ExtensionSettings = {
-            # Disable built-in search engines
-            "amazondotcom@search.mozilla.org" = {installation_mode = "blocked";};
-            "bing@search.mozilla.org" = {installation_mode = "blocked";};
-            "ddg@search.mozilla.org" = {installation_mode = "blocked";};
-            "ebay@search.mozilla.org" = {installation_mode = "blocked";};
-          };
-          profiles."&{usarName}" = {
-            search = {
-              default = "leta";
-              force = true;
-
-              engines = {
-                leta = {
-                  name = "leta";
-                  urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
-                  definedAliases = ["@l"];
-                };
+        policies = import ./dots/policies.nix;
+        profiles.${userName} = {
+          search = {
+            default = "leta";
+            force = true;
+            engines = {
+              leta = {
+                name = "leta";
+                urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
+                definedAliases = ["@l"];
               };
+              "ddg".metaData.hidden = true;
+              "google".metaData.hidden = true;
+              "qwant".metaData.hidden = true;
+              "bing".metaData.hidden = true;
+              "ecosia".metaData.hidden = true;
             };
           };
         };

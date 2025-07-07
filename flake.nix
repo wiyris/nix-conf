@@ -79,7 +79,7 @@
     };
 
     betterfox = {
-      url = "github:yokoffing/yokoffing";
+      url = "github:yokoffing/Betterfox";
       flake = false;
     };
 

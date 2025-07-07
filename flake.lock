@@ -125,16 +125,16 @@
     "betterfox": {
       "flake": false,
       "locked": {
-        "lastModified": 1724212737,
-        "narHash": "sha256-glCBBWXBmVBstoa796RTEVQ+i4+f+0zDK3/4BBs52d8=",
+        "lastModified": 1750480196,
+        "narHash": "sha256-Kkk3mqfQCXf/J+SoAKki46e4OoD6ZPHTlXT+yezj6gU=",
         "owner": "yokoffing",
-        "repo": "yokoffing",
-        "rev": "6bdaca41ec7871023f5d2080e691e28edab78099",
+        "repo": "Betterfox",
+        "rev": "e66de491acd5e87f53abc3dfe9622f7ce5e2a101",
         "type": "github"
       },
       "original": {
         "owner": "yokoffing",
-        "repo": "yokoffing",
+        "repo": "Betterfox",
         "type": "github"
       }
     },

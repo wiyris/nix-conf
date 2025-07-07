@@ -57,6 +57,7 @@
 
     ./programs/gui/browser/chromium
     ./programs/gui/browser/firefox
+    ./programs/gui/browser/librewolf
     ./programs/gui/browser/schizofox
     ./programs/gui/browser/zen
     ./programs/gui/gaming/lutris

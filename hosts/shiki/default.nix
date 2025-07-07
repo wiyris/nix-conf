@@ -53,7 +53,6 @@ in {
     # gui
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
-    custom.programs.librewolf.enable = true;
     # custom.programs.schizofox.enable = true;
     custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
@@ -61,7 +60,7 @@ in {
     custom.programs.goldendict.enable = true;
     custom.programs.gtk.enable = true;
     custom.programs.kitty.enable = true;
-    # custom.programs.librewolf.enable = true;
+    custom.programs.librewolf.enable = true;
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
     custom.programs.qt.enable = true;

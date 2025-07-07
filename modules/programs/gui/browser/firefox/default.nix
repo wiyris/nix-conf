@@ -32,6 +32,18 @@ in {
             "ebay@search.mozilla.org" = {installation_mode = "blocked";};
           };
           profiles."&{usarName}" = {
+            search = {
+              default = "leta";
+              force = true;
+
+              engines = {
+                leta = {
+                  name = "leta";
+                  urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
+                  definedAliases = ["@l"];
+                };
+              };
+            };
           };
         };
       };

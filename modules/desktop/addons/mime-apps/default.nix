@@ -14,10 +14,6 @@ in {
         "text/html" = "zen-beta.desktop";
         "text/markdown" = "nvim.desktop";
         "text/plain" = "nvim.desktop";
-        "image/png" = "pqiv.desktop";
-        "image/jpeg" = "pqiv.desktop";
-        "image/gif" = "pqiv.desktop";
-        "image/webp" = "pqiv.desktop";
         "inode/directory" = "thunar.desktop";
         "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
         "application/x-wine-extension-osz" = "osu-stable.desktop";

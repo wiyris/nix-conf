@@ -27,6 +27,14 @@ in {
         [actions]
         set_cursor_auto_hide(1)
       '';
+      xdg.mimeApps = {
+        defaultApplications = {
+          "image/png" = "pqiv.desktop";
+          "image/jpeg" = "pqiv.desktop";
+          "image/gif" = "pqiv.desktop";
+          "image/webp" = "pqiv.desktop";
+        };
+      };
     };
   };
 }

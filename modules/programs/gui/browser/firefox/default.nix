@@ -1,5 +1,6 @@
 {
   lib,
+  inputs,
   config,
   ...
 }: let
@@ -8,6 +9,7 @@
 in {
   options.custom.programs.firefox.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
+    imports = [inputs.arkenfox-nixos.hmModules.arkenfox];
     hm = {
       stylix.targets.firefox.profileNames = ["${userName}"];
       programs.firefox = {

@@ -1,6 +1,5 @@
 {
   lib,
-  pkgs,
   inputs,
   config,
   ...
@@ -24,6 +23,7 @@ in {
             ${builtins.readFile "${betterfox}/Fastfox.js"}
             ${builtins.readFile "${betterfox}/Peskyfox.js"}
             ${builtins.readFile "${betterfox}/Smoothfox.js"}
+            ${builtins.readFile "./dots/override.js"}
           '';
         };
       };

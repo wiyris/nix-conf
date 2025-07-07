@@ -71,6 +71,7 @@
     ./programs/gui/media/mpv
     ./programs/gui/media/pqiv
     ./programs/gui/media/spotify
+    ./programs/gui/media/zathura
     ./programs/gui/terminal/foot
     ./programs/gui/terminal/ghostty
     ./programs/gui/terminal/kitty

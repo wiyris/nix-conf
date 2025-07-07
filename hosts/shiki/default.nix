@@ -66,6 +66,7 @@ in {
     custom.programs.qt.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.thunar.enable = true;
+    custom.programs.zathura.enable = true;
     custom.programs.zen.enable = true;
 
     # gaming

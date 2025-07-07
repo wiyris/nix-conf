@@ -14,9 +14,6 @@ in {
         "text/html" = "zen-beta.desktop";
         "text/markdown" = "nvim.desktop";
         "text/plain" = "nvim.desktop";
-        "inode/directory" = "thunar.desktop";
-        "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
-        "application/x-wine-extension-osz" = "osu-stable.desktop";
         "x-scheme-handler/http" = "zen-beta.desktop";
         "x-scheme-handler/https" = "zen-beta.desktop";
       };

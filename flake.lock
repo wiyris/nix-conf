@@ -122,6 +122,22 @@
         "type": "github"
       }
     },
+    "betterfox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724212737,
+        "narHash": "sha256-glCBBWXBmVBstoa796RTEVQ+i4+f+0zDK3/4BBs52d8=",
+        "owner": "yokoffing",
+        "repo": "yokoffing",
+        "rev": "6bdaca41ec7871023f5d2080e691e28edab78099",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yokoffing",
+        "repo": "yokoffing",
+        "type": "github"
+      }
+    },
     "crane": {
       "locked": {
         "lastModified": 1736032295,
@@ -1122,6 +1138,7 @@
     "root": {
       "inputs": {
         "arkenfox-nixos": "arkenfox-nixos",
+        "betterfox": "betterfox",
         "disko": "disko",
         "home-manager": "home-manager",
         "hyprland": "hyprland",

@@ -14,4 +14,5 @@
   DisplayBookmarksToolbar = "never";
   DisplayMenuBar = "default-off";
   SearchBar = "unified";
+  ExtensionSettings."*".installation_mode = "force_installed";
 }

@@ -1,5 +1,5 @@
 {
-  default = "leta";
+  default = "leta.google";
   force = true;
   engines = {
     leta.google = {

@@ -18,8 +18,6 @@ in {
         # extraConfig = ''
         #   ${builtins.readFile "${betterfox}/zen/user.js"}
         # '';
-        home.File = {
-        };
       };
 
       xdg.mimeApps.defaultApplications = {

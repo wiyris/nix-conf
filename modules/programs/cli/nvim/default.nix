@@ -14,6 +14,11 @@ in {
       vv = "NVIM_APPNAME=nvim.test nvim";
     };
 
+    hm.xdg.mimeApps.defaultApplications = {
+      "text/markdown" = "nvim.desktop";
+      "text/plain" = "nvim.desktop";
+    };
+
     environment.systemPackages = with pkgs; [
       angular-language-server
       bash-language-server

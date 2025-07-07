@@ -9,29 +9,22 @@
 in {
   options.custom.programs.firefox.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    imports = [inputs.arkenfox-nixos.hmModules.arkenfox];
     hm = {
+      imports = [inputs.arkenfox-nixos.hmModules.arkenfox];
       stylix.targets.firefox.profileNames = ["${userName}"];
       programs.firefox = {
         enable = true;
+        arkenfox = {
+          enable = true;
+          version = "135.0";
+        };
         policies = import ./dots/policies.nix;
         profiles.${userName} = {
-          search = {
-            default = "leta";
-            force = true;
-            engines = {
-              leta = {
-                name = "leta";
-                urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
-                definedAliases = ["@l"];
-              };
-              "ddg".metaData.hidden = true;
-              "google".metaData.hidden = true;
-              "qwant".metaData.hidden = true;
-              "bing".metaData.hidden = true;
-              "ecosia".metaData.hidden = true;
-            };
+          arkenfox = {
+            enable = true;
+            enableAllSections = true;
           };
+          search = import ./dots/search.nix;
         };
       };
     };

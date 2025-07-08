@@ -22,6 +22,7 @@ in {
         Type = "simple";
         ExecStart = ''${sk-serve-script}/bin/sk-serve'';
         Restart = "always";
+        RestartSec = "30s";
       };
     };
   };

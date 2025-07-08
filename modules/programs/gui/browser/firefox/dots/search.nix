@@ -3,7 +3,7 @@
   force = true;
   engines = {
     leta = {
-      name = "leta.google";
+      name = "leta";
       urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
       definedAliases = ["@l"];
     };

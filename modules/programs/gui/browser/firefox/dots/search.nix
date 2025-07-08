@@ -1,17 +1,11 @@
 {
-  default = "leta.google";
+  default = "leta";
   force = true;
   engines = {
-    leta.google = {
+    leta = {
       name = "leta.google";
       urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
-      definedAliases = ["@lg"];
-    };
-
-    leta.brave = {
-      name = "leta.brave";
-      urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=brave";}];
-      definedAliases = ["@lb"];
+      definedAliases = ["@l"];
     };
 
     "bing".metaData.hidden = true;

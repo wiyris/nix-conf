@@ -71,6 +71,7 @@
     ./programs/gui/general/gtk
     ./programs/gui/general/qt
     ./programs/gui/general/thunar
+    ./programs/gui/general/virtualbox
     ./programs/gui/media/mpv
     ./programs/gui/media/pqiv
     ./programs/gui/media/spotify

@@ -15,7 +15,6 @@ in {
       ++ lib.optionals config.bloat.enable [
         gpu-screen-recorder-gtk
         qbittorrent
-        virtualbox
         openshot-qt
       ];
   };

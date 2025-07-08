@@ -20,7 +20,6 @@ in {
     hm = {
       home.packages = [
         pkgs.rofi-wayland
-        pkgs.rofi-calc
         pkgs.procps # for uptime --pretty
 
         powermenu

@@ -67,6 +67,7 @@ in {
     custom.programs.spotify.enable = true;
     custom.programs.thunar.enable = true;
     custom.programs.zathura.enable = true;
+    custom.programs.mullvad-browser.enable = true;
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 

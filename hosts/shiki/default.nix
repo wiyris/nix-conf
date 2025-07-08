@@ -67,7 +67,7 @@ in {
     custom.programs.spotify.enable = true;
     custom.programs.thunar.enable = true;
     custom.programs.zathura.enable = true;
-    custom.programs.zen.enable = true;
+    custom.programs.zen-browser.enable = true;
 
     # gaming
     gaming.lutris.enable = true;

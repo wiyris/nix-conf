@@ -59,7 +59,7 @@
     ./programs/gui/browser/firefox
     ./programs/gui/browser/librewolf
     ./programs/gui/browser/schizofox
-    ./programs/gui/browser/zen
+    ./programs/gui/browser/zen-browser
     ./programs/gui/gaming/lutris
     ./programs/gui/gaming/optimize
     ./programs/gui/gaming/osu

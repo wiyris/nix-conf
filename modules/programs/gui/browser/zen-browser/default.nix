@@ -6,9 +6,9 @@
   ...
 }: let
   betterfox = inputs.betterfox;
-  cfg = config.custom.programs.zen;
+  cfg = config.custom.programs.zen-browser;
 in {
-  options.custom.programs.zen.enable = lib.mkEnableOption {};
+  options.custom.programs.zen-browser.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     environment.systemPackages = [inputs.zen-browser.packages."${pkgs.system}".default];
     hm = {

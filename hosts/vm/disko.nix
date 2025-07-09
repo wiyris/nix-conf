@@ -3,7 +3,7 @@
   disko.devices = {
     disk = {
       main = {
-        type = "gpt";
+        type = "disk";
         device = "/dev/sda";
         content = {
           type = "gpt";
@@ -32,11 +32,9 @@
             root = {
               size = "100%";
               content = {
-                content = {
-                  type = "filesystem";
-                  format = "ext4";
-                  mountpoint = "/";
-                };
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
               };
             };
           };

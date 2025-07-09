@@ -44,9 +44,10 @@ in {
 
     time.timeZone = "Asia/Tokyo";
 
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-    boot.loader.timeout = 0;
+    # boot.loader.timeout = 0;
+    boot.loader.grub.enable = true;
+    boot.loader.grub.efiSupport = true;
+    boot.loader.grub.efiInstallAsRemovable = true;
     system.stateVersion = "25.05"; # Did you read the comment?
     home-manager.users.${userName}.home.stateVersion = "25.05";
   };

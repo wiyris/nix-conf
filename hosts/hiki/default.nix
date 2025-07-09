@@ -7,15 +7,17 @@
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
 in {
-  imports = [./hardware.nix];
+  imports = [
+    ./hardware-configuration.nix
+    ./disko.nix
+  ];
+
   config = {
     globals.userName = userName;
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
     networking.hostName = "hiki";
-
-    # custom.networking.mullvad.enable = true;
 
     # cli
     programs.fish.enable = true;
@@ -33,7 +35,6 @@ in {
 
     # tui
     custom.programs.btop.enable = true;
-    custom.programs.cava.enable = true;
     custom.programs.gtrash.enable = true;
     custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
@@ -41,11 +42,13 @@ in {
     custom.programs.tmux.enable = true;
     custom.programs.yazi.enable = true;
 
+    custom.programs.ghostty.enable = true; # for temrinfo
+
     time.timeZone = "Asia/Tokyo";
 
+    # boot.loader.timeout = 0;
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
-    boot.loader.timeout = 0;
     system.stateVersion = "25.05"; # Did you read the comment?
     home-manager.users.${userName}.home.stateVersion = "25.05";
   };

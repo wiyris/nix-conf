@@ -8,25 +8,19 @@
         content = {
           type = "gpt";
           partitions = {
-            MBR = {
+            boot = {
               type = "EF02"; # for gub MBR
               size = "1M";
               priority = 1; # Needs to be first partition
             };
             ESP = {
-              size = "500M";
+              size = "512M";
               type = "EF00";
               content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
                 mountOptions = ["umask=0077"];
-              };
-            };
-            swap = {
-              size = "1G";
-              content = {
-                type = "swap";
               };
             };
             root = {

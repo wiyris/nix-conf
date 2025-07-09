@@ -7,7 +7,11 @@
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
 in {
-  imports = [./hardware.nix];
+  imports = [
+    ./hardware.nix
+    ./disko.nix
+  ];
+
   config = {
     globals.userName = userName;
     globals.homeDirectory = "/home/${userName}";

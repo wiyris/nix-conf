@@ -42,6 +42,8 @@ in {
     custom.programs.tmux.enable = true;
     custom.programs.yazi.enable = true;
 
+    custom.programs.ghostty.enable = true; # for temrinfo
+
     time.timeZone = "Asia/Tokyo";
 
     # boot.loader.timeout = 0;

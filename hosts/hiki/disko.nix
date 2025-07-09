@@ -1,9 +1,10 @@
-{
+{inputs, ...}: {
+  imports = [inputs.disko.nixosModules.disko];
   disko.devices = {
     disk = {
       main = {
         type = "disk";
-        device = "/dev/nvme0n1";
+        device = "/dev/sda";
         content = {
           type = "gpt";
           partitions = {
@@ -21,13 +22,11 @@
               size = "8G";
               content = {
                 type = "swap";
-                # resumeDevice = true; # hibernation
               };
             };
             root = {
               size = "100%";
               content = {
-                # LUKS passphrase will be prompted interactively only
                 type = "luks";
                 name = "crypted";
                 settings = {

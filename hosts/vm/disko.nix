@@ -9,9 +9,9 @@
           type = "gpt";
           partitions = {
             boot = {
-              type = "EF02"; # for gub MBR
               size = "1M";
-              priority = 1; # Needs to be first partition
+              type = "EF02";
+              priority = 1;
             };
             ESP = {
               size = "512M";
@@ -20,7 +20,6 @@
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
-                mountOptions = ["umask=0077"];
               };
             };
             root = {

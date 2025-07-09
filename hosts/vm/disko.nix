@@ -2,13 +2,18 @@
   disko.devices = {
     disk = {
       main = {
-        type = "disk";
-        device = "/dev/nvme0n1";
+        type = "gpt";
+        device = "/dev/sda";
         content = {
           type = "gpt";
           partitions = {
+            MBR = {
+              type = "EF02"; # for gub MBR
+              size = "1M";
+              priority = 1; # Needs to be first partition
+            };
             ESP = {
-              size = "1G";
+              size = "500M";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -18,21 +23,14 @@
               };
             };
             swap = {
-              size = "8G";
+              size = "1G";
               content = {
                 type = "swap";
-                # resumeDevice = true; # hibernation
               };
             };
             root = {
               size = "100%";
               content = {
-                # LUKS passphrase will be prompted interactively only
-                type = "luks";
-                name = "crypted";
-                settings = {
-                  allowDiscards = true;
-                };
                 content = {
                   type = "filesystem";
                   format = "ext4";

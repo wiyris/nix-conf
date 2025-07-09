@@ -22,6 +22,8 @@
     nixosConfigurations = {
       shiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "shiki"; # desktop PC
       thiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
+
+      vm = mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
     };
   };
 

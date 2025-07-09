@@ -18,6 +18,7 @@ in {
     globals.configDirectory = configDirectory;
 
     networking.hostName = "hiki";
+    custom.networking.mullvad.enable = true;
 
     # cli
     programs.fish.enable = true;
@@ -39,6 +40,8 @@ in {
     custom.programs.htop.enable = true;
     custom.programs.tmux.enable = true;
     custom.programs.yazi.enable = true;
+
+    custom.programs.ghostty.enable = true;
 
     time.timeZone = "Asia/Tokyo";
 

@@ -25,6 +25,9 @@ in {
       clang-tools
       gcc
       gnumake
+      rustc
+      cargo
+      rust-analyzer
       lua-language-server
       markdownlint-cli2
       marksman

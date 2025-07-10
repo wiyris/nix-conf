@@ -1,5 +1,6 @@
 {
   networking = {
+    useDHCP = false;
     enableIPv6 = false;
     interfaces.enp24s0 = {
       ipv4.addresses = [

@@ -10,7 +10,7 @@
       ];
     };
     defaultGateway = {
-      address = "192.0.1.1";
+      address = "192.0.0.1";
       interface = "enp24s0";
     };
     nameservers = [

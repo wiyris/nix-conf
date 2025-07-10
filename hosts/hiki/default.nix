@@ -1,15 +1,12 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{config, ...}: let
   userName = "tsubaki";
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
 in {
   imports = [
-    ./hardware-configuration.nix
     ./disko.nix
+    ./hardware-configuration.nix
+    ./networking.nix
   ];
 
   config = {

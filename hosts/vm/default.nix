@@ -18,6 +18,7 @@ in {
     globals.configDirectory = configDirectory;
 
     networking.hostName = "vm";
+    custom.networking.core.enable = true;
 
     # cli
     programs.fish.enable = true;

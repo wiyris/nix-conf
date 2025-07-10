@@ -17,6 +17,7 @@ in {
 
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
+    custom.networking.core.enable = true;
     # custom.networking.iwd.enable = true;
     # custom.networking.networkmanager.enable = true;
     custom.hardware.amdgpu.enable = true;

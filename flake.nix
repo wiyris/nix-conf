@@ -22,7 +22,7 @@
     nixosConfigurations = {
       shiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "shiki"; # desktop
       thiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
-      hiki = mkNixosSystem inputs.nixpkgs-stable "x86_64-linux" "hiki"; # homelab
+      hiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "hiki"; # homelab
 
       vm = mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
     };

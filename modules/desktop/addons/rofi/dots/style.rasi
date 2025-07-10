@@ -71,7 +71,7 @@ entry {
   background-color:            @background-tb;
   text-color:                  @foreground;
   cursor:                      text;
-  placeholder:                 "Search...";
+  placeholder:                 "Fitch...";
   placeholder-color:           inherit;
   vertical-align:              0.5;
   horizontal-align:            0.0;

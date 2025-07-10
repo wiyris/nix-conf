@@ -81,6 +81,7 @@
 
     ./services/batsignal
     ./services/keyd
+    ./services/rtorrent
     ./services/sk-serve
     ./services/tlp
     ./services/udev

@@ -24,7 +24,7 @@ in {
     custom.hardware.bluetooth.enable = true;
     # custom.services.batsignal.enable = true;
     # custom.services.keyd.enable = true;
-    custom.services.rtorrent.enable = true;
+    # custom.services.rtorrent.enable = true;
     # custom.services.sk-serve.enable = true;
     # custom.services.tlp.enable = true;
 

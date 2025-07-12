@@ -44,7 +44,7 @@ in {
 
     time.timeZone = "Asia/Tokyo";
 
-    boot.loader.timeout = 0;
+    boot.loader.timeout = 10;
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
     system.stateVersion = "25.05"; # Did you read the comment?

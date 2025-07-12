@@ -21,7 +21,7 @@ in {
         kagi-scratchpad
         kagi-translate-scratchpad
       ];
-      # Chromium extensions w/ home-manager
+      # Chromium extensions w/ home-manager setup guide
       # https://gist.github.com/MaximilianGaedig/acbce27522c997e9666bd93cef77492d
       programs.chromium = {
         enable = true;

@@ -7,7 +7,7 @@
   cfg = config.custom.programs.ghostty;
   ghosttyScratchpad = pkgs.writeShellScriptBin "ghostty-scratchpad" ''
     #!/usr/bin/env bash
-    ghostty --class="ghostty.scratch" --background-opacity="0" -e fish
+    ghostty --class="ghostty.scratch" --background-opacity="0.2" -e fish
   '';
 in {
   options.custom.programs.ghostty.enable = lib.mkEnableOption {};

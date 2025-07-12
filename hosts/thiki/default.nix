@@ -19,6 +19,8 @@ in {
 
     networking.hostName = "thiki";
 
+    custom.stylix.enable = true;
+
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;

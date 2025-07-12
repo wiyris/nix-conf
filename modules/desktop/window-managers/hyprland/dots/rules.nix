@@ -2,9 +2,10 @@
   wayland.windowManager.hyprland.settings = {
     windowrulev2 = [
       # Base Rules
+      "float, tag:float"
+
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$"
       "tag +float_md, class:^(mpv)$"
-      "float, tag:float"
 
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
@@ -21,13 +22,14 @@
       "idleinhibit fullscreen, title:^(*)$"
       "idleinhibit fullscreen, fullscreen:1"
 
+      # Tearing
+      "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
+
       # Scratchpads
-      "tag +scratchpad, class:kitty-scratch"
       "tag +float_md, class:kitty-scratch"
-      "tag +scratchpad, class:ghostty.scratch"
       "tag +float_md, class:ghostty.scratch"
-      "tag +scratchpad, class:chrome-kagi.com__assistant-Default"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
+
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"
       "float, tag:float_side"
@@ -43,12 +45,14 @@
       "animation popin, rofi"
       "blur, rofi"
       "ignorezero, rofi"
+      "ignorezero, waybar"
 
       "animation slide right, notifications"
       "blur, notifications"
       "ignorezero, notifications"
 
       "animation fade, swayosd"
+      "animation fade, hyprlock"
     ];
 
     #Gaming Workspace

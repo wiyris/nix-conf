@@ -14,6 +14,8 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
+    custom.stylix.enable = true;
+
     networking.hostName = "hiki";
     custom.networking.mullvad.enable = true;
 

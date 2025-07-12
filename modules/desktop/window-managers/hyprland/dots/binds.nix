@@ -39,6 +39,7 @@
       "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
       "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.scratch rmpc-scratchpad"
+      "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.scratch btop-scratchpad"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

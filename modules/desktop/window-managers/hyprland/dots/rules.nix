@@ -3,7 +3,7 @@
     windowrulev2 = [
       # Base Rules
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$"
-      "tag +float, class:^(mpv)$"
+      "tag +float_md, class:^(mpv)$"
       "float, tag:float"
 
       # Workspace Rules
@@ -26,8 +26,14 @@
       "tag +float_md, class:kitty-scratch"
       "tag +scratchpad, class:ghostty.scratch"
       "tag +float_md, class:ghostty.scratch"
+      "tag +scratchpad, class:chrome-kagi.com__assistant-Default"
+      "tag +float_side, class:chrome-kagi.com__assistant-Default"
       "float, tag:float_md"
-      "size 1280 720, tag:float_md"
+      "size 70% 70%, tag:float_md"
+      "float, tag:float_side"
+      "move 100%-w-15, tag:float_side"
+      "size 30% 93%, tag:float_side"
+      "animation slide right, tag:float_side"
 
       # Windows opacity
       "opacity 0.8, class:(thunar)"

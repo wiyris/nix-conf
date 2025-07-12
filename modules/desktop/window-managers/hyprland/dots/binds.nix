@@ -34,6 +34,7 @@
       # "$mainMod, TAB, changegroupactive"
 
       "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty-scratchpad"
+      "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

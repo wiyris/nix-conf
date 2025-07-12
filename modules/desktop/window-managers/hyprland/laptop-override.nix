@@ -15,6 +15,7 @@
     general = {
       gaps_in = lib.mkForce 2;
       gaps_out = lib.mkForce 6;
+      allow_tearing = lib.mkForce false;
     };
   };
 }

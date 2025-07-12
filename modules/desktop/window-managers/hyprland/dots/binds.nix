@@ -7,7 +7,7 @@
       "$mainMod, BackSpace, exec, ghostty -e nvim"
       "$mainMod, J, exec, $browser"
       "$mainMod SHIFT, J, exec, $browser --private-window"
-      "$mainMod, K, exec, $explore"
+      "$mainMod, V, exec, $explore"
 
       # Rofi
       "$mainMod, T, exec, $launcher"

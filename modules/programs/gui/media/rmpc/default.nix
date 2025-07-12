@@ -5,8 +5,8 @@
   ...
 }: let
   cfg = config.custom.programs.rmpc;
-  inherit (config.xdg.userDirs) music;
-  musicDirectory = music;
+  # inherit (config.xdg.userDirs) music;
+  musicDirectory = /home/tsubaki/Music/sc;
   rmpc-scratchpad = pkgs.writeShellScriptBin "rmpc-scratchpad" ''
     #!/usr/bin/env bash
     ghostty --class="rmpc.scratch" --background-opacity="0.2" -e rmpc

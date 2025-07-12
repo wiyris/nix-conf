@@ -10,8 +10,8 @@
   fontSize = 12;
 in {
   options.custom.stylix.enable = lib.mkEnableOption {};
+  imports = [inputs.stylix.nixosModules.stylix];
   config = lib.mkIf cfg.enable {
-    imports = [inputs.stylix.nixosModules.stylix];
     stylix = {
       enable = true;
       autoEnable = true;

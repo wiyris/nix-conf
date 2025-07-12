@@ -32,6 +32,7 @@ in {
           auto_update "yes"
         '';
       };
+      services.mpd-mpris.enable = true;
     };
   };
 }

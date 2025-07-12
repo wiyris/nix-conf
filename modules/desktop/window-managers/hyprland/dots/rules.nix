@@ -29,6 +29,7 @@
       "tag +float_md, class:kitty-scratch"
       "tag +float_md, class:ghostty.scratch"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
+      "tag +float_side, class:chrome-translate.kagi.com__-Default"
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"

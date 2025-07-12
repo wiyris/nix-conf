@@ -73,6 +73,7 @@
     ./programs/gui/general/thunar
     ./programs/gui/media/mpv
     ./programs/gui/media/pqiv
+    ./programs/gui/media/rmpc
     ./programs/gui/media/spotify
     ./programs/gui/media/zathura
     ./programs/gui/terminal/foot

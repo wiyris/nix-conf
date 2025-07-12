@@ -17,7 +17,7 @@ in {
   options.custom.programs.chromium.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      home.package = [
+      home.packages = [
         kagi-scratchpad
         kagi-translate-scratchpad
       ];

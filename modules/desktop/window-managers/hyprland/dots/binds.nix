@@ -33,6 +33,7 @@
       # "$mainMod SHIFT, O, lockactivegroup, toggle"
       # "$mainMod, TAB, changegroupactive"
 
+      # Scratchpads
       "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty-scratchpad"
       "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
       "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"

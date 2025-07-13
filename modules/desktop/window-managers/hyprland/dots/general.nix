@@ -1,6 +1,6 @@
 {lib, ...}: {
   wayland.windowManager.hyprland.settings.general = {
-    allow_tearing = false;
+    allow_tearing = true;
     gaps_in = 5;
     gaps_out = 10;
     border_size = 2;

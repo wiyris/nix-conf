@@ -18,9 +18,9 @@ in {
       "[" = "lettermod(meta, i, ${toString holdtime}, ${toString taptime})";
       "]" = "lettermod(alt, c, ${toString holdtime}, ${toString taptime})";
 
-      space = "overloadt(num, enter, ${toString taptime})";
-      leftmeta = "overloadt(meta, tab, ${toString taptime})";
-      leftalt = "overloadt(nav, r, ${toString taptime})";
+      m = "overloadt(num, space, ${toString taptime})";
+      x = "overloadt(meta, tab, ${toString taptime})";
+      c = "overloadt(nav, r, ${toString taptime})";
       rightalt = "space";
       sysrq = "backspace";
 
@@ -120,12 +120,11 @@ in {
       "4" = "x";
       "5" = "noop";
       "6" = "noop";
-      "7" = "noop";
-      "8" = ";";
-      "9" = "u";
-      "0" = "o";
-      "-" = "y";
-      "equal" = "b";
+      "7" = ";";
+      "8" = "u";
+      "9" = "o";
+      "0" = "y";
+      "-" = "b";
 
       tab = "s";
       q = "n";
@@ -134,12 +133,11 @@ in {
       r = "k";
       t = "noop";
       y = "noop";
-      u = "noop";
-      i = ",";
-      o = "a";
-      p = "e";
-      "[" = "i";
-      "]" = "c";
+      u = ",";
+      i = "a";
+      o = "e";
+      p = "i";
+      "[" = "c";
 
       capslock = "v";
       a = "w";
@@ -148,12 +146,11 @@ in {
       f = "j";
       g = "noop";
       h = "noop";
-      j = "noop";
-      k = "-";
-      l = ".";
-      ";" = "'";
-      "'" = "=";
-      "enter" = "/";
+      j = "-";
+      k = ".";
+      l = "'";
+      ";" = "=";
+      "'" = "/";
 
       z = "noop";
       x = "noop";

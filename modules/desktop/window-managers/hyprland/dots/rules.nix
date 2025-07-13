@@ -36,10 +36,12 @@
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"
+      "bordersize 1, tag:float_md"
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"
       "animation slide right, tag:float_side"
+      "bordersize 1, tag:float_side"
 
       # Windows opacity
       "opacity 0.8, class:(thunar)"

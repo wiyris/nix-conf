@@ -9,106 +9,162 @@ in {
       "default_layout" = "default";
     };
     "default:layout" = {
-      # Homerow mods
-      capslock = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
-      a = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
-      s = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
-      d = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
-      j = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
-      k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
-      l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
-      ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
+      tab = "lettermod(alt, s, ${toString holdtime}, ${toString taptime})";
+      q = "lettermod(meta, n, ${toString holdtime}, ${toString taptime})";
+      w = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
+      e = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
+      o = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
+      p = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
+      "[" = "lettermod(meta, i, ${toString holdtime}, ${toString taptime})";
+      "]" = "lettermod(alt, c, ${toString holdtime}, ${toString taptime})";
 
+      space = "overloadt(num, enter, ${toString taptime})";
       leftmeta = "overloadt(meta, tab, ${toString taptime})";
       leftalt = "overloadt(nav, r, ${toString taptime})";
-      space = "overloadt(nav, space, ${toString taptime})";
+      rightalt = "space";
+      sysrq = "backspace";
 
-      # combos
-      "a+s" = "tab";
-      "k+l" = "backspace";
+      "1+2" = "q";
+      "2+3" = "z";
+      "w+e" = "esc";
+      "q+e" = "C-space"; # toggle fcitx
+      "o+p" = "S-;"; # :
+      "o+]" = "S-'"; # "
+      "l+;" = "S--"; # _
+      "8+9" = "S-6"; # ^
+      "9+0" = "S-5"; # %
+      "0+-" = "S-4"; # $
 
-      "q+w" = "q";
-      "w+e" = "z";
-      "s+d" = "esc";
-      "a+d" = "C-space"; # toggle fcitx
-      "j+k" = "S-;"; # :
-      "j+l" = "S-'"; # "
-      "y+u" = "S-6"; # ^
-      "i+o" = "S--"; # _
+      "a+s" = "C-insert"; # copy
+      "s+d" = "S-insert"; # paste
 
-      "z+x" = "C-insert"; # copy
-      "x+c" = "S-insert"; # paste
+      "space+`" = "S-,"; # <
+      "space+1" = "S-9"; # (
+      "space+2" = "S-3"; # #
+      "space+3" = "S-1"; # !
 
-      "space+`" = "S-1"; # ~
-      "space+q" = "S-0"; # )
-      "space+w" = "S-]"; # }
-      "space+e" = "]"; # ]
+      "space+9" = "S--"; # +
+      "space+0" = "S-8"; # *
+      "space+-" = "S-0"; # )
+      "space+equal" = "S-0"; # >
 
-      "space+u" = "backslash"; # \
-      "space+i" = "S-5"; # %
-      "space+o" = "S-6"; # ^
-      "space+p" = "`"; # `
+      "space+tab" = "S-`"; # ~
+      "space+q" = "S-["; # {
+      "space+w" = "["; # [
+      "space+e" = "S-2"; # @
+      "space+r" = "S-backslash"; # |
 
-      "space+capslock" = "S-1"; # |
-      "space+a" = "S-9"; # (
-      "space+s" = "S-["; # {
-      "space+d" = "["; # [
+      "space+i" = "backslash"; # \
+      "space+o" = "S-7"; # &
+      "space+p" = "]"; # ]
+      "space+[" = "S-]"; # }
+      "space+]" = "S-."; # >
 
-      "space+j" = "S-8"; # *
-      "space+k" = "S-3"; # #
-      "space+l" = "S-4"; # $
-      "space+;" = "S-7"; # &
-
-      "space+leftshift" = "S-0"; # !
+      # unbind unused keys
+      esc = "noop";
+      # "`" = "noop";
+      # "1" = "noop";
+      # "2" = "noop";
+      # "3" = "noop";
+      # "4" = "noop";
+      # "5" = "noop";
+      # "6" = "noop";
+      # "7" = "noop";
+      # "8" = "noop";
+      # "9" = "noop";
+      # "0" = "noop";
+      # "-" = "noop";
+      # "=" = "noop";
+      "backspace" = "noop";
+      # "tab" = "noop";
+      # "]" = "noop";
+      # "capslock" = "noop";
+      "leftshift" = "noop";
+      "leftcontrol" = "noop";
+      # "leftmeta" = "noop";
+      "rightshift" = "noop";
+      # "rightalt" = "noop";
+      "rightmeta" = "noop";
+      "rightcontrol" = "noop";
     };
+
     "nav" = {
-      h = "left";
-      j = "down";
-      k = "up";
-      l = "right";
-      n = "home";
-      m = "pagedown";
-      "," = "pageup";
-      "." = "end";
+      i = "left";
+      o = "down";
+      p = "up";
+      "[" = "right";
+      k = "home";
+      l = "pagedown";
+      ";" = "pageup";
+      "'" = "end";
     };
+
+    "num" = {
+      tab = "6";
+      q = "4";
+      w = "0";
+      e = "2";
+      o = "3";
+      p = "1";
+      "[" = "5";
+      "]" = "7";
+      s = "8";
+      ";" = "9";
+    };
+
     "main" = {
-      "tab" = "f";
-      q = "p";
-      w = "d";
-      e = "l";
-      r = "x";
+      "`" = "f";
+      "1" = "p";
+      "2" = "d";
+      "3" = "l";
+      "4" = "x";
+      "5" = "noop";
+      "6" = "noop";
+      "7" = "noop";
+      "8" = ";";
+      "9" = "u";
+      "0" = "o";
+      "-" = "y";
+      "equal" = "b";
+
+      tab = "s";
+      q = "n";
+      w = "t";
+      e = "h";
+      r = "k";
       t = "noop";
-      y = ";";
-      u = "u";
-      i = "o";
-      o = "y";
-      p = "b";
+      y = "noop";
+      u = "noop";
+      i = ",";
+      o = "a";
+      p = "e";
+      "[" = "i";
+      "]" = "c";
 
-      capslock = "s";
-      a = "n";
-      s = "t";
-      d = "h";
-      f = "k";
+      capslock = "v";
+      a = "w";
+      s = "g";
+      d = "m";
+      f = "j";
       g = "noop";
-      h = ",";
-      j = "a";
-      k = "e";
-      l = "i";
-      ";" = "c";
+      h = "noop";
+      j = "noop";
+      k = "-";
+      l = ".";
+      ";" = "'";
+      "'" = "=";
+      "enter" = "/";
 
-      leftshift = "v";
-      z = "w";
-      x = "g";
-      c = "m";
-      v = "j";
+      z = "noop";
+      x = "noop";
+      c = "noop";
+      v = "noop";
       b = "noop";
-      n = "-";
-      m = ".";
-      "," = "'";
-      "." = "=";
-      "backslash" = "backslesh";
-
-      "leftalt" = "r";
+      n = "noop";
+      m = "noop";
+      "," = "noop";
+      "." = "noop";
+      "backslash" = "noop";
     };
   };
 }

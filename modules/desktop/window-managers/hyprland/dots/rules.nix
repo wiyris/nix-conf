@@ -5,7 +5,8 @@
       "float, tag:float"
 
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$"
-      "tag +float_md, class:^(mpv)$|^(.*Picture-in-Picture.*)$"
+      "tag +float_md, class:^(mpv)$"
+      "tag +float_md, title:^(.*Picture-in-Picture.*)$"
 
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"

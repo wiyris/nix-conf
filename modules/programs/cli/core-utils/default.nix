@@ -12,6 +12,8 @@ in {
     environment.systemPackages = with pkgs;
       [
         git
+        gnupg
+        pinentry
         vim
         curl
         wget

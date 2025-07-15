@@ -4,7 +4,7 @@
       # Apps
       "$mainMod, Return, exec, $terminal"
       "$mainMod, space, exec, $terminal"
-      "$mainMod, BackSpace, exec, ghostty -e nvim"
+      "$mainMod, BackSpace, exec, $terminal -e nvim"
       "$mainMod, J, exec, $browser"
       "$mainMod SHIFT, J, exec, $browser --private-window"
       "$mainMod, V, exec, $explore"
@@ -34,12 +34,12 @@
       # "$mainMod, TAB, changegroupactive"
 
       # Scratchpads
-      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty-scratchpad"
+      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch kitty-scratch"
       "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
       "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
       "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
-      "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.scratch rmpc-scratchpad"
-      "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.scratch btop-scratchpad"
+      "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch rmpc-kittyscratch"
+      "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch btop-kittyscratch"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

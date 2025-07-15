@@ -30,8 +30,10 @@
       # Scratchpads
       "tag +float_md, class:kitty-scratch"
       "tag +float_md, class:ghostty.scratch"
-      "tag +float_md, class:rmpc.scratch"
-      "tag +float_md, class:btop.scratch"
+      "tag +float_md, class:rmpc.ghosttyscratch"
+      "tag +float_md, class:btop.ghosttyscratch"
+      "tag +float_md, class:rmpc-kittyscratch"
+      "tag +float_md, class:btop-kittyscratch"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
       "tag +float_side, class:chrome-translate.kagi.com__-Default"
       "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."

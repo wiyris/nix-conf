@@ -11,7 +11,7 @@ in {
       programs.git = {
         enable = true;
         userName = "wiyris";
-        userEmail = "wiyris.doctrine357@slmail.me";
+        userEmail = "c8b5805d-928f-4c0b-8fc0-27817abedf44@passmail.com";
         extraConfig = {
           init.defaultBranch = "main";
         };

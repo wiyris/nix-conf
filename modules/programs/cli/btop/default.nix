@@ -5,14 +5,21 @@
   ...
 }: let
   cfg = config.custom.programs.btop;
-  btop-scratchpad = pkgs.writeShellScriptBin "btop-scratchpad" ''
+  btop-ghosttyscratch = pkgs.writeShellScriptBin "btop-ghosttyscratch" ''
     #!/usr/bin/env bash
-    ghostty --class="btop.scratch" --background-opacity="0.2" -e btop
+    ghostty --class="btop.ghosttyscratch" --background-opacity="0.2" -e btop
+  '';
+  btop-kittyscratch = pkgs.writeShellScriptBin "btop-kittyscratch" ''
+    #!/usr/bin/env bash
+    kitty --class btop-kittyscratch -e btop
   '';
 in {
   options.custom.programs.btop.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.home.packages = [btop-scratchpad];
+    hm.home.packages = [
+      btop-ghosttyscratch
+      btop-kittyscratch
+    ];
     hm.programs.btop = {
       enable = true;
       settings = {

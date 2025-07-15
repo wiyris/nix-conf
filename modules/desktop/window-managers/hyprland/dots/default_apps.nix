@@ -1,7 +1,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
-    "$terminal" = "ghostty";
+    "$terminal" = "kitty";
     "$launcher" = "rofi -show drun";
     "$browser" = "zen-beta";
     "$bar" = "waybar";

@@ -16,6 +16,7 @@
     # Force firefox to use wayland
     MOZ_ENABLE_WAYLAND = "1";
     XDG_SESSION_TYPE = lib.mkDefault "wayland";
+    NIXOS_OZONE_WL = "1";
   };
 in {
   options.desktop.wayland-session.enable = lib.mkEnableOption {};
@@ -31,7 +32,6 @@ in {
 
       # Enable portal
       environment.sessionVariables.GTK_USE_PORTAL = "1";
-      environment.sessionVariables.NIXOS_OZONE_WL = "1";
       xdg.portal.extraPortals = with pkgs; [
         xdg-desktop-portal-wlr
         xdg-desktop-portal-gtk

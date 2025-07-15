@@ -11,7 +11,7 @@ in {
       enable = true;
       settings = {
         main = {
-          pad = "8x8";
+          pad = "4x0";
         };
       };
     };

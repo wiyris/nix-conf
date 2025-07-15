@@ -51,7 +51,7 @@
               size = "100%";
               content = {
                 type = "luks";
-                name = "crypted";
+                name = "crypted-hdd";
                 settings = {
                   allowDiscards = true;
                 };

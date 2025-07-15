@@ -7,7 +7,7 @@
   cfg = config.custom.programs.foot;
   foot-scratch = pkgs.writeShellScriptBin "foot-scratch" ''
     #!/usr/bin/env bash
-    foot --app-id foot-scratchpad
+    foot --app-id foot-scratch
   '';
 in {
   options.custom.programs.foot.enable = lib.mkEnableOption {};

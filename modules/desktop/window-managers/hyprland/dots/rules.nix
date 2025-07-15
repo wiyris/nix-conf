@@ -29,6 +29,7 @@
 
       # Scratchpads
       "tag +float_md, class:kitty-scratch"
+      "tag +float_md, class:foot-scratch"
       "tag +float_md, class:ghostty.scratch"
       "tag +float_md, class:rmpc.ghosttyscratch"
       "tag +float_md, class:btop.ghosttyscratch"

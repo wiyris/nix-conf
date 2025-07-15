@@ -11,7 +11,7 @@
   '';
   btop-kittyscratch = pkgs.writeShellScriptBin "btop-kittyscratch" ''
     #!/usr/bin/env bash
-    kitty --class btop-kittyscratch -e btop
+    kitty --class btop-kittyscratch --override background_opacity=0.2 -e btop
   '';
 in {
   options.custom.programs.btop.enable = lib.mkEnableOption {};

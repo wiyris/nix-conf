@@ -13,7 +13,7 @@
   '';
   rmpc-kittyscratch = pkgs.writeShellScriptBin "rmpc-kittyscratch" ''
     #!/usr/bin/env bash
-    kitty --class rmpc-kittyscratch -e rmpc
+    kitty --class rmpc-kittyscratch --override background_opacity=0.2 -e rmpc
   '';
 in {
   options.custom.programs.rmpc.enable = lib.mkEnableOption {};

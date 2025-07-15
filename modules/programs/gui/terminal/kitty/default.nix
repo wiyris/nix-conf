@@ -7,7 +7,7 @@
   cfg = config.custom.programs.kitty;
   kitty-scratch = pkgs.writeShellScriptBin "kitty-scratch" ''
     #!/usr/bin/env bash
-    kitty --class kitty-scratch
+    kitty --class kitty-scratch --override background_opacity=0.2
   '';
 in {
   imports = [./dots/binds.nix];

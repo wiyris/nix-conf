@@ -58,19 +58,19 @@ in {
     custom.programs.yazi.enable = true;
 
     # gui
-    # custom.programs.chromium.enable = true;
+    custom.programs.chromium.enable = true;
     # custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
-    # custom.programs.ghostty.enable = true;
-    # custom.programs.goldendict.enable = true;
+    custom.programs.ghostty.enable = true;
+    custom.programs.goldendict.enable = true;
     custom.programs.gtk.enable = true;
     # custom.programs.kitty.enable = true;
     # custom.programs.librewolf.enable = true;
-    # custom.programs.mpv.enable = true;
+    custom.programs.mpv.enable = true;
     # custom.programs.pqiv.enable = true;
-    # custom.programs.qt.enable = true;
+    custom.programs.qt.enable = true;
     # custom.programs.spotify.enable = true;
-    # custom.programs.thunar.enable = true;
+    custom.programs.thunar.enable = true;
     custom.programs.zen-browser.enable = true;
 
     # gaming
@@ -84,7 +84,7 @@ in {
     # wm-addons
     desktop.clipboard.enable = true;
     desktop.dunst.enable = true;
-    # desktop.fcitx.enable = true;
+    desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.hypridle.enable = true;

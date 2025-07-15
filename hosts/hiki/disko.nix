@@ -58,7 +58,7 @@
                 content = {
                   type = "filesystem";
                   format = "ext4";
-                  mountpoint = "/";
+                  mountpoint = "/mnt/hdd";
                 };
               };
             };

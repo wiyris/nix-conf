@@ -59,7 +59,7 @@ in {
 
     # gui
     custom.programs.chromium.enable = true;
-    # custom.programs.electron.enable = true;
+    custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
     # custom.programs.ghostty.enable = true;
     custom.programs.goldendict.enable = true;

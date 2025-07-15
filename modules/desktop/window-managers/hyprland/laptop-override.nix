@@ -14,7 +14,7 @@
     };
     general = {
       gaps_in = lib.mkForce 2;
-      gaps_out = lib.mkForce 6;
+      gaps_out = lib.mkForce 4;
       allow_tearing = lib.mkForce false;
     };
     unbind = [

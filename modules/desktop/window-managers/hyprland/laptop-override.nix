@@ -1,6 +1,6 @@
 {lib, ...}: {
   wayland.windowManager.hyprland.settings = {
-    "$terminal" = lib.mkForce "ghostty";
+    "$terminal" = lib.mkForce "foot";
     animations.enabled = lib.mkForce false;
     misc.vfr = lib.mkForce true;
     decoration = {

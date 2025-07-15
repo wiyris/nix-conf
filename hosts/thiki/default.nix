@@ -64,7 +64,7 @@ in {
     custom.programs.ghostty.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.gtk.enable = true;
-    # custom.programs.kitty.enable = true;
+    custom.programs.kitty.enable = true;
     # custom.programs.librewolf.enable = true;
     custom.programs.mpv.enable = true;
     # custom.programs.pqiv.enable = true;

@@ -34,7 +34,7 @@
       # "$mainMod, TAB, changegroupactive"
 
       # Scratchpads
-      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty-scratchpad"
+      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch kitty-scratch"
       "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
       "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
       "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"

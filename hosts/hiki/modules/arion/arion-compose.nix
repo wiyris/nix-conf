@@ -20,8 +20,7 @@
         "./shoko-config:/home/shoko/.shoko"
         "/mnt/hdd/anime:/mnt/anime"
       ];
-
-      shm_size = "256m";
     };
+    service.shm_size = "256m";
   };
 }

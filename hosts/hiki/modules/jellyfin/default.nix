@@ -1,5 +1,5 @@
 {
-  service.jellyfin = {
+  services.jellyfin = {
     enable = true;
     openFirewall = true;
   };

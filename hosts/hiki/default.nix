@@ -6,8 +6,9 @@ in {
   imports = [
     ./disko.nix
     ./hardware-configuration.nix
+    ./modules/networking
 
-    ./networking
+    ./modules/jellyfin
   ];
 
   config = {

@@ -10,6 +10,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm = {
       home.packages = [pkgs.rclone];
+      home.shellAliases.hmt = "systemctl start --user hiki-mounts.service";
       xdg.configFile."rclone/rclone.conf".text = ''
         [hiki]
         type = sftp

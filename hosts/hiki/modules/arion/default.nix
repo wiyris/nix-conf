@@ -16,7 +16,7 @@ in {
   virtualisation.docker.enable = false;
   virtualisation.podman.enable = true;
   virtualisation.podman.dockerSocket.enable = true;
-  virtualisation.podman.defaultNetwork.dnsname.enable = true;
+  # virtualisation.podman.defaultNetwork.dnsname.enable = true;
 
   users.extraUsers.${userName}.extraGroups = ["podman"];
 }

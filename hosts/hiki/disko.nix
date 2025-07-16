@@ -43,6 +43,7 @@
         };
       };
       hdd = {
+        type = "disk";
         device = "/dev/sdb";
         content = {
           type = "gpt";

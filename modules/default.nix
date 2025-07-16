@@ -82,6 +82,7 @@
 
     ./services/batsignal
     ./services/keyd
+    ./services/hiki-mounts
     ./services/rtorrent
     ./services/sk-serve
     ./services/tlp

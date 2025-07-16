@@ -21,6 +21,5 @@
         "/mnt/hdd/anime:/mnt/anime"
       ];
     };
-    service.shm_size = "256m";
   };
 }

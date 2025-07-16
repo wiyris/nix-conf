@@ -11,7 +11,7 @@ in {
     hm = {
       home.packages = [pkgs.rclone];
       xdg.configFile."rclone/rclone.conf".text = ''
-        [homix]
+        [hiki]
         type = sftp
         host = 192.168.0.42
         user = tsubaki
@@ -26,7 +26,7 @@ in {
         Service = {
           Type = "notify";
           ExecStartPre = "/usr/bin/env mkdir -p %h/stuff";
-          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"homix:/mnt/hdd/stuff\" \"stuff\"";
+          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"hiki:/mnt/hdd/stuff\" \"stuff\"";
           ExecStop = "/bin/fusermount -u %h/stuff";
         };
         Install.WantedBy = [];

@@ -4,8 +4,8 @@
     # "waybar"
     "steam"
     # "spotify"
-    # "thunderbird"
-    # "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
-    # "gsettings set org.gnome.desktop.interface cursor-size 32"
+    "thunderbird"
+    "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
+    "gsettings set org.gnome.desktop.interface cursor-size 32"
   ];
 }

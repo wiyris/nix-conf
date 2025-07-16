@@ -5,6 +5,7 @@
   ...
 }: let
   cfg = config.custom.services.hiki-mounts;
+  inherit (config.globals) homeDirectory;
 in {
   options.custom.services.hiki-mounts.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
@@ -16,7 +17,7 @@ in {
         type = sftp
         host = 192.168.0.42
         user = tsubaki
-        key_file = /home/tsubaki/.ssh/id_ed25519
+        key_file = ${homeDirectory}/.ssh/id_ed25519
       '';
 
       systemd.user.services.hiki-mounts = {

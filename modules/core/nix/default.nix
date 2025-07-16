@@ -1,8 +1,11 @@
 {
   pkgs,
   inputs,
+  config,
   ...
-}: {
+}: let
+  inherit (config.globals) configDirectory;
+in {
   nix = {
     nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     settings = {
@@ -48,7 +51,7 @@
 
   programs.nh = {
     enable = true;
-    flake = "/home/tsubaki/dots";
+    flake = "configDirectory";
     clean = {
       enable = true;
       extraArgs = "--keep 10";
@@ -76,7 +79,6 @@
     ncg = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
     nvd = "nvd --color always diff /run/current-system result | rg -v 0.0.0 | less -R";
 
-    sw = "nh os switch --ask /home/tsubaki/dots";
-    hw = "nh home switch --ask /home/tsubaki/dots";
+    sw = "nh os switch --ask ${configDirectory}";
   };
 }

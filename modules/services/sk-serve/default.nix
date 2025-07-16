@@ -5,9 +5,10 @@
   ...
 }: let
   cfg = config.custom.services.sk-serve;
+  inherit (config.globals) homeDirectory;
   sk-serve-script = pkgs.writeShellScriptBin "sk-serve" ''
     #!/usr/bin/env bash
-    cd /home/tsubaki/sk/
+    cd ${homeDirectory}/sk/
     nix develop --command npm run gulp serve
   '';
 in {

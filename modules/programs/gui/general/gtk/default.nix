@@ -13,7 +13,7 @@ in {
         thunderbird
       ]
       ++ lib.optionals config.bloat.enable [
-        gimp
+        gimp3
         grayjay
         gpu-screen-recorder-gtk
       ];

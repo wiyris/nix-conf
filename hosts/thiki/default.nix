@@ -29,7 +29,7 @@ in {
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
     # custom.services.batsignal.enable = true;
-    # custom.services.keyd.enable = true;
+    custom.services.keyd.enable = true;
     custom.services.tlp.enable = true;
 
     # cli

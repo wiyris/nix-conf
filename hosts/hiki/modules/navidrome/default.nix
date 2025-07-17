@@ -5,7 +5,7 @@
     settings = {
       Address = "0.0.0.0";
       Port = 4533;
-      MusicFolder = "/mnt/stuff/weeb";
+      MusicFolder = "/mnt/Music";
       EnableInsightsCollector = false;
     };
   };

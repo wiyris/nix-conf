@@ -10,19 +10,14 @@
 in {
   home.packages = [hyprland-scratchpad];
   wayland.windowManager.hyprland.settings = {
-    bind =
-      [
-        "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=0.5'"
-        "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
-        "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
-        "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
-        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=0.2 -e rmpc'"
-        "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=0.2 -e btop'"
-      ]
-      ++ lib.optionals config.laptop.enable [
-        "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'foot --app-id foot-scratch'"
-        "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'foot --app-id foot-scratch'"
-      ];
+    bind = [
+      "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=0.5'"
+      "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
+      "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
+      "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
+      "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=0.2 -e rmpc'"
+      "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=0.2 -e btop'"
+    ];
 
     windowrulev2 = [
       "tag +float_md, class:kitty-scratch"

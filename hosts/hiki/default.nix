@@ -8,8 +8,8 @@ in {
     ./hardware-configuration.nix
     ./modules/networking
 
-    ./modules/arion
     ./modules/jellyfin
+    ./modules/shoko
   ];
 
   config = {

@@ -6,9 +6,6 @@
   ...
 }: let
   cfg = config.desktop.hyprland;
-  hyprland-scratchpad =
-    pkgs.writeScriptBin "hyprland-scratchpad"
-    (builtins.readFile ./scripts/hyprland-scratchpad.sh);
   perf =
     pkgs.writeScriptBin "perf"
     (builtins.readFile ./scripts/perf.sh);
@@ -71,7 +68,6 @@ in {
         pkgs.hyprshot
 
         # Scripts
-        hyprland-scratchpad
         perf
       ];
     };

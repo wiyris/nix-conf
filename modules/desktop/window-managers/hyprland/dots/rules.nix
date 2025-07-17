@@ -27,27 +27,6 @@
       # Tearing
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
 
-      # Scratchpads
-      "tag +float_md, class:kitty-scratch"
-      "tag +float_md, class:foot-scratch"
-      "tag +float_md, class:ghostty.scratch"
-      "tag +float_md, class:rmpc.ghosttyscratch"
-      "tag +float_md, class:btop.ghosttyscratch"
-      "tag +float_md, class:rmpc-kittyscratch"
-      "tag +float_md, class:btop-kittyscratch"
-      "tag +float_side, class:chrome-kagi.com__assistant-Default"
-      "tag +float_side, class:chrome-translate.kagi.com__-Default"
-      "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
-
-      "float, tag:float_md"
-      "size 70% 70%, tag:float_md"
-      "bordersize 1, tag:float_md"
-      "float, tag:float_side"
-      "move 100%-w-15, tag:float_side"
-      "size 30% 93%, tag:float_side"
-      "animation slide right, tag:float_side"
-      "bordersize 1, tag:float_side"
-
       # Windows opacity
       "opacity 0.8, class:(thunar)"
     ];

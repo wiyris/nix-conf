@@ -1,19 +1,13 @@
 {
-  pkgs,
   lib,
   config,
   ...
 }: let
   cfg = config.custom.programs.ghostty;
-  ghosttyScratchpad = pkgs.writeShellScriptBin "ghostty-scratchpad" ''
-    #!/usr/bin/env bash
-    ghostty --class="ghostty.scratch" --background-opacity="0.75" -e fish
-  '';
 in {
   options.custom.programs.ghostty.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      home.packages = [ghosttyScratchpad];
       # stylix.targets.ghostty.enable = false;
       programs.ghostty = {
         enable = true;

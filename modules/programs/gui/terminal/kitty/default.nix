@@ -1,19 +1,13 @@
 {
   lib,
-  pkgs,
   config,
   ...
 }: let
   cfg = config.custom.programs.kitty;
-  kitty-scratch = pkgs.writeShellScriptBin "kitty-scratch" ''
-    #!/usr/bin/env bash
-    kitty --class kitty-scratch --override background_opacity=0.8
-  '';
 in {
   imports = [./dots/binds.nix];
   options.custom.programs.kitty.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.home.packages = [kitty-scratch];
     hm.programs.kitty = {
       enable = true;
       settings = {

@@ -42,6 +42,7 @@ in {
           ./dots/input.nix
           ./dots/misc.nix
           ./dots/rules.nix
+          ./dots/scratchpads.nix
         ]
         ++ lib.optionals config.laptop.enable [
           ./laptop-override.nix

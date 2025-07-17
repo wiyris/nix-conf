@@ -52,6 +52,8 @@ in {
         "uwsm/env-hyprland".text = ''
           export QT_QUICK_BACKEND=software
           export AQ_DRM_DEVICES="/dev/dri/card1:/dev/dri/card0"
+          export HYPRCURSOR_THEME=rose-pine-hyprcursor"
+          export HYPRCURSOR_SIZE=24
         '';
       };
 

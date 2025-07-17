@@ -59,7 +59,7 @@
                 content = {
                   type = "filesystem";
                   format = "ext4";
-                  mountpoint = "/mnt/hdd";
+                  mountpoint = "/mnt";
                 };
               };
             };

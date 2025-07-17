@@ -4,7 +4,8 @@
     openFirewall = true;
     settings = {
       Port = 4533;
-      MusicFolder = "/mnt/hdd/stuff/weeb";
+      MusicFolder = "/mnt/stuff/weeb";
+      EnableInsightsCollector = false;
     };
   };
 }

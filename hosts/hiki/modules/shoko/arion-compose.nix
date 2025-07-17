@@ -22,7 +22,7 @@
 
       volumes = [
         "/home/tsubaki/.config/shoko:/home/shoko/.shoko"
-        "/mnt/hdd/anime:/mnt/anime"
+        "/mnt/anime:/mnt/anime"
       ];
     };
   };

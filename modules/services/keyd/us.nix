@@ -18,7 +18,7 @@ in {
       l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
-      leftshift = "lettermod(leftshift, v, ${toString holdtime}, ${toString taptime})";
+      leftshift = "lettermod(shift, v, ${toString holdtime}, ${toString taptime})";
       space = "overloadt(nav, space, ${toString taptime})";
       "w+e" = "q";
       "e+w" = "z";

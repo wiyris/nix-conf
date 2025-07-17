@@ -4,7 +4,7 @@
     enable = true;
     tokenKeyFile = "/home/tsubaki/kavita-token";
     settings = {
-      port = 5000;
+      Port = 5000;
     };
   };
 }

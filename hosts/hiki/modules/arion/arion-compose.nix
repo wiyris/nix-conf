@@ -16,6 +16,8 @@
         "8111:8111"
       ];
 
+      network_mode = "host";
+
       volumes = [
         "/home/tsubaki/.config/shoko:/home/shoko/.shoko"
         "/mnt/hdd/anime:/mnt/anime"

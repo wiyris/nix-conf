@@ -8,7 +8,10 @@
       }
     ];
     defaultGateway = "192.168.0.1";
-    nameservers = ["192.168.0.1"];
+    nameservers = [
+      # "192.168.0.1"
+      "194.242.2.2"
+    ];
   };
   services.openssh.enable = true;
 }

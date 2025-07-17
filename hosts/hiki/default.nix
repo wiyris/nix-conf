@@ -9,6 +9,7 @@ in {
     ./modules/networking
 
     ./modules/jellyfin
+    ./modules/navidrome
     ./modules/shoko
   ];
 

@@ -12,10 +12,10 @@ if [ "$HYPRGAMEMODE" = 1 ]; then
     keyword decoration:rounding 0"
 
   hyprctl keyword "windowrule opacity 1 override 1 override 1 override, class:^(.*)$"
-  swww kill
+  # swww kill
   exit
 else
   hyprctl reload >/dev/null 2>&1 &
-  swww-daemon &
+  # swww-daemon &
   exit
 fi

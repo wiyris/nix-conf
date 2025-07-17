@@ -9,6 +9,7 @@ in {
     ./modules/networking
 
     ./modules/jellyfin
+    ./moludes/kavita
     # ./modules/lms
     ./modules/navidrome
     ./modules/shoko

@@ -3,6 +3,7 @@
     enable = true;
     openFirewall = true;
     settings = {
+      Address = "0.0.0.0";
       Port = 4533;
       MusicFolder = "/mnt/stuff/weeb";
       EnableInsightsCollector = false;

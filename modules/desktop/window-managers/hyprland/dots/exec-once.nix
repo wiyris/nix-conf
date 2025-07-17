@@ -5,7 +5,7 @@
     "steam"
     # "spotify"
     "thunderbird"
-    "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
+    "gsettings set org.gnome.desktop.interface cursor-theme rose-pine-hyprcursor"
     "gsettings set org.gnome.desktop.interface cursor-size 32"
   ];
 }

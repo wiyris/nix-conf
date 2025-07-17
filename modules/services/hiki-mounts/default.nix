@@ -28,7 +28,7 @@ in {
         Service = {
           Type = "notify";
           ExecStartPre = "/usr/bin/env mkdir -p %h/stuff";
-          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"hiki:/mnt/hdd/stuff\" \"stuff\"";
+          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"hiki:/mnt/hdd\" \"hiki\"";
           ExecStop = "/bin/fusermount -u %h/stuff";
         };
         Install.WantedBy = [];

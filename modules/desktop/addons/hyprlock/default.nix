@@ -21,7 +21,7 @@ in {
 
           background = [
             {
-              path = "/home/tsubaki/dots/modules/core/stylix/img.png";
+              path = "../../../core/stylix/img.png";
               blur_passes = 2;
               blur_size = 3;
               noise = "0.05";

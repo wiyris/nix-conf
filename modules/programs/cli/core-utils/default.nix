@@ -25,7 +25,7 @@ in {
         nix-prefetch-git # get fetchgit hashes
         nix-serve # create a local nix cachix like server
         nurl # get fetchgit hashes
-        unrar
+        unar
         unzip
         p7zip
         wget # download http/ftp

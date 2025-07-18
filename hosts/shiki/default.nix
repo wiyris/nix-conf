@@ -57,12 +57,14 @@ in {
     custom.programs.yazi.enable = true;
 
     # gui
+    custom.programs.kitty.isDefault = true;
+    custom.programs.zen-browser.isDefault = true;
+
     custom.programs.foot.enable = true;
     # custom.programs.foot.isDefault = true;
     # custom.programs.ghostty.enable = true;
     # custom.programs.ghostty.isDefault = true;
     custom.programs.kitty.enable = true;
-    custom.programs.kitty.isDefault = true;
 
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
@@ -71,7 +73,6 @@ in {
     custom.programs.mullvad-browser.enable = true;
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
-    custom.programs.zen-browser.isDefault = true;
 
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;

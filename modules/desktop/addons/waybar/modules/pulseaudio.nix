@@ -4,8 +4,8 @@
     # "format-bluetooth" = "{icon} {volume}% {format_source}";
     # "format-bluetooth-muted" = "   {volume}% {format_source}";
     "format" = "{icon} {volume}%";
-    "format-bluetooth" = "{icon} {volume}%";
-    "format-bluetooth-muted" = "   {volume}%";
+    "format-bluetooth" = "󰂯 {volume}%";
+    "format-bluetooth-muted" = "  󰂯 {volume}%";
     # "format-muted" = "  {format_source}";
     "format-muted" = " ";
     "format-source" = " ";

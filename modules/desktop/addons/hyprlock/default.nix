@@ -4,6 +4,7 @@
   ...
 }: let
   cfg = config.desktop.hyprlock;
+  inherit (config.globals) configDirectory;
 in {
   options.desktop.hyprlock.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
@@ -21,7 +22,7 @@ in {
 
           background = [
             {
-              path = "../../../core/stylix/img.png";
+              path = "${configDirectory}/modules/core/stylix/img.png";
               blur_passes = 2;
               blur_size = 3;
               noise = "0.05";

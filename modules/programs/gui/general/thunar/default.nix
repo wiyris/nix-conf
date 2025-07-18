@@ -18,7 +18,10 @@ in {
         ];
       };
     };
-    environment.systemPackages = [pkgs.file-roller];
+    environment.systemPackages = with pkgs; [
+      thud
+      file-roller
+    ];
 
     services = {
       tumbler.enable = true;
@@ -27,11 +30,6 @@ in {
 
     hm = {
       xdg.mimeApps.defaultApplications = {"inode/directory" = ["thunar.desktop"];};
-      home.packages = with pkgs; [
-        icoextract
-        thud
-      ];
-
       xdg.configFile."xfce4/helpers.rc".text =
         # ini
         ''

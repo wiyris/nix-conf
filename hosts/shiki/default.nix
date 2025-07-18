@@ -61,9 +61,7 @@ in {
     custom.programs.zen-browser.isDefault = true;
 
     custom.programs.foot.enable = true;
-    # custom.programs.foot.isDefault = true;
     # custom.programs.ghostty.enable = true;
-    # custom.programs.ghostty.isDefault = true;
     custom.programs.kitty.enable = true;
 
     custom.programs.chromium.enable = true;

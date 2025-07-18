@@ -4,7 +4,7 @@
     "waybar"
     "steam"
     # "spotify"
-    "thunderbird"
+    # "thunderbird"
     "gsettings set org.gnome.desktop.interface cursor-theme rose-pine-hyprcursor"
     "gsettings set org.gnome.desktop.interface cursor-size 32"
   ];

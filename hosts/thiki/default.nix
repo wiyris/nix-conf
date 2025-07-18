@@ -61,6 +61,7 @@ in {
     custom.programs.chromium.enable = true;
     custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
+    custom.programs.foot.isDefault = true;
     # custom.programs.ghostty.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.gtk.enable = true;
@@ -72,6 +73,7 @@ in {
     # custom.programs.spotify.enable = true;
     custom.programs.thunar.enable = true;
     custom.programs.zen-browser.enable = true;
+    custom.programs.zen-browser.isDefault = true;
 
     # gaming
     # gaming.osu.enable = true;

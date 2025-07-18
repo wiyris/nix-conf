@@ -28,6 +28,9 @@ in {
       "j+l" = "S-'"; # "
       "o+p" = "S-2"; # @
 
+      "a+s" = "tab";
+      "k+l" = "backspace";
+
       "z+x" = "C-insert"; # copy
       "x+c" = "S-insert"; # paste
 

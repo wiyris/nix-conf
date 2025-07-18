@@ -48,11 +48,17 @@
       "$mainMod SHIFT, e,      swapwindow, u"
       "$mainMod SHIFT, i,      swapwindow, r"
 
-      # Resizeing windows                     X  Y
-      "$mainMod, Minus,        resizeactive, -40 0"
+      # Resize windows                        X  Y
+      "$mainMod CTRL, COMMA,   resizeactive, -40 0"
       "$mainMod CTRL, a,       resizeactive,  0  60"
       "$mainMod CTRL, e,       resizeactive,  0 -60"
-      "$mainMod, Equal,        resizeactive,  40 0"
+      "$mainMod CTRL, i,       resizeactive,  40 0"
+
+      # Move windows                        X  Y
+      "$mainMod CTRL, COMMA,   moveactive, -40 0"
+      "$mainMod CTRL, a,       moveactive,  0  60"
+      "$mainMod CTRL, e,       moveactive,  0 -60"
+      "$mainMod CTRL, i,       moveactive,  40 0"
 
       # Switching workspaces
       "$mainMod, mouse_down, workspace, m-1"

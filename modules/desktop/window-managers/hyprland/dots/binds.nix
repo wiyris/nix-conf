@@ -48,13 +48,13 @@
       "$mainMod SHIFT, e,      swapwindow, u"
       "$mainMod SHIFT, i,      swapwindow, r"
 
-      # Resize windows                        X  Y
+      # Resizing windows                        X  Y
       "$mainMod CTRL, COMMA,   resizeactive, -40 0"
       "$mainMod CTRL, a,       resizeactive,  0  60"
       "$mainMod CTRL, e,       resizeactive,  0 -60"
       "$mainMod CTRL, i,       resizeactive,  40 0"
 
-      # Move windows                        X  Y
+      # Moving floating windows                        X  Y
       "$mainMod CTRL, COMMA,   moveactive, -40 0"
       "$mainMod CTRL, a,       moveactive,  0  60"
       "$mainMod CTRL, e,       moveactive,  0 -60"

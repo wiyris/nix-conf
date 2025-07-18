@@ -78,7 +78,7 @@ in {
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;
-    # custom.programs.spotify.enable = true;
+    custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
     custom.programs.electron.enable = true;

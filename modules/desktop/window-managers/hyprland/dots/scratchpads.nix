@@ -4,7 +4,7 @@
   osConfig,
   ...
 }: let
-  opacity = 0.5;
+  opacity = "0.5";
   hyprland-scratchpad =
     pkgs.writeScriptBin "hyprland-scratchpad"
     (builtins.readFile ../scripts/hyprland-scratchpad.sh);

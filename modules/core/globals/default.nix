@@ -2,21 +2,27 @@
   options.globals = {
     userName = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "tsubaki";
       example = "tsubaki";
       description = "Default user name";
     };
     homeDirectory = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "/home/tsubaki";
       example = "/home/tsubaki";
-      description = "Path of user home folder";
+      description = "Path of user home directory";
     };
     configDirectory = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "/home/tsubaki/dots";
       example = "/home/tsubaki/dots";
-      description = "Path of config folder";
+      description = "Path of config directory";
+    };
+    musicDir = lib.mkOption {
+      type = lib.types.str;
+      default = "/home/tsubaki/Music";
+      example = "/home/tsubaki/Music";
+      description = "Path of config directory";
     };
     defaultTerminal = lib.mkOption {
       type = lib.types.str;

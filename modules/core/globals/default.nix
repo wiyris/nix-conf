@@ -22,7 +22,7 @@
       type = lib.types.str;
       default = "/home/tsubaki/Music";
       example = "/home/tsubaki/Music";
-      description = "Path of config directory";
+      description = "Path of music directory";
     };
     defaultTerminal = lib.mkOption {
       type = lib.types.str;

@@ -71,6 +71,7 @@ in {
     custom.programs.mullvad-browser.enable = true;
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
+    custom.programs.zen-browser.isDefault = true;
 
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;

@@ -14,10 +14,11 @@ in {
         enable = true;
         plugins = with pkgs.xfce; [
           thunar-volman
-          # thunar-archive-plugin
+          thunar-archive-plugin
         ];
       };
     };
+    environment.systemPackages = [pkgs.xarchiver];
 
     services = {
       tumbler.enable = true;

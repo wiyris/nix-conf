@@ -25,7 +25,7 @@ in {
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
     # custom.services.batsignal.enable = true;
-    custom.services.keyd.enable = true;
+    # custom.services.keyd.enable = true;
     custom.services.hiki-mounts.enable = true;
     # custom.services.rtorrent.enable = true;
     # custom.services.sk-serve.enable = true;
@@ -67,15 +67,15 @@ in {
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
-    custom.programs.librewolf.enable = true;
-    custom.programs.mullvad-browser.enable = true;
-    custom.programs.tor-browser.enable = true;
+    # custom.programs.librewolf.enable = true;
+    # custom.programs.mullvad-browser.enable = true;
+    # custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;
-    custom.programs.spotify.enable = true;
+    # custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
     custom.programs.electron.enable = true;
@@ -86,7 +86,7 @@ in {
     custom.programs.thunar.enable = true;
 
     # gaming
-    gaming.lutris.enable = true;
+    # gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;

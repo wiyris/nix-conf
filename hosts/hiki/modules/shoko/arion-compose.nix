@@ -12,13 +12,15 @@
         TZ = "Asia/Tokyo";
       };
 
+      network_mode = "host";
+
       ports = ["8111:8111"];
 
-      dns = [
-        "1.1.1.1"
-        "1.0.0.1"
-        "194.242.2.2"
-      ];
+      # dns = [
+      #   "1.1.1.1"
+      #   "1.0.0.1"
+      #   "194.242.2.2"
+      # ];
 
       volumes = [
         "/home/tsubaki/.config/shoko:/home/shoko/.shoko"

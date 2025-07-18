@@ -2,18 +2,18 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       # Apps
-      "$mainMod, Return, exec, $terminal"
-      "$mainMod, space, exec, $terminal"
-      "$mainMod, BackSpace, exec, $terminal -e nvim"
-      "$mainMod, J, exec, $browser"
-      "$mainMod SHIFT, J, exec, $browser --private-window"
-      "$mainMod, V, exec, $explore"
+      "$mainMod, Return, exec, uwsm-app -- $terminal"
+      "$mainMod, space, exec, uwsm-app -- $terminal"
+      "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
+      "$mainMod, J, exec, uwsm-app -- $browser"
+      "$mainMod SHIFT, J, exec, uwsm-app -- $browser --private-window"
+      "$mainMod, V, exec, uwsm-app -- $explore"
 
       # Rofi
-      "$mainMod, T, exec, $launcher"
+      "$mainMod, T, exec, uwsm-app -- $launcher"
       "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      "$mainMod, Escape, exec, powermenu"
-      ", Print, exec, screenshot"
+      "$mainMod, Escape, exec, uwsm-app -- powermenu"
+      ", Print, exec, uwsm-app -- screenshot"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"

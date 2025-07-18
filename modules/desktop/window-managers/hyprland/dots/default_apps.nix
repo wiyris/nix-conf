@@ -6,7 +6,7 @@ in {
     "$terminal" = "${defaultTerminal}";
     "$launcher" = "rofi -show drun";
     "$browser" = "${defaultBrowser}";
-    "$bar" = "waybar";
+    "$bar" = "uwsm-app -- waybar";
     "$bar-toggle" = "killall -SIGUSR1 .waybar-wrapped";
     "$bar-reload" = "killall .waybar-wrapped; $bar";
     "$explore" = "thunar";

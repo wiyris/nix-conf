@@ -5,6 +5,7 @@
   ...
 }: let
   cfg = config.custom.programs.thunar;
+  inherit (config.globals) defaultTerminal;
 in {
   options.custom.programs.thunar.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
@@ -19,7 +20,7 @@ in {
     };
 
     services = {
-      # tumbler.enable = true;
+      tumbler.enable = true;
       gvfs.enable = true;
     };
 
@@ -33,7 +34,7 @@ in {
       xdg.configFile."xfce4/helpers.rc".text =
         # ini
         ''
-          TerminalEmulator=kitty
+          TerminalEmulator=${defaultTerminal}
           TerminalEmulatorDismissed=true
         '';
     };

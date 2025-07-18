@@ -10,7 +10,11 @@
     pkgs.writeScriptBin "perf"
     (builtins.readFile ./scripts/perf.sh);
 in {
-  options.desktop.hyprland.enable = lib.mkEnableOption {};
+  options.desktop.hyprland = {
+    enable = lib.mkEnableOption {};
+    isDefault = lib.mkEnableOption {};
+  };
+
   config = lib.mkIf cfg.enable {
     programs = {
       hyprland = {

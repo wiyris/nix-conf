@@ -17,8 +17,6 @@ in {
 
     custom.stylix.enable = true;
 
-    programs.java.enable = true;
-
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
@@ -59,26 +57,33 @@ in {
     custom.programs.yazi.enable = true;
 
     # gui
+    custom.programs.foot.enable = true;
+    # custom.programs.foot.isDefault = true;
+    # custom.programs.ghostty.enable = true;
+    # custom.programs.ghostty.isDefault = true;
+    custom.programs.kitty.enable = true;
+    custom.programs.kitty.isDefault = true;
+
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
-    custom.programs.electron.enable = true;
-    custom.programs.foot.enable = true;
-    # custom.programs.ghostty.enable = true;
-    custom.programs.goldendict.enable = true;
-    custom.programs.gtk.enable = true;
-    custom.programs.kitty.enable = true;
     custom.programs.librewolf.enable = true;
-    custom.programs.mpv.enable = true;
-    custom.programs.pqiv.enable = true;
-    custom.programs.qt.enable = true;
-    custom.programs.rmpc.enable = true;
-    custom.programs.spotify.enable = true;
-    custom.programs.thunar.enable = true;
-    custom.programs.zathura.enable = true;
     custom.programs.mullvad-browser.enable = true;
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
+
+    custom.programs.mpv.enable = true;
+    custom.programs.pqiv.enable = true;
+    custom.programs.rmpc.enable = true;
+    custom.programs.spotify.enable = true;
+    custom.programs.zathura.enable = true;
+
+    custom.programs.electron.enable = true;
+    custom.programs.gtk.enable = true;
+    custom.programs.qt.enable = true;
+
+    custom.programs.goldendict.enable = true;
+    custom.programs.thunar.enable = true;
 
     # gaming
     gaming.lutris.enable = true;
@@ -88,6 +93,7 @@ in {
 
     # window-managers
     desktop.hyprland.enable = true;
+    desktop.hyprland.isDefault = true;
 
     # wm-addons
     desktop.clipboard.enable = true;

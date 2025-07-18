@@ -13,9 +13,8 @@ in {
         anki
       ]
       ++ lib.optionals config.bloat.enable [
-        gpu-screen-recorder-gtk
         qbittorrent
-        openshot-qt
+        # openshot-qt
       ];
   };
 }

@@ -17,23 +17,13 @@
 
     ./core/security/doas
 
-    ./desktop/addons/clipboard
-    ./desktop/addons/dunst
-    ./desktop/addons/fcitx
-    ./desktop/addons/fonts
-    ./desktop/addons/gtk
-    ./desktop/addons/hypridle
-    ./desktop/addons/hyprlock
-    ./desktop/addons/mime-apps
-    ./desktop/addons/rofi
-    ./desktop/addons/swayosd
-    ./desktop/addons/uwsm
-    ./desktop/addons/waybar
-    ./desktop/addons/wayland-session
-    ./desktop/addons/wayland-utils
-    ./desktop/addons/xdg
-
-    ./desktop/window-managers/hyprland
+    ./services/batsignal
+    ./services/keyd
+    ./services/hiki-mounts
+    ./services/rtorrent
+    ./services/sk-serve
+    ./services/tlp
+    ./services/udev
 
     ./programs/cli/aliases
     ./programs/cli/bat
@@ -80,12 +70,22 @@
     ./programs/gui/terminal/ghostty
     ./programs/gui/terminal/kitty
 
-    ./services/batsignal
-    ./services/keyd
-    ./services/hiki-mounts
-    ./services/rtorrent
-    ./services/sk-serve
-    ./services/tlp
-    ./services/udev
+    ./desktop/addons/clipboard
+    ./desktop/addons/dunst
+    ./desktop/addons/fcitx
+    ./desktop/addons/fonts
+    ./desktop/addons/gtk
+    ./desktop/addons/hypridle
+    ./desktop/addons/hyprlock
+    ./desktop/addons/mime-apps
+    ./desktop/addons/rofi
+    ./desktop/addons/swayosd
+    ./desktop/addons/uwsm
+    ./desktop/addons/waybar
+    ./desktop/addons/wayland-session
+    ./desktop/addons/wayland-utils
+    ./desktop/addons/xdg
+
+    ./desktop/window-managers/hyprland
   ];
 }

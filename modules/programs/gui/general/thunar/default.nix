@@ -18,7 +18,7 @@ in {
         ];
       };
     };
-    environment.systemPackages = [pkgs.xarchiver];
+    environment.systemPackages = [pkgs.file-roller];
 
     services = {
       tumbler.enable = true;

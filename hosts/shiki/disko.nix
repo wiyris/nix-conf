@@ -18,7 +18,7 @@
               };
             };
             swap = {
-              size = "8G";
+              size = "1G";
               content = {
                 type = "swap";
                 # resumeDevice = true; # hibernation

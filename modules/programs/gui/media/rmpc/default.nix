@@ -4,8 +4,7 @@
   ...
 }: let
   cfg = config.custom.programs.rmpc;
-  # inherit (config.xdg.userDirs) music;
-  musicDirectory = /home/tsubaki/Music/sc;
+  inherit (config.globals) musicDirectory;
 in {
   options.custom.programs.rmpc.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {

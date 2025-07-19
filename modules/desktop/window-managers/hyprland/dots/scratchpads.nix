@@ -22,12 +22,12 @@ in {
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty --class='ghostty.scratch' --background-opacity='${opacity}' -e fish"
-        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e rmpc"
+        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e rmpc"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e btop"
       ]
       ++ lib.optionals osConfig.custom.programs.kitty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity}'"
-        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
+        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=${opacity} -e btop'"
       ];
 

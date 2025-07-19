@@ -17,11 +17,11 @@ in {
 
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
-      globals.defaultBrowser = "zen-beta";
+      globals.defaultBrowser = "firefox";
       xdg.mimeApps.defaultApplications = {
-        "text/html" = "zen-beta.desktop";
-        "x-scheme-handler/http" = "zen-beta.desktop";
-        "x-scheme-handler/https" = "zen-beta.desktop";
+        "text/html" = "firefox.desktop";
+        "x-scheme-handler/http" = "firefox.desktop";
+        "x-scheme-handler/https" = "firefox.desktop";
       };
     })
     (lib.mkIf cfg.enable {

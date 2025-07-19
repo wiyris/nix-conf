@@ -50,7 +50,7 @@ in {
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"
       "animation slide right, tag:float_side"
-      "bordersize 1, tag:float_side"
+      # "bordersize 1, tag:float_side"
     ];
   };
 }

@@ -13,22 +13,22 @@ in {
   wayland.windowManager.hyprland.settings = {
     bind =
       [
-        "$mainMod, S, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
-        "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
-        "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
+        "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
+        # "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
+        # "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.custom.programs.foot.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch foot --app-id foot-scratch"
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch ghostty --class='ghostty.scratch' --background-opacity='${opacity}' -e fish"
-        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e rmpc"
-        "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e btop"
+        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e rmpc"
+        # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghosttyscratch --class='ghostty.scratch' --background-opacity='${opacity}' -e btop"
       ]
       ++ lib.optionals osConfig.custom.programs.kitty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity}'"
-        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
-        "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=${opacity} -e btop'"
+        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
+        # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=${opacity} -e btop'"
       ];
 
     windowrulev2 = [
@@ -45,7 +45,7 @@ in {
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"
-      "bordersize 1, tag:float_md"
+      # "bordersize 1, tag:float_md"
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"

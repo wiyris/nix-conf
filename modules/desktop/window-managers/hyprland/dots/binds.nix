@@ -7,7 +7,7 @@
       "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
       "$mainMod, J, exec, uwsm-app -- $browser"
       "$mainMod SHIFT, J, exec, uwsm-app -- $browser --private-window"
-      "$mainMod, V, exec, uwsm-app -- $explore"
+      "$mainMod, M, exec, [float;] uwsm-app -- $explore"
 
       # Rofi
       "$mainMod, T, exec, uwsm-app -- $launcher"
@@ -23,8 +23,9 @@
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
       "$mainMod SHIFT, H, fullscreen"
-      "$mainMod, W, togglefloating"
-      "$mainMod, C, exec, hyprctl dispatch centerwindow 1"
+      "$mainMod, S, togglefloating"
+      "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
+      "$mainMod, PERIOD, cyclenext"
       # "$mainMod, U, togglesplit"
       # "$mainMod, semicolon, pseudo"
 
@@ -32,6 +33,9 @@
       # "$mainMod, O, togglegroup"
       # "$mainMod SHIFT, O, lockactivegroup, toggle"
       # "$mainMod, TAB, changegroupactive"
+
+      # Set sticky
+      "$mainMod, C, pin"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

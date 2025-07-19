@@ -5,7 +5,7 @@
       "float, tag:float"
       "float, tag:float-pin"
 
-      "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$"
+      "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$"
       "tag +float_md, class:^(mpv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 

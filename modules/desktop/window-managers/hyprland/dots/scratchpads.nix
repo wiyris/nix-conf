@@ -14,8 +14,8 @@ in {
     bind =
       [
         "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
-        # "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
-        # "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
+        "$mainMod SHIFT, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
+        "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.custom.programs.foot.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch foot --app-id foot-scratch"

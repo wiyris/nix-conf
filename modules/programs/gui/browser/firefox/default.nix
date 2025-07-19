@@ -10,7 +10,7 @@
   cfg = config.custom.programs.firefox;
   inherit (config.globals) userName;
 in {
-  options.custom.programs.firefox.enable = {
+  options.custom.programs.firefox = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };
@@ -18,7 +18,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultBrowser = "firefox";
-      xdg.mimeApps.defaultApplications = {
+      hm.xdg.mimeApps.defaultApplications = {
         "text/html" = "firefox.desktop";
         "x-scheme-handler/http" = "firefox.desktop";
         "x-scheme-handler/https" = "firefox.desktop";

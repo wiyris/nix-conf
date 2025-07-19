@@ -15,7 +15,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultBrowser = "zen-beta";
-      xdg.mimeApps.defaultApplications = {
+      hm.xdg.mimeApps.defaultApplications = {
         "text/html" = "zen-beta.desktop";
         "x-scheme-handler/http" = "zen-beta.desktop";
         "x-scheme-handler/https" = "zen-beta.desktop";

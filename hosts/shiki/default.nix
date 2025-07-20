@@ -70,9 +70,9 @@ in {
     custom.programs.chromium.enable = true;
     custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
-    # custom.programs.librewolf.enable = true;
-    # custom.programs.mullvad-browser.enable = true;
-    # custom.programs.tor-browser.enable = true;
+    custom.programs.librewolf.enable = true;
+    custom.programs.mullvad-browser.enable = true;
+    custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
     custom.programs.mpv.enable = true;
@@ -91,7 +91,7 @@ in {
     # gaming
     # gaming.lutris.enable = true;
     # gaming.osu.enable = true;
-    # gaming.optimize.enable = true;
+    gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     # window-managers

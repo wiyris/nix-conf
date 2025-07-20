@@ -49,6 +49,7 @@
     ./programs/gui/browser/firefox
     ./programs/gui/browser/librewolf
     ./programs/gui/browser/mullvad-browser
+    ./programs/gui/browser/qutebrowser
     ./programs/gui/browser/schizofox
     ./programs/gui/browser/tor-browser
     ./programs/gui/browser/zen-browser

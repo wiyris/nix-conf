@@ -72,6 +72,7 @@ in {
     # custom.programs.schizofox.enable = true;
     custom.programs.librewolf.enable = true;
     custom.programs.mullvad-browser.enable = true;
+    custom.programs.qutebrowser.enable = true;
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 

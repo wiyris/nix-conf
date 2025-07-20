@@ -13,6 +13,7 @@ in {
   wayland.windowManager.hyprland.settings = {
     bind =
       [
+        # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
         "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default kagi-scratchpad"
         "$mainMod SHIFT, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default kagi-translate-scratchpad"
         "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"

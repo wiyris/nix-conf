@@ -9,7 +9,7 @@
 
     serviceConfig = {
       Type = "simple";
-      User = "tsubaki";
+      User = "lms";
       ExecStart = "lms";
       Restart = "always";
       RestartSec = 30;

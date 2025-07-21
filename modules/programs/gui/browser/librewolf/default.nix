@@ -15,9 +15,8 @@ in {
       stylix.targets.librewolf.profileNames = ["${userName}"];
       programs.librewolf = {
         enable = true;
-        # policies = import ../firefox/dots/policies.nix;
         profiles.${userName} = {
-          search = import ../firefox/dots/search.nix;
+          # search = import ../firefox/dots/search.nix;
           extensions.packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
             kagi-search
             proton-pass

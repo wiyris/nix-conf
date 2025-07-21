@@ -50,6 +50,7 @@ in {
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"
+      "animation slide bottom, tag:float_md"
       "animation slide right, tag:float_side"
       # "bordersize 1, tag:float_side"
     ];

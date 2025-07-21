@@ -61,7 +61,7 @@ in {
     custom.programs.yazi.enable = true;
 
     # gui
-    custom.programs.ghostty.isDefault = true;
+    custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
 
     custom.programs.foot.enable = true;

@@ -36,13 +36,14 @@ in {
 
     # cli
     programs.fish.enable = true;
+    custom.programs.fish.enable = true;
+    custom.programs.fish.isDefault = true;
 
     custom.programs.aliases.enable = true;
     custom.programs.bat.enable = true;
     custom.programs.core-utils.enable = true;
     custom.programs.eza.enable = true;
     custom.programs.fastfetch.enable = true;
-    custom.programs.fish.enable = true;
     custom.programs.fzf.enable = true;
     custom.programs.git.enable = true;
     custom.programs.ripgrep.enable = true;

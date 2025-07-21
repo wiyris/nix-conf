@@ -24,6 +24,12 @@
       example = "/home/tsubaki/Music";
       description = "Path of music directory";
     };
+    defaultShell = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+      example = "bash";
+      description = "Default Command-line shell";
+    };
     defaultTerminal = lib.mkOption {
       type = lib.types.str;
       default = "";

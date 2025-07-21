@@ -23,8 +23,8 @@ in {
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e fish'"
-        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e rmpc'"
-        # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghosttyscratch 'ghostty --class='ghostty.scratch' --background-opacity='${opacity}' -e btop'"
+        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghosttyscratch 'ghostty --class=rmpc.ghostty.scratch --background-opacity=${opacity} -e rmpc'"
+        # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghosttyscratch 'ghostty --class='btop.ghostty.scratch' --background-opacity='${opacity}' -e btop'"
       ]
       ++ lib.optionals osConfig.custom.programs.kitty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity}'"

@@ -60,11 +60,11 @@ in {
     custom.programs.yazi.enable = true;
 
     # gui
-    custom.programs.kitty.isDefault = true;
+    custom.programs.ghostty.isDefault = true;
     custom.programs.zen-browser.isDefault = true;
 
     custom.programs.foot.enable = true;
-    # custom.programs.ghostty.enable = true;
+    custom.programs.ghostty.enable = true;
     custom.programs.kitty.enable = true;
 
     custom.programs.chromium.enable = true;

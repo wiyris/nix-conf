@@ -6,6 +6,7 @@
   ...
 }: let
   betterfox = inputs.betterfox;
+  inherit (config.globals) userName;
   cfg = config.custom.programs.zen-browser;
 in {
   options.custom.programs.zen-browser = {
@@ -22,14 +23,31 @@ in {
       };
     })
     (lib.mkIf cfg.enable {
-      environment.systemPackages = [inputs.zen-browser.packages."${pkgs.system}".default];
+      # environment.systemPackages = [inputs.zen-browser.packages."${pkgs.system}".default];
       hm = {
         imports = [inputs.zen-browser.homeModules.beta];
+        stylix.targets.zen-browser.profileNames = ["${userName}"];
         programs.zen-browser = {
           enable = true;
-          # extraConfig = ''
-          #   ${builtins.readFile "${betterfox}/zen/user.js"}
-          # '';
+          profiles.${userName} = {
+            search = import ../firefox/dots/search.nix;
+
+            extensions = {
+              force = true;
+              packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
+                kagi-search
+                proton-pass
+                simplelogin
+                stylus
+                surfingkeys
+                ublock-origin
+              ];
+            };
+
+            extraConfig = ''
+              ${builtins.readFile "${betterfox}/zen/user.js"}
+            '';
+          };
         };
       };
     })

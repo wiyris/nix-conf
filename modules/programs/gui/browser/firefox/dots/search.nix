@@ -5,22 +5,8 @@
   engines = {
     leta = {
       name = "leta";
-      definedAliases = ["l"];
-      urls = [
-        {
-          template = "https://leta.mullvad.net";
-          params = [
-            {
-              name = "q";
-              value = "{searchTerms}";
-            }
-            {
-              name = "engine";
-              vulue = "google";
-            }
-          ];
-        }
-      ];
+      definedAliases = ["lt"];
+      urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
     };
     "NixOS packages" = {
       urls = [
@@ -43,7 +29,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["@np"];
+      definedAliases = ["np"];
     };
     "NixOS options" = {
       urls = [
@@ -66,7 +52,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["@no"];
+      definedAliases = ["no"];
     };
     "Home Manager options" = {
       urls = [
@@ -75,7 +61,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["@hm"];
+      definedAliases = ["hm"];
     };
     "Github" = {
       urls = [
@@ -83,23 +69,23 @@
           template = "https://github.com/search?q={searchTerms}&ref=opensearch&type=code";
         }
       ];
-      definedAliases = ["@gh"];
+      definedAliases = ["gh"];
     };
-    # startpage = {
-    #   name = "startpage";
-    #   urls = [{template = "https://www.startpage.com/sp/search?query={searchTerms}";}];
-    #   definedAliases = ["s"];
-    # };
-    # searxngPriv = {
-    #   name = "Searxng Priv.au";
-    #   urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=en&time_range=&safesearch=0&theme=simple";}];
-    #   definedAliases = ["xp"];
-    # };
-    # searxngPrivjp = {
-    #   name = "Searxng Priv.au JP";
-    #   urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";}];
-    #   definedAliases = ["xj"];
-    # };
+    startpage = {
+      name = "startpage";
+      urls = [{template = "https://www.startpage.com/sp/search?query={searchTerms}";}];
+      definedAliases = ["sp"];
+    };
+    searxngPriv = {
+      name = "Searxng Priv.au";
+      urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=en&time_range=&safesearch=0&theme=simple";}];
+      definedAliases = ["xp"];
+    };
+    searxngPrivjp = {
+      name = "Searxng Priv.au JP";
+      urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";}];
+      definedAliases = ["xj"];
+    };
     # nixPkgs = {
     #   name = "Nix packages";
     #   urls = [{template = "https://search.nixos.org/packages?channel=unstable&size=50&sort=relevance&type=packages&query={searchTerms}";}];

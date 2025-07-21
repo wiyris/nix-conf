@@ -62,6 +62,7 @@
     ./programs/gui/general/gtk
     ./programs/gui/general/qt
     ./programs/gui/general/thunar
+    ./programs/gui/media/freetube
     ./programs/gui/media/mpv
     ./programs/gui/media/pqiv
     ./programs/gui/media/rmpc

@@ -62,7 +62,7 @@ in {
 
     # gui
     custom.programs.ghostty.isDefault = true;
-    custom.programs.zen-browser.isDefault = true;
+    custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
 
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;

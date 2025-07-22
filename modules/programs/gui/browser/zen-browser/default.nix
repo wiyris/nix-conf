@@ -30,9 +30,9 @@ in {
         programs.zen-browser = {
           enable = true;
           nativeMessagingHosts = [pkgs.firefoxpwa];
-          policies = import ../firefox/dots/policies.nix;
+          policies = import ../share/policies.nix;
           profiles.${userName} = {
-            search = import ../firefox/dots/search.nix;
+            search = import ../share/search.nix;
 
             extensions = {
               force = true;

@@ -76,13 +76,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-on-droid = {
+      url = "github:nix-community/nix-on-droid";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    arkenfox-nixos = {
-      url = "github:dwarfmaster/arkenfox-nixos";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -91,19 +96,9 @@
       flake = false;
     };
 
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     zen-browser-catppuccin = {
       url = "github:catppuccin/zen-browser";
       flake = false;
-    };
-
-    nix-on-droid = {
-      url = "github:nix-community/nix-on-droid";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 }

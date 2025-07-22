@@ -96,6 +96,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser-catppuccin = {
+      url = "github:catppuccin/zen-browser";
+      flake = false;
+    };
+
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid";
       inputs.nixpkgs.follows = "nixpkgs";

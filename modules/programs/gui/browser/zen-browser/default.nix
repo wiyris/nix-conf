@@ -39,6 +39,7 @@ in {
           enable = true;
           policies = import ../share/policies;
           profiles.${userName} = {
+            bookmarks = import ../share/bookmarks;
             search = import ../share/search;
             containers = import ../share/containers;
             containersForce = true;

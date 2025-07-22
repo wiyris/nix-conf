@@ -1,12 +1,10 @@
 {
   lib,
-  pkgs,
   inputs,
   config,
   ...
 }: let
   betterfox = inputs.betterfox;
-  myOverride = ./dots/user.js;
   cfg = config.custom.programs.firefox;
   inherit (config.globals) userName;
 in {
@@ -26,7 +24,6 @@ in {
     })
     (lib.mkIf cfg.enable {
       hm = {
-        # home.packages = [pkgs.firefox];
         stylix.targets.firefox.profileNames = ["${userName}"];
         programs.firefox = {
           enable = true;

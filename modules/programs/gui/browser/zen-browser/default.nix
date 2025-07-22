@@ -1,7 +1,6 @@
 {
   inputs,
   lib,
-  pkgs,
   config,
   ...
 }: let
@@ -24,7 +23,6 @@ in {
       };
     })
     (lib.mkIf cfg.enable {
-      # environment.systemPackages = [inputs.zen-browser.packages."${pkgs.system}".default];
       hm = {
         imports = [inputs.zen-browser.homeModules.beta];
         # stylix.targets.zen-browser.profileNames = [${userName}];
@@ -39,7 +37,6 @@ in {
 
         programs.zen-browser = {
           enable = true;
-          nativeMessagingHosts = [pkgs.firefoxpwa];
           policies = import ../share/policies;
           profiles.${userName} = {
             search = import ../share/search;

@@ -1353,7 +1353,8 @@
         "schizofox": "schizofox",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
-        "zen-browser": "zen-browser"
+        "zen-browser": "zen-browser",
+        "zen-browser-catppuccin": "zen-browser-catppuccin"
       }
     },
     "schizofox": {
@@ -1704,6 +1705,22 @@
       "original": {
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
+        "type": "github"
+      }
+    },
+    "zen-browser-catppuccin": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750430416,
+        "narHash": "sha256-cccLZSrUQ9wxmXnEntbQAfGDFB9gQmIM9pa9BXce1Xo=",
+        "owner": "catppuccin",
+        "repo": "zen-browser",
+        "rev": "e171e2a1d94ed70f39ff0ac452aef335f8b233c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "zen-browser",
         "type": "github"
       }
     }

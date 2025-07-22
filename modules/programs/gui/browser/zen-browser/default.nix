@@ -5,9 +5,14 @@
   ...
 }: let
   betterfox = inputs.betterfox;
-  catppuccin = inputs.zen-browser-catppuccin;
   inherit (config.globals) userName;
+  altUser = "skw";
   cfg = config.custom.programs.zen-browser;
+  catppuccin = {
+    source = "${inputs.zen-browser-catppuccin}/themes/Mocha/Mauve/";
+    recursive = true;
+    force = true;
+  };
 in {
   options.custom.programs.zen-browser = {
     enable = lib.mkEnableOption {};
@@ -25,15 +30,11 @@ in {
     (lib.mkIf cfg.enable {
       hm = {
         imports = [inputs.zen-browser.homeModules.beta];
-        # stylix.targets.zen-browser.profileNames = [${userName}];
+        # stylix.targets.zen-browser.profileNames = [];
         stylix.targets.zen-browser.enable = false;
 
-        # better catppuccin theme
-        home.file.".zen/${userName}/chrome" = {
-          source = "${catppuccin}/themes/Mocha/Mauve/";
-          recursive = true;
-          force = true;
-        };
+        home.file.".zen/${userName}/chrome" = catppuccin;
+        home.file.".zen/${altUser}/chrome" = catppuccin;
 
         programs.zen-browser = {
           enable = true;
@@ -51,7 +52,7 @@ in {
             '';
           };
 
-          profiles.skw = {
+          profiles.${altUser} = {
             id = 1;
             search = import ../share/search;
             extraConfig = ''

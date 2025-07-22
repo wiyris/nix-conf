@@ -1,4 +1,6 @@
 {
+  ExtensionSettings = import ../extensions/default.nix;
+
   CaptivePortal = false;
   DisableTelemetry = true;
   DisableFirefoxStudies = true;
@@ -19,5 +21,4 @@
     Snippets = false;
   };
   SearchBar = "unified";
-  ExtensionSettings."*".installation_mode = "force_installed";
 }

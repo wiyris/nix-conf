@@ -43,6 +43,7 @@ in {
           policies = import ../share/policies/default.nix;
           profiles.${userName} = {
             search = import ../share/search/default.nix;
+            containers = import ../share/containers/default.nix;
 
             extensions = {
               force = true;

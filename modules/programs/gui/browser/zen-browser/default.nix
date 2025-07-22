@@ -29,6 +29,8 @@ in {
         stylix.targets.zen-browser.profileNames = ["${userName}"];
         programs.zen-browser = {
           enable = true;
+          nativeMessagingHosts = [pkgs.firefoxpwa];
+          policies = import ../firefox/dots/policies.nix;
           profiles.${userName} = {
             search = import ../firefox/dots/search.nix;
 
@@ -36,6 +38,7 @@ in {
               force = true;
               packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
                 kagi-search
+                libredirect
                 proton-pass
                 simplelogin
                 stylus

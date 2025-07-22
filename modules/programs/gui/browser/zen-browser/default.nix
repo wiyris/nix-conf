@@ -44,19 +44,7 @@ in {
           profiles.${userName} = {
             search = import ../share/search/default.nix;
             containers = import ../share/containers/default.nix;
-
-            extensions = {
-              force = true;
-              packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
-                kagi-search
-                libredirect
-                proton-pass
-                simplelogin
-                stylus
-                surfingkeys
-                ublock-origin
-              ];
-            };
+            containersForce = true;
 
             extraConfig = ''
               ${builtins.readFile "${betterfox}/zen/user.js"}

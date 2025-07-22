@@ -14,8 +14,9 @@ in {
       ]
       ++ lib.optionals config.bloat.enable [
         gimp3
-        # grayjay
-        # gpu-screen-recorder-gtk
+        grayjay
+        gpu-screen-recorder-gtk
       ];
+    programs.gpu-screen-recorder.enable = true;
   };
 }

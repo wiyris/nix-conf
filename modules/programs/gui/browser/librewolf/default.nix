@@ -17,14 +17,6 @@ in {
         enable = true;
         profiles.${userName} = {
           # search = import ../firefox/dots/search.nix;
-          extensions.packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
-            kagi-search
-            proton-pass
-            simplelogin
-            stylus
-            surfingkeys
-            # ublock-origin
-          ];
 
           # extraConfig = ''
           #   ${builtins.readFile "${betterfox}/user.js"}

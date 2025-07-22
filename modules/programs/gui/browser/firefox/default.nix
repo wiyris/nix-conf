@@ -35,18 +35,6 @@ in {
             search = import ./dots/search.nix;
             settings = import ./dots/settings.nix;
 
-            extensions = {
-              force = true;
-              packages = with inputs.nur.legacyPackages."${pkgs.system}".repos.rycee.firefox-addons; [
-                kagi-search
-                proton-pass
-                simplelogin
-                stylus
-                surfingkeys
-                ublock-origin
-              ];
-            };
-
             extraConfig = ''
               ${builtins.readFile "${betterfox}/user.js"}
               ${builtins.readFile "${betterfox}/Fastfox.js"}

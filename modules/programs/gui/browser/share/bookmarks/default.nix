@@ -1,4 +1,5 @@
 {
+  force = true;
   settings = [
     {
       name = "Nix";
@@ -34,16 +35,8 @@
       name = "Collection";
       bookmarks = [
         {
-          name = "ACGN";
-          url = "https://www.myiys.com/";
-        }
-        {
-          name = "MirrorZ";
-          url = "https://mirrorz.org/site";
-        }
-        {
-          name = "Pling";
-          url = "https://www.pling.com/";
+          name = "wallhaven";
+          url = "https://wallhaven.cc/";
         }
       ];
     }

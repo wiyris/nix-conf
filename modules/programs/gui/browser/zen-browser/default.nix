@@ -40,10 +40,10 @@ in {
         programs.zen-browser = {
           enable = true;
           nativeMessagingHosts = [pkgs.firefoxpwa];
-          policies = import ../share/policies/default.nix;
+          policies = import ../share/policies;
           profiles.${userName} = {
-            search = import ../share/search/default.nix;
-            containers = import ../share/containers/default.nix;
+            search = import ../share/search;
+            containers = import ../share/containers;
             containersForce = true;
 
             extraConfig = ''

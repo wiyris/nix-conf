@@ -16,7 +16,7 @@ in {
       programs.librewolf = {
         enable = true;
         profiles.${userName} = {
-          # search = import ../firefox/dots/search.nix;
+          search = import ../share/search;
 
           # extraConfig = ''
           #   ${builtins.readFile "${betterfox}/user.js"}

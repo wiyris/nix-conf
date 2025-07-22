@@ -30,17 +30,13 @@ in {
         stylix.targets.firefox.profileNames = ["${userName}"];
         programs.firefox = {
           enable = true;
-          policies = import ./dots/policies.nix;
+          policies = import ../share/policies;
           profiles.${userName} = {
-            search = import ./dots/search.nix;
+            search = import ../share/search;
             settings = import ./dots/settings.nix;
 
             extraConfig = ''
               ${builtins.readFile "${betterfox}/user.js"}
-              ${builtins.readFile "${betterfox}/Fastfox.js"}
-              ${builtins.readFile "${betterfox}/Peskyfox.js"}
-              ${builtins.readFile "${betterfox}/Smoothfox.js"}
-              ${builtins.readFile myOverride}
             '';
           };
         };

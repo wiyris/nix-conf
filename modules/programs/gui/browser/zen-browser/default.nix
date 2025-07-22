@@ -39,11 +39,21 @@ in {
           enable = true;
           policies = import ../share/policies;
           profiles.${userName} = {
+            isDefault = true;
+
             bookmarks = import ../share/bookmarks;
             search = import ../share/search;
             containers = import ../share/containers;
             containersForce = true;
 
+            extraConfig = ''
+              ${builtins.readFile "${betterfox}/zen/user.js"}
+            '';
+          };
+
+          profiles.skw = {
+            id = 1;
+            search = import ../share/search;
             extraConfig = ''
               ${builtins.readFile "${betterfox}/zen/user.js"}
             '';

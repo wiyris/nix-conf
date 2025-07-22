@@ -17,7 +17,7 @@
     icon = "cart";
     color = "yellow";
   };
-  Google = {
+  google = {
     id = 4;
     name = "Google";
     icon = "circle";

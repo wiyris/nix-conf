@@ -6,6 +6,7 @@
   ...
 }: let
   betterfox = inputs.betterfox;
+  catppuccin = inputs.zen-browser-catppuccin;
   inherit (config.globals) userName;
   cfg = config.custom.programs.zen-browser;
 in {
@@ -26,7 +27,16 @@ in {
       # environment.systemPackages = [inputs.zen-browser.packages."${pkgs.system}".default];
       hm = {
         imports = [inputs.zen-browser.homeModules.beta];
-        stylix.targets.zen-browser.profileNames = ["${userName}"];
+        # stylix.targets.zen-browser.profileNames = [${userName}];
+        stylix.targets.zen-browser.enable = false;
+
+        # better catppuccin theme
+        home.file.".zen/${userName}/chrome" = {
+          source = "${catppuccin}/themes/Mocha/Mauve/";
+          recursive = true;
+          force = true;
+        };
+
         programs.zen-browser = {
           enable = true;
           nativeMessagingHosts = [pkgs.firefoxpwa];

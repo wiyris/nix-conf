@@ -47,15 +47,12 @@ in {
       "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
 
       "float, tag:float_md"
-      "pin, tag:float_md"
       "size 70% 70%, tag:float_md"
-      # "bordersize 1, tag:float_md"
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"
       "animation slide bottom, tag:float_md"
       "animation slide right, tag:float_side"
-      # "bordersize 1, tag:float_side"
     ];
   };
 }

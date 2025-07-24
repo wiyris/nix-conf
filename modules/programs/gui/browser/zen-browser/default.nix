@@ -36,8 +36,6 @@ in {
         home.file.".zen/${userName}/chrome" = catppuccin;
         home.file.".zen/${altUser}/chrome" = catppuccin;
 
-        home.file.".zen/${userName}/zen-keyboard-shortcuts" = ./dots/zen-keyboard-shortcuts.json;
-
         programs.zen-browser = {
           enable = true;
           policies = import ../share/policies;

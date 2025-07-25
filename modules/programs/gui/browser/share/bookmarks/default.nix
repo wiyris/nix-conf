@@ -69,7 +69,7 @@
         {
           name = "wallhaven";
           url = "https://wallhaven.cc/";
-          tags = "wallpaper";
+          tags = ["wallpaper"];
         }
       ];
     }

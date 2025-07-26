@@ -13,6 +13,7 @@
       "$mainMod, T, exec, uwsm-app -- $launcher"
       "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
       "$mainMod, Escape, exec, uwsm-app -- powermenu"
+      "$mainMod SHIFT, W, exec, uwsm-app -- wallpaper"
       ", Print, exec, uwsm-app -- screenshot"
 
       # Bar

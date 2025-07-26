@@ -20,20 +20,12 @@ choice=$(
     $rofi_cmd
 )
 
--z "$choice" ]; then
-  exit 1
-fi
+wallpaper="$wallpapers_dir/$choice"
 
-WALLPAPER="$wallpapers_dir/$choice"
-
-if pgrep -x "hyprpaper" >/dev/null; then
-  hyprctl hyprpaper reload ,"$WALLPAPER" && notify-send "Wallpaper Changed" -i "$WALLPAPER" --app-name=Wallpaper
-elif pgrep -x "swww" >/dev/null; then
-  swww img "$WALLPAPER" \
-    --transition-bezier 0.5,1.19,.8,.4 \
-    --transition-type wipe \
-    --transition-duration 2 \
-    --transition-fps 75 && notify-send "Wallpaper Changed" -i "$WALLPAPER" --app-name=Wallpaper
-fi
+swww img "$wallpaper" \
+  --transition-bezier 0.5,1.19,.8,.4 \
+  --transition-type wipe \
+  --transition-duration 2 \
+  --transition-fps 75 && notify-send "Wallpaper Changed" -i "$wallpaper" --app-name=Wallpaper
 
 exit 1

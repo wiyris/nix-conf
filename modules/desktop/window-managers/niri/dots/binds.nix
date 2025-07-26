@@ -1,7 +1,13 @@
-{config, ...}: {
+{
+  config,
+  osConfig,
+  ...
+}: let
+  inherit (osConfig.globals) defaultTerminal defaultBrowser;
+in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
-    "Mod+Space".action = spawn "ghostty";
-    "Mod+J".action = spawn "zen-beta";
+    "Mod+Space".action = spawn "${defaultTerminal}";
+    "Mod+J".action = spawn "${defaultBrowser}";
     "Mod+T".action = spawn "rofi" "-show" "drun";
     # "Mod+K".action = spawn "thunar";
     # "Mod+Y".action = screenshot;

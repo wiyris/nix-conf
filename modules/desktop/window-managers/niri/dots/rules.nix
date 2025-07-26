@@ -78,29 +78,29 @@ let
     #   ];
     #   block-out-from = "screen-capture";
     # }
-    {
-      matches = [
-        {app-id = "^steam$";}
-        {app-id = "^vesktop$";}
-        {app-id = "^GoldenDict-ng$";}
-        {app-id = "^spotify$";}
-        {app-id = "^thuderbird$";}
-      ];
-      open-on-workspace = "daemon";
-    }
-    {
-      matches = [
-        {app-id = "^zen-beta$";}
-        {app-id = "^firefox$";}
-        {app-id = "^librewolf$";}
-        {app-id = "^chromium$";}
-      ];
-      open-on-workspace = "web";
-    }
+    # {
+    #   matches = [
+    #     {app-id = "^steam$";}
+    #     {app-id = "^vesktop$";}
+    #     {app-id = "^GoldenDict-ng$";}
+    #     {app-id = "^spotify$";}
+    #     {app-id = "^thuderbird$";}
+    #   ];
+    #   open-on-workspace = "daemon";
+    # }
+    # {
+    #   matches = [
+    #     {app-id = "^zen-beta$";}
+    #     {app-id = "^firefox$";}
+    #     {app-id = "^librewolf$";}
+    #     {app-id = "^chromium$";}
+    #   ];
+    #   open-on-workspace = "web";
+    # }
     {
       matches = [
         {app-id = "^kitty$";}
-        {app-id = "^ghostty$";}
+        {app-id = "^com.mitchellh.ghostty$";}
         {app-id = "^thunar$";}
       ];
       open-maximized = false;

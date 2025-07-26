@@ -1,13 +1,13 @@
 {config, ...}: {
   programs.niri.settings.binds = with config.lib.niri.actions; {
-    "Mod+Return".action = spawn "ghostty";
+    "Mod+Space".action = spawn "ghostty";
     "Mod+J".action = spawn "zen-beta";
     "Mod+T".action = spawn "rofi" "-show" "drun";
     # "Mod+K".action = spawn "thunar";
     # "Mod+Y".action = screenshot;
     # "Mod+Apostrophe".action = spawn "/home/tsubaki/.config/rofi/scripts/wallpaper/wallpaper";
-    "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
-    "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
+    # "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
+    # "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
     # "Mod+Escape".action = quit;
 
     "Mod+Q".action = close-window;
@@ -20,7 +20,7 @@
     "Mod+H".action = maximize-column;
     "Mod+Shift+H".action = fullscreen-window;
 
-    "Mod+O".action = toggle-overview;
+    # "Mod+O".action = toggle-overview;
 
     "Mod+V".action = center-column;
     "Mod+S".action = toggle-window-floating;
@@ -36,11 +36,16 @@
     # "Mod+Shift+Apostrophe".action = consume-or-expel-window-left;
     # "Mod+Shift+Period".action = consume-or-expel-window-right;
 
-    # "Mod+F".action = focus-workspace "daemon";
-    # "Mod+P".action = focus-workspace "web";
+    # "Mod+F".action = focus-workspace "1";
+    # "Mod+P".action = focus-workspace "2";
     # "Mod+D".action = focus-workspace "3";
     # "Mod+L".action = focus-workspace "4";
     # "Mod+X".action = focus-workspace "5";
+    # "Mod+Semicolon".action = focus-workspace "6";
+    # "Mod+U".action = focus-workspace "7";
+    # "Mod+O".action = focus-workspace "8";
+    # "Mod+Y".action = focus-workspace "9";
+    # "Mod+B".action = focus-workspace "10";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

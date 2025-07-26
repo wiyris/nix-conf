@@ -26,15 +26,6 @@ in {
         };
       };
 
-      # desktop.uwsm.waylandCompositors = {
-      #   hyprland = {
-      #     prettyName = "hyprland";
-      #     comment = "Hyprland compositor managed by UWSM";
-      #     binPath = "/run/current-system/sw/bin/Hyprland";
-      #     xdgCurrentDesktop = "Hyprland";
-      #   };
-      # };
-
       xdg.portal.config.Hyprland.default = ["hyprland" "gtk"];
 
       hm = {

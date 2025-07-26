@@ -48,6 +48,7 @@ in {
             ./dots/general.nix
             ./dots/input.nix
             ./dots/misc.nix
+            ./dots/plugins.nix
             ./dots/rules.nix
             ./dots/scratchpads.nix
           ]

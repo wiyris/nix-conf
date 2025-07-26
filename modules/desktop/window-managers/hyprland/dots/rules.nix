@@ -28,7 +28,7 @@
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
 
       # Windows opacity
-      "opacity 0.8, class:(thunar)"
+      # "opacity 0.8, class:(thunar)"
     ];
 
     layerrule = [

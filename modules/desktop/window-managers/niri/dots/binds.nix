@@ -7,6 +7,7 @@
 in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Space".action = spawn "${defaultTerminal}";
+    "Mod+Return".action = spawn "${defaultTerminal}";
     "Mod+J".action = spawn "${defaultBrowser}";
     "Mod+T".action = spawn "rofi" "-show" "drun";
     # "Mod+K".action = spawn "thunar";
@@ -42,16 +43,16 @@ in {
     # "Mod+Shift+Apostrophe".action = consume-or-expel-window-left;
     # "Mod+Shift+Period".action = consume-or-expel-window-right;
 
-    # "Mod+F".action = focus-workspace "1";
-    # "Mod+P".action = focus-workspace "2";
-    # "Mod+D".action = focus-workspace "3";
-    # "Mod+L".action = focus-workspace "4";
-    # "Mod+X".action = focus-workspace "5";
-    # "Mod+Semicolon".action = focus-workspace "6";
-    # "Mod+U".action = focus-workspace "7";
-    # "Mod+O".action = focus-workspace "8";
-    # "Mod+Y".action = focus-workspace "9";
-    # "Mod+B".action = focus-workspace "10";
+    "Mod+F".action = focus-workspace "1";
+    "Mod+P".action = focus-workspace "2";
+    "Mod+D".action = focus-workspace "3";
+    "Mod+L".action = focus-workspace "4";
+    "Mod+X".action = focus-workspace "5";
+    "Mod+Semicolon".action = focus-workspace "6";
+    "Mod+U".action = focus-workspace "7";
+    "Mod+O".action = focus-workspace "8";
+    "Mod+Y".action = focus-workspace "9";
+    "Mod+B".action = focus-workspace "10";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

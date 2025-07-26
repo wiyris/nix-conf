@@ -1,12 +1,36 @@
 let
-  # workspaces = {
-  #   "1" = {
-  #     name = "daemon";
-  #   };
-  #   "2" = {
-  #     name = "web";
-  #   };
-  # };
+  workspaces = {
+    "1" = {
+      name = "browser";
+    };
+    "2" = {
+      name = "editor";
+    };
+    "3" = {
+      name = "terminal";
+    };
+    "4" = {
+      name = "media";
+    };
+    "5" = {
+      name = "game";
+    };
+    "6" = {
+      name = "steam";
+    };
+    "7" = {
+      name = "dict";
+    };
+    "8" = {
+      name = "spot";
+    };
+    "9" = {
+      name = "vesktop";
+    };
+    "10" = {
+      name = "thunderbird";
+    };
+  };
   windowRules = [
     {
       geometry-corner-radius = let
@@ -108,7 +132,7 @@ let
   ];
 in {
   programs.niri.settings = {
-    # inherit workspaces;
+    inherit workspaces;
     window-rules = windowRules;
     # layer-rules = layerRules;
   };

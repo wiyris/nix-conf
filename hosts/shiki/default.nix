@@ -112,6 +112,7 @@ in {
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
     desktop.swayosd.enable = true;
+    desktop.swww.enable = true;
     desktop.uwsm.enable = true;
     desktop.waybar.enable = true;
     desktop.wayland-session.enable = true;

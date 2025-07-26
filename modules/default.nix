@@ -82,6 +82,7 @@
     ./desktop/addons/mime-apps
     ./desktop/addons/rofi
     ./desktop/addons/swayosd
+    ./desktop/addons/swww
     ./desktop/addons/uwsm
     ./desktop/addons/waybar
     ./desktop/addons/wayland-session

@@ -7,13 +7,9 @@ in {
     prefer-no-csd = true;
     hotkey-overlay.skip-at-startup = true;
 
-    environment = {
-      DISPLAY = ":0";
-    };
+    environment = {DISPLAY = ":0";};
 
-    spawn-at-startup = [
-      {command = ["uwsm-app waybar"];}
-    ];
+    spawn-at-startup = [{command = ["uwsm-app" "waybar"];}];
 
     input = {
       mouse = {
@@ -24,6 +20,13 @@ in {
       warp-mouse-to-focus.enable = true;
       workspace-auto-back-and-forth = true;
     };
+
+    overview = {
+      workspace-shadow.enable = false;
+      backdrop-color = "transparent";
+    };
+
+    layout = {background-color = "transparent";};
 
     cursor = {
       size = 32;
@@ -57,12 +60,23 @@ in {
 
       default-column-width = {proportion = 0.5;};
 
-      gaps = 10;
+      gaps = 6;
       struts = {
         left = 0;
         right = 0;
         top = 0;
         bottom = 0;
+      };
+
+      tab-indicator = {
+        hide-when-single-tab = true;
+        place-within-column = true;
+        position = "left";
+        corner-radius = 20.0;
+        gap = -12.0;
+        gaps-between-tabs = 10.0;
+        width = 4.0;
+        length.total-proportion = 0.1;
       };
     };
 

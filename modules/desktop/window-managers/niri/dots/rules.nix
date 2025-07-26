@@ -132,8 +132,13 @@ let
   ];
 in {
   programs.niri.settings = {
-    inherit workspaces;
+    # inherit workspaces;
     window-rules = windowRules;
-    # layer-rules = layerRules;
+    layer-rules = [
+      {
+        matches = [{namespace = "^swww-daemon$";}];
+        place-within-backdrop = true;
+      }
+    ];
   };
 }

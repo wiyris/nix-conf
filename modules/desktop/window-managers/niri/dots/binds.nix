@@ -10,12 +10,11 @@ in {
     "Mod+Return".action = spawn "${defaultTerminal}";
     "Mod+J".action = spawn "${defaultBrowser}";
     "Mod+T".action = spawn "rofi" "-show" "drun";
-    # "Mod+K".action = spawn "thunar";
-    # "Mod+Y".action = screenshot;
-    # "Mod+Apostrophe".action = spawn "/home/tsubaki/.config/rofi/scripts/wallpaper/wallpaper";
-    # "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
-    # "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
-    # "Mod+Escape".action = quit;
+    "Mod+Shift+W".action = spawn "wallpaper";
+    "Mod+M".action = spawn "thunar";
+    "Print".action = screenshot;
+    "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
+    "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
 
     "Mod+Q".action = close-window;
     "Mod+MouseMiddle".action = close-window;
@@ -27,10 +26,10 @@ in {
     "Mod+H".action = maximize-column;
     "Mod+Shift+H".action = fullscreen-window;
 
-    # "Mod+O".action = toggle-overview;
+    "Mod+Slash".action = toggle-overview;
 
-    "Mod+V".action = center-column;
     "Mod+S".action = toggle-window-floating;
+    "Mod+Shift+S".action = center-column;
     # "Mod+N".action = switch-focus-between-floating-and-tiling;
 
     "Mod+Minus".action = set-column-width "-5%";
@@ -43,16 +42,16 @@ in {
     # "Mod+Shift+Apostrophe".action = consume-or-expel-window-left;
     # "Mod+Shift+Period".action = consume-or-expel-window-right;
 
-    "Mod+F".action = focus-workspace "1";
-    "Mod+P".action = focus-workspace "2";
-    "Mod+D".action = focus-workspace "3";
-    "Mod+L".action = focus-workspace "4";
-    "Mod+X".action = focus-workspace "5";
-    "Mod+Semicolon".action = focus-workspace "6";
-    "Mod+U".action = focus-workspace "7";
-    "Mod+O".action = focus-workspace "8";
-    "Mod+Y".action = focus-workspace "9";
-    "Mod+B".action = focus-workspace "10";
+    # "Mod+F".action = focus-workspace "1";
+    # "Mod+P".action = focus-workspace "2";
+    # "Mod+D".action = focus-workspace "3";
+    # "Mod+L".action = focus-workspace "4";
+    # "Mod+X".action = focus-workspace "5";
+    # "Mod+Semicolon".action = focus-workspace "6";
+    # "Mod+U".action = focus-workspace "7";
+    # "Mod+O".action = focus-workspace "8";
+    # "Mod+Y".action = focus-workspace "9";
+    # "Mod+B".action = focus-workspace "10";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

@@ -14,7 +14,7 @@
   DisableFirefoxAccounts = true;
   DisableAccounts = true;
   DontCheckDefaultBrowser = true;
-  DisplayBookmarksToolbar = "never";
+  DisplayBookmarksToolbar = "always"; # always, never, newtab
   DisplayMenuBar = "default-off";
   FirefoxHome = {
     Pocket = false;

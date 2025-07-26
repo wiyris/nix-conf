@@ -57,6 +57,7 @@
     ./programs/gui/gaming/optimize
     ./programs/gui/gaming/osu
     ./programs/gui/gaming/steam
+    ./programs/gui/general/dolphin
     ./programs/gui/general/electron
     ./programs/gui/general/goldendict
     ./programs/gui/general/gtk

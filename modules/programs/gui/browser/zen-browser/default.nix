@@ -42,7 +42,7 @@ in {
           profiles.${userName} = {
             isDefault = true;
 
-            bookmarks = import ../share/bookmarks;
+            # bookmarks = import ../share/bookmarks;
             search = import ../share/search;
             containers = import ../share/containers;
             containersForce = true;

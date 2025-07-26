@@ -19,7 +19,7 @@ in {
     hm.home.packages = with pkgs; [
       # steamcmd
       # steam-tui
-      # mangohud
+      mangohud
     ];
   };
 }

@@ -89,5 +89,6 @@
     ./desktop/addons/xdg
 
     ./desktop/window-managers/hyprland
+    ./desktop/window-managers/niri
   ];
 }

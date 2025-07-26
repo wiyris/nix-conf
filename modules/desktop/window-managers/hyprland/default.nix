@@ -38,10 +38,12 @@ in {
             ./dots/exec-once.nix
             ./dots/general.nix
             ./dots/input.nix
+            ./dots/laptop-override.nix
             ./dots/misc.nix
-            ./dots/plugins.nix
             ./dots/rules.nix
             ./dots/scratchpads.nix
+
+            ./plugins/hyprexpo.nix
           ]
           ++ lib.optionals config.laptop.enable [
             ./laptop-override.nix

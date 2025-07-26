@@ -53,22 +53,27 @@
     ./programs/gui/browser/schizofox
     ./programs/gui/browser/tor-browser
     ./programs/gui/browser/zen-browser
+
+    ./programs/gui/explorer/thunar
+    ./programs/gui/explorer/dolphin
+
     ./programs/gui/gaming/lutris
     ./programs/gui/gaming/optimize
     ./programs/gui/gaming/osu
     ./programs/gui/gaming/steam
-    ./programs/gui/general/dolphin
+
     ./programs/gui/general/electron
     ./programs/gui/general/goldendict
     ./programs/gui/general/gtk
     ./programs/gui/general/qt
-    ./programs/gui/general/thunar
+
     ./programs/gui/media/freetube
     ./programs/gui/media/mpv
     ./programs/gui/media/pqiv
     ./programs/gui/media/rmpc
     ./programs/gui/media/spotify
     ./programs/gui/media/zathura
+
     ./programs/gui/terminal/foot
     ./programs/gui/terminal/ghostty
     ./programs/gui/terminal/kitty

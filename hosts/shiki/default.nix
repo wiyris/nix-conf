@@ -63,6 +63,7 @@ in {
     # gui
     custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
+    custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;
@@ -77,6 +78,9 @@ in {
     custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
+    custom.programs.dolphin.enable = true;
+    custom.programs.thunar.enable = true;
+
     custom.programs.freetube.enable = true;
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
@@ -84,13 +88,10 @@ in {
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
-    custom.programs.dolphin.enable = true;
     custom.programs.electron.enable = true;
     custom.programs.gtk.enable = true;
     custom.programs.qt.enable = true;
-
     custom.programs.goldendict.enable = true;
-    custom.programs.thunar.enable = true;
 
     # gaming
     gaming.lutris.enable = true;

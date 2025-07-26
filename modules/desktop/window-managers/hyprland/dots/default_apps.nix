@@ -1,5 +1,5 @@
 {osConfig, ...}: let
-  inherit (osConfig.globals) defaultTerminal defaultBrowser;
+  inherit (osConfig.globals) defaultTerminal defaultBrowser defaultExplorer;
 in {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
@@ -9,6 +9,6 @@ in {
     "$bar" = "uwsm-app -- waybar";
     "$bar-toggle" = "killall -SIGUSR1 .waybar-wrapped";
     "$bar-reload" = "killall .waybar-wrapped; $bar";
-    "$explore" = "thunar";
+    "$explorer" = "thunar";
   };
 }

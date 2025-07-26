@@ -3,13 +3,11 @@
   inputs,
   config,
   ...
-}: let
-  inherit (config.globals) homeDirectory;
-in {
+}: {
   programs.uwsm.waylandCompositors.niri = {
     prettyName = "Niri-UWSM";
     comment = "Niri managed by UWSM";
-    binPath = "${homeDirectory}/.nix-profile/bin/niri-session";
+    binPath = "${pkgs.niri}/bin/niri-session";
   };
   hm = {
     imports = [

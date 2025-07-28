@@ -12,7 +12,7 @@ in {
       programs.aria2 = {
         enable = true;
         settings = {
-          max-connection-per-serve = 16;
+          max-connection-per-server = 16;
           split = 16;
           continue = true;
           dir = "${homeDirectory}/Downloads";

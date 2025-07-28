@@ -4,9 +4,8 @@
   lib,
   ...
 }: let
-  cfg = config.deskton.wayland-session;
+  cfg = config.desktop.wayland-session;
 in {
-  options.desktop.wayland-session.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs;
       [

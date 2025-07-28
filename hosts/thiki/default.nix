@@ -59,17 +59,14 @@ in {
 
     # gui
     custom.programs.chromium.enable = true;
-    custom.programs.electron.enable = true;
     custom.programs.foot.enable = true;
     custom.programs.foot.isDefault = true;
     # custom.programs.ghostty.enable = true;
     custom.programs.goldendict.enable = true;
-    custom.programs.gtk.enable = true;
     # custom.programs.kitty.enable = true;
     # custom.programs.librewolf.enable = true;
     custom.programs.mpv.enable = true;
     # custom.programs.pqiv.enable = true;
-    custom.programs.qt.enable = true;
     # custom.programs.spotify.enable = true;
     custom.programs.thunar.enable = true;
     custom.programs.zen-browser.enable = true;

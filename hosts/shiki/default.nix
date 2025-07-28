@@ -89,9 +89,6 @@ in {
     custom.programs.zathura.enable = true;
 
     # custom.programs.anki.enable = true;
-    custom.programs.electron.enable = true;
-    custom.programs.gtk.enable = true;
-    custom.programs.qt.enable = true;
     custom.programs.goldendict.enable = true;
 
     # gaming

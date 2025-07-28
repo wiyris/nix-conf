@@ -62,11 +62,9 @@
     ./programs/gui/gaming/osu
     ./programs/gui/gaming/steam
 
+    ./programs/gui/general
     ./programs/gui/general/anki
-    ./programs/gui/general/electron
     ./programs/gui/general/goldendict
-    ./programs/gui/general/gtk
-    ./programs/gui/general/qt
 
     ./programs/gui/media/freetube
     ./programs/gui/media/mpv

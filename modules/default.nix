@@ -25,6 +25,7 @@
     ./services/tlp
     ./services/udev
 
+    ./programs/cli/alia2
     ./programs/cli/aliases
     ./programs/cli/bat
     ./programs/cli/btop

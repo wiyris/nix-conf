@@ -39,6 +39,7 @@ in {
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
 
+    custom.programs.aria2.enable = true;
     custom.programs.aliases.enable = true;
     custom.programs.bat.enable = true;
     custom.programs.core-utils.enable = true;

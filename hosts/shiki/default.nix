@@ -88,6 +88,7 @@ in {
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
+    custom.programs.anki.enable = true;
     custom.programs.electron.enable = true;
     custom.programs.gtk.enable = true;
     custom.programs.qt.enable = true;

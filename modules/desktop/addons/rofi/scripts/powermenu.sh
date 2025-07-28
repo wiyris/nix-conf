@@ -34,7 +34,7 @@ confirm_exit() {
 }
 
 run_rofi() {
-  echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi_cmd
+  echo -e "$lock\n$logout\n$reboot\n$shutdown" | rofi_cmd
 }
 
 # Execute Command

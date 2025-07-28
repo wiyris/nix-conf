@@ -26,7 +26,7 @@ in {
       hm.home.sessionVariables = sessionVariables;
     })
 
-    (lib.mkIf (cfg.enable && config.bloat.enable) {
+    (lib.mkIf (cfg.enable && config.extraPackages.enable) {
       # globals.displayServer = "wayland";
       environment.systemPackages = with pkgs; [vulkan-validation-layers];
 

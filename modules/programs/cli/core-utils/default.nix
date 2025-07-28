@@ -34,7 +34,7 @@ in {
         imagemagick # image editor
         gtrash
       ]
-      ++ lib.optionals config.bloat.enable [
+      ++ lib.optionals config.extraPackages.enable [
         microfetch
         qemu
         scdl

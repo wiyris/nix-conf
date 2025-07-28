@@ -123,7 +123,7 @@ in {
     desktop.xdg.enable = true;
 
     # laptop.enable = true; # enable laptop modules
-    bloat.enable = true; # add extra packages
+    extraPackages.enable = true; # add extra packages
 
     time.timeZone = "Asia/Tokyo";
 

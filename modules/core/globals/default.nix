@@ -49,6 +49,6 @@
       description = "Default explorer";
     };
   };
-  options.bloat.enable = lib.mkEnableOption {};
+  options.extraPackages.enable = lib.mkEnableOption {};
   options.laptop.enable = lib.mkEnableOption {};
 }

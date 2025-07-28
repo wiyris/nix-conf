@@ -17,7 +17,7 @@ in {
         # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
         "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default 'chromium --app=https://kagi.com/assistant'"
         "$mainMod SHIFT, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default 'chromium --app=https://translate.kagi.com/'"
-        "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
+        # "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.custom.programs.foot.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch foot --app-id foot-scratch"
@@ -43,8 +43,8 @@ in {
       "tag +float_md, class:btop-kittyscratch"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
       "tag +float_side, class:chrome-translate.kagi.com__-Default"
-      "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
-      "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
+      # "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
+      # "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"

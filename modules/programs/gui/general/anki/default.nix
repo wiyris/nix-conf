@@ -10,6 +10,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm.programs.anki = {
       enable = true;
+      language = "en_US";
       addons = with pkgs.ankiAddons; [recolor];
     };
   };

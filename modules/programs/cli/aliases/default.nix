@@ -27,5 +27,9 @@ in {
       ".4" = "cd ../.../../..";
       ".5" = "cd ../../../../..";
     };
+    hm.programs.fish.shellAbbrs = {
+      kan = "killall -9";
+      xx = "7z";
+    };
   };
 }

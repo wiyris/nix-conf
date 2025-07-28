@@ -9,7 +9,7 @@ in {
   options.custom.programs.aria2.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      programs.aria2c = {
+      programs.aria2 = {
         enable = true;
         settings = {
           max-connection-per-serve = 16;

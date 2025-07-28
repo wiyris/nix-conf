@@ -50,7 +50,8 @@ run_cmd() {
       hyprlock
       systemctl suspend
     elif [[ $1 == '--logout' ]]; then
-      hyprctl dispatch exit
+      # hyprctl dispatch exit
+      uwsm stop
     elif [[ $1 == '--lock' ]]; then
       hyprlock
     fi

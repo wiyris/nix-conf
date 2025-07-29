@@ -31,9 +31,9 @@
       # "$mainMod, semicolon, pseudo"
 
       # Group Control
-      # "$mainMod, O, togglegroup"
-      # "$mainMod SHIFT, O, lockactivegroup, toggle"
-      # "$mainMod, TAB, changegroupactive"
+      "$mainMod, APOSTROPHE, togglegroup"
+      "$mainMod CTRL, APOSTROPHE, lockactivegroup, toggle"
+      "ALT, TAB, changegroupactive"
 
       # Set sticky
       "$mainMod, C, pin"

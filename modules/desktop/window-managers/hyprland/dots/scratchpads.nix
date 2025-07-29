@@ -24,7 +24,7 @@ in {
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"
-        "$mainMod SHIFT, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.sidescratch --background-opacity=${opacity} -e ${defaultShell}'"
+        "$mainMod SHIFT, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.sidescratch 'ghostty --class=ghostty.sidescratch --background-opacity=${opacity} -e ${defaultShell}'"
         "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghostty.scratch 'ghostty --class=rmpc.ghostty.scratch --background-opacity=${opacity} -e rmpc'"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghostty.scratch 'ghostty --class='btop.ghostty.scratch' --background-opacity='${opacity}' -e btop'"
       ]
@@ -42,6 +42,7 @@ in {
       "tag +float_md, class:btop.ghostty.scratch"
       "tag +float_md, class:rmpc-kittyscratch"
       "tag +float_md, class:btop-kittyscratch"
+      "tag +float_side, class:ghostty.sidescratch"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
       "tag +float_side, class:chrome-translate.kagi.com__-Default"
       "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."

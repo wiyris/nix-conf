@@ -1,34 +1,16 @@
 let
   workspaces = {
     "1" = {
-      name = "browser";
+      name = "daemon";
     };
     "2" = {
-      name = "editor";
+      name = "browser";
     };
     "3" = {
-      name = "terminal";
+      name = "editor";
     };
     "4" = {
       name = "media";
-    };
-    "5" = {
-      name = "game";
-    };
-    "6" = {
-      name = "steam";
-    };
-    "7" = {
-      name = "dict";
-    };
-    "8" = {
-      name = "spot";
-    };
-    "9" = {
-      name = "vesktop";
-    };
-    "10" = {
-      name = "thunderbird";
     };
   };
   windowRules = [
@@ -102,25 +84,25 @@ let
     #   ];
     #   block-out-from = "screen-capture";
     # }
-    # {
-    #   matches = [
-    #     {app-id = "^steam$";}
-    #     {app-id = "^vesktop$";}
-    #     {app-id = "^GoldenDict-ng$";}
-    #     {app-id = "^spotify$";}
-    #     {app-id = "^thuderbird$";}
-    #   ];
-    #   open-on-workspace = "daemon";
-    # }
-    # {
-    #   matches = [
-    #     {app-id = "^zen-beta$";}
-    #     {app-id = "^firefox$";}
-    #     {app-id = "^librewolf$";}
-    #     {app-id = "^chromium$";}
-    #   ];
-    #   open-on-workspace = "web";
-    # }
+    {
+      matches = [
+        {app-id = "^steam$";}
+        {app-id = "^vesktop$";}
+        {app-id = "^GoldenDict-ng$";}
+        {app-id = "^spotify$";}
+        {app-id = "^thuderbird$";}
+      ];
+      open-on-workspace = "daemon";
+    }
+    {
+      matches = [
+        {app-id = "^zen-beta$";}
+        {app-id = "^firefox$";}
+        {app-id = "^librewolf$";}
+        {app-id = "^chromium$";}
+      ];
+      open-on-workspace = "browser";
+    }
     {
       matches = [
         {app-id = "^kitty$";}
@@ -132,7 +114,7 @@ let
   ];
 in {
   programs.niri.settings = {
-    # inherit workspaces;
+    inherit workspaces;
     window-rules = windowRules;
     layer-rules = [
       {

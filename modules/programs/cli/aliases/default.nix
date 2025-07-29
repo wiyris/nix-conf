@@ -8,15 +8,13 @@ in {
   options.custom.programs.aliases.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm.home.shellAliases = {
-      c = "clear";
       l = "ls -l";
-      t = "tree";
 
-      tree = "eza --all --long --tree";
-      ns = "nh search";
       mv = "mv -i";
       cp = "cp -ia";
-      p = "cd -";
+      pd = "cd -";
+
+      xx = "7z"; # 7z is hard to type on the 36keys hd layout
 
       weather = "curl wttr.in";
       myip = "curl ip.me";

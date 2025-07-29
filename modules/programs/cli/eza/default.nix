@@ -15,10 +15,10 @@ in {
       extraOptions = [
         "--icons"
       ];
-      home.shellAliases = {
-        t = "tree";
-        tree = "eza --all --long --tree";
-      };
+    };
+    home.shellAliases = {
+      t = "tree";
+      tree = "eza --all --long --tree";
     };
   };
 }

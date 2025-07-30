@@ -14,8 +14,13 @@ in {
   options.gaming.optimize.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     boot.kernelPackages = lib.mkForce pkgs.linuxPackages_xanmod;
-    programs.gamemode.enable = true;
     programs.steam.platformOptimizations.enable = true;
+
+    programs.gamemode = {
+      enable = true;
+      settings = {
+      };
+    };
 
     services.pipewire.lowLatency = {
       # enable this module

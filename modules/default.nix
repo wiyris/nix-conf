@@ -1,5 +1,7 @@
 {...}: {
   imports = [
+    ./desktop/window-managers/dwl
+
     ./core/globals
     ./core/home-manager
     ./core/nix

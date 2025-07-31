@@ -1,7 +1,5 @@
 {...}: {
   imports = [
-    ./desktop/window-managers/dwl
-
     ./core/globals
     ./core/home-manager
     ./core/nix
@@ -97,6 +95,7 @@
     ./desktop/addons/wayland-utils
     ./desktop/addons/xdg
 
+    ./desktop/dwl
     ./desktop/hyprland
     ./desktop/niri
   ];

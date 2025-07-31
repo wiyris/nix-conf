@@ -1,21 +1,32 @@
 {
+  lib,
   pkgs,
   inputs,
+  config,
   ...
-}: {
-  programs.uwsm.waylandCompositors.niri = {
-    prettyName = "Niri-UWSM";
-    comment = "Niri managed by UWSM";
-    binPath = "${pkgs.niri}/bin/niri-session";
+}: let
+  cfg = config.desktop.niri;
+in {
+  options.desktop.niri = {
+    enable = lib.mkEnableOption {};
+    isDefault = lib.mkEnableOption {};
   };
-  hm = {
-    imports = [
-      inputs.niri.homeModules.niri
-      ./dots/binds.nix
-      ./dots/general.nix
-      ./dots/rules.nix
-    ];
-    programs.niri.enable = true;
-    home.packages = [pkgs.xwayland-satellite];
+
+  config = lib.mkIf cfg.enable {
+    programs.uwsm.waylandCompositors.niri = {
+      prettyName = "Niri-UWSM";
+      comment = "Niri managed by UWSM";
+      binPath = "${pkgs.niri}/bin/niri-session";
+    };
+    hm = {
+      imports = [
+        inputs.niri.homeModules.niri
+        ./dots/binds.nix
+        ./dots/general.nix
+        ./dots/rules.nix
+      ];
+      programs.niri.enable = true;
+      home.packages = [pkgs.xwayland-satellite];
+    };
   };
 }

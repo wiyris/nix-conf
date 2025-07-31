@@ -100,8 +100,7 @@ in {
     gaming.steam.enable = true;
 
     # window-managers
-    desktop.hyprland.enable = true;
-    desktop.hyprland.isDefault = true;
+    desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
     # wm-addons
     desktop.clipboard.enable = true;
@@ -120,6 +119,10 @@ in {
     desktop.wayland-session.enable = true;
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
+
+    desktop.dwl.enable = true;
+    desktop.hyprland.enable = true;
+    desktop.niri.enable = true;
 
     # laptop.enable = true; # enable laptop modules
     extraPackages.enable = true; # add extra packages

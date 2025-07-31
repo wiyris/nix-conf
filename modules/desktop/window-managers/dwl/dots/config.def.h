@@ -11,6 +11,8 @@ static const int showbar                   = 1; /* 0 means no bar */
 static const int topbar                    = 1; /* 0 means bottom bar */
 static const char *fonts[]                 = {"monospace:size=13"};
 static const float rootcolor[]             = COLOR(0x1e1e2eff);
+// static const char *cursor_theme = "Catppuccin Mocha Lavender";
+// static const char cursor_size[] = "36";
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
 static uint32_t colors[][3]                = {
@@ -124,7 +126,8 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "foot", NULL };
+static const char *termcmd[] = { "ghostty", NULL };
+static const char *browser[] = { "zen-beta", NULL };
 static const char *menucmd[] = { "rofi", "-show", "drun", NULL };
 
 static const Key keys[] = {
@@ -132,6 +135,7 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY,                    XKB_KEY_q,          killclient,     {0} },
 	{ MODKEY,                    XKB_KEY_t,          spawn,          {.v = menucmd} },
+	{ MODKEY,                    XKB_KEY_j,          spawn,          {.v = browser} },
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_space,      spawn,          {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_b,          togglebar,      {0} },

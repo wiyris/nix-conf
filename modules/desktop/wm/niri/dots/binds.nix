@@ -23,8 +23,8 @@ in {
     "Mod+Shift+R".action = switch-preset-window-height;
     "Mod+Ctrl+R".action = reset-window-height;
 
-    "Mod+H".action = maximize-column;
-    "Mod+Shift+H".action = fullscreen-window;
+    "Mod+B".action = maximize-column;
+    "Mod+Shift+B".action = fullscreen-window;
 
     "Mod+Slash".action = toggle-overview;
 

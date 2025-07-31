@@ -97,7 +97,7 @@
     ./desktop/addons/wayland-utils
     ./desktop/addons/xdg
 
-    ./desktop/window-managers/hyprland
-    ./desktop/window-managers/niri
+    ./desktop/hyprland
+    ./desktop/niri
   ];
 }

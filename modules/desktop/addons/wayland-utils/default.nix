@@ -14,6 +14,10 @@ in {
         hyprshot
         playerctl
         wev
+
+        bibata-cursors
+        catppuccin-cursors.mochaLavender
+        volantes-cursors
       ];
     };
   };

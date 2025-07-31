@@ -1,5 +1,5 @@
 {
-  config.hm.programs.waybar.settings.main.network = {
+  programs.waybar.settings.main.network = {
     # "format-wifi" = "  {ifname}";
     # "format-ethernet" = "󰈀 {ifname}";
     "format-wifi" = " ";

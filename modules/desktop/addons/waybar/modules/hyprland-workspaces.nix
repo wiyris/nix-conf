@@ -1,5 +1,5 @@
 {
-  config.hm.programs.waybar.settings.main."hyprland/workspaces" = {
+  programs.waybar.settings.main."hyprland/workspaces" = {
     disable-scroll = false;
     all-outputs = true;
     on-click = "activate";

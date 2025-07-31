@@ -1,5 +1,5 @@
 {
-  config.hm.programs.waybar.settings.main.pulseaudio = {
+  programs.waybar.settings.main.pulseaudio = {
     # "format" = "{icon} {volume}% {format_source}";
     # "format-bluetooth" = "{icon} {volume}% {format_source}";
     # "format-bluetooth-muted" = "   {volume}% {format_source}";

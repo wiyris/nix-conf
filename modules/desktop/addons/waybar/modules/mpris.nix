@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  config.hm.programs.waybar.settings.main = {
+  programs.waybar.settings.main = {
     "mpris" = with config.lib.stylix.colors.withHashtag; {
       format = "{dynamic}";
       format-paused = "<span foreground='${base02}'><i>{dynamic}</i></span>";

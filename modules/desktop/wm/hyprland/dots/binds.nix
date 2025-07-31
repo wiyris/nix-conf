@@ -10,7 +10,7 @@
       "$mainMod, M, exec, uwsm-app -- $explorer"
 
       # Rofi
-      "$mainMod, T, exec, uwsm-app -- $launcher"
+      "$mainMod, T, exec, $launcher"
       "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
       "$mainMod, Escape, exec, uwsm-app -- powermenu"
       "$mainMod SHIFT, W, exec, uwsm-app -- wallpaper"

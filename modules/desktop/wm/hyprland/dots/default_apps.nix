@@ -4,7 +4,7 @@ in {
   wayland.windowManager.hyprland.settings = {
     "$mainMod" = "SUPER";
     "$terminal" = "${defaultTerminal}";
-    "$launcher" = "rofi -show drun";
+    "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
     "$browser" = "${defaultBrowser}";
     "$bar" = "uwsm-app -- waybar";
     "$bar-toggle" = "killall -SIGUSR1 .waybar-wrapped";

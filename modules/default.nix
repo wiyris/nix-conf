@@ -46,57 +46,55 @@
     ./programs/cli/yazi
     ./programs/cli/zoxide
 
-    ./programs/gui/browser/chromium
-    ./programs/gui/browser/firefox
-    ./programs/gui/browser/librewolf
-    ./programs/gui/browser/mullvad-browser
-    ./programs/gui/browser/qutebrowser
-    ./programs/gui/browser/schizofox
-    ./programs/gui/browser/tor-browser
-    ./programs/gui/browser/zen-browser
-
-    ./programs/gui/explorer/thunar
-    ./programs/gui/explorer/dolphin
-
-    ./programs/gui/gaming/lutris
-    ./programs/gui/gaming/optimize
-    ./programs/gui/gaming/osu
-    ./programs/gui/gaming/steam
-
-    ./programs/gui/general
-    ./programs/gui/general/anki
-    ./programs/gui/general/goldendict
-
-    ./programs/gui/media/freetube
-    ./programs/gui/media/mpv
-    ./programs/gui/media/pqiv
-    ./programs/gui/media/rmpc
-    ./programs/gui/media/spotify
-    ./programs/gui/media/zathura
-
-    ./programs/gui/terminal/foot
-    ./programs/gui/terminal/ghostty
-    ./programs/gui/terminal/kitty
-
     ./desktop/addons/clipboard
-    ./desktop/addons/dunst
-    ./desktop/addons/fcitx
     ./desktop/addons/fonts
     ./desktop/addons/gtk
-    ./desktop/addons/hypridle
-    ./desktop/addons/hyprlock
     ./desktop/addons/mime-apps
-    ./desktop/addons/rofi
-    ./desktop/addons/swayosd
-    ./desktop/addons/swww
     ./desktop/addons/uwsm
-    ./desktop/addons/waybar
     ./desktop/addons/wayland-session
     ./desktop/addons/wayland-utils
     ./desktop/addons/xdg
 
-    ./desktop/dwl
-    ./desktop/hyprland
-    ./desktop/niri
+    ./desktop/programs/browser/chromium
+    ./desktop/programs/browser/firefox
+    ./desktop/programs/browser/librewolf
+    ./desktop/programs/browser/mullvad-browser
+    ./desktop/programs/browser/qutebrowser
+    ./desktop/programs/browser/schizofox
+    ./desktop/programs/browser/tor-browser
+    ./desktop/programs/browser/zen-browser
+    ./desktop/programs/explorer/dolphin
+    ./desktop/programs/explorer/thunar
+    ./desktop/programs/gaming/lutris
+    ./desktop/programs/gaming/optimize
+    ./desktop/programs/gaming/osu
+    ./desktop/programs/gaming/steam
+    ./desktop/programs/general
+    ./desktop/programs/general/anki
+    ./desktop/programs/general/goldendict
+    ./desktop/programs/general/hyprlock
+    ./desktop/programs/general/rofi
+    # ./desktop/programs/general/thunderbird
+    ./desktop/programs/media/freetube
+    ./desktop/programs/media/mpv
+    ./desktop/programs/media/pqiv
+    ./desktop/programs/media/rmpc
+    ./desktop/programs/media/spotify
+    ./desktop/programs/media/zathura
+    ./desktop/programs/terminal/foot
+    ./desktop/programs/terminal/ghostty
+    ./desktop/programs/terminal/kitty
+
+    ./desktop/services/dunst
+    ./desktop/services/fcitx
+    ./desktop/services/hypridle
+    ./desktop/services/hypridle
+    ./desktop/services/swayosd
+    ./desktop/services/swww
+    ./desktop/services/waybar
+
+    ./desktop/wm/dwl
+    ./desktop/wm/hyprland
+    ./desktop/wm/niri
   ];
 }

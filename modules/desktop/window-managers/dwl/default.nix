@@ -2,7 +2,7 @@
   programs.uwsm.waylandCompositors.dwl = {
     prettyName = "DWL";
     comment = "";
-    binPath = "${pkgs.dwl}/bin/dwl";
+    binPath = "/run/current-system/sw/bin/dwl";
   };
 
   programs.dwl = {

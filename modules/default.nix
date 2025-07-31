@@ -17,34 +17,34 @@
 
     ./core/security/doas
 
-    ./services/batsignal
-    ./services/keyd
-    ./services/hiki-mounts
-    ./services/rtorrent
-    ./services/sk-serve
-    ./services/tlp
-    ./services/udev
+    ./core/services/batsignal
+    ./core/services/keyd
+    ./core/services/hiki-mounts
+    ./core/services/rtorrent
+    ./core/services/sk-serve
+    ./core/services/tlp
+    ./core/services/udev
 
-    ./programs/cli/aria2
-    ./programs/cli/aliases
-    ./programs/cli/bat
-    ./programs/cli/btop
-    ./programs/cli/cava
-    ./programs/cli/core-utils
-    ./programs/cli/eza
-    ./programs/cli/fastfetch
-    ./programs/cli/fish
-    ./programs/cli/fzf
-    ./programs/cli/git
-    ./programs/cli/gtrash
-    ./programs/cli/htop
-    ./programs/cli/lazygit
-    ./programs/cli/nvim
-    ./programs/cli/ripgrep
-    ./programs/cli/starship
-    ./programs/cli/tmux
-    ./programs/cli/yazi
-    ./programs/cli/zoxide
+    ./core/programs/aria2
+    ./core/programs/aliases
+    ./core/programs/bat
+    ./core/programs/btop
+    ./core/programs/cava
+    ./core/programs/core-utils
+    ./core/programs/eza
+    ./core/programs/fastfetch
+    ./core/programs/fish
+    ./core/programs/fzf
+    ./core/programs/git
+    ./core/programs/gtrash
+    ./core/programs/htop
+    ./core/programs/lazygit
+    ./core/programs/nvim
+    ./core/programs/ripgrep
+    ./core/programs/starship
+    ./core/programs/tmux
+    ./core/programs/yazi
+    ./core/programs/zoxide
 
     ./desktop/addons/clipboard
     ./desktop/addons/fonts

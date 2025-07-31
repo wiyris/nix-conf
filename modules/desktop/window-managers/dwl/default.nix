@@ -1,4 +1,10 @@
 {pkgs, ...}: {
+  programs.uwsm.waylandCompositors.dwl = {
+    prettyName = "DWL";
+    comment = "";
+    binPath = "${pkgs.dwl}/bin/dwl";
+  };
+
   programs.dwl = {
     enable = true;
     package = (pkgs.dwl.override {configH = ./dots/config.def.h;}).overrideAttrs (oldAttrs: {

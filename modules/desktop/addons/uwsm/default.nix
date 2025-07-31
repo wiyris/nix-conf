@@ -27,7 +27,9 @@ in {
         #   '';
       };
       home.shellAliases = {
+        uwl = "uwsm start dwl-uwsm.desktop";
         hyp = "uwsm start hyprland-uwsm.desktop";
+        uri = "uwsm start niri-uwsm.desktop";
         us = "uwsm stop";
       };
       home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";

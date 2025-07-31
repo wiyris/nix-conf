@@ -19,5 +19,6 @@
         ++ [./patches/bar-0.7.patch];
     });
   };
+  environment.systemPackages = with pkgs; [swaybg];
   xdg.portal.config.dwl.default = ["wlr" "gtk"];
 }

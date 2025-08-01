@@ -63,7 +63,7 @@ in {
       "size 50% 50%, class:thunarpad"
       "move 948 54, class:thunarpad"
       "animation slide top, class:thunarpad"
-      "opacity 0.8, class:thunarpad"
+      "opacity 0.5, class:thunarpad"
     ];
   };
 }

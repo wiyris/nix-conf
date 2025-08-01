@@ -14,6 +14,7 @@
 
     debug = {
       disable_logs = false;
+      full_cm_proto = true; # fix gamescope crash https://github.com/ValveSoftware/gamescope/issues/1825#issuecomment-2831929362
     };
   };
 }

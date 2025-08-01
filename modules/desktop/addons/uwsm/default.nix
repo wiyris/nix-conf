@@ -32,8 +32,8 @@ in {
         uri = "uwsm start niri-uwsm.desktop";
         us = "uwsm stop";
       };
-      home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
-      home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";
+      # home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
+      # home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";
 
       # xdg.configFile."uwsm/env".text = ''
       #   export XCURSOR_THEME=$XCURSOR_THEME

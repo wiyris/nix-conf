@@ -13,7 +13,7 @@
     dwindle.force_split = 2;
 
     debug = {
-      disable_logs = true;
+      disable_logs = false;
     };
   };
 }

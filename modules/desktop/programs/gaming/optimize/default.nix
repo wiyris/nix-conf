@@ -10,11 +10,14 @@ in {
   imports = [
     inputs.nix-gaming.nixosModules.platformOptimizations
     inputs.nix-gaming.nixosModules.pipewireLowLatency
+    inputs.chaotic.nixosModules.default
   ];
   options.gaming.optimize.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    boot.kernelPackages = lib.mkForce pkgs.linuxPackages_xanmod;
+    boot.kernelPackages = lib.mkForce pkgs.linuxPackages_cachyos;
     programs.steam.platformOptimizations.enable = true;
+    chaotic.mesa-git.enable = true; # for anti lag 2
+    environment.systemPackages = [pkgs.gamescope_git];
 
     programs.gamemode = {
       enable = true;

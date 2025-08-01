@@ -12,11 +12,12 @@
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
       "workspace 4, class:^(FreeTube)$"
-      "workspace 5 silent, class:^(.*steam_app.*)$|(.*gamescope.*)$"
+      "workspace 4 silent, class:^(.*steam_app.*)$|(.*gamescope.*)$"
       "workspace 6 silent, class:^([Ss]team)$"
       "workspace 6 silent, title:^([Ss]team)$"
-      # "workspace 7 silent, class:^(spotify)$"
-      "workspace 8 silent, class:^(thunderbird)$"
+      "workspace 7 silent, class:^(spotify)$"
+      "workspace 8 silent, class:^(obsidian)$"
+      "workspace 9 silent, class:^(thunderbird)$"
       "workspace 9 silent, class:^(vesktop)$"
 
       # Prevent suspend when a fullscreen app is open

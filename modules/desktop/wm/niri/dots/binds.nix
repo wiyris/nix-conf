@@ -6,12 +6,14 @@
   inherit (osConfig.globals) defaultTerminal defaultBrowser;
 in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
-    "Mod+Space".action = spawn "${defaultTerminal}";
-    "Mod+Return".action = spawn "${defaultTerminal}";
-    "Mod+J".action = spawn "${defaultBrowser}";
+    "Mod+Space".action = spawn "uwsm-app" "--" "${defaultTerminal}";
+    "Mod+Return".action = spawn "uwsm-app" "--" "${defaultTerminal}";
+    "Mod+BackSpace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "--class=nvim.ghostty" "-e" "nvim";
+    "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
     "Mod+T".action = spawn "rofi" "-show" "drun";
-    "Mod+Shift+W".action = spawn "wallpaper";
-    "Mod+M".action = spawn "thunar";
+    "Mod+H".action = spawn "sh" "-c" "rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
+    "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
+    "Mod+M".action = spawn "uwsm-app" "--" "thunar";
     "Print".action = screenshot;
     "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
     "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
@@ -44,7 +46,9 @@ in {
 
     "Mod+F".action = focus-workspace "browser";
     "Mod+P".action = focus-workspace "editor";
-    "Mod+D".action = focus-workspace "media";
+    "Mod+D".action = focus-workspace "iroiro";
+    "Mod+L".action = focus-workspace "media";
+    "Mod+X".action = focus-workspace "game";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

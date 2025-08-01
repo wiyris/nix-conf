@@ -1,16 +1,19 @@
 let
   workspaces = {
     "1" = {
-      name = "daemon";
-    };
-    "2" = {
       name = "browser";
     };
-    "3" = {
+    "2" = {
       name = "editor";
+    };
+    "3" = {
+      name = "iroiro";
     };
     "4" = {
       name = "media";
+    };
+    "5" = {
+      name = "game";
     };
   };
   windowRules = [
@@ -25,7 +28,7 @@ let
       };
       clip-to-geometry = true;
       draw-border-with-background = false;
-      open-maximized = true;
+      open-maximized = false;
     }
     {
       matches = [
@@ -110,6 +113,13 @@ let
         {app-id = "^thunar$";}
       ];
       open-maximized = false;
+    }
+    {
+      matches = [
+        {app-id = "^zen-beta$";}
+        {app-id = "^nvim.ghostty$";}
+      ];
+      open-maximized = true;
     }
   ];
 in {

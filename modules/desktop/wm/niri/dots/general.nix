@@ -29,8 +29,8 @@ in {
     layout = {background-color = "transparent";};
 
     cursor = {
-      size = 32;
-      theme = "BreezeX-RosePine-Linux";
+      size = 28;
+      theme = "Catppuccin Mocha Lavender";
     };
 
     layout = {
@@ -48,7 +48,7 @@ in {
       };
 
       shadow = {
-        enable = false;
+        enable = true;
       };
 
       preset-column-widths = [

@@ -11,5 +11,9 @@
 
     xwayland.force_zero_scaling = true;
     dwindle.force_split = 2;
+
+    debug = {
+      disable_logs = true;
+    };
   };
 }

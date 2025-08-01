@@ -26,6 +26,7 @@ in {
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"
         "$mainMod SHIFT, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.sidescratch 'ghostty --class=ghostty.sidescratch --background-opacity=${opacity} -e ${defaultShell}'"
         "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghostty.scratch 'ghostty --class=rmpc.ghostty.scratch --background-opacity=${opacity} -e rmpc'"
+        "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghostty.scratch 'ghostty --class=note.ghostty.scratch --background-opacity=${opacity} -e nvim'"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghostty.scratch 'ghostty --class='btop.ghostty.scratch' --background-opacity='${opacity}' -e btop'"
       ]
       ++ lib.optionals osConfig.custom.programs.kitty.isDefault [
@@ -39,6 +40,7 @@ in {
       "tag +float_md, class:foot-scratch"
       "tag +float_md, class:ghostty.scratch"
       "tag +float_md, class:rmpc.ghostty.scratch"
+      "tag +float_md, class:note.ghostty.scratch"
       "tag +float_md, class:btop.ghostty.scratch"
       "tag +float_md, class:rmpc-kittyscratch"
       "tag +float_md, class:btop-kittyscratch"

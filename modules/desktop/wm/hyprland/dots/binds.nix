@@ -26,7 +26,7 @@
       "$mainMod SHIFT, H, fullscreen"
       "$mainMod, S, togglefloating"
       "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
-      "$mainMod, PERIOD, cyclenext"
+      # "$mainMod, PERIOD, cyclenext"
       # "$mainMod, U, togglesplit"
       # "$mainMod, semicolon, pseudo"
 

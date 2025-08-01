@@ -33,6 +33,8 @@
     nixpkgs-stable.url = "nixpkgs/nixos-25.05";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+
     schizofox.url = "github:schizofox/schizofox";
 
     home-manager = {

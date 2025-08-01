@@ -10,8 +10,8 @@ in {
   config = lib.mkIf cfg.enable {
     programs.steam = {
       enable = true;
-      gamescopeSession.enable = true;
       extraCompatPackages = with pkgs; [proton-ge-bin];
+      # gamescopeSession.enable = true;
       # remotePlay.openFirewall = true;
       # dedicatedServer.openFirewall = true;
     };

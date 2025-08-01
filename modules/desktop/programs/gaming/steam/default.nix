@@ -17,8 +17,9 @@ in {
     };
     programs.gamemode.enable = true;
     hm.home.packages = with pkgs; [
-      # steamcmd
-      # steam-tui
+      steam
+      steamcmd
+      steam-tui
       mangohud
     ];
   };

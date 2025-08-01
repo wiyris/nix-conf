@@ -36,7 +36,7 @@
       "ALT, TAB, changegroupactive"
 
       # Set sticky
-      "$mainMod, C, pin"
+      # "$mainMod, C, pin"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

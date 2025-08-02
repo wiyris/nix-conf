@@ -19,7 +19,6 @@ in {
           catppuccin
           tmux-fzf
         ];
-        programs.fzf.tmux.enableShellIntegration = true;
 
         extraConfig =
           # fish
@@ -27,6 +26,7 @@ in {
             set -sg escape-time 0
           '';
       };
+      programs.fzf.tmux.enableShellIntegration = true;
       programs.fish.shellAbbrs = {
         tn = "tmux new-session -s";
         ta = "tmux attach -t";

@@ -112,8 +112,8 @@ in {
     desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
-    desktop.swayosd.enable = true;
-    desktop.swww.enable = true;
+    # desktop.swayosd.enable = true;
+    # desktop.swww.enable = true;
     desktop.uwsm.enable = true;
     desktop.waybar.enable = true;
     desktop.wayland-session.enable = true;
@@ -133,6 +133,7 @@ in {
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.timeout = 0;
+    boot.kernelParams = ["video=DP-2:1920x1080@144"];
     system.stateVersion = "25.05"; # Did you read the comment?
     home-manager.users.${userName}.home.stateVersion = "25.05";
   };

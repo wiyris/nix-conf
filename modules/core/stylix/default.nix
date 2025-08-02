@@ -28,7 +28,7 @@ in {
       cursor = {
         package = pkgs.catppuccin-cursors.mochaLavender;
         name = "Catppuccin Mocha Lavender";
-        size = 36;
+        size = 32;
       };
 
       # iconTheme = {

@@ -6,6 +6,7 @@
 }: let
   cfg = config.custom.programs.tmux;
   inherit (config.globals) defaultShell;
+  shell = "${pkgs.${defaultShell}}/bin/${defaultShell}";
 in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
@@ -13,8 +14,8 @@ in {
       imports = [./dots/binds.nix];
       programs.tmux = {
         enable = true;
+        inherit shell;
         mouse = true;
-        shell = "${defaultShell}";
         escapeTime = 0;
 
         keyMode = "vi";

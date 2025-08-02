@@ -1,6 +1,6 @@
 {
   programs.tmux = {
-    prefix = "A-space";
+    prefix = "M-Space";
     extraConfig = "";
   };
 }

@@ -1,17 +1,21 @@
 {
-  config,
-  pkgs,
   lib,
+  pkgs,
+  config,
   ...
 }: let
   cfg = config.custom.programs.tmux;
+  inherit (config.globals) defaultShell;
 in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
+      imports = [./dots/binds.nix];
       programs.tmux = {
         enable = true;
         mouse = true;
+        shell = "${defaultShell}";
+        escapeTime = 0;
 
         keyMode = "vi";
 
@@ -19,12 +23,6 @@ in {
           catppuccin
           tmux-fzf
         ];
-
-        extraConfig =
-          # fish
-          ''
-            set -sg escape-time 0
-          '';
       };
       programs.fzf.tmux.enableShellIntegration = true;
       programs.fish.shellAbbrs = {

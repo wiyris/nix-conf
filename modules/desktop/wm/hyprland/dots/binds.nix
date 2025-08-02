@@ -1,5 +1,12 @@
 {
   wayland.windowManager.hyprland.settings = {
+    bindr = [
+      "$mainMod, T, exec, $launcher"
+      "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
+      "$mainMod, Escape, exec, uwsm-app -- powermenu"
+      "$mainMod SHIFT, W, exec, uwsm-app -- wallpaper"
+      ", Print, exec, uwsm-app -- screenshot"
+    ];
     bind = [
       # Apps
       "$mainMod, Return, exec, uwsm-app -- $terminal"
@@ -8,13 +15,6 @@
       "$mainMod, J, exec, uwsm-app -- $browser"
       "$mainMod SHIFT, J, exec, uwsm-app -- $browser -p skw"
       # "$mainMod, M, exec, uwsm-app -- $explorer"
-
-      # Rofi
-      "$mainMod, T, exec, $launcher"
-      "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      "$mainMod, Escape, exec, uwsm-app -- powermenu"
-      "$mainMod SHIFT, W, exec, uwsm-app -- wallpaper"
-      ", Print, exec, uwsm-app -- screenshot"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
@@ -52,26 +52,6 @@
       "$mainMod SHIFT, a,      swapwindow, d"
       "$mainMod SHIFT, e,      swapwindow, u"
       "$mainMod SHIFT, i,      swapwindow, r"
-
-      # Resizing windows                        X  Y
-      "$mainMod CTRL, COMMA,   resizeactive, -40 0"
-      "$mainMod CTRL, a,       resizeactive,  0  60"
-      "$mainMod CTRL, e,       resizeactive,  0 -60"
-      "$mainMod CTRL, i,       resizeactive,  40 0"
-
-      # Moving floating windows                        X  Y
-      "$mainMod CTRL, COMMA,   moveactive, -40 0"
-      "$mainMod CTRL, a,       moveactive,  0  60"
-      "$mainMod CTRL, e,       moveactive,  0 -60"
-      "$mainMod CTRL, i,       moveactive,  40 0"
-
-      # Switching workspaces
-      "$mainMod, mouse_down, workspace, m-1"
-      "$mainMod, mouse_up, workspace, m+1"
-      # "$mainMod, A, workspace, m-1"
-      # "$mainMod, E, workspace, m+1"
-      # "$mainMod, Down, workspace, m-1"
-      # "$mainMod, Up, workspace, m+1"
 
       "$mainMod, F, workspace, 1"
       "$mainMod, P, workspace, 2"
@@ -143,6 +123,30 @@
       "$mainMod ALT, 8, movetoworkspacesilent, 8"
       "$mainMod ALT, 9, movetoworkspacesilent, 9"
       # "$mainMod ALT, 0, movetoworkspacesilent, 10"
+    ];
+
+    binde = [
+      # Resizing windows                        X  Y
+      # "$mainMod CTRL, COMMA,   resizeactive, -40 0"
+      # "$mainMod CTRL, a,       resizeactive,  0  60"
+      # "$mainMod CTRL, e,       resizeactive,  0 -60"
+      # "$mainMod CTRL, i,       resizeactive,  40 0"
+      "$mainMod, minus,     resizeactive, -40 0"
+      "$mainMod, equal,     resizeactive,  40 0"
+
+      # Moving floating windows             X  Y
+      "$mainMod CTRL, COMMA,   moveactive, -40 0"
+      "$mainMod CTRL, a,       moveactive,  0  60"
+      "$mainMod CTRL, e,       moveactive,  0 -60"
+      "$mainMod CTRL, i,       moveactive,  40 0"
+
+      # Switching workspaces
+      "$mainMod, mouse_down, workspace, m-1"
+      "$mainMod, mouse_up, workspace, m+1"
+      # "$mainMod, A, workspace, m-1"
+      # "$mainMod, E, workspace, m+1"
+      # "$mainMod, Down, workspace, m-1"
+      # "$mainMod, Up, workspace, m+1"
     ];
 
     # Laptop multimedia keys for volume and LCD brightness

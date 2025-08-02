@@ -16,7 +16,6 @@ in {
         anki
 
         # electron
-        vesktop
         obsidian
       ]
       ++ lib.optionals config.extraPackages.enable [
@@ -24,6 +23,7 @@ in {
         gimp3
         grayjay
         gpu-screen-recorder-gtk
+        dissent
 
         # qt
         qbittorrent
@@ -31,6 +31,8 @@ in {
 
         # electron
         freetube
+        legcord
+        vesktop
       ];
   };
 }

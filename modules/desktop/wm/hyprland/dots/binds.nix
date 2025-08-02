@@ -1,11 +1,11 @@
 {
   wayland.windowManager.hyprland.settings = {
     bindr = [
-      "$mainMod, T, exec, $launcher"
-      "$mainMod, H, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      "$mainMod, Escape, exec, uwsm-app -- powermenu"
-      "$mainMod SHIFT, W, exec, uwsm-app -- wallpaper"
-      ", Print, exec, uwsm-app -- screenshot"
+      "$mainMod, T, exec, pkill rofi || $launcher"
+      "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
+      # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
+      "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
+      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
     ];
     bind = [
       # Apps
@@ -15,6 +15,8 @@
       "$mainMod, J, exec, uwsm-app -- $browser"
       "$mainMod SHIFT, J, exec, uwsm-app -- $browser -p skw"
       # "$mainMod, M, exec, uwsm-app -- $explorer"
+      "$mainMod Shift, M, exec, uwsm-app -- thunderbird"
+      "$mainMod Shift, V, exec, uwsm-app -- vesktop"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"

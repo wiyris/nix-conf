@@ -45,7 +45,7 @@ in {
             ./dots/rules.nix
             ./dots/scratchpads.nix
 
-            ./plugins/hyprexpo.nix
+            # ./plugins/hyprexpo.nix
           ]
           ++ lib.optionals config.laptop.enable [
             ./dots/laptop-override.nix
@@ -65,6 +65,10 @@ in {
           # package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
           # portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
           extraConfig = ''
+            env = XCURSOR_THEME,Catppuccin Mocha Lavender
+            env = XCURSOR_SIZE, 32
+            env = HYPRCURSOR_THEME,Catppuccin Mocha Lavender
+            env = HYPRCURSOR_SIZE,32
           '';
         };
 

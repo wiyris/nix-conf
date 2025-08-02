@@ -1,8 +1,19 @@
 {
   wayland.windowManager.hyprland.settings = {
     misc = {
+      vrr = 0;
+      vfr = false;
       disable_hyprland_logo = true;
     };
+
+    monitorv2 = [
+      {
+        output = "DP-2";
+        mode = "1920x1080@144";
+        position = "0x0";
+        scale = 1;
+      }
+    ];
 
     ecosystem = {
       no_update_news = true;

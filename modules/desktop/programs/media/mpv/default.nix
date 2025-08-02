@@ -17,7 +17,7 @@ in {
         autofit-larger = "75%x75%";
         hwdec-codecs = "all";
         keep-open = true;
-        pause = true;
+        # pause = true;
         video-sync = "display-resample";
 
         # enable hardware acceleration

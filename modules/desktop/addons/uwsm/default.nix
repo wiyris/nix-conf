@@ -31,6 +31,7 @@ in {
         hyp = "uwsm start hyprland-uwsm.desktop";
         uri = "uwsm start niri-uwsm.desktop";
         us = "uwsm stop";
+        uf = "uwsm finalize";
       };
       # home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
       # home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";

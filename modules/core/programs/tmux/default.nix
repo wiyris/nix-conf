@@ -19,6 +19,7 @@ in {
           catppuccin
           tmux-fzf
         ];
+        programs.fzf.tmux.enableShellIntegration = true;
 
         extraConfig =
           # fish
@@ -27,8 +28,10 @@ in {
           '';
       };
       programs.fish.shellAbbrs = {
-        tn = "tmux new-session";
-        tl = "tmux ls";
+        tn = "tmux new-session -s";
+        ta = "tmux attach -t";
+        tl = "tmux list-sessions";
+        tk = "tmux kill-session -t";
       };
     };
   };

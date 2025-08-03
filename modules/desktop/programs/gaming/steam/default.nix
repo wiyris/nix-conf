@@ -15,6 +15,7 @@ in {
       # dedicatedServer.openFirewall = true;
     };
     hm.home.packages = with pkgs; [
+      gamescope
       steam
       steamcmd
       steam-tui

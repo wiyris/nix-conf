@@ -11,23 +11,36 @@ in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      imports = [./dots/binds.nix];
+      stylix.targets.tmux.enable = false;
       programs.tmux = {
         enable = true;
         inherit shell;
         mouse = true;
         escapeTime = 0;
+        aggressiveResize = true;
+        terminal = "screen-256color";
 
-        keyMode = "vi";
+        imports = [
+          ./dots/binds.nix
+          ./plugins/catppuccin.nix
+        ];
 
+        extraConfig = ''
+          set -g status-position top
+          set -Fg 'status-format[1]' '#{status-format[0]}'
+          set -g 'status-format[1]' ""
+          set -g status 2
+        '';
         plugins = with pkgs.tmuxPlugins; [
-          catppuccin
           tmux-fzf
+          fingers
+          # tmux-thumbs
         ];
       };
+
       programs.fzf.tmux.enableShellIntegration = true;
       programs.fish.shellAbbrs = {
-        tn = "tmux new-session -s";
+        t = "tmux new-session";
         ta = "tmux attach -t";
         tl = "tmux list-sessions";
         tk = "tmux kill-session -t";

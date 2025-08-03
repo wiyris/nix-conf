@@ -33,7 +33,7 @@ in {
         # hideLiveChat = true;
         hideLiveStreams = true;
         hidePopularVideos = true;
-        hideRecommendedVideos = true;
+        # hideRecommendedVideos = true;
         hideSubscriptionsCommunity = true;
         hideSubscriptionsLive = true;
         hideSubscriptionsShorts = true;

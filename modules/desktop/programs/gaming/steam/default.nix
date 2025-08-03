@@ -11,11 +11,9 @@ in {
     programs.steam = {
       enable = true;
       extraCompatPackages = with pkgs; [proton-ge-bin];
-      # gamescopeSession.enable = true;
       # remotePlay.openFirewall = true;
       # dedicatedServer.openFirewall = true;
     };
-    programs.gamemode.enable = true;
     hm.home.packages = with pkgs; [
       steam
       steamcmd

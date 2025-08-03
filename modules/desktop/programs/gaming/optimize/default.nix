@@ -17,7 +17,6 @@ in {
     boot.kernelPackages = lib.mkForce pkgs.linuxPackages_cachyos;
     programs.steam.platformOptimizations.enable = true;
     chaotic.mesa-git.enable = true; # for anti lag 2
-    environment.systemPackages = [pkgs.gamescope_git];
 
     programs.gamemode = {
       enable = true;

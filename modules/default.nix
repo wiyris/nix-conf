@@ -65,7 +65,6 @@
     ./desktop/programs/browser/zen-browser
     ./desktop/programs/explorer/dolphin
     ./desktop/programs/explorer/thunar
-    ./desktop/programs/gaming/gamescope
     ./desktop/programs/gaming/lutris
     ./desktop/programs/gaming/optimize
     ./desktop/programs/gaming/osu

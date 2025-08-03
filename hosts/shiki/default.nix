@@ -94,6 +94,7 @@ in {
     custom.programs.goldendict.enable = true;
 
     # gaming
+    gaming.gamescope.enable = true;
     gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     gaming.optimize.enable = true;

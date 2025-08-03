@@ -18,7 +18,7 @@ in {
         ];
       };
       home.shellAliases = {
-        t = "tree";
+        # t = "tree";
         tree = "eza --all --long --tree";
       };
     };

@@ -31,7 +31,11 @@ in {
           ++ [./patches/bar-0.7.patch];
       });
     };
-    environment.systemPackages = with pkgs; [swaybg];
+    environment.systemPackages = with pkgs; [
+      swaybg
+      wofi
+      slurp
+    ];
     xdg.portal.config.dwl.default = ["wlr" "gtk"];
   };
 }

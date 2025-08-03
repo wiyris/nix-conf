@@ -26,6 +26,7 @@ in {
         ./dots/rules.nix
       ];
       programs.niri.enable = true;
+      xdg.portal.config.niri.default = ["gnome" "gtk"];
       home.packages = [pkgs.xwayland-satellite];
     };
   };

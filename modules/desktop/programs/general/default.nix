@@ -9,6 +9,9 @@ in {
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs;
       [
+        #tui
+        tray-tui
+
         #gtk
         thunderbird
 

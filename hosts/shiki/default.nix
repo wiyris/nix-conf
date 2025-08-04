@@ -54,7 +54,7 @@ in {
 
     # tui
     custom.programs.btop.enable = true;
-    # custom.programs.cava.enable = true;
+    custom.programs.cava.enable = true;
     custom.programs.gtrash.enable = true;
     custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
@@ -86,7 +86,7 @@ in {
     custom.programs.freetube.enable = true;
     custom.programs.mpv.enable = true;
     # custom.programs.pqiv.enable = true;
-    # custom.programs.rmpc.enable = true;
+    custom.programs.rmpc.enable = true;
     # custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 

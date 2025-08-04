@@ -37,7 +37,7 @@ in {
         xdg-desktop-portal-gtk
       ];
 
-      programs.xwayland.enable = false;
+      # programs.xwayland.enable = false;
       # programs.gpu-screen-recorder.enable = true;
     })
   ];

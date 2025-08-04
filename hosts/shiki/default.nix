@@ -104,13 +104,13 @@ in {
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
     # wm-addons
-    # desktop.clipboard.enable = true;
-    # desktop.dunst.enable = true;
+    desktop.clipboard.enable = true;
+    desktop.dunst.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
-    # desktop.hypridle.enable = true;
-    # desktop.hyprlock.enable = true;
+    desktop.hypridle.enable = true;
+    desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
     # desktop.swayosd.enable = true;

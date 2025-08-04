@@ -1,12 +1,5 @@
 {
   wayland.windowManager.hyprland.settings = {
-    bindr = [
-      "$mainMod, T, exec, pkill rofi || $launcher"
-      "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
-      "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
-      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
-    ];
     bind = [
       # Apps
       "$mainMod, Return, exec, uwsm-app -- $terminal"
@@ -21,6 +14,13 @@
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
       "$mainMod CTRL, PERIOD, exec, $bar-toggle"
+
+      # Rofi
+      "$mainMod, T, exec, pkill rofi || $launcher"
+      "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
+      # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
+      "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
+      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
 
       # Misc
       "$mainMod, Q, killactive"

@@ -106,7 +106,7 @@ static const uint32_t send_events_mode = LIBINPUT_CONFIG_SEND_EVENTS_ENABLED;
 LIBINPUT_CONFIG_ACCEL_PROFILE_FLAT
 LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE
 */
-static const enum libinput_config_accel_profile accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE;
+static const enum libinput_config_accel_profile accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_FLAT;
 static const double accel_speed = 0.0;
 
 /* You can choose between:
@@ -129,7 +129,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 
 /* commands */
 static const char *termcmd[] = { "uwsm-app", "--", "foot", NULL };
-static const char *browser[] = { "uwsm-app", "--" "zen-beta", NULL };
+static const char *browser[] = { "uwsm-app", "--", "zen-beta", NULL };
 static const char *menucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *ustop[] = { "uwsm", "stop", NULL };
 

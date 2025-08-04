@@ -23,12 +23,16 @@ in {
         buildInputs =
           oldAttrs.buildInputs or []
           ++ [
-            pkgs.libdrm
-            pkgs.fcft
+            # pkgs.libdrm
+            # pkgs.fcft
           ];
         patches =
           oldAttrs.patches or []
-          ++ [./patches/bar-0.7.patch];
+          ++ [
+            ./patches/autostart-0.7.patch
+            # ./patches/bar-0.7.patch
+            ./patches/simple_scratchpad-v0.7.patch
+          ];
       });
     };
     environment.systemPackages = with pkgs; [

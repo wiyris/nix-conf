@@ -19,7 +19,7 @@ in {
     networking.hostName = "shiki";
 
     custom.stylix.enable = true;
-    programs.java.enable = true;
+    # programs.java.enable = true;
 
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
@@ -27,10 +27,10 @@ in {
     # custom.networking.iwd.enable = true;
     # custom.networking.networkmanager.enable = true;
     custom.hardware.amdgpu.enable = true;
-    custom.hardware.bluetooth.enable = true;
+    # custom.hardware.bluetooth.enable = true;
     # custom.services.batsignal.enable = true;
     # custom.services.keyd.enable = true;
-    custom.services.hiki-mounts.enable = true;
+    # custom.services.hiki-mounts.enable = true;
     # custom.services.rtorrent.enable = true;
     # custom.services.sk-serve.enable = true;
     # custom.services.tlp.enable = true;
@@ -54,7 +54,7 @@ in {
 
     # tui
     custom.programs.btop.enable = true;
-    custom.programs.cava.enable = true;
+    # custom.programs.cava.enable = true;
     custom.programs.gtrash.enable = true;
     custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
@@ -65,37 +65,37 @@ in {
     # gui
     custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    custom.programs.thunar.isDefault = true; # thunar, dolphin
+    # custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;
-    custom.programs.kitty.enable = true;
+    # custom.programs.kitty.enable = true;
 
-    custom.programs.chromium.enable = true;
-    custom.programs.firefox.enable = true;
+    # custom.programs.chromium.enable = true;
+    # custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
-    custom.programs.librewolf.enable = true;
-    custom.programs.mullvad-browser.enable = true;
-    custom.programs.qutebrowser.enable = true;
-    custom.programs.tor-browser.enable = true;
+    # custom.programs.librewolf.enable = true;
+    # custom.programs.mullvad-browser.enable = true;
+    # custom.programs.qutebrowser.enable = true;
+    # custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
-    custom.programs.dolphin.enable = true;
-    custom.programs.thunar.enable = true;
+    # custom.programs.dolphin.enable = true;
+    # custom.programs.thunar.enable = true;
 
     custom.programs.freetube.enable = true;
     custom.programs.mpv.enable = true;
-    custom.programs.pqiv.enable = true;
-    custom.programs.rmpc.enable = true;
-    custom.programs.spotify.enable = true;
+    # custom.programs.pqiv.enable = true;
+    # custom.programs.rmpc.enable = true;
+    # custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
     # custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
 
     # gaming
-    gaming.gamemode.enable = true;
-    gaming.lutris.enable = true;
+    # gaming.gamemode.enable = true;
+    # gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;
@@ -104,13 +104,13 @@ in {
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
     # wm-addons
-    desktop.clipboard.enable = true;
-    desktop.dunst.enable = true;
+    # desktop.clipboard.enable = true;
+    # desktop.dunst.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
-    desktop.hypridle.enable = true;
-    desktop.hyprlock.enable = true;
+    # desktop.hypridle.enable = true;
+    # desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
     # desktop.swayosd.enable = true;
@@ -121,9 +121,9 @@ in {
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
 
-    desktop.dwl.enable = true;
+    # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    desktop.niri.enable = true;
+    # desktop.niri.enable = true;
 
     # laptop.enable = true; # enable laptop modules
     extraPackages.enable = true; # add extra packages

@@ -31,7 +31,7 @@ in {
           ++ [
             ./patches/autostart-0.7.patch
             # ./patches/bar-0.7.patch
-            ./patches/simple_scratchpad-v0.7.patch
+            # ./patches/simple_scratchpad-v0.7.patch
           ];
       });
     };

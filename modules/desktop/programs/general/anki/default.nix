@@ -11,7 +11,7 @@ in {
     hm.programs.anki = {
       enable = true;
       language = "en_US";
-      addons = with pkgs.ankiAddons; [recolor];
+      # addons = with pkgs.ankiAddons; [recolor];
     };
   };
 }

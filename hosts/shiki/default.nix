@@ -71,7 +71,7 @@ in {
     custom.programs.ghostty.enable = true;
     # custom.programs.kitty.enable = true;
 
-    # custom.programs.chromium.enable = true;
+    custom.programs.chromium.enable = true;
     # custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
     # custom.programs.librewolf.enable = true;
@@ -90,7 +90,7 @@ in {
     # custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
-    # custom.programs.anki.enable = true;
+    custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
 
     # gaming

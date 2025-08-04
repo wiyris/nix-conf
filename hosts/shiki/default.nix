@@ -121,7 +121,7 @@ in {
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
 
-    # desktop.dwl.enable = true;
+    desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 

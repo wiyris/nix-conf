@@ -15,6 +15,8 @@ in {
         playerctl
         wev
         xwayland-satellite
+
+        gowall
       ];
     };
   };

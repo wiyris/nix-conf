@@ -29,8 +29,8 @@
       render_power = 3;
       ignore_window = true;
       scale = 1.0;
-      color = lib.mkForce "rgba(181825CC)";
-      color_inactive = lib.mkForce "rgba(181825CC)";
+      color = lib.mkForce "rgba(181825EE)";
+      color_inactive = lib.mkForce "rgba(181825EE)";
     };
   };
 }

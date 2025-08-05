@@ -7,7 +7,7 @@
       "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
       "$mainMod, J, exec, uwsm-app -- $browser"
       "$mainMod SHIFT, J, exec, uwsm-app -- $browser -p skw"
-      # "$mainMod, M, exec, uwsm-app -- $explorer"
+      "$mainMod, M, exec, uwsm-app -- $explorer"
       "$mainMod Shift, M, exec, uwsm-app -- thunderbird"
       "$mainMod Shift, V, exec, uwsm-app -- vesktop"
 

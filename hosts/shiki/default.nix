@@ -113,6 +113,7 @@ in {
     desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
     desktop.rofi.enable = true;
+    desktop.mpd.enable = true;
     desktop.pipewire.enable = true;
     # desktop.swayosd.enable = true;
     desktop.swww.enable = true;

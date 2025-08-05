@@ -12,7 +12,6 @@ in {
       home.packages = with pkgs; [
         wl-clipboard-rs
         hyprshot
-        playerctl
         wev
         xwayland-satellite
 

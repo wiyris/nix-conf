@@ -89,6 +89,7 @@
     ./desktop/services/dunst
     ./desktop/services/fcitx
     ./desktop/services/hypridle
+    ./desktop/services/mpd
     ./desktop/services/pipewire
     ./desktop/services/swayosd
     ./desktop/services/swww

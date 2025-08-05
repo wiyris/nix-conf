@@ -15,7 +15,6 @@ in {
     bind =
       [
         # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
-        "$mainMod, M, exec, hyprland-scratchpad --raise-or-run-uwsm thunarpad 'thunar --name=thunarpad'"
         "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default 'chromium --app=https://kagi.com/assistant'"
         "$mainMod SHIFT, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default 'chromium --app=https://translate.kagi.com/'"
         "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
@@ -58,12 +57,6 @@ in {
       "size 30% 93%, tag:float_side"
       "animation slide bottom, tag:float_md"
       "animation slide right, tag:float_side"
-
-      "float, class:thunarpad"
-      "size 50% 50%, class:thunarpad"
-      "move 948 54, class:thunarpad"
-      "animation slide top, class:thunarpad"
-      "opacity 0.5, class:thunarpad"
     ];
   };
 }

@@ -65,7 +65,7 @@ in {
     # gui
     custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    # custom.programs.thunar.isDefault = true; # thunar, dolphin
+    custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;
@@ -81,7 +81,7 @@ in {
     custom.programs.zen-browser.enable = true;
 
     # custom.programs.dolphin.enable = true;
-    # custom.programs.thunar.enable = true;
+    custom.programs.thunar.enable = true;
 
     custom.programs.freetube.enable = true;
     custom.programs.mpv.enable = true;

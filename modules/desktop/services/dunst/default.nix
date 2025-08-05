@@ -9,6 +9,7 @@
 
   inherit
     (config.lib.stylix.colors.withHashtag)
+    base00
     base02
     base03
     base08
@@ -52,7 +53,10 @@ in {
           frame_color = mkForce base02;
         };
 
-        urgency_normal.frame_color = mkForce base0E;
+        urgency_normal = {
+          frame_color = mkForce base0E;
+          background = mkForce "#1e1e2e05";
+        };
 
         urgency_critical = {
           foreground = mkForce base08;

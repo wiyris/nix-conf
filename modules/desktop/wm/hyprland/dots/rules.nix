@@ -28,8 +28,12 @@
       # Tearing
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
 
-      # Windows opacity
+      # thunar
       # "opacity 0.8, class:(thunar)"
+      "float, class:thunar"
+      "size 50% 50%, class:thunar"
+      "move 948 54, class:thunar"
+      "animation slide top, class:thunar"
     ];
 
     layerrule = [

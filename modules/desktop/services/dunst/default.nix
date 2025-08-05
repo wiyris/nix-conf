@@ -12,7 +12,7 @@
     base00
     base02
     base03
-    base06
+    base05
     base07
     base08
     base0E
@@ -51,7 +51,7 @@ in {
         };
 
         urgency_low = {
-          foreground = mkForce base06;
+          foreground = mkForce base05;
           # frame_color = mkForce base02;
           frame_color = mkForce base07;
           background = mkForce "#1e1e2e00";

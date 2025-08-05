@@ -26,11 +26,11 @@
     shadow = {
       enabled = true;
       range = 42;
-      render_power = 5;
+      render_power = 3;
       ignore_window = true;
-      scale = 10;
-      # color = lib.mkForce "rgba(f5e0dca7)";
-      # color_inactive = lib.mkForce "rgba(363a4f8a)";
+      scale = 1.0;
+      color = lib.mkForce "rgba(181825CC)";
+      color_inactive = lib.mkForce "rgba(181825CC)";
     };
   };
 }

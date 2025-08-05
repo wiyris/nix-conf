@@ -9,7 +9,6 @@ in {
   options.desktop.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      services.mpd-discord-rpc.enable = true;
       # services.mpd-mpris.enable = true;
       services.playerctld.enable = true;
       services.mpd = {
@@ -24,6 +23,20 @@ in {
 
           auto_update "yes"
         '';
+      };
+      services.mpd-discord-rpc = {
+        enable = true;
+        settings = {
+          hosts = ["localhost:6600"];
+          format = {
+            details = "$title";
+            state = "$artist / $album";
+            large_image = "";
+            small_image = "";
+            large_text = "";
+            small_text = "";
+          };
+        };
       };
     };
   };

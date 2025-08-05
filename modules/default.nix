@@ -46,14 +46,14 @@
     ./core/programs/yazi
     ./core/programs/zoxide
 
-    ./desktop/addons/clipboard
-    ./desktop/addons/fonts
-    ./desktop/addons/gtk
-    ./desktop/addons/mime-apps
-    ./desktop/addons/uwsm
-    ./desktop/addons/wayland-session
-    ./desktop/addons/wayland-utils
-    ./desktop/addons/xdg
+    ./desktop/core/clipboard
+    ./desktop/core/fonts
+    ./desktop/core/gtk
+    ./desktop/core/mime-apps
+    ./desktop/core/uwsm
+    ./desktop/core/wayland-session
+    ./desktop/core/wayland-utils
+    ./desktop/core/xdg
 
     ./desktop/programs/browser/chromium
     ./desktop/programs/browser/firefox

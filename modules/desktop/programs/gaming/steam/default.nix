@@ -20,7 +20,7 @@ in {
       steamcmd
       steam-tui
       mangohud
-      protonup-ng
+      protonup-rs
     ];
   };
 }

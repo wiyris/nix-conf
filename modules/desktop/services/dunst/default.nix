@@ -54,7 +54,7 @@ in {
           foreground = mkForce base05;
           # frame_color = mkForce base02;
           frame_color = mkForce base07;
-          background = mkForce "#1e1e2e00";
+          background = mkForce "#1e1e2e05";
         };
 
         urgency_normal = {

@@ -6,7 +6,7 @@
   ...
 }: let
   cfg = config.custom.stylix;
-  opacity = 0.7;
+  opacity = 1.0;
   fontSize = 13;
 in {
   options.custom.stylix.enable = lib.mkEnableOption {};

@@ -15,6 +15,7 @@
       bind -n M-Q kill-window
 
       bind -n M-Space split-window -h
+      bind -n M-C-Space split-window -v
 
       bind -n M-f if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
       bind -n M-p if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'
@@ -31,6 +32,16 @@
       bind -n M-, select-pane -L
       bind -n M-e select-pane -U
       bind -n M-a select-pane -D
+
+      # Resize each pane
+      bind -n M-"-" resize-pane -L 5
+      bind -n M-"=" resize-pane -R 5
+      bind -n M-"'" resize-pane -U 2
+      bind -n M-"." resize-pane -D 2
+
+      # Swap windows
+      bind -n M-"<" swap-window -d -t -1
+      bind -n M-">" swap-window -d -t +1
     '';
   };
 }

@@ -8,6 +8,7 @@ in {
   options.desktop.pipewire.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     security.rtkit.enable = true;
+    services.playerctld.enable = true;
     services.pipewire = {
       enable = true;
       alsa.enable = true;

@@ -115,7 +115,7 @@ in {
     desktop.rofi.enable = true;
     desktop.mpd.enable = true;
     desktop.pipewire.enable = true;
-    # desktop.swayosd.enable = true;
+    desktop.swayosd.enable = true;
     desktop.swww.enable = true;
     desktop.uwsm.enable = true;
     desktop.waybar.enable = true;

@@ -10,7 +10,6 @@ in {
   config = lib.mkIf cfg.enable {
     hm = {
       services.mpd-mpris.enable = true;
-      services.playerctld.enable = true;
       services.mpd = {
         enable = true;
         inherit musicDirectory;

@@ -16,8 +16,6 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
-    networking.hostName = "shiki";
-
     custom.stylix.enable = true;
 
     system.terminus-font.enable = true;

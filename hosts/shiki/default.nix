@@ -51,16 +51,7 @@ in {
     custom.programs.yazi.enable = true;
     custom.programs.zoxide.enable = true;
 
-    # gui
-
-    # gaming
-    gaming.gamemode.enable = true;
-    gaming.lutris.enable = true;
-    # gaming.osu.enable = true;
-    gaming.mangohud.enable = true;
-    gaming.optimize.enable = true;
-    gaming.steam.enable = true;
-
+    # DESKTOP
     # window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
@@ -78,6 +69,14 @@ in {
     desktop.wayland-session.enable = true;
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
+
+    # gaming
+    gaming.gamemode.enable = true;
+    gaming.lutris.enable = true;
+    # gaming.osu.enable = true;
+    gaming.mangohud.enable = true;
+    gaming.optimize.enable = true;
+    gaming.steam.enable = true;
 
     # programs
     # default programs

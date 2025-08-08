@@ -14,7 +14,7 @@ in {
 
         # https://github.com/flightlessmango/MangoHud/blob/master/data/MangoHud.conf
         settings = {
-          background_alpha = 0.5;
+          background_alpha = lib.mkForce 0.0;
         };
       };
     };

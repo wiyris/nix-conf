@@ -67,6 +67,7 @@
     ./desktop/programs/explorer/thunar
     ./desktop/programs/gaming/gamemode
     ./desktop/programs/gaming/lutris
+    ./desktop/programs/gaming/mangohud
     ./desktop/programs/gaming/optimize
     ./desktop/programs/gaming/osu
     ./desktop/programs/gaming/steam

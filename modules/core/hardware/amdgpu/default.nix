@@ -22,6 +22,9 @@ in {
     environment.systemPackages = with pkgs; [
       vulkan-tools
       vulkan-validation-layers
+
+      nvtopPackages.amd
+      amdgpu_top
     ];
 
     hardware.amdgpu = {

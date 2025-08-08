@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.desktop.hypridle;
+  cfg = config.custom.services.hypridle;
 in {
-  options.desktop.hypridle.enable = lib.mkEnableOption {};
+  options.custom.services.hypridle.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
       systemd.user.services.hypridle.Install.WantedBy = lib.mkForce [];

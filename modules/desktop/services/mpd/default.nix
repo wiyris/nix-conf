@@ -3,10 +3,10 @@
   config,
   ...
 }: let
-  cfg = config.desktop.pipewire;
+  cfg = config.custom.services.pipewire;
   inherit (config.globals) musicDirectory;
 in {
-  options.desktop.mpd.enable = lib.mkEnableOption {};
+  options.custom.services.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
       services.mpd-mpris.enable = true;

@@ -106,23 +106,25 @@ in {
 
     # wm-addons
     desktop.clipboard.enable = true;
-    desktop.dunst.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
-    desktop.hypridle.enable = true;
-    desktop.hyprlock.enable = true;
     desktop.mime-apps.enable = true;
-    desktop.rofi.enable = true;
-    desktop.mpd.enable = true;
-    desktop.pipewire.enable = true;
-    desktop.swayosd.enable = true;
-    desktop.swww.enable = true;
     desktop.uwsm.enable = true;
-    desktop.waybar.enable = true;
     desktop.wayland-session.enable = true;
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
+
+    custom.programs.hyprlock.enable = true;
+    custom.programs.rofi.enable = true;
+
+    custom.services.dunst.enable = true;
+    custom.services.hypridle.enable = true;
+    custom.services.mpd.enable = true;
+    custom.services.pipewire.enable = true;
+    custom.services.swayosd.enable = true;
+    custom.services.swww.enable = true;
+    custom.services.waybar.enable = true;
 
     desktop.dwl.enable = true;
     desktop.hyprland.enable = true;

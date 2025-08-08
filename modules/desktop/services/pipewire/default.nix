@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.desktop.pipewire;
+  cfg = config.custom.services.pipewire;
 in {
-  options.desktop.pipewire.enable = lib.mkEnableOption {};
+  options.custom.services.pipewire.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     security.rtkit.enable = true;
     services.playerctld.enable = true;

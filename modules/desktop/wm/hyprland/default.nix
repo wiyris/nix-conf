@@ -80,6 +80,6 @@ in {
         ];
       };
     })
-    (lib.mkIf config.desktop.swww.enable {hm.services.hyprpaper.enable = lib.mkForce false;})
+    (lib.mkIf config.custom.services.swww.enable {hm.services.hyprpaper.enable = lib.mkForce false;})
   ];
 }

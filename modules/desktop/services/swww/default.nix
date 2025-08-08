@@ -3,8 +3,8 @@
   config,
   ...
 }: let
-  cfg = config.desktop.swww;
+  cfg = config.custom.services.swww;
 in {
-  options.desktop.swww.enable = lib.mkEnableOption {};
+  options.custom.services.swww.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {hm.services.swww.enable = true;};
 }

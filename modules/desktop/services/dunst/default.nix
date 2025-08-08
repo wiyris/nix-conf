@@ -4,7 +4,7 @@
   lib,
   ...
 }: let
-  cfg = config.desktop.dunst;
+  cfg = config.custom.services.dunst;
   inherit (lib) mkForce;
 
   inherit
@@ -18,7 +18,7 @@
     base0E
     ;
 in {
-  options.desktop.dunst.enable = lib.mkEnableOption {};
+  options.custom.services.dunst.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm.services.dunst = {
       enable = true;

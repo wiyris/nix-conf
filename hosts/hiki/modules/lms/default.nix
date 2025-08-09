@@ -3,15 +3,15 @@
   environment.etc."lms.conf".text = ''
   '';
 
+  users.groups.lms = {};
   users.users.lms = {
     isSystemUser = true;
     group = "lms";
-    home = "/var/lib/lms";
+    home = "/var/lms";
     createHome = true;
-    shell = pkgs.shadow.bins.nologin;
   };
 
-  systemd.services.my-custom-service = {
+  systemd.services.lms = {
     description = "Lightweight Music Server - Access your self-hosted music using a web interface";
     after = ["network.target"];
     wantedBy = ["multi-user.target"];
@@ -21,7 +21,7 @@
       User = "lms";
       Group = "lms";
       ExecStart = "${pkgs.lms}/bin/lms";
-      WorkingDirectory = "/var/lib/lms";
+      WorkingDirectory = "/var/lms";
       Restart = "always";
       RestartSec = 30;
     };

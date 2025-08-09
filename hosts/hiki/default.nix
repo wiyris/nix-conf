@@ -10,7 +10,7 @@ in {
 
     ./modules/jellyfin
     # ./modules/kavita
-    # ./modules/lms
+    ./modules/lms
     # ./modules/navidrome
     # ./modules/shoko
   ];

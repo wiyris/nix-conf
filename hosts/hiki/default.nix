@@ -12,7 +12,7 @@ in {
     # ./modules/kavita
     # ./modules/lms
     # ./modules/navidrome
-    ./modules/shoko
+    # ./modules/shoko
   ];
 
   config = {

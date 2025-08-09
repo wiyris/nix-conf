@@ -3,6 +3,7 @@
   environment.etc."lms.conf".text = ''
   '';
 
+  networking.firewall.allowedTCPPorts = [5082];
   users.groups.lms = {};
   users.users.lms = {
     isSystemUser = true;

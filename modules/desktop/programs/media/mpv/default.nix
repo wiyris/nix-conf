@@ -24,14 +24,18 @@ in {
         hwdec = "auto-safe";
         vo = "gpu";
       };
-      scripts = with pkgs; [
-        mpvScripts.mpris
-        mpvScripts.thumbfast
-        mpvScripts.uosc
-        mpvScripts.cutter
-        mpvScripts.quality-menu
-        mpvScripts.mpv-cheatsheet
-      ];
+      scripts = with pkgs.mpvScripts;
+        [
+          mpris
+          thumbfast
+          uosc
+          cutter
+          quality-menu
+          mpv-cheatsheet
+        ]
+        ++ (with pkgs.mpvScripts.builtins; [
+          # autoload
+        ]);
     };
   };
 }

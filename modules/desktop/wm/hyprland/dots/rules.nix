@@ -28,6 +28,9 @@
       # Tearing
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
 
+      "nodim, class:^([Ss]team)$"
+      "nodim, title:^([Ss]team)$"
+
       # thunar
       # "opacity 0.8, class:(thunar)"
       "float, class:thunar"

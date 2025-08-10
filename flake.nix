@@ -102,5 +102,10 @@
       url = "github:catppuccin/zen-browser";
       flake = false;
     };
+
+    catppuccin-obs = {
+      url = "github:catppuccin/obs";
+      flake = false;
+    };
   };
 }

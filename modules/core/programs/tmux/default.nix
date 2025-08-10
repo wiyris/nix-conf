@@ -18,6 +18,7 @@ in {
       ];
       programs.tmux = {
         enable = true;
+        tmuxp.enable = true;
         inherit shell;
         mouse = true;
         escapeTime = 0;
@@ -25,6 +26,10 @@ in {
         terminal = "screen-256color";
         extraConfig = ''
           set -g status-position top
+
+          # Start windows and panes at 1, not 0
+          set -g base-index 1
+          setw -g pane-base-index 1
         '';
         plugins = with pkgs.tmuxPlugins; [
           tmux-fzf

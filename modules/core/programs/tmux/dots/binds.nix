@@ -1,15 +1,21 @@
 {
   programs.tmux = {
     keyMode = "vi";
-    # prefix = "M-Space";
+    prefix = "C-a";
     extraConfig = ''
-      # Start windows and panes at 1, not 0
-      set -g base-index 1
-      setw -g pane-base-index 1
+      # Vim mode
+      setw -g mode-keys vi
+      set -g status-keys vi
+      bind 'v' copy-mode
+      bind -T copy-mode-vi v send -X begin-selection
+      bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
+      bind p paste-buffer
+      bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "wl-copy"
+
       # Config reload
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
-      bind 'v' copy-mode
 
+      # General configs
       bind -n M-C-q detach
       bind -n M-q kill-pane
       bind -n M-Q kill-window
@@ -45,6 +51,11 @@
       # Swap windows
       bind -n M-"<" swap-window -d -t -1
       bind -n M-">" swap-window -d -t +1
+
+      # Plugins
+      ## tmux-fingers
+      bind -n M-f run -b "#{@fingers-cli} start #{pane_id}"
+      bind u run -b "#{@fingers-cli} start #{pane_id} --patterns url"
     '';
   };
 }

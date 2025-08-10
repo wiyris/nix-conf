@@ -51,8 +51,8 @@ in {
     "Mod+X".action = focus-workspace "game";
 
     "Mod+Comma".action = focus-column-left;
-    "Mod+A".action = focus-window-or-workspace-down;
-    "Mod+E".action = focus-window-or-workspace-up;
+    "Mod+Ctrl+A".action = focus-window-or-workspace-down;
+    "Mod+Ctrl+E".action = focus-window-or-workspace-up;
     "Mod+I".action = focus-column-right;
     "Mod+Left".action = focus-column-left;
     "Mod+Down".action = focus-window-or-workspace-down;

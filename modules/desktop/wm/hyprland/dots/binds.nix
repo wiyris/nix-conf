@@ -149,8 +149,8 @@
       # Switching workspaces
       "$mainMod, mouse_down, workspace, m-1"
       "$mainMod, mouse_up, workspace, m+1"
-      # "$mainMod, A, workspace, m-1"
-      # "$mainMod, E, workspace, m+1"
+      "$mainMod CTRL, A, workspace, m-1"
+      "$mainMod CTRL, E, workspace, m+1"
       # "$mainMod, Down, workspace, m-1"
       # "$mainMod, Up, workspace, m+1"
     ];

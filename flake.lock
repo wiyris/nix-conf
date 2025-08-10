@@ -138,6 +138,22 @@
         "type": "github"
       }
     },
+    "catppuccin-obs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1753787152,
+        "narHash": "sha256-ezz3euxO5lxyVaVFDPjNowpivAm9tRGHt8SbflAdkA8=",
+        "owner": "catppuccin",
+        "repo": "obs",
+        "rev": "05c55ffe499c183c98be469147f602c3f8e84b87",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "obs",
+        "type": "github"
+      }
+    },
     "chaotic": {
       "inputs": {
         "flake-schemas": "flake-schemas",
@@ -1378,6 +1394,7 @@
       "inputs": {
         "arion": "arion",
         "betterfox": "betterfox",
+        "catppuccin-obs": "catppuccin-obs",
         "chaotic": "chaotic",
         "disko": "disko",
         "home-manager": "home-manager_2",

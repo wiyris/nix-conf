@@ -6,7 +6,7 @@
   cfg = config.custom.programs.thuderbird;
   inherit (config.globals) userName;
 in {
-  options.custom.programs.thunar.enable = lib.mkEnableOption {};
+  options.custom.programs.thunderbird.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
       programs.thunderbird = {

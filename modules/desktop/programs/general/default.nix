@@ -7,7 +7,7 @@
   cfg = config.desktop.wayland-session;
 in {
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = with pkgs;
+    hm.home.packages = with pkgs;
       [
         # cli
         gowall
@@ -21,7 +21,7 @@ in {
         thunderbird
 
         # qt
-        anki
+        # anki
 
         # electron
         obsidian

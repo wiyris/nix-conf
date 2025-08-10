@@ -11,10 +11,9 @@ in {
       [
         # cli
         gowall
-        # taskwarrior3
 
         # tui
-        # taskwarrior-tui
+        taskwarrior-tui
         tray-tui
 
         # gtk

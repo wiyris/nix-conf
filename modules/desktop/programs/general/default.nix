@@ -10,6 +10,7 @@ in {
     environment.systemPackages = with pkgs;
       [
         #tui
+        taskwarrior-tui
         tray-tui
 
         #gtk

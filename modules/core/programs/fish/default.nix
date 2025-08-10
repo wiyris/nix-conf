@@ -23,7 +23,7 @@ in {
       hm = {
         imports = [./abbrs.nix];
         xdg.configFile."fish/functions" = {
-          source = ./funstions;
+          source = ./functions;
           recursive = true;
           force = true;
         };

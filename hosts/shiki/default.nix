@@ -54,7 +54,7 @@ in {
 
     desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    # desktop.niri.enable = true;
+    desktop.niri.enable = true;
 
     ## core
     desktop.clipboard.enable = true;

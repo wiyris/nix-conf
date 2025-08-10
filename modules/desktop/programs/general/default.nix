@@ -9,14 +9,18 @@ in {
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs;
       [
-        #tui
+        # cli
+        gowall
+        taskwarrior3
+
+        # tui
         taskwarrior-tui
         tray-tui
 
-        #gtk
+        # gtk
         thunderbird
 
-        #qt
+        # qt
         anki
 
         # electron

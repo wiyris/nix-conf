@@ -14,8 +14,6 @@ in {
         hyprshot
         wev
         xwayland-satellite
-
-        gowall
       ];
     };
   };

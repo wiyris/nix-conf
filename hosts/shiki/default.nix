@@ -82,11 +82,12 @@ in {
     custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     ## general
+    custom.programs.anki.enable = true;
+    custom.programs.goldendict.enable = true;
     custom.programs.hyprlock.enable = true;
     custom.programs.obs-studio.enable = true;
     custom.programs.rofi.enable = true;
-    custom.programs.anki.enable = true;
-    custom.programs.goldendict.enable = true;
+    custom.programs.taskwarrior.enable = true;
 
     ## terminal emulator
     custom.programs.foot.enable = true;

@@ -77,6 +77,7 @@
     ./desktop/programs/general/hyprlock
     ./desktop/programs/general/obs-studio
     ./desktop/programs/general/rofi
+    ./desktop/programs/general/taskwarrior
     # ./desktop/programs/general/thunderbird
     ./desktop/programs/media/freetube
     ./desktop/programs/media/mpv

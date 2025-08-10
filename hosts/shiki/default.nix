@@ -16,13 +16,14 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
+    # Custom options
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
 
-    # cli
+    ## cli
     programs.fish.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
@@ -48,14 +49,14 @@ in {
     custom.programs.zoxide.enable = true;
 
     # DESKTOP
-    # window-managers
+    ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
     desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 
-    # core
+    ## core
     desktop.clipboard.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
@@ -66,7 +67,7 @@ in {
     desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
 
-    # gaming
+    ## gaming
     gaming.gamemode.enable = true;
     gaming.lutris.enable = true;
     # gaming.osu.enable = true;
@@ -74,25 +75,25 @@ in {
     gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
-    # programs
-    # default programs
+    ## programs
+    ### default programs
     custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     custom.programs.thunar.isDefault = true; # thunar, dolphin
 
-    # general
+    ## general
     custom.programs.hyprlock.enable = true;
     custom.programs.obs-studio.enable = true;
     custom.programs.rofi.enable = true;
     custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
 
-    # terminal emulator
+    ## terminal emulator
     custom.programs.foot.enable = true;
     custom.programs.ghostty.enable = true;
     # custom.programs.kitty.enable = true;
 
-    # browser
+    ## browser
     custom.programs.chromium.enable = true;
     # custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
@@ -102,11 +103,11 @@ in {
     # custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
-    # exprorer
+    ## exprorer
     # custom.programs.dolphin.enable = true;
     custom.programs.thunar.enable = true;
 
-    # media
+    ## media
     custom.programs.freetube.enable = true;
     custom.programs.mpv.enable = true;
     # custom.programs.pqiv.enable = true;
@@ -114,7 +115,7 @@ in {
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
-    # services
+    ## services
     custom.services.dunst.enable = true;
     custom.services.hypridle.enable = true;
     custom.services.mpd.enable = true;

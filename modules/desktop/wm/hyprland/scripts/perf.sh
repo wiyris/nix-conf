@@ -17,10 +17,10 @@ if [ "$HYPRGAMEMODE" = 1 ]; then
     keyword general:col.active_border rgb(b4befe)"
 
   hyprctl keyword "windowrule opacity 1 override 1 override 1 override, class:^(.*)$"
-  systemctl stop --user swww.service
+  # systemctl stop --user swww.service
   exit
 else
   hyprctl reload >/dev/null 2>&1 &
-  systemctl start --user swww.service &
+  # systemctl start --user swww.service &
   exit
 fi

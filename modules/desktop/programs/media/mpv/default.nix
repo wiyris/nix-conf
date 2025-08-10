@@ -34,7 +34,7 @@ in {
           mpv-cheatsheet
         ]
         ++ (with pkgs.mpvScripts.builtins; [
-          # autoload
+          autoload
         ]);
     };
   };

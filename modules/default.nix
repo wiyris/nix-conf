@@ -39,7 +39,7 @@
     ./core/programs/gtrash
     ./core/programs/htop
     ./core/programs/lazygit
-    ./core/programs/shell/nushell
+    # ./core/programs/shell/nushell
     ./core/programs/nvim
     ./core/programs/ripgrep
     ./core/programs/starship

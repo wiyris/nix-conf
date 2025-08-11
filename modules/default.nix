@@ -3,6 +3,7 @@
     ./core/globals
     ./core/home-manager
     ./core/nix
+    ./core/sops
     ./core/stylix
     ./core/terminus-font
     ./core/user

@@ -8,11 +8,6 @@
     defaultSopsFile = ../../../secrets/secrets.yaml;
     age.keyFile = "/home/tsubaki/.config/sops/age/keys.txt";
     age.generateKey = true;
-    secrets.anki = {
-      path = "/home/tsubaki/test";
-      owner = "tsubaki";
-    };
-    validateSopsFiles = false;
   };
   hm.home.packages = [pkgs.sops];
 }

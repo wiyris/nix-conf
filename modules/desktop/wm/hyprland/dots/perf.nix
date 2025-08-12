@@ -11,10 +11,10 @@
       dim_inactive = lib.mkForce false;
     };
     general = {
-      border_size = 1;
+      border_size = lib.mkForce 1;
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
-      col.active_border = lib.mkForce "rgb(b4befe)";
+      "col.active_border" = lib.mkForce "rgb(b4befe)";
     };
   };
 }

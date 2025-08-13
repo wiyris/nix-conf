@@ -10,7 +10,6 @@ in {
     hm.programs.fzf = {
       enable = true;
       enableFishIntegration = true;
-      enableNushellIntegration = true;
       colors = lib.mkForce {};
       defaultOptions = [
         "--height 40%"

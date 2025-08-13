@@ -17,7 +17,6 @@ in {
         programs.ghostty = {
           enable = true;
           enableFishIntegration = true;
-          enableNushellIntegration = true;
           settings = {
             theme = "catppuccin-mocha";
             # background-blur-radius = 20;

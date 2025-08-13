@@ -24,6 +24,7 @@ in {
       programs.yazi = {
         enable = true;
         enableFishIntegration = true;
+        enableNushellIntegration = true;
         shellWrapperName = "y";
         plugins = with pkgs.yaziPlugins; {inherit git starship full-border;};
         settings = {
@@ -61,7 +62,7 @@ in {
             require("git"):setup()
             require("starship"):setup()
             require("full-border"):setup({
-              type = ui.Border.ROUNDED,
+              type = ui.Border.PLAIN,
             })
             require("zoxide"):setup({
               update_db = false,

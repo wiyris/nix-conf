@@ -1,5 +1,0 @@
-{...}: {
-  hm.nushell = {
-    enable = true;
-  };
-}

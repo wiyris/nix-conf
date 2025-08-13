@@ -11,6 +11,7 @@ in {
       enable = true;
       enableBashIntegration = false;
       enableFishIntegration = true;
+      enableNushellIntegration = true;
     };
   };
 }

@@ -25,9 +25,7 @@ in {
         enable = true;
         enableFishIntegration = true;
         shellWrapperName = "y";
-        plugins = with pkgs.yaziPlugins; {
-          inherit git starship full-border;
-        };
+        plugins = with pkgs.yaziPlugins; {inherit git starship full-border;};
         settings = {
           mgr = {
             layout = [1 4 3];

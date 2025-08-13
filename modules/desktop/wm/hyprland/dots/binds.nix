@@ -147,12 +147,12 @@
       "$mainMod CTRL, i,       moveactive,  40 0"
 
       # Switching workspaces
-      "$mainMod, mouse_down, workspace, m-1"
-      "$mainMod, mouse_up, workspace, m+1"
+      # "$mainMod, mouse_down, workspace, m-1"
+      # "$mainMod, mouse_up, workspace, m+1"
       "$mainMod CTRL, A, workspace, m-1"
       "$mainMod CTRL, E, workspace, m+1"
-      # "$mainMod, Down, workspace, m-1"
-      # "$mainMod, Up, workspace, m+1"
+      "$mainMod, Down, workspace, m-1"
+      "$mainMod, Up, workspace, m+1"
     ];
 
     # Laptop multimedia keys for volume and LCD brightness

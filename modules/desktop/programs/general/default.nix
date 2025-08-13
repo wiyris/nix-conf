@@ -31,8 +31,15 @@ in {
         grayjay
         gpu-screen-recorder-gtk
         dissent
+        blanket # play rain, waves, etc sounds
+        d-spy # dbus gui
+        pwvucontrol # pipewire gui
+        remmina # vnc client
 
         # qt
+        kdePackages.filelight
+        kdePackages.kalgebra
+        kdePackages.kdenlive
         qbittorrent
         # openshot-qt
 

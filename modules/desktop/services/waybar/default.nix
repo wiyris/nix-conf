@@ -11,6 +11,7 @@ in {
       imports = [
         ./modules/idle_inhibitor.nix
         ./modules/hyprland-workspaces.nix
+        ./modules/niri.nix
         ./modules/mpris.nix
 
         ./modules/clock.nix
@@ -36,6 +37,7 @@ in {
           modules-left = [
             "idle_inhibitor"
             "hyprland/workspaces"
+            "niri/workspaces"
           ];
 
           modules-center = [

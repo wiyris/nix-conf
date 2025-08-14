@@ -36,7 +36,7 @@ in {
     layout = {
       border.enable = false;
       focus-ring = {
-        enable = true;
+        enable = false;
         width = 2;
         # active.color = "${base0C}";
         active.gradient = {
@@ -48,7 +48,7 @@ in {
       };
 
       shadow = {
-        enable = true;
+        enable = false;
       };
 
       preset-column-widths = [

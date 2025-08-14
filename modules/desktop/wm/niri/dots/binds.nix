@@ -11,7 +11,7 @@ in {
     "Mod+BackSpace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "--class=nvim.ghostty" "-e" "nvim";
     "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
     "Mod+T".action = spawn "rofi" "-show" "drun";
-    "Mod+H".action = spawn "sh" "-c" "rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
+    "Mod+H".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";
     "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
     "Mod+M".action = spawn "uwsm-app" "--" "thunar";
     "Print".action = screenshot;
@@ -48,11 +48,15 @@ in {
     "Mod+P".action = focus-workspace "editor";
     "Mod+D".action = focus-workspace "iroiro";
     "Mod+L".action = focus-workspace "media";
-    "Mod+X".action = focus-workspace "game";
+    "Mod+X".action = focus-workspace "iroiro2";
+    "Mod+Semicolon".action = focus-workspace "steam";
+    "Mod+U".action = focus-workspace "iroiro3";
+    "Mod+O".action = focus-workspace "obsidian";
+    "Mod+Y".action = focus-workspace "msg";
 
     "Mod+Comma".action = focus-column-left;
-    "Mod+Ctrl+A".action = focus-window-or-workspace-down;
-    "Mod+Ctrl+E".action = focus-window-or-workspace-up;
+    "Mod+A".action = focus-window-or-workspace-down;
+    "Mod+E".action = focus-window-or-workspace-up;
     "Mod+I".action = focus-column-right;
     "Mod+Left".action = focus-column-left;
     "Mod+Down".action = focus-window-or-workspace-down;

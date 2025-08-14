@@ -13,7 +13,19 @@ let
       name = "media";
     };
     "5" = {
-      name = "game";
+      name = "iroiro2";
+    };
+    "6" = {
+      name = "steam";
+    };
+    "7" = {
+      name = "iroiro3";
+    };
+    "8" = {
+      name = "obsidian";
+    };
+    "9" = {
+      name = "msg";
     };
   };
   windowRules = [
@@ -35,7 +47,7 @@ let
         {is-active = true;}
       ];
       shadow = {
-        enable = true;
+        enable = false;
         softness = 20;
         spread = 5;
         color = "#f5e0dc69";
@@ -90,12 +102,30 @@ let
     {
       matches = [
         {app-id = "^steam$";}
-        {app-id = "^vesktop$";}
+        {app-id = "^lutris$";}
+      ];
+      open-on-workspace = "steam";
+    }
+    {
+      matches = [
         {app-id = "^GoldenDict-ng$";}
         {app-id = "^spotify$";}
+      ];
+      open-on-workspace = "iroiro3";
+    }
+    {
+      matches = [
+        {app-id = "^obsidian$";}
+      ];
+      open-on-workspace = "obsidian";
+    }
+
+    {
+      matches = [
+        {app-id = "^vesktop$";}
         {app-id = "^thuderbird$";}
       ];
-      open-on-workspace = "daemon";
+      open-on-workspace = "msg";
     }
     {
       matches = [

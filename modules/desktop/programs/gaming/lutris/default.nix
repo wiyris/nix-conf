@@ -12,5 +12,8 @@ in {
       enable = true;
       protonPackages = [pkgs.proton-ge-bin];
     };
+    hm.home.packages = with pkgs; [
+      dolphin-emu
+    ];
   };
 }

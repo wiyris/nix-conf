@@ -1,11 +1,11 @@
 {lib, ...}: {
   wayland.windowManager.hyprland.settings.decoration = {
-    rounding = 7;
+    rounding = 10;
     active_opacity = 1.0;
     inactive_opacity = 1.0;
     fullscreen_opacity = 1.0;
-    dim_inactive = true;
-    dim_strength = 0.35;
+    # dim_inactive = true;
+    # dim_strength = 0.35;
 
     blur = {
       enabled = true;

@@ -11,7 +11,10 @@ in {
   config = lib.mkIf cfg.enable {
     hm = {
       home.packages = [pkgs.rclone];
-      home.shellAliases.hmt = "systemctl start --user hiki-mounts.service";
+      home.shellAliases = {
+        hmt = "systemctl start --user hiki-mounts.service";
+        humt = "systemctl stop --user hiki-mounts.service";
+      };
       xdg.configFile."rclone/rclone.conf".text = ''
         [hiki]
         type = sftp
@@ -27,9 +30,9 @@ in {
         };
         Service = {
           Type = "notify";
-          ExecStartPre = "/usr/bin/env mkdir -p %h/hiki";
-          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"hiki:/mnt\" \"hiki\"";
-          ExecStop = "/bin/fusermount -u %h/hiki";
+          # ExecStartPre = "/usr/bin/env mkdir -p /mnt/hiki";
+          ExecStart = "${pkgs.rclone}/bin/rclone --config=%h/.config/rclone/rclone.conf --vfs-cache-mode writes --ignore-checksum mount \"hiki:\" \"/mnt/hiki\"";
+          ExecStop = "/bin/fusermount -u /mnt/hiki";
         };
         Install.WantedBy = [];
       };

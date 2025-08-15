@@ -23,7 +23,10 @@ in {
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
 
-    ## cli
+    # Services
+    custom.services.hiki-mounts.enable = true;
+
+    # cli
     programs.fish.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;

@@ -12,7 +12,8 @@ in {
     # ./modules/kavita
     ./modules/lms
     # ./modules/navidrome
-    # ./modules/shoko
+    ./modules/shoko
+    ./modules/sonarr
   ];
 
   config = {

@@ -5,7 +5,7 @@
   config,
   ...
 }: let
-  opacity = 1.0;
+  opacity = 0.5;
   fontSize = 13;
 in {
   imports = [inputs.stylix.nixosModules.stylix];

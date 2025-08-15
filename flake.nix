@@ -13,7 +13,8 @@
           }
         ];
         specialArgs = {
-          inherit inputs system;
+          inherit inputs;
+          inherit system;
           nixpkgs = pkgs;
         };
       };
@@ -23,7 +24,7 @@
       thiki = mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
       hiki = mkNixosSystem inputs.nixpkgs-stable "x86_64-linux" "hiki"; # homelab
 
-      vm = mkNixosSystem inputs.nixpkgs-stable "x86_64-linux" "vm"; # virtual machine
+      vm = mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
     };
   };
 

@@ -8,12 +8,10 @@ in {
     ./hardware-configuration.nix
     ./modules/networking
 
+    ./modules/arr
     ./modules/jellyfin
-    # ./modules/kavita
-    ./modules/lms
-    # ./modules/navidrome
-    ./modules/shoko
-    ./modules/sonarr
+    # ./modules/lms
+    ./modules/navidrome
   ];
 
   config = {

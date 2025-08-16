@@ -20,6 +20,10 @@
       enable = true;
       openFirewall = true;
     };
+    flaresolverr = {
+      enable = true;
+      openFirewall = true;
+    };
     qbittorrent = {
       enable = true;
       openFirewall = true;

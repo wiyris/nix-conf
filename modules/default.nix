@@ -67,6 +67,7 @@
     ./desktop/programs/browser/zen-browser
     ./desktop/programs/explorer/dolphin
     ./desktop/programs/explorer/thunar
+    ./desktop/programs/gaming/celeste
     ./desktop/programs/gaming/gamemode
     ./desktop/programs/gaming/lutris
     ./desktop/programs/gaming/mangohud

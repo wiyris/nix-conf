@@ -82,6 +82,7 @@
     ./desktop/programs/general/rofi
     ./desktop/programs/general/taskwarrior
     # ./desktop/programs/general/thunderbird
+    ./desktop/programs/general/tray-tui
     ./desktop/programs/media/freetube
     ./desktop/programs/media/mpv
     ./desktop/programs/media/pqiv

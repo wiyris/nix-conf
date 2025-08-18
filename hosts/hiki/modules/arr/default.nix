@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  users.groups.arr = {};
   services = {
     lidarr = {
       enable = true;

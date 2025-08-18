@@ -4,7 +4,7 @@
   osConfig,
   ...
 }: let
-  opacity = "0.5";
+  opacity = "0.35";
   inherit (osConfig.globals) defaultShell;
   hyprland-scratchpad =
     pkgs.writeScriptBin "hyprland-scratchpad"

@@ -37,12 +37,12 @@
       # "$mainMod, semicolon, pseudo"
 
       # Group Control
-      "$mainMod, APOSTROPHE, togglegroup"
+      # "$mainMod, APOSTROPHE, togglegroup"
       "$mainMod CTRL, APOSTROPHE, lockactivegroup, toggle"
       "ALT, TAB, changegroupactive"
 
       # Set sticky
-      # "$mainMod, C, pin"
+      "$mainMod, B, pin"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"
@@ -137,8 +137,10 @@
       # "$mainMod CTRL, a,       resizeactive,  0  60"
       # "$mainMod CTRL, e,       resizeactive,  0 -60"
       # "$mainMod CTRL, i,       resizeactive,  40 0"
-      "$mainMod, minus,     resizeactive, -40 0"
-      "$mainMod, equal,     resizeactive,  40 0"
+      "$mainMod, Minus,      resizeactive, -40 0"
+      "$mainMod, Periop,     resizeactive,  0  60"
+      "$mainMod, APOSTROPHE, resizeactive,  0 -60"
+      "$mainMod, Equal,      resizeactive,  40 0"
 
       # Moving floating windows             X  Y
       "$mainMod CTRL, COMMA,   moveactive, -40 0"
@@ -149,8 +151,8 @@
       # Switching workspaces
       # "$mainMod, mouse_down, workspace, m-1"
       # "$mainMod, mouse_up, workspace, m+1"
-      "$mainMod CTRL, A, workspace, m-1"
-      "$mainMod CTRL, E, workspace, m+1"
+      # "$mainMod CTRL, A, workspace, m-1"
+      # "$mainMod CTRL, E, workspace, m+1"
       "$mainMod, Down, workspace, m-1"
       "$mainMod, Up, workspace, m+1"
     ];

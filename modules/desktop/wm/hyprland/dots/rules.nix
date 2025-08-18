@@ -3,7 +3,7 @@
     windowrulev2 = [
       # Base Rules
       "float, tag:float"
-      "float, tag:float-pin"
+      "float, tag:float_pin"
 
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$"
       "tag +float_md, class:^(mpv)$"

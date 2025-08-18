@@ -3,35 +3,43 @@
     lidarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     radarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     readarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     sonarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     prowlarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     flaresolverr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     bazarr = {
       enable = true;
       openFirewall = true;
+      group = "arr";
     };
     qbittorrent = {
       enable = true;
       openFirewall = true;
       package = pkgs.qbittorrent-nox;
+      group = "arr";
     };
   };
   systemd.services.qbittorrent.wantedBy = [];

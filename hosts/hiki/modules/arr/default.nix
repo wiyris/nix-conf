@@ -24,6 +24,10 @@
       enable = true;
       openFirewall = true;
     };
+    bazarr = {
+      enable = true;
+      openFirewall = true;
+    };
     qbittorrent = {
       enable = true;
       openFirewall = true;

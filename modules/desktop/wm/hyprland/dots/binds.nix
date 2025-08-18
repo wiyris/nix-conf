@@ -43,6 +43,7 @@
 
       # Set sticky
       "$mainMod, B, pin"
+      "$mainMod, C, cyclenext"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"

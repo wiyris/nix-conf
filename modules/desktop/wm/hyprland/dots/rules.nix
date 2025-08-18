@@ -30,6 +30,8 @@
 
       "nodim, class:^([Ss]team)$"
       "nodim, title:^([Ss]team)$"
+      "nodim, tag:float"
+      "nodim, tag:float_pin"
 
       # thunar
       # "opacity 0.8, class:(thunar)"

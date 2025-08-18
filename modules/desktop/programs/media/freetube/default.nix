@@ -15,6 +15,10 @@ in {
         rememberSearchHistory = false;
         useSponsorBlock = true;
 
+        checkForBlogPosts = false;
+        checkForUpdates = false;
+        enableSearchSuggestions = false;
+
         barColor = false;
         expandSideBar = false;
         baseTheme = "catppuccinMocha";
@@ -33,7 +37,7 @@ in {
         # hideLiveChat = true;
         hideLiveStreams = true;
         hidePopularVideos = true;
-        # hideRecommendedVideos = true;
+        hideRecommendedVideos = true;
         hideSubscriptionsCommunity = true;
         hideSubscriptionsLive = true;
         hideSubscriptionsShorts = true;

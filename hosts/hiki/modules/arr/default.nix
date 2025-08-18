@@ -28,7 +28,6 @@
     flaresolverr = {
       enable = true;
       openFirewall = true;
-      group = "arr";
     };
     bazarr = {
       enable = true;

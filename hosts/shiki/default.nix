@@ -92,6 +92,7 @@ in {
     custom.programs.hyprlock.enable = true;
     custom.programs.obs-studio.enable = true;
     custom.programs.rofi.enable = true;
+    custom.programs.tofi.enable = true;
     custom.programs.taskwarrior.enable = true;
     custom.programs.tray-tui.enable = true;
 

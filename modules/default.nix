@@ -80,6 +80,7 @@
     ./desktop/programs/general/hyprlock
     ./desktop/programs/general/obs-studio
     ./desktop/programs/general/rofi
+    ./desktop/programs/general/tofi
     ./desktop/programs/general/taskwarrior
     # ./desktop/programs/general/thunderbird
     ./desktop/programs/general/tray-tui

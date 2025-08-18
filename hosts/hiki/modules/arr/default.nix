@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   users.groups.arr = {};
-  services.transmission.settings.umask = "0";
+  services.transmission.settings.umask = "000";
   services = {
     lidarr = {
       enable = true;

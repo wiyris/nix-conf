@@ -23,7 +23,6 @@
     prowlarr = {
       enable = true;
       openFirewall = true;
-      group = "arr";
     };
     flaresolverr = {
       enable = true;

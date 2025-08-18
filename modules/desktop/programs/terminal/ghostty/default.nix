@@ -30,7 +30,7 @@ in {
 
             # font-thicken = true;
 
-            # gtk-single-instance = true;
+            gtk-single-instance = true;
             window-theme = "system";
             gtk-titlebar = false;
             gtk-wide-tabs = false;
@@ -41,9 +41,9 @@ in {
             mouse-hide-while-typing = true;
 
             confirm-close-surface = false;
-            window-padding-x = 12;
-            window-padding-y = 10;
-            window-padding-balance = true;
+            window-padding-x = 6;
+            window-padding-y = [5 5];
+            window-padding-balance = false;
 
             # extras
             shell-integration-features = "no-cursor";

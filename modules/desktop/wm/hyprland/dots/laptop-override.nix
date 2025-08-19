@@ -7,13 +7,13 @@
       blur.enabled = lib.mkForce false;
       shadow.enabled = lib.mkForce false;
       rounding = lib.mkForce 0;
-      color = lib.mkForce "rgb(b4befe)";
       # active_opacity = lib.mkForce 1.0;
       # inactive_opacity = lib.mkForce 1.0;
       # fullscreen_opacity = lib.mkForce 1.0;
       # dim_inactive = lib.mkForce true;
     };
     general = {
+      color = lib.mkForce "rgb(b4befe)";
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
       allow_tearing = lib.mkForce false;

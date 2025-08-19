@@ -20,6 +20,7 @@ in {
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
+    custom.networking.iwd.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
 
@@ -93,7 +94,6 @@ in {
     custom.services.dunst.enable = true;
     custom.services.hypridle.enable = true;
     custom.services.pipewire.enable = true;
-    custom.services.swww.enable = true;
     custom.services.waybar.enable = true;
     laptop.enable = true; # enable laptop modules
 

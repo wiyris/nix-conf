@@ -11,17 +11,14 @@
       blur.enabled = lib.mkForce false;
       shadow.enabled = lib.mkForce false;
       rounding = lib.mkForce 0;
-      # active_opacity = lib.mkForce 1.0;
-      # inactive_opacity = lib.mkForce 1.0;
-      # fullscreen_opacity = lib.mkForce 1.0;
-      # dim_inactive = lib.mkForce true;
+      dim_inactive = lib.mkForce false;
     };
     general = {
       "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base0E})";
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
       allow_tearing = lib.mkForce false;
-      border_size = 0;
+      border_size = lib.mkForce 1;
     };
     unbind = [
       "$mainMod, S"

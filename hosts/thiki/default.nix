@@ -1,6 +1,6 @@
 {
+  lib,
   config,
-  pkgs,
   ...
 }: let
   userName = "tsubaki";
@@ -15,6 +15,11 @@ in {
     globals.userName = userName;
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
+
+    stylix.opacity = {
+      terminal = lib.mkForce 1.0;
+      popups = lib.mkForce 1.0;
+    };
 
     # Custom options
     system.terminus-font.enable = true;

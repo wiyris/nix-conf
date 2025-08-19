@@ -21,8 +21,8 @@ in {
       capslock = "lettermod(control, r, ${toString holdtime}, ${toString taptime})";
 
       space = "overloadt(extend, space, ${toString taptime})";
-      "q+w" = "q";
-      "w+e" = "z";
+      "w+e" = "q";
+      "e+r" = "z";
       "s+d" = "esc";
       "a+d" = "C-space"; # toggle fcitx
       "j+k" = "S-;"; # :

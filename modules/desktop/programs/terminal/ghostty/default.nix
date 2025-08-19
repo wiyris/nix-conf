@@ -42,7 +42,7 @@ in {
 
             confirm-close-surface = false;
             window-padding-x = 6;
-            window-padding-y = [5 5];
+            window-padding-y = [0 0];
             window-padding-balance = false;
 
             # extras

@@ -28,7 +28,7 @@ in {
     custom.networking.iwd.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
-    custom.services.keyd.enable = true;
+    # custom.services.keyd.enable = true;
 
     # cli
     programs.fish.enable = true;

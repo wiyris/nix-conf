@@ -51,8 +51,10 @@
       "$mainMod, e,     movefocus, u"
       "$mainMod, i,     movefocus, r"
 
-      # "$mainMod, Left,  movefocus, l"
-      # "$mainMod, Right, movefocus, r"
+      "$mainMod, Left,  movefocus, l"
+      "$mainMod, Down,  movefocus, d"
+      "$mainMod, Up,    movefocus, u"
+      "$mainMod, Right, movefocus, r"
 
       # Moving windows
       "$mainMod SHIFT, COMMA,  swapwindow, l"

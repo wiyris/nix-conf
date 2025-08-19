@@ -14,11 +14,11 @@
       dim_inactive = lib.mkForce false;
     };
     general = {
-      "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base0E})";
+      "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
       allow_tearing = lib.mkForce false;
-      border_size = lib.mkForce 1;
+      border_size = lib.mkForce 2;
     };
     unbind = [
       "$mainMod, S"

@@ -5,14 +5,14 @@
       "float, tag:float"
       "float, tag:float_pin"
 
-      "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$"
+      "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$"
       "tag +float_md, class:^(mpv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
       "workspace 4, class:^(FreeTube)$"
-      "workspace 4 silent, class:^(.*steam_app.*)$|(.*gamescope.*)$"
+      "workspace 5 silent, class:^(.*steam_app.*)$|(.*gamescope.*)$"
       "workspace 6 silent, class:^([Ss]team)$"
       "workspace 6 silent, title:^([Ss]team)$"
       "workspace 7 silent, class:^(spotify)$"
@@ -32,6 +32,9 @@
       "nodim, title:^([Ss]team)$"
       "nodim, tag:float"
       "nodim, tag:float_pin"
+
+      "nofocus, title:^(Application Not Responding)$"
+      "animation slide right, title:^(Application Not Responding)$"
 
       # thunar
       # "opacity 0.8, class:(thunar)"
@@ -56,6 +59,6 @@
     ];
 
     #Gaming Workspace
-    # workspace = "5, rounding:false, decorate:false, gapsin:0, gapsout:0, border:false, decorate:false";
+    workspace = "5, rounding:false, decorate:false, gapsin:0, gapsout:0, border:false, decorate:false";
   };
 }

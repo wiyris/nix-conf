@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   users.groups.arr = {};
+  environment.extraInit = "umask 0002";
   services.transmission.settings.umask = "0002";
   services = {
     lidarr = {

@@ -18,11 +18,8 @@
 
     ./core/security/doas
 
-    ./core/services/batsignal
     ./core/services/keyd
     ./core/services/hiki-mounts
-    ./core/services/rtorrent
-    ./core/services/sk-serve
     ./core/services/tlp
     ./core/services/udev
 

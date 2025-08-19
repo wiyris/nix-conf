@@ -25,10 +25,10 @@ in {
             thunar-archive-plugin
           ];
         };
+        file-roller.enable = true;
       };
       environment.systemPackages = with pkgs; [
         thud
-        file-roller
       ];
 
       services = {

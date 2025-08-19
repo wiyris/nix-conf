@@ -1,4 +1,8 @@
-{lib, ...}: {
+{
+  lib,
+  config,
+  ...
+}: {
   wayland.windowManager.hyprland.settings = {
     "$terminal" = lib.mkForce "foot";
     animations.enabled = lib.mkForce false;
@@ -13,7 +17,7 @@
       # dim_inactive = lib.mkForce true;
     };
     general = {
-      color = lib.mkForce "rgb(b4befe)";
+      "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base0E})";
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
       allow_tearing = lib.mkForce false;

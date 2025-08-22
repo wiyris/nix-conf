@@ -1,7 +1,7 @@
 {
   networking = {
     enableIPv6 = false;
-    interfaces.enp24s0.ipv4.addresses = [
+    interfaces.enp2s0.ipv4.addresses = [
       {
         address = "192.168.0.42";
         prefixLength = 24;

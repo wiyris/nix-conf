@@ -33,8 +33,8 @@
       "nodim, tag:float"
       "nodim, tag:float_pin"
 
-      "nofocus, title:^(Application Not Responding)$"
-      "animation slide right, title:^(Application Not Responding)$"
+      # "nofocus, title:^(Application Not Responding)$"
+      # "animation slide right, title:^(Application Not Responding)$"
 
       # thunar
       # "opacity 0.8, class:(thunar)"

@@ -1,7 +1,7 @@
 {
   programs.tmux = {
     keyMode = "vi";
-    prefix = "C-a";
+    # prefix = "C-a";
     extraConfig = ''
       # Vim mode
       setw -g mode-keys vi

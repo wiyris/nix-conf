@@ -13,6 +13,7 @@ in {
     ./modules/jellyfin
     # ./modules/lms
     ./modules/navidrome
+    ./modules/taskserver
   ];
 
   config = {

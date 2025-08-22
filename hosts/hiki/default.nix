@@ -7,6 +7,7 @@ in {
     ./disko.nix
     ./hardware-configuration.nix
     ./modules/networking
+    ./modules/intel
 
     ./modules/arr
     ./modules/jellyfin

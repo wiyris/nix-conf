@@ -118,6 +118,7 @@ in {
 
     ## media
     custom.programs.freetube.enable = true;
+    custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;

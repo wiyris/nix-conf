@@ -82,6 +82,7 @@
     # ./desktop/programs/general/thunderbird
     ./desktop/programs/general/tray-tui
     ./desktop/programs/media/freetube
+    ./desktop/programs/media/jellyfin-client
     ./desktop/programs/media/mpv
     ./desktop/programs/media/pqiv
     ./desktop/programs/media/rmpc

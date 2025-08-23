@@ -72,6 +72,7 @@
     ./desktop/programs/gaming/osu
     ./desktop/programs/gaming/steam
     ./desktop/programs/general
+    ./desktop/programs/general/aerc
     ./desktop/programs/general/anki
     ./desktop/programs/general/goldendict
     ./desktop/programs/general/hyprlock

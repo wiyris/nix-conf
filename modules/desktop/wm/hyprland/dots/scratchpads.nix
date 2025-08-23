@@ -50,7 +50,7 @@ in {
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
       "tag +float_side, class:chrome-translate.kagi.com__-Default"
       "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
-      # "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
+      "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"

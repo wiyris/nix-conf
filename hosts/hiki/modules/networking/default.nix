@@ -11,6 +11,8 @@
     nameservers = [
       # "192.168.0.1"
       "194.242.2.2"
+      "1.1.1.1"
+      "1.0.0.1"
     ];
   };
   services.openssh.enable = true;

@@ -23,13 +23,16 @@ in {
         # enable hardware acceleration
         hwdec = "auto-safe";
         vo = "gpu";
+        gpu-hwdec-interop = "vaapi";
+        tone-mapping = "auto";
+        gpu-api = "vulkan";
       };
       scripts = with pkgs.mpvScripts;
         [
           mpris
           thumbfast
           uosc
-          cutter
+          # cutter
           quality-menu
           mpv-cheatsheet
         ]

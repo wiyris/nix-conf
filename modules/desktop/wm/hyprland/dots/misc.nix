@@ -1,8 +1,8 @@
 {
   wayland.windowManager.hyprland.settings = {
     misc = {
-      vrr = 0;
-      vfr = true;
+      # vrr = 0;
+      # vfr = true;
       disable_hyprland_logo = true;
     };
 
@@ -24,8 +24,8 @@
     dwindle.force_split = 2;
 
     debug = {
-      disable_logs = false;
-      full_cm_proto = true; # fix gamescope crash https://github.com/ValveSoftware/gamescope/issues/1825#issuecomment-2831929362
+      # disable_logs = false;
+      # full_cm_proto = true; # fix gamescope crash https://github.com/ValveSoftware/gamescope/issues/1825#issuecomment-2831929362
     };
   };
 }

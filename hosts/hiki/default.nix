@@ -8,6 +8,7 @@ in {
     ./hardware-configuration.nix
     ./modules/networking
     ./modules/intel
+    ./modules/wireguard
 
     ./modules/arr
     ./modules/jellyfin

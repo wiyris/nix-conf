@@ -41,7 +41,7 @@
           # Feel free to give a meaningful name
           name = "pix";
           # Public key of the peer (not a file path).
-          publicKey = "{client public key}";
+          publicKey = "inNiU3J6qeuVuqtTEICvkfpgwy3wQAGRbM1lDK2NlAA=";
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
           allowedIPs = ["10.100.0.2/32"];
         }

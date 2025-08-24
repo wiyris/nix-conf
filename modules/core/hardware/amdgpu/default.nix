@@ -29,10 +29,10 @@ in {
 
     hardware.amdgpu = {
       initrd.enable = true; # Can fix lower resolution in boot screen during initramfs phase
-      # amdvlk = {
-      #   enable = true;
-      #   support32Bit.enable = true;
-      # };
+      amdvlk = {
+        enable = true;
+        support32Bit.enable = true;
+      };
     };
 
     environment.variables = {

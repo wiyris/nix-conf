@@ -7,8 +7,10 @@
       setw -g mode-keys vi
       set -g status-keys vi
       bind 'v' copy-mode
+      bind -n M-v copy-mode
       bind -T copy-mode-vi v send -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
+      bind -T copy-mode-vi Escape send-keys -X copy-pipe-and-cancel "wl-copy"
       bind p paste-buffer
       bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "wl-copy"
 

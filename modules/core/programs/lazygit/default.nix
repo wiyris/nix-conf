@@ -9,6 +9,9 @@ in {
   config = lib.mkIf cfg.enable {
     hm.programs.lazygit = {
       enable = true;
+      settings = {
+        promptToReturnFromSubprocess = false;
+      };
     };
   };
 }

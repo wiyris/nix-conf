@@ -42,11 +42,16 @@ in {
         kdePackages.kdenlive
         qbittorrent
         # openshot-qt
+        krita
 
         # electron
         freetube
         legcord
         vesktop
+
+        # other
+        aseprite
+        blender
       ];
   };
 }

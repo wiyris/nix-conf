@@ -33,6 +33,11 @@
       urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";}];
       definedAliases = ["xj"];
     };
+    youtube = {
+      name = "Youtube";
+      urls = [{template = "https://www.youtube.com/results?search_query={searchTerms}";}];
+      definedAliases = ["yt"];
+    };
     "NixOS packages" = {
       urls = [
         {

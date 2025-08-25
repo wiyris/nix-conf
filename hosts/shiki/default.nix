@@ -78,7 +78,7 @@ in {
     gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     gaming.mangohud.enable = true;
-    # gaming.optimize.enable = true;
+    gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     ## programs

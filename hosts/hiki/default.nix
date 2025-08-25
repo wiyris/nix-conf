@@ -12,7 +12,7 @@ in {
 
     ./modules/arr
     ./modules/jellyfin
-    # ./modules/lms
+    ./modules/lms
     ./modules/navidrome
     ./modules/taskserver
   ];

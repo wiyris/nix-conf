@@ -37,12 +37,12 @@
       # "$mainMod, semicolon, pseudo"
 
       # Group Control
-      # "$mainMod, APOSTROPHE, togglegroup"
-      "$mainMod CTRL, APOSTROPHE, lockactivegroup, toggle"
+      "$mainMod, B, togglegroup"
+      "$mainMod CTRL, B, lockactivegroup, toggle"
       "ALT, TAB, changegroupactive"
 
       # Set sticky
-      "$mainMod, B, pin"
+      # "$mainMod, B, pin"
       "$mainMod, C, cyclenext"
 
       # Moving focus

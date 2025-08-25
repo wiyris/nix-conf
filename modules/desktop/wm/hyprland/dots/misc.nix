@@ -6,6 +6,14 @@
       disable_hyprland_logo = true;
     };
 
+    group = {
+      groupbar = {
+        # stacked = true;
+        render_titles = false;
+        keep_upper_gap = false;
+      };
+    };
+
     monitorv2 = [
       {
         output = "DP-2";
@@ -25,7 +33,7 @@
 
     debug = {
       # disable_logs = false;
-      # full_cm_proto = true; # fix gamescope crash https://github.com/ValveSoftware/gamescope/issues/1825#issuecomment-2831929362
+      full_cm_proto = true; # fix gamescope crash https://github.com/ValveSoftware/gamescope/issues/1825#issuecomment-2831929362
     };
   };
 }

@@ -14,7 +14,7 @@ in {
         enableNushellIntegration = true;
         git = true;
         icons = "auto";
-        colors = "alwayls";
+        colors = "always";
         extraOptions = [
           "--icons"
         ];

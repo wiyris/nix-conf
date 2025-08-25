@@ -27,6 +27,13 @@ in {
         tone-mapping = "auto";
         gpu-api = "vulkan";
       };
+      bindings = {
+        z = "add sub-delay -0.1";
+        Z = "add sub-delay +0.1";
+
+        x = "add secondary-sub-delay -0.1";
+        X = "add secondary-sub-delay +0.1";
+      };
       scripts = with pkgs.mpvScripts;
         [
           mpris

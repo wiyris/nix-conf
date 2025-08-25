@@ -1,6 +1,6 @@
 {
-  config,
   lib,
+  config,
   ...
 }: let
   cfg = config.custom.programs.eza;
@@ -14,12 +14,12 @@ in {
         enableNushellIntegration = true;
         git = true;
         icons = "auto";
+        colors = "alwayls";
         extraOptions = [
           "--icons"
         ];
       };
       home.shellAliases = {
-        # t = "tree";
         tree = "eza --all --long --tree";
       };
     };

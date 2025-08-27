@@ -30,28 +30,30 @@ in {
         gimp3
         grayjay
         gpu-screen-recorder-gtk
-        dissent
-        blanket # play rain, waves, etc sounds
-        d-spy # dbus gui
-        pwvucontrol # pipewire gui
-        remmina # vnc client
+        # dissent
+        # blanket # play rain, waves, etc sounds
+        # d-spy # dbus gui
+        # pwvucontrol # pipewire gui
+        # remmina # vnc client
+        # easytag
 
         # qt
-        kdePackages.filelight
-        kdePackages.kalgebra
-        kdePackages.kdenlive
+        # kdePackages.filelight
+        # kdePackages.kalgebra
+        # kdePackages.kdenlive
         qbittorrent
         # openshot-qt
-        krita
+        # krita
+        # puddletag
 
         # electron
         freetube
-        legcord
+        # legcord
         vesktop
 
         # other
-        aseprite
-        blender
+        # aseprite
+        # blender
       ];
   };
 }

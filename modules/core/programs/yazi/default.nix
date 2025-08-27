@@ -56,6 +56,8 @@ in {
             }
           ];
         };
+        keymap = {
+        };
         initLua =
           # lua
           ''

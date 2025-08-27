@@ -24,6 +24,7 @@ in {
         escapeTime = 0;
         aggressiveResize = true;
         terminal = "screen-256color";
+	focusEvents = true;
         extraConfig = ''
           set -g status-position top
 

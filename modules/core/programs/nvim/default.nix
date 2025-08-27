@@ -1,7 +1,7 @@
 {
-  config,
-  pkgs,
   lib,
+  pkgs,
+  config,
   ...
 }: let
   cfg = config.custom.programs.nvim;
@@ -11,7 +11,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm.home.shellAliases = {
       v = "nvim";
-      vv = "NVIM_APPNAME=nvim.test nvim";
+      vv = "NVIM_APPNAME=nvim-lazy nvim";
     };
 
     hm.xdg.mimeApps.defaultApplications = {
@@ -22,22 +22,26 @@ in {
     environment.systemPackages = with pkgs; [
       angular-language-server
       bash-language-server
+      cargo
       clang-tools
       gcc
       gnumake
-      rustc
-      cargo
-      rust-analyzer
       lua-language-server
       markdownlint-cli2
       marksman
+      neovim
       nil
       nixd
-      neovim
+      rust-analyzer
+      rustc
       shfmt
       stylua
+      tree-sitter
+      # tree-sitter-grammars
       typescript-language-server
       unzip
+
+      vimPlugins.nvim-lspconfig
     ];
   };
 }

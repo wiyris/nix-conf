@@ -18,15 +18,15 @@ in {
       # l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
       # ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
-      capslock = "lettermod(control, r, ${toString holdtime}, ${toString taptime})";
+      capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
 
       space = "overloadt(extend, space, ${toString taptime})";
-      "w+e" = "q";
-      "e+r" = "z";
-      "s+d" = "esc";
-      "a+d" = "C-space"; # toggle fcitx
-      "j+k" = "S-;"; # :
-      "o+p" = "S-2"; # @
+      # "w+e" = "q";
+      # "e+r" = "z";
+      # "s+d" = "esc";
+      # "a+d" = "C-space"; # toggle fcitx
+      # "j+k" = "S-;"; # :
+      # "o+p" = "S-2"; # @
 
       # "z+x" = "C-insert"; # copy
       # "x+c" = "S-insert"; # paste
@@ -83,6 +83,7 @@ in {
       i = "o";
       o = "y";
       p = "b";
+      "[" = "z";
 
       a = "s";
       s = "n";
@@ -94,7 +95,7 @@ in {
       k = "e";
       l = "i";
       ";" = "c";
-      "'" = "z";
+      "'" = "q";
 
       z = "v";
       x = "w";
@@ -105,7 +106,6 @@ in {
       m = ".";
       "," = "'";
       "." = "=";
-      "backslash" = "backslash";
     };
   };
 }

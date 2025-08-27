@@ -19,6 +19,7 @@ in {
       # ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
+      leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
 
       space = "overloadt(extend, space, ${toString taptime})";
       # "w+e" = "q";

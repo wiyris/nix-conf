@@ -86,6 +86,7 @@ in {
 
     ## browser
     custom.programs.zen-browser.enable = true;
+    custom.programs.chromium.enable = true;
 
     ## exprorer
     custom.programs.thunar.enable = true;

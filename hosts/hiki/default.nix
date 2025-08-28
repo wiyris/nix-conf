@@ -5,16 +5,16 @@
 in {
   imports = [
     ./disko.nix
+    ./hardware.nix
     ./hardware-configuration.nix
     ./modules/networking
-    ./modules/intel
+    # ./modules/intel
     # ./modules/wireguard
 
     ./modules/arr
     ./modules/jellyfin
     ./modules/lms
     ./modules/navidrome
-    ./modules/taskserver
   ];
 
   config = {

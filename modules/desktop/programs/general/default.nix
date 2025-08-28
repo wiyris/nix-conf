@@ -36,7 +36,7 @@ in {
         # d-spy # dbus gui
         # pwvucontrol # pipewire gui
         # remmina # vnc client
-        # easytag
+        easytag
 
         # qt
         # kdePackages.filelight
@@ -45,7 +45,7 @@ in {
         # qbittorrent
         # openshot-qt
         # krita
-        # puddletag
+        puddletag
 
         # electron
         freetube

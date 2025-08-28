@@ -12,6 +12,7 @@ in {
     hm.home.shellAliases = {
       v = "nvim";
       vv = "NVIM_APPNAME=nvim-lazy nvim";
+      lv = "NVIM_APPNAME=lazyvim nvim";
     };
 
     hm.xdg.mimeApps.defaultApplications = {

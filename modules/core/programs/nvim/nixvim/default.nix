@@ -1,16 +1,18 @@
-{
-  stylix.targets.nixvim = {
-    enable = true;
-    plugin = "base16-nvim";
-  };
+{inputs, ...}: {
+  hm = {
+    imports = [
+      # inputs.nixvim.nixosModules.nixvim
+      inputs.nixvim.homeModules.nixvim
+      ./plugins
+      ./binds.nix
+      ./options.nix
+    ];
 
-  programs.nixvim = {
-    enable = true;
-  };
+    stylix.targets.nixvim = {
+      enable = false;
+      plugin = "base16-nvim";
+    };
 
-  imports = [
-    ./plugins
-    ./binds.nix
-    ./options.nix
-  ];
+    programs.nixvim.enable = true;
+  };
 }

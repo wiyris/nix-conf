@@ -5,7 +5,8 @@
     settings = {
       Address = "0.0.0.0";
       Port = 4533;
-      MusicFolder = "/mnt/Music";
+      Bandcamp = "/mnt/Music/Bandcamp";
+      sc-dump = "/mnt/sc";
       EnableInsightsCollector = false;
     };
   };

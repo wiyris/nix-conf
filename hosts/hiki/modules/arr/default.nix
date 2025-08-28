@@ -27,10 +27,10 @@
       enable = true;
       openFirewall = true;
     };
-    flaresolverr = {
-      enable = true;
-      openFirewall = true;
-    };
+    # flaresolverr = {
+    #   enable = true;
+    #   openFirewall = true;
+    # };
     bazarr = {
       enable = true;
       openFirewall = true;

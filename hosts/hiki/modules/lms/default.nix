@@ -1,14 +1,26 @@
 {pkgs, ...}: {
   environment.systemPackages = [pkgs.lms];
-  users.users.lms.isSystemUser = true;
+  users = {
+    groups.lms = {};
+    users = {
+      lms.isSystemUser = true;
+      lms.group = "lms";
+    };
+  };
   systemd.services.lms = {
-    description = "";
+    description = "Lightweight Music Server";
+    wants = ["network-online.target"];
     after = ["network-online.target"];
     wantedBy = ["multi-user.target"];
+    serviceConfig = {
+      Type = "simple";
+      Restart = "on-failure";
+      RestartSec = 1;
+      Environment = "OMP_THREAD_LIMIT=1";
+      User = "lms";
+      Group = "lms";
+      ExecStart = "${pkgs.lms}/bin/lms";
+    };
   };
-  serviceConfig = {
-    Type = "simple";
-    User = "lms";
-    ExecStart = "${pkgs.lms}/bin/lms";
-  };
+  networking.firewall.allowedTCPPorts = [5082];
 }

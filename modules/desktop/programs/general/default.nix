@@ -21,6 +21,7 @@ in {
 
         # qt
         # anki
+        # kdePackages.kdeconnect-kde
 
         # electron
         obsidian
@@ -41,7 +42,7 @@ in {
         # kdePackages.filelight
         # kdePackages.kalgebra
         # kdePackages.kdenlive
-        qbittorrent
+        # qbittorrent
         # openshot-qt
         # krita
         # puddletag

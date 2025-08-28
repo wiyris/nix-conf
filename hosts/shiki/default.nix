@@ -89,10 +89,10 @@ in {
 
     ## general
     custom.programs.aerc.enable = true;
-    custom.programs.anki.enable = true;
+    # custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.hyprlock.enable = true;
-    custom.programs.obs-studio.enable = true;
+    # custom.programs.obs-studio.enable = true;
     custom.programs.rofi.enable = true;
     custom.programs.tofi.enable = true;
     custom.programs.taskwarrior.enable = true;
@@ -119,9 +119,9 @@ in {
 
     ## media
     custom.programs.freetube.enable = true;
-    custom.programs.jellyfin-client.enable = true;
+    # custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
-    custom.programs.pqiv.enable = true;
+    # custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;

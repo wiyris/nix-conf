@@ -11,9 +11,9 @@ in {
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     hm.home.shellAliases = {
-      v = "nvim";
-      vv = "NVIM_APPNAME=nvim-lazy nvim";
-      lv = "NVIM_APPNAME=lazyvim nvim";
+      # v = "nvim";
+      v = "NVIM_APPNAME=nvim-lazy nvim";
+      vv = "NVIM_APPNAME=lazyvim nvim";
     };
 
     hm.xdg.mimeApps.defaultApplications = {

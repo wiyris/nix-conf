@@ -9,10 +9,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm.home.packages = with pkgs;
       [
-        # cli
         gowall
-
-        # tui
         taskwarrior-tui
         tray-tui
 
@@ -20,7 +17,6 @@ in {
         thunderbird
 
         # qt
-        # anki
         # kdePackages.kdeconnect-kde
 
         # electron
@@ -37,6 +33,7 @@ in {
         # pwvucontrol # pipewire gui
         # remmina # vnc client
         easytag
+        easyeffects
 
         # qt
         # kdePackages.filelight

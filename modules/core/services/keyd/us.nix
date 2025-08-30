@@ -9,29 +9,29 @@ in {
       "default_layout" = "default";
     };
     "default:layout" = {
-      # a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
-      # s = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
-      # d = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
-      # f = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
-      # j = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
-      # k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
-      # l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
-      # ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
+      a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
+      s = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
+      d = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
+      f = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
+      j = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
+      k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
+      l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
+      ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
       leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
       leftshift = "lettermod(shift, r, ${toString holdtime}, ${toString taptime})";
 
       space = "overloadt(extend, space, ${toString taptime})";
-      # "w+e" = "q";
-      # "e+r" = "z";
-      # "s+d" = "esc";
+      "w+e" = "q";
+      "e+r" = "z";
+      "d+f" = "esc";
       # "a+d" = "C-space"; # toggle fcitx
-      # "j+k" = "S-;"; # :
+      "j+k" = "S-;"; # :
       # "o+p" = "S-2"; # @
 
-      # "z+x" = "C-insert"; # copy
-      # "x+c" = "S-insert"; # paste
+      "x+c" = "C-insert"; # copy
+      "c+v" = "S-insert"; # paste
       #
       # "space+tab" = "S-`"; # ~
       # "space+q" = "S-0"; # )

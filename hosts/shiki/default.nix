@@ -104,7 +104,7 @@ in {
     # custom.programs.kitty.enable = true;
 
     ## browser
-    # custom.programs.chromium.enable = true;
+    custom.programs.chromium.enable = true;
     # custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
     # custom.programs.librewolf.enable = true;

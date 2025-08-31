@@ -46,18 +46,18 @@ in {
             ./dots/scratchpads.nix
 
             # ./plugins/hyprexpo.nix
-            ./dots/perf.nix
+            # ./dots/perf.nix
           ]
           ++ lib.optionals config.laptop.enable [
             ./dots/laptop-override.nix
           ];
 
-        xdg.configFile = {
-          "uwsm/env-hyprland".text = ''
-            export QT_QUICK_BACKEND=software
-            export AQ_DRM_DEVICES="/dev/dri/card1:/dev/dri/card0"
-          '';
-        };
+        # xdg.configFile = {
+        #   "uwsm/env-hyprland".text = ''
+        #     export QT_QUICK_BACKEND=software
+        #     export AQ_DRM_DEVICES="/dev/dri/card0:/dev/dri/card1"
+        #   '';
+        # };
 
         wayland.windowManager.hyprland = {
           enable = true;

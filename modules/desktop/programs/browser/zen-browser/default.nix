@@ -6,7 +6,6 @@
 }: let
   betterfox = inputs.betterfox;
   inherit (config.globals) userName;
-  altUser = "skw";
   cfg = config.custom.programs.zen-browser;
   catppuccin = {
     source = "${inputs.zen-browser-catppuccin}/themes/Mocha/Mauve/";
@@ -34,7 +33,6 @@ in {
         stylix.targets.zen-browser.enable = false;
 
         home.file.".zen/${userName}/chrome" = catppuccin;
-        home.file.".zen/${altUser}/chrome" = catppuccin;
 
         programs.zen-browser = {
           enable = true;
@@ -47,14 +45,6 @@ in {
             containers = import ../share/containers;
             containersForce = true;
 
-            extraConfig = ''
-              ${builtins.readFile "${betterfox}/zen/user.js"}
-            '';
-          };
-
-          profiles.${altUser} = {
-            id = 1;
-            search = import ../share/search;
             extraConfig = ''
               ${builtins.readFile "${betterfox}/zen/user.js"}
             '';

@@ -4,15 +4,15 @@ in {
   networking.firewall.allowedTCPPorts = [servicePort];
   services.kavita = {
     enable = true;
-    tokenKeyFile = "config.sops.secrets.kavita.path";
+    tokenKeyFile = config.sops.secrets.kavita.path;
     settings = {
-      Port = "${servicePort}";
+      Port = servicePort;
     };
   };
 
-  sops.secrets.kavita-secret = {
+  sops.secrets.kavita = {
     owner = "kavita";
     group = "kavita";
-    sopsFile = ../../../../secrets/secrets.yml;
+    sopsFile = ../../../../secrets/secrets.yaml;
   };
 }

@@ -53,6 +53,64 @@ in {
       # "space+l" = "S-5"; # %
       # "space+;" = "S-4"; # $
     };
+    "36:layout" = {
+      "1" = "f";
+      "2" = "p";
+      "3" = "d";
+      "4" = "l";
+      "5" = "x";
+      "6" = ";";
+      "7" = "u";
+      "8" = "o";
+      "9" = "y";
+      "0" = "b";
+      "-" = "z";
+
+      q = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
+      w = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
+      e = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
+      r = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
+      t = "k";
+      y = ",";
+      u = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
+      i = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
+      o = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
+      p = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
+
+      a = "v";
+      s = "w";
+      d = "g";
+      f = "m";
+      g = "j";
+      h = "-";
+      j = ".";
+      k = "'";
+      l = "=";
+      ";" = "/";
+
+      z = "noop";
+      x = "noop";
+      c = "lettermod(meta, tab, ${toString holdtime}, ${toString taptime})";
+      v = "lettermod(extend, r, ${toString holdtime}, ${toString taptime})";
+      b = "enter";
+      n = "overloadt(extend, space, ${toString taptime})";
+      m = "backspace";
+      "," = "noop";
+      "." = "noop";
+
+      capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
+      leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+      leftshift = "lettermod(shift, r, ${toString holdtime}, ${toString taptime})";
+
+      space = "overloadt(extend, space, ${toString taptime})";
+      "1+2" = "q";
+      "2+3" = "z";
+      "e+r" = "esc";
+      "u+i" = "S-;"; # :
+
+      "s+d" = "C-insert"; # copy
+      "d+f" = "S-insert"; # paste
+    };
     "extend" = {
       h = "left";
       j = "down";

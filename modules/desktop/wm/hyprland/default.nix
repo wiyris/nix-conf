@@ -46,7 +46,7 @@ in {
             ./dots/scratchpads.nix
 
             # ./plugins/hyprexpo.nix
-            # ./dots/perf.nix
+            ./dots/perf.nix
           ]
           ++ lib.optionals config.laptop.enable [
             ./dots/laptop-override.nix

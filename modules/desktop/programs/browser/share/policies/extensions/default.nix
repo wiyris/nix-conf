@@ -19,10 +19,10 @@
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/simplelogin/latest.xpi";
     installation_mode = "force_installed";
   };
-  "search@kagi.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/latest/kagi-search-for-firefox/latest.xpi";
-    installation_mode = "force_installed";
-  };
+  # "search@kagi.com" = {
+  #   install_url = "https://addons.mozilla.org/firefox/downloads/latest/kagi-search-for-firefox/latest.xpi";
+  #   installation_mode = "force_installed";
+  # };
   "{a8332c60-5b6d-41ee-bfc8-e9bb331d34ad}" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/latest/surfingkeys_ff/latest.xpi";
     installation_mode = "force_installed";

@@ -11,7 +11,7 @@ in {
       enable = true;
       enableFishIntegration = true;
       enableNushellIntegration = true;
-      options = ["--cmd cd"];
+      options = ["--cmd z"];
     };
   };
 }

@@ -89,7 +89,7 @@ in {
 
     ## general
     custom.programs.aerc.enable = true;
-    # custom.programs.anki.enable = true;
+    custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.hyprlock.enable = true;
     # custom.programs.obs-studio.enable = true;

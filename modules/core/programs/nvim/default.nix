@@ -37,6 +37,7 @@ in {
       rust-analyzer
       rustc
       shfmt
+      statix
       stylua
       tree-sitter
       # tree-sitter-grammars

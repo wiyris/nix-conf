@@ -46,7 +46,7 @@ in {
       };
 
       # Yet another Git TUI (written in rust).
-      # programs.gitui.enable = true;
+      programs.gitui.enable = true;
 
       programs.fish.shellAbbrs = {
         g = "git";

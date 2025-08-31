@@ -1,7 +1,9 @@
 keys:
-    &test age1suljvrfk6u4nyqntz356lxul3nuqltkkruawwh7yggcd9l5afurszr205z
+    &shiki age1zzaf8h7f9jv26vaeszdsfjdnuwzt0wa5nwsf4yhxxm8gmxzvgs6saazhtu  
+    &hiki age1hgy6asqpqjqy4ahg8m4y5gy0aunsgf448qst9a66u9g22le7cgmsv26e0k
 creation_rules:
   - path_regex: secrets/secrets.yaml$
     key_groups:
     - age:
-      - *test
+      - *shiki
+      - *hiki

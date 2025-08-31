@@ -17,7 +17,6 @@ in {
         thunderbird
 
         # qt
-        # kdePackages.kdeconnect-kde
 
         # electron
         obsidian
@@ -53,5 +52,6 @@ in {
         # aseprite
         # blender
       ];
+    programs.kdeconnect.enable = true;
   };
 }

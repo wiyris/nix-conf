@@ -38,7 +38,7 @@ in {
         # kdePackages.filelight
         # kdePackages.kalgebra
         # kdePackages.kdenlive
-        # qbittorrent
+        qbittorrent
         # openshot-qt
         # krita
         puddletag
@@ -48,7 +48,7 @@ in {
         # legcord
         vesktop
 
-        # other
+        calibre
         # aseprite
         # blender
       ];

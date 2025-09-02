@@ -129,9 +129,9 @@ in {
     ## services
     custom.services.dunst.enable = true;
     custom.services.hypridle.enable = true;
-    custom.services.mpd.enable = true;
+    # custom.services.mpd.enable = true;
     custom.services.pipewire.enable = true;
-    custom.services.swayosd.enable = true;
+    # custom.services.swayosd.enable = true;
     custom.services.swww.enable = true;
     custom.services.waybar.enable = true;
 

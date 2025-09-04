@@ -22,7 +22,7 @@
     keymaps = [
       {
         mode = "n";
-        key = "<leader>-";
+        key = "<leader>e";
         action = "<CMD>Yazi<CR>";
         options = {desc = "Yazi (current file)";};
       }

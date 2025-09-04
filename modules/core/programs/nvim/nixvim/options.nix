@@ -11,19 +11,31 @@
     };
 
     opts = {
+      # Basic settings
       number = true;
       relativenumber = true;
+      cursorline = true;
+
+      # Indentation
       tabstop = 2;
       softtabstop = 2;
       showtabline = 2;
       shiftwidth = 2;
       expandtab = true;
       smartindent = true;
+      autoindent = true;
       # breakindent = true;
 
-      # search
+      # Search settings
+      ignorecase = true;
       incsearch = true;
-      hlsearch = true;
+      smartcase = true;
+      hlsearch = false;
+
+      # Folding settings
+      foldmethod = "expr";
+      foldexpr = "v:lua.vim.treesitter.foldexpr()";
+      foldlevel = 99;
     };
   };
 }

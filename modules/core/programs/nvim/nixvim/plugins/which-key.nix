@@ -2,7 +2,10 @@
   programs.nixvim.plugins = {
     which-key = {
       enable = true;
-      # settings.win.border = "rounded";
+      settings = {
+        preset = "helix";
+        win.border = "rounded";
+      };
     };
   };
 }

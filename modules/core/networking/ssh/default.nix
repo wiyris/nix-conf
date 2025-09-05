@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
+    sshfs
     sshs
   ];
 
@@ -9,5 +10,7 @@
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
     };
+  };
+  hm = {
   };
 }

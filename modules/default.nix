@@ -15,6 +15,7 @@
     ./core/networking/iwd
     ./core/networking/mullvad
     ./core/networking/networkmanager
+    ./core/networking/ssh
 
     ./core/security/doas
 

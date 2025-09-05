@@ -7,7 +7,7 @@
   cfg = config.custom.programs.nvim;
 in {
   options.custom.programs.nvim.enable = lib.mkEnableOption {};
-  imports = [./nixvim];
+  # imports = [./nixvim];
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     hm.home.shellAliases = {

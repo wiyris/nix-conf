@@ -12,10 +12,10 @@ in {
     # ./modules/wireguard
 
     ./modules/arr
-    ./modules/calibre
+    # ./modules/calibre
     ./modules/jellyfin
     ./modules/kavita
-    ./modules/lms
+    # ./modules/lms
     ./modules/navidrome
   ];
 

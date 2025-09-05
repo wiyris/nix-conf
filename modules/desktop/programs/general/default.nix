@@ -22,6 +22,11 @@ in {
         obsidian
       ]
       ++ lib.optionals config.extraPackages.enable [
+        fortune
+        # calibre
+        # aseprite
+        # blender
+
         # gtk
         gimp3
         grayjay
@@ -47,11 +52,7 @@ in {
         freetube
         # legcord
         vesktop
-
-        calibre
-        # aseprite
-        # blender
       ];
-    programs.kdeconnect.enable = true;
+    # programs.kdeconnect.enable = true;
   };
 }

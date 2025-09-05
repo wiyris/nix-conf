@@ -8,11 +8,9 @@ in {
     ./hardware.nix
     ./hardware-configuration.nix
     ./modules/networking
-    # ./modules/intel
     # ./modules/wireguard
 
     ./modules/arr
-    # ./modules/calibre
     ./modules/jellyfin
     ./modules/kavita
     # ./modules/lms

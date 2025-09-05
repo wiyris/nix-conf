@@ -23,7 +23,9 @@ in {
       ]
       ++ lib.optionals config.extraPackages.enable [
         fortune
-        # calibre
+        lolcat
+        cowsay
+        calibre
         # aseprite
         # blender
 
@@ -53,6 +55,6 @@ in {
         # legcord
         vesktop
       ];
-    # programs.kdeconnect.enable = true;
+    programs.kdeconnect.enable = true;
   };
 }

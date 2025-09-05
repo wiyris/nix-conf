@@ -2,10 +2,10 @@
   imports = [
     ./catppuccin.nix
     ./ts-comments.nix
-    # ./lsp.nix
+    ./lsp.nix
     ./tree-sitter.nix
     ./which-key.nix
-    # ./trouble.nix
+    ./trouble.nix
     ./yazi.nix
     ./snacks.nix
 

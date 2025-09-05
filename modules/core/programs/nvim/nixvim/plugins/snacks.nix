@@ -25,19 +25,19 @@
         picker = {
           enabled = true;
         };
-        # words = {
-        #   debounce = 100;
-        #   enabled = true;
-        # };
-        # scope = {
-        #   enable = true;
-        # };
-        # scroll = {
-        #   enable = true;
-        # };
-        # lazigit = {
-        #   enable = true;
-        # };
+        words = {
+          debounce = 100;
+          enabled = true;
+        };
+        scope = {
+          enable = true;
+        };
+        scroll = {
+          enable = true;
+        };
+        lazigit = {
+          enable = true;
+        };
       };
     };
     keymaps = [

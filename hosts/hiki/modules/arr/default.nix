@@ -36,12 +36,5 @@
       openFirewall = true;
       group = "arr";
     };
-    qbittorrent = {
-      enable = true;
-      openFirewall = true;
-      package = pkgs.qbittorrent-nox;
-      group = "arr";
-    };
   };
-  systemd.services.qbittorrent.wantedBy = [];
 }

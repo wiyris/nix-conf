@@ -5,10 +5,11 @@
 in {
   imports = [
     ./disko.nix
-    ./hardware.nix
     ./hardware-configuration.nix
-    ./modules/networking
-    # ./modules/wireguard
+    ./hardware.nix
+    ./networking.nix
+    ./ssh.nix
+    # ./wireguard.nix
 
     ./modules/arr
     ./modules/jellyfin

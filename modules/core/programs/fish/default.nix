@@ -33,6 +33,7 @@ in {
           # interactiveShellInit = ''
           #   ${pkgs.fortune}/bin/fortune -s | ${pkgs.cowsay}/bin/cowsay
           # '';
+
           shellInit =
             # fish
             ''

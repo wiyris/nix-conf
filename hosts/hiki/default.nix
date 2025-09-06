@@ -8,7 +8,7 @@ in {
     ./hardware-configuration.nix
     ./hardware.nix
     ./networking.nix
-    ./ssh.nix
+    # ./ssh.nix
     # ./wireguard.nix
 
     ./modules/arr

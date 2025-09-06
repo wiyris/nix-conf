@@ -31,15 +31,15 @@ let
   windowRules = [
     {
       geometry-corner-radius = let
-        radius = 7.0;
+        radius = 0.0;
       in {
         bottom-left = radius;
         bottom-right = radius;
         top-left = radius;
         top-right = radius;
       };
-      clip-to-geometry = true;
-      draw-border-with-background = false;
+      clip-to-geometry = false;
+      draw-border-with-background = true;
       open-maximized = false;
     }
     {

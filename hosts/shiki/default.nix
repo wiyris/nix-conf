@@ -22,7 +22,7 @@ in {
     custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
-    custom.services.keyd.enable = true;
+    # custom.services.keyd.enable = true;
 
     # Services
     custom.services.hiki-mounts.enable = true;
@@ -78,7 +78,7 @@ in {
     gaming.lutris.enable = true;
     # gaming.osu.enable = true;
     gaming.mangohud.enable = true;
-    gaming.optimize.enable = true;
+    # gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     ## programs
@@ -104,7 +104,6 @@ in {
     # custom.programs.kitty.enable = true;
 
     ## browser
-    custom.programs.chromium.enable = true;
     # custom.programs.firefox.enable = true;
     # custom.programs.schizofox.enable = true;
     # custom.programs.librewolf.enable = true;
@@ -119,9 +118,9 @@ in {
 
     ## media
     custom.programs.freetube.enable = true;
-    # custom.programs.jellyfin-client.enable = true;
+    custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
-    # custom.programs.pqiv.enable = true;
+    custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;

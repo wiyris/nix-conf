@@ -17,8 +17,7 @@ in {
         server.enable = true;
         settings = {
           main = {
-            # pad = "4x2";
-            pad = "0x0";
+            pad = "8x8";
           };
         };
       };

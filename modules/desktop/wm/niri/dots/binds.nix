@@ -83,5 +83,14 @@ in {
     "Mod+Shift+WheelScrollUp".action = move-window-up-or-to-workspace-up;
     "Mod+Ctrl+WheelScrollDown".action = focus-column-right;
     "Mod+Ctrl+WheelScrollUp".action = focus-column-left;
+
+    "XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+";
+    "XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-";
+    "XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
+    "XF86AudioMicMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle";
+    "XF86AudioNext".action = spawn "playerctl" "next";
+    "XF86AudioPause".action = spawn "playerctl" "play-pause";
+    "XF86AudioPlay".action = spawn "playerctl" "play-pause";
+    "XF86AudioPrev".action = spawn "playerctl" "previous";
   };
 }

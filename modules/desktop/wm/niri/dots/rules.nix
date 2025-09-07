@@ -40,31 +40,31 @@ let
       };
       clip-to-geometry = false;
       draw-border-with-background = true;
-      open-maximized = false;
+      open-maximized = true;
     }
-    {
-      matches = [
-        {is-active = true;}
-      ];
-      shadow = {
-        enable = false;
-        softness = 20;
-        spread = 5;
-        color = "#f5e0dc69";
-      };
-    }
-    {
-      matches = [
-        {is-floating = true;}
-      ];
-      shadow = {
-        enable = true;
-        softness = 15;
-        spread = 3;
-        color = "#f5e0dc69";
-        inactive-color = "#00000054";
-      };
-    }
+    # {
+    #   matches = [
+    #     {is-active = true;}
+    #   ];
+    #   shadow = {
+    #     enable = false;
+    #     softness = 20;
+    #     spread = 5;
+    #     color = "#f5e0dc69";
+    #   };
+    # }
+    # {
+    #   matches = [
+    #     {is-floating = true;}
+    #   ];
+    #   shadow = {
+    #     enable = true;
+    #     softness = 15;
+    #     spread = 3;
+    #     color = "#f5e0dc69";
+    #     inactive-color = "#00000054";
+    #   };
+    # }
     {
       matches = [
         {
@@ -139,6 +139,7 @@ let
     {
       matches = [
         {app-id = "^kitty$";}
+        {app-id = "^foot$";}
         {app-id = "^com.mitchellh.ghostty$";}
         {app-id = "^thunar$";}
       ];

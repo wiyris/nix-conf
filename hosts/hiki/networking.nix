@@ -33,4 +33,5 @@
       authorizedKeys = config.users.users.root.openssh.authorizedKeys.keys;
     };
   };
+  boot.initrd.luks.forceLuksSupportInInitrd = true;
 }

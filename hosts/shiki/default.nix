@@ -83,7 +83,7 @@ in {
 
     ## programs
     ### default programs
-    custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
+    custom.programs.foot.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     custom.programs.thunar.isDefault = true; # thunar, dolphin
 
@@ -108,7 +108,7 @@ in {
     # custom.programs.schizofox.enable = true;
     # custom.programs.librewolf.enable = true;
     # custom.programs.mullvad-browser.enable = true;
-    # custom.programs.qutebrowser.enable = true;
+    custom.programs.qutebrowser.enable = true;
     # custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
@@ -118,7 +118,7 @@ in {
 
     ## media
     custom.programs.freetube.enable = true;
-    custom.programs.jellyfin-client.enable = true;
+    # custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
     custom.programs.rmpc.enable = true;

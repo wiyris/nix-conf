@@ -16,7 +16,8 @@ in {
         enable = true;
         settings = {
           main = {
-            pad = "4x2";
+            # pad = "4x2";
+            pad = "0x0";
           };
         };
       };

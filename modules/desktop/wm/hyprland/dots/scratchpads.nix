@@ -20,7 +20,7 @@ in {
         "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.custom.programs.foot.isDefault [
-        "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'foot --app-id foot-scratchh'"
+        "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'foot --app-id foot-scratch'"
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"

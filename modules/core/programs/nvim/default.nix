@@ -15,7 +15,7 @@ in {
       v = "NVIM_APPNAME=lvim nvim";
       # vv = "NVIM_APPNAME=vvim nvim";
       lv = "NVIM_APPNAME=lazyvim nvim";
-      vv = "NVIM_APPNAME=lazyvim nvim";
+      vv = "NVIM_APPNAME=vvim nvim";
     };
 
     hm.xdg.mimeApps.defaultApplications = {

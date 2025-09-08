@@ -32,8 +32,11 @@ in {
         pointer
       ];
 
-      theme = spicePkgs.themes.catppuccin;
-      colorScheme = "mocha";
+      # theme = spicePkgs.themes.catppuccin;
+      # colorScheme = "mocha";
+
+      theme = spicePkgs.themes.text;
+      colorScheme = "CatppuccinMocha";
     };
   };
 }

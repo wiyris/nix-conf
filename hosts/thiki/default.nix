@@ -26,7 +26,7 @@ in {
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
     custom.hardware.bluetooth.enable = true;
-    # custom.services.keyd.enable = true;
+    custom.services.keyd.enable = true;
 
     # cli
     programs.fish.enable = true;

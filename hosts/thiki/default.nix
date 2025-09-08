@@ -25,6 +25,7 @@ in {
     system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
+    custom.networking.iwd.enable = true;
     custom.hardware.bluetooth.enable = true;
     custom.services.keyd.enable = true;
 

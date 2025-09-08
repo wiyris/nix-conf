@@ -16,7 +16,7 @@
     base0E
     ;
 in {
-  options.custom.services.dunst.enable = lib.mkEnableOption {};
+  options.custom.services.mako.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm.services.mako = {
       enable = true;

@@ -97,6 +97,7 @@
     ./desktop/services/dunst
     ./desktop/services/fcitx
     ./desktop/services/hypridle
+    ./desktop/services/mako
     ./desktop/services/mpd
     ./desktop/services/pipewire
     ./desktop/services/swayosd

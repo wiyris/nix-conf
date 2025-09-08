@@ -1,8 +1,8 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    sshfs
-    sshs
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   sshfs
+  #   sshs
+  # ];
 
   services.openssh = {
     enable = true;

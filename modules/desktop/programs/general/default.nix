@@ -55,6 +55,6 @@ in {
         # legcord
         vesktop
       ];
-    programs.kdeconnect.enable = true;
+    # programs.kdeconnect.enable = true;
   };
 }

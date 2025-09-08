@@ -25,7 +25,7 @@ in {
     # custom.services.keyd.enable = true;
 
     # Services
-    custom.services.hiki-mounts.enable = true;
+    # custom.services.hiki-mounts.enable = true;
 
     # cli
     programs.fish.enable = true;
@@ -43,9 +43,9 @@ in {
     custom.programs.fzf.enable = true;
     custom.programs.git.enable = true;
     custom.programs.gtrash.enable = true;
-    custom.programs.htop.enable = true;
+    # custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
-    custom.programs.nushell.enable = true;
+    # custom.programs.nushell.enable = true;
     custom.programs.nvim.enable = true;
     custom.programs.ripgrep.enable = true;
     custom.programs.starship.enable = true;
@@ -57,9 +57,9 @@ in {
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
-    desktop.dwl.enable = true;
+    # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    desktop.niri.enable = true;
+    # desktop.niri.enable = true;
 
     ## core
     desktop.clipboard.enable = true;
@@ -74,10 +74,10 @@ in {
 
     ## gaming
     gaming.celeste.enable = true;
-    gaming.gamemode.enable = true;
+    # gaming.gamemode.enable = true;
     gaming.lutris.enable = true;
     # gaming.osu.enable = true;
-    gaming.mangohud.enable = true;
+    # gaming.mangohud.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
@@ -85,11 +85,11 @@ in {
     ### default programs
     custom.programs.foot.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    custom.programs.thunar.isDefault = true; # thunar, dolphin
+    # custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    custom.programs.aerc.enable = true;
-    custom.programs.anki.enable = true;
+    # custom.programs.aerc.enable = true;
+    # custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.hyprlock.enable = true;
     # custom.programs.obs-studio.enable = true;
@@ -100,7 +100,7 @@ in {
 
     ## terminal emulator
     custom.programs.foot.enable = true;
-    custom.programs.ghostty.enable = true;
+    # custom.programs.ghostty.enable = true;
     # custom.programs.kitty.enable = true;
 
     ## browser
@@ -109,29 +109,29 @@ in {
     # custom.programs.schizofox.enable = true;
     # custom.programs.librewolf.enable = true;
     # custom.programs.mullvad-browser.enable = true;
-    custom.programs.qutebrowser.enable = true;
+    # custom.programs.qutebrowser.enable = true;
     # custom.programs.tor-browser.enable = true;
     custom.programs.zen-browser.enable = true;
 
     ## exprorer
     # custom.programs.dolphin.enable = true;
-    custom.programs.thunar.enable = true;
+    # custom.programs.thunar.enable = true;
 
     ## media
     custom.programs.freetube.enable = true;
     # custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
-    custom.programs.pqiv.enable = true;
-    custom.programs.rmpc.enable = true;
+    # custom.programs.pqiv.enable = true;
+    # custom.programs.rmpc.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
     ## services
     # custom.services.dunst.enable = true;
-    custom.services.hypridle.enable = true;
+    # custom.services.hypridle.enable = true;
     # custom.services.mpd.enable = true;
     custom.services.mako.enable = true;
-    custom.services.pipewire.enable = true;
+    # custom.services.pipewire.enable = true;
     # custom.services.swayosd.enable = true;
     custom.services.swww.enable = true;
     custom.services.waybar.enable = true;

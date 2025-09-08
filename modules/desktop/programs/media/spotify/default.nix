@@ -28,7 +28,7 @@ in {
         ncsVisualizer
       ];
       enabledSnippets = with spicePkgs.snippets; [
-        rotatingCoverart
+        # rotatingCoverart
         pointer
       ];
 

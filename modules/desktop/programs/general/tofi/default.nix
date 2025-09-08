@@ -12,8 +12,8 @@ in {
       programs.tofi = {
         enable = true;
         settings = {
-          width = "35%";
-          height = "50%";
+          width = "25%";
+          height = "40%";
           border-width = 1;
           outline-width = 0;
           # Catppuccin Mocha

@@ -48,9 +48,7 @@ in {
             # ./plugins/hyprexpo.nix
             ./dots/perf.nix
           ]
-          ++ lib.optionals config.laptop.enable [
-            ./dots/laptop-override.nix
-          ];
+          ++ lib.optionals config.laptop.enable [];
 
         # xdg.configFile = {
         #   "uwsm/env-hyprland".text = ''

@@ -29,6 +29,7 @@ in {
 
     # cli
     programs.fish.enable = true;
+    programs.java.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
 
@@ -85,7 +86,7 @@ in {
     ### default programs
     custom.programs.foot.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    # custom.programs.thunar.isDefault = true; # thunar, dolphin
+    custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     ## general
     # custom.programs.aerc.enable = true;
@@ -115,7 +116,7 @@ in {
 
     ## exprorer
     # custom.programs.dolphin.enable = true;
-    # custom.programs.thunar.enable = true;
+    custom.programs.thunar.enable = true;
 
     ## media
     custom.programs.freetube.enable = true;

@@ -4,9 +4,8 @@
       # Apps
       "$mainMod, Return, exec, uwsm-app -- $terminal"
       "$mainMod, space, exec, uwsm-app -- $terminal"
-      "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
+      # "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
       "$mainMod, J, exec, uwsm app -- $browser"
-      "$mainMod SHIFT, J, exec, uwsm-app -- $browser -p skw"
       "$mainMod, M, exec, uwsm-app -- $explorer"
       "$mainMod Shift, M, exec, uwsm-app -- thunderbird"
       "$mainMod Shift, V, exec, uwsm-app -- vesktop"
@@ -19,7 +18,8 @@
       "$mainMod SHIFT, G, exec, perf"
 
       # Rofi
-      "$mainMod, T, exec, tofi-launcher.sh --uwsm"
+      "$mainMod, T, exec, &launcher"
+      # "$mainMod, T, exec, tofi-launcher.sh --uwsm"
       "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
       # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"

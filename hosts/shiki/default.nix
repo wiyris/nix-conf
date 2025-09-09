@@ -25,11 +25,10 @@ in {
     # custom.services.keyd.enable = true;
 
     # Services
-    # custom.services.hiki-mounts.enable = true;
+    custom.services.hiki-mounts.enable = true;
 
     # cli
     programs.fish.enable = true;
-    programs.java.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
 
@@ -84,7 +83,7 @@ in {
 
     ## programs
     ### default programs
-    custom.programs.foot.isDefault = true; # foot, ghostty, kitty
+    custom.programs.ghostty.isDefault = true; # foot, ghostty, kitty
     custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     custom.programs.thunar.isDefault = true; # thunar, dolphin
 
@@ -101,7 +100,7 @@ in {
 
     ## terminal emulator
     custom.programs.foot.enable = true;
-    # custom.programs.ghostty.enable = true;
+    custom.programs.ghostty.enable = true;
     # custom.programs.kitty.enable = true;
 
     ## browser
@@ -132,7 +131,7 @@ in {
     # custom.services.hypridle.enable = true;
     # custom.services.mpd.enable = true;
     custom.services.mako.enable = true;
-    # custom.services.pipewire.enable = true;
+    custom.services.pipewire.enable = true;
     # custom.services.swayosd.enable = true;
     custom.services.swww.enable = true;
     custom.services.waybar.enable = true;

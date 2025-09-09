@@ -1,8 +1,8 @@
 {
-  lib,
-  pkgs,
   config,
   inputs,
+  lib,
+  pkgs,
   ...
 }: let
   cfg = config.desktop.hyprland;
@@ -16,8 +16,7 @@ in {
   };
 
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {
-      })
+    (lib.mkIf cfg.isDefault {})
     (lib.mkIf cfg.enable {
       programs = {
         hyprland = {
@@ -46,16 +45,10 @@ in {
             ./dots/scratchpads.nix
 
             # ./plugins/hyprexpo.nix
-            ./dots/perf.nix
           ]
-          ++ lib.optionals config.laptop.enable [];
-
-        # xdg.configFile = {
-        #   "uwsm/env-hyprland".text = ''
-        #     export QT_QUICK_BACKEND=software
-        #     export AQ_DRM_DEVICES="/dev/dri/card0:/dev/dri/card1"
-        #   '';
-        # };
+          ++ lib.optionals config.laptop.enable [
+            ./dots/perf.nix
+          ];
 
         wayland.windowManager.hyprland = {
           enable = true;
@@ -79,6 +72,8 @@ in {
         ];
       };
     })
-    (lib.mkIf config.custom.services.swww.enable {hm.services.hyprpaper.enable = lib.mkForce false;})
+    (lib.mkIf config.custom.services.swww.enable {
+      hm.services.hyprpaper.enable = lib.mkForce false;
+    })
   ];
 }

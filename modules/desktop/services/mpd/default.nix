@@ -3,7 +3,7 @@
   config,
   ...
 }: let
-  cfg = config.custom.services.pipewire;
+  cfg = config.custom.services.mpd;
   inherit (config.globals) musicDirectory;
 in {
   options.custom.services.mpd.enable = lib.mkEnableOption {};

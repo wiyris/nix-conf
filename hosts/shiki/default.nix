@@ -121,18 +121,18 @@ in {
     custom.programs.freetube.enable = true;
     # custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
-    # custom.programs.pqiv.enable = true;
+    custom.programs.pqiv.enable = true;
     # custom.programs.rmpc.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 
     ## services
-    # custom.services.dunst.enable = true;
-    # custom.services.hypridle.enable = true;
+    custom.services.dunst.enable = true;
+    custom.services.hypridle.enable = true;
     # custom.services.mpd.enable = true;
-    custom.services.mako.enable = true;
+    # custom.services.mako.enable = true;
     custom.services.pipewire.enable = true;
-    # custom.services.swayosd.enable = true;
+    custom.services.swayosd.enable = true;
     custom.services.swww.enable = true;
     custom.services.waybar.enable = true;
 

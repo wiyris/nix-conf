@@ -22,7 +22,7 @@ in {
     custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
-    # custom.services.keyd.enable = true;
+    custom.services.keyd.enable = true;
 
     # Services
     custom.services.hiki-mounts.enable = true;

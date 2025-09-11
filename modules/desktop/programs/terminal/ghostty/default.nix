@@ -12,7 +12,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultTerminal = "ghostty";})
     (lib.mkIf cfg.enable {
-      hm'= {
+      hm' = {
         # stylix.targets.ghostty.enable = false;
         programs.ghostty = {
           enable = true;
@@ -42,7 +42,7 @@ in {
 
             confirm-close-surface = false;
             window-padding-x = 6;
-            window-padding-y = [0 0];
+            window-padding-y = [0 5];
             window-padding-balance = false;
 
             # extras

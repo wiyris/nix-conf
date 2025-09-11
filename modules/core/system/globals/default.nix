@@ -18,12 +18,6 @@
       example = "/home/tsubaki/dots";
       description = "Path of config directory";
     };
-    musicDirectory = lib.mkOption {
-      type = lib.types.str;
-      default = "/home/tsubaki/Music";
-      example = "/home/tsubaki/Music";
-      description = "Path of music directory";
-    };
     defaultShell = lib.mkOption {
       type = lib.types.str;
       default = "";

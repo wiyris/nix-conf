@@ -7,7 +7,7 @@
   cfg = config.desktop.wayland-session;
 in {
   config = lib.mkIf cfg.enable {
-    hm.home.packages = with pkgs;
+    hm'.home.packages = with pkgs;
       [
         gowall
         taskwarrior-tui

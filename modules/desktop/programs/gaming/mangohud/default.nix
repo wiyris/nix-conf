@@ -7,7 +7,7 @@
 in {
   options.gaming.mangohud.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       stylix.targets.mangohud.enable = true;
       programs.mangohud = {
         enable = true;

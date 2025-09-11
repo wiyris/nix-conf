@@ -8,7 +8,7 @@
 in {
   options.custom.programs.aerc.enable = lib.mkEnableOption "Aerc email TUI";
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = with pkgs; [
         w3m # Render HTML
         dante # Socksify for rendering HTML

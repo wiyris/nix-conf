@@ -17,7 +17,7 @@
 in {
   options.custom.programs.rofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = [
         pkgs.rofi-wayland
         pkgs.procps # for uptime --pretty

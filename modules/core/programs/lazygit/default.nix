@@ -7,7 +7,7 @@
 in {
   options.custom.programs.lazygit.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.lazygit = {
+    hm'.programs.lazygit = {
       enable = true;
       settings = {
         promptToReturnFromSubprocess = false;

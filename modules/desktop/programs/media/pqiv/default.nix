@@ -7,7 +7,7 @@
 in {
   options.custom.programs.pqiv.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.pqiv = {
         enable = true;
 

@@ -7,7 +7,7 @@
 in {
   options.custom.programs.cava.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.cava = {
+    hm'.programs.cava = {
       enable = true;
       settings = {
         general.framerate = 75;

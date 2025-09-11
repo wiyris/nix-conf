@@ -9,7 +9,7 @@
 in {
   options.custom.services.hiki-mounts.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = [pkgs.rclone];
       home.shellAliases = {
         hmt = "systemctl start --user hiki-mounts.service";

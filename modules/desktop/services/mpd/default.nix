@@ -8,7 +8,7 @@
 in {
   options.custom.services.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       services.mpd-mpris.enable = true;
       services.mpd = {
         enable = true;

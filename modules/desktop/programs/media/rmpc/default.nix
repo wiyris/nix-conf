@@ -7,7 +7,7 @@
 in {
   options.custom.programs.rmpc.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.rmpc = {
         enable = true;
       };

@@ -24,7 +24,7 @@ in {
       };
     };
 
-    hm.home.sessionVariables = {
+    hm'.home.sessionVariables = {
       QT_IM_MODULE = "fcitx";
       # GTK_IM_MODULE = "fcitx";
       XMODIFIERS = "@im=fcitx";
@@ -32,7 +32,7 @@ in {
       GLFW_IM_MODULE = "ibus";
     };
 
-    hm.xdg.dataFile = {
+    hm'.xdg.dataFile = {
       "fcitx5/themes/${themeName}/theme.conf".text =
         # ini
         ''
@@ -117,7 +117,7 @@ in {
         '';
     };
 
-    hm.xdg.configFile = {
+    hm'.xdg.configFile = {
       "mozc/ibus_config.textproto" = {
         force = true;
         text =

@@ -20,7 +20,7 @@
 in {
   options.custom.services.dunst.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.services.dunst = {
+    hm'.services.dunst = {
       enable = true;
 
       # iconTheme = {

@@ -13,7 +13,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultShell = "nushell";})
     (lib.mkIf cfg.enable {
-      hm = {
+      hm'= {
         programs.nushell = {
           enable = true;
         };

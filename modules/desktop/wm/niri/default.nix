@@ -18,7 +18,7 @@ in {
       comment = "Niri managed by UWSM";
       binPath = "${pkgs.niri}/bin/niri-session";
     };
-    hm = {
+    hm'= {
       imports = [
         inputs.niri.homeModules.niri
         ./dots/binds.nix

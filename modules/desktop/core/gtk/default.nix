@@ -8,7 +8,7 @@
 in {
   options.desktop.gtk.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.gtk = {
+    hm'.gtk = {
       enable = true;
 
       gtk3.extraConfig = {

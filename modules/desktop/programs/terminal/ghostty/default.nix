@@ -12,7 +12,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultTerminal = "ghostty";})
     (lib.mkIf cfg.enable {
-      hm = {
+      hm'= {
         # stylix.targets.ghostty.enable = false;
         programs.ghostty = {
           enable = true;

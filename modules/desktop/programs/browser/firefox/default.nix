@@ -16,14 +16,14 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultBrowser = "firefox";
-      hm.xdg.mimeApps.defaultApplications = {
+      hm'.xdg.mimeApps.defaultApplications = {
         "text/html" = "firefox.desktop";
         "x-scheme-handler/http" = "firefox.desktop";
         "x-scheme-handler/https" = "firefox.desktop";
       };
     })
     (lib.mkIf cfg.enable {
-      hm = {
+      hm'= {
         stylix.targets.firefox.profileNames = ["${userName}"];
         programs.firefox = {
           enable = true;

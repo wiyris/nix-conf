@@ -7,7 +7,7 @@
 in {
   options.custom.programs.tray-tui.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.shellAliases.ttui = "tray-tui";
       programs.tray-tui = {
         enable = true;

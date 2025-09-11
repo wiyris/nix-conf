@@ -10,7 +10,7 @@
 in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       stylix.targets.tmux.enable = false;
       imports = [
         ./dots/binds.nix

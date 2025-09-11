@@ -9,7 +9,7 @@ in {
   options.custom.programs.nvim.enable = lib.mkEnableOption {};
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
-    hm.home.shellAliases = {
+    hm'.home.shellAliases = {
       # v = "nvim";
       v = "NVIM_APPNAME=lvim nvim";
       # vv = "NVIM_APPNAME=vvim nvim";
@@ -17,7 +17,7 @@ in {
       vv = "NVIM_APPNAME=vvim nvim";
     };
 
-    hm.xdg.mimeApps.defaultApplications = {
+    hm'.xdg.mimeApps.defaultApplications = {
       "text/markdown" = "nvim.desktop";
       "text/plain" = "nvim.desktop";
     };

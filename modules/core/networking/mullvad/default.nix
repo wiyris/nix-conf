@@ -14,7 +14,7 @@ in {
       package = lib.mkIf config.desktop.wayland-session.enable pkgs.mullvad-vpn; # GUI client
     };
 
-    hm.programs.fish = {
+    hm'.programs.fish = {
       shellAbbrs = {
         mc = "mullvad connect";
         md = "mullvad disconnect";

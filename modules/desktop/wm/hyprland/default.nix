@@ -30,7 +30,7 @@ in {
 
       xdg.portal.config.Hyprland.default = ["hyprland" "gtk"];
 
-      hm = {
+      hm'= {
         imports =
           [
             ./dots/animations.nix
@@ -73,7 +73,7 @@ in {
       };
     })
     (lib.mkIf config.custom.services.swww.enable {
-      hm.services.hyprpaper.enable = lib.mkForce false;
+      hm'.services.hyprpaper.enable = lib.mkForce false;
     })
   ];
 }

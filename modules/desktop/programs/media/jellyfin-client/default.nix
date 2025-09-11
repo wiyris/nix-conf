@@ -8,7 +8,7 @@
 in {
   options.custom.programs.jellyfin-client.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = with pkgs; [
         jellyfin-media-player
         jellyfin-rpc

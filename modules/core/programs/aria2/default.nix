@@ -8,7 +8,7 @@
 in {
   options.custom.programs.aria2.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.aria2 = {
         enable = true;
         settings = {

@@ -12,7 +12,7 @@
 in {
   options.custom.services.mako.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.services.mako = {
+    hm'.services.mako = {
       enable = true;
       settings = {
         border-size = 1;

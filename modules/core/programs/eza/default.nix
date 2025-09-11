@@ -7,7 +7,7 @@
 in {
   options.custom.programs.eza.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.eza = {
         enable = true;
         enableFishIntegration = true;

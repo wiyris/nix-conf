@@ -16,7 +16,7 @@ in {
       waylandCompositors = {};
     };
 
-    hm = {
+    hm'= {
       programs.fish = {
         # loginShellInit =
         #   # fish

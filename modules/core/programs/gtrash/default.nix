@@ -8,7 +8,7 @@
 in {
   options.custom.programs.gtrash.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.home = {
+    hm'.home = {
       packages = [pkgs.gtrash];
       shellAliases = {
         tt = "gtrash put"; # to trash

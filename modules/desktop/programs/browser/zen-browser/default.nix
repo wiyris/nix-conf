@@ -20,14 +20,14 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultBrowser = "zen-beta";
-      hm.xdg.mimeApps.defaultApplications = {
+      hm'.xdg.mimeApps.defaultApplications = {
         "text/html" = "zen-beta.desktop";
         "x-scheme-handler/http" = "zen-beta.desktop";
         "x-scheme-handler/https" = "zen-beta.desktop";
       };
     })
     (lib.mkIf cfg.enable {
-      hm = {
+      hm'= {
         imports = [inputs.zen-browser.homeModules.beta];
         # stylix.targets.zen-browser.profileNames = [];
         stylix.targets.zen-browser.enable = false;

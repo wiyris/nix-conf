@@ -7,7 +7,7 @@
 in {
   options.custom.programs.freetube.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.freetube = {
+    hm'.programs.freetube = {
       enable = true;
       settings = {
         enableSubtitlesByDefault = true;

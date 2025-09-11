@@ -7,7 +7,7 @@
 in {
   options.custom.programs.zathura.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.zathura = {
         enable = true;
       };

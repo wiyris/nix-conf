@@ -7,7 +7,7 @@
 in {
   options.custom.programs.bat.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.bat = {
         enable = true;
         config = {

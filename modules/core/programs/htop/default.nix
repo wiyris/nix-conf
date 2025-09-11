@@ -8,7 +8,7 @@
 in {
   options.custom.programs.htop.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.htop = {
+    hm'.programs.htop = {
       enable = true;
       package = pkgs.htop-vim;
 

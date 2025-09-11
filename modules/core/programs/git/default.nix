@@ -8,7 +8,7 @@
 in {
   options.custom.programs.git.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.gh = {
         enable = true;
         settings = {

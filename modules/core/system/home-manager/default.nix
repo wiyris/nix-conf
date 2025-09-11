@@ -11,7 +11,7 @@ in {
   imports = [inputs.home-manager.nixosModules.home-manager];
 
   options = {
-    hm = lib.mkOption {
+    hm' = lib.mkOption {
       type = lib.types.attrs;
       default = {};
       description = "Options to pass directly to home-manager primary user.";
@@ -29,7 +29,7 @@ in {
     home-manager.useUserPackages = false;
     home-manager.backupFileExtension = "hm-bak";
 
-    hm = {
+    hm' = {
       # Let Home Manager install and manage itself.
       programs.home-manager.enable = true;
 
@@ -42,8 +42,8 @@ in {
       home.packages = [inputs.home-manager.packages.${system}.default];
     };
 
-    # hm -> home-manager.users.<primary user>
-    home-manager.users.${userName} = lib.mkAliasDefinitions options.hm;
+    # hm'-> home-manager.users.<primary user>
+    home-manager.users.${userName} = lib.mkAliasDefinitions options.hm';
 
     # user -> users.extraUsers.<primary user>
     users.extraUsers.${userName} = lib.mkAliasDefinitions options.custom.user;

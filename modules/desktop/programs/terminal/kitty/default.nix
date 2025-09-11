@@ -13,7 +13,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultTerminal = "kitty";})
     (lib.mkIf cfg.enable {
-      hm.programs.kitty = {
+      hm'.programs.kitty = {
         enable = true;
         settings = {
           enable_audio_bell = false;

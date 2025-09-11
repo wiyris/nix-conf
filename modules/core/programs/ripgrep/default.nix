@@ -7,7 +7,7 @@
 in {
   options.custom.programs.ripgrep.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.ripgrep = {
+    hm'.programs.ripgrep = {
       enable = true;
       arguments = [
         "--max-columns=2000"

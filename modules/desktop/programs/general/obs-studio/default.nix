@@ -9,7 +9,7 @@
 in {
   options.custom.programs.obs-studio.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       xdg.configFile."obs-studio/themes".source = "${inputs.catppuccin-obs}/themes";
       programs.obs-studio = {
         enable = true;

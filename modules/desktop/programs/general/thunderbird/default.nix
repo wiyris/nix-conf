@@ -8,7 +8,7 @@
 in {
   options.custom.programs.thunderbird.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.thunderbird = {
         enable = true;
         profiles.${userName} = {

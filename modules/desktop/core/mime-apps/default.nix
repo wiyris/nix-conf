@@ -7,6 +7,6 @@
 in {
   options.desktop.mime-apps.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.xdg.mimeApps.enable = true;
+    hm'.xdg.mimeApps.enable = true;
   };
 }

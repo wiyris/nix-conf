@@ -8,7 +8,7 @@
 in {
   options.custom.programs.yazi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = with pkgs; [
         ffmpeg
         ffmpegthumbnailer

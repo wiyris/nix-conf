@@ -8,6 +8,6 @@
 in {
   options.custom.programs.tor-browser.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.home.packages = with pkgs; [tor-browser];
+    hm'.home.packages = with pkgs; [tor-browser];
   };
 }

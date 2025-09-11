@@ -13,7 +13,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultExplorer = "dolphin";
-      hm.xdg.mimeApps.defaultApplications = {"inode/directory" = ["dolphin.desktop"];};
+      hm'.xdg.mimeApps.defaultApplications = {"inode/directory" = ["dolphin.desktop"];};
     })
     (lib.mkIf cfg.enable {
       environment.systemPackages = with pkgs; [

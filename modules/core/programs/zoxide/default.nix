@@ -7,7 +7,7 @@
 in {
   options.custom.programs.zoxide.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.zoxide = {
+    hm'.programs.zoxide = {
       enable = true;
       enableFishIntegration = true;
       enableNushellIntegration = true;

@@ -8,11 +8,11 @@
 in {
   options.gaming.lutris.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.lutris = {
+    hm'.programs.lutris = {
       enable = true;
       protonPackages = [pkgs.proton-ge-bin];
     };
-    hm.home.packages = with pkgs; [
+    hm'.home.packages = with pkgs; [
       dolphin-emu
     ];
   };

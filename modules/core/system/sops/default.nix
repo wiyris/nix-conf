@@ -9,5 +9,5 @@
     age.keyFile = "/home/tsubaki/.config/sops/age/keys.txt";
     age.generateKey = true;
   };
-  hm.home.packages = [pkgs.sops];
+  hm'.home.packages = [pkgs.sops];
 }

@@ -7,7 +7,7 @@
 in {
   options.custom.programs.fzf.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.fzf = {
+    hm'.programs.fzf = {
       enable = true;
       enableFishIntegration = true;
       colors = lib.mkForce {};

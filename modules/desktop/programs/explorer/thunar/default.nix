@@ -14,7 +14,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
       globals.defaultExplorer = "thunar";
-      hm.xdg.mimeApps.defaultApplications = {"inode/directory" = ["thunar.desktop"];};
+      hm'.xdg.mimeApps.defaultApplications = {"inode/directory" = ["thunar.desktop"];};
     })
     (lib.mkIf cfg.enable {
       programs = {
@@ -36,7 +36,7 @@ in {
         gvfs.enable = true;
       };
 
-      hm = {
+      hm'= {
         xdg.mimeApps.defaultApplications = {"inode/directory" = ["thunar.desktop"];};
         xdg.configFile."xfce4/helpers.rc".text =
           # ini

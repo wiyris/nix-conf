@@ -7,7 +7,7 @@
 in {
   options.custom.services.swayosd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       services.swayosd = {
         enable = true;
       };

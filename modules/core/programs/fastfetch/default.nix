@@ -7,7 +7,7 @@
 in {
   options.custom.programs.fastfetch.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.shellAliases.ff = "fastfetch";
       programs.fastfetch = {
         enable = true;

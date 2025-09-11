@@ -12,7 +12,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultTerminal = "foot";})
     (lib.mkIf cfg.enable {
-      hm.programs.foot = {
+      hm'.programs.foot = {
         enable = true;
         server.enable = true;
         settings = {

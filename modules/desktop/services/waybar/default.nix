@@ -7,7 +7,7 @@
 in {
   options.custom.services.waybar.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       imports = [
         ./modules/idle_inhibitor.nix
         ./modules/hyprland-workspaces.nix

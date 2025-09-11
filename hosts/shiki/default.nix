@@ -87,6 +87,7 @@ in {
     custom.programs.thunar.isDefault = true; # thunar, dolphin
 
     ## general
+    programs.kdeconnect.enable = true;
     # custom.programs.aerc.enable = true;
     # custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;

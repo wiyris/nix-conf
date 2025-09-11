@@ -7,7 +7,7 @@
 in {
   options.custom.programs.btop.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.programs.btop = {
+    hm'.programs.btop = {
       enable = true;
       settings = {
         theme_background = false;

@@ -9,7 +9,7 @@
 in {
   options.custom.programs.anki.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = [pkgs.anki-bin];
       # imports = [./binds.nix];
       # programs.anki = {

@@ -23,7 +23,7 @@ in {
 
   config = lib.mkMerge [
     (lib.mkIf cfg.enable {
-      hm.home.sessionVariables = sessionVariables;
+      hm'.home.sessionVariables = sessionVariables;
     })
 
     (lib.mkIf (cfg.enable && config.extraPackages.enable) {

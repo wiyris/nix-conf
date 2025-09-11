@@ -15,7 +15,7 @@ in {
       # remotePlay.openFirewall = true;
       # dedicatedServer.openFirewall = true;
     };
-    hm.home.packages = with pkgs; [
+    hm'.home.packages = with pkgs; [
       gamescope
       steamcmd
       steam-tui

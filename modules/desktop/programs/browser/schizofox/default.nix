@@ -8,7 +8,7 @@
 in {
   options.custom.programs.schizofox.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       imports = [inputs.schizofox.homeManagerModules.default];
       programs.schizofox = {
         enable = true;

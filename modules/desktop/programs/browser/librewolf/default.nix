@@ -8,7 +8,7 @@
 in {
   options.custom.programs.librewolf.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       stylix.targets.librewolf.profileNames = ["${userName}"];
       programs.librewolf = {
         enable = true;

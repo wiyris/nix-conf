@@ -1,5 +1,5 @@
 {
-  config.hm.programs.kitty = {
+  config.hm'.programs.kitty = {
     settings = {kitty_mod = "ctrl+shift";};
     keybindings = {
       "ctrl+c" = "copy_and_clear_or_interrupt";

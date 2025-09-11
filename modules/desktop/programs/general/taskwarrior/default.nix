@@ -8,7 +8,7 @@
 in {
   options.custom.programs.taskwarrior.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       programs.taskwarrior = {
         enable = true;
         package = pkgs.taskwarrior3;

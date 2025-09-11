@@ -20,7 +20,7 @@ in {
         fzf-fish
       ];
 
-      hm = {
+      hm'= {
         imports = [./abbrs.nix];
         xdg.configFile."fish/functions" = {
           source = ./functions;

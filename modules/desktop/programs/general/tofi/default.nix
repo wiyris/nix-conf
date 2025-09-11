@@ -11,7 +11,7 @@
 in {
   options.custom.programs.tofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       home.packages = [
         tofi-launcher
       ];
@@ -32,7 +32,7 @@ in {
           # Behaviour
           text-cursor = true;
           fuzzy-match = true;
-          # matching-algorithm = fuzzy;
+          # matching-algorithm'= fuzzy;
           drun-launch = true;
           ascii-input = true;
         };

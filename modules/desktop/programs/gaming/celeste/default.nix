@@ -8,7 +8,7 @@
 in {
   options.gaming.celeste.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm.home.packages = with pkgs; [
+    hm'.home.packages = with pkgs; [
       olympus
     ];
   };

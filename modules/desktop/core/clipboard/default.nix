@@ -9,7 +9,7 @@ in {
   options.desktop.clipboard.enable = lib.mkEnableOption {};
 
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       services.cliphist.enable = true;
       home.packages = with pkgs; [
         wl-clip-persist

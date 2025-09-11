@@ -8,7 +8,7 @@
 in {
   options.custom.programs.hyprlock.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm = {
+    hm'= {
       stylix.targets.hyprlock.enable = false;
       programs.hyprlock = {
         enable = true;

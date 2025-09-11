@@ -15,6 +15,7 @@ in {
         ./modules/mpris.nix
 
         ./modules/clock.nix
+        ./modules/dwl.nix
         ./modules/tray.nix
         ./modules/pulseaudio.nix
         # ./modules/bluetooth.nix

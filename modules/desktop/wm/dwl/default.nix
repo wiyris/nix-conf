@@ -30,15 +30,11 @@ in {
           oldAttrs.patches or []
           ++ [
             ./patches/autostart-0.7.patch
-            # ./patches/bar-0.7.patch
-            # ./patches/simple_scratchpad-v0.7.patch
+            ./patches/ipc.patch
           ];
       });
     };
     environment.systemPackages = with pkgs; [
-      swaybg
-      wofi
-      slurp
     ];
     xdg.portal.config.dwl.default = ["wlr" "gtk"];
   };

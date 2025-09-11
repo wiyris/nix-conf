@@ -22,23 +22,18 @@ in {
     };
 
     # Custom options
-    custom.networking.mullvad.enable = true;
+    custom.hardware.amdgpu.enable = true;
+    custom.hardware.bluetooth.enable = true;
     custom.networking.core.enable = true;
     custom.networking.iwd.enable = true;
-    custom.hardware.bluetooth.enable = true;
+    custom.networking.mullvad.enable = true;
     custom.services.keyd.enable = true;
+    system.terminus-font.enable = true;
 
     # cli
     programs.fish.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
-    programs.fish.loginShellInit =
-      # fish
-      ''
-        if uwsm check may-start;
-        exec uwsm start -- dwl-uwsm.desktop -s 'dwlb'
-        end
-      '';
 
     custom.programs.aliases.enable = true;
     custom.programs.bat.enable = true;
@@ -91,6 +86,7 @@ in {
     # custom.programs.zathura.enable = true;
 
     ## services
+    custom.services.dwlb.enable = true;
     custom.services.hypridle.enable = true;
     custom.services.mako.enable = true;
 

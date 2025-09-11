@@ -7,8 +7,11 @@
       shiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "shiki"; # desktop
       thiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
       hiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "hiki"; # homelab
-
       vm = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
+    };
+
+    nixOnDroidConfigurations = {
+      pix = lib.mkNixOnDroidSystem inputs.nixpkgs "aarch64-linux" "pix";
     };
   };
   inputs = {

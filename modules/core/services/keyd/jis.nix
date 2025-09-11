@@ -97,6 +97,11 @@ in {
       muhenkan = "r";
       katakanahiragana = "toggle(mods)";
       f12 = "setlayout(mods)";
+
+      kp0 = "a";
+      kp8 = "w";
+      kp9 = "s";
+      kp5 = "d";
     };
     "qwerty" = {
       q = "q";

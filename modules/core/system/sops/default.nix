@@ -12,7 +12,7 @@ in {
     age.keyFile = "${homeDirectory}/.config/sops/age/keys.txt";
     age.generateKey = true;
   };
-  environment.systemPackages = [
+  hm'.home.packages = [
     pkgs.sops
   ];
 }

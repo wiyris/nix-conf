@@ -1,6 +1,7 @@
 {
-  lib,
   config,
+  lib,
+  pkgs,
   ...
 }: let
   userName = "tsubaki";
@@ -92,8 +93,13 @@ in {
 
     laptop.enable = true; # enable laptop modules
 
-    time.timeZone = "Asia/Tokyo";
+    console = {
+      earlySetup = true;
+      font = "${pkgs.terminus_font}/share/consolefonts/ter-132n.psf.gz";
+      packages = with pkgs; [terminus_font];
+    };
 
+    time.timeZone = "Asia/Tokyo";
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.timeout = 0;

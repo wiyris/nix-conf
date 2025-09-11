@@ -139,6 +139,12 @@ in {
 
     extraPackages.enable = true; # add extra packages
 
+    console = {
+      earlySetup = true;
+      font = "${pkgs.terminus_font}/share/consolefonts/ter-132n.psf.gz";
+      packages = with pkgs; [terminus_font];
+    };
+
     time.timeZone = "Asia/Tokyo";
     boot.kernelPackages = pkgs.linuxPackages_zen;
     boot.loader.systemd-boot.enable = true;

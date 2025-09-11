@@ -19,7 +19,7 @@ in {
 
     programs.dwl = {
       enable = true;
-      package = (pkgs.dwl.override {configH = ./dots/config.def.h;}).overrideAttrs (oldAttrs: {
+      package = (pkgs.dwl.override {configH = ./config.h;}).overrideAttrs (oldAttrs: {
         buildInputs =
           oldAttrs.buildInputs or []
           ++ [

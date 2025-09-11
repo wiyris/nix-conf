@@ -6,9 +6,9 @@
       pkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./modules
           (./. + "/hosts/${hostName}")
           {
+            imports = builtins.attrValues (lib.defaultFilesToAttrset ./modules);
             nixpkgs.config.allowUnfree = true;
             networking.hostName = hostName;
           }

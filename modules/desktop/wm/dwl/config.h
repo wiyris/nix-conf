@@ -86,7 +86,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[] = { "uwsm-app", "--", "foot", NULL };
 static const char *browser[] = { "uwsm-app", "--", "zen-beta", NULL };
-static const char *menucmd[] = { "tofi-launcher.sh", "--uwsm", NULL };
+static const char *menucmd[] = { "tofi-launcher", "--uwsm", NULL };
 static const char *ustop[] = { "uwsm", "stop", NULL };
 
 static const Key keys[] = {

@@ -1,14 +1,20 @@
 {
-  lib,
   config,
+  lib,
+  pkgs,
   ...
 }: let
   cfg = config.custom.programs.tofi;
+  tofi-launcher =
+    pkgs.writeScriptBin "tofi-launcher"
+    (builtins.readFile ./scripts/tofi-launcher.sh);
 in {
   options.custom.programs.tofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm = {
-      # stylix.targets.mangohud.enable = false;
+      home.packages = [
+        tofi-launcher
+      ];
       programs.tofi = {
         enable = true;
         settings = {

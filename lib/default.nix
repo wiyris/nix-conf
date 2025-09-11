@@ -34,4 +34,37 @@ in
         # Convert to an attrset of parent dir name -> file
         (builtins.listToAttrs)
       ];
+
+    mkNixosSystem = pkgs: system: hostName:
+      pkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          (../. + "/hosts/${hostName}")
+          {
+            imports = builtins.attrValues (defaultFilesToAttrset ../modules);
+            nixpkgs.config.allowUnfree = true;
+            networking.hostName = hostName;
+          }
+        ];
+        specialArgs = {
+          inherit inputs system lib;
+          nixpkgs = pkgs;
+        };
+      };
+
+    mkNixOnDroidSystem = pkgs: system: hostName:
+      inputs.nix-on-droid.lib.nixOnDroidSystem {
+        inherit system;
+        modules = [
+          (../. + "/hosts/${hostName}")
+          {
+            imports = builtins.attrValues (defaultFilesToAttrset ../modules);
+            nixpkgs.config.allowUnfree = true;
+          }
+        ];
+        specialArgs = {
+          inherit inputs system lib;
+          nixpkgs = pkgs;
+        };
+      };
   }

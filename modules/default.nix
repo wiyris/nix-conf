@@ -95,6 +95,7 @@
     ./desktop/programs/terminal/kitty
 
     ./desktop/services/dunst
+    ./desktop/services/dwlb
     ./desktop/services/fcitx
     ./desktop/services/hypridle
     ./desktop/services/mako

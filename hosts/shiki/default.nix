@@ -57,7 +57,7 @@ in {
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
-    # desktop.dwl.enable = true;
+    desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 
@@ -128,6 +128,7 @@ in {
 
     ## services
     custom.services.dunst.enable = true;
+    custom.services.dwlb.enable = true;
     custom.services.hypridle.enable = true;
     # custom.services.mpd.enable = true;
     # custom.services.mako.enable = true;

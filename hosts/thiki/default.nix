@@ -22,7 +22,6 @@ in {
     };
 
     # Custom options
-    system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
     custom.networking.iwd.enable = true;
@@ -33,6 +32,13 @@ in {
     programs.fish.enable = true;
     custom.programs.fish.enable = true;
     custom.programs.fish.isDefault = true;
+    programs.fish.loginShellInit =
+      # fish
+      ''
+        if uwsm check may-start;
+        exec uwsm start -- dwl-uwsm.desktop -s 'dwlb'
+        end
+      '';
 
     custom.programs.aliases.enable = true;
     custom.programs.bat.enable = true;
@@ -51,8 +57,7 @@ in {
 
     # DESKTOP
     ## window-managers
-    desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    desktop.hyprland.enable = true;
+    desktop.dwl.enable = true;
 
     ## core
     desktop.clipboard.enable = true;
@@ -88,7 +93,6 @@ in {
     ## services
     custom.services.hypridle.enable = true;
     custom.services.mako.enable = true;
-    custom.services.waybar.enable = true;
 
     laptop.enable = true; # enable laptop modules
 

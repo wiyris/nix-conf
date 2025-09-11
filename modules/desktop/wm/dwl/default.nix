@@ -30,7 +30,7 @@ in {
           oldAttrs.patches or []
           ++ [
             ./patches/autostart-0.7.patch
-            ./patches/ipc.patch
+            ./patches/tmux-borders-0.7.patch
           ];
       });
     };

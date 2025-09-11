@@ -6,7 +6,7 @@
 /* appearance */
 static const int sloppyfocus               = 0;  /* focus follows mouse */
 static const int bypass_surface_visibility = 0;  /* 1 means idle inhibitors will disable idle tracking even if it's surface isn't visible  */
-static const unsigned int borderpx         = 2;  /* border pixel of windows */
+static const unsigned int borderpx         = 1;  /* border pixel of windows */
 static const float rootcolor[]             = COLOR(0x1e1e2eff);
 static const float bordercolor[]           = COLOR(0x313244ff);
 static const float focuscolor[]            = COLOR(0xb4befeff);
@@ -23,7 +23,7 @@ static int log_level = WLR_ERROR;
 /* Autostart */
 static const char *const autostart[] = {
         "uwsm", "finalize", "XDG_CURRENT_DESKTOP", "XDG_SESSION_TYPE", "XDG_SESSION_DESKTOP", NULL,
-        "uwsm", "app", "--", "waybar", NULL,
+        // "uwsm", "app", "--", "waybar", NULL,
 
         NULL /* terminate */
 };

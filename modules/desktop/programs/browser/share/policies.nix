@@ -1,5 +1,5 @@
 {
-  ExtensionSettings = import ../extensions;
+  ExtensionSettings = import ./extensions.nix;
 
   CaptivePortal = false;
   DisableTelemetry = true;

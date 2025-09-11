@@ -1,6 +1,7 @@
 {
   description = "NixOS config";
   outputs = inputs: let
+    lib = import ./lib inputs;
     mkNixosSystem = pkgs: system: hostName:
       pkgs.lib.nixosSystem {
         inherit system;
@@ -13,8 +14,7 @@
           }
         ];
         specialArgs = {
-          inherit inputs;
-          inherit system;
+          inherit inputs system lib;
           nixpkgs = pkgs;
         };
       };

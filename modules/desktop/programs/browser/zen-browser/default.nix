@@ -36,13 +36,13 @@ in {
 
         programs.zen-browser = {
           enable = true;
-          policies = import ../share/policies;
+          policies = import ../share/policies.nix;
           profiles.${userName} = {
             isDefault = true;
 
-            # bookmarks = import ../share/bookmarks;
-            search = import ../share/search;
-            containers = import ../share/containers;
+            # bookmarks = import ../share/bookmarks.nix;
+            search = import ../share/search.nix;
+            containers = import ../share/containers.nix;
             containersForce = true;
 
             extraConfig = ''

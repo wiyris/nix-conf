@@ -16,6 +16,10 @@
         specialArgs = {
           inherit inputs system lib;
           nixpkgs = pkgs;
+          pkgs-stable = import inputs.nixpkgs-stable {
+            inherit system;
+            config.allowUnfree = true;
+          };
         };
       };
   in {

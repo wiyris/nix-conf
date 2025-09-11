@@ -19,20 +19,24 @@ in {
 
     programs.dwl = {
       enable = true;
-      package = (pkgs.dwl.override {configH = ./config.h;}).overrideAttrs (oldAttrs: {
-        buildInputs =
-          oldAttrs.buildInputs or []
-          ++ [
-            # pkgs.libdrm
-            # pkgs.fcft
-          ];
-        patches =
-          oldAttrs.patches or []
-          ++ [
-            ./patches/autostart-0.7.patch
-            ./patches/tmux-borders-0.7.patch
-          ];
-      });
+      package =
+        (pkgs.dwl.override {
+          configH = ./config.h;
+          enableXWayland = false;
+        }).overrideAttrs (oldAttrs: {
+          buildInputs =
+            oldAttrs.buildInputs or []
+            ++ [
+              # pkgs.libdrm
+              # pkgs.fcft
+            ];
+          patches =
+            oldAttrs.patches or []
+            ++ [
+              ./patches/autostart-0.7.patch
+              ./patches/tmux-borders-0.7.patch
+            ];
+        });
     };
     environment.systemPackages = with pkgs; [
     ];

@@ -32,7 +32,7 @@ static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	/* examples: */
 	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
-	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
+	{ "thunderbird",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
 };
 
 /* layout(s) */
@@ -105,10 +105,10 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_minus,      setmfact,       {.f = -0.05f} },
 	{ MODKEY,                    XKB_KEY_equal,      setmfact,       {.f = +0.05f} },
 	// { MODKEY,                    XKB_KEY_Return,     zoom,           {0} },
-	// { MODKEY,                    XKB_KEY_Tab,        view,           {0} },
-	{ MODKEY,                    XKB_KEY_s,          setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                    XKB_KEY_c,          setlayout,      {.v = &layouts[2]} },
+	{ MODKEY,                    XKB_KEY_Tab,        view,           {0} },
+	// { MODKEY,                    XKB_KEY_s,          setlayout,      {.v = &layouts[0]} },
+	// { MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[1]} },
+	// { MODKEY,                    XKB_KEY_c,          setlayout,      {.v = &layouts[2]} },
 	// { MODKEY,                    XKB_KEY_c,      setlayout,      {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_C,      togglefloating, {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,         togglefullscreen, {0} },

@@ -17,7 +17,6 @@ in {
     globals.configDirectory = configDirectory;
 
     # Custom options
-    system.terminus-font.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;

@@ -29,7 +29,6 @@ in {
     custom.networking.iwd.enable = true;
     custom.networking.mullvad.enable = true;
     custom.services.keyd.enable = true;
-    system.terminus-font.enable = true;
 
     # cli
     programs.fish.enable = true;

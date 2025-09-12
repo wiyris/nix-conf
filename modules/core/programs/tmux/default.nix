@@ -10,8 +10,8 @@
 in {
   options.custom.programs.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
-      stylix.targets.tmux.enable = false;
+    hm' = {
+      stylix.targets.tmux.enable = lib.mkIf config.custom.stylix.enable false;
       imports = [
         ./dots/binds.nix
         ./plugins/catppuccin.nix

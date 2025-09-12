@@ -22,7 +22,7 @@ in {
             # background-blur-radius = 20;
             # background-opacity = 0.3;
 
-            font-family = "Maple Mono NF";
+            font-family = ["" "config.stylix.fonts.monospace"]; # disable fallback noto emoji
 
             cursor-style = "block";
             cursor-style-blink = true;
@@ -41,8 +41,8 @@ in {
             mouse-hide-while-typing = true;
 
             confirm-close-surface = false;
-            window-padding-x = 6;
-            window-padding-y = [0 5];
+            window-padding-x = [4 5];
+            window-padding-y = [4 5];
             window-padding-balance = false;
 
             # extras

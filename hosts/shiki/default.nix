@@ -17,6 +17,7 @@ in {
     globals.configDirectory = configDirectory;
 
     # Custom options
+    custom.stylix.enable = true;
     custom.networking.mullvad.enable = true;
     custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;

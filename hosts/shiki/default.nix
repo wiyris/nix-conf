@@ -17,12 +17,13 @@ in {
     globals.configDirectory = configDirectory;
 
     # Custom options
-    custom.stylix.enable = true;
-    custom.networking.mullvad.enable = true;
-    custom.networking.core.enable = true;
     custom.hardware.amdgpu.enable = true;
     custom.hardware.bluetooth.enable = true;
+    custom.networking.core.enable = true;
+    custom.networking.mullvad.enable = true;
+    custom.security.doas.enable = true;
     custom.services.keyd.enable = true;
+    custom.stylix.enable = true;
 
     # Services
     custom.services.hiki-mounts.enable = true;

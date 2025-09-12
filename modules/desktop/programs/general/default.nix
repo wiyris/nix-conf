@@ -9,6 +9,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs;
       [
+        tldr
         gowall
         taskwarrior-tui
         tray-tui

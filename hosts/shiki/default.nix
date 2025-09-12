@@ -45,7 +45,7 @@ in {
     custom.programs.gtrash.enable = true;
     custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
-    # custom.programs.nushell.enable = true;
+    custom.programs.nushell.enable = true;
     custom.programs.nvim.enable = true;
     custom.programs.ripgrep.enable = true;
     custom.programs.starship.enable = true;

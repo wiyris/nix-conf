@@ -9,13 +9,10 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {
       l = "ls -l";
-
       mv = "mv -i";
-      cp = "cp -ia";
+      cp = "cp -i";
       pd = "cd -";
-
-      xx = "7z"; # 7z is hard to type on the 36keys hd layout
-
+      xx = "7z";
       weather = "curl wttr.in";
       myip = "curl ip.me";
     };

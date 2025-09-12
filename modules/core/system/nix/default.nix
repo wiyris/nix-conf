@@ -6,6 +6,49 @@
 }: let
   inherit (config.globals) configDirectory;
 in {
+  environment.systemPackages = with pkgs; [
+    alejandra
+    nil
+    nix-output-monitor
+    nix-prefetch-github
+    nix-tree
+    nixd
+    nvd
+  ];
+
+  programs.nh = {
+    enable = true;
+    flake = "${configDirectory}";
+    clean = {
+      enable = true;
+      extraArgs = "--keep 10";
+    };
+  };
+
+  programs.command-not-found.enable = true;
+
+  nixpkgs = {
+    config = {
+      allowBroken = false;
+      allowUnfree = true;
+    };
+  };
+
+  programs.fish.shellAbbrs = {
+    nf = "nix flake";
+    nfc = "nix flake check";
+    nfu = "nix flake update";
+    npr = "nixpkgs-review pr --run fish --print-result";
+    nd = "nix develop --command fish";
+    nb = "nix build";
+    ns = "nix shell";
+    nr = "nix run";
+    ncg = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
+    nvd = "nvd --color always diff /run/current-system result | rg -v 0.0.0 | less -R";
+
+    sw = "nh os switch --ask ${configDirectory}";
+  };
+
   nix = {
     nixPath = ["nixpkgs=${inputs.nixpkgs}"];
     settings = {
@@ -37,48 +80,5 @@ in {
         "nix-gaming.cachix.org-1:nbjlureqMbRAxR1gJ/f3hxemL9svXaZF/Ees8vCUUs4="
       ];
     };
-  };
-
-  environment.systemPackages = with pkgs; [
-    alejandra
-    nil
-    nix-output-monitor
-    nix-prefetch-github
-    nix-tree
-    nixd
-    nvd
-  ];
-
-  programs.nh = {
-    enable = true;
-    flake = "configDirectory";
-    clean = {
-      enable = true;
-      extraArgs = "--keep 10";
-    };
-  };
-
-  programs.command-not-found.enable = true;
-
-  nixpkgs = {
-    config = {
-      allowBroken = false;
-      allowUnfree = true;
-    };
-  };
-
-  programs.fish.shellAbbrs = {
-    nf = "nix flake";
-    nfc = "nix flake check";
-    nfu = "nix flake update";
-    npr = "nixpkgs-review pr --run fish --print-result";
-    nd = "nix develop --command fish";
-    nb = "nix build";
-    ns = "nix shell";
-    nr = "nix run";
-    ncg = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
-    nvd = "nvd --color always diff /run/current-system result | rg -v 0.0.0 | less -R";
-
-    sw = "nh os switch --ask ${configDirectory}";
   };
 }

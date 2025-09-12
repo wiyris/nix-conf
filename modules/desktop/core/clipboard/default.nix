@@ -9,14 +9,13 @@ in {
   options.desktop.clipboard.enable = lib.mkEnableOption {};
 
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       services.cliphist.enable = true;
       home.packages = with pkgs; [
         wl-clip-persist
         wl-clipboard-rs
       ];
       home.shellAliases = {
-        chist = "rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
         cwipe = "cliphist wipe";
       };
       wayland.windowManager.hyprland.settings.exec-once = lib.mkIf config.desktop.hyprland.enable [

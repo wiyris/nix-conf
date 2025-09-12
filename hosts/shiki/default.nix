@@ -42,7 +42,7 @@ in {
     custom.programs.fzf.enable = true;
     custom.programs.git.enable = true;
     custom.programs.gtrash.enable = true;
-    # custom.programs.htop.enable = true;
+    custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
     # custom.programs.nushell.enable = true;
     custom.programs.nvim.enable = true;
@@ -122,7 +122,7 @@ in {
     # custom.programs.jellyfin-client.enable = true;
     custom.programs.mpv.enable = true;
     custom.programs.pqiv.enable = true;
-    # custom.programs.rmpc.enable = true;
+    custom.programs.rmpc.enable = true;
     custom.programs.spotify.enable = true;
     custom.programs.zathura.enable = true;
 

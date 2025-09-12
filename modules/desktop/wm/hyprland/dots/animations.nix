@@ -14,7 +14,7 @@
     animation = [
       "global, 1, 10, default"
       "border, 1, 5.39, easeOutQuint"
-      "borderangle, 1, 15, linear, loop"
+      "borderangle, 1, 42, linear, loop"
       "windows, 1, 4.79, easeOutQuint"
       "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
       "windowsOut, 1, 1.49, linear, popin 87%"

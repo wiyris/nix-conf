@@ -20,7 +20,7 @@ in {
         fzf-fish
       ];
 
-      hm'= {
+      hm' = {
         imports = [./abbrs.nix];
         xdg.configFile."fish/functions" = {
           source = ./functions;
@@ -48,7 +48,7 @@ in {
               bind -M visual -m default y 'fish_clipboard_copy; commandline -f end-selection repaint-mode'
               bind yy fish_clipboard_copy
               bind p fish_clipboard_paste
-              bind -M insert \e\z zi
+              # bind -M insert \e\z zi
 
               export PATH="$HOME/.local/bin:$PATH"
             '';

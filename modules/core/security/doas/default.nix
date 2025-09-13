@@ -7,7 +7,6 @@
   inherit (config.globals) userName;
 in {
   options.custom.security.doas.enable = lib.mkEnableOption {};
-
   config = lib.mkIf cfg.enable {
     custom.user.extraGroups = ["wheel"];
 

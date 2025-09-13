@@ -15,6 +15,9 @@
       number = true;
       relativenumber = true;
       cursorline = true;
+      pumblend = 10;
+      pumheight = 10;
+      shortmess = "I";
 
       # Indentation
       tabstop = 2;

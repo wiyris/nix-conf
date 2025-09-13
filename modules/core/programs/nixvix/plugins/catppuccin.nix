@@ -2,7 +2,13 @@
   programs.nixvim.colorschemes.catppuccin = {
     enable = true;
     settings = {
-      noice = true;
+      custom_highlights = ''
+        function(colors)
+          return {
+            NoiceCmdlinePopupBorder = { fg = colors.lavender },
+          }
+        end
+      '';
     };
   };
 }

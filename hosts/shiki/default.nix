@@ -75,12 +75,12 @@ in {
     desktop.xdg.enable = true;
 
     ## gaming
-    gaming.celeste.enable = true;
+    # gaming.celeste.enable = true;
     gaming.gamemode.enable = true;
     gaming.lutris.enable = true;
-    gaming.osu.enable = true;
+    # gaming.osu.enable = true;
     # gaming.mangohud.enable = true;
-    gaming.optimize.enable = true;
+    # gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     ## programs

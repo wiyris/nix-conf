@@ -36,14 +36,14 @@ in {
             ./dots/animations.nix
             ./dots/decoration.nix
             ./dots/binds.nix
-            ./dots/binds36.nix
+            # ./dots/binds36.nix
             ./dots/default_apps.nix
             ./dots/exec-once.nix
             ./dots/general.nix
             ./dots/input.nix
             ./dots/misc.nix
             ./dots/rules.nix
-            # ./dots/scratchpads.nix
+            ./dots/scratchpads.nix
 
             # ./plugins/hyprexpo.nix
           ]

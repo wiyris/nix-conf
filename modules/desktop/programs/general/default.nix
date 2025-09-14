@@ -54,7 +54,7 @@ in {
         # electron
         freetube
         legcord
-        # vesktop
+        vesktop
       ];
     # programs.kdeconnect.enable = true;
   };

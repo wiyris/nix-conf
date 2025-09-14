@@ -4,11 +4,11 @@
   osConfig,
   ...
 }: let
-  opacity = "0.3";
+  opacity = "0.2";
   inherit (osConfig.globals) defaultShell;
-  hyprland-scratchpad =
-    pkgs.writeScriptBin "hyprland-scratchpad"
-    (builtins.readFile ../scripts/hyprland-scratchpad.sh);
+  hyprland-scratchpad = pkgs.writeScriptBin "hyprland-scratchpad" (
+    builtins.readFile ../scripts/hyprland-scratchpad.sh
+  );
 in {
   home.packages = [hyprland-scratchpad];
   wayland.windowManager.hyprland.settings = {
@@ -24,9 +24,9 @@ in {
       ]
       ++ lib.optionals osConfig.custom.programs.ghostty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"
-        "$mainMod SHIFT, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.sidescratch 'ghostty --class=ghostty.sidescratch --background-opacity=${opacity} -e ${defaultShell}'"
-        "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghostty.scratch 'ghostty --class=rmpc.ghostty.scratch --background-opacity=${opacity} -e rmpc'"
-        "$mainMod SHIFT, T, exec, hyprland-scratchpad --raise-or-run-uwsm tray.ghostty.scratch 'ghostty --class=tray.ghostty.scratch --background-opacity=${opacity} -e tray-tui'"
+        # "$mainMod SHIFT, N, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.sidescratch 'ghostty --class=ghostty.sidescratch --background-opacity=${opacity} -e ${defaultShell}'"
+        # "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc.ghostty.scratch 'ghostty --class=rmpc.ghostty.scratch --background-opacity=${opacity} -e rmpc'"
+        # "$mainMod SHIFT, T, exec, hyprland-scratchpad --raise-or-run-uwsm tray.ghostty.scratch 'ghostty --class=tray.ghostty.scratch --background-opacity=${opacity} -e tray-tui'"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop.ghostty.scratch 'ghostty --class='btop.ghostty.scratch' --background-opacity='${opacity}' -e btop'"
       ]
       ++ lib.optionals osConfig.custom.programs.kitty.isDefault [

@@ -22,12 +22,15 @@
       bind -n M-q kill-pane
       bind -n M-Q kill-window
 
-      bind -n M-Space split-window -h
+      # bind -n M-Space split-window -h
+      bind -n M-Space split-window -h -p 35
       bind -n M-C-Space split-window -v
 
       bind -n M-n if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
       bind -n M-t if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'
       bind -n M-h if-shell 'tmux list-windows | grep -q "^3:"' 'select-window -t 3' 'new-window -t 3'
+      bind -n M-p if-shell 'tmux list-windows | grep -q "^4:"' 'select-window -t 4' 'new-window -t 4'
+      bind -n M-d if-shell 'tmux list-windows | grep -q "^5:"' 'select-window -t 5' 'new-window -t 5'
       # bind -n M-f if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
       # bind -n M-p if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'
       # bind -n M-d if-shell 'tmux list-windows | grep -q "^3:"' 'select-window -t 3' 'new-window -t 3'

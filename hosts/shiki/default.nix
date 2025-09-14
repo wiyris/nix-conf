@@ -22,7 +22,7 @@ in {
     custom.networking.core.enable = true;
     custom.networking.mullvad.enable = true;
     custom.security.doas.enable = true;
-    custom.services.keyd.enable = true;
+    # custom.services.keyd.enable = true;
     custom.stylix.enable = true;
 
     # Services
@@ -34,7 +34,7 @@ in {
     custom.programs.fish.isDefault = true;
 
     custom.programs.aliases.enable = true;
-    custom.programs.aria2.enable = true;
+    # custom.programs.aria2.enable = true;
     custom.programs.bat.enable = true;
     custom.programs.btop.enable = true;
     custom.programs.cava.enable = true;
@@ -47,7 +47,7 @@ in {
     custom.programs.htop.enable = true;
     custom.programs.lazygit.enable = true;
     custom.programs.nushell.enable = true;
-    custom.programs.nixvim.enable = true;
+    # custom.programs.nixvim.enable = true;
     custom.programs.nvim.enable = true;
     custom.programs.ripgrep.enable = true;
     custom.programs.starship.enable = true;
@@ -80,7 +80,7 @@ in {
     gaming.lutris.enable = true;
     gaming.osu.enable = true;
     # gaming.mangohud.enable = true;
-    # gaming.optimize.enable = true;
+    gaming.optimize.enable = true;
     gaming.steam.enable = true;
 
     ## programs
@@ -92,7 +92,7 @@ in {
     ## general
     programs.kdeconnect.enable = true;
     # custom.programs.aerc.enable = true;
-    # custom.programs.anki.enable = true;
+    custom.programs.anki.enable = true;
     custom.programs.goldendict.enable = true;
     custom.programs.hyprlock.enable = true;
     # custom.programs.obs-studio.enable = true;

@@ -1,7 +1,6 @@
 {
   wayland.windowManager.hyprland.settings.animations = {
     enabled = true;
-    first_launch_animation = false;
 
     bezier = [
       "easeOutQuint, 0.23, 1, 0.32, 1"
@@ -29,6 +28,7 @@
       "workspaces, 1, 1.94, almostLinear, fade"
       "workspacesIn, 1, 1.21, almostLinear, fade"
       "workspacesOut, 1, 1.94, almostLinear, fade"
+      "monitorAdded, 0"
     ];
   };
 }

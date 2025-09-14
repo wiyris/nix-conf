@@ -15,7 +15,7 @@ in {
     (lib.mkIf cfg.isDefault {globals.defaultShell = "fish";})
     (lib.mkIf cfg.enable {
       environment.systemPackages = with pkgs.fishPlugins; [
-        # autopair
+        autopair
         done
         fzf-fish
       ];

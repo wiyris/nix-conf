@@ -13,7 +13,7 @@ in {
       shellAliases = {
         tt = "gtrash put"; # to trash
         tr = "gtrash restore";
-        ts = "gtrash summury";
+        ts = "gtrash summary";
       };
     };
   };

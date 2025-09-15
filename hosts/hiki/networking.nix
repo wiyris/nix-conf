@@ -22,19 +22,19 @@
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
       PermitRootLogin = "no";
-      AllowUsers = [];
+      # AllowUsers = [];
     };
   };
-  boot.initrd.network = {
-    enable = true;
-    ssh = {
-      enable = true;
-      hostKeys = ["/etc/ssh/initrd_ssh_host_ed25519_key"];
-      # authorizedKeys = config.users.users.root.openssh.authorizedKeys.keys;
-      authorizedKeyFiles = [
-        /root/.ssh/id_ed25519.pub
-      ];
-    };
-  };
-  boot.initrd.luks.forceLuksSupportInInitrd = true;
+  # boot.initrd.network = {
+  #   enable = true;
+  #   ssh = {
+  #     enable = true;
+  #     hostKeys = ["/etc/ssh/initrd_ssh_host_ed25519_key"];
+  #     # authorizedKeys = config.users.users.root.openssh.authorizedKeys.keys;
+  #     authorizedKeyFiles = [
+  #       /root/.ssh/id_ed25519.pub
+  #     ];
+  #   };
+  # };
+  # boot.initrd.luks.forceLuksSupportInInitrd = true;
 }

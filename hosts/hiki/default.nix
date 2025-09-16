@@ -10,12 +10,6 @@ in {
     ./networking.nix
     # ./ssh.nix
     # ./wireguard.nix
-
-    ./modules/arr
-    ./modules/jellyfin
-    ./modules/kavita
-    # ./modules/lms
-    ./modules/navidrome
   ];
 
   config = {
@@ -51,6 +45,12 @@ in {
     custom.programs.tmux.enable = true;
     custom.programs.yazi.enable = true;
     custom.programs.zoxide.enable = true;
+
+    # services
+    services'.arr.enable = true;
+    services'.kavita.enable = true;
+    services'.navidrome.enable = true;
+    services'.qbittorrent.enable = true;
 
     time.timeZone = "Asia/Tokyo";
 

@@ -5,10 +5,10 @@
   ...
 }: let
   betterfox = inputs.betterfox;
-  cfg = config.custom.programs.firefox;
+  cfg = config.programs'.firefox;
   inherit (config.globals) userName;
 in {
-  options.custom.programs.firefox = {
+  options.programs'.firefox = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.yazi;
+  cfg = config.programs'.yazi;
 in {
-  options.custom.programs.yazi.enable = lib.mkEnableOption {};
+  options.programs'.yazi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.packages = with pkgs; [

@@ -5,9 +5,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.obs-studio;
+  cfg = config.programs'.obs-studio;
 in {
-  options.custom.programs.obs-studio.enable = lib.mkEnableOption {};
+  options.programs'.obs-studio.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       xdg.configFile."obs-studio/themes".source = "${inputs.catppuccin-obs}/themes";

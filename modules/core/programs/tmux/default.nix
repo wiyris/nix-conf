@@ -4,11 +4,11 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.tmux;
+  cfg = config.programs'.tmux;
   inherit (config.globals) defaultShell;
   shell = "${pkgs.${defaultShell}}/bin/${defaultShell}";
 in {
-  options.custom.programs.tmux.enable = lib.mkEnableOption {};
+  options.programs'.tmux.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [

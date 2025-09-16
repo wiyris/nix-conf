@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.pqiv;
+  cfg = config.programs'.pqiv;
 in {
-  options.custom.programs.pqiv.enable = lib.mkEnableOption {};
+  options.programs'.pqiv.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.pqiv = {

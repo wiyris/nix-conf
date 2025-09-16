@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.freetube;
+  cfg = config.programs'.freetube;
 in {
-  options.custom.programs.freetube.enable = lib.mkEnableOption {};
+  options.programs'.freetube.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.freetube = {
       enable = true;

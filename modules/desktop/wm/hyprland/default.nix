@@ -73,7 +73,7 @@ in {
         ];
       };
     })
-    (lib.mkIf config.custom.services.swww.enable {
+    (lib.mkIf config.services'.swww.enable {
       hm'.services.hyprpaper.enable = lib.mkForce false;
     })
   ];

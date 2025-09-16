@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.rmpc;
+  cfg = config.programs'.rmpc;
 in {
-  options.custom.programs.rmpc.enable = lib.mkEnableOption {};
+  options.programs'.rmpc.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.rmpc = {

@@ -17,31 +17,31 @@ in {
     globals.configDirectory = configDirectory;
 
     # Custom options
-    custom.networking.core.enable = true;
+    networking'.core.enable = true;
 
     # cli
     programs.fish.enable = true;
-    custom.programs.fish.enable = true;
-    custom.programs.fish.isDefault = true;
+    programs'.fish.enable = true;
+    programs'.fish.isDefault = true;
 
-    custom.programs.aliases.enable = true;
-    custom.programs.bat.enable = true;
-    custom.programs.btop.enable = true;
-    custom.programs.cava.enable = true;
-    custom.programs.core-utils.enable = true;
-    custom.programs.eza.enable = true;
-    custom.programs.fastfetch.enable = true;
-    custom.programs.fzf.enable = true;
-    custom.programs.git.enable = true;
-    custom.programs.gtrash.enable = true;
-    custom.programs.htop.enable = true;
-    custom.programs.lazygit.enable = true;
-    custom.programs.nvim.enable = true;
-    custom.programs.ripgrep.enable = true;
-    custom.programs.starship.enable = true;
-    custom.programs.tmux.enable = true;
-    custom.programs.yazi.enable = true;
-    custom.programs.zoxide.enable = true;
+    programs'.aliases.enable = true;
+    programs'.bat.enable = true;
+    programs'.btop.enable = true;
+    programs'.cava.enable = true;
+    programs'.core-utils.enable = true;
+    programs'.eza.enable = true;
+    programs'.fastfetch.enable = true;
+    programs'.fzf.enable = true;
+    programs'.git.enable = true;
+    programs'.gtrash.enable = true;
+    programs'.htop.enable = true;
+    programs'.lazygit.enable = true;
+    programs'.nvim.enable = true;
+    programs'.ripgrep.enable = true;
+    programs'.starship.enable = true;
+    programs'.tmux.enable = true;
+    programs'.yazi.enable = true;
+    programs'.zoxide.enable = true;
 
     time.timeZone = "Asia/Tokyo";
     system.stateVersion = "25.05"; # Did you read the comment?

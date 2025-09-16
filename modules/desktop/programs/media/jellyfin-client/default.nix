@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.jellyfin-client;
+  cfg = config.programs'.jellyfin-client;
 in {
-  options.custom.programs.jellyfin-client.enable = lib.mkEnableOption {};
+  options.programs'.jellyfin-client.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.packages = with pkgs; [

@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.services.swayosd;
+  cfg = config.services'.swayosd;
 in {
-  options.custom.services.swayosd.enable = lib.mkEnableOption {};
+  options.services'.swayosd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       services.swayosd = {
@@ -22,7 +22,7 @@ in {
         ", XF86MonBrightnessDown, exec, swayosd-client --brightness -10"
       ]);
 
-      programs.waybar.settings.main.pulseaudio = lib.mkIf config.custom.services.waybar.enable {
+      programs.waybar.settings.main.pulseaudio = lib.mkIf config.services'.waybar.enable {
         "on-click" = lib.mkForce "swayosd-client --output-volume mute-toggle";
         "on-click-right" = lib.mkForce "swayosd-client --input-volume mute-toggle";
         "on-scroll-up" = lib.mkForce "swayosd-client --output-volume +1";

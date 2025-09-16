@@ -5,11 +5,11 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.spotify;
+  cfg = config.programs'.spotify;
 in {
   imports = [inputs.spicetify-nix.nixosModules.spicetify];
 
-  options.custom.programs.spotify.enable = lib.mkEnableOption {};
+  options.programs'.spotify.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     stylix.targets.spicetify.enable = false;
     programs.spicetify = let

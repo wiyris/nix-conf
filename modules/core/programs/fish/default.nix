@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.fish;
+  cfg = config.programs'.fish;
 in {
-  options.custom.programs.fish = {
+  options.programs'.fish = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

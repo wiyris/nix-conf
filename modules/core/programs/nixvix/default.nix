@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.nixvim;
+  cfg = config.programs'.nixvim;
 in {
-  options.custom.programs.nixvim.enable = lib.mkEnableOption {};
+  options.programs'.nixvim.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
       imports =

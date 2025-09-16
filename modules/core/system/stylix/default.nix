@@ -7,9 +7,9 @@
 }: let
   opacity = 1.0;
   fontSize = 13;
-  cfg = config.custom.stylix;
+  cfg = config.stylix';
 in {
-  options.custom.stylix.enable = lib.mkEnableOption {};
+  options.stylix'.enable = lib.mkEnableOption {};
   imports = [inputs.stylix.nixosModules.stylix];
   config = lib.mkIf cfg.enable {
     stylix = {

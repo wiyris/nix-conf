@@ -4,10 +4,10 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.thunar;
+  cfg = config.programs'.thunar;
   inherit (config.globals) defaultTerminal;
 in {
-  options.custom.programs.thunar = {
+  options.programs'.thunar = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

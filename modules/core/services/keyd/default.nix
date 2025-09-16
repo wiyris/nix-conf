@@ -4,9 +4,9 @@
   pkgs,
   ...
 }: let
-  cfg = config.custom.services.keyd;
+  cfg = config.services'.keyd;
 in {
-  options.custom.services.keyd.enable = lib.mkEnableOption {};
+  options.services'.keyd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     systemd.services.keyd = {
       wantedBy = lib.mkForce [];

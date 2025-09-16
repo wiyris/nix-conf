@@ -3,10 +3,10 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.git;
+  cfg = config.programs'.git;
   inherit (config.globals) homeDirectory;
 in {
-  options.custom.programs.git.enable = lib.mkEnableOption {};
+  options.programs'.git.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.gh = {

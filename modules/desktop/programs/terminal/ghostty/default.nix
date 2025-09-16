@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.ghostty;
+  cfg = config.programs'.ghostty;
 in {
-  options.custom.programs.ghostty = {
+  options.programs'.ghostty = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

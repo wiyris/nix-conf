@@ -3,10 +3,10 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.thunderbird;
+  cfg = config.programs'.thunderbird;
   inherit (config.globals) userName;
 in {
-  options.custom.programs.thunderbird.enable = lib.mkEnableOption {};
+  options.programs'.thunderbird.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.thunderbird = {

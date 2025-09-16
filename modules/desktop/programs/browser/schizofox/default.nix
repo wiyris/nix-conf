@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.schizofox;
+  cfg = config.programs'.schizofox;
 in {
-  options.custom.programs.schizofox.enable = lib.mkEnableOption {};
+  options.programs'.schizofox.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       imports = [inputs.schizofox.homeManagerModules.default];

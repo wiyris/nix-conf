@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.zathura;
+  cfg = config.programs'.zathura;
 in {
-  options.custom.programs.zathura.enable = lib.mkEnableOption {};
+  options.programs'.zathura.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.zathura = {

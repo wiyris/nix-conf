@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.fastfetch;
+  cfg = config.programs'.fastfetch;
 in {
-  options.custom.programs.fastfetch.enable = lib.mkEnableOption {};
+  options.programs'.fastfetch.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.shellAliases.ff = "fastfetch";

@@ -4,10 +4,10 @@
   config,
   ...
 }: let
-  cfg = config.custom.services.hiki-mounts;
+  cfg = config.services'.hiki-mounts;
   inherit (config.globals) homeDirectory;
 in {
-  options.custom.services.hiki-mounts.enable = lib.mkEnableOption {};
+  options.services'.hiki-mounts.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.packages = [pkgs.rclone];

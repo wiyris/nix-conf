@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.dolphin;
+  cfg = config.programs'.dolphin;
 in {
-  options.custom.programs.dolphin = {
+  options.programs'.dolphin = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

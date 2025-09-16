@@ -6,14 +6,14 @@
 }: let
   betterfox = inputs.betterfox;
   inherit (config.globals) userName;
-  cfg = config.custom.programs.zen-browser;
+  cfg = config.programs'.zen-browser;
   catppuccin = {
     source = "${inputs.zen-browser-catppuccin}/themes/Mocha/Mauve/";
     recursive = true;
     force = true;
   };
 in {
-  options.custom.programs.zen-browser = {
+  options.programs'.zen-browser = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

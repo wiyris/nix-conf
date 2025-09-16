@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.gtrash;
+  cfg = config.programs'.gtrash;
 in {
-  options.custom.programs.gtrash.enable = lib.mkEnableOption {};
+  options.programs'.gtrash.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.home = {
       packages = [pkgs.gtrash];

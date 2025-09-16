@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.bat;
+  cfg = config.programs'.bat;
 in {
-  options.custom.programs.bat.enable = lib.mkEnableOption {};
+  options.programs'.bat.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       programs.bat = {

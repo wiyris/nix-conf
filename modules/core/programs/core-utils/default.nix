@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.core-utils;
+  cfg = config.programs'.core-utils;
 in {
-  options.custom.programs.core-utils.enable = lib.mkEnableOption {};
+  options.programs'.core-utils.enable = lib.mkEnableOption {};
 
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs;

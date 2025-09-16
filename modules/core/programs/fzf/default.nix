@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.fzf;
+  cfg = config.programs'.fzf;
 in {
-  options.custom.programs.fzf.enable = lib.mkEnableOption {};
+  options.programs'.fzf.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.fzf = {
       enable = true;

@@ -18,32 +18,32 @@ in {
     globals.configDirectory = configDirectory;
 
     networking.hostName = "vm";
-    custom.networking.core.enable = true;
+    networking'.core.enable = true;
 
     # cli
     programs.fish.enable = true;
 
-    custom.programs.aliases.enable = true;
-    custom.programs.bat.enable = true;
-    custom.programs.core-utils.enable = true;
-    custom.programs.eza.enable = true;
-    custom.programs.fish.enable = true;
-    custom.programs.fzf.enable = true;
-    custom.programs.git.enable = true;
-    custom.programs.ripgrep.enable = true;
-    custom.programs.starship.enable = true;
-    custom.programs.zoxide.enable = true;
+    programs'.aliases.enable = true;
+    programs'.bat.enable = true;
+    programs'.core-utils.enable = true;
+    programs'.eza.enable = true;
+    programs'.fish.enable = true;
+    programs'.fzf.enable = true;
+    programs'.git.enable = true;
+    programs'.ripgrep.enable = true;
+    programs'.starship.enable = true;
+    programs'.zoxide.enable = true;
 
     # tui
-    custom.programs.btop.enable = true;
-    custom.programs.gtrash.enable = true;
-    custom.programs.htop.enable = true;
-    custom.programs.lazygit.enable = true;
-    custom.programs.nvim.enable = true;
-    custom.programs.tmux.enable = true;
-    custom.programs.yazi.enable = true;
+    programs'.btop.enable = true;
+    programs'.gtrash.enable = true;
+    programs'.htop.enable = true;
+    programs'.lazygit.enable = true;
+    programs'.nvim.enable = true;
+    programs'.tmux.enable = true;
+    programs'.yazi.enable = true;
 
-    custom.programs.ghostty.enable = true; # for temrinfo
+    programs'.ghostty.enable = true; # for temrinfo
 
     time.timeZone = "Asia/Tokyo";
 

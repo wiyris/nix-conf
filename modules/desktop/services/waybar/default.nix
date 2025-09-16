@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.services.waybar;
+  cfg = config.services'.waybar;
 in {
-  options.custom.services.waybar.enable = lib.mkEnableOption {};
+  options.services'.waybar.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       imports = [

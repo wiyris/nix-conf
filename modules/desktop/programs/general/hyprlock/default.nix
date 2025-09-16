@@ -3,10 +3,10 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.hyprlock;
+  cfg = config.programs'.hyprlock;
   inherit (config.globals) configDirectory;
 in {
-  options.custom.programs.hyprlock.enable = lib.mkEnableOption {};
+  options.programs'.hyprlock.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       stylix.targets.hyprlock.enable = false;

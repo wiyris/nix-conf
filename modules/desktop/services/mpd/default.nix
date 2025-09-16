@@ -3,10 +3,10 @@
   config,
   ...
 }: let
-  cfg = config.custom.services.mpd;
+  cfg = config.services'.mpd;
   inherit (config.globals) musicDirectory;
 in {
-  options.custom.services.mpd.enable = lib.mkEnableOption {};
+  options.services'.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       services.mpd-mpris.enable = true;

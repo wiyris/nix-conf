@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.cava;
+  cfg = config.programs'.cava;
 in {
-  options.custom.programs.cava.enable = lib.mkEnableOption {};
+  options.programs'.cava.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.cava = {
       enable = true;

@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.goldendict;
+  cfg = config.programs'.goldendict;
 in {
-  options.custom.programs.goldendict.enable = lib.mkEnableOption {};
+  options.programs'.goldendict.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs; [goldendict-ng];
     hm'.home.sessionVariables = {

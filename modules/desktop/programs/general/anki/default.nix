@@ -5,9 +5,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.anki;
+  cfg = config.programs'.anki;
 in {
-  options.custom.programs.anki.enable = lib.mkEnableOption {};
+  options.programs'.anki.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.packages = [pkgs.anki-bin];

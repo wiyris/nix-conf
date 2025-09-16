@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.eza;
+  cfg = config.programs'.eza;
 in {
-  options.custom.programs.eza.enable = lib.mkEnableOption {};
+  options.programs'.eza.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
       programs.eza = {

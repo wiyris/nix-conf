@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.htop;
+  cfg = config.programs'.htop;
 in {
-  options.custom.programs.htop.enable = lib.mkEnableOption {};
+  options.programs'.htop.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.htop = {
       enable = true;

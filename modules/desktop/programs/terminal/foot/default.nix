@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.foot;
+  cfg = config.programs'.foot;
 in {
-  options.custom.programs.foot = {
+  options.programs'.foot = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

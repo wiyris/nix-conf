@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.zoxide;
+  cfg = config.programs'.zoxide;
 in {
-  options.custom.programs.zoxide.enable = lib.mkEnableOption {};
+  options.programs'.zoxide.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.zoxide = {
       enable = true;

@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.ripgrep;
+  cfg = config.programs'.ripgrep;
 in {
-  options.custom.programs.ripgrep.enable = lib.mkEnableOption {};
+  options.programs'.ripgrep.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.ripgrep = {
       enable = true;

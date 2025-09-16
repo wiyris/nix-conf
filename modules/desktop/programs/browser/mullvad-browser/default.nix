@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.mullvad-browser;
+  cfg = config.programs'.mullvad-browser;
 in {
-  options.custom.programs.mullvad-browser.enable = lib.mkEnableOption {};
+  options.programs'.mullvad-browser.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs; [mullvad-browser];
   };

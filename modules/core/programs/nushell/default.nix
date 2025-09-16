@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.nushell;
+  cfg = config.programs'.nushell;
 in {
-  options.custom.programs.nushell = {
+  options.programs'.nushell = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

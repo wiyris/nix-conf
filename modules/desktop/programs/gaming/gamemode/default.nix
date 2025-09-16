@@ -8,7 +8,7 @@
 in {
   options.gaming.gamemode.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    custom.user.extraGroups = ["gamemode"];
+    user'.extraGroups = ["gamemode"];
     programs.gamemode = {
       enable = true;
       settings = {

@@ -4,12 +4,12 @@
   pkgs,
   ...
 }: let
-  cfg = config.custom.programs.tofi;
+  cfg = config.programs'.tofi;
   tofi-launcher =
     pkgs.writeScriptBin "tofi-launcher"
     (builtins.readFile ./scripts/tofi-launcher.sh);
 in {
-  options.custom.programs.tofi.enable = lib.mkEnableOption {};
+  options.programs'.tofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'= {
       home.packages = [

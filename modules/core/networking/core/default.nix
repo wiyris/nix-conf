@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.networking.core;
+  cfg = config.networking'.core;
 in {
-  options.custom.networking.core.enable = lib.mkEnableOption {};
+  options.networking'.core.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     services.openssh.enable = true;
     networking = {

@@ -16,14 +16,14 @@ in {
       default = {};
       description = "Options to pass directly to home-manager primary user.";
     };
-    custom.user = lib.mkOption {
+    user' = lib.mkOption {
       type = lib.types.attrs;
       default = {};
       description = "Options to pass directly to users.extraUsers primary user.";
     };
   };
   config = {
-    custom.user.home = homeDirectory;
+    user'.home = homeDirectory;
 
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = false;
@@ -46,6 +46,6 @@ in {
     home-manager.users.${userName} = lib.mkAliasDefinitions options.hm';
 
     # user -> users.extraUsers.<primary user>
-    users.extraUsers.${userName} = lib.mkAliasDefinitions options.custom.user;
+    users.extraUsers.${userName} = lib.mkAliasDefinitions options.user';
   };
 }

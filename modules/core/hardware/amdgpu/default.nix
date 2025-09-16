@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.hardware.amdgpu;
+  cfg = config.hardware'.amdgpu;
 in {
-  options.custom.hardware.amdgpu.enable = lib.mkEnableOption {};
+  options.hardware'.amdgpu.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     services.xserver.videoDrivers = ["amdgpu"];
 

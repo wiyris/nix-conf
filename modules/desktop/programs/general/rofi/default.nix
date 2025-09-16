@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: let
-  cfg = config.custom.programs.rofi;
+  cfg = config.programs'.rofi;
   powermenu =
     pkgs.writeScriptBin "powermenu"
     (builtins.readFile ./scripts/powermenu.sh);
@@ -15,7 +15,7 @@
     pkgs.writeScriptBin "wallpaper"
     (builtins.readFile ./scripts/wallpaper.sh);
 in {
-  options.custom.programs.rofi.enable = lib.mkEnableOption {};
+  options.programs'.rofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
       home.packages = [

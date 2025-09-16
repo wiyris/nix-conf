@@ -23,32 +23,32 @@ in {
     };
 
     # Custom options
-    custom.hardware.amdgpu.enable = true;
-    custom.hardware.bluetooth.enable = true;
-    custom.networking.core.enable = true;
-    custom.networking.iwd.enable = true;
-    custom.networking.mullvad.enable = true;
-    custom.services.keyd.enable = true;
+    hardware'.amdgpu.enable = true;
+    hardware'.bluetooth.enable = true;
+    networking'.core.enable = true;
+    networking'.iwd.enable = true;
+    networking'.mullvad.enable = true;
+    services'.keyd.enable = true;
 
     # cli
     programs.fish.enable = true;
-    custom.programs.fish.enable = true;
-    custom.programs.fish.isDefault = true;
+    programs'.fish.enable = true;
+    programs'.fish.isDefault = true;
 
-    custom.programs.aliases.enable = true;
-    custom.programs.bat.enable = true;
-    custom.programs.core-utils.enable = true;
-    custom.programs.eza.enable = true;
-    custom.programs.fzf.enable = true;
-    custom.programs.git.enable = true;
-    custom.programs.gtrash.enable = true;
-    custom.programs.lazygit.enable = true;
-    custom.programs.nvim.enable = true;
-    custom.programs.ripgrep.enable = true;
-    custom.programs.starship.enable = true;
-    custom.programs.tmux.enable = true;
-    custom.programs.yazi.enable = true;
-    custom.programs.zoxide.enable = true;
+    programs'.aliases.enable = true;
+    programs'.bat.enable = true;
+    programs'.core-utils.enable = true;
+    programs'.eza.enable = true;
+    programs'.fzf.enable = true;
+    programs'.git.enable = true;
+    programs'.gtrash.enable = true;
+    programs'.lazygit.enable = true;
+    programs'.nvim.enable = true;
+    programs'.ripgrep.enable = true;
+    programs'.starship.enable = true;
+    programs'.tmux.enable = true;
+    programs'.yazi.enable = true;
+    programs'.zoxide.enable = true;
 
     # DESKTOP
     ## window-managers
@@ -66,29 +66,29 @@ in {
 
     ## programs
     ### default programs
-    custom.programs.foot.isDefault = true; # foot, ghostty, kitty
-    custom.programs.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
+    programs'.foot.isDefault = true; # foot, ghostty, kitty
+    programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
 
     ## general
-    custom.programs.hyprlock.enable = true;
-    custom.programs.tofi.enable = true;
+    programs'.hyprlock.enable = true;
+    programs'.tofi.enable = true;
 
     ## terminal emulator
-    custom.programs.foot.enable = true;
+    programs'.foot.enable = true;
 
     ## browser
-    custom.programs.zen-browser.enable = true;
+    programs'.zen-browser.enable = true;
 
     ## media
-    # custom.programs.mpv.enable = true;
-    # custom.programs.pqiv.enable = true;
-    # custom.programs.rmpc.enable = true;
-    # custom.programs.zathura.enable = true;
+    # programs'.mpv.enable = true;
+    # programs'.pqiv.enable = true;
+    # programs'.rmpc.enable = true;
+    # programs'.zathura.enable = true;
 
     ## services
-    custom.services.dwlb.enable = true;
-    custom.services.hypridle.enable = true;
-    custom.services.mako.enable = true;
+    services'.dwlb.enable = true;
+    services'.hypridle.enable = true;
+    services'.mako.enable = true;
 
     laptop.enable = true; # enable laptop modules
 

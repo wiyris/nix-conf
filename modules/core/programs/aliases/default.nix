@@ -3,9 +3,9 @@
   lib,
   ...
 }: let
-  cfg = config.custom.programs.aliases;
+  cfg = config.programs'.aliases;
 in {
-  options.custom.programs.aliases.enable = lib.mkEnableOption {};
+  options.programs'.aliases.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {
       l = "ls -l";

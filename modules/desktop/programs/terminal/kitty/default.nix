@@ -3,10 +3,10 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.kitty;
+  cfg = config.programs'.kitty;
 in {
   imports = [./dots/binds.nix];
-  options.custom.programs.kitty = {
+  options.programs'.kitty = {
     enable = lib.mkEnableOption {};
     isDefault = lib.mkEnableOption {};
   };

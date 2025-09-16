@@ -3,9 +3,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.btop;
+  cfg = config.programs'.btop;
 in {
-  options.custom.programs.btop.enable = lib.mkEnableOption {};
+  options.programs'.btop.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.programs.btop = {
       enable = true;

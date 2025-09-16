@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.custom.programs.nvim;
+  cfg = config.programs'.nvim;
 in {
-  options.custom.programs.nvim.enable = lib.mkEnableOption {};
+  options.programs'.nvim.enable = lib.mkEnableOption {};
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {

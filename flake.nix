@@ -10,8 +10,9 @@
       vm = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
     };
 
-    nixOnDroidConfigurations = {
-      pix = lib.mkNixOnDroidSystem inputs.nixpkgs "aarch64-linux" "pix";
+    nixOnDroidConfigurations.pix = inputs.nix-on-droid.lib.nixOnDroidConfiguration {
+      pkgs = import inputs.nixpkgs {system = "aarch64-linux";};
+      modules = [./hosts/pix];
     };
   };
   inputs = {
@@ -77,6 +78,7 @@
     nix-on-droid = {
       url = "github:nix-community/nix-on-droid";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
 
     zen-browser = {

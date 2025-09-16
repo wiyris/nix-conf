@@ -51,20 +51,4 @@ in
           nixpkgs = pkgs;
         };
       };
-
-    mkNixOnDroidSystem = pkgs: system: hostName:
-      inputs.nix-on-droid.lib.nixOnDroidSystem {
-        inherit system;
-        modules = [
-          (../. + "/hosts/${hostName}")
-          {
-            imports = builtins.attrValues (defaultFilesToAttrset ../modules);
-            nixpkgs.config.allowUnfree = true;
-          }
-        ];
-        specialArgs = {
-          inherit inputs system lib;
-          nixpkgs = pkgs;
-        };
-      };
   }

@@ -23,12 +23,14 @@ in {
     };
 
     # Custom options
+    services'.keyd.enable = true;
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     networking'.iwd.enable = true;
     networking'.mullvad.enable = true;
-    services'.keyd.enable = true;
+    security'.doas.enable = true;
+    stylix'.enable = true;
 
     # cli
     programs.fish.enable = true;
@@ -36,13 +38,20 @@ in {
     programs'.fish.isDefault = true;
 
     programs'.aliases.enable = true;
+    # programs'.aria2.enable = true;
     programs'.bat.enable = true;
+    programs'.btop.enable = true;
+    programs'.cava.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
+    programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
+    # programs'.htop.enable = true;
     programs'.lazygit.enable = true;
+    # programs'.nushell.enable = true;
+    # programs'.nixvim.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;
@@ -52,10 +61,12 @@ in {
 
     # DESKTOP
     ## window-managers
-    desktop.dwl.enable = true;
+    desktop.hyprland.isDefault = true; # dwl, hyprland, niri
+    desktop.hyprland.enable = true;
 
     ## core
     desktop.clipboard.enable = true;
+    desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.mime-apps.enable = true;
@@ -70,25 +81,32 @@ in {
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
 
     ## general
-    programs'.hyprlock.enable = true;
+    programs'.rofi.enable = true;
     programs'.tofi.enable = true;
+    # programs'.taskwarrior.enable = true;
+    # programs'.tray-tui.enable = true;
 
     ## terminal emulator
     programs'.foot.enable = true;
 
     ## browser
+    # programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
 
+    ## exprorer
+    # programs'.thunar.enable = true;
+
     ## media
+    # programs'.jellyfin-client.enable = true;
     # programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
-    # programs'.rmpc.enable = true;
-    # programs'.zathura.enable = true;
 
     ## services
-    services'.dwlb.enable = true;
     services'.hypridle.enable = true;
     services'.mako.enable = true;
+    services'.pipewire.enable = true;
+    services'.swww.enable = true;
+    services'.waybar.enable = true;
 
     laptop.enable = true; # enable laptop modules
 

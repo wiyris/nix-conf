@@ -14,6 +14,7 @@ in {
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {globals.defaultShell = "fish";})
     (lib.mkIf cfg.enable {
+      programs.fish.enable = true;
       environment.systemPackages = with pkgs.fishPlugins; [
         autopair
         done

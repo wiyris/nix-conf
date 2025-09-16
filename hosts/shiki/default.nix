@@ -29,7 +29,6 @@ in {
     services'.hiki-mounts.enable = true;
 
     # cli
-    programs.fish.enable = true;
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 

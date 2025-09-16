@@ -12,8 +12,8 @@ in {
       "default_layout" = "default";
     };
     "default:layout" = {
-      "backslash" = "toggle(qwerty)";
-      F12 = "toggle(mods)";
+      # "backslash" = "toggle(qwerty)";
+      # F12 = "toggle(mods)";
     };
     "mods:layout" = {
       a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
@@ -95,8 +95,9 @@ in {
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
       leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
       muhenkan = "r";
-      katakanahiragana = "toggle(mods)";
-      f12 = "setlayout(mods)";
+      henkan = "backspace";
+      # katakanahiragana = "toggle(mods)";
+      # f12 = "setlayout(mods)";
 
       kp0 = "a";
       kp8 = "w";

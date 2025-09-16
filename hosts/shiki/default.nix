@@ -84,7 +84,7 @@ in {
 
     ## programs
     ### default programs
-    programs'.ghostty.isDefault = true; # foot, ghostty, kitty
+    programs'.kitty.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
 
@@ -103,7 +103,7 @@ in {
     ## terminal emulator
     programs'.foot.enable = true;
     programs'.ghostty.enable = true;
-    # programs'.kitty.enable = true;
+    programs'.kitty.enable = true;
 
     ## browser
     programs'.chromium.enable = true;

@@ -23,7 +23,7 @@ in {
         mouse = true;
         escapeTime = 0;
         aggressiveResize = true;
-        terminal = "screen-256color";
+        # terminal = "screen-256color";
         focusEvents = true;
         extraConfig = ''
           set -g status-position top
@@ -33,9 +33,7 @@ in {
           setw -g pane-base-index 1
         '';
         plugins = with pkgs.tmuxPlugins; [
-          fingers
           tmux-fzf
-          # tmux-thumbs
         ];
       };
 

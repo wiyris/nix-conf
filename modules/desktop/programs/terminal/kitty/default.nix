@@ -15,11 +15,15 @@ in {
     (lib.mkIf cfg.enable {
       hm'.programs.kitty = {
         enable = true;
+        shellIntegration.enableFishIntegration = lib.mkIf config.programs.fish.enable true;
+        enableGitIntegration = true;
         settings = {
           enable_audio_bell = false;
           close_on_child_death = true;
           cursor_blink_interval = 0;
           background_blur = 1;
+          shell_integration = true;
+          confirm_os_window_close = 0;
 
           enabled_layouts = "fat, tall, vertical";
           wayland_titlebar_color = "background";

@@ -11,6 +11,17 @@ in {
       programs.zellij = {
         enable = true;
         # enableFishIntegration = lib.mkIf config.programs.fish.enable true;
+        themes = {
+          stylix = {
+            themes = {
+              default = {
+                frame_selected = {
+                  base = lib.mkForce "#89b4fa";
+                };
+              };
+            };
+          };
+        };
       };
       home.shellAliases = {
         ij = "zellij";

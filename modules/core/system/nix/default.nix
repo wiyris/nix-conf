@@ -1,7 +1,8 @@
 {
-  pkgs,
-  inputs,
   config,
+  inputs,
+  pkgs,
+  lib,
   ...
 }: let
   inherit (config.globals) configDirectory;
@@ -34,7 +35,7 @@ in {
     };
   };
 
-  programs.fish.shellAbbrs = {
+  programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
     nf = "nix flake";
     nfc = "nix flake check";
     nfu = "nix flake update";

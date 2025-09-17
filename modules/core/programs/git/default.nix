@@ -8,7 +8,7 @@
 in {
   options.programs'.git.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       programs.gh = {
         enable = true;
         settings = {
@@ -48,7 +48,7 @@ in {
       # Yet another Git TUI (written in rust).
       programs.gitui.enable = true;
 
-      programs.fish.shellAbbrs = {
+      programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
         g = "git";
         ga = "git add";
         gaa = "git add --all";

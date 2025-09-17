@@ -9,6 +9,7 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.programs.zellij = {
       enable = true;
+      enableFishIntegration = lib.mkIf config.programs.fish.enable true;
     };
   };
 }

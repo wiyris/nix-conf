@@ -19,7 +19,7 @@ in {
           enable_audio_bell = false;
           close_on_child_death = true;
           cursor_blink_interval = 0;
-          background_blur = 0;
+          background_blur = 1;
 
           enabled_layouts = "fat, tall, vertical";
           wayland_titlebar_color = "background";

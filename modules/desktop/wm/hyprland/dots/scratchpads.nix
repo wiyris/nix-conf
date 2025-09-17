@@ -4,7 +4,7 @@
   osConfig,
   ...
 }: let
-  opacity = "0.2";
+  opacity = "0.5";
   inherit (osConfig.globals) defaultShell;
   hyprland-scratchpad = pkgs.writeScriptBin "hyprland-scratchpad" (
     builtins.readFile ../scripts/hyprland-scratchpad.sh
@@ -31,7 +31,7 @@ in {
       ]
       ++ lib.optionals osConfig.programs'.kitty.isDefault [
         "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity}'"
-        "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
+        # "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm rmpc-kittyscratch 'kitty --class rmpc-kittyscratch --override background_opacity=${opacity} -e rmpc'"
         # "$mainMod, SLASH, exec, hyprland-scratchpad --raise-or-run-uwsm btop-kittyscratch 'kitty --class btop-kittyscratch --override background_opacity=${opacity} -e btop'"
       ];
 

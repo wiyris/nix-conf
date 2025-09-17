@@ -16,7 +16,7 @@ in {
             themes = {
               default = {
                 frame_selected = {
-                  base = lib.mkForce "#89b4fa";
+                  base = lib.mkForce "#f5c2e7";
                 };
               };
             };

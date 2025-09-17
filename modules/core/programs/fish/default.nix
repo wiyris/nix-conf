@@ -12,7 +12,10 @@ in {
   };
 
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {globals.defaultShell = "fish";})
+    (lib.mkIf cfg.isDefault {
+      globals.defaultShell = "fish";
+      user'.shell = pkgs.fish;
+    })
     (lib.mkIf cfg.enable {
       programs.fish.enable = true;
       environment.systemPackages = with pkgs.fishPlugins; [

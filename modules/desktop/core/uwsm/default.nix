@@ -16,7 +16,7 @@ in {
       waylandCompositors = {};
     };
 
-    hm'= {
+    hm' = {
       programs.fish = {
         # loginShellInit =
         #   # fish
@@ -30,7 +30,7 @@ in {
         uwl = "uwsm start -- dwl-uwsm.desktop -s 'dwlb'";
         hyp = "uwsm start hyprland-uwsm.desktop";
         uri = "uwsm start niri-uwsm.desktop";
-        us = "uwsm stop";
+        uws = "uwsm stop";
       };
       # home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
       # home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";

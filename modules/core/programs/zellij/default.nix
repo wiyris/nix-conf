@@ -10,7 +10,7 @@ in {
     hm' = {
       programs.zellij = {
         enable = true;
-        enableFishIntegration = lib.mkIf config.programs.fish.enable true;
+        # enableFishIntegration = lib.mkIf config.programs.fish.enable true;
       };
       home.shellAliases = {
         ij = "zellij";

@@ -43,6 +43,7 @@ in {
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
+    programs'.helix.enable = true;
     programs'.htop.enable = true;
     programs'.lazygit.enable = true;
     programs'.nushell.enable = true;

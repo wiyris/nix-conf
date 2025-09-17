@@ -52,6 +52,7 @@ in {
     programs'.starship.enable = true;
     programs'.tmux.enable = true;
     programs'.yazi.enable = true;
+    programs'.zellij.enable = true;
     programs'.zoxide.enable = true;
 
     # DESKTOP

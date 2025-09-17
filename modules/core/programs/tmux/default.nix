@@ -14,6 +14,7 @@ in {
       imports = [
         ./dots/binds.nix
         ./plugins/catppuccin.nix
+        ./plugins/floax.nix
       ];
       programs.tmux = {
         enable = true;
@@ -32,8 +33,8 @@ in {
           setw -g pane-base-index 1
         '';
         plugins = with pkgs.tmuxPlugins; [
-          tmux-fzf
           fingers
+          tmux-fzf
           # tmux-thumbs
         ];
       };

@@ -1,6 +1,7 @@
 {...}: {
   default = "kagi";
-  privateDefault = "leta";
+  privateDefault = "kagi";
+  # privateDefault = "leta";
   force = true;
   order = ["kagi" "leta" "startpage" "NixOS packages" "NixOS options" "Home Manager Options"];
   engines = {

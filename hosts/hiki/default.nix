@@ -19,7 +19,6 @@ in {
 
     networking.hostName = "hiki";
     networking'.mullvad.enable = true;
-    programs'.ghostty.enable = true;
 
     # cli
     programs.fish.enable = true;

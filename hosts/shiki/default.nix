@@ -43,7 +43,7 @@ in {
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    programs'.helix.enable = true;
+    # programs'.helix.enable = true;
     programs'.htop.enable = true;
     programs'.lazygit.enable = true;
     programs'.nushell.enable = true;
@@ -79,7 +79,7 @@ in {
     # gaming.celeste.enable = true;
     gaming.gamemode.enable = true;
     gaming.lutris.enable = true;
-    gaming.osu.enable = true;
+    # gaming.osu.enable = true;
     # gaming.mangohud.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;
@@ -126,7 +126,7 @@ in {
     # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
     programs'.pqiv.enable = true;
-    programs'.rmpc.enable = true;
+    # programs'.rmpc.enable = true;
     programs'.spotify.enable = true;
     programs'.zathura.enable = true;
 

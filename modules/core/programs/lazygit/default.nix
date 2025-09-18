@@ -7,13 +7,18 @@
 in {
   options.programs'.lazygit.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'.programs.lazygit = {
-      enable = true;
-      settings = {
-        gui = {
-          border = "single";
+    hm' = {
+      programs.lazygit = {
+        enable = true;
+        settings = {
+          gui = {
+            border = "single";
+          };
+          promptToReturnFromSubprocess = false;
         };
-        promptToReturnFromSubprocess = false;
+        home.shellAliases = {
+          lg = "lazygit";
+        };
       };
     };
   };

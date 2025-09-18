@@ -48,6 +48,7 @@ in {
 
     # services
     services'.arr.enable = true;
+    services'.jellyfin.enable = true;
     services'.kavita.enable = true;
     services'.navidrome.enable = true;
     services'.qbittorrent.enable = true;

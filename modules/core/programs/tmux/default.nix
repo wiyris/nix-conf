@@ -14,7 +14,8 @@ in {
       imports = [
         ./dots/binds.nix
         ./plugins/catppuccin.nix
-        ./plugins/floax.nix
+        ./plugins/fingers.nix
+        ./plugins/toggle-popup.nix
       ];
       programs.tmux = {
         enable = true;
@@ -23,11 +24,10 @@ in {
         mouse = true;
         escapeTime = 0;
         aggressiveResize = true;
-        # terminal = "screen-256color";
+        terminal = "screen-256color";
         focusEvents = true;
         extraConfig = ''
           set -g status-position top
-
           # Start windows and panes at 1, not 0
           set -g base-index 1
           setw -g pane-base-index 1

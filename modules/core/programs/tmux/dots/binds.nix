@@ -37,6 +37,10 @@
       bind -n M-, select-pane -L
       bind -n M-e select-pane -U
       bind -n M-a select-pane -D
+      # bind -n M-l select-pane -R
+      # bind -n M-h select-pane -L
+      # bind -n M-k select-pane -U
+      # bind -n M-j select-pane -D
 
       # Resize each pane
       bind -n M-"-" resize-pane -L 5
@@ -46,7 +50,10 @@
 
       # Swap windows
       bind -n M-"<" swap-window -d -t -1
-      bind -n M-">" swap-window -d -t +1
+      bind -n M-I swap-window -d -t +1
+
+      # Toggle Bar
+      bind-key t set -g status
     '';
   };
 }

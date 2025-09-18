@@ -9,11 +9,34 @@ in {
   settings = {
     global = {
       "chord_timeout" = "40";
-      "default_layout" = "default";
+      "default_layout" = "widemod";
     };
     "default:layout" = {
       # "backslash" = "toggle(qwerty)";
       # F12 = "toggle(mods)";
+    };
+    "widemod:layout" = {
+      y = "noop";
+      h = "noop";
+      n = "noop";
+
+      u = ";";
+      i = "u";
+      o = "o";
+      p = "y";
+      "[" = "b";
+      "]" = "z";
+      j = ",";
+      k = "a";
+      l = "e";
+      ";" = "i";
+      "'" = "c";
+      "backslash" = "q";
+      m = "-";
+      "," = ".";
+      "." = "'";
+      "/" = "=";
+      "ro" = "/";
     };
     "mods:layout" = {
       a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";

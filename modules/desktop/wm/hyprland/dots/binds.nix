@@ -18,8 +18,8 @@
       "$mainMod SHIFT, G, exec, perf"
 
       # Rofi
-      "$mainMod, T, exec, $launcher"
-      # "$mainMod, T, exec, tofi-launcher.sh --uwsm"
+      # "$mainMod, T, exec, $launcher"
+      "$mainMod, T, exec, tofi-launcher --uwsm"
       "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
       # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"

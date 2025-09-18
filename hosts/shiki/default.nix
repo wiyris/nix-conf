@@ -24,7 +24,7 @@ in {
     networking'.core.enable = true;
     networking'.mullvad.enable = true;
     security'.doas.enable = true;
-    # services'.keyd.enable = true;
+    services'.keyd.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -35,7 +35,7 @@ in {
     programs'.fish.isDefault = true;
 
     programs'.aliases.enable = true;
-    # programs'.aria2.enable = true;
+    programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.cava.enable = true;
@@ -45,7 +45,7 @@ in {
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    # programs'.helix.enable = true;
+    programs'.helix.enable = true;
     programs'.htop.enable = true;
     programs'.lazygit.enable = true;
     programs'.nushell.enable = true;

@@ -2,7 +2,12 @@
   lib,
   pkgs,
   ...
-}: {
+}: let
+  indent = {
+    tab-width = 2;
+    unit = "  ";
+  };
+in {
   programs.helix.languages = {
     language = [
       {
@@ -12,6 +17,7 @@
           command = "${pkgs.shfmt}/bin/shfmt";
           args = ["-i" "2"];
         };
+        inherit indent;
       }
       {
         name = "yaml";
@@ -21,6 +27,7 @@
           args = ["--parser" "yaml"];
         };
         language-servers = ["yaml-language-server"];
+        inherit indent;
       }
       {
         name = "markdown";
@@ -30,6 +37,7 @@
           args = ["--parser" "markdown"];
         };
         language-servers = ["marksman"];
+        inherit indent;
       }
       {
         name = "lua";
@@ -39,6 +47,7 @@
           args = ["-"];
         };
         language-servers = ["lua-language-server"];
+        inherit indent;
       }
       {
         name = "nu";
@@ -56,6 +65,7 @@
           args = ["-q"];
         };
         language-servers = ["nil"];
+        inherit indent;
       }
     ];
 

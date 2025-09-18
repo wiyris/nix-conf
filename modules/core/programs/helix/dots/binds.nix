@@ -1,5 +1,7 @@
 {
   programs.helix.settings.keys = {
-    space.space = "file_picker";
+    normal = {
+      space.space = "file_picker";
+    };
   };
 }

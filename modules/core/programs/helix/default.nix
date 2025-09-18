@@ -27,6 +27,8 @@ in {
           editor = {
             color-modes = true;
             cursorline = true;
+            completion-trigger-len = 1;
+            completion-replace = true;
             bufferline = "multiple";
             line-number = "relative";
             cursor-shape = {
@@ -34,6 +36,8 @@ in {
               normal = "block";
               select = "underline";
             };
+            undercurl = true;
+            soft-wrap.enable = true;
             true-color = true;
             indent-guides = {
               render = true;
@@ -44,8 +48,24 @@ in {
               display-inlay-hints = true;
             };
             auto-pairs = true;
-            # clipboard-provider = "wayland";
-            clipboard-provider = "tmux";
+            clipboard-provider = "wayland";
+            # clipboard-provider = "tmux";
+            trim-final-newlines = true;
+            trim-trailing-whitespace = true;
+            whitespace = {
+              render = {
+                space = "all";
+                tab = "all";
+                newline = "all";
+              };
+              characters = {
+                space = " ";
+                nbsp = "⍽";
+                tab = "→";
+                newline = "↴";
+                tabpad = "-";
+              };
+            };
           };
         };
       };

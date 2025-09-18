@@ -16,6 +16,8 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
+    services.printing.enable = true;
+
     # Custom options
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
@@ -62,7 +64,7 @@ in {
 
     desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    # desktop.niri.enable = true;
+    desktop.niri.enable = true;
 
     ## core
     desktop.clipboard.enable = true;
@@ -79,7 +81,7 @@ in {
     # gaming.celeste.enable = true;
     gaming.gamemode.enable = true;
     gaming.lutris.enable = true;
-    # gaming.osu.enable = true;
+    gaming.osu.enable = true;
     # gaming.mangohud.enable = true;
     # gaming.optimize.enable = true;
     gaming.steam.enable = true;

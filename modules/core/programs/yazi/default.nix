@@ -8,7 +8,7 @@
 in {
   options.programs'.yazi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       home.packages = with pkgs; [
         ffmpeg
         ffmpegthumbnailer
@@ -26,7 +26,13 @@ in {
         enableFishIntegration = true;
         enableNushellIntegration = true;
         shellWrapperName = "y";
-        plugins = with pkgs.yaziPlugins; {inherit git starship full-border;};
+        plugins = with pkgs.yaziPlugins; {
+          inherit
+            full-border
+            git
+            starship
+            ;
+        };
         settings = {
           mgr = {
             layout = [1 4 3];
@@ -66,9 +72,9 @@ in {
             require("full-border"):setup({
               type = ui.Border.PLAIN,
             })
-            require("zoxide"):setup({
-              update_db = false,
-            })
+            -- require("zoxide"):setup({
+            --   update_db = false,
+            -- })
             require("session"):setup({
               sync_yanked = true,
             })

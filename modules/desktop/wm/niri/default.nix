@@ -18,13 +18,15 @@ in {
       comment = "Niri managed by UWSM";
       binPath = "${pkgs.niri}/bin/niri-session";
     };
-    hm'= {
+
+    hm' = {
       imports = [
         inputs.niri.homeModules.niri
         ./dots/binds.nix
         ./dots/general.nix
         ./dots/rules.nix
       ];
+
       programs.niri.enable = true;
       xdg.portal.config.niri.default = ["gnome" "gtk"];
       home.packages = [pkgs.xwayland-satellite];

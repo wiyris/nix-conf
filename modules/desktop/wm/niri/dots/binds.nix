@@ -8,10 +8,10 @@ in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Space".action = spawn "uwsm-app" "--" "${defaultTerminal}";
     "Mod+Return".action = spawn "uwsm-app" "--" "${defaultTerminal}";
-    "Mod+BackSpace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "--class=nvim.ghostty" "-e" "nvim";
+    # "Mod+BackSpace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "--class=nvim.ghostty" "-e" "nvim";
     "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
-    "Mod+T".action = spawn "rofi" "-show" "drun";
-    "Mod+H".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";
+    "Mod+L".action = spawn "rofi" "-show" "drun";
+    # "Mod+H".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";
     "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
     "Mod+M".action = spawn "uwsm-app" "--" "thunar";
     "Print".action = screenshot;
@@ -44,15 +44,15 @@ in {
     # "Mod+Shift+Apostrophe".action = consume-or-expel-window-left;
     # "Mod+Shift+Period".action = consume-or-expel-window-right;
 
-    "Mod+F".action = focus-workspace "browser";
-    "Mod+P".action = focus-workspace "editor";
-    "Mod+D".action = focus-workspace "iroiro";
-    "Mod+L".action = focus-workspace "media";
-    "Mod+X".action = focus-workspace "iroiro2";
-    "Mod+Semicolon".action = focus-workspace "steam";
-    "Mod+U".action = focus-workspace "iroiro3";
-    "Mod+O".action = focus-workspace "obsidian";
-    "Mod+Y".action = focus-workspace "msg";
+    "Mod+N".action = focus-workspace "browser";
+    "Mod+T".action = focus-workspace "editor";
+    "Mod+H".action = focus-workspace "iroiro";
+    "Mod+P".action = focus-workspace "media";
+    "Mod+D".action = focus-workspace "iroiro2";
+    # "Mod+Semicolon".action = focus-workspace "steam";
+    # "Mod+U".action = focus-workspace "iroiro3";
+    # "Mod+O".action = focus-workspace "obsidian";
+    # "Mod+Y".action = focus-workspace "msg";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

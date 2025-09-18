@@ -15,18 +15,18 @@ let
     "5" = {
       name = "iroiro2";
     };
-    "6" = {
-      name = "steam";
-    };
-    "7" = {
-      name = "iroiro3";
-    };
-    "8" = {
-      name = "obsidian";
-    };
-    "9" = {
-      name = "msg";
-    };
+    #   "6" = {
+    #     name = "steam";
+    #   };
+    #   "7" = {
+    #     name = "iroiro3";
+    #   };
+    #   "8" = {
+    #     name = "obsidian";
+    #   };
+    #   "9" = {
+    #     name = "msg";
+    #   };
   };
   windowRules = [
     {

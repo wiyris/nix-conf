@@ -41,7 +41,7 @@ in {
     # programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
-    programs'.cava.enable = true;
+    # programs'.cava.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
@@ -65,7 +65,6 @@ in {
     desktop.hyprland.enable = true;
 
     ## core
-    desktop.clipboard.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
@@ -81,7 +80,6 @@ in {
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
 
     ## general
-    programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;

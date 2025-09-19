@@ -19,7 +19,7 @@
       border_size = lib.mkForce 1;
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
-      "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";
+      # "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";
     };
   };
 }

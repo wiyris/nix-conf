@@ -67,14 +67,13 @@ in {
     desktop.niri.enable = true;
 
     ## core
-    desktop.clipboard.enable = true;
+    # desktop.clipboard.enable = true;
     desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.mime-apps.enable = true;
     desktop.uwsm.enable = true;
     desktop.wayland-session.enable = true;
-    desktop.wayland-utils.enable = true;
     desktop.xdg.enable = true;
 
     ## gaming

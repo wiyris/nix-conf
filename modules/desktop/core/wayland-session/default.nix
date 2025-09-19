@@ -1,7 +1,7 @@
 {
   config,
-  pkgs,
   lib,
+  pkgs,
   ...
 }: let
   cfg = config.desktop.wayland-session;
@@ -20,25 +20,26 @@
   };
 in {
   options.desktop.wayland-session.enable = lib.mkEnableOption {};
+  config = lib.mkIf cfg.enable {
+    # Enable portal
+    environment.sessionVariables.GTK_USE_PORTAL = "1";
+    xdg.portal.extraPortals = with pkgs; [
+      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
+    ];
 
-  config = lib.mkMerge [
-    (lib.mkIf cfg.enable {
-      hm'.home.sessionVariables = sessionVariables;
-    })
-
-    (lib.mkIf (cfg.enable && config.extraPackages.enable) {
-      # globals.displayServer = "wayland";
-      environment.systemPackages = with pkgs; [vulkan-validation-layers];
-
-      # Enable portal
-      environment.sessionVariables.GTK_USE_PORTAL = "1";
-      xdg.portal.extraPortals = with pkgs; [
-        xdg-desktop-portal-wlr
-        xdg-desktop-portal-gtk
-      ];
+    hm' = {
+      home = {
+        inherit sessionVariables;
+        packages = with pkgs; [
+          wl-clipboard-rs
+          hyprshot
+          wev
+          xwayland-satellite
+        ];
+      };
 
       # programs.xwayland.enable = false;
-      # programs.gpu-screen-recorder.enable = true;
-    })
-  ];
+    };
+  };
 }

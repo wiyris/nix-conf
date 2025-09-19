@@ -1,7 +1,7 @@
 {
   programs.tmux = {
     keyMode = "vi";
-    # prefix = "C-a";
+    prefix = "M-Space";
     extraConfig = ''
       # Vim mode
       setw -g mode-keys vi
@@ -22,9 +22,11 @@
       bind -n M-q kill-pane
       bind -n M-Q kill-window
 
+      bind-key Z select-pane -l \; resize-pane -Z
+
       # bind -n M-Space split-window -h
-      bind -n M-Space split-window -h -p 35
-      bind -n M-C-Space split-window -v
+      bind -n M-Enter split-window -h -p 35
+      bind -n M-C-Enter split-window -v
 
       bind -n M-n if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
       bind -n M-t if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'

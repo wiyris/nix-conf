@@ -2,9 +2,10 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       # Apps
-      "$mainMod, Space, exec, uwsm-app -- $terminal"
+      "$mainMod, Return, exec, uwsm-app -- $terminal"
+      # "$mainMod, Space, exec, uwsm-app -- $terminal"
       "$mainMod, J, exec, uwsm app -- $browser"
-      # "$mainMod, M, exec, uwsm-app -- $explorer"
+      "$mainMod, M, exec, uwsm-app -- $explorer"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
@@ -20,7 +21,7 @@
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
       # "$mainMod SHIFT, H, fullscreen"
-      # "$mainMod, S, togglefloating"
+      "$mainMod, V, togglefloating"
       # "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, PERIOD, cyclenext"
       # "$mainMod, U, togglesplit"

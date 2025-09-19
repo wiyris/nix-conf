@@ -9,6 +9,7 @@ in {
   options.programs'.yazi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
+      imports = [./plugins/mediainfo.nix];
       home.packages = with pkgs; [
         fd
         ffmpeg
@@ -16,7 +17,6 @@ in {
         fzf
         imagemagick
         jq
-        mediainfo
         p7zip
         resvg
         ripgrep
@@ -32,7 +32,6 @@ in {
             full-border
             git
             jump-to-char
-            mediainfo
             starship
             ;
         };
@@ -63,35 +62,6 @@ in {
                 id = "git";
                 name = "*/";
                 run = "git";
-              }
-              {
-                id = "mediainfo";
-                mime = "{audio,video,image}/*";
-                run = "mediainfo";
-              }
-              {
-                id = "mediainfo";
-                mime = "application/subrip";
-                run = "mediainfo";
-              }
-              {
-                id = "mediainfo";
-                mime = "application/postscript";
-                run = "mediainfo";
-              }
-            ];
-            prepend_previewers = [
-              {
-                mime = "{audio,video,image}/*";
-                run = "mediainfo";
-              }
-              {
-                mime = "application/subrip";
-                run = "mediainfo";
-              }
-              {
-                mime = "application/postscript";
-                run = "mediainfo";
               }
             ];
           };

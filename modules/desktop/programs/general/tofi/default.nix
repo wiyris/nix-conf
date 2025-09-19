@@ -19,7 +19,7 @@ in {
       programs.tofi = {
         enable = true;
         settings = {
-          width = "25%";
+          width = "20%";
           height = "40%";
           border-width = 2;
           outline-width = 0;

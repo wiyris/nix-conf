@@ -13,7 +13,7 @@
 
       # Rofi
       "$mainMod, S, exec, $launcher"
-      # "$mainMod, X, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
+      # "$mainMod, C, exec, stash list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy"
       "$mainMod, C, exec, stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy"
       # ", Print, exec, pkill rofi || uwsm-app -- screenshot"
 

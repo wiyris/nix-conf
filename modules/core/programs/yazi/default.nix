@@ -9,7 +9,9 @@ in {
   options.programs'.yazi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
-      imports = [./plugins/mediainfo.nix];
+      imports = [
+        ./plugins/mediainfo.nix
+      ];
       home.packages = with pkgs; [
         fd
         ffmpeg

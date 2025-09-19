@@ -9,11 +9,6 @@
       hiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "hiki"; # homelab
       vm = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "vm"; # virtual machine
     };
-
-    nixOnDroidConfigurations.pix = inputs.nix-on-droid.lib.nixOnDroidConfiguration {
-      pkgs = import inputs.nixpkgs {system = "aarch64-linux";};
-      modules = [./hosts/pix];
-    };
   };
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";

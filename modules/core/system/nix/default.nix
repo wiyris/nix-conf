@@ -9,11 +9,13 @@
 in {
   environment.systemPackages = with pkgs; [
     alejandra
+    deadnix
+    comma
     nil
+    nix-index
     nix-output-monitor
     nix-prefetch-github
     nix-tree
-    nixd
     nvd
   ];
 

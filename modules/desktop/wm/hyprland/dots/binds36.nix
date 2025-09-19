@@ -11,14 +11,15 @@
       "$mainMod CTRL, PERIOD, exec, $bar-toggle"
 
       # Rofi
-      "$mainMod, F, exec, $launcher"
-      "$mainMod, X, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
+      "$mainMod, S, exec, $launcher"
+      # "$mainMod, X, exec, cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
+      "$mainMod, C, exec, stash list | cut -f2- | tofi --width 500 --prompt-text '' | stash decode | wl-copy"
+      # ", Print, exec, pkill rofi || uwsm-app -- screenshot"
 
       # Misc
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
-      "$mainMod SHIFT, H, fullscreen"
+      # "$mainMod SHIFT, H, fullscreen"
       # "$mainMod, S, togglefloating"
       # "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, PERIOD, cyclenext"

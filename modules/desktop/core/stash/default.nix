@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  stashPkg = inputs.stash.packages.${pkgs.stdenv.hostPlatform}.stash;
+  stashPkg = inputs.stash.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in {
   environment.systemPackages = [stashPkg];
 

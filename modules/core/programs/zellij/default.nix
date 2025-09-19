@@ -14,8 +14,9 @@ in {
         # enableFishIntegration = lib.mkIf config.programs.fish.enable true;
         themes.stylix.themes.default.frame_selected.base = lib.mkForce "#f5c2e7";
       };
-      home.shellAliases = {
-        el = "zellij";
+      programs.fish.shellAbbrs = {
+        j = "zellij";
+        ja = "zellij attach";
       };
     };
   };

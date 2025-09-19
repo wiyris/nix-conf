@@ -8,7 +8,7 @@
     # dim_strength = 0.2;
 
     blur = {
-      enabled = true;
+      enabled = false;
       size = 5;
       passes = 4;
       ignore_opacity = true;

@@ -2,20 +2,20 @@
   home.packages = with pkgs; [mediainfo];
   programs.yazi = {
     plugins = with pkgs.yaziPlugins; {inherit mediainfo;};
-    settings.plugins = {
-      prepend_fetchers = [
+    settings.plugin = {
+      prepend_preloaders = [
         {
-          id = "mediainfo";
+          # id = "mediainfo";
           mime = "{audio,video,image}/*";
           run = "mediainfo";
         }
         {
-          id = "mediainfo";
+          # id = "mediainfo";
           mime = "application/subrip";
           run = "mediainfo";
         }
         {
-          id = "mediainfo";
+          # id = "mediainfo";
           mime = "application/postscript";
           run = "mediainfo";
         }

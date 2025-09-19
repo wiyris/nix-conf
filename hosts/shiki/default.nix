@@ -139,6 +139,7 @@ in {
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
+    services'.stash.enable = true;
     services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;

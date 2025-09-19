@@ -3,7 +3,7 @@
     bind = [
       # Apps
       "$mainMod, Return, exec, uwsm-app -- $terminal"
-      # "$mainMod, Space, exec, uwsm-app -- $terminal"
+      "$mainMod, Space, exec, uwsm-app -- $terminal"
       "$mainMod, J, exec, uwsm app -- $browser"
       "$mainMod, M, exec, uwsm-app -- $explorer"
 

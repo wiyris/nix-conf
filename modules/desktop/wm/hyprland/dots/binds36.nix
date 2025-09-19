@@ -14,14 +14,14 @@
       # Rofi
       "$mainMod, S, exec, $launcher"
       # "$mainMod, C, exec, stash list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy"
-      "$mainMod, C, exec, stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy"
+      "$mainMod, V, exec, pkill tofi || stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy"
       # ", Print, exec, pkill rofi || uwsm-app -- screenshot"
 
       # Misc
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
       # "$mainMod SHIFT, H, fullscreen"
-      "$mainMod, V, togglefloating"
+      "$mainMod, C, togglefloating"
       # "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, PERIOD, cyclenext"
       # "$mainMod, U, togglesplit"

@@ -18,7 +18,7 @@
       "workspace 7 silent, class:^(spotify)$"
       "workspace 8 silent, class:^(obsidian)$"
       "workspace 9 silent, class:^(thunderbird)$"
-      "workspace 9 silent, class:^(vesktop)$"
+      "workspace 9 silent, class:^(vesktop)$|^(legcord)$"
 
       # Prevent suspend when a fullscreen app is open
       "idleinhibit fullscreen, class:^(*)$"

@@ -10,16 +10,17 @@ in {
   config = lib.mkIf cfg.enable {
     hm' = {
       home.packages = with pkgs; [
+        fd
         ffmpeg
         ffmpegthumbnailer
-        p7zip
-        jq
-        fd
-        ripgrep
         fzf
-        zoxide
-        resvg
         imagemagick
+        jq
+        mediainfo
+        p7zip
+        resvg
+        ripgrep
+        zoxide
       ];
       programs.yazi = {
         enable = true;
@@ -30,6 +31,8 @@ in {
           inherit
             full-border
             git
+            jump-to-char
+            mediainfo
             starship
             ;
         };
@@ -49,20 +52,58 @@ in {
             max_width = 600;
             max_height = 900;
           };
-          plugin.prepend_fetchers = [
-            {
-              id = "git";
-              name = "*";
-              run = "git";
-            }
-            {
-              id = "git";
-              name = "*/";
-              run = "git";
-            }
-          ];
+          plugin = {
+            prepend_fetchers = [
+              {
+                id = "git";
+                name = "*";
+                run = "git";
+              }
+              {
+                id = "git";
+                name = "*/";
+                run = "git";
+              }
+              {
+                id = "mediainfo";
+                mime = "{audio,video,image}/*";
+                run = "mediainfo";
+              }
+              {
+                id = "mediainfo";
+                mime = "application/subrip";
+                run = "mediainfo";
+              }
+              {
+                id = "mediainfo";
+                mime = "application/postscript";
+                run = "mediainfo";
+              }
+            ];
+            prepend_previewers = [
+              {
+                mime = "{audio,video,image}/*";
+                run = "mediainfo";
+              }
+              {
+                mime = "application/subrip";
+                run = "mediainfo";
+              }
+              {
+                mime = "application/postscript";
+                run = "mediainfo";
+              }
+            ];
+          };
         };
         keymap = {
+          mgr.prepend_keymap = [
+            {
+              run = "plugin jump-to-char";
+              on = ["f"];
+              desc = "Jump to char";
+            }
+          ];
         };
         initLua =
           # lua

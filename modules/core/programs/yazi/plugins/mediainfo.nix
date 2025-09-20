@@ -4,35 +4,14 @@
     plugins = with pkgs.yaziPlugins; {inherit mediainfo;};
     settings.plugin = {
       prepend_preloaders = [
-        {
-          # id = "mediainfo";
-          mime = "{audio,video,image}/*";
-          run = "mediainfo";
-        }
-        {
-          # id = "mediainfo";
-          mime = "application/subrip";
-          run = "mediainfo";
-        }
-        {
-          # id = "mediainfo";
-          mime = "application/postscript";
-          run = "mediainfo";
-        }
+        { mime = "{audio,video,image}/*";  run = "mediainfo"; }
+        { mime = "application/subrip";     run = "mediainfo"; }
+        { mime = "application/postscript"; run = "mediainfo"; }
       ];
       prepend_previewers = [
-        {
-          mime = "{audio,video,image}/*";
-          run = "mediainfo";
-        }
-        {
-          mime = "application/subrip";
-          run = "mediainfo";
-        }
-        {
-          mime = "application/postscript";
-          run = "mediainfo";
-        }
+        { mime = "{audio,video,image}/*";  run = "mediainfo"; }
+        { mime = "application/subrip";     run = "mediainfo"; }
+        { mime = "application/postscript"; run = "mediainfo"; }
       ];
     };
   };

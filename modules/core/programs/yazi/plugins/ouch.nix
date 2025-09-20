@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [ouch];
   programs.yazi = {
-    plugins = with pkgs.yaziPlugins; {inherit mediainfo;};
+    plugins = with pkgs.yaziPlugins; {inherit ouch;};
     settings.plugin = {
       prepend_previewers = [
         { mime = "application/*zip";            run = "ouch"; }

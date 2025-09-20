@@ -11,6 +11,7 @@ in {
     hm' = {
       imports = [
         ./plugins/mediainfo.nix
+        ./plugins/ouch.nix
       ];
       home.packages = with pkgs; [
         fd

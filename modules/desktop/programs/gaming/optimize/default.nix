@@ -9,7 +9,6 @@
 in {
   imports = [
     inputs.nix-gaming.nixosModules.platformOptimizations
-    inputs.nix-gaming.nixosModules.pipewireLowLatency
     inputs.chaotic.nixosModules.default
   ];
   options.gaming.optimize.enable = lib.mkEnableOption {};
@@ -17,7 +16,7 @@ in {
     chaotic.nyx.overlay.enable = lib.mkDefault true;
     # boot.kernelPackages = lib.mkForce pkgs.linuxPackages_cachyos;
     boot.kernelPackages = lib.mkForce pkgs.linuxPackages_xanmod;
-    chaotic.mesa-git.enable = true; # for anti lag 2
+    chaotic.mesa-git.enable = true; # anti lag 2
     programs = {
       gamescope = {
         enable = true;

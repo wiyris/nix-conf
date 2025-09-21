@@ -76,6 +76,11 @@
       inputs.home-manager.follows = "home-manager";
     };
 
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     stash = {
       url = "github:notashelf/stash";
       inputs.nixpkgs.follows = "nixpkgs";

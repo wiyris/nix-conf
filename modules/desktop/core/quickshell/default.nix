@@ -1,7 +1,7 @@
 {
-  input,
+  inputs,
   pkgs,
   ...
 }: {
-  hm'home.packages = [input.quickshell.packages.${pkgs.system}.default];
+  hm'.home.packages = [inputs.quickshell.packages.${pkgs.system}.default];
 }

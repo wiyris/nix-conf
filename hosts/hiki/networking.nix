@@ -25,6 +25,10 @@
       # AllowUsers = [];
     };
   };
+  services.tailscale = {
+    enable = true;
+    # openFirewall = true;
+  };
   # boot.initrd.network = {
   #   enable = true;
   #   ssh = {

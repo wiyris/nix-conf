@@ -36,6 +36,7 @@ in {
           tab_bar_margin_width = 5;
 
           scrollback_pager = "less --chop-long-lines --raw-control-chars +INPUT_LINE_NUMBER";
+          clipboard_control = "write-clipboard read-clipboard";
         };
       };
     })

@@ -23,8 +23,6 @@
     enable = true;
     # ports = [];
     settings = {
-      PasswordAuthentication = lib.mkForce true;
-      KbdInteractiveAuthentication = lib.mkForce true;
       PermitRootLogin = lib.mkForce "yes";
       # AllowUsers = [];
     };

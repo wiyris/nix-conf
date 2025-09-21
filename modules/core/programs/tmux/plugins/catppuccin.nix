@@ -42,7 +42,8 @@
       set -g automatic-rename-format "Window"
 
       set -g window-status-format " #I#{?#{!=:#{window_name},Window},: #W,} "
-      set -g window-status-style "bg=#{@thm_bg},fg=#{@thm_fg}"
+      # set -g window-status-style "bg=#{@thm_bg},fg=#{@thm_fg}"
+      set -g window-status-style "bg=#{@thm_bg},fg=#{@thm_surface_0}"
       # set -g window-status-last-style "bg=#{@thm_bg},fg=#{@thm_peach}"
       set -g window-status-activity-style "bg=#{@thm_red},fg=#{@thm_bg}"
       set -g window-status-bell-style "bg=#{@thm_red},fg=#{@thm_bg},bold"

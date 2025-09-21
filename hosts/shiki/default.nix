@@ -76,15 +76,15 @@ in {
     desktop.xdg.enable = true;
 
     ## gaming
-    gaming'.celeste.enable = true;
-    gaming'.cs2.enable = true;
-    gaming'.csgo.enable = true;
+    # gaming'.celeste.enable = true;
+    # gaming'.cs2.enable = true;
+    # gaming'.csgo.enable = true;
     gaming'.gamemode.enable = true;
     gaming'.lutris.enable = true;
     gaming'.mangohud.enable = true;
-    gaming'.optimize.enable = true;
-    gaming'.osu.enable = false;
-    gaming'.pipewireLowLatency.enable = true;
+    # gaming'.optimize.enable = true;
+    # gaming'.osu.enable = false;
+    # gaming'.pipewireLowLatency.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
@@ -130,16 +130,16 @@ in {
     # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
     programs'.pqiv.enable = true;
-    programs'.rmpc.enable = true;
+    # programs'.rmpc.enable = true;
     programs'.spotify.enable = true;
     programs'.zathura.enable = true;
 
     ## services
-    services'.dunst.enable = true;
+    # services'.dunst.enable = true;
     services'.dwlb.enable = true;
     services'.hypridle.enable = true;
-    services'.mpd.enable = true;
-    # services'.mako.enable = true;
+    # services'.mpd.enable = true;
+    services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
     services'.swayosd.enable = true;

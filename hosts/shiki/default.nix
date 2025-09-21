@@ -38,7 +38,6 @@ in {
     programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
-    programs'.cava.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
@@ -126,11 +125,12 @@ in {
     programs'.thunar.enable = true;
 
     ## media
+    programs'.cava.enable = true;
     programs'.freetube.enable = true;
     # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
     programs'.pqiv.enable = true;
-    # programs'.rmpc.enable = true;
+    programs'.rmpc.enable = true;
     programs'.spotify.enable = true;
     programs'.zathura.enable = true;
 
@@ -138,7 +138,7 @@ in {
     services'.dunst.enable = true;
     services'.dwlb.enable = true;
     services'.hypridle.enable = true;
-    # services'.mpd.enable = true;
+    services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;

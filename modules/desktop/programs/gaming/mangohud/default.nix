@@ -3,11 +3,11 @@
   config,
   ...
 }: let
-  cfg = config.gaming.mangohud;
+  cfg = config.gaming'.mangohud;
 in {
-  options.gaming.mangohud.enable = lib.mkEnableOption {};
+  options.gaming'.mangohud.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       stylix.targets.mangohud.enable = true;
       programs.mangohud = {
         enable = true;

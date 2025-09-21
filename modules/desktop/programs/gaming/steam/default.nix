@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.gaming.steam;
+  cfg = config.gaming'.steam;
 in {
-  options.gaming.steam.enable = lib.mkEnableOption {};
+  options.gaming'.steam.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     programs.steam = {
       enable = true;

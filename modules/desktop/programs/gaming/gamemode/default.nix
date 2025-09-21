@@ -4,9 +4,9 @@
   config,
   ...
 }: let
-  cfg = config.gaming.gamemode;
+  cfg = config.gaming'.gamemode;
 in {
-  options.gaming.gamemode.enable = lib.mkEnableOption {};
+  options.gaming'.gamemode.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     user'.extraGroups = ["gamemode"];
     programs.gamemode = {

@@ -5,13 +5,13 @@
   inputs,
   ...
 }: let
-  cfg = config.gaming.optimize;
+  cfg = config.gaming'.optimize;
 in {
   imports = [
     inputs.nix-gaming.nixosModules.platformOptimizations
     inputs.chaotic.nixosModules.default
   ];
-  options.gaming.optimize.enable = lib.mkEnableOption {};
+  options.gaming'.optimize.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     chaotic.nyx.overlay.enable = lib.mkDefault true;
     # boot.kernelPackages = lib.mkForce pkgs.linuxPackages_cachyos;

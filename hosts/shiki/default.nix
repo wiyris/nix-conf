@@ -77,13 +77,16 @@ in {
     desktop.xdg.enable = true;
 
     ## gaming
-    # gaming.celeste.enable = true;
-    gaming.gamemode.enable = true;
-    gaming.lutris.enable = true;
-    # gaming.osu.enable = false;
-    # gaming.mangohud.enable = true;
-    # gaming.optimize.enable = true;
-    gaming.steam.enable = true;
+    gaming'.celeste.enable = true;
+    gaming'.cs2.enable = true;
+    gaming'.csgo.enable = true;
+    gaming'.gamemode.enable = true;
+    gaming'.lutris.enable = true;
+    gaming'.mangohud.enable = true;
+    gaming'.optimize.enable = true;
+    gaming'.osu.enable = false;
+    gaming'.pipewireLowLatency.enable = true;
+    gaming'.steam.enable = true;
 
     ## programs
     ### default programs

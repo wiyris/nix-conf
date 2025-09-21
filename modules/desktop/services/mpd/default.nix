@@ -4,11 +4,12 @@
   ...
 }: let
   cfg = config.services'.mpd;
-  inherit (config.globals) musicDirectory;
+  inherit (config.globals) homeDirectory;
+  musicDirectory = "${homeDirectory}/Music";
 in {
   options.services'.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       services.mpd-mpris.enable = true;
       services.mpd = {
         enable = true;

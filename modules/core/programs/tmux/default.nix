@@ -34,6 +34,7 @@ in {
         '';
         plugins = with pkgs.tmuxPlugins; [
           tmux-fzf
+          sensible
         ];
       };
 

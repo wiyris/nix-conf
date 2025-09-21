@@ -7,9 +7,8 @@ in {
     ./disko.nix
     ./hardware-configuration.nix
     ./hardware.nix
+    ./initrd.nix
     ./networking.nix
-    # ./ssh.nix
-    # ./wireguard.nix
   ];
 
   config = {

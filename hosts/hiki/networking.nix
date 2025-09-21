@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  lib,
+  ...
+}: {
   networking = {
     enableIPv6 = false;
     interfaces.enp2s0.ipv4.addresses = [
@@ -19,22 +23,10 @@
     enable = true;
     # ports = [];
     settings = {
-      PasswordAuthentication = false;
-      KbdInteractiveAuthentication = false;
-      PermitRootLogin = "no";
+      PasswordAuthentication = lib.mkForce true;
+      KbdInteractiveAuthentication = lib.mkForce true;
+      PermitRootLogin = lib.mkForce "yes";
       # AllowUsers = [];
     };
   };
-  # boot.initrd.network = {
-  #   enable = true;
-  #   ssh = {
-  #     enable = true;
-  #     hostKeys = ["/etc/ssh/initrd_ssh_host_ed25519_key"];
-  #     # authorizedKeys = config.users.users.root.openssh.authorizedKeys.keys;
-  #     authorizedKeyFiles = [
-  #       /root/.ssh/id_ed25519.pub
-  #     ];
-  #   };
-  # };
-  # boot.initrd.luks.forceLuksSupportInInitrd = true;
 }

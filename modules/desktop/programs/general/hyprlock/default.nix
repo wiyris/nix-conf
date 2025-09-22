@@ -8,7 +8,7 @@
 in {
   options.programs'.hyprlock.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       stylix.targets.hyprlock.enable = false;
       programs.hyprlock = {
         enable = true;
@@ -22,7 +22,7 @@ in {
 
           background = [
             {
-              path = "${configDirectory}/modules/core/stylix/img.png";
+              path = "${configDirectory}/modules/core/system/stylix/img.png";
               blur_passes = 2;
               blur_size = 3;
               noise = "0.05";

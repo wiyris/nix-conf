@@ -15,7 +15,7 @@ in {
         ./dots/binds.nix
         ./plugins/catppuccin.nix
         ./plugins/fingers.nix
-        ./plugins/toggle-popup.nix
+        # ./plugins/toggle-popup.nix
       ];
       programs.tmux = {
         enable = true;

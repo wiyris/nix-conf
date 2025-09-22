@@ -3,11 +3,8 @@
     keyMode = "vi";
     prefix = "M-Space";
     extraConfig = ''
-      # Vim mode
-      setw -g mode-keys vi
-      set -g status-keys vi
       bind 'v' copy-mode
-      bind -n M-v copy-mode
+      # bind -n M-v copy-mode
       bind -T copy-mode-vi v send -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
       bind -T copy-mode-vi Escape send-keys -X copy-pipe-and-cancel "wl-copy"
@@ -18,15 +15,19 @@
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
       # General configs
-      bind -n M-C-q detach
+      # bind -n M-C-q detach
       bind -n M-q kill-pane
       bind -n M-Q kill-window
 
-      bind-key Z select-pane -l \; resize-pane -Z
-
+      # Split windows
       # bind -n M-Space split-window -h
-      bind -n M-Enter split-window -h -p 35
-      bind -n M-C-Enter split-window -v
+      # bind -n M-Enter split-window -h -p 35
+      # bind -n M-C-Enter split-window -v
+      bind | split-window -hc "#{pane_current_path}"
+      bind-key "\\" split-window -fh -c "#{pane_current_path}"
+      bind - split-window -vc "#{pane_current_path}"
+
+      bind-key Z select-pane -l \; resize-pane -Z
 
       bind -n M-n if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
       bind -n M-t if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'

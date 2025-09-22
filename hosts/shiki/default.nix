@@ -135,11 +135,11 @@ in {
     programs'.zathura.enable = true;
 
     ## services
-    # services'.dunst.enable = true;
+    services'.dunst.enable = true;
     services'.dwlb.enable = true;
     services'.hypridle.enable = true;
     # services'.mpd.enable = true;
-    services'.mako.enable = true;
+    # services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
     services'.swayosd.enable = true;

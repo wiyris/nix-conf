@@ -17,7 +17,7 @@ in {
         # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
         # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default 'chromium --app=https://kagi.com/assistant'"
         # "$mainMod SHIFT, K, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default 'chromium --app=https://translate.kagi.com/'"
-        "$mainMod, K, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
+        "$mainMod, V, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.programs'.foot.isDefault [
         # "$mainMod, N, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'foot --app-id foot-scratch'"

@@ -107,8 +107,9 @@ in {
 
     ## terminal emulator
     programs'.foot.enable = true;
-    programs'.ghostty.enable = true;
+    # programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
+    # programs'.wezterm.enable = true;
 
     ## browser
     programs'.chromium.enable = true;
@@ -130,7 +131,7 @@ in {
     # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
     programs'.pqiv.enable = true;
-    # programs'.rmpc.enable = true;
+    programs'.rmpc.enable = true;
     programs'.spotify.enable = true;
     programs'.zathura.enable = true;
 

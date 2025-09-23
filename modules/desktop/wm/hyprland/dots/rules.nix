@@ -60,6 +60,6 @@
     ];
 
     #Gaming Workspace
-    workspace = "5, rounding:false, decorate:false, gapsin:0, gapsout:0, border:false, decorate:false";
+    # workspace = "5, rounding:false, decorate:false, gapsin:0, gapsout:0, border:false, decorate:false";
   };
 }

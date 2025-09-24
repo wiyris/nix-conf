@@ -35,6 +35,7 @@ in {
       nixd
       rust-analyzer
       rustc
+      rustfmt
       shfmt
       statix
       stylua

@@ -16,6 +16,7 @@ in {
     nix-output-monitor
     nix-prefetch-github
     nix-tree
+    nixpkgs-review
     nvd
   ];
 
@@ -37,7 +38,7 @@ in {
     };
   };
 
-  programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
+  hm'.programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
     nf = "nix flake";
     nfc = "nix flake check";
     nfu = "nix flake update";

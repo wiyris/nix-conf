@@ -2,6 +2,7 @@
   config.hm'.programs.kitty = {
     settings = {kitty_mod = "alt+ctrl";};
     keybindings = {
+      "ctrl+c" = "copy_and_clear_or_interrupt";
       "kitty_mod+=" = "increase_font_size";
       "kitty_mod+-" = "decrease_font_size";
       "kitty_mod+0" = "restore_font_size";

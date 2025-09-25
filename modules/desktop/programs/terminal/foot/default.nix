@@ -19,6 +19,9 @@ in {
           main = {
             pad = "8x8";
           };
+          mouse = {
+            hide-when-typing = true;
+          };
         };
       };
     })

@@ -58,10 +58,10 @@ in {
           # package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
           # portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
           extraConfig = ''
-            env = XCURSOR_THEME,Catppuccin Mocha Lavender
-            env = XCURSOR_SIZE, 32
-            env = HYPRCURSOR_THEME,Catppuccin Mocha Lavender
-            env = HYPRCURSOR_SIZE,32
+            env = XCURSOR_THEME,rose-pine-hyprcursor
+            env = XCURSOR_SIZE,24
+            env = HYPRCURSOR_THEME,rose-pine-hyprcursor
+            env = HYPRCURSOR_SIZE,24
           '';
         };
 

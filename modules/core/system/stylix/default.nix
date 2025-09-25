@@ -26,9 +26,9 @@ in {
       };
 
       cursor = {
-        package = pkgs.catppuccin-cursors.mochaLavender;
-        name = "Catppuccin Mocha Lavender";
-        size = 32;
+        package = pkgs.rose-pine-hyprcursor;
+        name = "rose-pine-hyprcursor";
+        size = 24;
       };
 
       # iconTheme = {

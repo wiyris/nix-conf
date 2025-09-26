@@ -11,11 +11,12 @@
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
       "$mainMod CTRL, PERIOD, exec, $bar-toggle"
 
-      # Rofi
+      # Tofi
       "$mainMod, S, exec, $launcher"
       # "$mainMod, C, exec, stash list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy"
       "$mainMod, K, exec, pkill tofi || stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy"
-      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
+      # ", Print, exec, pkill rofi || uwsm-app -- screenshot"
+      ", Print, exec, pkill tofi || uwsm-app -- tofi-screenshot"
 
       # Misc
       "$mainMod, Q, killactive"

@@ -28,42 +28,42 @@ in {
     stylix'.enable = true;
 
     # Services
-    services'.hiki-mounts.enable = true;
+    # services'.hiki-mounts.enable = true;
 
     # cli
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 
     programs'.aliases.enable = true;
-    programs'.aria2.enable = true;
+    # programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
-    programs'.fastfetch.enable = true;
+    # programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    programs'.helix.enable = true;
+    # programs'.helix.enable = true;
     programs'.htop.enable = true;
     programs'.lazygit.enable = true;
-    programs'.nushell.enable = true;
+    # programs'.nushell.enable = true;
     # programs'.nixvim.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;
     programs'.tmux.enable = true;
     programs'.yazi.enable = true;
-    programs'.zellij.enable = true;
+    # programs'.zellij.enable = true;
     programs'.zoxide.enable = true;
 
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
 
-    desktop.dwl.enable = true;
+    # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    desktop.niri.enable = true;
+    # desktop.niri.enable = true;
 
     ## core
     # desktop.clipboard.enable = true;
@@ -80,7 +80,7 @@ in {
     # gaming'.cs2.enable = true;
     # gaming'.csgo.enable = true;
     gaming'.gamemode.enable = true;
-    gaming'.lutris.enable = true;
+    # gaming'.lutris.enable = true;
     gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
@@ -94,19 +94,19 @@ in {
     programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    programs.kdeconnect.enable = true;
+    # programs.kdeconnect.enable = true;
     # programs'.aerc.enable = true;
-    programs'.anki.enable = true;
+    # programs'.anki.enable = true;
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
-    programs'.rofi.enable = true;
+    # programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     programs'.taskwarrior.enable = true;
     programs'.tray-tui.enable = true;
 
     ## terminal emulator
-    programs'.foot.enable = true;
+    # programs'.foot.enable = true;
     # programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
@@ -126,24 +126,24 @@ in {
     programs'.thunar.enable = true;
 
     ## media
-    programs'.cava.enable = true;
-    programs'.freetube.enable = true;
+    # programs'.cava.enable = true;
+    # programs'.freetube.enable = true;
     # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
-    programs'.pqiv.enable = true;
-    programs'.rmpc.enable = true;
-    programs'.spotify.enable = true;
-    programs'.zathura.enable = true;
+    # programs'.pqiv.enable = true;
+    # programs'.rmpc.enable = true;
+    # programs'.spotify.enable = true;
+    # programs'.zathura.enable = true;
 
     ## services
-    services'.dunst.enable = true;
-    services'.dwlb.enable = true;
-    services'.hypridle.enable = true;
+    # services'.dunst.enable = true;
+    # services'.dwlb.enable = true;
+    # services'.hypridle.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
-    services'.swayosd.enable = true;
+    # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
 

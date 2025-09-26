@@ -9,12 +9,16 @@
   tofi-launcher =
     pkgs.writeScriptBin "tofi-launcher"
     (builtins.readFile ./scripts/tofi-launcher.sh);
+  tofi-screenshot =
+    pkgs.writeScriptBin "tofi-screenshot"
+    (builtins.readFile ./scripts/tofi-screenshot.sh);
 in {
   options.programs'.tofi.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
       home.packages = [
         tofi-launcher
+        tofi-screenshot
       ];
       programs.tofi = {
         enable = true;

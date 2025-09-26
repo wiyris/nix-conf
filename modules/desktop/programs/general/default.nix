@@ -23,24 +23,24 @@ in {
         obsidian
       ]
       ++ lib.optionals config.extraPackages.enable [
-        fortune
-        lolcat
-        cowsay
-        calibre
+        # fortune
+        # lolcat
+        # cowsay
+        # calibre
         # aseprite
         # blender
 
         # gtk
-        gimp3
-        grayjay
-        gpu-screen-recorder-gtk
+        # gimp3
+        # grayjay
+        # gpu-screen-recorder-gtk
         # dissent
         # blanket # play rain, waves, etc sounds
         # d-spy # dbus gui
         # pwvucontrol # pipewire gui
         # remmina # vnc client
-        easytag
-        easyeffects
+        # easytag
+        # easyeffects
 
         # qt
         # kdePackages.filelight
@@ -49,12 +49,12 @@ in {
         qbittorrent
         # openshot-qt
         # krita
-        puddletag
+        # puddletag
 
         # electron
-        freetube
+        # freetube
         legcord
-        vesktop
+        # vesktop
       ];
     # programs.kdeconnect.enable = true;
   };

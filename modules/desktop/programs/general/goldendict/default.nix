@@ -8,9 +8,9 @@
 in {
   options.programs'.goldendict.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs; [goldendict-ng];
-    hm'.home.sessionVariables = {
-      GOLDENDICT_FORCE_WAYLAND = 1;
+    hm'.home = {
+      packages = with pkgs; [goldendict-ng];
+      sessionVariables.GOLDENDICT_FORCE_WAYLAND = 1;
     };
   };
 }

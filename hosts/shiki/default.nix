@@ -22,7 +22,8 @@ in {
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
-    networking'.mullvad.enable = true;
+    # networking'.mullvad.enable = true;
+    networking'.tailscale.enable = true;
     security'.doas.enable = true;
     services'.keyd.enable = true;
     stylix'.enable = true;

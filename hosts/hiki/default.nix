@@ -17,7 +17,8 @@ in {
     globals.configDirectory = configDirectory;
 
     networking.hostName = "hiki";
-    networking'.mullvad.enable = true;
+    # networking'.mullvad.enable = true;
+    networking'.tailscale.enable = true;
 
     # cli
     programs.fish.enable = true;

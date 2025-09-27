@@ -48,6 +48,7 @@ in {
 
     # services
     services'.arr.enable = true;
+    services'.homepage-dashboard.enable = true;
     services'.jellyfin.enable = true;
     services'.kavita.enable = true;
     services'.lms.enable = true;

@@ -11,28 +11,25 @@ in {
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       age
-      git
-      gnupg
-      pinentry
-      vim
       curl
-      wget
-      file # print filetype
-      jq # manipulate JSON
-      yq # manipulate YAML
-      killall
-      lsof # print port process
-      nix-prefetch-git # get fetchgit hashes
-      nix-serve # create a local nix cachix like server
-      nurl # get fetchgit hashes
-      unar
-      unzip
-      p7zip
-      wget # download http/ftp
       ffmpeg # record, convert music/video
       ffmpegthumbnailer
-      imagemagick # image editor
+      file # print filetype
+      git
+      gnupg
       gtrash
+      imagemagick # image editor
+      jq # manipulate JSON
+      killall
+      lsof # print port process
+      p7zip
+      pinentry
+      unar
+      unzip
+      vim
+      wget
+      wget # download http/ftp
+      yq # manipulate YAML
     ];
   };
 }

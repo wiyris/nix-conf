@@ -9,14 +9,17 @@
 in {
   environment.systemPackages = with pkgs; [
     alejandra
-    deadnix
     comma
+    deadnix
     nil
     nix-index
     nix-output-monitor
+    nix-prefetch-git # get fetchgit hashes
     nix-prefetch-github
+    nix-serve # create a local nix cachix like server
     nix-tree
     nixpkgs-review
+    nurl # get fetchgit hashes
     nvd
   ];
 

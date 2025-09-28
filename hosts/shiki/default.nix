@@ -82,13 +82,16 @@ in {
     # gaming'.csgo.enable = true;
     gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
-    gaming'.mangohud.enable = true;
+    # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
     # gaming'.pipewireLowLatency.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
+
+    programs'.extraPackages.enable = true;
+
     ### default programs
     programs'.kitty.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
@@ -113,7 +116,7 @@ in {
     # programs'.wezterm.enable = true;
 
     ## browser
-    programs'.chromium.enable = true;
+    # programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
@@ -137,7 +140,7 @@ in {
     # programs'.zathura.enable = true;
 
     ## services
-    # services'.dunst.enable = true;
+    services'.dunst.enable = true;
     # services'.dwlb.enable = true;
     # services'.hypridle.enable = true;
     # services'.mpd.enable = true;
@@ -147,8 +150,6 @@ in {
     # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
-
-    extraPackages.enable = true; # add extra packages
 
     console = {
       earlySetup = true;

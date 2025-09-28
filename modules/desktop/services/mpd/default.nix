@@ -1,6 +1,7 @@
 {
-  lib,
   config,
+  lib,
+  pkgs,
   ...
 }: let
   cfg = config.services'.mpd;
@@ -10,6 +11,7 @@ in {
   options.services'.mpd.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
+      home.packages = [pkgs.listenbrainz-mpd];
       services.mpd-mpris.enable = true;
       services.mpd = {
         enable = true;

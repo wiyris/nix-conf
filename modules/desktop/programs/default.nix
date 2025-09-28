@@ -9,10 +9,6 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs; [
       ## cli/tui
-      gowall
-      taskwarrior-tui
-      tldr
-      tray-tui
 
       ## gtk
       thunderbird

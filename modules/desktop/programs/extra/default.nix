@@ -10,12 +10,16 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs; [
       ## cli/tui
-      # cowsay
-      # fortune
-      # lolcat
+      cowsay
+      fortune
+      gowall
+      lolcat
       microfetch
       qemu
       scdl
+      taskwarrior-tui
+      tldr
+      tray-tui
       yt-dlp
 
       ## gtk

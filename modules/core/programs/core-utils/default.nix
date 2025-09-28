@@ -7,7 +7,6 @@
   cfg = config.programs'.core-utils;
 in {
   options.programs'.core-utils.enable = lib.mkEnableOption {};
-
   config = lib.mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       age

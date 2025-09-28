@@ -13,7 +13,7 @@ if [ "$HYPRGAMEMODE" = 1 ]; then
     keyword decoration:fullscreen_opacity 1;\
     keyword general:gaps_in 0;\
     keyword general:gaps_out 0;\
-    keyword general:border_size 1;\
+    keyword general:border_size 2;\
     keyword general:col.active_border rgb(b4befe)"
 
   hyprctl keyword "windowrule opacity 1 override 1 override 1 override, class:^(.*)$"

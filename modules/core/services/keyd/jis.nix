@@ -16,7 +16,7 @@ in {
       # F12 = "toggle(mods)";
     };
     "widemod:layout" = {
-      y = "noop";
+      y = "z";
       h = "noop";
       n = "noop";
 
@@ -115,8 +115,9 @@ in {
 
       "'" = "q";
       "[" = "z";
-      capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
-      leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+      # capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
+      capslock = "q";
+      # leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
       muhenkan = "r";
       henkan = "backspace";
       # katakanahiragana = "toggle(mods)";

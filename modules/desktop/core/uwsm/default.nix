@@ -32,15 +32,6 @@ in {
         uri = "uwsm start niri-uwsm.desktop";
         uws = "uwsm stop";
       };
-      # home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
-      # home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";
-
-      # xdg.configFile."uwsm/env".text = ''
-      #   export XCURSOR_THEME=$XCURSOR_THEME
-      #   export XCURSOR_SIZE=$XCURSOR_SIZE
-      #   export HOME=$HOME
-      #   export QT_QPA_PLATFORMTHEME=$QT_QPA_PLATFORMTHEME
-      # '';
     };
   };
 }

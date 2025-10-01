@@ -21,25 +21,22 @@
 in {
   options.desktop.wayland-session.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    # Enable portal
-    environment.sessionVariables.GTK_USE_PORTAL = "1";
-    xdg.portal.extraPortals = with pkgs; [
-      xdg-desktop-portal-wlr
-      xdg-desktop-portal-gtk
-    ];
-
     hm' = {
+      xdg.portal = {
+        enable = true;
+        config.common.default = "gtk";
+        extraPortals = [pkgs.xdg-desktop-portal-gtk];
+        xdgOpenUsePortal = true;
+      };
       home = {
         inherit sessionVariables;
         packages = with pkgs; [
-          wl-clipboard-rs
           hyprshot
           wev
+          wl-clipboard-rs
           xwayland-satellite
         ];
       };
-
-      # programs.xwayland.enable = false;
     };
   };
 }

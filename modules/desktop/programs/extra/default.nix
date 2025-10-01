@@ -45,8 +45,8 @@ in {
       # qbittorrent
 
       ## electron
-      # legcord
-      # vesktop
+      legcord
+      vesktop
 
       ## other
       # aseprite

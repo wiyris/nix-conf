@@ -16,8 +16,6 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
-    services.printing.enable = true;
-
     # Custom options
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
@@ -74,7 +72,7 @@ in {
     desktop.mime-apps.enable = true;
     desktop.uwsm.enable = true;
     desktop.wayland-session.enable = true;
-    desktop.xdg.enable = true;
+    # desktop.xdg.enable = true;
 
     ## gaming
     # gaming'.celeste.enable = true;

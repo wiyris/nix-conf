@@ -33,8 +33,8 @@
       "nodim, tag:float"
       "nodim, tag:float_pin"
 
-      "float, title:^(Counter-Strike)$"
-      "size 1024 768, title:^(Counter-Strike)$"
+      # "float, title:^(Counter-Strike)$"
+      # "size 1024 768, title:^(Counter-Strike)$"
       # "nofocus, title:^(Application Not Responding)$"
       # "animation slide right, title:^(Application Not Responding)$"
 

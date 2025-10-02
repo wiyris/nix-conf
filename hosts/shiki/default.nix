@@ -18,12 +18,12 @@ in {
 
     # Custom options
     hardware'.amdgpu.enable = true;
-    hardware'.bluetooth.enable = true;
+    # hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
     security'.doas.enable = true;
-    services'.keyd.enable = true;
+    # services'.keyd.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -105,7 +105,7 @@ in {
     # programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     programs'.taskwarrior.enable = true;
-    programs'.tray-tui.enable = true;
+    # programs'.tray-tui.enable = true;
 
     ## terminal emulator
     # programs'.foot.enable = true;
@@ -114,7 +114,7 @@ in {
     # programs'.wezterm.enable = true;
 
     ## browser
-    # programs'.chromium.enable = true;
+    programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;

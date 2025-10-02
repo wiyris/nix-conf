@@ -14,7 +14,8 @@ if [ "$HYPRGAMEMODE" = 1 ]; then
     keyword general:gaps_in 0;\
     keyword general:gaps_out 0;\
     keyword general:border_size 2;\
-    keyword general:col.active_border rgb(b4befe)"
+    keyword general:col.active_border rgb(b4befe);\
+    keyword general:col.inactive_border rgb(1e1e2e)"
 
   hyprctl keyword "windowrule opacity 1 override 1 override 1 override, class:^(.*)$"
   # systemctl stop --user swww.service

@@ -16,7 +16,7 @@
       dim_inactive = lib.mkForce false;
     };
     general = {
-      border_size = lib.mkForce 1;
+      border_size = lib.mkForce 2;
       gaps_in = lib.mkForce 0;
       gaps_out = lib.mkForce 0;
       # "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";

@@ -21,29 +21,12 @@
       "workspace 9 silent, class:^(vesktop)$|^(legcord)$"
 
       # Prevent suspend when a fullscreen app is open
-      "idleinhibit fullscreen, class:^(*)$"
-      "idleinhibit fullscreen, title:^(*)$"
-      "idleinhibit fullscreen, fullscreen:1"
+      # "idleinhibit fullscreen, class:^(*)$"
+      # "idleinhibit fullscreen, title:^(*)$"
+      # "idleinhibit fullscreen, fullscreen:1"
 
       # Tearing
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
-
-      "nodim, class:^([Ss]team)$"
-      "nodim, title:^([Ss]team)$"
-      "nodim, tag:float"
-      "nodim, tag:float_pin"
-
-      # "float, title:^(Counter-Strike)$"
-      # "size 1024 768, title:^(Counter-Strike)$"
-      # "nofocus, title:^(Application Not Responding)$"
-      # "animation slide right, title:^(Application Not Responding)$"
-
-      # thunar
-      # "opacity 0.8, class:(thunar)"
-      # "float, class:thunar"
-      # "size 50% 50%, class:thunar"
-      # "move 948 54, class:thunar"
-      # "animation slide top, class:thunar"
     ];
 
     layerrule = [

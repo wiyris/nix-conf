@@ -17,41 +17,31 @@ in {
     globals.homeDirectory = "/home/${userName}";
     globals.configDirectory = configDirectory;
 
-    stylix.opacity = {
-      terminal = lib.mkForce 1.0;
-      popups = lib.mkForce 1.0;
-    };
-
     # Custom options
-    services'.keyd.enable = true;
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
+    # networking'.mullvad.enable = true;
+    networking'.tailscale.enable = true;
     networking'.iwd.enable = true;
-    networking'.mullvad.enable = true;
     security'.doas.enable = true;
+    services'.keyd.enable = true;
     stylix'.enable = true;
 
     # cli
-    programs.fish.enable = true;
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 
     programs'.aliases.enable = true;
-    # programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
-    # programs'.cava.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    # programs'.htop.enable = true;
     programs'.lazygit.enable = true;
-    # programs'.nushell.enable = true;
-    # programs'.nixvim.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;
@@ -71,41 +61,40 @@ in {
     desktop.mime-apps.enable = true;
     desktop.uwsm.enable = true;
     desktop.wayland-session.enable = true;
-    desktop.wayland-utils.enable = true;
-    desktop.xdg.enable = true;
 
     ## programs
     ### default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
+    programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
+    programs'.goldendict.enable = true;
+    programs'.hyprlock.enable = true;
     programs'.tofi.enable = true;
-    # programs'.taskwarrior.enable = true;
-    # programs'.tray-tui.enable = true;
+    programs'.taskwarrior.enable = true;
 
     ## terminal emulator
     programs'.foot.enable = true;
 
     ## browser
-    # programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
 
     ## exprorer
-    # programs'.thunar.enable = true;
+    programs'.thunar.enable = true;
 
     ## media
-    # programs'.jellyfin-client.enable = true;
-    # programs'.mpv.enable = true;
-    # programs'.pqiv.enable = true;
+    programs'.mpv.enable = true;
 
     ## services
+    # services'.dunst.enable = true;
     services'.hypridle.enable = true;
+    # services'.mpd.enable = true;
     services'.mako.enable = true;
     services'.pipewire.enable = true;
+    services'.stash.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
-
     laptop.enable = true; # enable laptop modules
 
     console = {

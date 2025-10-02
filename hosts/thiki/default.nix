@@ -1,7 +1,7 @@
 {
   config,
-  lib,
   pkgs,
+  inputs,
   ...
 }: let
   userName = "tsubaki";
@@ -9,6 +9,7 @@
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
 in {
   imports = [
+    inputs.lenovo-thinkpad-p14s-amd-gen4
     ./disko.nix
     ./hardware.nix
   ];

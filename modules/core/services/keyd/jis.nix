@@ -117,7 +117,9 @@ in {
       "[" = "z";
       # capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
       capslock = "q";
+      leftmeta = "z";
       # leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+      leftalt = "leftmeta";
       muhenkan = "r";
       henkan = "backspace";
       # katakanahiragana = "toggle(mods)";

@@ -46,7 +46,7 @@ in {
 
       ## electron
       legcord
-      vesktop
+      # vesktop
 
       ## other
       # aseprite

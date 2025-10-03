@@ -18,12 +18,11 @@ in {
 
     # Custom options
     hardware'.amdgpu.enable = true;
-    # hardware'.bluetooth.enable = true;
+    hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
     security'.doas.enable = true;
-    # services'.keyd.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -39,7 +38,7 @@ in {
     programs'.btop.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
-    # programs'.fastfetch.enable = true;
+    programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
@@ -76,8 +75,6 @@ in {
 
     ## gaming
     # gaming'.celeste.enable = true;
-    # gaming'.cs2.enable = true;
-    # gaming'.csgo.enable = true;
     gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.mangohud.enable = true;
@@ -91,7 +88,7 @@ in {
     programs'.extraPackages.enable = true;
 
     ### default programs
-    programs'.kitty.isDefault = true; # foot, ghostty, kitty
+    programs'.ghostty.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
 
@@ -102,15 +99,15 @@ in {
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
-    # programs'.rofi.enable = true;
+    programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 
     ## terminal emulator
     # programs'.foot.enable = true;
-    # programs'.ghostty.enable = true;
-    programs'.kitty.enable = true;
+    programs'.ghostty.enable = true;
+    # programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
 
     ## browser
@@ -134,18 +131,19 @@ in {
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    # programs'.spotify.enable = true;
+    programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
     # services'.hypridle.enable = true;
+    services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
-    # services'.swayosd.enable = true;
+    services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
 

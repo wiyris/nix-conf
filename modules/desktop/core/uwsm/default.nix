@@ -17,6 +17,8 @@ in {
     };
 
     hm' = {
+      home.sessionVariables.UWSM_USE_SESSION_SLICE = "true";
+      home.sessionVariables.UWSM_APP_UNIT_TYPE = "service";
       programs.fish = {
         # loginShellInit =
         #   # fish

@@ -94,6 +94,7 @@ in {
 
     ## general
     # programs.kdeconnect.enable = true;
+    programs'.ollama.enable = true;
     # programs'.aerc.enable = true;
     # programs'.anki.enable = true;
     programs'.goldendict.enable = true;

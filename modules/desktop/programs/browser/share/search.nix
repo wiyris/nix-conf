@@ -1,7 +1,6 @@
 {...}: {
-  default = "xp";
-  privateDefault = "xp";
-  # privateDefault = "leta";
+  default = "leta";
+  privateDefault = "leta";
   force = true;
   order = ["kagi" "leta" "startpage" "NixOS packages" "NixOS options" "Home Manager Options"];
   engines = {
@@ -25,12 +24,12 @@
       definedAliases = ["sp"];
     };
     searxngPriv = {
-      name = "Searxng Priv.au";
+      name = "searxng";
       urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=en&time_range=&safesearch=0&theme=simple";}];
       definedAliases = ["xp"];
     };
     searxngPrivjp = {
-      name = "Searxng Priv.au JP";
+      name = "searxng JP";
       urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";}];
       definedAliases = ["xj"];
     };

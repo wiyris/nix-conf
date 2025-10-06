@@ -30,7 +30,7 @@
     ];
 
     layerrule = [
-      # "animation popin, rofi"
+      "animation popin, rofi"
       "noanim, launcher"
       "blur, rofi"
       "ignorezero, rofi"

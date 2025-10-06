@@ -4,7 +4,7 @@
   osConfig,
   ...
 }: let
-  opacity = "1.0";
+  opacity = "0.2";
   inherit (osConfig.globals) defaultShell;
   hyprland-scratchpad = pkgs.writeScriptBin "hyprland-scratchpad" (
     builtins.readFile ../scripts/hyprland-scratchpad.sh
@@ -35,16 +35,18 @@ in {
       "tag +float_side, class:chrome-localhost__-Default"
       "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
       "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
-      "noanim, class:com/xiaoyifang/goldendict-ng.https://github."
+      "noanim, class:ghostty.scratch"
       "noanim, class:chrome-localhost__-Default"
+      "noanim, class:com/xiaoyifang/goldendict-ng.https://github."
+      "opacity 0.8 override 0.8 override, class:chrome-localhost__-Default"
 
       "float, tag:float_md"
       "size 70% 70%, tag:float_md"
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"
-      "animation slide bottom, tag:float_md"
-      "animation slide right, tag:float_side"
+      # "animation slide bottom, tag:float_md"
+      # "animation slide right, tag:float_side"
     ];
   };
 }

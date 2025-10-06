@@ -16,8 +16,8 @@ in {
       # F12 = "toggle(mods)";
     };
     "widemod:layout" = {
-      y = "z";
-      h = "noop";
+      y = "noop";
+      h = "z";
       n = "noop";
 
       u = ";";

@@ -2,9 +2,8 @@
   title = "huw";
   color = "gray";
   background = {
-    # image = "https://rimgo.vern.cc/KrHfzGH.png";
     image = "https://github.com/wiyris/nix-conf/blob/main/modules/core/system/stylix/img.webp?raw=true";
-    blur = "md";
+    blur = "sm";
   };
 
   # favicon = "";
@@ -15,20 +14,20 @@
   showStats = false;
   statusStyle = "dot";
 
-  # layout = {
-  #   User = {
-  #     style = "row";
-  #     columns = 4;
-  #   };
-  #
-  #   Media = {
-  #     style = "row";
-  #     columns = 4;
-  #   };
-  #
-  #   Services = {
-  #     style = "row";
-  #     columns = 4;
-  #   };
-  # };
+  layout = {
+    User = {
+      style = "row";
+      columns = 3;
+    };
+
+    Media = {
+      style = "row";
+      columns = 3;
+    };
+
+    Services = {
+      style = "row";
+      columns = 3;
+    };
+  };
 }

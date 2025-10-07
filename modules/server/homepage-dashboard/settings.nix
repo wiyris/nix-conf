@@ -3,6 +3,7 @@
   color = "gray";
   background = {
     # image = "https://rimgo.vern.cc/KrHfzGH.png";
+    image = "https://github.com/wiyris/nix-conf/blob/main/modules/core/system/stylix/img.webp?raw=true";
     blur = "md";
   };
 

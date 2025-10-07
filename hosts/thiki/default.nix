@@ -9,7 +9,7 @@
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
 in {
   imports = [
-    inputs.lenovo-thinkpad-p14s-amd-gen4
+    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen4
     ./disko.nix
     ./hardware.nix
   ];

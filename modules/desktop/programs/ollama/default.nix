@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   lib,
   ...
 }: let
@@ -20,5 +21,8 @@ in {
     systemd.services = {
       ollama.wantedBy = [];
     };
+    hm'.home.packages = [
+      pkgs.python312Packages.huggingface-hub
+    ];
   };
 }

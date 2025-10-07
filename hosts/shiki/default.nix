@@ -84,7 +84,7 @@ in {
     gaming'.steam.enable = true;
 
     ## programs
-
+    services'.homepage-dashboard.enable = true;
     programs'.extraPackages.enable = true;
 
     ### default programs

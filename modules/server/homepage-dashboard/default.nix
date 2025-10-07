@@ -10,6 +10,9 @@ in {
     services.homepage-dashboard = {
       enable = true;
       openFirewall = true;
+      settings = import ./settings.nix;
+      bookmarks = import ./bookmarks.nix;
+      customCSS = builtins.readFile ./custom.css;
     };
   };
 }

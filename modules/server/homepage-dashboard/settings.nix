@@ -1,9 +1,33 @@
 {
+  title = "huw";
   color = "gray";
   background = {
-    image = "https://i.imgur.com/KrHfzGH.png";
+    # image = "https://rimgo.vern.cc/KrHfzGH.png";
     blur = "md";
-    opacity = 65;
   };
-  title = "huw";
+
+  # favicon = "";
+  iconStyle = "theme";
+  headerStyle = "underlined";
+  hideVersion = true;
+  target = "_self";
+  showStats = false;
+  statusStyle = "dot";
+
+  # layout = {
+  #   User = {
+  #     style = "row";
+  #     columns = 4;
+  #   };
+  #
+  #   Media = {
+  #     style = "row";
+  #     columns = 4;
+  #   };
+  #
+  #   Services = {
+  #     style = "row";
+  #     columns = 4;
+  #   };
+  # };
 }

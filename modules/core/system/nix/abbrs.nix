@@ -16,7 +16,7 @@ in {
     nr = "nix run";
     ncg = "sudo nix-collect-garbage -d && nix-collect-garbage -d";
     nvd = "nvd --color always diff /run/current-system result | rg -v 0.0.0 | less -R";
-    # sw = "nh os switch --ask ${configDirectory}";
-    sw = "nh os switch";
+    sw = "nh os switch --ask ${configDirectory}";
+    # sw = "nh os switch";
   };
 }

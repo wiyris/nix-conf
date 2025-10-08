@@ -18,11 +18,11 @@ in {
 
     # Custom options
     hardware'.amdgpu.enable = true;
-    hardware'.bluetooth.enable = true;
+    # hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
-    security'.doas.enable = true;
+    # security'.doas.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -38,7 +38,7 @@ in {
     programs'.btop.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
-    programs'.fastfetch.enable = true;
+    # programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
@@ -69,9 +69,8 @@ in {
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.mime-apps.enable = true;
-    desktop.uwsm.enable = true;
     desktop.wayland-session.enable = true;
-    # desktop.xdg.enable = true;
+    desktop.xdg.enable = true;
 
     ## gaming
     # gaming'.celeste.enable = true;
@@ -84,7 +83,7 @@ in {
     gaming'.steam.enable = true;
 
     ## programs
-    services'.homepage-dashboard.enable = true;
+    # services'.homepage-dashboard.enable = true;
     programs'.extraPackages.enable = true;
 
     ### default programs
@@ -94,14 +93,14 @@ in {
 
     ## general
     # programs.kdeconnect.enable = true;
-    programs'.ollama.enable = true;
+    # programs'.ollama.enable = true;
     # programs'.aerc.enable = true;
     # programs'.anki.enable = true;
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
     programs'.rofi.enable = true;
-    programs'.tofi.enable = true;
+    # programs'.tofi.enable = true;
     programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 
@@ -112,7 +111,7 @@ in {
     # programs'.wezterm.enable = true;
 
     ## browser
-    programs'.chromium.enable = true;
+    # programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
@@ -139,12 +138,12 @@ in {
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
     # services'.hypridle.enable = true;
-    services'.keyd.enable = true;
+    # services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
-    services'.swayosd.enable = true;
+    # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
 

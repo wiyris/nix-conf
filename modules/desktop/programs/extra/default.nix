@@ -10,25 +10,24 @@ in {
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs; [
       ## cli/tui
-      cowsay
-      fortune
+      # cowsay
+      # fortune
       gowall
-      lolcat
+      # lolcat
       microfetch
-      qemu
-      scdl
-      taskwarrior-tui
-      tldr
-      tray-tui
-      yt-dlp
+      # qemu
+      # scdl
+      # taskwarrior-tui
+      # tldr
+      # yt-dlp
 
       ## gtk
       # blanket # play rain, waves, etc sounds
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      easytag
-      gimp3
+      # easytag
+      # gimp3
       # gpu-screen-recorder-gtk
       # grayjay
       # pwvucontrol # pipewire gui
@@ -41,7 +40,7 @@ in {
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      puddletag
+      # puddletag
       # qbittorrent
 
       ## electron

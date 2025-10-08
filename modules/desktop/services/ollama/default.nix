@@ -4,9 +4,9 @@
   lib,
   ...
 }: let
-  cfg = config.programs'.ollama;
+  cfg = config.services'.ollama;
 in {
-  options.programs'.ollama.enable = lib.mkEnableOption {};
+  options.services'.ollama.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     services.ollama = {
       enable = true;

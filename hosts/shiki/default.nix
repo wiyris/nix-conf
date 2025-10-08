@@ -93,7 +93,6 @@ in {
 
     ## general
     # programs.kdeconnect.enable = true;
-    # programs'.ollama.enable = true;
     # programs'.aerc.enable = true;
     # programs'.anki.enable = true;
     programs'.goldendict.enable = true;
@@ -142,6 +141,7 @@ in {
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
+    services'.ollama.enable = true;
     services'.stash.enable = true;
     # services'.swayosd.enable = true;
     services'.swww.enable = true;

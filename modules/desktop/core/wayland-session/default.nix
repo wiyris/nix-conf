@@ -21,6 +21,7 @@
 in {
   options.desktop.wayland-session.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
+    programs.uwsm.enable = true;
     hm' = {
       xdg.portal = {
         enable = true;
@@ -36,6 +37,10 @@ in {
           wl-clipboard-rs
           xwayland-satellite
         ];
+        shellAliases = {
+          hyp = "uwsm start hyprland-uwsm.desktop";
+          uws = "uwsm stop";
+        };
       };
     };
   };

@@ -12,7 +12,7 @@ in {
       openFirewall = true;
 
       settings = import ./settings.nix;
-      services = import ./services.nix;
+      # services = import ./services.nix;
       bookmarks = import ./bookmarks.nix;
       customCSS = builtins.readFile ./custom.css;
     };

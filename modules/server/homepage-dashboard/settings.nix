@@ -1,8 +1,9 @@
 {
-  title = "huw";
+  title = "huww";
   color = "gray";
+  volume = "/home/tsubaki/dots/modules/server/homepage-dashboard/images:/app/public/images";
   background = {
-    image = "https://github.com/wiyris/nix-conf/blob/main/modules/core/system/stylix/img.webp?raw=true";
+    image = "img.webp";
     blur = "sm";
   };
 

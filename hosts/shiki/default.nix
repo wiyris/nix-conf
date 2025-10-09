@@ -22,7 +22,7 @@ in {
     networking'.core.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
-    # security'.doas.enable = true;
+    security'.doas.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -83,7 +83,7 @@ in {
     gaming'.steam.enable = true;
 
     ## programs
-    # services'.homepage-dashboard.enable = true;
+    services'.homepage-dashboard.enable = true;
     programs'.extraPackages.enable = true;
 
     ### default programs
@@ -100,7 +100,7 @@ in {
     # programs'.obs-studio.enable = true;
     programs'.rofi.enable = true;
     # programs'.tofi.enable = true;
-    programs'.taskwarrior.enable = true;
+    # programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 
     ## terminal emulator
@@ -110,7 +110,7 @@ in {
     # programs'.wezterm.enable = true;
 
     ## browser
-    # programs'.chromium.enable = true;
+    programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
@@ -141,7 +141,7 @@ in {
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
-    services'.ollama.enable = true;
+    # services'.ollama.enable = true;
     services'.stash.enable = true;
     # services'.swayosd.enable = true;
     services'.swww.enable = true;
@@ -153,12 +153,17 @@ in {
       packages = with pkgs; [terminus_font];
     };
 
+    boot = {
+      loader = {
+        systemd-boot.enable = true;
+        efi.canTouchEfiVariables = true;
+        timeout = 0;
+      };
+      kernelPackages = pkgs.linuxPackages_zen;
+      kernelParams = ["video=DP-2:1920x1080@144"];
+    };
+
     time.timeZone = "Asia/Tokyo";
-    boot.kernelPackages = pkgs.linuxPackages_zen;
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-    boot.loader.timeout = 0;
-    boot.kernelParams = ["video=DP-2:1920x1080@144"];
     system.stateVersion = "25.05"; # Did you read the comment?
     home-manager.users.${userName}.home.stateVersion = "25.05";
   };

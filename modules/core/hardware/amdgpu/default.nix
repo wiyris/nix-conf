@@ -17,6 +17,9 @@ in {
         # libvdpau-va-gl # VA-API to VDPAU wrapper
         vaapiVdpau # VDPAU to VA-API wrapper
       ];
+      # extraPackages32 = with pkgs.driversi686Linux; [
+      #   mesa
+      # ];
     };
 
     environment.systemPackages = with pkgs; [
@@ -31,8 +34,8 @@ in {
       initrd.enable = true; # Can fix lower resolution in boot screen during initramfs phase
     };
 
-    environment.variables = {
-      VDPAU_DRIVER = "radeonsi";
-    };
+    # environment.variables = {
+    #   VDPAU_DRIVER = "radeonsi";
+    # };
   };
 }

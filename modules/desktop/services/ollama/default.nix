@@ -22,7 +22,7 @@ in {
       ollama.wantedBy = [];
     };
     hm'.home.packages = [
-      pkgs.python312Packages.huggingface-hub
+      pkgs.python313Packages.huggingface-hub
     ];
   };
 }

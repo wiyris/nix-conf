@@ -1,6 +1,6 @@
 {...}: {
-  default = "searxngPriv";
-  privateDefault = "searxngPriv";
+  default = "kagi";
+  privateDefault = "kagi";
   force = true;
   order = ["kagi" "leta" "startpage" "NixOS packages" "NixOS options" "Home Manager Options"];
   engines = {

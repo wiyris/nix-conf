@@ -44,7 +44,7 @@ in {
       # qbittorrent
 
       ## electron
-      legcord
+      # legcord
       # vesktop
 
       ## other

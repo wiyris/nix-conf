@@ -12,7 +12,7 @@ in {
 
     hardware.graphics = {
       enable = true;
-      enable32Bit = true;
+      # enable32Bit = true;
       extraPackages = with pkgs; [
         # libvdpau-va-gl # VA-API to VDPAU wrapper
         vaapiVdpau # VDPAU to VA-API wrapper
@@ -23,11 +23,11 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      vulkan-tools
-      vulkan-validation-layers
+      # vulkan-tools
+      # vulkan-validation-layers
 
       nvtopPackages.amd
-      amdgpu_top
+      # amdgpu_top
     ];
 
     hardware.amdgpu = {

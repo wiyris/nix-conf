@@ -113,6 +113,7 @@ in {
       kernelParams = [];
     };
 
+    services.power-profiles-daemon.enable = true;
     laptop.enable = true; # enable laptop modules
 
     time.timeZone = "Asia/Tokyo";

@@ -22,11 +22,10 @@ in {
     hardware'.amdgpu.enable = true;
     hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
+    networking'.iwd.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
-    networking'.iwd.enable = true;
     security'.doas.enable = true;
-    services'.keyd.enable = true;
     stylix'.enable = true;
 
     # cli
@@ -56,47 +55,49 @@ in {
     desktop.hyprland.enable = true;
 
     ## core
-    desktop.fcitx.enable = true;
+    # desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.mime-apps.enable = true;
-    desktop.uwsm.enable = true;
     desktop.wayland-session.enable = true;
+    desktop.xdg.enable = true;
+
+    ## gaming
+    # gaming'.gamemode.enable = true;
+    # gaming'.lutris.enable = true;
+    # gaming'.optimize.enable = true;
+    # gaming'.osu.enable = false;
+    gaming'.steam.enable = true;
 
     ## programs
-    ### default programs
-    programs'.foot.isDefault = true; # foot, ghostty, kitty
-    programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    programs'.thunar.isDefault = true; # thunar, dolphin
+    # services'.homepage-dashboard.enable = true;
+    programs'.extraPackages.enable = true;
 
-    ## general
+    ### default programs
+    programs'.ghostty.isDefault = true; # foot, ghostty, kitty
+    programs'.foot.isDefault = true; # firefox, librewolf, zen-browser
+    programs'.thunar.isDefault = true; # thunar, dolphin
+    programs'.tofi.isDefault = true;
+
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     programs'.tofi.enable = true;
-    programs'.taskwarrior.enable = true;
 
-    ## terminal emulator
     programs'.foot.enable = true;
-
-    ## browser
     programs'.zen-browser.enable = true;
-
-    ## exprorer
     programs'.thunar.enable = true;
-
-    ## media
     programs'.mpv.enable = true;
+    programs'.pqiv.enable = true;
+    # programs'.zathura.enable = true;
 
     ## services
-    # services'.dunst.enable = true;
     services'.hypridle.enable = true;
-    # services'.mpd.enable = true;
+    services'.keyd.enable = true;
     services'.mako.enable = true;
     services'.pipewire.enable = true;
     services'.stash.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
-    laptop.enable = true; # enable laptop modules
 
     console = {
       earlySetup = true;
@@ -104,11 +105,20 @@ in {
       packages = with pkgs; [terminus_font];
     };
 
+    boot = {
+      loader = {
+        systemd-boot.enable = true;
+        efi.canTouchEfiVariables = true;
+        timeout = 0;
+      };
+      # kernelPackages = pkgs.linuxPackages_zen;
+      kernelParams = [];
+    };
+
+    laptop.enable = true; # enable laptop modules
+
     time.timeZone = "Asia/Tokyo";
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-    boot.loader.timeout = 0;
-    system.stateVersion = "25.05"; # Did you read the comment?
+    system.stateVersion = "25.05";
     home-manager.users.${userName}.home.stateVersion = "25.05";
   };
 }

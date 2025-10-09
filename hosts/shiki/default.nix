@@ -32,6 +32,8 @@ in {
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 
+    programs'.tofi.isDefault = true;
+
     programs'.aliases.enable = true;
     # programs'.aria2.enable = true;
     programs'.bat.enable = true;
@@ -83,7 +85,7 @@ in {
     gaming'.steam.enable = true;
 
     ## programs
-    services'.homepage-dashboard.enable = true;
+    # services'.homepage-dashboard.enable = true;
     programs'.extraPackages.enable = true;
 
     ### default programs
@@ -99,7 +101,7 @@ in {
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
     programs'.rofi.enable = true;
-    # programs'.tofi.enable = true;
+    programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 

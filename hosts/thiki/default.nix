@@ -74,7 +74,8 @@ in {
     programs'.extraPackages.enable = true;
 
     ### default programs
-    programs'.foot.isDefault = true; # firefox, librewolf, zen-browser
+    programs'.foot.isDefault = true; # foot, ghostty, kitty
+    programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
     programs'.tofi.isDefault = true;
 

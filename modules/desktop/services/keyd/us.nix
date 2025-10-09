@@ -19,7 +19,9 @@ in {
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
-      leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+      leftalt = "lettermod(meta, r, ${toString holdtime}, ${toString taptime})";
+      # leftmeta = "lettermod(alt, tab, ${toString holdtime}, ${toString taptime})";
+      leftmeta = "leftalt";
       leftshift = "lettermod(shift, r, ${toString holdtime}, ${toString taptime})";
 
       space = "overloadt(extend, space, ${toString taptime})";

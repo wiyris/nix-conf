@@ -13,7 +13,10 @@
     pkgs.writeScriptBin "tofi-screenshot"
     (builtins.readFile ./scripts/tofi-screenshot.sh);
 in {
-  options.programs'.tofi.enable = lib.mkEnableOption {};
+  options.programs'.tofi = {
+    enable = lib.mkEnableOption {};
+    isDefault = lib.mkEnableOption {};
+  };
   config = lib.mkIf cfg.enable {
     hm' = {
       home.packages = [

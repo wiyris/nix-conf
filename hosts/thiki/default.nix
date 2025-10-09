@@ -95,7 +95,7 @@ in {
     services'.keyd.enable = true;
     services'.mako.enable = true;
     services'.pipewire.enable = true;
-    services'.stash.enable = true;
+    # services'.stash.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
 

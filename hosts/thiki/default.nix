@@ -66,13 +66,10 @@ in {
     # gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.optimize.enable = true;
-    # gaming'.osu.enable = false;
+    # gaming'.osu.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
-    # services'.homepage-dashboard.enable = true;
-    programs'.extraPackages.enable = true;
-
     ### default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
@@ -84,6 +81,7 @@ in {
     programs'.tofi.enable = true;
 
     programs'.foot.enable = true;
+    programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
     programs'.thunar.enable = true;
     programs'.mpv.enable = true;

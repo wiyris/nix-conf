@@ -9,7 +9,7 @@ in {
   options.gaming'.steam.enable = lib.mkEnableOption {};
   config = lib.mkMerge [
     (lib.mkIf config.laptop.enable {
-      environment.sessionVariables = {forcedesktopscaling = 1.5;};
+      environment.sessionVariables.STEAM_FORCE_DESKTOPUI_SCALING = 2;
     })
     (lib.mkIf cfg.enable {
       programs.steam = {

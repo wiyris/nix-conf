@@ -21,5 +21,11 @@ in {
       openFirewall = true;
       useRoutingFeatures = "both";
     };
+
+    hm'.home.shellAliases = {
+      tsu = "sudo tailsacle up";
+      tsd = "sudo tailscale down";
+      tss = "sudo tailscale status";
+    };
   };
 }

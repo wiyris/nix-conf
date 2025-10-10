@@ -14,7 +14,7 @@ in {
       enable = true;
       # enable32Bit = true;
       extraPackages = with pkgs; [
-        # libvdpau-va-gl # VA-API to VDPAU wrapper
+        libvdpau-va-gl # VA-API to VDPAU wrapper
         vaapiVdpau # VDPAU to VA-API wrapper
       ];
       # extraPackages32 = with pkgs.driversi686Linux; [

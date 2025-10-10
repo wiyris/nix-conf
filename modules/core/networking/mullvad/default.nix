@@ -11,7 +11,7 @@ in {
   config = lib.mkIf cfg.enable {
     services.mullvad-vpn = {
       enable = true;
-      package = lib.mkIf config.desktop.wayland-session.enable pkgs.mullvad-vpn; # GUI client
+      package = lib.mkIf config.desktop.wayland.enable pkgs.mullvad-vpn; # GUI client
     };
 
     hm'.programs.fish = lib.mkIf config.programs.fish.enable {

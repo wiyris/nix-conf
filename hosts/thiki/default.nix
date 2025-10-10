@@ -55,12 +55,9 @@ in {
     desktop.hyprland.enable = true;
 
     ## core
-    # desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
-    desktop.mime-apps.enable = true;
-    desktop.wayland-session.enable = true;
-    desktop.xdg.enable = true;
+    desktop.wayland.enable = true;
 
     ## gaming
     # gaming'.gamemode.enable = true;

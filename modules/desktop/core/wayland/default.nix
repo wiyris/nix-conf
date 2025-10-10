@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: let
-  cfg = config.desktop.wayland-session;
+  cfg = config.desktop.wayland;
   sessionVariables = {
     # Force GTK to use wayland
     GDK_BACKEND = "wayland,x11,*";
@@ -19,16 +19,20 @@
     NIXOS_OZONE_WL = "1";
   };
 in {
-  options.desktop.wayland-session.enable = lib.mkEnableOption {};
+  options.desktop.wayland.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     programs.uwsm.enable = true;
     hm' = {
-      xdg.portal = {
-        enable = true;
-        config.common.default = "gtk";
-        extraPortals = [pkgs.xdg-desktop-portal-gtk];
-        xdgOpenUsePortal = true;
+      xdg = {
+        mimeApps.enable = true;
+        portal = {
+          enable = true;
+          config.common.default = "gtk";
+          extraPortals = [pkgs.xdg-desktop-portal-gtk];
+          xdgOpenUsePortal = true;
+        };
       };
+
       home = {
         inherit sessionVariables;
         packages = with pkgs; [

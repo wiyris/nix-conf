@@ -32,8 +32,6 @@ in {
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 
-    programs'.tofi.isDefault = true;
-
     programs'.aliases.enable = true;
     # programs'.aria2.enable = true;
     programs'.bat.enable = true;
@@ -67,12 +65,9 @@ in {
 
     ## core
     # desktop.clipboard.enable = true;
-    desktop.fcitx.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
-    desktop.mime-apps.enable = true;
-    desktop.wayland-session.enable = true;
-    desktop.xdg.enable = true;
+    desktop.wayland.enable = true;
 
     ## gaming
     # gaming'.celeste.enable = true;
@@ -112,7 +107,7 @@ in {
     # programs'.wezterm.enable = true;
 
     ## browser
-    programs'.chromium.enable = true;
+    # programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
@@ -138,12 +133,13 @@ in {
     ## services
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
+    services'.fcitx.enable = true;
     # services'.hypridle.enable = true;
     # services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
-    # services'.ollama.enable = true;
+    services'.ollama.enable = true;
     services'.stash.enable = true;
     # services'.swayosd.enable = true;
     services'.swww.enable = true;

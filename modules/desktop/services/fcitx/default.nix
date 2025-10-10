@@ -5,11 +5,11 @@
   ...
 }: let
   inherit (config.lib.stylix.colors.withHashtag) base01 base02 base05;
-  cfg = config.desktop.fcitx;
+  cfg = config.services'.fcitx;
   font = "Noto Sans CJK JP 16";
   themeName = "base16";
 in {
-  options.desktop.fcitx.enable = lib.mkEnableOption {};
+  options.services'.fcitx.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     systemd.user.services."app-org.fcitx.Fcitx5@autostart".enable = false;
     i18n.inputMethod = {

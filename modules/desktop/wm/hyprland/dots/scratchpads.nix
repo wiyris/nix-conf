@@ -1,10 +1,15 @@
 {
+  config,
   lib,
   pkgs,
   osConfig,
   ...
 }: let
-  opacity = "0.2";
+  opacity =
+    if config.wayland.windowManager.hyprland.settings.decoration.blur.enabled
+    then "0.5"
+    else "1.0";
+
   inherit (osConfig.globals) defaultShell;
   hyprland-scratchpad = pkgs.writeScriptBin "hyprland-scratchpad" (
     builtins.readFile ../scripts/hyprland-scratchpad.sh

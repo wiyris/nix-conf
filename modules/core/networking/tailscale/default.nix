@@ -25,7 +25,7 @@ in {
     hm'.home.shellAliases = {
       tsu = "sudo tailsacle up";
       tsd = "sudo tailscale down";
-      tss = "sudo tailscale status";
+      tss = "tailscale status";
     };
   };
 }

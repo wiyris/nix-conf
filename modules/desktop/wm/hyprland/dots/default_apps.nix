@@ -10,6 +10,8 @@ in {
       "$mainMod" = "SUPER";
       "$terminal" = "${defaultTerminal}";
       "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
+      "$clipboard" = "rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy";
+      "$screenshot" = "pkill rofi || uwsm-app -- screenshot";
       "$browser" = "${defaultBrowser}";
       "$bar" = "uwsm app -- waybar";
       "$bar-toggle" = "killall -SIGUSR1 .waybar-wrapped";
@@ -18,5 +20,7 @@ in {
     }
     // lib.optionalAttrs osConfig.programs'.tofi.isDefault {
       "$launcher" = "pkill tofi || tofi-launcher --uwsm";
+      "$clipboard" = "pkill tofi || stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy";
+      "$screenshot" = "pkill tofi || uwsm-app -- tofi-screenshot";
     };
 }

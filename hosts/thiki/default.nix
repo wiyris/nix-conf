@@ -60,10 +60,10 @@ in {
     desktop.wayland.enable = true;
 
     ## gaming
-    # gaming'.gamemode.enable = true;
+    gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.optimize.enable = true;
-    # gaming'.osu.enable = true;
+    gaming'.osu.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
@@ -81,6 +81,7 @@ in {
     programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
     programs'.thunar.enable = true;
+    programs'.cava.enable = true;
     programs'.mpv.enable = true;
     programs'.pqiv.enable = true;
     # programs'.zathura.enable = true;

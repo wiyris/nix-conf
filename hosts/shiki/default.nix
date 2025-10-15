@@ -20,9 +20,9 @@ in {
     hardware'.amdgpu.enable = true;
     # hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
-    # networking'.mullvad.enable = true;
-    networking'.tailscale.enable = true;
-    # security'.doas.enable = true;
+    networking'.mullvad.enable = true;
+    # networking'.tailscale.enable = true;
+    security'.doas.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -78,7 +78,7 @@ in {
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
     # gaming'.pipewireLowLatency.enable = true;
-    gaming'.steam.enable = true;
+    # gaming'.steam.enable = true;
 
     ## programs
     # services'.homepage-dashboard.enable = true;
@@ -124,11 +124,10 @@ in {
     ## media
     # programs'.cava.enable = true;
     # programs'.freetube.enable = true;
-    # programs'.jellyfin-client.enable = true;
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    # programs'.spotify.enable = true;
+    programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
@@ -141,7 +140,7 @@ in {
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
-    # services'.stash.enable = true;
+    services'.stash.enable = true;
     # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;

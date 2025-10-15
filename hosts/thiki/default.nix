@@ -23,8 +23,8 @@ in {
     hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     networking'.iwd.enable = true;
-    # networking'.mullvad.enable = true;
-    networking'.tailscale.enable = true;
+    networking'.mullvad.enable = true;
+    # networking'.tailscale.enable = true;
     security'.doas.enable = true;
     stylix'.enable = true;
 

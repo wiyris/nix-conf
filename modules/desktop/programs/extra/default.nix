@@ -18,7 +18,7 @@ in {
       # qemu
       # scdl
       # taskwarrior-tui
-      # tldr
+      tldr
       # yt-dlp
 
       ## gtk
@@ -44,8 +44,11 @@ in {
       # qbittorrent
 
       ## electron
-      # legcord
+      legcord
       # vesktop
+
+      ## SDK
+      # vpkedit
 
       ## other
       # aseprite

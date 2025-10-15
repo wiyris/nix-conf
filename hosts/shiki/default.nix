@@ -22,7 +22,7 @@ in {
     networking'.core.enable = true;
     # networking'.mullvad.enable = true;
     networking'.tailscale.enable = true;
-    security'.doas.enable = true;
+    # security'.doas.enable = true;
     stylix'.enable = true;
 
     # Services
@@ -58,6 +58,7 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
+    programs'.tofi.isDefault = true;
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
@@ -84,7 +85,7 @@ in {
     programs'.extraPackages.enable = true;
 
     ### default programs
-    programs'.ghostty.isDefault = true; # foot, ghostty, kitty
+    programs'.kitty.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
 
@@ -102,12 +103,12 @@ in {
 
     ## terminal emulator
     # programs'.foot.enable = true;
-    programs'.ghostty.enable = true;
-    # programs'.kitty.enable = true;
+    # programs'.ghostty.enable = true;
+    programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
 
     ## browser
-    # programs'.chromium.enable = true;
+    programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
@@ -127,20 +128,20 @@ in {
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    programs'.spotify.enable = true;
+    # programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
-    services'.fcitx.enable = true;
+    # services'.fcitx.enable = true;
     # services'.hypridle.enable = true;
-    # services'.keyd.enable = true;
+    services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
-    services'.ollama.enable = true;
-    services'.stash.enable = true;
+    # services'.ollama.enable = true;
+    # services'.stash.enable = true;
     # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;

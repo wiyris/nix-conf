@@ -11,14 +11,11 @@
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
       "$mainMod CTRL, PERIOD, exec, $bar-toggle"
 
-      # Tofi
+      # Launcher
       "$mainMod, S, exec, $launcher"
       "$mainMod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
-
-      # "$mainMod, K, exec, pkill tofi || stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy"
-      # ", Print, exec, pkill tofi || uwsm-app -- tofi-screenshot"
 
       # Misc
       "$mainMod, Q, killactive"
@@ -163,7 +160,6 @@
       # "$mainMod, Up, workspace, m+1"
     ];
 
-    # Laptop multimedia keys for volume and LCD brightness
     bindel = [
       ", XF86AudioRaiseVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ", XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"

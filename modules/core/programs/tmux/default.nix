@@ -19,7 +19,7 @@ in {
       ];
       programs.tmux = {
         enable = true;
-        tmuxp.enable = true;
+        # tmuxp.enable = true;
         inherit shell;
         mouse = true;
         escapeTime = 0;

@@ -7,7 +7,7 @@
 }: let
   opacity =
     if config.wayland.windowManager.hyprland.settings.decoration.blur.enabled
-    then "0.5"
+    then "0.3"
     else "1.0";
 
   inherit (osConfig.globals) defaultShell;

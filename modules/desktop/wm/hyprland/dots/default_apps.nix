@@ -9,6 +9,7 @@ in {
     {
       "$mainMod" = "SUPER";
       "$terminal" = "${defaultTerminal}";
+      "$editor" = "$terminal -e nvim";
       "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
       "$clipboard" = "rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy";
       "$screenshot" = "pkill rofi || uwsm-app -- screenshot";

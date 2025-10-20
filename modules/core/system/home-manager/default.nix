@@ -27,7 +27,7 @@ in {
 
     home-manager.useGlobalPkgs = true;
     home-manager.useUserPackages = false;
-    home-manager.backupFileExtension = "bak";
+    home-manager.backupFileExtension = "hm-bak";
 
     hm' = {
       # Let Home Manager install and manage itself.

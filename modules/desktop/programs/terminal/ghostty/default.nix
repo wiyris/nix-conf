@@ -18,7 +18,7 @@ in {
           enable = true;
           enableFishIntegration = true;
           settings = {
-            background-blur-radius = 20;
+            background-blur-radius = 17;
             font-feature = ["ss06"];
             font-family = ["" "config.stylix.fonts.monospace"]; # disable fallback noto emoji
 
@@ -34,7 +34,7 @@ in {
             confirm-close-surface = false;
             window-decoration = false;
             window-padding-x = [4 5];
-            window-padding-y = [4 5];
+            window-padding-y = [4 0];
             window-padding-balance = false;
 
             # extras

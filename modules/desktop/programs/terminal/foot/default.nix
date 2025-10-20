@@ -23,6 +23,7 @@ in {
             pad = "4x4 center";
             selection-target = "clipboard";
           };
+
           bell = {
             urgent = "yes";
             notify = "yes";
@@ -47,6 +48,7 @@ in {
             style = "beam";
             beam-thickness = 1;
           };
+
           mouse = {
             hide-when-typing = true;
           };

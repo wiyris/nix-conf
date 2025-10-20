@@ -21,7 +21,6 @@ in {
     # hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     networking'.mullvad.enable = true;
-    # networking'.tailscale.enable = true;
     security'.doas.enable = true;
     stylix'.enable = true;
 
@@ -38,7 +37,7 @@ in {
     programs'.btop.enable = true;
     programs'.core-utils.enable = true;
     programs'.eza.enable = true;
-    # programs'.fastfetch.enable = true;
+    programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
@@ -52,7 +51,7 @@ in {
     programs'.starship.enable = true;
     programs'.tmux.enable = true;
     programs'.yazi.enable = true;
-    # programs'.zellij.enable = true;
+    programs'.zellij.enable = true;
     programs'.zoxide.enable = true;
 
     # DESKTOP
@@ -62,7 +61,7 @@ in {
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    # desktop.niri.enable = true;
+    desktop.niri.enable = true;
 
     ## core
     # desktop.clipboard.enable = true;
@@ -78,7 +77,7 @@ in {
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
     # gaming'.pipewireLowLatency.enable = true;
-    # gaming'.steam.enable = true;
+    gaming'.steam.enable = true;
 
     ## programs
     # services'.homepage-dashboard.enable = true;
@@ -102,8 +101,8 @@ in {
     # programs'.tray-tui.enable = true;
 
     ## terminal emulator
-    # programs'.foot.enable = true;
-    # programs'.ghostty.enable = true;
+    programs'.foot.enable = true;
+    programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
 
@@ -113,7 +112,7 @@ in {
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
     # programs'.mullvad-browser.enable = true;
-    # programs'.qutebrowser.enable = true;
+    programs'.qutebrowser.enable = true;
     # programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
 
@@ -123,7 +122,7 @@ in {
 
     ## media
     # programs'.cava.enable = true;
-    # programs'.freetube.enable = true;
+    programs'.freetube.enable = true;
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
@@ -133,7 +132,7 @@ in {
     ## services
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
-    # services'.fcitx.enable = true;
+    services'.fcitx.enable = true;
     # services'.hypridle.enable = true;
     services'.keyd.enable = true;
     # services'.mpd.enable = true;
@@ -141,7 +140,7 @@ in {
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
     services'.stash.enable = true;
-    # services'.swayosd.enable = true;
+    services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
 

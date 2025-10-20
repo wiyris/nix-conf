@@ -12,11 +12,11 @@
       "kitty_mod+a" = "scroll_line_down";
 
       # hints
-      "kitty_mod+f>l" = "open_url_with_hints";
-      "kitty_mod+f>n" = "kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}";
-      "kitty_mod+f>y" = "kitten hints --type hyperlink";
-      "kitty_mod+f>f" = "kitten hints --type path";
-      "kitty_mod+f>shift+F" = "kitten hints --type path --program -";
+      # "kitty_mod+f>l" = "open_url_with_hints";
+      # "kitty_mod+f>n" = "kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}";
+      # "kitty_mod+f>y" = "kitten hints --type hyperlink";
+      # "kitty_mod+f>f" = "kitten hints --type path";
+      # "kitty_mod+f>shift+F" = "kitten hints --type path --program -";
     };
   };
 }

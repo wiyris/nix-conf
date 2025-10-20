@@ -16,6 +16,7 @@ in {
         accel-speed = 0.0;
         accel-profile = "flat";
       };
+      keyboard.repeat-delay = 200;
       focus-follows-mouse.enable = true;
       warp-mouse-to-focus.enable = true;
       workspace-auto-back-and-forth = true;

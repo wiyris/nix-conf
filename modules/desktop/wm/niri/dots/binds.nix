@@ -8,13 +8,12 @@ in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Space".action = spawn "uwsm-app" "--" "${defaultTerminal}";
     "Mod+Return".action = spawn "uwsm-app" "--" "${defaultTerminal}";
-    # "Mod+BackSpace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "--class=nvim.ghostty" "-e" "nvim";
     "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
-    "Mod+L".action = spawn "rofi" "-show" "drun";
-    # "Mod+H".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";
+    "Mod+S".action = spawn "rofi" "-show" "drun";
+    "Mod+K".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";
     "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
     "Mod+M".action = spawn "uwsm-app" "--" "thunar";
-    "Print".action = screenshot;
+    # "Print".action = screenshot;
     "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
     "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
 
@@ -30,8 +29,8 @@ in {
 
     "Mod+Slash".action = toggle-overview;
 
-    "Mod+S".action = toggle-window-floating;
-    "Mod+Shift+S".action = center-column;
+    "Mod+V".action = toggle-window-floating;
+    "Mod+Shift+V".action = center-column;
     # "Mod+N".action = switch-focus-between-floating-and-tiling;
 
     "Mod+Minus".action = set-column-width "-5%";

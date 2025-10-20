@@ -43,6 +43,7 @@ in {
         ];
         shellAliases = {
           hyp = "uwsm start hyprland-uwsm.desktop";
+          uri = "uwsm start niri-uwsm.desktop";
           uws = "uwsm stop";
         };
       };

@@ -51,7 +51,7 @@ in {
     programs'.starship.enable = true;
     programs'.tmux.enable = true;
     programs'.yazi.enable = true;
-    programs'.zellij.enable = true;
+    # programs'.zellij.enable = true;
     programs'.zoxide.enable = true;
 
     # DESKTOP
@@ -64,7 +64,6 @@ in {
     desktop.niri.enable = true;
 
     ## core
-    # desktop.clipboard.enable = true;
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.wayland.enable = true;
@@ -111,7 +110,7 @@ in {
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
-    # programs'.mullvad-browser.enable = true;
+    programs'.mullvad-browser.enable = true;
     programs'.qutebrowser.enable = true;
     # programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
@@ -139,7 +138,7 @@ in {
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
-    services'.stash.enable = true;
+    # services'.stash.enable = true;
     services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;

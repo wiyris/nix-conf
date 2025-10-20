@@ -21,7 +21,7 @@ in {
       [
         # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
         # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-localhost__-Default 'chromium --app=http:localhost:8080'"
-        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-localhost__-Default 'chromium --app=https://kagi.com/assistant'"
+        "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-localhost__-Default 'chromium --app=https://kagi.com/assistant'"
         "$mainMod, L, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.programs'.foot.isDefault [

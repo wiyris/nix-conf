@@ -17,6 +17,7 @@
     MOZ_ENABLE_WAYLAND = "1";
     XDG_SESSION_TYPE = lib.mkDefault "wayland";
     NIXOS_OZONE_WL = "1";
+    GLFW_IM_MODULE = "ibus";
   };
 in {
   options.desktop.wayland.enable = lib.mkEnableOption {};
@@ -38,7 +39,7 @@ in {
         packages = with pkgs; [
           hyprshot
           wev
-          # wl-clipboard-rs
+          wl-clipboard-rs
           xwayland-satellite
         ];
         shellAliases = {

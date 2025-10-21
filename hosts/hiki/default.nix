@@ -20,6 +20,7 @@ in {
     networking'.mullvad.enable = true;
     # networking'.tailscale.enable = true;
     security'.doas.enable = true;
+    stylix'.enable = true;
 
     # cli
     programs.fish.enable = true;

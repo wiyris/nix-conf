@@ -18,37 +18,35 @@ in {
         hosts = {
         };
       };
-      # programs.ssh = {
-      #   enable = true;
-      #   addKeysToAgent = "yes";
-      # };
       programs.git = {
         enable = true;
-        userName = "wiyris";
-        userEmail = "c8b5805d-928f-4c0b-8fc0-27817abedf44@passmail.com";
         signing = {
           format = "ssh";
           key = "${homeDirectory}/.ssh/id_ed25519";
           signByDefault = true;
         };
-        extraConfig = {
+        settings = {
+          user = {
+            name = "wiyris";
+            email = "c8b5805d-928f-4c0b-8fc0-27817abedf44@passmail.com";
+          };
           color.ui = true;
           init.defaultBranch = "main";
         };
-        delta = {
-          enable = true;
-          options = {
-            diff-so-fancy = true;
-            line-numbers = true;
-            true-color = "always";
-          };
+      };
+      programs.delta = {
+        enable = true;
+        options = {
+          diff-so-fancy = true;
+          line-numbers = true;
+          true-color = "always";
         };
       };
 
       # Yet another Git TUI (written in rust).
-      programs.gitui.enable = true;
+      # programs.gitui.enable = true;
 
-      programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
+      programs.fish.shellAbbrs = {
         g = "git";
         ga = "git add";
         gaa = "git add --all";

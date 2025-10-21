@@ -23,9 +23,9 @@ in {
         inherit shell;
         mouse = true;
         escapeTime = 0;
-        aggressiveResize = true;
-        terminal = "screen-256color";
-        focusEvents = true;
+        # aggressiveResize = true;
+        # terminal = "screen-256color";
+        # focusEvents = true;
         extraConfig = ''
           set -g status-position top
           # Start windows and panes at 1, not 0

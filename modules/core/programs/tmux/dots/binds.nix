@@ -3,8 +3,8 @@
     keyMode = "vi";
     prefix = "M-Space";
     extraConfig = ''
-      bind 'v' copy-mode
-      # bind -n M-v copy-mode
+      # bind 'v' copy-mode
+      bind -n M-v copy-mode
       bind -T copy-mode-vi v send -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
       bind -T copy-mode-vi Escape send-keys -X copy-pipe-and-cancel "wl-copy"

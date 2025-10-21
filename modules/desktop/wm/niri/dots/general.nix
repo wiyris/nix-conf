@@ -30,8 +30,8 @@ in {
     layout = {background-color = "transparent";};
 
     cursor = {
-      size = 28;
-      theme = "Catppuccin Mocha Lavender";
+      size = 32;
+      theme = "catppuccin-mocha-dark-cursors";
     };
 
     layout = {
@@ -61,7 +61,7 @@ in {
 
       default-column-width = {proportion = 0.5;};
 
-      gaps = 10;
+      gaps = 14;
 
       struts = {
         left = 5;

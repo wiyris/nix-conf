@@ -5,7 +5,7 @@
   config,
   ...
 }: let
-  opacity = 0.8;
+  opacity = 0.69;
   fontSize = 14;
   cfg = config.stylix';
 in {
@@ -26,9 +26,9 @@ in {
       };
 
       cursor = {
-        package = pkgs.rose-pine-hyprcursor;
-        name = "rose-pine-hyprcursor";
-        size = 24;
+        package = pkgs.catppuccin-cursors.mochaDark;
+        name = "catppuccin-mocha-dark-cursors";
+        size = 32;
       };
 
       # iconTheme = {

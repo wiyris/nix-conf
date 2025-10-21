@@ -8,6 +8,7 @@ in {
   programs.niri.settings.binds = with config.lib.niri.actions; {
     "Mod+Space".action = spawn "uwsm-app" "--" "${defaultTerminal}";
     "Mod+Return".action = spawn "uwsm-app" "--" "${defaultTerminal}";
+    "Mod+Backspace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "-e" "nvim";
     "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
     "Mod+S".action = spawn "rofi" "-show" "drun";
     "Mod+K".action = spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|" "wl-copy";

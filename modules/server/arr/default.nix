@@ -9,8 +9,8 @@ in {
   options.services'.arr.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     users.groups.arr = {};
-    environment.extraInit = "umask 0002";
-    services.transmission.settings.umask = "0002";
+    environment.extraInit = "umask 0000";
+    services.transmission.settings.umask = "0000";
     services = {
       lidarr = {
         enable = true;
@@ -44,6 +44,10 @@ in {
         enable = true;
         openFirewall = true;
         group = "arr";
+      };
+      jellyseerr = {
+        enable = true;
+        openFirewall = true;
       };
     };
   };

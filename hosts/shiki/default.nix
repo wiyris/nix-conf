@@ -95,7 +95,7 @@ in {
     # programs'.obs-studio.enable = true;
     programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
-    programs'.tofi.enable = true;
+    # programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 
@@ -110,7 +110,7 @@ in {
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
-    programs'.mullvad-browser.enable = true;
+    # programs'.mullvad-browser.enable = true;
     programs'.qutebrowser.enable = true;
     # programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
@@ -120,7 +120,7 @@ in {
     programs'.thunar.enable = true;
 
     ## media
-    # programs'.cava.enable = true;
+    programs'.cava.enable = true;
     programs'.freetube.enable = true;
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
@@ -133,7 +133,7 @@ in {
     # services'.dwlb.enable = true;
     services'.fcitx.enable = true;
     # services'.hypridle.enable = true;
-    services'.keyd.enable = true;
+    # services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;

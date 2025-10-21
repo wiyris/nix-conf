@@ -15,9 +15,8 @@ in {
       enable = true;
       settings = {
         colors = {
-          hints = {
-          };
-          tabs.bar.bg = lib.mkForce "#00000000";
+          hints = {};
+          tabs.bar = {};
         };
         hints = {
           radius = 1;

@@ -22,6 +22,7 @@ in {
         # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
         # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-localhost__-Default 'chromium --app=http:localhost:8080'"
         "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default 'chromium --app=https://kagi.com/assistant'"
+        "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default 'chromium --app=https://translate.kagi.com'"
         "$mainMod, L, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
       ]
       ++ lib.optionals osConfig.programs'.foot.isDefault [
@@ -40,12 +41,14 @@ in {
       "tag +float_md, class:ghostty.scratch"
       "tag +float_side, class:chrome-localhost__-Default"
       "tag +float_side, class:chrome-kagi.com__assistant-Default"
+      "tag +float_side, class:chrome-translate.kagi.com__-Default"
       "tag +float_side, class:com/xiaoyifang/goldendict-ng.https://github."
       "stayfocused, class:com/xiaoyifang/goldendict-ng.https://github."
       "noanim, class:ghostty.scratch"
       "noanim, class:kitty-scratch"
       "noanim, class:chrome-localhost__-Default"
       "noanim, class:chrome-kagi.com__assistant-Default"
+      "noanim, class:chrome-translate.kagi.com__-Default"
       "noanim, class:com/xiaoyifang/goldendict-ng.https://github."
       "opacity 0.8 override 0.8 override, class:chrome-localhost__-Default"
 

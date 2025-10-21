@@ -35,7 +35,6 @@ in {
     # programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
-    programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
@@ -57,7 +56,7 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    programs'.tofi.isDefault = true;
+    # programs'.tofi.isDefault = true;
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
@@ -94,6 +93,7 @@ in {
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
+    programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
@@ -142,6 +142,7 @@ in {
     services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
+    services'.wl-clip-persist.enable = true;
 
     console = {
       earlySetup = true;

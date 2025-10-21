@@ -28,7 +28,7 @@ in {
       # easyeffects
       # easytag
       gimp3
-      gpu-screen-recorder-gtk
+      # gpu-screen-recorder-gtk
       grayjay
       # pwvucontrol # pipewire gui
       # remmina # vnc client
@@ -45,11 +45,11 @@ in {
 
       ## electron
       legcord
-      vesktop
+      # vesktop
 
       ## SDK
       # vpkedit
-      vlc
+      # vlc
 
       ## other
       # aseprite

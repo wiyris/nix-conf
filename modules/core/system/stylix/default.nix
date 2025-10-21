@@ -5,7 +5,7 @@
   config,
   ...
 }: let
-  opacity = 0.69;
+  opacity = 0.85;
   fontSize = 14;
   cfg = config.stylix';
 in {

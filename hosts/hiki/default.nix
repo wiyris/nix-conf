@@ -47,13 +47,13 @@ in {
     programs'.zoxide.enable = true;
 
     # services
-    # services'.arr.enable = true;
+    services'.arr.enable = true;
     # services'.homepage-dashboard.enable = true;
     services'.jellyfin.enable = true;
     # services'.kavita.enable = true;
     services'.lms.enable = true;
     services'.navidrome.enable = true;
-    # services'.qbittorrent.enable = true;
+    services'.qbittorrent.enable = true;
 
     time.timeZone = "Asia/Tokyo";
 

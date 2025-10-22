@@ -3,9 +3,10 @@
     settings = {kitty_mod = "alt+ctrl";};
     keybindings = {
       "ctrl+c" = "copy_and_clear_or_interrupt";
-      "kitty_mod+=" = "increase_font_size";
-      "kitty_mod+-" = "decrease_font_size";
-      "kitty_mod+0" = "restore_font_size";
+      "ctrl+v" = "paste_from_clipboard";
+      "kitty_mod+=" = "change_font_size all +1.0";
+      "kitty_mod+-" = "change_font_size all -1.0";
+      "ctrl+0" = "restore_font_size";
       # "kitty_mod+up" = "scroll_line_up";
       "kitty_mod+e" = "scroll_line_up";
       # "kitty_mod+down" = "scroll_line_down";

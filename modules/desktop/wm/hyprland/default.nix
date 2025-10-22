@@ -35,7 +35,6 @@ in {
           [
             ./dots/animations.nix
             ./dots/decoration.nix
-            # ./dots/binds.nix
             ./dots/binds36.nix
             ./dots/default_apps.nix
             ./dots/exec-once.nix
@@ -45,7 +44,7 @@ in {
             ./dots/rules.nix
             ./dots/scratchpads.nix
 
-            ./plugins/hyprexpo.nix
+            # ./plugins/hyprexpo.nix
           ]
           ++ lib.optionals config.laptop.enable [
             ./dots/perf.nix

@@ -9,7 +9,7 @@
 
     blur = {
       enabled = true;
-      size = 4;
+      size = 10;
       passes = 4;
       ignore_opacity = true;
       noise = 0.03;
@@ -17,7 +17,7 @@
       popups = true;
       popups_ignorealpha = 0.2;
       new_optimizations = true;
-      brightness = 0.85;
+      brightness = 0.9;
       vibrancy = 0.1696;
       vibrancy_darkness = 0.0;
       input_methods = true;

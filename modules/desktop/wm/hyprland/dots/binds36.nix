@@ -6,6 +6,9 @@
       "$mainMod, Space, exec, uwsm-app -- $terminal"
       "$mainMod, Backspace, exec, uwsm-app -- $editor"
       "$mainMod, J, exec, uwsm app -- $browser"
+      "$mainMod SHIFT, J, exec, uwsm app -- chromium"
+      "$mainMod SHIFT, L, exec, uwsm app -- legcord"
+      "$mainMod SHIFT, X, exec, uwsm app -- thunderbird"
       "$mainMod, M, exec, uwsm-app -- $explorer"
 
       # Bar
@@ -180,5 +183,9 @@
       "SUPER, mouse:272, movewindow"
       "SUPER, mouse:273, resizewindow"
     ];
+
+    # bindn = [
+    #   ", mouse:274, exec, wl-copy -pc" # disable primary
+    # ];
   };
 }

@@ -12,11 +12,11 @@ in {
     environment.extraInit = "umask 0000";
     services.transmission.settings.umask = "0000";
     services = {
-      lidarr = {
-        enable = true;
-        openFirewall = true;
-        group = "arr";
-      };
+      # lidarr = {
+      #   enable = true;
+      #   openFirewall = true;
+      #   group = "arr";
+      # };
       radarr = {
         enable = true;
         openFirewall = true;
@@ -36,10 +36,10 @@ in {
         enable = true;
         openFirewall = true;
       };
-      flaresolverr = {
-        enable = true;
-        openFirewall = true;
-      };
+      # flaresolverr = {
+      #   enable = true;
+      #   openFirewall = true;
+      # };
       bazarr = {
         enable = true;
         openFirewall = true;

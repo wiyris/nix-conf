@@ -21,11 +21,12 @@ in {
             background-blur-radius = 17;
             font-feature = ["ss06"];
             font-family = ["" "config.stylix.fonts.monospace"]; # disable fallback noto emoji
+            # adjust-cell-height = "28%";
 
             cursor-style = "block";
             cursor-style-blink = true;
             cursor-invert-fg-bg = false;
-            # font-thicken = true;
+            font-thicken = true;
 
             macos-titlebar-style = "hidden";
             macos-option-as-alt = true;
@@ -35,7 +36,7 @@ in {
             window-decoration = false;
             window-padding-x = [4 5];
             window-padding-y = [4 0];
-            window-padding-balance = false;
+            window-padding-balance = true;
 
             # extras
             shell-integration-features = "no-cursor";

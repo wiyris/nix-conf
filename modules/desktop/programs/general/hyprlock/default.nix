@@ -4,7 +4,6 @@
   ...
 }: let
   cfg = config.programs'.hyprlock;
-  inherit (config.globals) configDirectory;
 in {
   options.programs'.hyprlock.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
@@ -22,7 +21,7 @@ in {
 
           background = [
             {
-              path = "${configDirectory}/modules/core/system/stylix/img.png";
+              path = config.stylix.image;
               blur_passes = 2;
               blur_size = 3;
               noise = "0.05";
@@ -57,14 +56,14 @@ in {
             # USER
             {
               monitor = "";
-              text = "    $USER";
+              text = "   $USER";
               color = "rgb(245, 194, 231)";
               outline_thickness = 2;
               dots_size = 0.2; # Scale of input-field height, 0.2 - 0.8
               dots_spacing = 0.2; # Scale of dots' absolute size, 0.0 - 1.0
               dots_center = true;
               font_size = 18;
-              font_family = "JetBrainsMono Nerd Font";
+              font_family = "config.stylix.fonts.monospace";
               position = "0, -180";
               halign = "center";
               valign = "center";
@@ -83,7 +82,7 @@ in {
             inner_color = "rgba(25, 25, 25, 0.1)";
             font_color = "rgb(221, 120, 120)";
             fade_on_empty = false;
-            font_family = "JetBrainsMono Nerd Font Light";
+            font_family = "config.stylix.fonts.monospace";
             placeholder_text = "<i>🔒 Enter Password</i>";
             hide_input = false;
             position = "0, -250";

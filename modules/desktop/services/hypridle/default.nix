@@ -7,7 +7,7 @@
 in {
   options.services'.hypridle.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       systemd.user.services.hypridle.Install.WantedBy = lib.mkForce [];
       services.hypridle = {
         enable = true;
@@ -21,19 +21,19 @@ in {
 
           listener = [
             {
-              timeout = 180;
+              timeout = 120;
               on-timeout = "brightnessctl -s set 30";
               on-resume = "brightnessctl -r";
             }
             {
-              timeout = 3600;
+              timeout = 300;
               on-timeout = "loginctl lock-session";
             }
-            # {
-            #   timeout = 1800;
-            #   on-timeout = "hyprctl dispatch dpms off";
-            #   on-resume = "hyprctl dispatch dpms on";
-            # }
+            {
+              timeout = 1800;
+              on-timeout = "hyprctl dispatch dpms off";
+              on-resume = "hyprctl dispatch dpms on";
+            }
             # {
             #   timeout = 3600;
             #   on-timeout = "sysemctl suspend";

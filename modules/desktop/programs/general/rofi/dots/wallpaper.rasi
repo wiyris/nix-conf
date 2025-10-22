@@ -1,7 +1,11 @@
 @theme "~/.config/rofi/style.rasi"
 
+configuration {
+  font: "Maple Mono NF 12";
+}
+
 // Window
 window {
-  width:                       900px;
-  height:                      700px;
+  width:                       1000px;
+  height:                      800px;
 }

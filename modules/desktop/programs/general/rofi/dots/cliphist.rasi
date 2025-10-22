@@ -1,7 +1,11 @@
 @theme "~/.config/rofi/style.rasi"
 
+window {
+  width:  900px;
+}
+
 listview {
-  lines:   14;
+  lines:   15;
   spacing: 0px;
 }
 

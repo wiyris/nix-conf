@@ -23,8 +23,8 @@ in {
             {
               path = config.stylix.image;
               blur_passes = 2;
-              blur_size = 3;
-              noise = "0.05";
+              blur_size = 2;
+              noise = "0.03";
               contrast = "1.3";
             }
           ];
@@ -37,7 +37,7 @@ in {
               # color = foreground;
               color = "rgb(137, 180, 250)";
               font_size = 28;
-              font_family = "JetBrainsMono Nerd Font SemiBold";
+              font_family = "Maple Mono NF SemiBold";
               position = "0, 490";
               halign = "center";
               valign = "center";
@@ -45,10 +45,11 @@ in {
             # Time
             {
               monitor = "";
-              text = ''cmd[update:1000] echo "<span>$(date +"%I:%M")</span>"'';
+              # text = ''cmd[update:1000] echo "<span>$(date +"%H:%M")</span>"'';
+              text = ''$TIME'';
               color = "rgb(180, 190, 254)";
               font_size = 160;
-              font_family = "JetBrainsMono Nerd Font ExtraBold";
+              font_family = "Maple Mono NF ExtraBold";
               position = "0, 370";
               halign = "center";
               valign = "center";

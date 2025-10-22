@@ -22,6 +22,7 @@
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
 
       # Misc
+      "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
       "$mainMod SHIFT, B, fullscreen"

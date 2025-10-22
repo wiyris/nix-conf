@@ -21,7 +21,7 @@ in {
     }
     // lib.optionalAttrs osConfig.programs'.tofi.isDefault {
       "$launcher" = "pkill tofi || tofi-launcher --uwsm";
-      "$clipboard" = "pkill tofi || stash list | tofi --width 640 --prompt-text '' | stash decode | wl-copy";
+      "$clipboard" = "pkill tofi || cliphist-rofi list | tofi --width 640 --prompt-text '' | cliphist-rofi decode | wl-copy";
       "$screenshot" = "pkill tofi || uwsm-app -- tofi-screenshot";
     };
 }

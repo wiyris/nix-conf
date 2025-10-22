@@ -15,7 +15,7 @@ in {
     stylix = {
       enable = true;
       autoEnable = true;
-      image = ./wal/blue-swing.jpg;
+      image = ./wal/dawn-beach.jpg;
       polarity = "dark";
       # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
       targets.qt.enable = true;

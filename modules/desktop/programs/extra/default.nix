@@ -42,6 +42,7 @@ in {
       # openshot-qt
       # puddletag
       # qbittorrent
+      vlc
 
       ## electron
       legcord
@@ -49,7 +50,6 @@ in {
 
       ## SDK
       # vpkedit
-      # vlc
 
       ## other
       # aseprite

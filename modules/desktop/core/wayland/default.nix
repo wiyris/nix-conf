@@ -37,10 +37,19 @@ in {
       home = {
         inherit sessionVariables;
         packages = with pkgs; [
+          ## cli/tui
           hyprshot
           wev
           wl-clipboard-rs
           xwayland-satellite
+
+          ## gtk
+          thunderbird
+
+          ## qt
+
+          ## electron
+          obsidian
         ];
         shellAliases = {
           hyp = "uwsm start hyprland-uwsm.desktop";

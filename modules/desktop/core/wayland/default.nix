@@ -39,7 +39,7 @@ in {
         packages = with pkgs; [
           hyprshot
           wev
-          wl-clipboard
+          wl-clipboard-rs
           xwayland-satellite
         ];
         shellAliases = {

@@ -129,6 +129,7 @@ in {
     # programs'.zathura.enable = true;
 
     ## services
+    services'.cliphist.enable = true;
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
     services'.fcitx.enable = true;

@@ -14,7 +14,7 @@
 
       # Launcher
       "$mainMod, S, exec, $launcher"
-      # "$mainMod, K, exec, $clipboard"
+      "$mainMod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
 

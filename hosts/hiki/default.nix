@@ -20,7 +20,6 @@ in {
     networking'.mullvad.enable = true;
     # networking'.tailscale.enable = true;
     security'.doas.enable = true;
-    stylix'.enable = true;
 
     # cli
     programs.fish.enable = true;
@@ -32,7 +31,6 @@ in {
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.cava.enable = true;
-    programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;

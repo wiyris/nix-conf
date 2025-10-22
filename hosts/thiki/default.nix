@@ -1,7 +1,8 @@
 {
   config,
-  pkgs,
   inputs,
+  lib,
+  pkgs,
   ...
 }: let
   userName = "tsubaki";
@@ -24,7 +25,6 @@ in {
     networking'.core.enable = true;
     networking'.iwd.enable = true;
     networking'.mullvad.enable = true;
-    # networking'.tailscale.enable = true;
     security'.doas.enable = true;
     stylix'.enable = true;
 
@@ -35,12 +35,11 @@ in {
     programs'.aliases.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
-    programs'.core-utils.enable = true;
     programs'.eza.enable = true;
     programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
-    programs'.gtrash.enable = true;
+    # programs'.gtrash.enable = true;
     programs'.lazygit.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
@@ -63,12 +62,12 @@ in {
     gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.optimize.enable = true;
-    gaming'.osu.enable = true;
+    # gaming'.osu.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
     ### default programs
-    programs'.foot.isDefault = true; # foot, ghostty, kitty
+    programs'.kitty.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
     programs'.tofi.isDefault = true;
@@ -78,22 +77,39 @@ in {
     programs'.tofi.enable = true;
 
     programs'.foot.enable = true;
+    programs'.kitty.enable = true;
     programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
     programs'.thunar.enable = true;
     programs'.cava.enable = true;
     programs'.mpv.enable = true;
-    programs'.pqiv.enable = true;
+    # programs'.pqiv.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
+    services'.cliphist.enable = true;
     services'.hypridle.enable = true;
     services'.keyd.enable = true;
     services'.mako.enable = true;
     services'.pipewire.enable = true;
-    # services'.stash.enable = true;
-    services'.swww.enable = true;
     services'.waybar.enable = true;
+
+    # laptop-specific config
+    laptop.enable = true; # enable laptop modules
+    services.power-profiles-daemon.enable = true;
+    environment.packages = with pkgs; [
+      brightnessctl
+    ];
+
+    stylix = {
+      base16Scheme = lib.mkForce "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+      opacity = {
+        terminal = lib.mkForce 1.0;
+        popups = lib.mkForce 1.0;
+      };
+    };
+
+    ##
 
     console = {
       earlySetup = true;
@@ -110,9 +126,6 @@ in {
       # kernelPackages = pkgs.linuxPackages_zen;
       kernelParams = [];
     };
-
-    services.power-profiles-daemon.enable = true;
-    laptop.enable = true; # enable laptop modules
 
     time.timeZone = "Asia/Tokyo";
     system.stateVersion = "25.05";

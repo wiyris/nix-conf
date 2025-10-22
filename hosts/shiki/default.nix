@@ -133,7 +133,7 @@ in {
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
     services'.fcitx.enable = true;
-    # services'.hypridle.enable = true;
+    services'.hypridle.enable = true;
     # services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;

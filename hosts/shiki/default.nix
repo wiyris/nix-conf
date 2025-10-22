@@ -93,7 +93,7 @@ in {
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     # programs'.obs-studio.enable = true;
-    programs'.obsidian.enable = true;
+    # programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
     # programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
@@ -123,7 +123,7 @@ in {
     programs'.cava.enable = true;
     programs'.freetube.enable = true;
     programs'.mpv.enable = true;
-    # programs'.pqiv.enable = true;
+    programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
     programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
@@ -141,7 +141,7 @@ in {
     # services'.ollama.enable = true;
     # services'.stash.enable = true;
     services'.swayosd.enable = true;
-    services'.swww.enable = true;
+    # services'.swww.enable = true;
     services'.waybar.enable = true;
     services'.wl-clip-persist.enable = true;
 

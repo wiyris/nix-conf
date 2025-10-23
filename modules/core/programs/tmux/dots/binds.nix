@@ -1,7 +1,7 @@
 {
   programs.tmux = {
     keyMode = "vi";
-    # prefix = "M-Space";
+    prefix = "M-Space";
     extraConfig = ''
       # bind 'v' copy-mode
       bind -n M-v copy-mode

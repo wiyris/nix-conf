@@ -39,7 +39,7 @@ in {
       };
 
       programs.fzf.tmux.enableShellIntegration = true;
-      programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
+      programs.fish.shellAbbrs = {
         t = "tmux new-session";
         ta = "tmux attach -t";
         tl = "tmux list-sessions";

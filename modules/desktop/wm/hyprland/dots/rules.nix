@@ -28,8 +28,8 @@
       # Tearing
       "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
 
-      "nodim, class:^(.*zen-beta.*)$"
-      "opacity 1.0 1.0 override, class:^(.*zen-beta.*)$"
+      "nodim, class:^(.*zen-beta.*)$|^(.*steam.*)$"
+      "opacity 1.0 1.0 override, class:^(.*zen-beta.*)$|^(.*steam.*)$"
     ];
 
     layerrule = [

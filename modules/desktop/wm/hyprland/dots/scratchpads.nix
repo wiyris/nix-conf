@@ -7,7 +7,7 @@
 }: let
   opacity =
     if config.wayland.windowManager.hyprland.settings.decoration.blur.enabled
-    then "0.2"
+    then "0.0"
     else "1.0";
 
   inherit (osConfig.globals) defaultShell;
@@ -53,7 +53,7 @@ in {
       "opacity 0.8 override 0.8 override, class:chrome-localhost__-Default"
 
       "float, tag:float_md"
-      "size 70% 70%, tag:float_md"
+      "size 65% 70%, tag:float_md"
       "float, tag:float_side"
       "move 100%-w-15, tag:float_side"
       "size 30% 93%, tag:float_side"

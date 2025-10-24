@@ -6,6 +6,6 @@
     # "uwsm app -- thunar --daemon"
     # "uwsm app -- obsidian"
     # "uwsm app -- thunderbird"
-    "gsettings set org.gnome.desktop.interface gtk-enabled-primary-paste false"
+    # "gsettings set org.gnome.desktop.interface gtk-enabled-primary-paste false"
   ];
 }

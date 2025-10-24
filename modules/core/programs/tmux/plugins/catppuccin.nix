@@ -13,8 +13,8 @@
 
       set -g window-status-separator ""
       set -g status-left-length 0
-      # set -g status-left "#[fg=#{@thm_fg} bold]TMUX (#S) "
-      set -g status-left "#[fg=#{@thm_fg} bold]#H (#S) "
+      # set -g status-left "#[fg=#{@thm_fg} bold]#H (#S) "
+      set -g status-left "#[fg=#{@thm_fg} bold](#S) "
       set -ga status-left "#{?client_prefix,#[fg=#{@thm_red} bold]PREFIX ,#{?#{==:#{pane_mode},copy-mode},#[fg=#{@thm_yellow} bold]COPY ,#[fg=#{@thm_green} bold]NORMAL }}"
 
       ### Right Status
@@ -53,6 +53,10 @@
       set -g window-status-current-format " #I#{?#{!=:#{window_name},Window},: #W,} "
       set -g window-status-current-style "bg=#{@thm_bg},fg=#{@thm_lavender},bold"
       # set -g window-status-current-style "bg=#{@thm_lavender},fg=#{@thm_bg},bold"
+
+      # https://github.com/catppuccin/tmux/issues/192#issuecomment-2255515681
+      # set -g status 2
+      # set -g status-format[1] ""
     '';
   };
 }

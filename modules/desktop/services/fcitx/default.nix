@@ -6,7 +6,7 @@
 }: let
   inherit (config.lib.stylix.colors.withHashtag) base01 base02 base05;
   cfg = config.services'.fcitx;
-  font = "Noto Sans CJK JP 16";
+  font = "Noto Sans CJK JP 14";
   themeName = "base16";
 in {
   options.services'.fcitx.enable = lib.mkEnableOption {};
@@ -26,7 +26,6 @@ in {
 
     hm'.home.sessionVariables = {
       QT_IM_MODULE = "fcitx";
-      # GTK_IM_MODULE = "fcitx";
       XMODIFIERS = "@im=fcitx";
       SDL_IM_MODULE = "fcitx";
       GLFW_IM_MODULE = "ibus";

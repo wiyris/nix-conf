@@ -1,6 +1,6 @@
 * {
-  // background:       #1e1e2eCC;
-  background:       #1e1e2e80;
+  background:       #1e1e2eCC;
+  // background:       #1e1e2e80;
   foreground:       #cdd6f4FF;
   accent:           #b4befe69;
   background-tb:    #45475aFF;

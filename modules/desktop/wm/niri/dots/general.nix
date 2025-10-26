@@ -29,22 +29,22 @@ in {
 
     layout = {background-color = "transparent";};
 
-    cursor = {
-      size = 32;
-      theme = "catppuccin-mocha-dark-cursors";
-    };
+    # cursor = {
+    #   size = 32;
+    #   theme = "catppuccin-mocha-dark-cursors";
+    # };
 
     layout = {
       border.enable = false;
       focus-ring = {
-        enable = true;
+        enable = false;
         width = 2;
-        # active.color = "${base07}";
-        active.gradient = {
-          from = "#f5c2e7ee";
-          to = "#eba0acaa";
-          angle = 45;
-        };
+        active.color = "${base07}";
+        # active.gradient = {
+        #   from = "#f5c2e7ee";
+        #   to = "#eba0acaa";
+        #   angle = 45;
+        # };
         inactive.color = "${base00}";
       };
 
@@ -61,7 +61,7 @@ in {
 
       default-column-width = {proportion = 0.5;};
 
-      gaps = 14;
+      gaps = 20;
 
       struts = {
         left = 5;

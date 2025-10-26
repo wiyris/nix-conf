@@ -49,10 +49,20 @@ in {
     "Mod+H".action = focus-workspace "iroiro";
     "Mod+P".action = focus-workspace "media";
     "Mod+D".action = focus-workspace "iroiro2";
-    # "Mod+Semicolon".action = focus-workspace "steam";
-    # "Mod+U".action = focus-workspace "iroiro3";
-    # "Mod+O".action = focus-workspace "obsidian";
-    # "Mod+Y".action = focus-workspace "msg";
+    "Mod+Semicolon".action = focus-workspace "steam";
+    "Mod+U".action = focus-workspace "iroiro3";
+    "Mod+O".action = focus-workspace "obsidian";
+    "Mod+Y".action = focus-workspace "msg";
+
+    "Mod+1".action = focus-workspace "browser";
+    "Mod+2".action = focus-workspace "editor";
+    "Mod+3".action = focus-workspace "iroiro";
+    "Mod+4".action = focus-workspace "media";
+    "Mod+5".action = focus-workspace "iroiro2";
+    "Mod+6".action = focus-workspace "steam";
+    "Mod+7".action = focus-workspace "iroiro3";
+    "Mod+8".action = focus-workspace "obsidian";
+    "Mod+9".action = focus-workspace "msg";
 
     "Mod+Comma".action = focus-column-left;
     "Mod+A".action = focus-window-or-workspace-down;

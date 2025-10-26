@@ -15,31 +15,31 @@ let
     "5" = {
       name = "iroiro2";
     };
-    #   "6" = {
-    #     name = "steam";
-    #   };
-    #   "7" = {
-    #     name = "iroiro3";
-    #   };
-    #   "8" = {
-    #     name = "obsidian";
-    #   };
-    #   "9" = {
-    #     name = "msg";
-    #   };
+    "6" = {
+      name = "steam";
+    };
+    "7" = {
+      name = "iroiro3";
+    };
+    "8" = {
+      name = "obsidian";
+    };
+    "9" = {
+      name = "msg";
+    };
   };
   windowRules = [
     {
       geometry-corner-radius = let
-        radius = 0.0;
+        radius = 14.0;
       in {
         bottom-left = radius;
         bottom-right = radius;
         top-left = radius;
         top-right = radius;
       };
-      clip-to-geometry = false;
-      draw-border-with-background = true;
+      clip-to-geometry = true;
+      draw-border-with-background = false;
       open-maximized = true;
     }
     # {

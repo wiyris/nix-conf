@@ -3,46 +3,43 @@
     bind = [
       # Apps
       "$mainMod, Return, exec, uwsm-app -- $terminal"
-      "$mainMod, space, exec, uwsm-app -- $terminal"
-      # "$mainMod, BackSpace, exec, uwsm-app -- $terminal -e nvim"
+      "$mainMod, Space, exec, uwsm-app -- $terminal"
+      "$mainMod, Backspace, exec, uwsm-app -- $editor"
       "$mainMod, J, exec, uwsm app -- $browser"
+      "$mainMod SHIFT, J, exec, uwsm app -- chromium"
+      "$mainMod SHIFT, L, exec, uwsm app -- legcord"
+      "$mainMod SHIFT, X, exec, uwsm app -- thunderbird"
       "$mainMod, M, exec, uwsm-app -- $explorer"
-      "$mainMod Shift, M, exec, uwsm-app -- thunderbird"
-      "$mainMod Shift, V, exec, uwsm-app -- vesktop"
 
       # Bar
       "$mainMod SHIFT, PERIOD, exec, $bar-reload"
       "$mainMod CTRL, PERIOD, exec, $bar-toggle"
 
-      # Performace mode
-      "$mainMod SHIFT, G, exec, perf"
-
-      # Rofi
-      # "$mainMod, T, exec, $launcher"
-      "$mainMod, T, exec, tofi-launcher --uwsm"
-      "$mainMod, H, exec, pkill rofi || cliphist list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy"
-      # "$mainMod, Escape, exec, pkill rofi || uwsm-app -- powermenu"
+      # Launcher
+      "$mainMod, S, exec, $launcher"
+      "$mainMod, K, exec, $clipboard"
+      ", Print, exec, $screenshot"
       "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
-      ", Print, exec, pkill rofi || uwsm-app -- screenshot"
 
       # Misc
+      "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
-      "$mainMod SHIFT, H, fullscreen"
-      "$mainMod, S, togglefloating"
-      "$mainMod SHIFT, S, exec, hyprctl dispatch centerwindow 1"
+      "$mainMod SHIFT, B, fullscreen"
+      "$mainMod, V, togglefloating"
+      "$mainMod SHIFT, V, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, PERIOD, cyclenext"
       # "$mainMod, U, togglesplit"
       # "$mainMod, semicolon, pseudo"
 
       # Group Control
-      "$mainMod, B, togglegroup"
-      "$mainMod CTRL, B, lockactivegroup, toggle"
+      "$mainMod, C, togglegroup"
+      "$mainMod CTRL, C, lockactivegroup, toggle"
       "ALT, TAB, changegroupactive"
 
       # Set sticky
       # "$mainMod, B, pin"
-      "$mainMod, C, cyclenext"
+      # "$mainMod, C, cyclenext"
 
       # Moving focus
       "$mainMod, COMMA, movefocus, l"
@@ -61,40 +58,49 @@
       "$mainMod SHIFT, e,      swapwindow, u"
       "$mainMod SHIFT, i,      swapwindow, r"
 
-      "$mainMod, F, workspace, 1"
-      "$mainMod, P, workspace, 2"
-      "$mainMod, D, workspace, 3"
-      "$mainMod, L, workspace, 4"
-      "$mainMod, X, workspace, 5"
+      "$mainMod, N, workspace, 1"
+      "$mainMod, T, workspace, 2"
+      "$mainMod, H, workspace, 3"
+      "$mainMod, P, workspace, 4"
+      "$mainMod, D, workspace, 5"
+      # "$mainMod, L, workspace, 6"
+      # "$mainMod, W, workspace, 7"
+      # "$mainMod, G, workspace, 8"
+      # "$mainMod, M, workspace, 9"
       "$mainMod, SEMICOLON, workspace, 6"
       "$mainMod, U, workspace, 7"
       "$mainMod, O, workspace, 8"
       "$mainMod, Y, workspace, 9"
-      # "$mainMod, B, workspace, 10"
 
       # Moving windows to workspaces
-      "$mainMod SHIFT, F, movetoworkspace, 1"
-      "$mainMod SHIFT, P, movetoworkspace, 2"
-      "$mainMod SHIFT, D, movetoworkspace, 3"
-      "$mainMod SHIFT, L, movetoworkspace, 4"
-      "$mainMod SHIFT, X, movetoworkspace, 5"
+      "$mainMod SHIFT, N, movetoworkspace, 1"
+      "$mainMod SHIFT, T, movetoworkspace, 2"
+      "$mainMod SHIFT, H, movetoworkspace, 3"
+      "$mainMod SHIFT, P, movetoworkspace, 4"
+      "$mainMod SHIFT, D, movetoworkspace, 5"
+      # "$mainMod SHIFT, L, movetoworkspace, 6"
+      # "$mainMod SHIFT, W, movetoworkspace, 7"
+      # "$mainMod SHIFT, G, movetoworkspace, 8"
+      # "$mainMod SHIFT, M, movetoworkspace, 9"
       "$mainMod SHIFT, SEMICOLON, movetoworkspace, 6"
       "$mainMod SHIFT, U, movetoworkspace, 7"
       "$mainMod SHIFT, O, movetoworkspace, 8"
       "$mainMod SHIFT, Y, movetoworkspace, 9"
-      # "$mainMod SHIFT, B, movetoworkspace, 10"
 
       # Moving windows to workspaces (silent)
-      "$mainMod ALT, F, movetoworkspacesilent, 1"
-      "$mainMod ALT, P, movetoworkspacesilent, 2"
-      "$mainMod ALT, D, movetoworkspacesilent, 3"
-      "$mainMod ALT, L, movetoworkspacesilent, 4"
-      "$mainMod ALT, X, movetoworkspacesilent, 5"
+      "$mainMod ALT, N, movetoworkspacesilent, 1"
+      "$mainMod ALT, T, movetoworkspacesilent, 2"
+      "$mainMod ALT, H, movetoworkspacesilent, 3"
+      "$mainMod ALT, P, movetoworkspacesilent, 4"
+      "$mainMod ALT, D, movetoworkspacesilent, 5"
+      # "$mainMod ALT, L, movetoworkspacesilent, 6"
+      # "$mainMod ALT, W, movetoworkspacesilent, 7"
+      # "$mainMod ALT, G, movetoworkspacesilent, 8"
+      # "$mainMod ALT, M, movetoworkspacesilent, 9"
       "$mainMod ALT, SEMICOLON, movetoworkspacesilent, 6"
       "$mainMod ALT, U, movetoworkspacesilent, 7"
       "$mainMod ALT, O, movetoworkspacesilent, 8"
       "$mainMod ALT, Y, movetoworkspacesilent, 9"
-      # "$mainMod ALT, B, movetoworkspacesilent, 10"
 
       # Switching workspaces
       "$mainMod, 1, workspace, 1"
@@ -140,26 +146,25 @@
       # "$mainMod CTRL, e,       resizeactive,  0 -60"
       # "$mainMod CTRL, i,       resizeactive,  40 0"
       "$mainMod, Minus,      resizeactive, -40 0"
-      "$mainMod, Periop,     resizeactive,  0  60"
+      "$mainMod, Period,     resizeactive,  0  60"
       "$mainMod, APOSTROPHE, resizeactive,  0 -60"
       "$mainMod, Equal,      resizeactive,  40 0"
 
-      # Moving floating windows             X  Y
-      "$mainMod CTRL, COMMA,   moveactive, -40 0"
-      "$mainMod CTRL, a,       moveactive,  0  60"
-      "$mainMod CTRL, e,       moveactive,  0 -60"
-      "$mainMod CTRL, i,       moveactive,  40 0"
+      # Moving floating windows       X  Y
+      "$mainMod, Left,   moveactive, -40 0"
+      "$mainMod, Down,     moveactive,  0  60"
+      "$mainMod, Up,  moveactive,  0 -60"
+      "$mainMod, Right,   moveactive,  40 0"
 
       # Switching workspaces
       # "$mainMod, mouse_down, workspace, m-1"
       # "$mainMod, mouse_up, workspace, m+1"
       # "$mainMod CTRL, A, workspace, m-1"
       # "$mainMod CTRL, E, workspace, m+1"
-      "$mainMod, Down, workspace, m-1"
-      "$mainMod, Up, workspace, m+1"
+      # "$mainMod, Down, workspace, m-1"
+      # "$mainMod, Up, workspace, m+1"
     ];
 
-    # Laptop multimedia keys for volume and LCD brightness
     bindel = [
       ", XF86AudioRaiseVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ", XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
@@ -179,5 +184,9 @@
       "SUPER, mouse:272, movewindow"
       "SUPER, mouse:273, resizewindow"
     ];
+
+    # bindn = [
+    #   ", mouse:274, exec, wl-copy -pc" # disable primary
+    # ];
   };
 }

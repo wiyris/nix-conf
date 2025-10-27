@@ -9,6 +9,8 @@ in {
   options.programs'.extraPackages.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm'.home.packages = with pkgs; [
+      foot
+
       ## cli/tui
       # cowsay
       # fortune

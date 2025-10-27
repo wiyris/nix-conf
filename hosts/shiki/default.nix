@@ -74,7 +74,7 @@ in {
     # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
-    # gaming'.pipewireLowLatency.enable = true;
+    gaming'.pipewireLowLatency.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
@@ -97,10 +97,10 @@ in {
     programs'.rofi.enable = true;
     # programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
-    # programs'.tray-tui.enable = true;
+    programs'.tray-tui.enable = true;
 
     ## terminal emulator
-    programs'.foot.enable = true;
+    # programs'.foot.enable = true;
     programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
@@ -134,14 +134,14 @@ in {
     # services'.dwlb.enable = true;
     services'.fcitx.enable = true;
     services'.hypridle.enable = true;
-    # services'.keyd.enable = true;
+    services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
     # services'.stash.enable = true;
     services'.swayosd.enable = true;
-    # services'.swww.enable = true;
+    services'.swww.enable = true;
     services'.waybar.enable = true;
     services'.wl-clip-persist.enable = true;
 

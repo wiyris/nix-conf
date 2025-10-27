@@ -18,7 +18,7 @@ in {
         gtk-xft-hintstyle = "hintfull";
         gtk-xft-rgba = "rgb";
         gtk-recent-files-enabled = false;
-        gtk-enable-primary-paste = false;
+        # gtk-enable-primary-paste = false;
       };
 
       iconTheme = {

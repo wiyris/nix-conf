@@ -17,7 +17,7 @@ in {
         home.sessionVariables.TERMINAL = "kitty";
         programs.kitty = {
           enable = true;
-          shellIntegration.enableFishIntegration = lib.mkIf config.programs.fish.enable true;
+          shellIntegration.enableFishIntegration = true;
           enableGitIntegration = true;
           settings = {
             enable_audio_bell = false;

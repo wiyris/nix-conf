@@ -11,7 +11,7 @@ in {
       imports = [./dots/binds.nix];
       programs.zellij = {
         enable = true;
-        # enableFishIntegration = lib.mkIf config.programs.fish.enable true;
+        # enableFishIntegration = true;
         themes.stylix.themes.default.frame_selected.base = lib.mkForce "#f5c2e7";
       };
       programs.fish.shellAbbrs = {

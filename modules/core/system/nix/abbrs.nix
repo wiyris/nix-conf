@@ -5,7 +5,7 @@
 }: let
   inherit (config.globals) configDirectory;
 in {
-  hm'.programs.fish.shellAbbrs = lib.mkIf config.programs.fish.enable {
+  hm'.programs.fish.shellAbbrs = {
     nf = "nix flake";
     nfc = "nix flake check";
     nfu = "nix flake update";

@@ -36,7 +36,6 @@ in {
       home = {
         inherit sessionVariables;
         packages = with pkgs; [
-          ## cli/tui
           hyprshot
           wev
           wl-clipboard-rs

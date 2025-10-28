@@ -97,7 +97,7 @@ in {
     # laptop-specific config
     laptop.enable = true; # enable laptop modules
     services.power-profiles-daemon.enable = true;
-    environment.packages = with pkgs; [
+    environment.systemPackages = with pkgs; [
       brightnessctl
     ];
 

@@ -26,6 +26,9 @@ in {
       "w+e" = "q";
       "e+r" = "z";
       "d+f" = "esc";
+      "e+d" = "`";
+      "r+f" = "S-backslash"; # |
+      "u+j" = "S-6"; # ^
       # "a+d" = "C-space"; # toggle fcitx
       "j+k" = "S-;"; # :
       # "o+p" = "S-2"; # @

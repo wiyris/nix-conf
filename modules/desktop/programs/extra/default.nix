@@ -25,7 +25,7 @@ in {
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      # easytag
+      easytag
       gimp3
       # gpu-screen-recorder-gtk
       grayjay
@@ -39,13 +39,13 @@ in {
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      # puddletag
+      puddletag
       # qbittorrent
       vlc
 
       ## electron
       legcord
-      # vesktop
+      vesktop
 
       ## SDK
       # vpkedit

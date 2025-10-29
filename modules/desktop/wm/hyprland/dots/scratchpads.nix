@@ -19,8 +19,7 @@ in {
   wayland.windowManager.hyprland.settings = {
     bind =
       [
-        # "$mainMod, APOSTROPHE, exec, hyprland-scratchpad --toggle"
-        # "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-localhost__-Default 'chromium --app=http:localhost:8080'"
+        "$mainMod, X, exec, hyprland-scratchpad --toggle"
         "$mainMod, G, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-kagi.com__assistant-Default 'chromium --app=https://kagi.com/assistant'"
         "$mainMod, W, exec, hyprland-scratchpad --raise-or-run-uwsm chrome-translate.kagi.com__-Default 'chromium --app=https://translate.kagi.com'"
         "$mainMod, L, exec, hyprland-scratchpad --raise-or-run-uwsm com/xiaoyifang/goldendict-ng.https://github. goldendict"
@@ -33,6 +32,7 @@ in {
       ]
       ++ lib.optionals osConfig.programs'.kitty.isDefault [
         "$mainMod, F, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity}'"
+        "$mainMod CTRL, F, exec, hyprland-scratchpad --raise-or-run-uwsm kitty-scratch 'kitty --class kitty-scratch --override background_opacity=${opacity} -e tray-tui'"
       ];
 
     windowrulev2 = [

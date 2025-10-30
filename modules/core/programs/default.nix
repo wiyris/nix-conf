@@ -13,7 +13,6 @@
     killall
     lsof # print port process
     p7zip
-    pinentry
     unar
     unzip
     vim

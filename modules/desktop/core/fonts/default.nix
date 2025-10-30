@@ -14,8 +14,8 @@ in {
         noto-fonts
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
-        noto-fonts-extra
-        noto-fonts-emoji
+        # noto-fonts-color-emoji
+        noto-fonts-monochrome-emoji
 
         nerd-fonts.noto
         nerd-fonts.jetbrains-mono

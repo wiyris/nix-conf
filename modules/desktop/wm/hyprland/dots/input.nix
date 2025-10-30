@@ -18,7 +18,7 @@
     device = [
       {
         name = "tpps/2-elan-trackpoint";
-        sensitivity = -0.69;
+        sensitivity = -0.8;
         accel_profile = "adaptive";
       }
       {

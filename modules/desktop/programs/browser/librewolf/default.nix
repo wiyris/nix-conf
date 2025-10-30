@@ -8,13 +8,13 @@
 in {
   options.programs'.librewolf.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       stylix.targets.librewolf.profileNames = ["${userName}"];
       programs.librewolf = {
         enable = true;
-        policies = import ../share/policies;
+        policies = import ../share/policies.nix;
         profiles.${userName} = {
-          search = import ../share/search;
+          search = import ../share/search.nix;
         };
       };
     };

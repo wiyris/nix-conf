@@ -1,11 +1,11 @@
 let
-  holdtime = 250;
+  holdtime = 200;
   taptime = 175;
 in {
   ids = ["0001:0001"]; # internal keyboard
   settings = {
     global = {
-      "chord_timeout" = "40";
+      "chord_timeout" = "35";
       "default_layout" = "default";
     };
     "default:layout" = {

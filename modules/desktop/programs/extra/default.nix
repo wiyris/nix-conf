@@ -8,6 +8,7 @@
 in {
   options.programs'.extraPackages.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
+    programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
       # cowsay
       # fortune
@@ -25,34 +26,24 @@ in {
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      easytag
+      # easytag
       gimp3
-      # gpu-screen-recorder-gtk
-      grayjay
-      # pwvucontrol # pipewire gui
-      # remmina # vnc client
 
       ## qt
       # calibre
-      # kdePackages.filelight
-      # kdePackages.kalgebra
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      puddletag
+      # puddletag
       # qbittorrent
-      vlc
+      # vlc
 
       ## electron
-      legcord
-      vesktop
-
-      ## SDK
-      # vpkedit
 
       ## other
       # aseprite
       # blender
+      grayjay
     ];
   };
 }

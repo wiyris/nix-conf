@@ -11,7 +11,8 @@
     CLUTTER_BACKEND = "wayland";
     SDL_VIDEODRIVER = "wayland";
     # Force QT to use wayland
-    QT_QPA_PLATFORM = "wayland;xcb";
+    # QT_QPA_PLATFORM = "wayland;xcb";
+    QT_QPA_PLATFORM = "wayland";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     # Force firefox to use wayland
     MOZ_ENABLE_WAYLAND = "1";

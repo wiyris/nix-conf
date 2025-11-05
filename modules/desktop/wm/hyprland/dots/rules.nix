@@ -9,10 +9,12 @@
       "tag +float_md, class:^(mpv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 
+      "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
+      "tag +browser, class:^(.*zen-beta.*)$"
+
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
-      "workspace 4, class:^(FreeTube)$"
-      "workspace 5 silent, class:^(.*steam_app.*)$|(.*gamescope.*)$"
+      "workspace 5 silent, tag:game"
       "workspace 6 silent, class:^([Ss]team)$"
       "workspace 6 silent, title:^([Ss]team)$"
       "workspace 7 silent, class:^(spotify)$"
@@ -20,16 +22,18 @@
       "workspace 9 silent, class:^(thunderbird)$"
       "workspace 9 silent, class:^(vesktop)$|^(legcord)$"
 
-      # Prevent suspend when a fullscreen app is open
-      # "idleinhibit fullscreen, class:^(*)$"
-      # "idleinhibit fullscreen, title:^(*)$"
-      # "idleinhibit fullscreen, fullscreen:1"
+      "immediate, tag:game"
+      "noblur, tag:game"
+      "norounding, tag:game"
+      "norounding, class:^([Ss]team)$"
 
-      # Tearing
-      "immediate, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
-
-      "nodim, class:^(.*zen-beta.*)$|^(.*steam.*)$"
+      "nodim, tag:browser"
       "opacity 1.0 1.0 override, class:^(.*zen-beta.*)$|^(.*steam.*)$"
+
+      # Prevent suspend when a fullscreen app is open
+      "idleinhibit fullscreen, class:^(*)$"
+      "idleinhibit fullscreen, title:^(*)$"
+      "idleinhibit fullscreen, fullscreen:1"
     ];
 
     layerrule = [

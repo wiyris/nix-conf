@@ -12,20 +12,19 @@ in {
 
     hardware.graphics = {
       enable = true;
-      # enable32Bit = true;
+      enable32Bit = true;
       extraPackages = with pkgs; [
         libvdpau-va-gl # VA-API to VDPAU wrapper
-        vaapiVdpau # VDPAU to VA-API wrapper
+        libva-vdpau-driver # VDPAU to VA-API wrapper
       ];
-      # extraPackages32 = with pkgs.driversi686Linux; [
-      #   mesa
-      # ];
+      extraPackages32 = with pkgs.driversi686Linux; [
+        mesa
+      ];
     };
 
     environment.systemPackages = with pkgs; [
-      # vulkan-tools
-      # vulkan-validation-layers
-
+      vulkan-tools
+      vulkan-validation-layers
       nvtopPackages.amd
       # amdgpu_top
     ];

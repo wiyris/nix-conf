@@ -8,7 +8,7 @@ in {
   options.services'.hypridle.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
     hm' = {
-      systemd.user.services.hypridle.Install.WantedBy = lib.mkForce [];
+      # systemd.user.services.hypridle.Install.WantedBy = lib.mkForce [];
       services.hypridle = {
         enable = true;
         settings = {

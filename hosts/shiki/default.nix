@@ -56,11 +56,11 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    # programs'.tofi.isDefault = true;
+    programs'.tofi.isDefault = true;
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
-    desktop.niri.enable = true;
+    # desktop.niri.enable = true;
 
     ## core
     desktop.fonts.enable = true;
@@ -74,7 +74,7 @@ in {
     # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
-    gaming'.pipewireLowLatency.enable = true;
+    # gaming'.pipewireLowLatency.enable = true;
     gaming'.steam.enable = true;
 
     ## programs
@@ -95,13 +95,13 @@ in {
     # programs'.obs-studio.enable = true;
     # programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
-    # programs'.tofi.enable = true;
+    programs'.tofi.enable = true;
     # programs'.taskwarrior.enable = true;
-    programs'.tray-tui.enable = true;
+    # programs'.tray-tui.enable = true;
 
     ## terminal emulator
-    # programs'.foot.enable = true;
-    programs'.ghostty.enable = true;
+    programs'.foot.enable = true;
+    # programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
     # programs'.wezterm.enable = true;
 
@@ -111,8 +111,8 @@ in {
     # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
     # programs'.mullvad-browser.enable = true;
-    programs'.qutebrowser.enable = true;
-    # programs'.tor-browser.enable = true;
+    # programs'.qutebrowser.enable = true;
+    programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
 
     ## exprorer
@@ -120,12 +120,12 @@ in {
     programs'.thunar.enable = true;
 
     ## media
-    programs'.cava.enable = true;
-    programs'.freetube.enable = true;
+    # programs'.cava.enable = true;
+    # programs'.freetube.enable = true;
     programs'.mpv.enable = true;
-    programs'.pqiv.enable = true;
+    # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    programs'.spotify.enable = true;
+    # programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
@@ -140,7 +140,7 @@ in {
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
     # services'.stash.enable = true;
-    services'.swayosd.enable = true;
+    # services'.swayosd.enable = true;
     services'.swww.enable = true;
     services'.waybar.enable = true;
     services'.wl-clip-persist.enable = true;

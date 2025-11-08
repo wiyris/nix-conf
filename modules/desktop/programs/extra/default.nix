@@ -1,7 +1,7 @@
 {
-  pkgs,
   config,
   lib,
+  pkgs,
   ...
 }: let
   cfg = config.programs'.extraPackages;
@@ -15,34 +15,36 @@ in {
       gowall
       # lolcat
       microfetch
-      # qemu
-      # scdl
+      qemu
+      scdl
       # taskwarrior-tui
       tldr
-      # yt-dlp
+      yt-dlp
 
       ## gtk
       # blanket # play rain, waves, etc sounds
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      # easytag
+      easytag
       gimp3
+      gpu-screen-recorder-gtk
 
       ## qt
       # calibre
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      # puddletag
-      # qbittorrent
-      # vlc
+      puddletag
+      qbittorrent
+      vlc
 
       ## electron
+      legcord
 
       ## other
       # aseprite
-      # blender
+      blender
       grayjay
     ];
   };

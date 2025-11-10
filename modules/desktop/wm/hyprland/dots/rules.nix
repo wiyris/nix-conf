@@ -9,15 +9,18 @@
       "tag +float_md, class:^(mpv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 
-      "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
       "tag +browser, class:^(.*zen-beta.*)$"
+      "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
+      "tag +music, class:^(spotify)$"
+      "tag +music, initialTitle:^(SoundCloud)$"
 
       # Workspace Rules
       # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
       "workspace 5 silent, tag:game"
       "workspace 6 silent, class:^([Ss]team)$"
       "workspace 6 silent, title:^([Ss]team)$"
-      "workspace 7 silent, class:^(spotify)$"
+      # "workspace 7 silent, class:^(spotify)$"
+      "workspace 7 silent, tag:music"
       "workspace 8 silent, class:^(obsidian)$"
       "workspace 9 silent, class:^(thunderbird)$"
       "workspace 9 silent, class:^(vesktop)$|^(legcord)$"

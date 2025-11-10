@@ -15,11 +15,13 @@ in {
       gowall
       # lolcat
       microfetch
-      qemu
       scdl
       # taskwarrior-tui
       tldr
       yt-dlp
+
+      qemu
+      OVMF
 
       ## gtk
       # blanket # play rain, waves, etc sounds

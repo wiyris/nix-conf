@@ -56,7 +56,7 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    programs'.tofi.isDefault = true;
+    # programs'.tofi.isDefault = true;
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
@@ -109,9 +109,9 @@ in {
     programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
-    # programs'.librewolf.enable = true;
-    # programs'.mullvad-browser.enable = true;
-    # programs'.qutebrowser.enable = true;
+    programs'.librewolf.enable = true;
+    programs'.mullvad-browser.enable = true;
+    programs'.qutebrowser.enable = true;
     programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
 
@@ -121,7 +121,7 @@ in {
 
     ## media
     # programs'.cava.enable = true;
-    # programs'.freetube.enable = true;
+    programs'.freetube.enable = true;
     programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;

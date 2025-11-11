@@ -5,7 +5,7 @@ in {
   ids = ["0001:0001"]; # internal keyboard
   settings = {
     global = {
-      "chord_timeout" = "35";
+      "chord_timeout" = "25";
       "default_layout" = "default";
     };
     "default:layout" = {

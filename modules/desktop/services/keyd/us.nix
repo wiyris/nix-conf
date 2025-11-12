@@ -11,6 +11,7 @@ in {
     "minimal:layout" = {
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
       leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+      space = "overloadt(extend, space, ${toString taptime})";
 
       "1+2" = "q";
       "2+3" = "z";

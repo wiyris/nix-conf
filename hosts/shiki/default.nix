@@ -24,9 +24,6 @@ in {
     security'.doas.enable = true;
     stylix'.enable = true;
 
-    # Services
-    # services'.hiki-mounts.enable = true;
-
     # cli
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
@@ -87,11 +84,11 @@ in {
     programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    # programs.kdeconnect.enable = true;
     # programs'.aerc.enable = true;
     # programs'.anki.enable = true;
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
+    programs'.qemu.enable = true;
     # programs'.obs-studio.enable = true;
     # programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
@@ -109,10 +106,10 @@ in {
     programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.schizofox.enable = true;
-    programs'.librewolf.enable = true;
-    programs'.mullvad-browser.enable = true;
-    programs'.qutebrowser.enable = true;
-    programs'.tor-browser.enable = true;
+    # programs'.librewolf.enable = true;
+    # programs'.mullvad-browser.enable = true;
+    # programs'.qutebrowser.enable = true;
+    # programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
 
     ## exprorer
@@ -120,13 +117,13 @@ in {
     programs'.thunar.enable = true;
 
     ## media
-    # programs'.cava.enable = true;
+    programs'.cava.enable = true;
     programs'.freetube.enable = true;
     programs'.mpv.enable = true;
-    # programs'.pqiv.enable = true;
+    programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    # programs'.spotify.enable = true;
-    # programs'.zathura.enable = true;
+    programs'.spotify.enable = true;
+    programs'.zathura.enable = true;
 
     ## services
     services'.cliphist.enable = true;

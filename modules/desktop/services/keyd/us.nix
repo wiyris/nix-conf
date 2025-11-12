@@ -5,8 +5,8 @@ in {
   ids = ["0001:0001"]; # internal keyboard
   settings = {
     global = {
-      "chord_timeout" = "35";
-      "default_layout" = "minimal";
+      "chord_timeout" = "30";
+      "default_layout" = "default";
     };
     "minimal:layout" = {
       capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";

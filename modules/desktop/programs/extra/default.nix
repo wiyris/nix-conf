@@ -20,9 +20,6 @@ in {
       tldr
       yt-dlp
 
-      qemu
-      OVMF
-
       ## gtk
       # blanket # play rain, waves, etc sounds
       # d-spy # dbus gui
@@ -42,11 +39,11 @@ in {
       vlc
 
       ## electron
-      legcord
+      # legcord
 
       ## other
       # aseprite
-      blender
+      # blender
       grayjay
     ];
   };

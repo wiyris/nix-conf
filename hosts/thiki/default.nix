@@ -21,7 +21,7 @@ in {
 
     # Custom options
     hardware'.amdgpu.enable = true;
-    hardware'.bluetooth.enable = true;
+    # hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     networking'.iwd.enable = true;
     networking'.mullvad.enable = true;
@@ -36,7 +36,7 @@ in {
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.eza.enable = true;
-    programs'.fastfetch.enable = true;
+    # programs'.fastfetch.enable = true;
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     # programs'.gtrash.enable = true;
@@ -59,7 +59,7 @@ in {
     desktop.wayland.enable = true;
 
     ## gaming
-    gaming'.gamemode.enable = true;
+    # gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = true;
@@ -67,22 +67,22 @@ in {
 
     ## programs
     ### default programs
-    programs'.kitty.isDefault = true; # foot, ghostty, kitty
+    programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.thunar.isDefault = true; # thunar, dolphin
     programs'.tofi.isDefault = true;
 
-    programs'.goldendict.enable = true;
+    # programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     programs'.tofi.enable = true;
 
     programs'.foot.enable = true;
-    programs'.kitty.enable = true;
+    # programs'.kitty.enable = true;
     programs'.chromium.enable = true;
     programs'.zen-browser.enable = true;
-    programs'.thunar.enable = true;
-    programs'.cava.enable = true;
-    programs'.mpv.enable = true;
+    # programs'.thunar.enable = true;
+    # programs'.cava.enable = true;
+    # programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.zathura.enable = true;
 

@@ -8,7 +8,10 @@
 in {
   options.programs'.qemu.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = [pkgs.qemu];
+    environment.systemPackages = with pkgs; [
+      qemu
+      OVMF
+    ];
     systemd.tmpfiles.rules = ["L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware"];
   };
 }

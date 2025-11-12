@@ -5,8 +5,19 @@ in {
   ids = ["0001:0001"]; # internal keyboard
   settings = {
     global = {
-      "chord_timeout" = "25";
-      "default_layout" = "default";
+      "chord_timeout" = "35";
+      "default_layout" = "minimal";
+    };
+    "minimal:layout" = {
+      capslock = "lettermod(control, escape, ${toString holdtime}, ${toString taptime})";
+      leftalt = "lettermod(alt, r, ${toString holdtime}, ${toString taptime})";
+
+      "1+2" = "q";
+      "2+3" = "z";
+      "e+r" = "esc";
+
+      "s+d" = "C-insert"; # copy
+      "d+f" = "S-insert"; # paste
     };
     "default:layout" = {
       a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";

@@ -18,7 +18,7 @@ in {
 
     # Custom options
     hardware'.amdgpu.enable = true;
-    # hardware'.bluetooth.enable = true;
+    hardware'.bluetooth.enable = true;
     networking'.core.enable = true;
     networking'.mullvad.enable = true;
     security'.doas.enable = true;
@@ -29,7 +29,6 @@ in {
     programs'.fish.isDefault = true;
 
     programs'.aliases.enable = true;
-    # programs'.aria2.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.eza.enable = true;
@@ -37,17 +36,13 @@ in {
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    # programs'.helix.enable = true;
     programs'.htop.enable = true;
     programs'.lazygit.enable = true;
-    # programs'.nushell.enable = true;
-    # programs'.nixvim.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;
     programs'.tmux.enable = true;
     programs'.yazi.enable = true;
-    # programs'.zellij.enable = true;
     programs'.zoxide.enable = true;
 
     # DESKTOP
@@ -75,7 +70,6 @@ in {
     gaming'.steam.enable = true;
 
     ## programs
-    # services'.homepage-dashboard.enable = true;
     programs'.extraPackages.enable = true;
 
     ### default programs
@@ -84,32 +78,24 @@ in {
     programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    # programs'.aerc.enable = true;
-    # programs'.anki.enable = true;
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
     programs'.qemu.enable = true;
-    # programs'.obs-studio.enable = true;
-    # programs'.obsidian.enable = true;
     programs'.rofi.enable = true;
     programs'.tofi.enable = true;
-    # programs'.taskwarrior.enable = true;
     # programs'.tray-tui.enable = true;
 
     ## terminal emulator
     programs'.foot.enable = true;
     # programs'.ghostty.enable = true;
     programs'.kitty.enable = true;
-    # programs'.wezterm.enable = true;
 
     ## browser
     programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
-    # programs'.schizofox.enable = true;
     # programs'.librewolf.enable = true;
     # programs'.mullvad-browser.enable = true;
     # programs'.qutebrowser.enable = true;
-    # programs'.tor-browser.enable = true;
     programs'.zen-browser.enable = true;
 
     ## exprorer
@@ -120,9 +106,9 @@ in {
     programs'.cava.enable = true;
     programs'.freetube.enable = true;
     programs'.mpv.enable = true;
-    programs'.pqiv.enable = true;
+    # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    programs'.spotify.enable = true;
+    # programs'.spotify.enable = true;
     programs'.zathura.enable = true;
 
     ## services

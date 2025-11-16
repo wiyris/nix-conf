@@ -1,7 +1,8 @@
 {
+  config,
   inputs,
   lib,
-  config,
+  pkgs,
   ...
 }: let
   betterfox = inputs.betterfox;
@@ -27,15 +28,16 @@ in {
       };
     })
     (lib.mkIf cfg.enable {
-      hm'= {
+      hm' = {
         imports = [inputs.zen-browser.homeModules.beta];
-        # stylix.targets.zen-browser.profileNames = [];
+        # stylix.targets.zen-browser.profileNames = [userName];
         stylix.targets.zen-browser.enable = false;
 
         home.file.".zen/${userName}/chrome" = catppuccin;
 
         programs.zen-browser = {
           enable = true;
+          # nativeMessagingHosts = [pkgs.firefoxpwa];
           policies = import ../share/policies.nix;
           profiles.${userName} = {
             isDefault = true;

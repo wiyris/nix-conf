@@ -10,6 +10,8 @@ in {
   config = lib.mkIf cfg.enable {
     programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
+      OVMF
+
       # cowsay
       # fortune
       gowall
@@ -39,7 +41,9 @@ in {
       vlc
 
       ## electron
-      # legcord
+      legcord
+      vesktop
+      # dissent
 
       ## other
       # aseprite

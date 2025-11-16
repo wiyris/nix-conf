@@ -8,7 +8,7 @@
 in {
   options.programs'.qemu.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
+    hm'.home.packages = with pkgs; [
       qemu
       OVMF
     ];

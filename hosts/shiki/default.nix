@@ -36,8 +36,8 @@ in {
     programs'.fzf.enable = true;
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
-    programs'.htop.enable = true;
     programs'.lazygit.enable = true;
+    programs'.nushell.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;

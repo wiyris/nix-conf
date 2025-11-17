@@ -50,7 +50,7 @@ in {
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
     programs'.tofi.isDefault = true;
 
-    # desktop.dwl.enable = true;
+    desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 

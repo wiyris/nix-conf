@@ -23,6 +23,7 @@ static int log_level = WLR_ERROR;
 /* Autostart */
 static const char *const autostart[] = {
         "uwsm", "finalize", "XDG_CURRENT_DESKTOP", "XDG_SESSION_TYPE", "XDG_SESSION_DESKTOP", NULL,
+        "waybar", NULL,
         NULL /* terminate */
 };
 
@@ -57,7 +58,7 @@ static const struct xkb_rule_names xkb_rules = {
 };
 
 static const int repeat_rate = 25;
-static const int repeat_delay = 600;
+static const int repeat_delay = 200;
 
 /* Trackpad */
 static const int tap_to_click = 1;
@@ -112,7 +113,7 @@ static const Key keys[] = {
 	// { MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[1]} },
 	// { MODKEY,                    XKB_KEY_c,          setlayout,      {.v = &layouts[2]} },
 	// { MODKEY,                    XKB_KEY_c,      setlayout,      {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_C,      togglefloating, {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,      togglefloating, {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,         togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_parenright, tag,            {.ui = ~0} },
@@ -130,11 +131,11 @@ static const Key keys[] = {
 	TAGKEYS(          XKB_KEY_7, XKB_KEY_ampersand,                  6),
 	TAGKEYS(          XKB_KEY_8, XKB_KEY_asterisk,                   7),
 	TAGKEYS(          XKB_KEY_9, XKB_KEY_parenleft,                  8),
-	TAGKEYS(          XKB_KEY_f, XKB_KEY_F,                          0),
-	TAGKEYS(          XKB_KEY_p, XKB_KEY_P,                          1),
-	TAGKEYS(          XKB_KEY_d, XKB_KEY_D,                          2),
-	TAGKEYS(          XKB_KEY_l, XKB_KEY_L,                          3),
-	TAGKEYS(          XKB_KEY_x, XKB_KEY_X,                          4),
+	TAGKEYS(          XKB_KEY_n, XKB_KEY_N,                          0),
+	TAGKEYS(          XKB_KEY_t, XKB_KEY_T,                          1),
+	TAGKEYS(          XKB_KEY_h, XKB_KEY_H,                          2),
+	TAGKEYS(          XKB_KEY_p, XKB_KEY_P,                          3),
+	TAGKEYS(          XKB_KEY_d, XKB_KEY_D,                          4),
 	TAGKEYS(          XKB_KEY_semicolon, XKB_KEY_colon,              5),
 	TAGKEYS(          XKB_KEY_u, XKB_KEY_U,                          6),
 	TAGKEYS(          XKB_KEY_o, XKB_KEY_O,                          7),

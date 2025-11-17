@@ -13,8 +13,8 @@
 
     # "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";
     # "col.active_border" = lib.mkForce "rgba(${config.lib.stylix.colors.base07}ee)";
-    "col.active_border" = lib.mkForce "rgba(f5c2e7ee) rgba(eba0acaa) 45deg";
+    # "col.active_border" = lib.mkForce "rgba(f5c2e7ee) rgba(eba0acaa) 45deg";
     # "col.active_border" = lib.mkForce "rgba(f5c2e7aa)";
-    "col.inactive_border" = lib.mkForce "rgba(1e1e2e15)";
+    # "col.inactive_border" = lib.mkForce "rgba(1e1e2e15)";
   };
 }

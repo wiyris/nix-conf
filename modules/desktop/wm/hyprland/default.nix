@@ -43,6 +43,7 @@ in {
             ./dots/misc.nix
             ./dots/rules.nix
             ./dots/scratchpads.nix
+            ./dots/perf.nix
 
             # ./plugins/hyprexpo.nix
           ]

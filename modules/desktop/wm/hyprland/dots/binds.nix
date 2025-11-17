@@ -6,8 +6,8 @@
       "$mainMod, Space, exec, uwsm-app -- $terminal"
       "$mainMod, Backspace, exec, uwsm-app -- $editor"
       "$mainMod, J, exec, uwsm app -- $browser"
-      "$mainMod SHIFT, J, exec, uwsm app -- chromium"
-      "$mainMod SHIFT, L, exec, uwsm app -- legcord"
+      # "$mainMod SHIFT, J, exec, uwsm app -- chromium"
+      # "$mainMod SHIFT, L, exec, uwsm app -- legcord"
       "$mainMod SHIFT, X, exec, uwsm app -- thunderbird"
       "$mainMod, M, exec, uwsm-app -- $explorer"
 
@@ -19,7 +19,7 @@
       "$mainMod, S, exec, $launcher"
       "$mainMod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
-      "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
+      # "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
 
       # Misc
       "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"

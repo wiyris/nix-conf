@@ -6,6 +6,7 @@
       accel_profile = "flat";
       # force_no_accel = true;
 
+      repeat_rate = 35;
       repeat_delay = 200;
 
       touchpad = {

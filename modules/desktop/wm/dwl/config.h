@@ -23,7 +23,7 @@ static int log_level = WLR_ERROR;
 /* Autostart */
 static const char *const autostart[] = {
         "uwsm", "finalize", "XDG_CURRENT_DESKTOP", "XDG_SESSION_TYPE", "XDG_SESSION_DESKTOP", NULL,
-        "waybar", NULL,
+        // "waybar", NULL,
         NULL /* terminate */
 };
 
@@ -97,7 +97,7 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY,                    XKB_KEY_q,          killclient,     {0} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_q,          spawn,          {.v = ustop} },
-	{ MODKEY,                    XKB_KEY_t,          spawn,          {.v = menucmd} },
+	{ MODKEY,                    XKB_KEY_s,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_j,          spawn,          {.v = browser} },
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
 	{ MODKEY,                    XKB_KEY_space,      spawn,          {.v = termcmd} },

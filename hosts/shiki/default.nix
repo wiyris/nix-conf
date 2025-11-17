@@ -48,7 +48,7 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    # programs'.tofi.isDefault = true;
+    programs'.tofi.isDefault = true;
 
     # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
@@ -60,38 +60,37 @@ in {
     desktop.wayland.enable = true;
 
     ## gaming
-    # gaming'.celeste.enable = true;
-    gaming'.gamemode.enable = true;
+    # gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
     # gaming'.pipewireLowLatency.enable = true;
-    gaming'.steam.enable = true;
+    # gaming'.steam.enable = true;
 
     ## programs
-    programs'.extraPackages.enable = true;
+    # programs'.extraPackages.enable = true;
 
     ### default programs
-    programs'.kitty.isDefault = true; # foot, ghostty, kitty
+    programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    programs'.thunar.isDefault = true; # thunar, dolphin
+    # programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    programs'.goldendict.enable = true;
+    # programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
-    programs'.qemu.enable = true;
-    programs'.rofi.enable = true;
+    # programs'.qemu.enable = true;
+    # programs'.rofi.enable = true;
     programs'.tofi.enable = true;
     # programs'.tray-tui.enable = true;
 
     ## terminal emulator
     programs'.foot.enable = true;
     # programs'.ghostty.enable = true;
-    programs'.kitty.enable = true;
+    # programs'.kitty.enable = true;
 
     ## browser
-    programs'.chromium.enable = true;
+    # programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.librewolf.enable = true;
     # programs'.mullvad-browser.enable = true;
@@ -100,31 +99,31 @@ in {
 
     ## exprorer
     # programs'.dolphin.enable = true;
-    programs'.thunar.enable = true;
+    # programs'.thunar.enable = true;
 
     ## media
-    programs'.cava.enable = true;
-    programs'.freetube.enable = true;
-    programs'.mpv.enable = true;
+    # programs'.cava.enable = true;
+    # programs'.freetube.enable = true;
+    # programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
     # programs'.spotify.enable = true;
-    programs'.zathura.enable = true;
+    # programs'.zathura.enable = true;
 
     ## services
     services'.cliphist.enable = true;
     services'.dunst.enable = true;
     # services'.dwlb.enable = true;
-    services'.fcitx.enable = true;
+    # services'.fcitx.enable = true;
     services'.hypridle.enable = true;
-    services'.keyd.enable = true;
+    # services'.keyd.enable = true;
     # services'.mpd.enable = true;
     # services'.mako.enable = true;
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
     # services'.stash.enable = true;
     # services'.swayosd.enable = true;
-    services'.swww.enable = true;
+    # services'.swww.enable = true;
     services'.waybar.enable = true;
     services'.wl-clip-persist.enable = true;
 

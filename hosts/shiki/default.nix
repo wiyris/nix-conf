@@ -50,7 +50,7 @@ in {
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
     programs'.tofi.isDefault = true;
 
-    desktop.dwl.enable = true;
+    # desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 
@@ -69,20 +69,19 @@ in {
     # gaming'.steam.enable = true;
 
     ## programs
-    # programs'.extraPackages.enable = true;
+    programs'.extraPackages.enable = true;
 
     ### default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    # programs'.thunar.isDefault = true; # thunar, dolphin
+    programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
-    # programs'.goldendict.enable = true;
+    programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
-    # programs'.qemu.enable = true;
     # programs'.rofi.enable = true;
     programs'.tofi.enable = true;
-    # programs'.tray-tui.enable = true;
+    programs'.tray-tui.enable = true;
 
     ## terminal emulator
     programs'.foot.enable = true;
@@ -99,7 +98,7 @@ in {
 
     ## exprorer
     # programs'.dolphin.enable = true;
-    # programs'.thunar.enable = true;
+    programs'.thunar.enable = true;
 
     ## media
     # programs'.cava.enable = true;
@@ -114,7 +113,7 @@ in {
     services'.cliphist.enable = true;
     services'.dunst.enable = true;
     services'.dwlb.enable = true;
-    # services'.fcitx.enable = true;
+    services'.fcitx.enable = true;
     services'.hypridle.enable = true;
     # services'.keyd.enable = true;
     # services'.mpd.enable = true;

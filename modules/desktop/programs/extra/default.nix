@@ -10,45 +10,45 @@ in {
   config = lib.mkIf cfg.enable {
     programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
-      OVMF
-
       # cowsay
       # fortune
-      gowall
+      # gowall
       # lolcat
       microfetch
-      scdl
+      # scdl
       # taskwarrior-tui
       tldr
-      yt-dlp
+      # yt-dlp
+
+      qemu
 
       ## gtk
       # blanket # play rain, waves, etc sounds
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      easytag
-      gimp3
-      gpu-screen-recorder-gtk
+      # easytag
+      # gimp3
+      # gpu-screen-recorder-gtk
 
       ## qt
       # calibre
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      puddletag
-      qbittorrent
-      vlc
+      # puddletag
+      # qbittorrent
+      # vlc
 
       ## electron
       legcord
-      vesktop
+      # vesktop
       # dissent
 
       ## other
       # aseprite
       # blender
-      grayjay
+      # grayjay
     ];
   };
 }

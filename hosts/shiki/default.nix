@@ -111,13 +111,13 @@ in {
 
     ## services
     services'.cliphist.enable = true;
-    services'.dunst.enable = true;
-    services'.dwlb.enable = true;
-    services'.fcitx.enable = true;
+    # services'.dunst.enable = true;
+    # services'.dwlb.enable = true;
+    # services'.fcitx.enable = true;
     services'.hypridle.enable = true;
     # services'.keyd.enable = true;
     # services'.mpd.enable = true;
-    # services'.mako.enable = true;
+    services'.mako.enable = true;
     services'.pipewire.enable = true;
     # services'.ollama.enable = true;
     # services'.stash.enable = true;

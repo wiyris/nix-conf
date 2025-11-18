@@ -136,7 +136,7 @@ in {
       loader = {
         systemd-boot.enable = true;
         efi.canTouchEfiVariables = true;
-        timeout = 0;
+        timeout = 4;
       };
       kernelPackages = pkgs.linuxPackages_zen;
       kernelParams = ["video=DP-2:1920x1080@144"];

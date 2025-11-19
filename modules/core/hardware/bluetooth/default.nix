@@ -11,5 +11,9 @@ in {
       enable = true;
       powerOnBoot = true;
     };
+    hm'.programs.fish.shellAbbrs = {
+      bc = "bluetoothctl connect";
+      bd = "bluetoothctl disconnect";
+    };
   };
 }

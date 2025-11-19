@@ -18,9 +18,7 @@ in {
     hm'.home.packages = with pkgs; [
       gamescope
       steamcmd
-      steam-tui
-      mangohud
-      protonup-rs
+      # steam-tui
     ];
   };
 }

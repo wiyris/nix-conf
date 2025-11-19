@@ -20,8 +20,8 @@ in {
     hm' = {
       home.packages = [
         pkgs.rofi
-        pkgs.rofi-calc
-        pkgs.procps # for uptime --pretty
+        # pkgs.rofi-calc
+        # pkgs.procps # for uptime --pretty
 
         powermenu
         screenshot

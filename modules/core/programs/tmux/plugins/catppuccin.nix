@@ -20,7 +20,7 @@
       set -g status-right-length 100
       set -g status-right ""
       # set -ga status-right "#[bg=#{@thm_bg},fg=#{@thm_overlay_0}, none]│"
-      set -ga status-right "#[bg=default,fg=#{@thm_lavender}] 󰭦 %Y-%m-%d 󰅐 %H:%M "
+      # set -ga status-right "#[bg=default,fg=#{@thm_lavender}] 󰭦 %Y-%m-%d 󰅐 %H:%M "
 
       # Run plugin
       run-shell ${pkgs.tmuxPlugins.catppuccin}/share/tmux-plugins/catppuccin/catppuccin.tmux

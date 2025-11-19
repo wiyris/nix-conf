@@ -14,7 +14,7 @@ in {
       imports = [
         ./dots/binds.nix
         ./plugins/catppuccin.nix
-        ./plugins/fingers.nix
+        # ./plugins/fingers.nix
         # ./plugins/toggle-popup.nix
       ];
       programs.tmux = {
@@ -41,9 +41,10 @@ in {
       programs.fzf.tmux.enableShellIntegration = true;
       programs.fish.shellAbbrs = {
         t = "tmux new-session";
-        ta = "tmux attach -t";
+        ta = "tmux attach";
         tl = "tmux list-sessions";
         tk = "tmux kill-session -t";
+        tks = "tmux kill-server";
       };
     };
   };

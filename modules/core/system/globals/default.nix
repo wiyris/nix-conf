@@ -36,6 +36,12 @@
       example = "firefox";
       description = "Default browser";
     };
+    defaultExplorer = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+      example = "thunar";
+      description = "Default explorer";
+    };
   };
   options.laptop.enable = lib.mkEnableOption {};
 }

@@ -20,25 +20,25 @@
     };
     defaultShell = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "bash";
       example = "bash";
       description = "Default Command-line shell";
     };
     defaultTerminal = lib.mkOption {
       type = lib.types.str;
-      default = "";
-      example = "kitty";
+      default = "foot";
+      example = "foot";
       description = "Default Terminal Emulator";
     };
     defaultBrowser = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "firefox";
       example = "firefox";
       description = "Default browser";
     };
     defaultExplorer = lib.mkOption {
       type = lib.types.str;
-      default = "";
+      default = "thunar";
       example = "thunar";
       description = "Default explorer";
     };

@@ -7,17 +7,13 @@
 in {
   options.programs'.zathura.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    hm'= {
-      programs.zathura = {
-        enable = true;
-      };
-      xdg.mimeApps = {
-        defaultApplications = {
-          "application/pdf" = ["org.pwmt.zathura.desktop"];
-        };
-        associations.added = {
-          "application/pdf" = ["org.pwmt.zathura.desktop"];
-        };
+    hm' = {
+      programs.zathura.enable = true;
+      xdg.mimeApps = let
+        zathura = "org.pwmt.zathura.desktop";
+      in {
+        defaultApplications."application/pdf" = [zathura];
+        associations.added."application/pdf" = [zathura];
       };
     };
   };

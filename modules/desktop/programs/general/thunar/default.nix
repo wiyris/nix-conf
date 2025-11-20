@@ -29,9 +29,11 @@ in {
       gvfs.enable = true;
     };
 
-    globals.defaultExplorer = "thunar";
     hm'.xdg = {
-      mimeApps.defaultApplications = {"inode/directory" = ["thunar.desktop"];};
+      mimeApps.defaultApplications = {
+        "inode/directory" = ["thunar.desktop"];
+        "x-scheme-handler/trash" = ["thunar.desktop"];
+      };
       configFile."xfce4/helpers.rc".text =
         # ini
         ''

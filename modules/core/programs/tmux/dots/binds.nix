@@ -56,7 +56,8 @@
       bind -n M-I swap-window -d -t +1
 
       # Toggle Bar
-      bind-key t set -g status
+      # bind-key t set -g status
+      bind-key -n M-b set -g status
     '';
   };
 }

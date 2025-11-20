@@ -17,8 +17,9 @@ in {
         # noto-fonts-color-emoji
         noto-fonts-monochrome-emoji
 
-        nerd-fonts.noto
+        maple-mono.NF
         nerd-fonts.jetbrains-mono
+        nerd-fonts.noto
       ];
       fontconfig = {
         enable = true;

@@ -1,7 +1,0 @@
-keys:
-    &hiki age1hgy6asqpqjqy4ahg8m4y5gy0aunsgf448qst9a66u9g22le7cgmsv26e0k
-creation_rules:
-  - path_regex: secrets/secrets.yaml$
-    key_groups:
-    - age:
-      - *hiki

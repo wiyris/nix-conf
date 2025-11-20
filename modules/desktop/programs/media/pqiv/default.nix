@@ -1,12 +1,14 @@
 {
-  lib,
   config,
+  lib,
+  pkgs,
   ...
 }: let
   cfg = config.programs'.pqiv;
 in {
   options.programs'.pqiv.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
+    environment.systemPackages = [pkgs.pqiv];
     hm' = {
       programs.pqiv = {
         enable = true;

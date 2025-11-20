@@ -6,7 +6,7 @@
       "float, tag:float_pin"
 
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$|(.*Extension.)$"
-      "tag +float_md, class:^(mpv)$"
+      "tag +float_md, class:^(mpv)$|^(pqiv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 
       "tag +browser, class:^(.*zen-beta.*)$"

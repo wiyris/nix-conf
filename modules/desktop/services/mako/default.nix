@@ -17,7 +17,7 @@ in {
       settings = {
         border-size = 2;
         margin = 10;
-        height = 200;
+        height = 250;
         border-radius = 0;
         default-timeout = 10000;
         "urgency=low" = {

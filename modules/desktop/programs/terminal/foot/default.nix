@@ -15,12 +15,12 @@ in {
     (lib.mkIf cfg.enable {
       hm'.programs.foot = {
         enable = true;
-        # server.enable = true;
+        server.enable = true;
         settings = {
           main = {
             horizontal-letter-offset = 0;
             vertical-letter-offset = 0;
-            pad = "4x4 center";
+            pad = "8x8 center";
             selection-target = "clipboard";
           };
 

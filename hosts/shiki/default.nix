@@ -96,16 +96,14 @@ in {
     # programs'.qutebrowser.enable = true;
     programs'.zen-browser.enable = true;
 
-    ## exprorer
-
     ## media
     # programs'.cava.enable = true;
     # programs'.freetube.enable = true;
     programs'.mpv.enable = true;
-    # programs'.pqiv.enable = true;
+    programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
-    # programs'.spotify.enable = true;
-    # programs'.zathura.enable = true;
+    programs'.spotify.enable = true;
+    programs'.zathura.enable = true;
 
     ## services
     # services'.cliphist.enable = true;

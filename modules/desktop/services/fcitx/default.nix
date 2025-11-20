@@ -11,7 +11,7 @@
 in {
   options.services'.fcitx.enable = lib.mkEnableOption {};
   config = lib.mkIf cfg.enable {
-    systemd.user.services."app-org.fcitx.Fcitx5@autostart".enable = false;
+    # systemd.user.services."app-org.fcitx.Fcitx5@autostart".enable = false;
     i18n.inputMethod = {
       enable = true;
       type = "fcitx5";

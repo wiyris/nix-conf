@@ -48,9 +48,9 @@ in {
     # DESKTOP
     ## window-managers
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    programs'.tofi.isDefault = true;
+    # programs'.tofi.isDefault = true;
 
-    # desktop.dwl.enable = true;
+    desktop.dwl.enable = true;
     desktop.hyprland.enable = true;
     # desktop.niri.enable = true;
 
@@ -60,13 +60,13 @@ in {
     desktop.wayland.enable = true;
 
     ## gaming
-    # gaming'.gamemode.enable = true;
+    gaming'.gamemode.enable = true;
     # gaming'.lutris.enable = true;
     # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
     # gaming'.pipewireLowLatency.enable = true;
-    # gaming'.steam.enable = true;
+    gaming'.steam.enable = true;
 
     ## programs
     programs'.extraPackages.enable = true;
@@ -74,13 +74,13 @@ in {
     ### default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    programs'.thunar.isDefault = true; # thunar, dolphin
 
     ## general
     programs'.goldendict.enable = true;
     programs'.hyprlock.enable = true;
-    # programs'.rofi.enable = true;
+    programs'.rofi.enable = true;
     programs'.tofi.enable = true;
+    programs'.thunar.enable = true;
     programs'.tray-tui.enable = true;
 
     ## terminal emulator
@@ -89,7 +89,7 @@ in {
     # programs'.kitty.enable = true;
 
     ## browser
-    # programs'.chromium.enable = true;
+    programs'.chromium.enable = true;
     # programs'.firefox.enable = true;
     # programs'.librewolf.enable = true;
     # programs'.mullvad-browser.enable = true;
@@ -97,23 +97,21 @@ in {
     programs'.zen-browser.enable = true;
 
     ## exprorer
-    # programs'.dolphin.enable = true;
-    programs'.thunar.enable = true;
 
     ## media
     # programs'.cava.enable = true;
     # programs'.freetube.enable = true;
-    # programs'.mpv.enable = true;
+    programs'.mpv.enable = true;
     # programs'.pqiv.enable = true;
     # programs'.rmpc.enable = true;
     # programs'.spotify.enable = true;
     # programs'.zathura.enable = true;
 
     ## services
-    services'.cliphist.enable = true;
+    # services'.cliphist.enable = true;
     # services'.dunst.enable = true;
-    # services'.dwlb.enable = true;
-    # services'.fcitx.enable = true;
+    services'.dwlb.enable = true;
+    services'.fcitx.enable = true;
     services'.hypridle.enable = true;
     # services'.keyd.enable = true;
     # services'.mpd.enable = true;
@@ -136,7 +134,7 @@ in {
       loader = {
         systemd-boot.enable = true;
         efi.canTouchEfiVariables = true;
-        timeout = 4;
+        timeout = 0;
       };
       kernelPackages = pkgs.linuxPackages_zen;
       kernelParams = ["video=DP-2:1920x1080@144"];

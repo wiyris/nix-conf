@@ -28,7 +28,6 @@ in {
     programs'.fish.enable = true;
     programs'.fish.isDefault = true;
 
-    programs'.aliases.enable = true;
     programs'.bat.enable = true;
     programs'.btop.enable = true;
     programs'.eza.enable = true;
@@ -37,7 +36,6 @@ in {
     programs'.git.enable = true;
     programs'.gtrash.enable = true;
     programs'.lazygit.enable = true;
-    programs'.nushell.enable = true;
     programs'.nvim.enable = true;
     programs'.ripgrep.enable = true;
     programs'.starship.enable = true;
@@ -61,7 +59,7 @@ in {
 
     ## gaming
     gaming'.gamemode.enable = true;
-    # gaming'.lutris.enable = true;
+    gaming'.lutris.enable = true;
     # gaming'.mangohud.enable = true;
     # gaming'.optimize.enable = true;
     # gaming'.osu.enable = false;
@@ -111,7 +109,7 @@ in {
     services'.dwlb.enable = true;
     services'.fcitx.enable = true;
     services'.hypridle.enable = true;
-    # services'.keyd.enable = true;
+    services'.keyd.enable = true;
     # services'.mpd.enable = true;
     services'.mako.enable = true;
     services'.pipewire.enable = true;

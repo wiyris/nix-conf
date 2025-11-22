@@ -15,12 +15,11 @@ in {
       # gowall
       # lolcat
       microfetch
+      qemu
       # scdl
       # taskwarrior-tui
       tldr
       # yt-dlp
-
-      qemu
 
       ## gtk
       # blanket # play rain, waves, etc sounds
@@ -29,7 +28,7 @@ in {
       # easyeffects
       # easytag
       # gimp3
-      # gpu-screen-recorder-gtk
+      gpu-screen-recorder-gtk
 
       ## qt
       # calibre
@@ -38,7 +37,7 @@ in {
       # openshot-qt
       # puddletag
       # qbittorrent
-      # vlc
+      vlc
 
       ## electron
       legcord

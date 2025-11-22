@@ -1,10 +1,12 @@
 {
+  config,
   inputs,
   pkgs,
   ...
-}: {
+}: let
+  inherit (config.globals) configDirectory;
+in {
   imports = [
-    ./nh.nix
     ./substituters.nix
   ];
   environment.systemPackages = with pkgs; [
@@ -23,8 +25,6 @@
     nvd
   ];
 
-  programs.command-not-found.enable = true;
-
   nixpkgs.config = {
     allowBroken = false;
     allowUnfree = true;
@@ -40,4 +40,15 @@
       ];
     };
   };
+
+  programs.nh = {
+    enable = true;
+    flake = "${configDirectory}";
+    clean = {
+      enable = true;
+      extraArgs = "--keep 10";
+    };
+  };
+
+  programs.command-not-found.enable = true;
 }

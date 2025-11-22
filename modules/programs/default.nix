@@ -19,4 +19,18 @@
     wget # download http/ftp
     yq # manipulate YAML
   ];
+
+  environment.shellAliases = {
+    c = "clear";
+    p = "cd -";
+    k = "killall";
+    kn = "killall -9";
+    pa = "ps aux | grep $1";
+    df = "df -h";
+    du = "du -h -d 1";
+    rm = "rm -Iv";
+    mv = "mv -i";
+    xx = "7z";
+    myip = "curl ip.me";
+  };
 }

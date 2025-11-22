@@ -1,11 +1,8 @@
-{pkgs, ...}: {
-  config = {
-    # create user
-    user' = {
-      hashedPassword = "$y$j9T$E0yTqNdhAhjJLH4MU6eLK.$zEqoByk1W/aW.9XRtFJqVCxsF3DZnqS8iHOL9VGU2DD";
-      isNormalUser = true;
-      extraGroups = ["wheel"];
-      # shell = pkgs.fish;
-    };
+{
+  user' = {
+    # hashedPassword = "";
+    initialHashedPassword = "$y$j9T$FyXRRqLttcdVGvfopLg0g/$9gILD5hPZLqkwYi1nW9CFWp/VimrcZmssgtYv9qvVt1";
+    isNormalUser = true;
+    extraGroups = ["wheel"];
   };
 }

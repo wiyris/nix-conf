@@ -20,7 +20,7 @@
     };
     defaultShell = lib.mkOption {
       type = lib.types.str;
-      default = "bash";
+      default = "fish";
       example = "bash";
       description = "Default Command-line shell";
     };

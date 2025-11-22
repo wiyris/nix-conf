@@ -7,63 +7,58 @@
 }: let
   opacity = 1.0;
   fontSize = 14;
-  cfg = config.stylix';
 in {
-  options.stylix'.enable = lib.mkEnableOption {};
   imports = [inputs.stylix.nixosModules.stylix];
-  config = lib.mkIf cfg.enable {
-    stylix = {
-      enable = true;
-      autoEnable = true;
-      image = ./img.png;
-      polarity = "dark";
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-      targets.qt.enable = true;
+  stylix = {
+    enable = true;
+    autoEnable = true;
+    image = ./img.png;
+    polarity = "dark";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
-      opacity = {
-        terminal = opacity;
-        popups = opacity;
+    opacity = {
+      terminal = opacity;
+      popups = opacity;
+    };
+
+    cursor = {
+      package = pkgs.catppuccin-cursors.mochaDark;
+      name = "catppuccin-mocha-dark-cursors";
+      size = 32;
+    };
+
+    # iconTheme = {
+    #   enable = true;
+    #   package = pkgs.nordzy-icon-theme;
+    #   dark = "Nordzy-turquoise-dark";
+    # };
+
+    fonts = {
+      serif = {
+        package = pkgs.aleo-fonts;
+        name = "Aleo";
       };
 
-      cursor = {
-        package = pkgs.catppuccin-cursors.mochaDark;
-        name = "catppuccin-mocha-dark-cursors";
-        size = 32;
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
       };
 
-      # iconTheme = {
-      #   enable = true;
-      #   package = pkgs.nordzy-icon-theme;
-      #   dark = "Nordzy-turquoise-dark";
-      # };
+      monospace = {
+        package = pkgs.maple-mono.NF;
+        name = "Maple Mono NF";
+      };
 
-      fonts = {
-        serif = {
-          package = pkgs.aleo-fonts;
-          name = "Aleo";
-        };
+      emoji = {
+        package = pkgs.noto-fonts-monochrome-emoji;
+        name = "Noto Emoji";
+      };
 
-        sansSerif = {
-          package = pkgs.dejavu_fonts;
-          name = "DejaVu Sans";
-        };
-
-        monospace = {
-          package = pkgs.maple-mono.NF;
-          name = "Maple Mono NF";
-        };
-
-        emoji = {
-          package = pkgs.noto-fonts-monochrome-emoji;
-          name = "Noto Emoji";
-        };
-
-        sizes = {
-          applications = fontSize;
-          desktop = fontSize;
-          popups = fontSize;
-          terminal = fontSize;
-        };
+      sizes = {
+        applications = fontSize;
+        desktop = fontSize;
+        popups = fontSize;
+        terminal = fontSize;
       };
     };
   };

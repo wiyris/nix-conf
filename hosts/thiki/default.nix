@@ -15,100 +15,98 @@ in {
     ./hardware.nix
   ];
   config = {
-    globals.userName = userName;
-    globals.homeDirectory = "/home/${userName}";
-    globals.configDirectory = configDirectory;
-
-    # Custom options
     hardware'.amdgpu.enable = true;
-    # hardware'.bluetooth.enable = true;
-    networking'.core.enable = true;
+    hardware'.bluetooth.enable = true;
     networking'.iwd.enable = true;
     networking'.mullvad.enable = true;
     security'.doas.enable = true;
-    stylix'.enable = true;
 
-    # cli
-    programs'.fish.enable = true;
-    programs'.fish.isDefault = true;
+    programs' = {
+      fish.enable = true;
+      bat.enable = true;
+      btop.enable = true;
+      eza.enable = true;
+      fastfetch.enable = true;
+      fzf.enable = true;
+      git.enable = true;
+      gtrash.enable = true;
+      lazygit.enable = true;
+      nvim.enable = true;
+      ripgrep.enable = true;
+      starship.enable = true;
+      tmux.enable = true;
+      yazi.enable = true;
+      zoxide.enable = true;
+    };
 
-    programs'.aliases.enable = true;
-    programs'.bat.enable = true;
-    programs'.btop.enable = true;
-    programs'.eza.enable = true;
-    # programs'.fastfetch.enable = true;
-    programs'.fzf.enable = true;
-    programs'.git.enable = true;
-    # programs'.gtrash.enable = true;
-    programs'.lazygit.enable = true;
-    programs'.nvim.enable = true;
-    programs'.ripgrep.enable = true;
-    programs'.starship.enable = true;
-    programs'.tmux.enable = true;
-    programs'.yazi.enable = true;
-    programs'.zoxide.enable = true;
-
-    # DESKTOP
-    ## window-managers
+    ## DESKTOP
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-    desktop.hyprland.enable = true;
 
-    ## core
+    desktop.dwl.enable = true;
+    desktop.hyprland.enable = true;
+    # desktop.niri.enable = true;
+
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
     desktop.wayland.enable = true;
 
-    ## gaming
-    # gaming'.gamemode.enable = true;
-    # gaming'.lutris.enable = true;
-    # gaming'.optimize.enable = true;
-    # gaming'.osu.enable = true;
-    gaming'.steam.enable = true;
-
-    ## programs
-    ### default programs
+    ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     programs'.tofi.isDefault = true;
 
-    # programs'.goldendict.enable = true;
-    programs'.hyprlock.enable = true;
-    programs'.tofi.enable = true;
+    programs' = {
+      # general
+      goldendict.enable = true;
+      hyprlock.enable = true;
+      rofi.enable = true;
+      thunar.enable = true;
+      tofi.enable = true;
+      # tray-tui.enable = true;
 
-    programs'.foot.enable = true;
-    # programs'.kitty.enable = true;
-    programs'.chromium.enable = true;
-    programs'.zen-browser.enable = true;
-    # programs'.thunar.enable = true;
-    # programs'.cava.enable = true;
-    # programs'.mpv.enable = true;
-    # programs'.pqiv.enable = true;
-    # programs'.zathura.enable = true;
+      # terminal emulator
+      foot.enable = true;
 
-    ## services
-    services'.cliphist.enable = true;
-    services'.hypridle.enable = true;
-    services'.keyd.enable = true;
-    services'.mako.enable = true;
-    services'.pipewire.enable = true;
-    services'.waybar.enable = true;
+      # browser
+      chromium.enable = true;
+      zen-browser.enable = true;
+
+      # media
+      mpv.enable = true;
+      pqiv.enable = true;
+      zathura.enable = true;
+    };
+
+    services' = {
+      dwlb.enable = true;
+      fcitx.enable = true;
+      hypridle.enable = true;
+      keyd.enable = true;
+      mako.enable = true;
+      pipewire.enable = true;
+      waybar.enable = true;
+      wl-clip-persist.enable = true;
+    };
+
+    globals = {
+      userName = userName;
+      homeDirectory = "/home/${userName}";
+      configDirectory = configDirectory;
+    };
 
     # laptop-specific config
-    laptop.enable = true; # enable laptop modules
+    laptop.enable = true;
     services.power-profiles-daemon.enable = true;
     environment.systemPackages = with pkgs; [
       brightnessctl
     ];
 
     stylix = {
-      base16Scheme = lib.mkForce "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
       opacity = {
         terminal = lib.mkForce 1.0;
         popups = lib.mkForce 1.0;
       };
     };
-
-    ##
 
     console = {
       earlySetup = true;
@@ -122,12 +120,8 @@ in {
         efi.canTouchEfiVariables = true;
         timeout = 0;
       };
-      # kernelPackages = pkgs.linuxPackages_zen;
       kernelParams = [];
+      blacklistedKernelModules = ["uvcvideo"];
     };
-
-    time.timeZone = "Asia/Tokyo";
-    system.stateVersion = "25.05";
-    home-manager.users.${userName}.home.stateVersion = "25.05";
   };
 }

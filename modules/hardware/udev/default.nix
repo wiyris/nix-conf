@@ -1,5 +1,0 @@
-{
-  config = {
-    boot.blacklistedKernelModules = ["uvcvideo"];
-  };
-}

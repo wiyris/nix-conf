@@ -14,12 +14,12 @@
       "tag +music, class:^(spotify)$"
       "tag +music, initialTitle:^(SoundCloud)$"
 
+      "tag +game_launcher, class:^([Ss]team)$|^(net.lutris.Lutris)$"
+      "tag +game_launcher, title:^([Ss]team)$"
+
       # Workspace Rules
-      # "workspace 1, class:^(.*firefox.*)$|(.*chromium.*)$"
       "workspace 5 silent, tag:game"
-      "workspace 6 silent, class:^([Ss]team)$"
-      "workspace 6 silent, title:^([Ss]team)$"
-      # "workspace 7 silent, class:^(spotify)$"
+      "workspace 6 silent, tag:game_launcher"
       "workspace 7 silent, tag:music"
       "workspace 8 silent, class:^(obsidian)$"
       "workspace 9 silent, class:^(thunderbird)$"

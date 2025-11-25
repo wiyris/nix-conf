@@ -28,7 +28,7 @@ in {
       # easyeffects
       # easytag
       # gimp3
-      gpu-screen-recorder-gtk
+      # gpu-screen-recorder-gtk
 
       ## qt
       # calibre
@@ -37,12 +37,9 @@ in {
       # openshot-qt
       # puddletag
       # qbittorrent
-      vlc
 
       ## electron
-      legcord
-      # vesktop
-      # dissent
+      # legcord
 
       ## other
       # aseprite

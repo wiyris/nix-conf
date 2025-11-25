@@ -38,19 +38,19 @@ in {
 
     ## DESKTOP
     desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-
-    desktop.dwl.enable = true;
-    desktop.hyprland.enable = true;
-    # desktop.niri.enable = true;
-
-    desktop.fonts.enable = true;
-    desktop.gtk.enable = true;
-    desktop.wayland.enable = true;
-
-    ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
     # programs'.tofi.isDefault = true;
+
+    desktop = {
+      dwl.enable = true;
+      hyprland.enable = true;
+      # niri.enable = true;
+
+      fonts.enable = true;
+      gtk.enable = true;
+      wayland.enable = true;
+    };
 
     programs' = {
       # general
@@ -97,7 +97,7 @@ in {
       mako.enable = true;
       pipewire.enable = true;
       # ollama.enable = true;
-      # stash.enable = true;
+      stash.enable = true;
       # swayosd.enable = true;
       # swww.enable = true;
       waybar.enable = true;

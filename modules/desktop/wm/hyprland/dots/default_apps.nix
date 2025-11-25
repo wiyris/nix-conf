@@ -11,7 +11,8 @@ in {
       "$terminal" = "${defaultTerminal}";
       "$editor" = "$terminal -e nvim";
       "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
-      "$clipboard" = "cliphist-rofi | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
+      # "$clipboard" = "cliphist-rofi | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
+      "$clipboard" = "stash list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy";
       "$screenshot" = "pkill rofi || uwsm-app -- screenshot";
       "$browser" = "${defaultBrowser}";
       "$bar" = "uwsm app -- waybar";

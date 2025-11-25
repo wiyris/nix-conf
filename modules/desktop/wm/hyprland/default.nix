@@ -33,7 +33,7 @@ in {
       hm' = {
         imports =
           [
-            ./dots/animations3.nix
+            ./dots/animations.nix
             ./dots/decoration.nix
             ./dots/binds.nix
             ./dots/default_apps.nix
@@ -43,7 +43,6 @@ in {
             ./dots/misc.nix
             ./dots/rules.nix
             ./dots/scratchpads.nix
-            ./dots/perf.nix
 
             # ./plugins/hyprexpo.nix
           ]

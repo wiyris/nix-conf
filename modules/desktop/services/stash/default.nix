@@ -12,27 +12,16 @@
 in {
   options.services'.stash.enable = lib.mkEnableOption [];
   config = lib.mkIf cfg.enable {
-    hm' = {
-      home.packages = [
-        stash
-        # pkgs.wl-clipboard-rs
-      ];
-      systemd.user.services.stash = {
-        Install = {
-          WantedBy = ["graphical-session.target"];
-        };
-        Unit = {
-          Description = "Wayland clipboard manager with fast persistent history and multi-media support";
-          After = ["graphical-session.target"];
-          PartOf = ["graphical-session.target"];
-        };
-        Service = {
-          Type = "simple";
-          ExecStart = "${lib.getExe stash} watch";
-          Restart = "on-failure";
-          # LoadCredential = "clipboard_filter:/etc/stash/clipboard_filter";
-          LoadCredential = "clipboard_filter:${writeText "stash-regex" regex}";
-        };
+    hm'.home.packages = [stash];
+    systemd.user.services.stash = {
+      enable = true;
+      after = ["graphical-session.target"];
+      wantedBy = ["graphical-session.target"];
+      partOf = ["graphical-session.target"];
+      serviceConfig = {
+        ExecStart = "${lib.getExe stash} --max-items 20 watch";
+        Restart = "on-abort";
+        loadCredential = "clipboard_filter:${writeText "stash-regex" regex}";
       };
     };
   };

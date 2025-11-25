@@ -1,4 +1,5 @@
-{lib, ...}: {
+{ lib, ... }:
+{
   options.globals = {
     userName = lib.mkOption {
       type = lib.types.str;
@@ -43,5 +44,5 @@
       description = "Default explorer";
     };
   };
-  options.laptop.enable = lib.mkEnableOption {};
+  options.laptop.enable = lib.mkEnableOption { };
 }

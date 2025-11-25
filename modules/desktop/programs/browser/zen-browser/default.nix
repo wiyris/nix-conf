@@ -4,7 +4,8 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   betterfox = inputs.betterfox;
   inherit (config.globals) userName;
   cfg = config.programs'.zen-browser;
@@ -13,10 +14,11 @@
     recursive = true;
     force = true;
   };
-in {
+in
+{
   options.programs'.zen-browser = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
   config = lib.mkMerge [
     (lib.mkIf cfg.isDefault {
@@ -29,7 +31,7 @@ in {
     })
     (lib.mkIf cfg.enable {
       hm' = {
-        imports = [inputs.zen-browser.homeModules.beta];
+        imports = [ inputs.zen-browser.homeModules.beta ];
         # stylix.targets.zen-browser.profileNames = [userName];
         stylix.targets.zen-browser.enable = false;
 

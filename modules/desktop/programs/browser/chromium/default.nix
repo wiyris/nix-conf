@@ -3,10 +3,12 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.chromium;
-in {
-  options.programs'.chromium.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.chromium.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     stylix.targets.chromium.enable = false;
     # TODO: setup ungoogled-chromium extensions w/ home-manager

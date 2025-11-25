@@ -3,10 +3,12 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.mpv;
-in {
-  options.programs'.mpv.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.mpv.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       programs.mpv = {
@@ -35,7 +37,8 @@ in {
           x = "add secondary-sub-delay -0.1";
           X = "add secondary-sub-delay +0.1";
         };
-        scripts = with pkgs.mpvScripts;
+        scripts =
+          with pkgs.mpvScripts;
           [
             mpris
             thumbfast
@@ -48,18 +51,20 @@ in {
             autoload
           ]);
       };
-      xdg.mimeApps.defaultApplications = let
-        mpv = "mpv.desktop";
-      in {
-        "video/x-matroska" = [mpv];
-        "audio/mp4" = [mpv];
-        "audio/flac" = [mpv];
-        "video/x-msvideo" = [mpv];
-        "audio/mpeg" = [mpv];
-        "audio/x-vorbis+ogg" = [mpv];
-        "audio/x-wav" = [mpv];
-        "video/quicktime" = [mpv];
-      };
+      xdg.mimeApps.defaultApplications =
+        let
+          mpv = "mpv.desktop";
+        in
+        {
+          "video/x-matroska" = [ mpv ];
+          "audio/mp4" = [ mpv ];
+          "audio/flac" = [ mpv ];
+          "video/x-msvideo" = [ mpv ];
+          "audio/mpeg" = [ mpv ];
+          "audio/x-vorbis+ogg" = [ mpv ];
+          "audio/x-wav" = [ mpv ];
+          "video/quicktime" = [ mpv ];
+        };
     };
   };
 }

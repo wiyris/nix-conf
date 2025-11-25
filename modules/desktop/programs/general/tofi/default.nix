@@ -3,19 +3,24 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.programs'.tofi;
-  inherit (config.lib.stylix.colors.withHashtag) base00 base05 base07 base08;
-  tofi-launcher =
-    pkgs.writeScriptBin "tofi-launcher"
-    (builtins.readFile ./scripts/tofi-launcher.sh);
-  tofi-screenshot =
-    pkgs.writeScriptBin "tofi-screenshot"
-    (builtins.readFile ./scripts/tofi-screenshot.sh);
-in {
+  inherit (config.lib.stylix.colors.withHashtag)
+    base00
+    base05
+    base07
+    base08
+    ;
+  tofi-launcher = pkgs.writeScriptBin "tofi-launcher" (builtins.readFile ./scripts/tofi-launcher.sh);
+  tofi-screenshot = pkgs.writeScriptBin "tofi-screenshot" (
+    builtins.readFile ./scripts/tofi-screenshot.sh
+  );
+in
+{
   options.programs'.tofi = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
   config = lib.mkIf cfg.enable {
     hm' = {

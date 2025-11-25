@@ -2,15 +2,16 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.services'.mako;
-  inherit
-    (config.lib.stylix.colors.withHashtag)
+  inherit (config.lib.stylix.colors.withHashtag)
     base07
     base08
     ;
-in {
-  options.services'.mako.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.mako.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.services.mako = {
       enable = true;

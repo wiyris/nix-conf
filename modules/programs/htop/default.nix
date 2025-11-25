@@ -3,10 +3,12 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.htop;
-in {
-  options.programs'.htop.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.htop.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.programs.htop = {
       enable = true;

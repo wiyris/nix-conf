@@ -1,6 +1,8 @@
 {
   config.hm'.programs.kitty = {
-    settings = {kitty_mod = "alt+ctrl";};
+    settings = {
+      kitty_mod = "alt+ctrl";
+    };
     keybindings = {
       "ctrl+c" = "copy_and_clear_or_interrupt";
       "ctrl+v" = "paste_from_clipboard";

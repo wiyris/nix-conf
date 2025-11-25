@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.gaming'.mangohud;
-in {
-  options.gaming'.mangohud.enable = lib.mkEnableOption {};
+in
+{
+  options.gaming'.mangohud.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       stylix.targets.mangohud.enable = true;

@@ -3,9 +3,11 @@
   inputs,
   pkgs,
   ...
-}: let
+}:
+let
   inherit (config.globals) configDirectory;
-in {
+in
+{
   imports = [
     ./substituters.nix
   ];
@@ -20,6 +22,8 @@ in {
     nix-prefetch-github
     nix-serve # create a local nix cachix like server
     nix-tree
+    nixfmt
+    nixfmt-tree
     nixpkgs-review
     nurl # get fetchgit hashes
     nvd
@@ -31,9 +35,12 @@ in {
   };
 
   nix = {
-    nixPath = ["nixpkgs=${inputs.nixpkgs}"];
+    nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
     settings = {
-      experimental-features = ["nix-command" "flakes"];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       auto-optimise-store = true;
       trusted-users = [
         "@wheel"

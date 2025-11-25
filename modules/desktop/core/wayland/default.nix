@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.desktop.wayland;
   sessionVariables = {
     # Force GTK to use wayland
@@ -19,8 +20,9 @@
     XDG_SESSION_TYPE = lib.mkDefault "wayland";
     NIXOS_OZONE_WL = "1";
   };
-in {
-  options.desktop.wayland.enable = lib.mkEnableOption {};
+in
+{
+  options.desktop.wayland.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs.uwsm.enable = true;
     hm' = {
@@ -29,7 +31,7 @@ in {
         portal = {
           enable = true;
           config.common.default = "gtk";
-          extraPortals = [pkgs.xdg-desktop-portal-gtk];
+          extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
           xdgOpenUsePortal = true;
         };
       };

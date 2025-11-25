@@ -4,7 +4,19 @@
     format-charging = " {capacity}%";
     format-plugged = " {capacity}%";
     format-alt = "{time} {icon}";
-    format-icons = ["󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
+    format-icons = [
+      "󰂎"
+      "󰁺"
+      "󰁻"
+      "󰁼"
+      "󰁽"
+      "󰁾"
+      "󰁿"
+      "󰂀"
+      "󰂁"
+      "󰂂"
+      "󰁹"
+    ];
     interval = 5;
     tooltip = false;
     states = {

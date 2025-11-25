@@ -1,6 +1,7 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   programs.tmux = {
-    plugins = [pkgs.tmuxPlugins.tmux-toggle-popup];
+    plugins = [ pkgs.tmuxPlugins.tmux-toggle-popup ];
     extraConfig = ''
       # Turn on autostart to boost the first call of @popup-toggle.
       set -g  @popup-autostart on

@@ -5,20 +5,22 @@
   config,
   options,
   ...
-}: let
+}:
+let
   inherit (config.globals) userName homeDirectory;
-in {
-  imports = [inputs.home-manager.nixosModules.home-manager];
+in
+{
+  imports = [ inputs.home-manager.nixosModules.home-manager ];
 
   options = {
     hm' = lib.mkOption {
       type = lib.types.attrs;
-      default = {};
+      default = { };
       description = "Options to pass directly to home-manager primary user.";
     };
     user' = lib.mkOption {
       type = lib.types.attrs;
-      default = {};
+      default = { };
       description = "Options to pass directly to users.extraUsers primary user.";
     };
   };
@@ -39,7 +41,7 @@ in {
       home.homeDirectory = homeDirectory;
 
       # TODO: programs.home-manager.enable should add this pkg
-      home.packages = [inputs.home-manager.packages.${system}.default];
+      home.packages = [ inputs.home-manager.packages.${system}.default ];
     };
 
     # hm'-> home-manager.users.<primary user>

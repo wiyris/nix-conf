@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.freetube;
-in {
-  options.programs'.freetube.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.freetube.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.programs.freetube = {
       enable = true;

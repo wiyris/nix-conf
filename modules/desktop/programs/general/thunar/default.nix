@@ -3,11 +3,13 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.thunar;
   inherit (config.globals) defaultTerminal;
-in {
-  options.programs'.thunar.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.thunar.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs = {
       thunar = {
@@ -31,8 +33,8 @@ in {
 
     hm'.xdg = {
       mimeApps.defaultApplications = {
-        "inode/directory" = ["thunar.desktop"];
-        "x-scheme-handler/trash" = ["thunar.desktop"];
+        "inode/directory" = [ "thunar.desktop" ];
+        "x-scheme-handler/trash" = [ "thunar.desktop" ];
       };
       configFile."xfce4/helpers.rc".text =
         # ini

@@ -3,12 +3,12 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.services'.dunst;
   inherit (lib) mkForce;
 
-  inherit
-    (config.lib.stylix.colors.withHashtag)
+  inherit (config.lib.stylix.colors.withHashtag)
     base00
     base02
     base03
@@ -17,8 +17,9 @@
     base08
     base0E
     ;
-in {
-  options.services'.dunst.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.dunst.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.services.dunst = {
       enable = true;

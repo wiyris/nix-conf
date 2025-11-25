@@ -4,19 +4,19 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.desktop.hyprland;
-  perf =
-    pkgs.writeScriptBin "perf"
-    (builtins.readFile ./scripts/perf.sh);
-in {
+  perf = pkgs.writeScriptBin "perf" (builtins.readFile ./scripts/perf.sh);
+in
+{
   options.desktop.hyprland = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
 
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {})
+    (lib.mkIf cfg.isDefault { })
     (lib.mkIf cfg.enable {
       programs = {
         hyprland = {
@@ -28,27 +28,29 @@ in {
         };
       };
 
-      xdg.portal.config.Hyprland.default = ["hyprland" "gtk"];
+      xdg.portal.config.Hyprland.default = [
+        "hyprland"
+        "gtk"
+      ];
 
       hm' = {
-        imports =
-          [
-            ./dots/animations.nix
-            ./dots/decoration.nix
-            ./dots/binds.nix
-            ./dots/default_apps.nix
-            ./dots/exec-once.nix
-            ./dots/general.nix
-            ./dots/input.nix
-            ./dots/misc.nix
-            ./dots/rules.nix
-            ./dots/scratchpads.nix
+        imports = [
+          ./dots/animations.nix
+          ./dots/decoration.nix
+          ./dots/binds.nix
+          ./dots/default_apps.nix
+          ./dots/exec-once.nix
+          ./dots/general.nix
+          ./dots/input.nix
+          ./dots/misc.nix
+          ./dots/rules.nix
+          ./dots/scratchpads.nix
 
-            # ./plugins/hyprexpo.nix
-          ]
-          ++ lib.optionals config.laptop.enable [
-            ./dots/perf.nix
-          ];
+          # ./plugins/hyprexpo.nix
+        ]
+        ++ lib.optionals config.laptop.enable [
+          ./dots/perf.nix
+        ];
 
         wayland.windowManager.hyprland = {
           enable = true;

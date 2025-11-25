@@ -3,9 +3,11 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   inherit (config.globals) userName;
-in {
+in
+{
   environment.systemPackages = with pkgs; [
     curl
     file # print filetype

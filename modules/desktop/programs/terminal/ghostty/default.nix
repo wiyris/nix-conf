@@ -2,23 +2,28 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.ghostty;
-in {
+in
+{
   options.programs'.ghostty = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {globals.defaultTerminal = "ghostty";})
+    (lib.mkIf cfg.isDefault { globals.defaultTerminal = "ghostty"; })
     (lib.mkIf cfg.enable {
       hm' = {
         programs.ghostty = {
           enable = true;
           enableFishIntegration = true;
           settings = {
-            font-feature = ["ss06"];
-            font-family = ["" "config.stylix.fonts.monospace"]; # prevent fallback noto emoji
+            font-feature = [ "ss06" ];
+            font-family = [
+              ""
+              "config.stylix.fonts.monospace"
+            ]; # prevent fallback noto emoji
 
             cursor-style = "block";
             cursor-style-blink = true;
@@ -31,8 +36,14 @@ in {
 
             confirm-close-surface = false;
             window-decoration = false;
-            window-padding-x = [4 5];
-            window-padding-y = [4 5];
+            window-padding-x = [
+              4
+              5
+            ];
+            window-padding-y = [
+              4
+              5
+            ];
             window-padding-balance = true;
 
             # extras

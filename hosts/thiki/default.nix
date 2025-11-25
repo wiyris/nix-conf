@@ -4,11 +4,13 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   userName = "tsubaki";
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
-in {
+in
+{
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen4
     ./disko.nix
@@ -111,7 +113,7 @@ in {
     console = {
       earlySetup = true;
       font = "${pkgs.terminus_font}/share/consolefonts/ter-132n.psf.gz";
-      packages = with pkgs; [terminus_font];
+      packages = with pkgs; [ terminus_font ];
     };
 
     boot = {
@@ -120,8 +122,8 @@ in {
         efi.canTouchEfiVariables = true;
         timeout = 0;
       };
-      kernelParams = [];
-      blacklistedKernelModules = ["uvcvideo"];
+      kernelParams = [ ];
+      blacklistedKernelModules = [ "uvcvideo" ];
     };
   };
 }

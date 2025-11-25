@@ -107,6 +107,21 @@
         "type": "github"
       }
     },
+    "crane": {
+      "locked": {
+        "lastModified": 1754269165,
+        "narHash": "sha256-0tcS8FHd4QjbCVoxN9jI+PjHgA4vc/IjkUSp+N3zy0U=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "444e81206df3f7d92780680e45858e31d2f07a08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "disko": {
       "inputs": {
         "nixpkgs": [
@@ -554,6 +569,7 @@
         "nixpkgs": "nixpkgs_2",
         "sops-nix": "sops-nix",
         "spicetify-nix": "spicetify-nix",
+        "stash": "stash",
         "stylix": "stylix",
         "zen-browser": "zen-browser",
         "zen-browser-catppuccin": "zen-browser-catppuccin"
@@ -618,6 +634,27 @@
       "original": {
         "owner": "Gerg-L",
         "repo": "spicetify-nix",
+        "type": "github"
+      }
+    },
+    "stash": {
+      "inputs": {
+        "crane": "crane",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764054504,
+        "narHash": "sha256-I4nXo/MQXbHg4S00RZZVwaldO/AfhchBFcDlmt4xcaQ=",
+        "owner": "notashelf",
+        "repo": "stash",
+        "rev": "f83836531405a42b5d3ad341811736e84275c90f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "notashelf",
+        "repo": "stash",
         "type": "github"
       }
     },

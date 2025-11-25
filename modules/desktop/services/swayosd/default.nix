@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.services'.swayosd;
-in {
-  options.services'.swayosd.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.swayosd.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       services.swayosd = {

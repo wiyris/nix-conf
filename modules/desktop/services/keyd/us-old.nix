@@ -1,8 +1,9 @@
 let
   holdtime = 250;
   taptime = 175;
-in {
-  ids = ["0001:0001"]; # internal keyboard
+in
+{
+  ids = [ "0001:0001" ]; # internal keyboard
   settings = {
     global = {
       "chord_timeout" = "40";

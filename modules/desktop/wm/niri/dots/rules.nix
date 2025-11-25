@@ -30,14 +30,16 @@ let
   };
   windowRules = [
     {
-      geometry-corner-radius = let
-        radius = 14.0;
-      in {
-        bottom-left = radius;
-        bottom-right = radius;
-        top-left = radius;
-        top-right = radius;
-      };
+      geometry-corner-radius =
+        let
+          radius = 14.0;
+        in
+        {
+          bottom-left = radius;
+          bottom-right = radius;
+          top-left = radius;
+          top-right = radius;
+        };
       clip-to-geometry = true;
       draw-border-with-background = false;
       open-maximized = true;
@@ -89,7 +91,7 @@ let
     }
     {
       matches = [
-        {app-id = "Proton Pass";}
+        { app-id = "Proton Pass"; }
       ];
       block-out-from = "screen-capture";
     }
@@ -101,65 +103,66 @@ let
     # }
     {
       matches = [
-        {app-id = "^steam$";}
-        {app-id = "^lutris$";}
+        { app-id = "^steam$"; }
+        { app-id = "^lutris$"; }
       ];
       open-on-workspace = "steam";
     }
     {
       matches = [
-        {app-id = "^GoldenDict-ng$";}
-        {app-id = "^spotify$";}
+        { app-id = "^GoldenDict-ng$"; }
+        { app-id = "^spotify$"; }
       ];
       open-on-workspace = "iroiro3";
     }
     {
       matches = [
-        {app-id = "^obsidian$";}
+        { app-id = "^obsidian$"; }
       ];
       open-on-workspace = "obsidian";
     }
 
     {
       matches = [
-        {app-id = "^vesktop$";}
-        {app-id = "^thuderbird$";}
+        { app-id = "^vesktop$"; }
+        { app-id = "^thuderbird$"; }
       ];
       open-on-workspace = "msg";
     }
     {
       matches = [
-        {app-id = "^zen-beta$";}
-        {app-id = "^firefox$";}
-        {app-id = "^librewolf$";}
-        {app-id = "^chromium$";}
+        { app-id = "^zen-beta$"; }
+        { app-id = "^firefox$"; }
+        { app-id = "^librewolf$"; }
+        { app-id = "^chromium$"; }
       ];
       open-on-workspace = "browser";
     }
     {
       matches = [
-        {app-id = "^kitty$";}
-        {app-id = "^foot$";}
-        {app-id = "^com.mitchellh.ghostty$";}
-        {app-id = "^thunar$";}
+        { app-id = "^kitty$"; }
+        { app-id = "^foot$"; }
+        { app-id = "^com.mitchellh.ghostty$"; }
+        { app-id = "^thunar$"; }
       ];
       open-maximized = false;
     }
     {
       matches = [
-        {app-id = "^zen-beta$";}
-        {app-id = "^nvim.ghostty$";}
+        { app-id = "^zen-beta$"; }
+        { app-id = "^nvim.ghostty$"; }
       ];
       open-maximized = true;
     }
   ];
-in {
+in
+{
   programs.niri.settings = {
     inherit workspaces;
     window-rules = windowRules;
     layer-rules = [
       {
-        matches = [{namespace = "^swww-daemon$";}];
+        matches = [ { namespace = "^swww-daemon$"; } ];
         place-within-backdrop = true;
       }
     ];

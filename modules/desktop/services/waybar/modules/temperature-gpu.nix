@@ -5,7 +5,11 @@
     "hwmon-path" = "/sys/class/hwmon/hwmon4/temp1_input";
     "format-critical" = "{icon} {temperatureC}°C";
     "format" = "{icon} {temperatureC}°C";
-    "format-icons" = ["" "" ""];
+    "format-icons" = [
+      ""
+      ""
+      ""
+    ];
     "tooltip" = true;
     "interval" = 2;
   };

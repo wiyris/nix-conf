@@ -3,15 +3,17 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.services'.mpd;
   inherit (config.globals) homeDirectory;
   musicDirectory = "${homeDirectory}/Music";
-in {
-  options.services'.mpd.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.mpd.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
-      home.packages = [pkgs.listenbrainz-mpd];
+      home.packages = [ pkgs.listenbrainz-mpd ];
       services.mpd-mpris.enable = true;
       services.mpd = {
         enable = true;

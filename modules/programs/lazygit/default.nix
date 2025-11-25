@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.lazygit;
-in {
-  options.programs'.lazygit.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.lazygit.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       programs.lazygit = {

@@ -2,10 +2,12 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.hyprlock;
-in {
-  options.programs'.hyprlock.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.hyprlock.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       stylix.targets.hyprlock.enable = false;

@@ -4,11 +4,13 @@
   config,
   inputs,
   ...
-}: let
+}:
+let
   cfg = config.gaming'.pipewireLowLatency;
-in {
-  imports = [inputs.nix-gaming.nixosModules.pipewireLowLatency];
-  options.gaming'.pipewireLowLatency.enable = lib.mkEnableOption {};
+in
+{
+  imports = [ inputs.nix-gaming.nixosModules.pipewireLowLatency ];
+  options.gaming'.pipewireLowLatency.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     services.pipewire.lowLatency = {
       enable = true;

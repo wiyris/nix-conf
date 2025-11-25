@@ -17,7 +17,11 @@
       "phone" = " ";
       "portable" = " ";
       "car" = " ";
-      "default" = [" " " " " "];
+      "default" = [
+        " "
+        " "
+        " "
+      ];
     };
     "tooltip-format" = "{desc}, {volume}%";
     "on-click" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";

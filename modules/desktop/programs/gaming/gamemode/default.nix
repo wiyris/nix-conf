@@ -3,12 +3,14 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.gaming'.gamemode;
-in {
-  options.gaming'.gamemode.enable = lib.mkEnableOption {};
+in
+{
+  options.gaming'.gamemode.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    user'.extraGroups = ["gamemode"];
+    user'.extraGroups = [ "gamemode" ];
     programs.gamemode = {
       enable = true;
       settings = {

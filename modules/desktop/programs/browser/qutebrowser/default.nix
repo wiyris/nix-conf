@@ -2,21 +2,22 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.qutebrowser;
-  inherit
-    (config.lib.stylix.colors.withHashtag)
+  inherit (config.lib.stylix.colors.withHashtag)
     base00
     ;
-in {
-  options.programs'.qutebrowser.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.qutebrowser.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.programs.qutebrowser = {
       enable = true;
       settings = {
         colors = {
-          hints = {};
-          tabs.bar = {};
+          hints = { };
+          tabs.bar = { };
         };
         hints = {
           radius = 1;

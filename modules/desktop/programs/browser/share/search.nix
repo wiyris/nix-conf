@@ -1,42 +1,58 @@
-{...}: {
+{ ... }:
+{
   default = "kagi";
   privateDefault = "kagi";
   force = true;
-  order = ["kagi" "leta" "startpage" "NixOS packages" "NixOS options" "Home Manager Options"];
+  order = [
+    "kagi"
+    "leta"
+    "startpage"
+    "NixOS packages"
+    "NixOS options"
+    "Home Manager Options"
+  ];
   engines = {
     kagi = {
       name = "Kagi";
-      definedAliases = ["kg"];
-      urls = [{template = "https://kagi.com/search?q={searchTerms}";}];
+      definedAliases = [ "kg" ];
+      urls = [ { template = "https://kagi.com/search?q={searchTerms}"; } ];
       icon = "https://kagi.com/favicon.ico";
       SuggestURLTemplate = "https://kagi.com/api/autosuggest?q=%s";
     };
     leta = {
       name = "leta";
-      definedAliases = ["lt"];
-      urls = [{template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google";}];
+      definedAliases = [ "lt" ];
+      urls = [ { template = "https://leta.mullvad.net/search?q={searchTerms}&engine=google"; } ];
       icon = "https://leta.mullvad.net/favicon.ico";
       SuggestURLTemplate = "https://leta.mullvad.net/suggest?q={searchTerms}";
     };
     startpage = {
       name = "startpage";
-      urls = [{template = "https://www.startpage.com/sp/search?query={searchTerms}";}];
-      definedAliases = ["sp"];
+      urls = [ { template = "https://www.startpage.com/sp/search?query={searchTerms}"; } ];
+      definedAliases = [ "sp" ];
     };
     searxngPriv = {
       name = "searxng";
-      urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=en&time_range=&safesearch=0&theme=simple";}];
-      definedAliases = ["xp"];
+      urls = [
+        {
+          template = "https://priv.au/search?q={searchTerms}&categories=&language=en&time_range=&safesearch=0&theme=simple";
+        }
+      ];
+      definedAliases = [ "xp" ];
     };
     searxngPrivjp = {
       name = "searxng JP";
-      urls = [{template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";}];
-      definedAliases = ["xj"];
+      urls = [
+        {
+          template = "https://priv.au/search?q={searchTerms}&categories=&language=ja-JP&time_range=&safesearch=0&theme=simple";
+        }
+      ];
+      definedAliases = [ "xj" ];
     };
     youtube = {
       name = "Youtube";
-      urls = [{template = "https://www.youtube.com/results?search_query={searchTerms}";}];
-      definedAliases = ["yt"];
+      urls = [ { template = "https://www.youtube.com/results?search_query={searchTerms}"; } ];
+      definedAliases = [ "yt" ];
     };
     "NixOS packages" = {
       urls = [
@@ -59,7 +75,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["np"];
+      definedAliases = [ "np" ];
     };
     "NixOS options" = {
       urls = [
@@ -82,7 +98,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["no"];
+      definedAliases = [ "no" ];
     };
     "Home Manager options" = {
       urls = [
@@ -91,7 +107,7 @@
         }
       ];
       # icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-      definedAliases = ["hm"];
+      definedAliases = [ "hm" ];
     };
     "Github" = {
       urls = [
@@ -99,7 +115,7 @@
           template = "https://github.com/search?q={searchTerms}&ref=opensearch&type=code";
         }
       ];
-      definedAliases = ["gh"];
+      definedAliases = [ "gh" ];
     };
     "bing".metaData.hidden = true;
     "ddg".metaData.hidden = true;

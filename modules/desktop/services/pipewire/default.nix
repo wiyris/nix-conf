@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.services'.pipewire;
-in {
-  options.services'.pipewire.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.pipewire.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     security.rtkit.enable = true;
     services.playerctld.enable = true;

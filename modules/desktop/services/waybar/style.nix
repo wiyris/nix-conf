@@ -2,9 +2,10 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   stylix.targets.waybar.addCss = false;
-  home.packages = [pkgs.nerd-fonts.noto];
+  home.packages = [ pkgs.nerd-fonts.noto ];
   programs.waybar.style = lib.mkAfter ''
     @define-color dark #1d2021;
     * { background: @base00; padding:0 7px; }

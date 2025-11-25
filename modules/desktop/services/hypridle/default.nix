@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.services'.hypridle;
-in {
-  options.services'.hypridle.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.hypridle.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       # systemd.user.services.hypridle.Install.WantedBy = lib.mkForce [];

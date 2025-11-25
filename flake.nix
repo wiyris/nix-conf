@@ -1,13 +1,16 @@
 {
   description = "NixOS config";
-  outputs = inputs: let
-    lib = import ./lib inputs;
-  in {
-    nixosConfigurations = {
-      shiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "shiki"; # desktop
-      thiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
+  outputs =
+    inputs:
+    let
+      lib = import ./lib inputs;
+    in
+    {
+      nixosConfigurations = {
+        shiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "shiki"; # desktop
+        thiki = lib.mkNixosSystem inputs.nixpkgs "x86_64-linux" "thiki"; # thinkpad
+      };
     };
-  };
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     # nixpkgs-stable.url = "nixpkgs/nixos-25.05";

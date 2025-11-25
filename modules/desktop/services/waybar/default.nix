@@ -2,10 +2,12 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.services'.waybar;
-in {
-  options.services'.waybar.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.waybar.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [

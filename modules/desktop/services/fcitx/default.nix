@@ -3,13 +3,15 @@
   config,
   pkgs,
   ...
-}: let
+}:
+let
   inherit (config.lib.stylix.colors.withHashtag) base01 base02 base05;
   cfg = config.services'.fcitx;
   font = "Noto Sans CJK JP 14";
   themeName = "base16";
-in {
-  options.services'.fcitx.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.fcitx.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     # systemd.user.services."app-org.fcitx.Fcitx5@autostart".enable = false;
     i18n.inputMethod = {

@@ -2,12 +2,14 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.bat;
-in {
-  options.programs'.bat.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.bat.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       programs.bat = {
         enable = true;
         config = {

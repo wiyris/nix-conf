@@ -1,15 +1,28 @@
-{config, ...}: let
+{ config, ... }:
+let
   inherit (config.lib.stylix.colors.withHashtag) base00 base07;
-in {
+in
+{
   # https://github.com/sodiboo/niri-flake/blob/main/docs.md
   programs.niri.settings = {
     screenshot-path = "~/Pictures/Screenshots/Screenshot-from-%Y-%m-%d-%H-%M-%S.png";
     prefer-no-csd = true;
     hotkey-overlay.skip-at-startup = true;
 
-    environment = {DISPLAY = ":0";};
+    environment = {
+      DISPLAY = ":0";
+    };
 
-    spawn-at-startup = [{command = ["uwsm" "app" "--" "waybar"];}];
+    spawn-at-startup = [
+      {
+        command = [
+          "uwsm"
+          "app"
+          "--"
+          "waybar"
+        ];
+      }
+    ];
 
     input = {
       mouse = {
@@ -27,7 +40,9 @@ in {
       backdrop-color = "transparent";
     };
 
-    layout = {background-color = "transparent";};
+    layout = {
+      background-color = "transparent";
+    };
 
     # cursor = {
     #   size = 32;
@@ -53,13 +68,15 @@ in {
       };
 
       preset-column-widths = [
-        {proportion = 0.25;}
-        {proportion = 0.5;}
-        {proportion = 0.75;}
-        {proportion = 1.0;}
+        { proportion = 0.25; }
+        { proportion = 0.5; }
+        { proportion = 0.75; }
+        { proportion = 1.0; }
       ];
 
-      default-column-width = {proportion = 0.5;};
+      default-column-width = {
+        proportion = 0.5;
+      };
 
       gaps = 20;
 

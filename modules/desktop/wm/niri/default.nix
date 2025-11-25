@@ -4,12 +4,14 @@
   inputs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.desktop.niri;
-in {
+in
+{
   options.desktop.niri = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
 
   config = lib.mkIf cfg.enable {
@@ -28,8 +30,11 @@ in {
       ];
 
       programs.niri.enable = true;
-      xdg.portal.config.niri.default = ["gnome" "gtk"];
-      home.packages = [pkgs.xwayland-satellite];
+      xdg.portal.config.niri.default = [
+        "gnome"
+        "gtk"
+      ];
+      home.packages = [ pkgs.xwayland-satellite ];
     };
   };
 }

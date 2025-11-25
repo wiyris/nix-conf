@@ -3,14 +3,16 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.gaming'.steam;
-in {
-  options.gaming'.steam.enable = lib.mkEnableOption {};
+in
+{
+  options.gaming'.steam.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs.steam = {
       enable = true;
-      extraCompatPackages = with pkgs; [proton-ge-bin];
+      extraCompatPackages = with pkgs; [ proton-ge-bin ];
       protontricks.enable = true;
       # remotePlay.openFirewall = true;
       # dedicatedServer.openFirewall = true;

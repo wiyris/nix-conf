@@ -2,10 +2,12 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.cava;
-in {
-  options.programs'.cava.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.cava.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.programs.cava = {
       enable = true;

@@ -4,11 +4,13 @@
   inputs,
   config,
   ...
-}: let
+}:
+let
   opacity = 1.0;
   fontSize = 14;
-in {
-  imports = [inputs.stylix.nixosModules.stylix];
+in
+{
+  imports = [ inputs.stylix.nixosModules.stylix ];
   stylix = {
     enable = true;
     autoEnable = true;

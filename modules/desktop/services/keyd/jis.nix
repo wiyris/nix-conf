@@ -1,7 +1,8 @@
 let
   holdtime = 250;
   taptime = 175;
-in {
+in
+{
   ids = [
     "05af:1023:c3bf50aa" # BFKB113PBK
     "046d:c339:e1f5519e" # Logitech PRO X

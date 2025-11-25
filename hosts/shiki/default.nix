@@ -2,11 +2,13 @@
   config,
   pkgs,
   ...
-}: let
+}:
+let
   userName = "tsubaki";
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
-in {
+in
+{
   imports = [
     ./disko.nix
     ./hardware.nix
@@ -123,7 +125,7 @@ in {
     console = {
       earlySetup = true;
       font = "${pkgs.terminus_font}/share/consolefonts/ter-132n.psf.gz";
-      packages = with pkgs; [terminus_font];
+      packages = with pkgs; [ terminus_font ];
     };
 
     boot = {
@@ -133,7 +135,7 @@ in {
         timeout = 0;
       };
       kernelPackages = pkgs.linuxPackages_zen;
-      kernelParams = ["video=DP-2:1920x1080@144"];
+      kernelParams = [ "video=DP-2:1920x1080@144" ];
     };
   };
 }

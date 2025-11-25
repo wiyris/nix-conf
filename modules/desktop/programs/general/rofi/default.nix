@@ -3,19 +3,15 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.programs'.rofi;
-  powermenu =
-    pkgs.writeScriptBin "powermenu"
-    (builtins.readFile ./scripts/powermenu.sh);
-  screenshot =
-    pkgs.writeScriptBin "screenshot"
-    (builtins.readFile ./scripts/screenshot.sh);
-  wallpaper =
-    pkgs.writeScriptBin "wallpaper"
-    (builtins.readFile ./scripts/wallpaper.sh);
-in {
-  options.programs'.rofi.enable = lib.mkEnableOption {};
+  powermenu = pkgs.writeScriptBin "powermenu" (builtins.readFile ./scripts/powermenu.sh);
+  screenshot = pkgs.writeScriptBin "screenshot" (builtins.readFile ./scripts/screenshot.sh);
+  wallpaper = pkgs.writeScriptBin "wallpaper" (builtins.readFile ./scripts/wallpaper.sh);
+in
+{
+  options.programs'.rofi.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
       home.packages = [

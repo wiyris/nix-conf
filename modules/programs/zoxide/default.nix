@@ -2,16 +2,18 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.programs'.zoxide;
-in {
-  options.programs'.zoxide.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.zoxide.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.programs.zoxide = {
       enable = true;
       enableFishIntegration = true;
       enableNushellIntegration = true;
-      options = ["--cmd z"];
+      options = [ "--cmd z" ];
     };
   };
 }

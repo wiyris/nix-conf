@@ -2,12 +2,14 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.tray-tui;
-in {
-  options.programs'.tray-tui.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.tray-tui.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       home.shellAliases.ttui = "tray-tui";
       programs.tray-tui = {
         enable = true;

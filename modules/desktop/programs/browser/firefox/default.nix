@@ -3,14 +3,16 @@
   inputs,
   config,
   ...
-}: let
+}:
+let
   betterfox = inputs.betterfox;
   cfg = config.programs'.firefox;
   inherit (config.globals) userName;
-in {
+in
+{
   options.programs'.firefox = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
 
   config = lib.mkMerge [
@@ -23,8 +25,8 @@ in {
       };
     })
     (lib.mkIf cfg.enable {
-      hm'= {
-        stylix.targets.firefox.profileNames = ["${userName}"];
+      hm' = {
+        stylix.targets.firefox.profileNames = [ "${userName}" ];
         programs.firefox = {
           enable = true;
           policies = import ../share/policies;

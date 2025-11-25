@@ -3,10 +3,12 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.desktop.gtk;
-in {
-  options.desktop.gtk.enable = lib.mkEnableOption {};
+in
+{
+  options.desktop.gtk.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm'.gtk = {
       enable = true;

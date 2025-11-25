@@ -3,12 +3,14 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.hardware'.amdgpu;
-in {
-  options.hardware'.amdgpu.enable = lib.mkEnableOption {};
+in
+{
+  options.hardware'.amdgpu.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    services.xserver.videoDrivers = ["amdgpu"];
+    services.xserver.videoDrivers = [ "amdgpu" ];
 
     hardware.graphics = {
       enable = true;

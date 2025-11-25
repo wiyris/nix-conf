@@ -2,9 +2,11 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.services'.swww;
-in {
-  options.services'.swww.enable = lib.mkEnableOption {};
-  config = lib.mkIf cfg.enable {hm'.services.swww.enable = true;};
+in
+{
+  options.services'.swww.enable = lib.mkEnableOption { };
+  config = lib.mkIf cfg.enable { hm'.services.swww.enable = true; };
 }

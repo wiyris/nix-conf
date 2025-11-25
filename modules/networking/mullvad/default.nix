@@ -3,11 +3,13 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.networking'.mullvad;
-in {
+in
+{
   # https://wiki.nixos.org/wiki/Mullvad_VPN
-  options.networking'.mullvad.enable = lib.mkEnableOption {};
+  options.networking'.mullvad.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     services.mullvad-vpn = {
       enable = true;

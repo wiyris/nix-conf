@@ -3,15 +3,17 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.programs'.foot;
-in {
+in
+{
   options.programs'.foot = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {globals.defaultTerminal = "foot";})
+    (lib.mkIf cfg.isDefault { globals.defaultTerminal = "foot"; })
     (lib.mkIf cfg.enable {
       hm'.programs.foot = {
         enable = true;

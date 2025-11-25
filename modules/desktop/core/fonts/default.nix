@@ -3,10 +3,12 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.desktop.fonts;
-in {
-  options.desktop.fonts.enable = lib.mkEnableOption {};
+in
+{
+  options.desktop.fonts.enable = lib.mkEnableOption { };
 
   config = lib.mkIf cfg.enable {
     fonts = {

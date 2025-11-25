@@ -3,14 +3,16 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.services'.dwlb;
   dwlb = pkgs.dwlb.override {
     configH = ./config.h;
   };
-in {
-  options.services'.dwlb.enable = lib.mkEnableOption {};
+in
+{
+  options.services'.dwlb.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = [dwlb];
+    environment.systemPackages = [ dwlb ];
   };
 }

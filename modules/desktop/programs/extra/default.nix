@@ -3,10 +3,12 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.programs'.extraPackages;
-in {
-  options.programs'.extraPackages.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.extraPackages.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
@@ -26,7 +28,7 @@ in {
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      # easytag
+      easytag
       # gimp3
       # gpu-screen-recorder-gtk
 

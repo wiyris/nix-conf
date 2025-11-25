@@ -2,11 +2,13 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   rgb = color: "rgb(${color})";
-in {
+in
+{
   wayland.windowManager.hyprland = {
-    plugins = [pkgs.hyprlandPlugins.hyprexpo];
+    plugins = [ pkgs.hyprlandPlugins.hyprexpo ];
     settings = {
       plugin.hyprexpo = {
         columns = 3;
@@ -19,7 +21,7 @@ in {
         gesture_distance = 300;
         gesture_positive = false;
       };
-      bindd = ["$mainMod, SLASH, Open expose, hyprexpo:expo, toggle"];
+      bindd = [ "$mainMod, SLASH, Open expose, hyprexpo:expo, toggle" ];
     };
   };
 }

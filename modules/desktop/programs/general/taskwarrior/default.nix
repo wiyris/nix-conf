@@ -3,12 +3,14 @@
   pkgs,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.taskwarrior;
-in {
-  options.programs'.taskwarrior.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.taskwarrior.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       programs.taskwarrior = {
         enable = true;
         package = pkgs.taskwarrior3;

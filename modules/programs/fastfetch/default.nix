@@ -2,12 +2,14 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.fastfetch;
-in {
-  options.programs'.fastfetch.enable = lib.mkEnableOption {};
+in
+{
+  options.programs'.fastfetch.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    hm'= {
+    hm' = {
       home.shellAliases.ff = "fastfetch";
       programs.fastfetch = {
         enable = true;

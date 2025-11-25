@@ -2,16 +2,18 @@
   lib,
   config,
   ...
-}: let
+}:
+let
   cfg = config.programs'.kitty;
-in {
-  imports = [./dots/binds.nix];
+in
+{
+  imports = [ ./dots/binds.nix ];
   options.programs'.kitty = {
-    enable = lib.mkEnableOption {};
-    isDefault = lib.mkEnableOption {};
+    enable = lib.mkEnableOption { };
+    isDefault = lib.mkEnableOption { };
   };
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault {globals.defaultTerminal = "kitty";})
+    (lib.mkIf cfg.isDefault { globals.defaultTerminal = "kitty"; })
     (lib.mkIf cfg.enable {
       hm' = {
         home.sessionVariables.TERMINAL = "kitty";

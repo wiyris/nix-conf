@@ -18,11 +18,12 @@ in {
     security'.doas.enable = true;
 
     programs' = {
-      fish.enable = true;
       bat.enable = true;
       btop.enable = true;
       eza.enable = true;
       fastfetch.enable = true;
+      fish.enable = true;
+      fish.isDefault = true;
       fzf.enable = true;
       git.enable = true;
       gtrash.enable = true;

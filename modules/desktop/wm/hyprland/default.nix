@@ -46,6 +46,7 @@ in
           ./dots/rules.nix
           ./dots/scratchpads.nix
 
+          ./dots/hyprsunset.nix
           # ./plugins/hyprexpo.nix
         ]
         ++ lib.optionals config.laptop.enable [

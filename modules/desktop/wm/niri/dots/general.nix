@@ -35,6 +35,13 @@ in
       workspace-auto-back-and-forth = true;
     };
 
+    outputs."DP-2" = {
+      mode.width = 2560;
+      mode.height = 1440;
+      mode.refresh = 143.973;
+      scale = 1.3;
+    };
+
     overview = {
       workspace-shadow.enable = false;
       backdrop-color = "transparent";

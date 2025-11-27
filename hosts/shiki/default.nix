@@ -47,7 +47,7 @@ in
     desktop = {
       dwl.enable = true;
       hyprland.enable = true;
-      # niri.enable = true;
+      niri.enable = true;
 
       fonts.enable = true;
       gtk.enable = true;
@@ -81,7 +81,7 @@ in
       # freetube.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
-      # rmpc.enable = true;
+      rmpc.enable = true;
       # spotify.enable = true;
       zathura.enable = true;
 
@@ -95,13 +95,13 @@ in
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;
-      # mpd.enable = true;
+      mpd.enable = true;
       mako.enable = true;
       pipewire.enable = true;
       # ollama.enable = true;
       stash.enable = true;
       # swayosd.enable = true;
-      # swww.enable = true;
+      swww.enable = true;
       waybar.enable = true;
       wl-clip-persist.enable = true;
     };
@@ -135,7 +135,10 @@ in
         timeout = 0;
       };
       kernelPackages = pkgs.linuxPackages_zen;
-      kernelParams = [ "video=DP-2:1920x1080@144" ];
+      kernelParams = [
+        "video=DP-2:2560x1440@144"
+        # "video=HDMI-A-1:1920x1080@144"
+      ];
     };
   };
 }

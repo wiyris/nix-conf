@@ -19,7 +19,7 @@
       "$mainMod, S, exec, $launcher"
       "$mainMod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
-      # "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
+      "$mainMod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
 
       # Misc
       "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"

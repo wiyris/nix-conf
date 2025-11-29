@@ -10,8 +10,8 @@
           identity = true;
         }
         {
-          time = "21:00";
-          temperature = 5000;
+          time = "20:30";
+          temperature = 4000;
           gamma = 0.8;
         }
       ];

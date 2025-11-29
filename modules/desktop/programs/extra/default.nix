@@ -20,7 +20,8 @@ in
       qemu
       # scdl
       # taskwarrior-tui
-      tldr
+      # tldr
+      tealdeer
       # yt-dlp
 
       ## gtk
@@ -41,6 +42,7 @@ in
       # qbittorrent
 
       ## electron
+      vesktop
       # legcord
 
       ## other

@@ -44,7 +44,7 @@ in
           ./dots/input.nix
           ./dots/misc.nix
           ./dots/rules.nix
-          ./dots/scratchpads.nix
+          # ./dots/scratchpads.nix
 
           ./dots/hyprsunset.nix
           # ./plugins/hyprexpo.nix

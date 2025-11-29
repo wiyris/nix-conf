@@ -1,12 +1,10 @@
 {
-  lib,
-  pkgs,
   inputs,
-  config,
+  pkgs,
   ...
 }:
 let
-  opacity = 1.0;
+  opacity = 0.8;
   fontSize = 14;
 in
 {

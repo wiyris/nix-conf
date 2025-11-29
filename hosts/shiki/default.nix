@@ -90,13 +90,13 @@ in
 
     services' = {
       # cliphist.enable = true;
-      # dunst.enable = true;
+      dunst.enable = true;
       dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;
       mpd.enable = true;
-      mako.enable = true;
+      # mako.enable = true;
       pipewire.enable = true;
       # ollama.enable = true;
       stash.enable = true;

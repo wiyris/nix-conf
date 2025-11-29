@@ -8,19 +8,18 @@ let
 in
 {
   programs.niri.settings.binds = with config.lib.niri.actions; {
-    "Mod+Space".action = spawn "uwsm-app" "--" "${defaultTerminal}";
     "Mod+Return".action = spawn "uwsm-app" "--" "${defaultTerminal}";
     "Mod+Backspace".action = spawn "uwsm-app" "--" "${defaultTerminal}" "-e" "nvim";
     "Mod+J".action = spawn "uwsm-app" "--" "${defaultBrowser}";
-    "Mod+S".action = spawn "rofi" "-show" "drun";
-    "Mod+K".action =
-      spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|"
-        "wl-copy";
-    "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
+    "Mod+C".action = spawn "rofi" "-show" "drun";
+    # "Mod+K".action =
+    #   spawn "rofi" "-dmenu" "-theme" ".config/rofi/theme/cliphist.rasi" "|" "cliphist" "decode" "|"
+    #     "wl-copy";
+    # "Mod+Shift+W".action = spawn "uwsm-app" "--" "wallpaper";
     "Mod+M".action = spawn "uwsm-app" "--" "thunar";
     # "Print".action = screenshot;
-    "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
-    "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
+    # "Mod+Shift+Period".action = spawn "sh" "-c" "killall -SIGUSR1 .waybar-wrapped"; # toggle waybar
+    # "Mod+Ctrl+Period".action = spawn "sh" "-c" "killall .waybar-wrapped; waybar"; # reload waybar
 
     "Mod+Q".action = close-window;
     "Mod+MouseMiddle".action = close-window;
@@ -29,8 +28,8 @@ in
     "Mod+Shift+R".action = switch-preset-window-height;
     "Mod+Ctrl+R".action = reset-window-height;
 
-    "Mod+B".action = maximize-column;
-    "Mod+Shift+B".action = fullscreen-window;
+    "Mod+F".action = maximize-column;
+    "Mod+Shift+F".action = fullscreen-window;
 
     "Mod+Slash".action = toggle-overview;
 
@@ -48,39 +47,19 @@ in
     # "Mod+Shift+Apostrophe".action = consume-or-expel-window-left;
     # "Mod+Shift+Period".action = consume-or-expel-window-right;
 
-    "Mod+N".action = focus-workspace "browser";
-    "Mod+T".action = focus-workspace "editor";
-    "Mod+H".action = focus-workspace "iroiro";
-    "Mod+P".action = focus-workspace "media";
-    "Mod+D".action = focus-workspace "iroiro2";
-    "Mod+Semicolon".action = focus-workspace "steam";
-    "Mod+U".action = focus-workspace "iroiro3";
-    "Mod+O".action = focus-workspace "obsidian";
-    "Mod+Y".action = focus-workspace "msg";
-
-    "Mod+1".action = focus-workspace "browser";
-    "Mod+2".action = focus-workspace "editor";
-    "Mod+3".action = focus-workspace "iroiro";
-    "Mod+4".action = focus-workspace "media";
-    "Mod+5".action = focus-workspace "iroiro2";
-    "Mod+6".action = focus-workspace "steam";
-    "Mod+7".action = focus-workspace "iroiro3";
-    "Mod+8".action = focus-workspace "obsidian";
-    "Mod+9".action = focus-workspace "msg";
-
-    "Mod+Comma".action = focus-column-left;
-    "Mod+A".action = focus-window-or-workspace-down;
-    "Mod+E".action = focus-window-or-workspace-up;
-    "Mod+I".action = focus-column-right;
+    "Mod+H".action = focus-column-left;
+    "Mod+T".action = focus-window-or-workspace-down;
+    "Mod+N".action = focus-window-or-workspace-up;
+    "Mod+S".action = focus-column-right;
     "Mod+Left".action = focus-column-left;
     "Mod+Down".action = focus-window-or-workspace-down;
     "Mod+Up".action = focus-window-or-workspace-up;
     "Mod+Right".action = focus-column-right;
 
-    "Mod+Shift+Comma".action = move-column-left;
-    "Mod+Shift+A".action = move-window-down-or-to-workspace-down;
-    "Mod+Shift+E".action = move-window-up-or-to-workspace-up;
-    "Mod+Shift+I".action = move-column-right;
+    "Mod+Shift+H".action = move-column-left;
+    "Mod+Shift+T".action = move-window-down-or-to-workspace-down;
+    "Mod+Shift+N".action = move-window-up-or-to-workspace-up;
+    "Mod+Shift+S".action = move-column-right;
     "Mod+Shift+Left".action = move-column-left;
     "Mod+Shift+Down".action = move-window-down-or-to-workspace-down;
     "Mod+Shift+Up".action = move-window-up-or-to-workspace-up;

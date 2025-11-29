@@ -158,7 +158,7 @@ let
 in
 {
   programs.niri.settings = {
-    inherit workspaces;
+    # inherit workspaces;
     window-rules = windowRules;
     layer-rules = [
       {

@@ -18,8 +18,8 @@ in
     services.keyd = {
       enable = true;
       keyboards = {
-        # us = import ./us.nix;
-        jis = import ./jis-enthium.nix;
+        # jis = import ./jis-enthium.nix;
+        jis = import ./jis-promethium.nix;
       };
     };
   };

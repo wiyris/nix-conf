@@ -19,7 +19,7 @@ in
       enable = true;
       keyboards = {
         us = import ./us.nix;
-        jis = import ./jis.nix;
+        jis = import ./jis-enthium.nix;
       };
     };
   };

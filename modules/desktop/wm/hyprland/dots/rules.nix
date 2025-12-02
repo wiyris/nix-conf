@@ -5,6 +5,14 @@
       "float, tag:float"
       "float, tag:float_pin"
 
+      "float, tag:float_md"
+      "size 65% 70%, tag:float_md"
+      "float, tag:float_side"
+      "move 100%-w-15, tag:float_side"
+      "size 30% 93%, tag:float_side"
+      # "animation slide bottom, tag:float_md"
+      # "animation slide right, tag:float_side"
+
       "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$|(.*Extension.)$"
       "tag +float_md, class:^(mpv)$|^(pqiv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"

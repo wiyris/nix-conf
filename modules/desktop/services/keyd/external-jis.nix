@@ -1,5 +1,4 @@
 let
-  holdtime = 250;
   taptime = 175;
 in
 {
@@ -9,7 +8,7 @@ in
   ];
   settings = {
     global = {
-      "chord_timeout" = "40";
+      "chord_timeout" = "35";
       "default_layout" = "widemod";
     };
     "default:layout" = {

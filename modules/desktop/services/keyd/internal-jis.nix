@@ -1,5 +1,5 @@
 let
-  holdtime = 250;
+  holdtime = 200;
   taptime = 175;
 in
 {

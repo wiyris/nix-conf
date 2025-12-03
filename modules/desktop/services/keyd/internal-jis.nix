@@ -31,7 +31,7 @@ in
       j = "left";
       k = "down";
       l = "up";
-      "'" = "right";
+      ";" = "right";
       m = "home";
       "," = "pagedown";
       "." = "pageup";

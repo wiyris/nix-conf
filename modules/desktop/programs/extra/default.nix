@@ -30,8 +30,9 @@ in
       # dissent
       # easyeffects
       easytag
+      # overskride
       # gimp3
-      # gpu-screen-recorder-gtk
+      gpu-screen-recorder-gtk
 
       ## qt
       # calibre
@@ -49,6 +50,9 @@ in
       # aseprite
       # blender
       # grayjay
+      #
+      vpkedit
+      vlc
     ];
   };
 }

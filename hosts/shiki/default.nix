@@ -95,7 +95,7 @@ in
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;
-      mpd.enable = true;
+      # mpd.enable = true;
       # mako.enable = true;
       pipewire.enable = true;
       # ollama.enable = true;

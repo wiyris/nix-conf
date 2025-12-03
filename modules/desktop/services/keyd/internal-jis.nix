@@ -12,14 +12,14 @@ in
       "default_layout" = "mods";
     };
     "mods:layout" = {
-      a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
-      s = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
-      d = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
-      f = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
-      j = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
-      k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
-      l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
-      ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
+      # a = "lettermod(meta, s, ${toString holdtime}, ${toString taptime})";
+      # s = "lettermod(alt, n, ${toString holdtime}, ${toString taptime})";
+      # d = "lettermod(control, t, ${toString holdtime}, ${toString taptime})";
+      # f = "lettermod(shift, h, ${toString holdtime}, ${toString taptime})";
+      # j = "lettermod(shift, a, ${toString holdtime}, ${toString taptime})";
+      # k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
+      # l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
+      # ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
       space = "overloadt(extend, space, ${toString taptime})";
 
       "w+e" = "q";

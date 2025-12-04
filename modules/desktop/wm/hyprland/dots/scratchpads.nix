@@ -11,6 +11,11 @@ let
 
   inherit (osConfig.globals) defaultShell;
   hyprland-scratchpad = pkgs.writeScriptBin "hyprland-scratchpad" (
+    builtins.readFile ../scripts/hyprland-scratchpad.sh
+  );
+in
+{
+  home.packages = [ hyprland-scratchpad ];
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod, X, exec, hyprland-scratchpad --toggle"

@@ -87,18 +87,18 @@ in
         initLua =
           # lua
           ''
-            require("git"):setup()
-            require("starship"):setup()
-            require("full-border"):setup({
-              type = ui.Border.PLAIN,
-            })
-            -- require("zoxide"):setup({
-            --   update_db = false,
-            -- })
-            require("session"):setup({
-              sync_yanked = true,
-            })
-          '';
+              require("git"):setup()
+              require("starship"):setup()
+              require("full-border"):setup({
+                type = ui.Border.PLAIN,
+              })
+              -- require("zoxide"):setup({
+              --   update_db = false,
+              -- })
+            --   require("session"):setup({
+            --     sync_yanked = true,
+            --   })
+            -- '';
       };
     };
   };

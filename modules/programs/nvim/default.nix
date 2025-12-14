@@ -12,7 +12,7 @@ in
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {
-      v = "NVIM_APPNAME=lvim nvim";
+      v = "nvim";
       vv = "NVIM_APPNAME=vvim nvim";
     };
 
@@ -51,8 +51,8 @@ in
       stylua
       tree-sitter
       # tree-sitter-grammars
-      typescript-language-server
-      unzip
+      # typescript-language-server
+      kdePackages.qtdeclarative
 
       vimPlugins.nvim-lspconfig
     ];

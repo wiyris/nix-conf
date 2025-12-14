@@ -33,8 +33,8 @@
       # "$mainMod, semicolon, pseudo"
 
       # Group Control
-      "$mainMod, C, togglegroup"
-      "$mainMod CTRL, C, lockactivegroup, toggle"
+      # "$mainMod, C, togglegroup"
+      # "$mainMod CTRL, C, lockactivegroup, toggle"
       "ALT, TAB, changegroupactive"
 
       # Set sticky
@@ -42,10 +42,10 @@
       # "$mainMod, C, cyclenext"
 
       # Moving focus
-      "$mainMod, COMMA, movefocus, l"
-      "$mainMod, a,     movefocus, d"
-      "$mainMod, e,     movefocus, u"
-      "$mainMod, i,     movefocus, r"
+      "$mainMod, A, movefocus, l"
+      "$mainMod, E,     movefocus, d"
+      "$mainMod, I,     movefocus, u"
+      "$mainMod, C,     movefocus, r"
 
       "$mainMod, Left,  movefocus, l"
       "$mainMod, Down,  movefocus, d"
@@ -53,10 +53,10 @@
       "$mainMod, Right, movefocus, r"
 
       # Moving windows
-      "$mainMod SHIFT, COMMA,  swapwindow, l"
-      "$mainMod SHIFT, a,      swapwindow, d"
-      "$mainMod SHIFT, e,      swapwindow, u"
-      "$mainMod SHIFT, i,      swapwindow, r"
+      "$mainMod SHIFT, A,  swapwindow, l"
+      "$mainMod SHIFT, E,      swapwindow, d"
+      "$mainMod SHIFT, I,      swapwindow, u"
+      "$mainMod SHIFT, C,      swapwindow, r"
 
       "$mainMod, N, workspace, 1"
       "$mainMod, T, workspace, 2"

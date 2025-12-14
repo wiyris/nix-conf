@@ -17,8 +17,8 @@ in
       # gowall
       # lolcat
       microfetch
-      qemu
-      # scdl
+      # qemu
+      scdl
       # taskwarrior-tui
       # tldr
       tealdeer
@@ -30,29 +30,29 @@ in
       # dissent
       # easyeffects
       easytag
-      # overskride
-      # gimp3
-      gpu-screen-recorder-gtk
+      gimp3
+      # gpu-screen-recorder-gtk
 
       ## qt
       # calibre
       # kdePackages.kdenlive
       # krita
       # openshot-qt
-      # puddletag
+      puddletag
       # qbittorrent
+      # vlc
+      # quickshell
 
       ## electron
-      vesktop
+      # vesktop
       # legcord
 
       ## other
       # aseprite
       # blender
       # grayjay
-      #
-      vpkedit
-      vlc
+      # vpkedit
+      # feishin
     ];
   };
 }

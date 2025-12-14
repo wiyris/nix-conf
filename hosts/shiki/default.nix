@@ -45,7 +45,7 @@ in
     # programs'.tofi.isDefault = true;
 
     desktop = {
-      dwl.enable = true;
+      # dwl.enable = true;
       hyprland.enable = true;
       niri.enable = true;
 
@@ -81,7 +81,7 @@ in
       # freetube.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
-      rmpc.enable = true;
+      # rmpc.enable = true;
       # spotify.enable = true;
       zathura.enable = true;
 

@@ -50,8 +50,10 @@ in
       muhenkan = "r";
       henkan = "backspace";
       leftalt = "overloadt(meta, esc, ${toString taptime})";
-      capslock = "overloadt(control, q, ${toString taptime})";
-      "'" = "overloadt(control, z, ${toString taptime})";
+      # capslock = "overloadt(control, q, ${toString taptime})";
+      # "'" = "overloadt(control, z, ${toString taptime})";
+      capslock = "q";
+      "'" = "z";
     };
     "qwerty" = {
       q = "q";

@@ -18,7 +18,7 @@ in
       # lolcat
       microfetch
       # qemu
-      scdl
+      # scdl
       # taskwarrior-tui
       # tldr
       tealdeer
@@ -29,8 +29,8 @@ in
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      easytag
-      gimp3
+      # easytag
+      # gimp3
       # gpu-screen-recorder-gtk
 
       ## qt

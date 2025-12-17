@@ -19,13 +19,13 @@
                 mountOptions = [ "umask=0077" ];
               };
             };
-            swap = {
-              size = "1G";
-              content = {
-                type = "swap";
-                # resumeDevice = true; # hibernation
-              };
-            };
+            # swap = {
+            #   size = "1G";
+            #   content = {
+            #     type = "swap";
+            #     # resumeDevice = true; # hibernation
+            #   };
+            # };
             root = {
               size = "100%";
               content = {

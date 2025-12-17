@@ -23,7 +23,7 @@ in
       bat.enable = true;
       btop.enable = true;
       eza.enable = true;
-      fastfetch.enable = true;
+      # fastfetch.enable = true;
       fish.enable = true;
       fish.isDefault = true;
       fzf.enable = true;
@@ -47,7 +47,7 @@ in
     desktop = {
       # dwl.enable = true;
       hyprland.enable = true;
-      niri.enable = true;
+      # niri.enable = true;
 
       fonts.enable = true;
       gtk.enable = true;
@@ -69,7 +69,7 @@ in
       # kitty.enable = true;
 
       # browser
-      chromium.enable = true;
+      # chromium.enable = true;
       # firefox.enable = true;
       # librewolf.enable = true;
       # mullvad-browser.enable = true;
@@ -83,20 +83,20 @@ in
       pqiv.enable = true;
       # rmpc.enable = true;
       # spotify.enable = true;
-      zathura.enable = true;
+      # zathura.enable = true;
 
       extraPackages.enable = true;
     };
 
     services' = {
       # cliphist.enable = true;
-      dunst.enable = true;
-      dwlb.enable = true;
+      # dunst.enable = true;
+      # dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
-      keyd.enable = true;
+      # keyd.enable = true;
       # mpd.enable = true;
-      # mako.enable = true;
+      mako.enable = true;
       pipewire.enable = true;
       # ollama.enable = true;
       stash.enable = true;
@@ -107,13 +107,13 @@ in
     };
 
     gaming' = {
-      gamemode.enable = true;
-      lutris.enable = true;
+      # gamemode.enable = true;
+      # lutris.enable = true;
       # mangohud.enable = true;
       # optimize.enable = true;
       # osu.enable = false;
       # pipewireLowLatency.enable = true;
-      steam.enable = true;
+      # steam.enable = true;
     };
 
     globals = {
@@ -137,7 +137,6 @@ in
       kernelPackages = pkgs.linuxPackages_zen;
       kernelParams = [
         "video=DP-2:2560x1440@144"
-        # "video=HDMI-A-1:1920x1080@144"
       ];
     };
   };

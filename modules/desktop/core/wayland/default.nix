@@ -38,9 +38,8 @@ in
         inherit sessionVariables;
         packages = with pkgs; [
           hyprshot
-          wev
-          # wl-clipboard-rs
-          xwayland-satellite
+          # wev
+          # xwayland-satellite
 
           ## gtk
           thunderbird

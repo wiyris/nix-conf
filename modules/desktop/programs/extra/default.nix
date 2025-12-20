@@ -32,6 +32,9 @@ in
       # easytag
       # gimp3
       # gpu-screen-recorder-gtk
+      # firefox
+      pavucontrol
+      librewolf
 
       ## qt
       # calibre
@@ -44,8 +47,8 @@ in
       # quickshell
 
       ## electron
-      # vesktop
-      # legcord
+      vesktop
+      legcord
 
       ## other
       # aseprite
@@ -53,6 +56,9 @@ in
       # grayjay
       # vpkedit
       # feishin
+      helix
+      emacs-nox
+      sway
     ];
   };
 }

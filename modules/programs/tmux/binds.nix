@@ -15,14 +15,10 @@
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
       # General configs
-      # bind -n M-C-q detach
       bind -n M-q kill-pane
       bind -n M-Q kill-window
 
       # Split windows
-      # bind -n M-Space split-window -h
-      # bind -n M-Enter split-window -h -p 35
-      # bind -n M-C-Enter split-window -v
       bind | split-window -hc "#{pane_current_path}"
       bind-key "\\" split-window -fh -c "#{pane_current_path}"
       bind - split-window -vc "#{pane_current_path}"
@@ -36,24 +32,24 @@
       bind -n M-d if-shell 'tmux list-windows | grep -q "^5:"' 'select-window -t 5' 'new-window -t 5'
 
       # Move to each pane
-      bind -n M-i select-pane -R
-      bind -n M-, select-pane -L
-      bind -n M-e select-pane -U
-      bind -n M-a select-pane -D
+      # bind -n M-i select-pane -R
+      # bind -n M-, select-pane -L
+      # bind -n M-e select-pane -U
+      # bind -n M-a select-pane -D
       # bind -n M-l select-pane -R
       # bind -n M-h select-pane -L
       # bind -n M-k select-pane -U
       # bind -n M-j select-pane -D
 
       # Resize each pane
-      bind -n M-"-" resize-pane -L 5
-      bind -n M-"=" resize-pane -R 5
-      bind -n M-"'" resize-pane -U 2
-      bind -n M-"." resize-pane -D 2
+      # bind -n M-"-" resize-pane -L 5
+      # bind -n M-"=" resize-pane -R 5
+      # bind -n M-"'" resize-pane -U 2
+      # bind -n M-"." resize-pane -D 2
 
       # Swap windows
       bind -n M-"<" swap-window -d -t -1
-      bind -n M-I swap-window -d -t +1
+      bind -n M-">" swap-window -d -t +1
 
       # Toggle Bar
       # bind-key t set -g status

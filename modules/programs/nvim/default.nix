@@ -13,7 +13,7 @@ in
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {
       v = "nvim";
-      vv = "NVIM_APPNAME=vvim nvim";
+      vv = "NVIM_APPNAME=lvim nvim";
     };
 
     hm'.xdg.mimeApps.defaultApplications =

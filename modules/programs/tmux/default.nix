@@ -14,9 +14,9 @@ in
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [
-        ./dots/binds.nix
+        ./binds.nix
         ./plugins/catppuccin.nix
-        # ./plugins/fingers.nix
+        ./plugins/fingers.nix
         # ./plugins/toggle-popup.nix
       ];
       programs.tmux = {

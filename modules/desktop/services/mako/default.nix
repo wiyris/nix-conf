@@ -16,7 +16,7 @@ in
     hm'.services.mako = {
       enable = true;
       settings = {
-        border-size = 2;
+        border-size = 0;
         margin = 10;
         height = 250;
         border-radius = 0;

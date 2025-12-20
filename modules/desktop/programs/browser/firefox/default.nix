@@ -29,9 +29,9 @@ in
         stylix.targets.firefox.profileNames = [ "${userName}" ];
         programs.firefox = {
           enable = true;
-          policies = import ../share/policies;
+          policies = import ../share/policies.nix;
           profiles.${userName} = {
-            search = import ../share/search;
+            search = import ../share/search.nix;
             settings = import ./dots/settings.nix;
 
             extraConfig = ''

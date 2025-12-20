@@ -8,7 +8,7 @@
 let
   inherit (pkgs) writeText;
   cfg = config.services'.stash;
-  stash = inputs.stash.packages.${pkgs.system}.default;
+  stash = inputs.stash.packages.${pkgs.stdenv.hostPlatform.system}.default;
   regex = "(password|secret|api[_-]?key|token)[=: ]+[^\s]+";
 in
 {

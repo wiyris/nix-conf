@@ -23,7 +23,7 @@ in
       bat.enable = true;
       btop.enable = true;
       eza.enable = true;
-      # fastfetch.enable = true;
+      fastfetch.enable = true;
       fish.enable = true;
       fish.isDefault = true;
       fzf.enable = true;
@@ -60,16 +60,16 @@ in
       hyprlock.enable = true;
       rofi.enable = true;
       thunar.enable = true;
-      # tofi.enable = true;
+      tofi.enable = true;
       # tray-tui.enable = true;
 
       # terminal emulator
       foot.enable = true;
-      # ghostty.enable = true;
-      # kitty.enable = true;
+      ghostty.enable = true;
+      kitty.enable = true;
 
       # browser
-      # chromium.enable = true;
+      chromium.enable = true;
       # firefox.enable = true;
       # librewolf.enable = true;
       # mullvad-browser.enable = true;
@@ -89,31 +89,22 @@ in
     };
 
     services' = {
-      # cliphist.enable = true;
-      # dunst.enable = true;
-      # dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
-      # keyd.enable = true;
+      keyd.enable = true;
       # mpd.enable = true;
       mako.enable = true;
       pipewire.enable = true;
-      # ollama.enable = true;
       stash.enable = true;
-      # swayosd.enable = true;
-      swww.enable = true;
+      # swww.enable = true;
       waybar.enable = true;
       wl-clip-persist.enable = true;
     };
 
     gaming' = {
-      # gamemode.enable = true;
+      gamemode.enable = true;
       # lutris.enable = true;
-      # mangohud.enable = true;
-      # optimize.enable = true;
-      # osu.enable = false;
-      # pipewireLowLatency.enable = true;
-      # steam.enable = true;
+      steam.enable = true;
     };
 
     globals = {

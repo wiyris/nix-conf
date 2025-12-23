@@ -45,7 +45,7 @@ in
     # programs'.tofi.isDefault = true;
 
     desktop = {
-      # dwl.enable = true;
+      dwl.enable = true;
       hyprland.enable = true;
       # niri.enable = true;
 
@@ -89,6 +89,7 @@ in
     };
 
     services' = {
+      dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;
@@ -96,14 +97,14 @@ in
       mako.enable = true;
       pipewire.enable = true;
       stash.enable = true;
-      # swww.enable = true;
+      swww.enable = true;
       waybar.enable = true;
       wl-clip-persist.enable = true;
     };
 
     gaming' = {
       gamemode.enable = true;
-      # lutris.enable = true;
+      lutris.enable = true;
       steam.enable = true;
     };
 

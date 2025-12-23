@@ -31,7 +31,6 @@ static const char *const autostart[] = {
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	/* examples: */
-	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "thunderbird",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
 	{ "legcord",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
 };
@@ -47,6 +46,7 @@ static const Layout layouts[] = {
 /* monitors */
 static const MonitorRule monrules[] = {
   { "eDP-1",    0.5f,  1,      1.5,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
+  { "DP-2",     0.5f,  1,      1.33,   &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 	/* defaults */
 	{ NULL,       0.5f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 };
@@ -99,9 +99,8 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_s,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_j,          spawn,          {.v = browser} },
 	{ MODKEY,                    XKB_KEY_Return,     spawn,          {.v = termcmd} },
-	{ MODKEY,                    XKB_KEY_space,      spawn,          {.v = termcmd} },
-	{ MODKEY,                    XKB_KEY_comma,          focusstack,     {.i = +1} },
-	{ MODKEY,                    XKB_KEY_i,          focusstack,     {.i = -1} },
+	{ MODKEY,                    XKB_KEY_a,          focusstack,     {.i = +1} },
+	{ MODKEY,                    XKB_KEY_c,          focusstack,     {.i = -1} },
 	// { MODKEY,                    XKB_KEY_comma,      incnmaster,     {.i = +1} },
 	// { MODKEY,                    XKB_KEY_i,          incnmaster,     {.i = -1} },
 	{ MODKEY,                    XKB_KEY_minus,      setmfact,       {.f = -0.05f} },
@@ -111,7 +110,7 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                    XKB_KEY_v,          setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                    XKB_KEY_m,          setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                    XKB_KEY_c,      setlayout,      {0} },
+	// { MODKEY,                    XKB_KEY_c,      setlayout,      {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,      togglefloating, {0} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,         togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },

@@ -18,7 +18,7 @@ in
       # lolcat
       microfetch
       # qemu
-      # scdl
+      scdl
       # taskwarrior-tui
       # tldr
       tealdeer
@@ -29,7 +29,7 @@ in
       # d-spy # dbus gui
       # dissent
       # easyeffects
-      # easytag
+      easytag
       # gimp3
       # gpu-screen-recorder-gtk
       # firefox
@@ -43,7 +43,7 @@ in
       # openshot-qt
       puddletag
       # qbittorrent
-      # vlc
+      vlc
       # quickshell
 
       ## electron
@@ -54,7 +54,7 @@ in
       # aseprite
       # blender
       # grayjay
-      # vpkedit
+      vpkedit
       # feishin
       helix
       emacs-nox

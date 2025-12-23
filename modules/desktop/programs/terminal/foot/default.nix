@@ -22,7 +22,7 @@ in
           main = {
             horizontal-letter-offset = 0;
             vertical-letter-offset = 0;
-            pad = "8x8 center";
+            pad = "10x10 center";
             selection-target = "clipboard";
           };
 

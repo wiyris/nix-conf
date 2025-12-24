@@ -5,6 +5,8 @@
       kn = "killall -9";
       xx = "7z";
       yt = "yt-dlp";
+      sc = "scdl";
+      dr = "tldr";
 
       us = "systemctl --user";
       ds = "sudo systemctl";

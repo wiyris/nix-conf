@@ -36,14 +36,12 @@ in
 
         programs.fish = {
           enable = true;
-          # interactiveShellInit = ''
-          #   ${pkgs.fortune}/bin/fortune -s | ${pkgs.cowsay}/bin/cowsay
-          # '';
 
           shellInit =
             # fish
             ''
               set -U fish_greeting ""
+              set -xg NVIM_APPNAME lv
               set -xg EDITOR nvim
               set -xg VISUAL $EDITOR
               set -xg SUDO_EDITOR $EDITOR
@@ -54,10 +52,11 @@ in
               bind -M visual -m default y 'fish_clipboard_copy; commandline -f end-selection repaint-mode'
               bind yy fish_clipboard_copy
               bind p fish_clipboard_paste
-              # bind -M insert \e\z zi
+              bind -M insert \e\z zi
 
               export PATH="$HOME/.local/bin:$PATH"
             '';
+
           functions = {
             wav2flac =
               # fish

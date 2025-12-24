@@ -30,6 +30,7 @@ in
       git.enable = true;
       gtrash.enable = true;
       lazygit.enable = true;
+      nixvim.enable = true;
       nvim.enable = true;
       ripgrep.enable = true;
       starship.enable = true;
@@ -45,7 +46,7 @@ in
     # programs'.tofi.isDefault = true;
 
     desktop = {
-      dwl.enable = true;
+      # dwl.enable = true;
       hyprland.enable = true;
       # niri.enable = true;
 
@@ -60,16 +61,16 @@ in
       hyprlock.enable = true;
       rofi.enable = true;
       thunar.enable = true;
-      tofi.enable = true;
+      # tofi.enable = true;
       # tray-tui.enable = true;
 
       # terminal emulator
       foot.enable = true;
-      ghostty.enable = true;
-      kitty.enable = true;
+      # ghostty.enable = true;
+      # kitty.enable = true;
 
       # browser
-      chromium.enable = true;
+      # chromium.enable = true;
       # firefox.enable = true;
       # librewolf.enable = true;
       # mullvad-browser.enable = true;
@@ -81,7 +82,7 @@ in
       # freetube.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
-      # rmpc.enable = true;
+      rmpc.enable = true;
       # spotify.enable = true;
       # zathura.enable = true;
 
@@ -89,7 +90,7 @@ in
     };
 
     services' = {
-      dwlb.enable = true;
+      # dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;

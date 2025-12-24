@@ -55,10 +55,7 @@ in
       # blender
       # grayjay
       vpkedit
-      # feishin
-      helix
-      emacs-nox
-      sway
+      feishin
     ];
   };
 }

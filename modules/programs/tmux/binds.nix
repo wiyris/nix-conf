@@ -11,6 +11,9 @@
       bind p paste-buffer
       bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "wl-copy"
 
+      bind -n M-";" command-prompt
+      bind -n M-w choose-tree -Zw
+
       # Config reload
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
@@ -32,27 +35,26 @@
       bind -n M-d if-shell 'tmux list-windows | grep -q "^5:"' 'select-window -t 5' 'new-window -t 5'
 
       # Move to each pane
-      # bind -n M-i select-pane -R
-      # bind -n M-, select-pane -L
-      # bind -n M-e select-pane -U
-      # bind -n M-a select-pane -D
-      # bind -n M-l select-pane -R
+      bind -n M-a select-pane -L
+      bind -n M-e select-pane -U
+      bind -n M-i select-pane -D
+      bind -n M-c select-pane -R
       # bind -n M-h select-pane -L
-      # bind -n M-k select-pane -U
       # bind -n M-j select-pane -D
+      # bind -n M-k select-pane -U
+      # bind -n M-l select-pane -R
 
       # Resize each pane
-      # bind -n M-"-" resize-pane -L 5
-      # bind -n M-"=" resize-pane -R 5
-      # bind -n M-"'" resize-pane -U 2
-      # bind -n M-"." resize-pane -D 2
+      bind -n M-"-" resize-pane -L 5
+      bind -n M-"=" resize-pane -R 5
+      bind -n M-"'" resize-pane -U 2
+      bind -n M-"." resize-pane -D 2
 
       # Swap windows
       bind -n M-"<" swap-window -d -t -1
       bind -n M-">" swap-window -d -t +1
 
       # Toggle Bar
-      # bind-key t set -g status
       bind-key -n M-b set -g status
     '';
   };

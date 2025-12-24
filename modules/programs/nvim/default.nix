@@ -12,8 +12,9 @@ in
   # TODO: Port nvim config to Nixvim (or nvf)
   config = lib.mkIf cfg.enable {
     hm'.home.shellAliases = {
-      v = "nvim";
-      vv = "NVIM_APPNAME=lvim nvim";
+      v = "NVIM_APPNAME=nvim nvim";
+      lv = "NVIM_APPNAME=lv nvim";
+      vv = "NVIM_APPNAME=vv nvim";
     };
 
     hm'.xdg.mimeApps.defaultApplications =

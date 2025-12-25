@@ -35,7 +35,7 @@ in
 
       hm' = {
         imports = [
-          ./dots/animations.nix
+          ./dots/animations4.nix
           ./dots/decoration.nix
           ./dots/binds.nix
           ./dots/default_apps.nix

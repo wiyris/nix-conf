@@ -48,7 +48,7 @@
     ];
 
     layerrule = [
-      "animation popin, rofi"
+      "animation slide bottom, rofi"
       "noanim, launcher"
       "blur, rofi"
       "ignorezero, rofi"

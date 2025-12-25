@@ -23,12 +23,12 @@ in
 
           listener = [
             {
-              timeout = 120;
+              timeout = 300;
               on-timeout = "brightnessctl -s set 30";
               on-resume = "brightnessctl -r";
             }
             {
-              timeout = 300;
+              timeout = 600;
               on-timeout = "loginctl lock-session";
             }
             {

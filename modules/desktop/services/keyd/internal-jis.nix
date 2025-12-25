@@ -1,6 +1,6 @@
 let
-  holdtime = 200;
-  taptime = 175;
+  holdtime = 164;
+  taptime = 142;
 in
 {
   ids = [
@@ -8,7 +8,7 @@ in
   ];
   settings = {
     global = {
-      "chord_timeout" = "35";
+      "chord_timeout" = "30";
       "default_layout" = "mods";
     };
     "mods:layout" = {
@@ -20,14 +20,26 @@ in
       k = "lettermod(control, e, ${toString holdtime}, ${toString taptime})";
       l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
-      space = "overloadt(extend, space, ${toString taptime})";
+
+      muhenkan = "overloadt(nav, r, ${toString taptime})";
+      # space = "overloadt(num, space, ${toString taptime})";
 
       "w+e" = "q";
       "e+r" = "z";
       "x+c" = "C-insert"; # copy
       "c+v" = "S-insert"; # paste
     };
-    "extend" = {
+    "nav" = {
+      j = "left";
+      k = "down";
+      l = "up";
+      ";" = "right";
+      m = "home";
+      "," = "pagedown";
+      "." = "pageup";
+      "/" = "end";
+    };
+    "num" = {
       j = "left";
       k = "down";
       l = "up";

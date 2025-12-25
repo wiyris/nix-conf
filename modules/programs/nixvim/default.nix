@@ -11,12 +11,7 @@ in
   options.programs'.nixvim.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
-      imports = lib.filesystem.listFilesRecursive ./plugins ++ [
-        inputs.nixvim.homeModules.nixvim
-        ./binds.nix
-        ./options.nix
-      ];
-
+      imports = [ inputs.nixvim.homeModules.nixvim ];
       stylix.targets.nixvim = {
         enable = false;
         plugin = "base16-nvim";
@@ -24,12 +19,16 @@ in
 
       programs.nixvim = {
         enable = true;
+        imports = lib.filesystem.listFilesRecursive ./plugins ++ [
+          inputs.nixvim.homeModules.nixvim
+          ./binds.nix
+          ./options.nix
+        ];
+
+        colorschemes.catppuccin.enable = true;
         plugins = {
-          colorschemes.catppuccin.enable = true;
           lualine.enable = true;
-          mini-ai.enable = true;
-          mini-pairs.enable = true;
-          mini-icons.enable = true;
+          lsp.enable = true;
         };
       };
     };

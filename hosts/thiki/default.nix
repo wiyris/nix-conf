@@ -4,11 +4,13 @@
   lib,
   pkgs,
   ...
-}: let
+}:
+let
   userName = "tsubaki";
   hmConfig = config.home-manager.users.${userName};
   configDirectory = "${hmConfig.home.homeDirectory}/dots";
-in {
+in
+{
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen4
     ./disko.nix
@@ -54,7 +56,7 @@ in {
     ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    programs'.tofi.isDefault = true;
+    # programs'.tofi.isDefault = true;
 
     programs' = {
       # general
@@ -62,7 +64,7 @@ in {
       hyprlock.enable = true;
       rofi.enable = true;
       thunar.enable = true;
-      tofi.enable = true;
+      # tofi.enable = true;
       # tray-tui.enable = true;
 
       # terminal emulator
@@ -112,7 +114,7 @@ in {
     console = {
       earlySetup = true;
       font = "${pkgs.terminus_font}/share/consolefonts/ter-132n.psf.gz";
-      packages = with pkgs; [terminus_font];
+      packages = with pkgs; [ terminus_font ];
     };
 
     boot = {
@@ -121,8 +123,8 @@ in {
         efi.canTouchEfiVariables = true;
         timeout = 0;
       };
-      kernelParams = [];
-      blacklistedKernelModules = ["uvcvideo"];
+      kernelParams = [ ];
+      blacklistedKernelModules = [ "uvcvideo" ];
     };
   };
 }

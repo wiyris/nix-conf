@@ -48,10 +48,10 @@ in
 
           # ./dots/hyprsunset.nix
           # ./plugins/hyprexpo.nix
-        ]
-        ++ lib.optionals config.laptop.enable [
-          ./dots/perf.nix
         ];
+        # ++ lib.optionals config.laptop.enable [
+        #   ./dots/perf.nix
+        # ];
 
         wayland.windowManager.hyprland = {
           enable = true;

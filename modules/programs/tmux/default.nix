@@ -17,17 +17,15 @@ in
         ./binds.nix
         ./plugins/catppuccin.nix
         ./plugins/fingers.nix
-        # ./plugins/toggle-popup.nix
       ];
       programs.tmux = {
         enable = true;
-        # tmuxp.enable = true;
         inherit shell;
         mouse = true;
         escapeTime = 0;
         # aggressiveResize = true;
         # terminal = "screen-256color";
-        # focusEvents = true;
+        focusEvents = true;
         extraConfig = ''
           set -g status-position top
           # Start windows and panes at 1, not 0
@@ -35,7 +33,6 @@ in
           setw -g pane-base-index 1
         '';
         plugins = with pkgs.tmuxPlugins; [
-          tmux-fzf
           sensible
         ];
       };

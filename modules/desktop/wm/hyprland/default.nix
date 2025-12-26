@@ -6,11 +6,11 @@
   ...
 }:
 let
-  cfg = config.desktop.hyprland;
+  cfg = config.programs'.hyprland;
   perf = pkgs.writeScriptBin "perf" (builtins.readFile ./scripts/perf.sh);
 in
 {
-  options.desktop.hyprland = {
+  options.programs'.hyprland = {
     enable = lib.mkEnableOption { };
     isDefault = lib.mkEnableOption { };
   };

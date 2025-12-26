@@ -5,10 +5,10 @@
   ...
 }:
 let
-  cfg = config.desktop.dwl;
+  cfg = config.programs'.dwl;
 in
 {
-  options.desktop.dwl = {
+  options.programs'.dwl = {
     enable = lib.mkEnableOption { };
     isDefault = lib.mkEnableOption { };
   };

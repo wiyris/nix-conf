@@ -6,10 +6,10 @@
   ...
 }:
 let
-  cfg = config.desktop.niri;
+  cfg = config.programs'.niri;
 in
 {
-  options.desktop.niri = {
+  options.programs'.niri = {
     enable = lib.mkEnableOption { };
     isDefault = lib.mkEnableOption { };
   };

@@ -27,12 +27,10 @@ in
       bat.enable = true;
       btop.enable = true;
       eza.enable = true;
-      fastfetch.enable = true;
       fish.enable = true;
       fish.isDefault = true;
       fzf.enable = true;
       git.enable = true;
-      gtrash.enable = true;
       lazygit.enable = true;
       nvim.enable = true;
       ripgrep.enable = true;
@@ -43,11 +41,8 @@ in
     };
 
     ## DESKTOP
-    desktop.hyprland.isDefault = true; # dwl, hyprland, niri
-
+    desktop.dwl.isDefault = true; # dwl, hyprland, niri
     desktop.dwl.enable = true;
-    desktop.hyprland.enable = true;
-    # desktop.niri.enable = true;
 
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
@@ -56,39 +51,25 @@ in
     ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    # programs'.tofi.isDefault = true;
+    programs'.tofi.isDefault = true;
 
     programs' = {
-      # general
-      goldendict.enable = true;
-      hyprlock.enable = true;
-      rofi.enable = true;
-      thunar.enable = true;
-      # tofi.enable = true;
-      # tray-tui.enable = true;
+      tofi.enable = true;
 
       # terminal emulator
       foot.enable = true;
 
       # browser
-      chromium.enable = true;
       zen-browser.enable = true;
 
       # media
       mpv.enable = true;
-      pqiv.enable = true;
-      zathura.enable = true;
     };
 
     services' = {
       dwlb.enable = true;
-      fcitx.enable = true;
-      hypridle.enable = true;
       keyd.enable = true;
       mako.enable = true;
-      pipewire.enable = true;
-      waybar.enable = true;
-      wl-clip-persist.enable = true;
     };
 
     globals = {

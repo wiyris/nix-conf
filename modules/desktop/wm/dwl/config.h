@@ -32,7 +32,6 @@ static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	/* examples: */
 	{ "thunderbird",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
-	{ "legcord",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
 };
 
 /* layout(s) */
@@ -46,7 +45,6 @@ static const Layout layouts[] = {
 /* monitors */
 static const MonitorRule monrules[] = {
   { "eDP-1",    0.5f,  1,      1.5,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
-  { "DP-2",     0.5f,  1,      1.33,   &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 	/* defaults */
 	{ NULL,       0.5f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 };

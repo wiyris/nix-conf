@@ -41,8 +41,8 @@ in
     };
 
     ## DESKTOP
-    desktop.dwl.isDefault = true; # dwl, hyprland, niri
-    desktop.dwl.enable = true;
+    programs'.dwl.isDefault = true; # dwl, hyprland, niri
+    programs'.dwl.enable = true;
 
     desktop.fonts.enable = true;
     desktop.gtk.enable = true;
@@ -54,15 +54,9 @@ in
     programs'.tofi.isDefault = true;
 
     programs' = {
-      tofi.enable = true;
-
-      # terminal emulator
       foot.enable = true;
-
-      # browser
+      tofi.enable = true;
       zen-browser.enable = true;
-
-      # media
       mpv.enable = true;
     };
 

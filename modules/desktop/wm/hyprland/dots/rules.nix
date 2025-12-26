@@ -19,7 +19,7 @@
 
       "tag +browser, class:^(.*zen-beta.*)$"
       "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
-      "tag +music, class:^(spotify)$"
+      "tag +music, class:^(spotify)$|^(feishin)$"
       "tag +music, initialTitle:^(SoundCloud)$"
 
       "tag +game_launcher, class:^([Ss]team)$|^(net.lutris.Lutris)$"

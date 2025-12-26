@@ -7,17 +7,17 @@
 let
   cfg = config.services'.mpd;
   inherit (config.globals) homeDirectory;
-  musicDirectory = "${homeDirectory}/Music";
+  musicDirectory = "${homeDirectory}/Music/albums";
 in
 {
   options.services'.mpd.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     hm' = {
-      home.packages = [ pkgs.listenbrainz-mpd ];
-      services.mpd-mpris.enable = true;
+      # services.mpd-mpris.enable = true;
       services.mpd = {
         enable = true;
-        inherit musicDirectory;
+        # inherit musicDirectory;
+        musicDirectory = "/home/tsubaki/Music/albums";
 
         extraConfig = ''
           audio_output {
@@ -25,7 +25,7 @@ in
             name "PipeWire Sound Server"
           }
 
-          auto_update "yes"
+          # auto_update "yes"
         '';
       };
       # services.mpd-discord-rpc = {

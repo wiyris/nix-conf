@@ -20,7 +20,6 @@ in
       in
       {
         enable = true;
-
         enabledExtensions = with spicePkgs.extensions; [
           adblock
           autoSkipVideo
@@ -36,11 +35,11 @@ in
           pointer
         ];
 
-        # theme = spicePkgs.themes.catppuccin;
-        # colorScheme = "mocha";
+        theme = spicePkgs.themes.catppuccin;
+        colorScheme = "mocha";
 
-        theme = spicePkgs.themes.text;
-        colorScheme = "CatppuccinMocha";
+        # theme = spicePkgs.themes.text;
+        # colorScheme = "CatppuccinMocha";
       };
   };
 }

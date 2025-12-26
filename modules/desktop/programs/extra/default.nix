@@ -45,6 +45,7 @@ in
       # qbittorrent
       vlc
       # quickshell
+      jellyfin-desktop
 
       ## electron
       vesktop

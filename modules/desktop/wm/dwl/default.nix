@@ -34,6 +34,7 @@ in
             patches = oldAttrs.patches or [ ] ++ [
               ./patches/autostart-0.7.patch
               ./patches/tmux-borders-0.7.patch
+              ./patches/attachbottom.patch
             ];
           });
     };

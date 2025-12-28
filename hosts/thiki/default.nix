@@ -50,13 +50,13 @@ in
 
     ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
-    programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
+    programs'.librewolf.isDefault = true; # firefox, librewolf, zen-browser
     programs'.tofi.isDefault = true;
 
     programs' = {
       foot.enable = true;
       tofi.enable = true;
-      zen-browser.enable = true;
+      librewolf = true;
       mpv.enable = true;
     };
 
@@ -73,7 +73,6 @@ in
     };
 
     # laptop-specific config
-    laptop.enable = true;
     services.power-profiles-daemon.enable = true;
     environment.systemPackages = with pkgs; [
       brightnessctl

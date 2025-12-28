@@ -21,6 +21,7 @@ in
       prettyName = "Mango";
       comment = "";
       binPath = "/run/current-system/sw/bin/mango";
+      # binPath = "${pkgs.mango}/bin/mango;
     };
 
     programs.mango = {

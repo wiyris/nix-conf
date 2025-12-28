@@ -11,22 +11,16 @@ in
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [
-        ./modules/idle_inhibitor.nix
-        ./modules/hyprland-workspaces.nix
-        ./modules/dwl.nix
-        ./modules/niri.nix
-        ./modules/mpris.nix
-
         ./modules/clock.nix
-        ./modules/dwl.nix
-        ./modules/tray.nix
-        ./modules/pulseaudio.nix
-        # ./modules/bluetooth.nix
-        # ./modules/cpu.nix
-        # ./modules/memory.nix
+        ./modules/hyprland.nix
+        ./modules/idle_inhibitor.nix
+        ./modules/mpris.nix
         ./modules/network.nix
-        # ./modules/battery.nix
-        #
+        ./modules/niri.nix
+        ./modules/pulseaudio.nix
+        ./modules/sway.nix
+        ./modules/tray.nix
+        ./modules/workspaces.nix
         ./style.nix
       ];
 
@@ -40,8 +34,10 @@ in
 
           modules-left = [
             "idle_inhibitor"
+            # "ext/workspaces"
+            # "sway/workspaces"
             "hyprland/workspaces"
-            "niri/workspaces"
+            # "niri/workspaces"
           ];
 
           modules-center = [
@@ -51,9 +47,6 @@ in
           modules-right = [
             "clock"
             "pulseaudio"
-            # "bluetooth"
-            # "cpu"
-            # "memory"
             "network"
             "battery"
             "tray"

@@ -44,5 +44,4 @@
       description = "Default explorer";
     };
   };
-  options.laptop.enable = lib.mkEnableOption { };
 }

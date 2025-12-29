@@ -37,7 +37,6 @@ in
             # "ext/workspaces"
             # "sway/workspaces"
             "hyprland/workspaces"
-            # "niri/workspaces"
           ];
 
           modules-center = [

@@ -52,7 +52,7 @@ in
       stylua
       tree-sitter
       # tree-sitter-grammars
-      # typescript-language-server
+      typescript-language-server
       kdePackages.qtdeclarative
 
       vimPlugins.nvim-lspconfig

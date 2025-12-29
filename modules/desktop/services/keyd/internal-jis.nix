@@ -41,9 +41,9 @@ in
       "x+c" = "C-insert"; # copy
       "c+v" = "S-insert"; # paste
 
-      "muhenkan+a" = "S-9"; # (
-      "muhenkan+s" = "S-["; # {
-      "muhenkan+d" = "[";
+      "muhenkan+s" = "S-9"; # (
+      "muhenkan+d" = "S-["; # {
+      "muhenkan+f" = "[";
 
       "muhenkan+j" = "]";
       "muhenkan+k" = "S-]"; # }

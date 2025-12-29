@@ -17,7 +17,7 @@
       "tag +float_md, class:^(mpv)$|^(pqiv)$"
       "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
 
-      "tag +browser, class:^(.*zen-beta.*)$"
+      "tag +browser, class:^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
       "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
       "tag +music, class:^(spotify)$|^(feishin)$"
       "tag +music, initialTitle:^(SoundCloud)$"
@@ -39,7 +39,8 @@
       "norounding, class:^([Ss]team)$"
 
       "nodim, tag:browser"
-      "opacity 1.0 1.0 override, class:^(.*zen-beta.*)$|^(.*steam.*)$"
+      "opacity 1.0 1.0 override, tag:browser"
+      "opacity 1.0 1.0 override, class:^(.*steam.*)$"
 
       # Prevent suspend when a fullscreen app is open
       "idleinhibit fullscreen, class:^(*)$"

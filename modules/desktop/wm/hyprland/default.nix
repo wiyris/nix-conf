@@ -44,14 +44,11 @@ in
           ./dots/input.nix
           ./dots/misc.nix
           ./dots/rules.nix
-          # ./dots/scratchpads.nix
+          ./dots/scratchpads.nix
 
           # ./dots/hyprsunset.nix
           # ./plugins/hyprexpo.nix
         ];
-        # ++ lib.optionals config.laptop.enable [
-        #   ./dots/perf.nix
-        # ];
 
         wayland.windowManager.hyprland = {
           enable = true;
@@ -74,10 +71,12 @@ in
           # Scripts
           perf
         ];
+
+        services.hyprpaper.enable = lib.mkForce false;
       };
     })
-    (lib.mkIf config.services'.swww.enable {
-      hm'.services.hyprpaper.enable = lib.mkForce false;
-    })
+    # (lib.mkIf config.services'.swww.enable {
+    #   hm'.services.hyprpaper.enable = lib.mkForce false;
+    # })
   ];
 }

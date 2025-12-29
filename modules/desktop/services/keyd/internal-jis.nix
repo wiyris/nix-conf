@@ -22,6 +22,7 @@ in
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
       muhenkan = "overloadt(nav, r, ${toString taptime})";
+      space = "overloadt(num, space, ${toString taptime})";
 
       "w+e" = "q";
       "e+r" = "z";

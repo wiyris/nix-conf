@@ -56,7 +56,7 @@ in
     programs' = {
       foot.enable = true;
       tofi.enable = true;
-      librewolf = true;
+      librewolf.enable = true;
       mpv.enable = true;
     };
 

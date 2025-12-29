@@ -21,13 +21,14 @@ in
       l = "lettermod(alt, i, ${toString holdtime}, ${toString taptime})";
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
+      leftalt = "overloadt(meta, esc, ${toString taptime})";
       muhenkan = "overloadt(nav, r, ${toString taptime})";
       space = "overloadt(num, space, ${toString taptime})";
 
       "w+e" = "q";
       "e+r" = "z";
       "u+i" = "S-6"; # ^
-      "o+p" = "S-2"; # @
+      "i+o" = "S-2"; # @
 
       "r+f" = "S-backslash"; # |
       "e+d" = "backslash"; # \
@@ -52,6 +53,7 @@ in
       "space+k" = "S-3"; # #
       "space+l" = "S-4"; # $
 
+      esc = "noop";
       backspace = "noop";
       capslock = "noop";
     };
@@ -125,7 +127,6 @@ in
 
       muhenkan = "r";
       henkan = "backspace";
-      # leftalt = "overloadt(meta, esc, ${toString taptime})";
       # capslock = "overloadt(control, q, ${toString taptime})";
       # "'" = "overloadt(control, z, ${toString taptime})";
     };

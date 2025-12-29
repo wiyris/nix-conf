@@ -51,6 +51,8 @@ in
       "space+k" = "S-3"; # #
       "space+l" = "S-4"; # $
 
+      backspace = "noop";
+      capslock = "noop";
     };
     "nav" = {
       w = "C-pageup";
@@ -122,9 +124,9 @@ in
 
       muhenkan = "r";
       henkan = "backspace";
-      leftalt = "overloadt(meta, esc, ${toString taptime})";
-      capslock = "overloadt(control, q, ${toString taptime})";
-      "'" = "overloadt(control, z, ${toString taptime})";
+      # leftalt = "overloadt(meta, esc, ${toString taptime})";
+      # capslock = "overloadt(control, q, ${toString taptime})";
+      # "'" = "overloadt(control, z, ${toString taptime})";
     };
   };
 }

@@ -1,6 +1,6 @@
 let
-  holdtime = 164;
-  taptime = 142;
+  holdtime = 200;
+  taptime = 175;
 in
 {
   ids = [
@@ -8,7 +8,7 @@ in
   ];
   settings = {
     global = {
-      "chord_timeout" = "30";
+      "chord_timeout" = "35";
       "default_layout" = "mods";
     };
     "mods:layout" = {
@@ -22,32 +22,58 @@ in
       ";" = "lettermod(meta, c, ${toString holdtime}, ${toString taptime})";
 
       muhenkan = "overloadt(nav, r, ${toString taptime})";
-      # space = "overloadt(num, space, ${toString taptime})";
 
       "w+e" = "q";
       "e+r" = "z";
+      "u+i" = "S-6"; # ^
+      "o+p" = "S-2"; # @
+
+      "r+f" = "S-backslash"; # |
+      "e+d" = "backslash"; # \
+      "u+j" = "S-8"; # *
+      "i+k" = "S-7"; # &
+
+      "s+f" = "C-space"; # toggle fcitx
+      "j+l" = "S-5"; # %
+
       "x+c" = "C-insert"; # copy
       "c+v" = "S-insert"; # paste
+
+      "muhenkan+a" = "S-9"; # (
+      "muhenkan+s" = "S-["; # {
+      "muhenkan+d" = "[";
+
+      "muhenkan+j" = "]";
+      "muhenkan+k" = "S-]"; # }
+      "muhenkan+l" = "S-0"; # )
+
+      "space+j" = "S-1"; # !
+      "space+k" = "S-3"; # #
+      "space+l" = "S-4"; # $
+
     };
     "nav" = {
+      w = "C-pageup";
+      r = "C-pagedown";
+
+      a = "leftmeta";
+      s = "leftalt";
+      d = "leftcontrol";
+      f = "leftshift";
+
       j = "left";
       k = "down";
       l = "up";
       ";" = "right";
-      m = "home";
-      "," = "pagedown";
-      "." = "pageup";
-      "/" = "end";
+
+      u = "home";
+      i = "pagedown";
+      o = "pageup";
+      p = "end";
     };
     "num" = {
-      j = "left";
       k = "down";
       l = "up";
-      ";" = "right";
-      m = "home";
-      "," = "pagedown";
-      "." = "pageup";
-      "/" = "end";
 
       w = "4";
       e = "5";

@@ -7,7 +7,7 @@
 }:
 let
   cfg = config.gaming'.osu;
-  osu-stable = inputs.nix-gaming.packages.${pkgs.system}.osu-stable;
+  osu-stable = inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable;
 in
 {
   options.gaming'.osu.enable = lib.mkEnableOption { };

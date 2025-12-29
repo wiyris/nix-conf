@@ -40,16 +40,17 @@ in
     };
 
     ## DESKTOP
-    desktop.hyprland.isDefault = true; # dwl, hyprland, niri
+    programs'.hyprland.isDefault = true; # dwl, hyprland, niri
     programs'.foot.isDefault = true; # foot, ghostty, kitty
-    programs'.zen-browser.isDefault = true; # firefox, librewolf, zen-browser
-    # programs'.tofi.isDefault = true;
+    programs'.librewolf.isDefault = true; # firefox, librewolf, zen-browser
+
+    programs'.dwl.enable = true;
+    programs'.hyprland.enable = true;
+    programs'.mango.enable = true;
+    programs'.niri.enable = true;
+    programs'.sway.enable = true;
 
     desktop = {
-      # dwl.enable = true;
-      hyprland.enable = true;
-      # niri.enable = true;
-
       fonts.enable = true;
       gtk.enable = true;
       wayland.enable = true;
@@ -62,15 +63,15 @@ in
       rofi.enable = true;
       thunar.enable = true;
       # tofi.enable = true;
-      # tray-tui.enable = true;
+      tray-tui.enable = true;
 
       # terminal emulator
       foot.enable = true;
-      # ghostty.enable = true;
-      # kitty.enable = true;
+      ghostty.enable = true;
+      kitty.enable = true;
 
       # browser
-      # chromium.enable = true;
+      chromium.enable = true;
       # firefox.enable = true;
       # librewolf.enable = true;
       # mullvad-browser.enable = true;
@@ -78,26 +79,27 @@ in
       zen-browser.enable = true;
 
       # media
-      # cava.enable = true;
-      # freetube.enable = true;
+      cava.enable = true;
+      freetube.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
       rmpc.enable = true;
-      # spotify.enable = true;
-      # zathura.enable = true;
+      spotify.enable = true;
+      zathura.enable = true;
 
+      # dms.enable = true;
       extraPackages.enable = true;
     };
 
     services' = {
-      # dwlb.enable = true;
+      dunst.enable = true;
+      dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       keyd.enable = true;
-      # mpd.enable = true;
-      mako.enable = true;
       pipewire.enable = true;
       stash.enable = true;
+      swayosd.enable = true;
       swww.enable = true;
       waybar.enable = true;
       wl-clip-persist.enable = true;

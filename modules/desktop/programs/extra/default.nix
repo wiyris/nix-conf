@@ -13,16 +13,18 @@ in
     programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
       # cowsay
+      vlc
       # fortune
-      # gowall
+      gowall
       # lolcat
       microfetch
-      # qemu
+      qemu
       scdl
       # taskwarrior-tui
-      # tldr
       tealdeer
       # yt-dlp
+      wiremix
+      bluetui
 
       ## gtk
       # blanket # play rain, waves, etc sounds
@@ -30,21 +32,20 @@ in
       # dissent
       # easyeffects
       easytag
-      # gimp3
-      # gpu-screen-recorder-gtk
-      # firefox
+      gimp3
+      gpu-screen-recorder-gtk
+      firefox
       pavucontrol
       librewolf
 
       ## qt
       # calibre
-      # kdePackages.kdenlive
-      # krita
+      kdePackages.kdenlive
+      krita
       # openshot-qt
       puddletag
       # qbittorrent
-      vlc
-      # quickshell
+      quickshell
       jellyfin-desktop
 
       ## electron
@@ -54,8 +55,8 @@ in
       ## other
       # aseprite
       # blender
-      # grayjay
-      vpkedit
+      grayjay
+      # vpkedit
       feishin
     ];
   };

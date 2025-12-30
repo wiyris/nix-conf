@@ -87,7 +87,7 @@ in
       spotify.enable = true;
       zathura.enable = true;
 
-      # dms.enable = true;
+      dms-shell.enable = true;
       extraPackages.enable = true;
     };
 

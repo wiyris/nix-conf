@@ -10,7 +10,7 @@
           type = "gpt";
           partitions = {
             ESP = {
-              size = "1G";
+              size = "512M";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -22,17 +22,9 @@
             root = {
               size = "100%";
               content = {
-                # LUKS passphrase will be prompted interactively only
-                type = "luks";
-                name = "crypted";
-                settings = {
-                  allowDiscards = true;
-                };
-                content = {
-                  type = "filesystem";
-                  format = "ext4";
-                  mountpoint = "/";
-                };
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
               };
             };
           };

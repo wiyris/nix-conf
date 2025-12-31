@@ -30,7 +30,7 @@ in
       git.enable = true;
       gtrash.enable = true;
       lazygit.enable = true;
-      nixvim.enable = true;
+      # nixvim.enable = true;
       nvim.enable = true;
       ripgrep.enable = true;
       starship.enable = true;
@@ -98,6 +98,7 @@ in
     };
 
     gaming' = {
+      gamemode.enable = true;
       lutris.enable = true;
     };
 

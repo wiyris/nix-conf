@@ -18,7 +18,7 @@ in
       scdl
       tealdeer
       yt-dlp
-      # wiremix
+      wiremix
       # bluetui
 
       ## gtk

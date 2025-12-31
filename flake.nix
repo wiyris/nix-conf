@@ -13,11 +13,7 @@
     };
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    # nixpkgs-stable.url = "nixpkgs/nixos-25.05";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    # schizofox.url = "github:schizofox/schizofox";
 
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -55,20 +51,20 @@
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # niri = {
+    #   url = "github:sodiboo/niri-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     mango = {
       url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell/stable";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     nixvim = {
       url = "github:nix-community/nixvim";
@@ -80,10 +76,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-gaming = {
-      url = "github:fufexan/nix-gaming";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nix-gaming = {
+    #   url = "github:fufexan/nix-gaming";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # nix-on-droid = {
     #   url = "github:nix-community/nix-on-droid";
@@ -101,20 +97,20 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # zen-browser = {
+    #   url = "github:0xc000022070/zen-browser-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    betterfox = {
-      url = "github:yokoffing/Betterfox";
-      flake = false;
-    };
+    # betterfox = {
+    #   url = "github:yokoffing/Betterfox";
+    #   flake = false;
+    # };
 
-    zen-browser-catppuccin = {
-      url = "github:catppuccin/zen-browser";
-      flake = false;
-    };
+    # zen-browser-catppuccin = {
+    #   url = "github:catppuccin/zen-browser";
+    #   flake = false;
+    # };
 
     # catppuccin-obs = {
     #   url = "github:catppuccin/obs";

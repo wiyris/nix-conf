@@ -56,7 +56,7 @@ in
     programs' = {
       foot.enable = true;
       tofi.enable = true;
-      librewolf.enable = true;
+      # librewolf.enable = true;
       mpv.enable = true;
     };
 
@@ -75,6 +75,7 @@ in
     # laptop-specific config
     services.power-profiles-daemon.enable = true;
     environment.systemPackages = with pkgs; [
+      librewolf
       brightnessctl
     ];
 

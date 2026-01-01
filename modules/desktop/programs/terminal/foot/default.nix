@@ -17,7 +17,7 @@ in
     (lib.mkIf cfg.enable {
       hm'.programs.foot = {
         enable = true;
-        server.enable = true;
+        # server.enable = true;
         settings = {
           main = {
             horizontal-letter-offset = 0;

@@ -4,7 +4,6 @@
     "$bar"
     # "uwsm app -- steam"
     "uwsm app -- thunar --daemon"
-    "uwsm app -- foot --server"
     # "uwsm app -- obsidian"
     # "uwsm app -- thunderbird"
     # "gsettings set org.gnome.desktop.interface gtk-enabled-primary-paste false"

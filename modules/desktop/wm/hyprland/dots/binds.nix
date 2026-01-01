@@ -2,16 +2,15 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       # Apps
-      # "$mainMod, Return, exec, uwsm-app -- $terminal"
-      "$mainMod, Return, exec, uwsm-app -- footclient"
+      "$mainMod, Return, exec, uwsm-app -- $terminal"
       "$mainMod, Backspace, exec, uwsm-app -- $editor"
       "$mainMod, J, exec, uwsm app -- $browser"
       "$mainMod SHIFT, X, exec, uwsm app -- thunderbird"
       "$mainMod, M, exec, uwsm-app -- $explorer"
 
       # Bar
-      "$mainMod SHIFT, PERIOD, exec, $bar-reload"
-      "$mainMod CTRL, PERIOD, exec, $bar-toggle"
+      "$mainMod CTRL,  B, exec, $bar-reload"
+      "$mainMod SHIFT, B, exec, $bar-toggle"
 
       # Launcher
       "$mainMod, S, exec, $launcher"
@@ -23,7 +22,7 @@
       "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
-      "$mainMod SHIFT, B, fullscreen"
+      "$mainMod SHIFT, SLASH, fullscreen"
       "$mainMod, V, togglefloating"
       "$mainMod SHIFT, V, exec, hyprctl dispatch centerwindow 1"
       # "$mainMod, PERIOD, cyclenext"
@@ -31,9 +30,9 @@
       "$mainMod, comma, pseudo"
 
       # Group Control
-      "$mainMod, B, togglegroup"
-      "$mainMod CTRL, B, lockactivegroup, toggle"
-      "ALT, TAB, changegroupactive"
+      # "$mainMod, B, togglegroup"
+      # "$mainMod CTRL, B, lockactivegroup, toggle"
+      # "ALT, TAB, changegroupactive"
 
       # Set sticky
       # "$mainMod, B, pin"

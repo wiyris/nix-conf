@@ -10,6 +10,10 @@
         text = "";
       }
       {
+        name = "dots";
+        text = "󱄅";
+      }
+      {
         name = "documents";
         text = "";
       }

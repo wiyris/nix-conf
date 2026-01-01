@@ -40,6 +40,7 @@ in
             starship
             ;
         };
+        theme = import ./theme.nix;
         settings = {
           mgr = {
             layout = [

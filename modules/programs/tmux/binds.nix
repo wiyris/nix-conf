@@ -23,26 +23,22 @@
 
       # Split windows
       bind | split-window -hc "#{pane_current_path}"
-      bind-key "\\" split-window -fh -c "#{pane_current_path}"
+      bind "\\" split-window -fh -c "#{pane_current_path}"
       bind - split-window -vc "#{pane_current_path}"
 
       bind-key Z select-pane -l \; resize-pane -Z
 
-      bind -n M-n if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1'
-      bind -n M-t if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2'
-      bind -n M-h if-shell 'tmux list-windows | grep -q "^3:"' 'select-window -t 3' 'new-window -t 3'
-      bind -n M-p if-shell 'tmux list-windows | grep -q "^4:"' 'select-window -t 4' 'new-window -t 4'
-      bind -n M-d if-shell 'tmux list-windows | grep -q "^5:"' 'select-window -t 5' 'new-window -t 5'
+      bind -n M-n if-shell 'tmux list-windows | grep -q "^1:"' 'select-window -t 1' 'new-window -t 1 -c "#{pane_current_path}"'
+      bind -n M-t if-shell 'tmux list-windows | grep -q "^2:"' 'select-window -t 2' 'new-window -t 2 -c "#{pane_current_path}"'
+      bind -n M-h if-shell 'tmux list-windows | grep -q "^3:"' 'select-window -t 3' 'new-window -t 3 -c "#{pane_current_path}"'
+      bind -n M-p if-shell 'tmux list-windows | grep -q "^4:"' 'select-window -t 4' 'new-window -t 4 -c "#{pane_current_path}"'
+      bind -n M-d if-shell 'tmux list-windows | grep -q "^5:"' 'select-window -t 5' 'new-window -t 5 -c "#{pane_current_path}"'
 
       # Move to each pane
       bind -n M-a select-pane -L
       bind -n M-e select-pane -U
       bind -n M-i select-pane -D
       bind -n M-c select-pane -R
-      # bind -n M-h select-pane -L
-      # bind -n M-j select-pane -D
-      # bind -n M-k select-pane -U
-      # bind -n M-l select-pane -R
 
       # Resize each pane
       bind -n M-"-" resize-pane -L 5

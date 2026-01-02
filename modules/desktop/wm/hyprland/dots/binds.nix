@@ -22,9 +22,10 @@
       "$mainMod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
       "$mainMod, Q, killactive"
       "$mainMod SHIFT, Q, forcekillactive"
-      "$mainMod SHIFT, SLASH, fullscreen"
+
       "$mainMod, V, togglefloating"
-      "$mainMod SHIFT, V, exec, hyprctl dispatch centerwindow 1"
+      "$mainMod CTRL, V, exec, hyprctl dispatch centerwindow 1"
+      "$mainMod SHIFT, V, fullscreen"
       # "$mainMod, PERIOD, cyclenext"
       "$mainMod, b, togglesplit"
       "$mainMod, comma, pseudo"

@@ -30,6 +30,10 @@
         text = "󰊴";
       }
       {
+        name = "nvim";
+        text = "";
+      }
+      {
         name = "pictures";
         text = "";
       }

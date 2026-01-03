@@ -10,7 +10,7 @@
           type = "gpt";
           partitions = {
             ESP = {
-              size = "512M";
+              size = "1G";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -19,12 +19,27 @@
                 mountOptions = [ "umask=0077" ];
               };
             };
+            swap = {
+              size = "8G";
+              content = {
+                type = "swap";
+                # resumeDevice = true; # hibernation
+              };
+            };
             root = {
               size = "100%";
               content = {
-                type = "filesystem";
-                format = "ext4";
-                mountpoint = "/";
+                # LUKS passphrase will be prompted interactively only
+                type = "luks";
+                name = "crypted";
+                settings = {
+                  allowDiscards = true;
+                };
+                content = {
+                  type = "filesystem";
+                  format = "ext4";
+                  mountpoint = "/";
+                };
               };
             };
           };

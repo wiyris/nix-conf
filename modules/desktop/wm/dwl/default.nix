@@ -24,7 +24,7 @@ let
   };
 
   slstatus-final = pkgs.slstatus.override {
-    config = ./slstatus/config.h;
+    conf = ./slstatus/config.h;
   };
 
   startw = pkgs.writeShellScriptBin "startw" ''

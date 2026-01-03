@@ -28,17 +28,18 @@ in
         }).overrideAttrs
           (oldAttrs: {
             buildInputs = oldAttrs.buildInputs or [ ] ++ [
-              # pkgs.libdrm
-              # pkgs.fcft
+              pkgs.libdrm
+              pkgs.fcft
             ];
             patches = oldAttrs.patches or [ ] ++ [
               ./patches/autostart-0.7.patch
-              ./patches/tmux-borders-0.7.patch
               ./patches/attachbottom.patch
+              ./patches/bar-0.7.patch
             ];
           });
     };
     environment.systemPackages = with pkgs; [
+      slstatus
     ];
     xdg.portal.config.dwl.default = [
       "wlr"

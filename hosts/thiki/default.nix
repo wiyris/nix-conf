@@ -63,6 +63,7 @@ in
     services' = {
       keyd.enable = true;
       mako.enable = true;
+      pipewire.enable = true;
     };
 
     globals = {

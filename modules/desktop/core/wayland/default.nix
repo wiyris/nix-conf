@@ -20,7 +20,6 @@ let
   };
 in
 {
-  options.desktop.wayland.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs.uwsm.enable = true;
     hm' = {
@@ -49,13 +48,6 @@ in
           ## electron
           obsidian
         ];
-        shellAliases = {
-          hyp = "uwsm start hyprland-uwsm.desktop";
-          uri = "uwsm start niri-uwsm.desktop";
-          uwy = "uwsm start sway-uwsm.desktop";
-          uwl = "uwsm start -- dwl-uwsm.desktop -s 'dwlb -scale 2'";
-          uws = "uwsm stop";
-        };
       };
     };
   };

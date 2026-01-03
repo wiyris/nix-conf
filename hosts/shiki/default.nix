@@ -30,7 +30,7 @@ in
       git.enable = true;
       gtrash.enable = true;
       lazygit.enable = true;
-      # nixvim.enable = true;
+      nixvim.enable = true;
       nvim.enable = true;
       ripgrep.enable = true;
       starship.enable = true;
@@ -44,7 +44,7 @@ in
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.librewolf.isDefault = true; # firefox, librewolf, zen-browser
 
-    # programs'.dwl.enable = true;
+    programs'.dwl.enable = true;
     programs'.hyprland.enable = true;
     # programs'.mango.enable = true;
     # programs'.niri.enable = true;
@@ -53,6 +53,7 @@ in
     desktop = {
       fonts.enable = true;
       gtk.enable = true;
+      uwsm.enable = true;
       wayland.enable = true;
     };
 
@@ -62,7 +63,7 @@ in
       hyprlock.enable = true;
       rofi.enable = true;
       thunar.enable = true;
-      # tofi.enable = true;
+      tofi.enable = true;
       # tray-tui.enable = true;
 
       # terminal emulator
@@ -88,6 +89,7 @@ in
 
     services' = {
       dunst.enable = true;
+      dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       pipewire.enable = true;
@@ -99,7 +101,7 @@ in
 
     gaming' = {
       gamemode.enable = true;
-      lutris.enable = true;
+      # lutris.enable = true;
     };
 
     globals = {

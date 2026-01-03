@@ -22,7 +22,6 @@ in
 {
   options.desktop.wayland.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    programs.uwsm.enable = true;
     hm' = {
       xdg = {
         mimeApps.enable = true;

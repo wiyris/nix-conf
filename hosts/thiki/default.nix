@@ -61,7 +61,6 @@ in
     };
 
     services' = {
-      dwlb.enable = true;
       keyd.enable = true;
       mako.enable = true;
     };

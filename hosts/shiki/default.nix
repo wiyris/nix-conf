@@ -89,7 +89,6 @@ in
 
     services' = {
       dunst.enable = true;
-      dwlb.enable = true;
       fcitx.enable = true;
       hypridle.enable = true;
       pipewire.enable = true;

@@ -17,15 +17,15 @@ static uint32_t vertical_padding = 1;
 // allow in-line color commands in status text
 static bool status_commands = true;
 // center title text
-static bool center_title = false;
+static bool center_title = true;
 // use title space as status text element
-static bool custom_title = false;
+static bool custom_title = true;
 // title color use active colors
 static bool active_color_title = true;
 // scale
-static uint32_t buffer_scale = 1;
+static uint32_t buffer_scale = 2;
 // font
-static char *fontstr = "monospace:size=13";
+static char *fontstr = "monospace:size=14";
 // tag names
 static char *tags_names[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 

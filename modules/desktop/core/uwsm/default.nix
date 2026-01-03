@@ -10,11 +10,11 @@ in
   options.desktop.uwsm.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
     programs.uwsm.enable = true;
-    hm'.shellAliases = {
+    hm'.home.shellAliases = {
       hyp = "uwsm start hyprland-uwsm.desktop";
+      ugo = "uwsm start mango-uwsm.desktop";
       uri = "uwsm start niri-uwsm.desktop";
       uwy = "uwsm start sway-uwsm.desktop";
-      uwl = "uwsm start -- dwl-uwsm.desktop -s 'dwlb -scale 2'";
       uws = "uwsm stop";
     };
   };

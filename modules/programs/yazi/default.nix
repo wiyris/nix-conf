@@ -14,6 +14,7 @@ in
       imports = [
         ./plugins/mediainfo.nix
         ./plugins/ouch.nix
+        ./plugins/restore.nix
       ];
       home.packages = with pkgs; [
         fd
@@ -77,13 +78,13 @@ in
           };
         };
         keymap = {
-          mgr.prepend_keymap = [
-            {
-              run = "plugin jump-to-char";
-              on = [ "f" ];
-              desc = "Jump to char";
-            }
-          ];
+          # mgr.prepend_keymap = [
+          #   {
+          #     run = "plugin jump-to-char";
+          #     on = [ "f" ];
+          #     desc = "Jump to char";
+          #   }
+          # ];
         };
         initLua =
           # lua

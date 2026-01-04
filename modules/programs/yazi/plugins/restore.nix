@@ -18,21 +18,15 @@
       # - Restore multiple trashed files separated by comma, also support range:
       #      What file to restore [0..3]: 0-2, 3
 
-      # {
-      #   run = "plugin restore -- --interactive";
-      #   on = [
-      #     "d"
-      #     "U"
-      #   ];
-      #   desc = "Restore deleted files/folders (Interactive)";
-      # }
+      {
+        on = [ "U" ];
+        run = "plugin restore -- --interactive";
+        desc = "Restore deleted files/folders (Interactive)";
+      }
 
       # Or auto overwrite existed file/folder
       # {
-      #   on = [
-      #     "d"
-      #     "U"
-      #   ];
+      #   on = [ "U" ];
       #   run = "plugin restore -- --interactive --interactive-overwrite";
       #   desc = "Restore deleted files/folders (Interactive overwrite)";
       # }

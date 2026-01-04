@@ -33,7 +33,7 @@ in
       # kdePackages.kdenlive
       # krita
       puddletag
-      # jellyfin-desktop
+      jellyfin-desktop
 
       ## electron
 
@@ -41,7 +41,10 @@ in
       # blender
       # grayjay
       # vpkedit
-      # feishin
+      feishin
+      faugus-launcher
+      melonDS
+      mgba
     ];
   };
 }

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    age
+    # age
     curl
     ffmpeg # record, convert music/video
     # ffmpegthumbnailer
@@ -10,15 +10,16 @@
     gnupg
     # gtrash
     imagemagick # image editor
-    jq # manipulate JSON
+    # jq # manipulate JSON
     killall
     # lsof # print port process
     p7zip
-    unar
-    unzip
+    trash-cli
+    # unar
+    # unzip
     vim
     wget # download http/ftp
-    yq # manipulate YAML
+    # yq # manipulate YAML
   ];
 
   environment.shellAliases = {
@@ -36,7 +37,7 @@
 
     ".." = "cd ..";
     "..." = "cd ../..";
-    ".4" = "cd ../../..";
-    ".5" = "cd ../../../..";
+    ".3" = "cd ../../..";
+    ".4" = "cd ../../../..";
   };
 }

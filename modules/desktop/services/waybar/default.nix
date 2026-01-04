@@ -40,15 +40,15 @@ in
           ];
 
           modules-center = [
-            "mpris"
+            # "mpris"
           ];
 
           modules-right = [
-            "clock"
+            # "clock"
             "pulseaudio"
-            "network"
-            "battery"
-            "tray"
+            # "network"
+            # "battery"
+            # "tray"
           ];
         };
       };

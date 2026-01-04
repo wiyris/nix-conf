@@ -13,7 +13,7 @@
           for = "windows";
         }
         {
-          run = "ouch d -y \"$@\"";
+          run = ''ouch d -y "$@"'';
           desc = "Extract here with ouch";
           for = "unix";
         }

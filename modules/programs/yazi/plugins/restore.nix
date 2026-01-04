@@ -7,8 +7,8 @@
     };
     keymap.mgr.prepend_keymap = [
       {
-        run = "plugin restore";
         on = [ "u" ];
+        run = "plugin restore";
         desc = "Restore last deleted files/folders";
       }
 

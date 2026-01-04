@@ -12,6 +12,7 @@ in
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [
+        # ./plugins/jump-to-char.nix
         ./plugins/mediainfo.nix
         ./plugins/ouch.nix
         ./plugins/restore.nix
@@ -37,7 +38,6 @@ in
           inherit
             full-border
             git
-            jump-to-char
             starship
             ;
         };
@@ -78,25 +78,25 @@ in
           };
         };
         keymap = {
-          # mgr.prepend_keymap = [
-          #   {
-          #     run = "plugin jump-to-char";
-          #     on = [ "f" ];
-          #     desc = "Jump to char";
-          #   }
-          # ];
+          mgr.prepend_keymap = [
+            {
+              on = [ "D" ];
+              run = "noop";
+              desc = "";
+            }
+          ];
         };
         initLua =
           # lua
           ''
-              require("git"):setup()
-              require("starship"):setup()
-              require("full-border"):setup({
-                type = ui.Border.PLAIN,
-              })
-              -- require("zoxide"):setup({
-              --   update_db = false,
-              -- })
+            require("git"):setup()
+            require("starship"):setup()
+            require("full-border"):setup({
+              type = ui.Border.PLAIN,
+            })
+            -- require("zoxide"):setup({
+            --   update_db = false,
+            -- })
             --   require("session"):setup({
             --     sync_yanked = true,
             --   })

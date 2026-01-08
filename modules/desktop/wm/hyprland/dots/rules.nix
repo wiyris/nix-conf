@@ -1,66 +1,60 @@
 {
   wayland.windowManager.hyprland.settings = {
-    windowrulev2 = [
+    windowrule = [
       # Base Rules
-      "float, tag:float"
-      "float, tag:float_pin"
+      "float on, match:tag float"
+      "float on, match:tag float_md"
+      "float on, match:tag float_pin"
+      "float on, match:tag float_side"
 
-      "float, tag:float_md"
-      "size 65% 70%, tag:float_md"
-      "float, tag:float_side"
-      "move 100%-w-15, tag:float_side"
-      "size 30% 93%, tag:float_side"
-      # "animation slide bottom, tag:float_md"
-      # "animation slide right, tag:float_side"
+      "size 1280 720, match:tag float_md"
+      # "move 100%-w-15, match:tag float_side"
+      "move 1468 67, match:tag float_side"
+      # "size 30% 93%, match:tag float_side"
+      "size 564 1068, match:tag float_side"
+      # "animation slide bottom match:tag:float_md"
+      # "animation slide right match:tag:float_side"
 
-      "tag +float, title:^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$|(.*Extension.)$"
-      "tag +float_md, class:^(mpv)$|^(pqiv)$"
-      "tag +float_pin, title:^(.*Picture-in-Picture.*)$"
+      "tag +float, match:title ^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$|(.*Extension.)$"
+      "tag +float_md, match:class ^(mpv)$|^(pqiv)$"
+      "tag +float_pin, match:title ^(.*Picture-in-Picture.*)$"
 
-      "tag +browser, class:^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
-      "tag +game, class:^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
-      "tag +music, class:^(spotify)$|^(feishin)$"
-      "tag +music, initialTitle:^(SoundCloud)$"
+      "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
+      "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
+      "tag +game, match:class ^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
+      "tag +music, match:class ^(spotify)$|^(feishin)$"
 
-      "tag +game_launcher, class:^([Ss]team)$|^(net.lutris.Lutris)$"
-      "tag +game_launcher, title:^([Ss]team)$"
+      "tag +game_launcher, match:class ^([Ss]team)$|^(net.lutris.Lutris)$"
+      "tag +game_launcher, match:title ^([Ss]team)$"
 
       # Workspace Rules
-      "workspace 5 silent, tag:game"
-      "workspace 6 silent, tag:game_launcher"
-      "workspace 7 silent, tag:music"
-      "workspace 8 silent, class:^(obsidian)$"
-      "workspace 9 silent, class:^(thunderbird)$"
-      "workspace 9 silent, class:^(vesktop)$|^(legcord)$"
+      "workspace 5 silent, match:tag game"
+      "workspace 6 silent, match:tag game_launcher"
+      "workspace 7 silent, match:tag music"
+      "workspace 8 silent, match:class ^(obsidian)$"
+      "workspace 9 silent, match:class ^(thunderbird)$"
 
-      "immediate, tag:game"
-      "noblur, tag:game"
-      "norounding, tag:game"
-      "norounding, class:^([Ss]team)$"
+      "immediate on, match:tag game"
+      "no_blur on, match:tag game"
+      "rounding 0, match:tag game"
+      "rounding 0, match:class ^([Ss]team)$"
 
-      "nodim, tag:browser"
-      "opacity 1.0 1.0 override, tag:browser"
-      "opacity 1.0 1.0 override, class:^(.*steam.*)$"
+      "no_dim on, match:tag browser"
+      "opacity 1.0 1.0 override, match:tag browser"
+      "opacity 1.0 1.0 override, match:class ^(.*steam.*)$"
 
       # Prevent suspend when a fullscreen app is open
-      "idleinhibit fullscreen, class:^(*)$"
-      "idleinhibit fullscreen, title:^(*)$"
-      "idleinhibit fullscreen, fullscreen:1"
+      # "idle_inhibit fullscreen class:^(*)$"
+      # "idle_inhibit fullscreen title:^(*)$"
+      # "idle_inhibit fullscreen fullscreen:1"
     ];
 
     layerrule = [
-      "animation slide bottom, rofi"
-      "noanim, launcher"
-      "blur, rofi"
-      "ignorezero, rofi"
-      "ignorezero, waybar"
-
-      "animation slide right, notifications"
-      "blur, notifications"
-      "ignorezero, notifications"
-
-      "animation fade, swayosd"
-      "animation fade, hyprlock"
+      "no_anim on,match:namespace launcher"
+      "blur on, ignore_alpha 0.5, match:namespace waybar"
+      "blur on, ignore_alpha 0.5, animation slide bottom, match:namespace rofi"
+      "blur on, ignore_alpha 0.5, animation slide right, match:namespace notifications"
+      "animation fade,match:namespace hyprlock"
     ];
 
     #Gaming Workspace

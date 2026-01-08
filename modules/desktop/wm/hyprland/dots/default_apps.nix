@@ -13,8 +13,6 @@ let
 in
 {
   wayland.windowManager.hyprland.settings = {
-    "$mainMod" = "SUPER";
-    "$terminal" = "${defaultTerminal}";
     "$editor" = "$terminal -e nvim";
     "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
     # "$clipboard" = "cliphist-rofi | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";

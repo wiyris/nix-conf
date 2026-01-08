@@ -24,7 +24,7 @@
       }
       {
         name = "kensington-slimblade-trackball";
-        sensitivity = -0.4;
+        sensitivity = 0.2;
         accel_profile = "flat";
       }
     ];

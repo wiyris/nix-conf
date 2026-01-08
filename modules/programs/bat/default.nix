@@ -26,9 +26,9 @@ in
         sessionVariables = {
           # Use bat in man pager
           # source: https://github.com/sharkdp/bat?tab=readme-ov-file#man
-          MANPAGER = "bat -plman'";
-          # MANPAGER = "sh -c 'col -bx | bat -l man -p'";
-          # MANROFFOPT = "-c";
+          # MANPAGER = "bat -plman'";
+          MANPAGER = "sh -c 'col -bx | bat -l man -p'";
+          MANROFFOPT = "-c";
         };
       };
     };

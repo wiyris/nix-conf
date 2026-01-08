@@ -153,7 +153,7 @@ in
             DeactivateKeys=
 
             [Hotkey/TriggerKeys]
-            0=Control+space
+            0=Control+Alt+J
 
             [Hotkey/PrevPage]
             0=Up
@@ -172,6 +172,7 @@ in
 
             [Behavior]
             ActiveByDefault=False
+            resetStateWhenFocusIn=All
             ShareInputState=No
             PreeditEnabledByDefault=True
             ShowInputMethodInformation=True

@@ -24,7 +24,7 @@ in
       ## gtk
       # d-spy # dbus gui
       # easyeffects
-      easytag
+      # easytag
       # gimp3
       # pavucontrol
       librewolf
@@ -45,6 +45,8 @@ in
       faugus-launcher
       melonDS
       mgba
+      input-remapper
+      waybar
     ];
   };
 }

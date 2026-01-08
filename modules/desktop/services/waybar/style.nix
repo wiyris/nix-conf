@@ -7,9 +7,11 @@
   stylix.targets.waybar.addCss = false;
   home.packages = [ pkgs.nerd-fonts.noto ];
   programs.waybar.style = lib.mkAfter ''
-    @define-color dark #1d2021;
     * { background: @base00; padding:0 7px; }
     * { font-family: NotoSans Nerd Font; font-weight: bold; font-size: 18px; }
+    * { border-radius: 7; }
+    # * { box-shadow: 4px 4px 2px 1px @base00; }
+    window:hover,
 
     #idle_inhibitor { font-size: 22pt; }
     #idle_inhibitor.activated { color: @base0C; }

@@ -11,8 +11,8 @@
       us = "systemctl --user";
       ds = "sudo systemctl";
 
-      bc = "bluetoothctl connect";
-      bd = "bluetoothctl disconnect";
+      btc = "bluetoothctl connect";
+      btd = "bluetoothctl disconnect";
       vol = "wpctl set-volume '@DEFAULT_AUDIO_SINK@'";
 
       mc = "mullvad connect";

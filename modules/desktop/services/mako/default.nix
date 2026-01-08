@@ -16,10 +16,10 @@ in
     hm'.services.mako = {
       enable = true;
       settings = {
-        border-size = 2;
+        border-size = 0;
         margin = 10;
         height = 250;
-        border-radius = 0;
+        border-radius = 10;
         default-timeout = 10000;
         "urgency=low" = {
           default-timeout = 6000;

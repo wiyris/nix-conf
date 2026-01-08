@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # age
+    bc
     curl
     ffmpeg # record, convert music/video
     # ffmpegthumbnailer

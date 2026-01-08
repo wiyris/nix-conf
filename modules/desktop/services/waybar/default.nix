@@ -11,44 +11,36 @@ in
   config = lib.mkIf cfg.enable {
     hm' = {
       imports = [
-        ./modules/clock.nix
-        ./modules/hyprland.nix
         ./modules/idle_inhibitor.nix
-        ./modules/mpris.nix
-        ./modules/network.nix
-        ./modules/niri.nix
+        ./modules/hyprland.nix
         ./modules/pulseaudio.nix
-        ./modules/sway.nix
-        ./modules/tray.nix
-        ./modules/workspaces.nix
-        ./style.nix
+        # ./style.nix
       ];
 
+      stylix.targets.waybar.addCss = false;
       programs.waybar = {
         enable = true;
 
         settings.main = {
           layer = "top";
-          height = 40;
+          height = 35;
+          margin-top = 10;
+          margin-left = 18;
+          margin-bottom = 0;
+          margin-right = 18;
           reload_style_on_change = true;
 
           modules-left = [
             "idle_inhibitor"
-            # "ext/workspaces"
-            # "sway/workspaces"
             "hyprland/workspaces"
           ];
 
-          modules-center = [
-            # "mpris"
-          ];
-
+          # modules-center = [
+          #   # "mpris"
+          # ];
+          #
           modules-right = [
-            # "clock"
             "pulseaudio"
-            # "network"
-            # "battery"
-            # "tray"
           ];
         };
       };

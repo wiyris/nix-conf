@@ -8,30 +8,16 @@
   home.packages = [ pkgs.nerd-fonts.noto ];
   programs.waybar.style = lib.mkAfter ''
     * { background: @base00; padding:0 7px; }
-    * { font-family: NotoSans Nerd Font; font-weight: bold; font-size: 18px; }
-    * { border-radius: 7; }
-    # * { box-shadow: 4px 4px 2px 1px @base00; }
-    window:hover,
-
     #idle_inhibitor { font-size: 22pt; }
     #idle_inhibitor.activated { color: @base0C; }
-
     #workspaces * { font-size: 12px; padding: 1px; }
     #workspaces button { color: @base04; }
     #workspaces button.empty { color: @base02; }
     /* #workspaces button.active { color: @base07; } */
     #workspaces button.active { color: #f5c2e7; }
-
     #network.disconnected { color: @base0E; }
-
     #pulseaudio { min-width: 65px; }
     #pulseaudio.muted { color: @base08; }
-
-    #battery { color: @base05; }
-    #battery.warning { color: @base0A; }
-    #battery.critical { color: @base0E; }
-    #battery.charging { color: @base0D; }
-
     #tray * { padding: 0; }
   '';
 }

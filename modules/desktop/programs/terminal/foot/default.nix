@@ -17,8 +17,9 @@ in
     (lib.mkIf cfg.enable {
       hm'.programs.foot = {
         enable = true;
-        # server.enable = true;
+        server.enable = true;
         settings = {
+          key-bindings = import ./binds.nix;
           main = {
             horizontal-letter-offset = 0;
             vertical-letter-offset = 0;
@@ -31,9 +32,9 @@ in
             notify = "yes";
           };
 
-          desktop-notifications = {
-            command = "${lib.getExe pkgs.libnotify} -a \${app-id} -i \${app-id} \${title} \${body}";
-          };
+          # desktop-notifications = {
+          #   command = "${lib.getExe pkgs.libnotify} -a \${app-id} -i \${app-id} \${title} \${body}";
+          # };
 
           scrollback = {
             lines = 10000;
@@ -42,9 +43,9 @@ in
             indicator-format = "line";
           };
 
-          url = {
-            launch = "${pkgs.xdg-utils}/bin/xdg-open \${url}";
-          };
+          # url = {
+          #   launch = "${pkgs.xdg-utils}/bin/xdg-open \${url}";
+          # };
 
           cursor = {
             style = "beam";

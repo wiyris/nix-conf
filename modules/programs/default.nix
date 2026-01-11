@@ -16,8 +16,8 @@
     # lsof # print port process
     p7zip
     trash-cli
-    # unar
-    # unzip
+    unar
+    unzip
     vim
     wget # download http/ftp
     # yq # manipulate YAML

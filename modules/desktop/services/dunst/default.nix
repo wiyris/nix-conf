@@ -36,13 +36,13 @@ in
           separator_height = 1;
           padding = 24;
           horizontal_padding = 24;
-          frame_width = 2;
+          frame_width = 0;
           corner_radius = 7;
           sort = "update";
           idle_threshold = 120;
           alignment = "center";
           word_wrap = "yes";
-          transparency = 5;
+          transparency = 0;
           format = "<b>%s</b>: %b";
           markup = "full";
           min_icon_size = 32;

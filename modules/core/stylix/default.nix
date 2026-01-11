@@ -4,7 +4,7 @@
   ...
 }:
 let
-  opacity = 1.0;
+  opacity = 0.65;
   fontSize = 14;
 in
 {
@@ -21,9 +21,15 @@ in
       popups = opacity;
     };
 
+    # cursor = {
+    #   package = pkgs.catppuccin-cursors.mochaDark;
+    #   name = "catppuccin-mocha-dark-cursors";
+    #   size = 32;
+    # };
+
     cursor = {
-      package = pkgs.catppuccin-cursors.mochaDark;
-      name = "catppuccin-mocha-dark-cursors";
+      package = pkgs.rose-pine-cursor;
+      name = "BreezeX-RosePine-Linux";
       size = 32;
     };
 

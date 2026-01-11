@@ -16,7 +16,7 @@ in
       enable = true;
       config.settings.nixd = {
         formatting = {
-          command = [ "${getExe pkgs.nixfmt-rfc-style}" ];
+          command = [ "${getExe pkgs.nixfmt}" ];
         };
       };
     };

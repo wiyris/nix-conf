@@ -8,14 +8,14 @@ let
   cfg = config.desktop.wayland;
   sessionVariables = {
     # Force GTK to use wayland
-    GDK_BACKEND = "wayland,x11,*";
-    CLUTTER_BACKEND = "wayland";
-    SDL_VIDEODRIVER = "wayland";
+    # GDK_BACKEND = "wayland,x11,*";
+    # CLUTTER_BACKEND = "wayland";
+    # SDL_VIDEODRIVER = "wayland";
     # Force QT to use wayland
-    QT_QPA_PLATFORM = "wayland;xcb";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    MOZ_ENABLE_WAYLAND = "1";
-    XDG_SESSION_TYPE = lib.mkDefault "wayland";
+    # QT_QPA_PLATFORM = "wayland;xcb";
+    # QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    # MOZ_ENABLE_WAYLAND = "1";
+    # XDG_SESSION_TYPE = lib.mkDefault "wayland";
     # NIXOS_OZONE_WL = "1";
   };
 in

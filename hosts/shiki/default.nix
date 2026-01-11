@@ -44,7 +44,7 @@ in
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.librewolf.isDefault = true; # firefox, librewolf, zen-browser
 
-    programs'.dwl.enable = true;
+    # programs'.dwl.enable = true;
     programs'.hyprland.enable = true;
     # programs'.mango.enable = true;
     # programs'.niri.enable = true;

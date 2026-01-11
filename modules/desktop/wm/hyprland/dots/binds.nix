@@ -22,7 +22,7 @@
       "$mod, S, exec, $launcher"
       "$mod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
-      # "$mod SHIFT, W, exec, pkill rofi || uwsm-app -- wallpaper"
+      "$mod SHIFT, X, exec, pkill rofi || uwsm-app -- wallpaper"
 
       # Misc
       "$mod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
@@ -31,7 +31,7 @@
 
       "$mod, V, togglefloating"
       "$mod CTRL, V, exec, hyprctl dispatch centerwindow 1"
-      "$mod SHIFT, V, fullscreen"
+      "$mod SHIFT, F, fullscreen"
       # "$mod, PERIOD, cyclenext"
       "$mod, b, togglesplit"
       "$mod, comma, pseudo"

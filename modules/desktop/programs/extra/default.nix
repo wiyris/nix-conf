@@ -42,11 +42,10 @@ in
       # grayjay
       # vpkedit
       feishin
-      faugus-launcher
+      libnotify
       melonDS
       mgba
-      input-remapper
-      waybar
+      grayjay
     ];
   };
 }

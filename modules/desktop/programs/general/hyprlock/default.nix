@@ -24,7 +24,7 @@ in
           background = [
             {
               path = config.stylix.image;
-              blur_passes = 2;
+              blur_passes = 1;
               blur_size = 2;
               noise = "0.03";
               contrast = "1.3";
@@ -39,8 +39,8 @@ in
               # color = foreground;
               color = "rgb(137, 180, 250)";
               font_size = 28;
-              font_family = "Maple Mono NF SemiBold";
-              position = "0, 490";
+              font_family = "Maple Mono NF Italic";
+              position = "0, 550";
               halign = "center";
               valign = "center";
             }
@@ -51,8 +51,8 @@ in
               text = ''$TIME'';
               color = "rgb(180, 190, 254)";
               font_size = 160;
-              font_family = "Maple Mono NF ExtraBold";
-              position = "0, 370";
+              font_family = "Maple Mono NF Medium";
+              position = "0, 430";
               halign = "center";
               valign = "center";
             }

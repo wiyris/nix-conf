@@ -18,13 +18,8 @@
 
     device = [
       {
-        name = "tpps/2-elan-trackpoint";
-        sensitivity = -0.8;
-        accel_profile = "adaptive";
-      }
-      {
         name = "kensington-slimblade-trackball";
-        sensitivity = 0.2;
+        sensitivity = 0.3;
         accel_profile = "flat";
       }
     ];

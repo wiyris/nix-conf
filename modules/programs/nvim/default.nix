@@ -50,12 +50,16 @@ in
       shfmt
       statix
       stylua
+      tailwindcss
+      tailwindcss-language-server
       tree-sitter
       # tree-sitter-grammars
       typescript-language-server
+      vscode-css-languageserver
       kdePackages.qtdeclarative
 
       vimPlugins.nvim-lspconfig
+      biome
     ];
   };
 }

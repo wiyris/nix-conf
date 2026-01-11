@@ -9,7 +9,7 @@
     gaps_in = 9;
     gaps_out = 18;
     border_size = 0;
-    layout = "dwindle";
+    layout = "master";
     resize_on_border = true;
 
     # "col.active_border" = lib.mkForce "rgb(${config.lib.stylix.colors.base07})";

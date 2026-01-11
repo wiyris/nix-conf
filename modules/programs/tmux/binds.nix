@@ -4,22 +4,22 @@
     prefix = "M-Space";
     extraConfig = ''
       # bind 'v' copy-mode
-      bind -n M-v copy-mode
+      # bind -n M-v copy-mode
       bind -T copy-mode-vi v send -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
       bind -T copy-mode-vi Escape send-keys -X copy-pipe-and-cancel "wl-copy"
       bind p paste-buffer
       bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "wl-copy"
 
-      bind -n M-";" command-prompt
-      bind -n M-w choose-tree -Zw
+      # bind -n M-";" command-prompt
+      # bind -n M-w choose-tree -Zw
 
       # Config reload
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
 
       # General configs
-      bind -n M-q kill-pane
-      bind -n M-Q kill-window
+      # bind -n M-q kill-pane
+      # bind -n M-Q kill-window
 
       # Split windows
       bind | split-window -hc "#{pane_current_path}"

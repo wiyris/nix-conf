@@ -37,7 +37,7 @@ in
         inherit sessionVariables;
         packages = with pkgs; [
           hyprshot
-          # wev
+          wev
           # xwayland-satellite
 
           ## gtk

@@ -2,6 +2,7 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }:
 let
@@ -46,6 +47,8 @@ in
       melonDS
       mgba
       grayjay
+
+      inputs.helium.packages.${system}.default
     ];
   };
 }

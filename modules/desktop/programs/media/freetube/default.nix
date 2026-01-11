@@ -31,12 +31,14 @@ in
         hideChannelPodcasts = true;
         hideChannelReleases = true;
         hideChannelShorts = true;
+
+        hideComment = true;
         hideCommentLikes = true;
         hideCommentPhotos = true;
         hideFeaturedChannels = true;
         hideHeaderLogo = true;
         hideLabelsSideBar = true;
-        # hideLiveChat = true;
+        hideLiveChat = true;
         hideLiveStreams = true;
         hidePopularVideos = true;
         hideRecommendedVideos = true;

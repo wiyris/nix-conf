@@ -81,10 +81,17 @@ static const char *termcmd[] = { "foot", NULL };
 static const char *browser[] = { "librewolf", NULL };
 static const char *menucmd[] = { "tofi-launcher", NULL };
 
+static const char *up_vol[]   = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.05+",   NULL };
+static const char *down_vol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "0.05-",   NULL };
+static const char *mute_vol[] = { "wpctl", "set-mute",   "@DEFAULT_AUDIO_SINK@", "toggle", NULL };
+
+static const char *up_brightness[]   = { "brightnessctl", "set", "+10%", NULL };
+static const char *down_brightness[] = { "brightnessctl", "set", "10%-", NULL };
+
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: c -> C, 2 -> at, etc. */
 	/* modifier                  key                 function        argument */
-	{ MODKEY,                    XKB_KEY_q,          killclient,     {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_W,          killclient,     {0} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_q,          spawn,          {.v = ustop} },
 	{ MODKEY,                    XKB_KEY_s,          spawn,          {.v = menucmd} },
 	{ MODKEY,                    XKB_KEY_j,          spawn,          {.v = browser} },
@@ -97,18 +104,25 @@ static const Key keys[] = {
 	{ MODKEY,                    XKB_KEY_equal,      setmfact,       {.f = +0.05f} },
 	// { MODKEY,                    XKB_KEY_Return,     zoom,           {0} },
 	{ MODKEY,                    XKB_KEY_Tab,        view,           {0} },
-	{ MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                    XKB_KEY_v,          setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                    XKB_KEY_m,          setlayout,      {.v = &layouts[2]} },
+	// { MODKEY,                    XKB_KEY_b,          setlayout,      {.v = &layouts[0]} },
+	// { MODKEY,                    XKB_KEY_v,          setlayout,      {.v = &layouts[1]} },
+	// { MODKEY,                    XKB_KEY_m,          setlayout,      {.v = &layouts[2]} },
 	// { MODKEY,                    XKB_KEY_c,      setlayout,      {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,      togglefloating, {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,         togglefullscreen, {0} },
+	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_V,      togglefloating, {0} },
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_F,         togglefullscreen, {0} },
 	{ MODKEY,                    XKB_KEY_0,          view,           {.ui = ~0} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_parenright, tag,            {.ui = ~0} },
 	// { MODKEY,                    XKB_KEY_comma,      focusmon,       {.i = WLR_DIRECTION_LEFT} },
 	// { MODKEY,                    XKB_KEY_period,     focusmon,       {.i = WLR_DIRECTION_RIGHT} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_less,       tagmon,         {.i = WLR_DIRECTION_LEFT} },
 	// { MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_greater,    tagmon,         {.i = WLR_DIRECTION_RIGHT} },
+
+  { 0, XKB_KEY_XF86AudioRaiseVolume, spawn, {.v = up_vol } },
+  { 0, XKB_KEY_XF86AudioLowerVolume, spawn, {.v = down_vol } },
+  { 0, XKB_KEY_XF86AudioMute, spawn, {.v = mute_vol } },
+
+  { 0, XKB_KEY_XF86MonBrightnessUp,   spawn, {.v = up_brightness } },
+  { 0, XKB_KEY_XF86MonBrightnessDown, spawn, {.v = down_brightness } },
 
 	TAGKEYS(          XKB_KEY_1, XKB_KEY_exclam,                     0),
 	TAGKEYS(          XKB_KEY_2, XKB_KEY_at,                         1),

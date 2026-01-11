@@ -18,10 +18,11 @@ in
   ];
   config = {
     hardware'.amdgpu.enable = true;
-    hardware'.bluetooth.enable = true;
+    # hardware'.bluetooth.enable = true;
     networking'.iwd.enable = true;
     networking'.mullvad.enable = true;
     security'.doas.enable = true;
+    security'.polkit.enable = true;
 
     programs' = {
       bat.enable = true;
@@ -57,7 +58,7 @@ in
       foot.enable = true;
       tofi.enable = true;
       # librewolf.enable = true;
-      mpv.enable = true;
+      # mpv.enable = true;
     };
 
     services' = {
@@ -75,6 +76,7 @@ in
     # laptop-specific config
     services.power-profiles-daemon.enable = true;
     environment.systemPackages = with pkgs; [
+      alsa-utils
       librewolf
       brightnessctl
     ];

@@ -70,7 +70,7 @@ static const char vol[] =
 
 static const struct arg args[] = {
     /* function format          argument */
-  { datetime,     "^fg(cdd6f4)%s ",  "%H:%M" },
+  { datetime,     "^fg(cdd6f4)TIME: %s ",  "%H:%M" },
   { run_command,  "VOL: %s ", vol},
   { battery_perc, "BAT: %s%%", "BAT0" },
 };

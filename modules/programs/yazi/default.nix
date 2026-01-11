@@ -41,6 +41,7 @@ in
             starship
             ;
         };
+        keymap = import ./binds.nix;
         theme = import ./theme.nix;
         settings = {
           mgr = {
@@ -76,15 +77,6 @@ in
               }
             ];
           };
-        };
-        keymap = {
-          mgr.prepend_keymap = [
-            {
-              on = [ "D" ];
-              run = "noop";
-              desc = "";
-            }
-          ];
         };
         initLua =
           # lua

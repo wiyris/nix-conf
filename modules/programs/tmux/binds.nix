@@ -21,6 +21,10 @@
       # bind -n M-q kill-pane
       # bind -n M-Q kill-window
 
+      bind -n M-Enter split-window -v -c "#{pane_current_path}" \; select-layout
+      bind -n C-S-M-Enter break-pane -a
+      bind -n C-S-w kill-pane \; select-layout
+
       # Split windows
       bind | split-window -hc "#{pane_current_path}"
       bind "\\" split-window -fh -c "#{pane_current_path}"

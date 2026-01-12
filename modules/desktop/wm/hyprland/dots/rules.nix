@@ -40,6 +40,7 @@
       "rounding 0, match:class ^([Ss]team)$"
 
       "no_dim on, match:tag browser"
+      "no_dim on, match:pin 1"
       "opacity 1.0 1.0 override, match:tag browser"
       "opacity 1.0 1.0 override, match:class ^(.*steam.*)$"
 
@@ -51,10 +52,10 @@
 
     layerrule = [
       "no_anim on,match:namespace launcher"
-      "blur on, ignore_alpha 0.5, match:namespace waybar"
-      "blur on, ignore_alpha 0.5, animation slide bottom, match:namespace rofi"
-      "blur on, ignore_alpha 0.5, animation slide right, match:namespace notifications"
-      "animation fade,match:namespace hyprlock"
+      "blur on, ignore_alpha 0, match:namespace waybar"
+      "blur on, ignore_alpha 0, animation slide bottom, match:namespace rofi"
+      "blur on, ignore_alpha 0, animation slide right, match:namespace notifications"
+      "animation fade, match:namespace hyprlock"
     ];
 
     #Gaming Workspace

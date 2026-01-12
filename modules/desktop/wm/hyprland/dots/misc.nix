@@ -8,7 +8,6 @@
 
     group = {
       groupbar = {
-        # stacked = true;
         render_titles = false;
         keep_upper_gap = false;
       };

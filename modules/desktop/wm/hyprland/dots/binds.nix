@@ -32,18 +32,19 @@
       "$mod, V, togglefloating"
       "$mod CTRL, V, exec, hyprctl dispatch centerwindow 1"
       "$mod SHIFT, F, fullscreen"
+      "$mod CTRL, F, fullscreen, 1"
       # "$mod, PERIOD, cyclenext"
       "$mod, b, togglesplit"
       "$mod, comma, pseudo"
 
       # Group Control
-      # "$mod, B, togglegroup"
-      # "$mod CTRL, B, lockactivegroup, toggle"
-      # "ALT, TAB, changegroupactive"
+      "$mod, G, togglegroup"
+      "$mod SHIFT, G, lockactivegroup, toggle"
+      "ALT, TAB, changegroupactive"
 
       # Set sticky
-      # "$mod, B, pin"
-      # "$mod, C, cyclenext"
+      "$mod, W, pin"
+      "$mod SHIFT, W, cyclenext"
 
       # Moving focus
       "$mod, $left, movefocus, l"
@@ -57,10 +58,13 @@
       # "$mod, Right, movefocus, r"
 
       # Moving windows
-      "$mod SHIFT, $left, swapwindow, l"
-      "$mod SHIFT, $up, swapwindow, d"
-      "$mod SHIFT, $down, swapwindow, u"
-      "$mod SHIFT, $right, swapwindow, r"
+      # "$mod SHIFT, $left, swapwindow, l"
+      # "$mod SHIFT, $up, swapwindow, d"
+      # "$mod SHIFT, $down, swapwindow, u"
+      # "$mod SHIFT, $right, swapwindow, r"
+
+      "$mod SHIFT, COMMA, swapwindow, l"
+      "$mod SHIFT, PERIOD, swapwindow, r"
 
       "$mod, N, workspace, 1"
       "$mod, T, workspace, 2"

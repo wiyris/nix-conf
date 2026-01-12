@@ -47,8 +47,8 @@ in
       melonDS
       mgba
       grayjay
-
-      inputs.helium.packages.${system}.default
+      anki
+      inputs.helium.packages.${stdenv.hostPlatform.system}.default
     ];
   };
 }

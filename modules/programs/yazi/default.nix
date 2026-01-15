@@ -14,6 +14,7 @@ in
       imports = [
         # ./plugins/jump-to-char.nix
         ./plugins/mediainfo.nix
+        ./plugins/mount.nix
         # ./plugins/ouch.nix
         ./plugins/restore.nix
       ];

@@ -7,6 +7,7 @@
       yt = "yt-dlp";
       sc = "scdl";
       dr = "tldr";
+      chx = "chmod +x";
 
       us = "systemctl --user";
       ds = "sudo systemctl";
@@ -14,6 +15,10 @@
       btc = "bluetoothctl connect";
       btd = "bluetoothctl disconnect";
       vol = "wpctl set-volume '@DEFAULT_AUDIO_SINK@'";
+
+      jp = "LANG=ja_JP.UTF-8 LC_ALL=ja_JP.UTF-8";
+      jis = "recode shift_jis..utf8";
+      utf16 = "recode utf16..utf8";
 
       mc = "mullvad connect";
       md = "mullvad disconnect";

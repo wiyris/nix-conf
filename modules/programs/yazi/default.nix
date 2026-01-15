@@ -14,7 +14,7 @@ in
       imports = [
         # ./plugins/jump-to-char.nix
         ./plugins/mediainfo.nix
-        ./plugins/ouch.nix
+        # ./plugins/ouch.nix
         ./plugins/restore.nix
       ];
       home.packages = with pkgs; [

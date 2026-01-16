@@ -82,7 +82,7 @@ in
       # cava.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
-      # spotify.enable = true;
+      spotify.enable = true;
       zathura.enable = true;
 
       extraPackages.enable = true;
@@ -91,6 +91,7 @@ in
     services' = {
       dunst.enable = true;
       fcitx.enable = true;
+      keyd.enable = true;
       hypridle.enable = true;
       pipewire.enable = true;
       stash.enable = true;
@@ -102,6 +103,7 @@ in
     gaming' = {
       gamemode.enable = true;
       # lutris.enable = true;
+      steam.enable = true;
     };
 
     globals = {

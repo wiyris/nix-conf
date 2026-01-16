@@ -32,7 +32,7 @@ in
 
   nixpkgs.config = {
     allowBroken = lib.mkDefault false;
-    allowUnfree = lib.mkDefault false;
+    allowUnfree = lib.mkDefault true;
   };
 
   nix = {

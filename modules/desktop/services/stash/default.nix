@@ -21,7 +21,7 @@ in
       wantedBy = [ "graphical-session.target" ];
       partOf = [ "graphical-session.target" ];
       serviceConfig = {
-        ExecStart = "${lib.getExe stash} --max-items 20 watch";
+        ExecStart = "${lib.getExe stash} --max-items 200 watch";
         Restart = "on-abort";
         loadCredential = "clipboard_filter:${writeText "stash-regex" regex}";
       };

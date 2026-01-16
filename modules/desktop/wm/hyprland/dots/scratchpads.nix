@@ -23,6 +23,7 @@ in
     ]
     ++ lib.optionals osConfig.programs'.foot.isDefault [
       "$mod, F, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'footclient --app-id foot-scratch'"
+      "$mod CTRL, S, exec, hyprland-scratchpad --raise-or-run-uwsm wiremix-scratch 'footclient --app-id wiremix-scratch -e wiremix -v output'"
     ]
     ++ lib.optionals osConfig.programs'.ghostty.isDefault [
       "$mod, F, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"
@@ -32,13 +33,10 @@ in
     ];
 
     windowrule = [
-      "tag +float_md, match:class kitty-scratch"
-      "tag +float_md, match:class foot-scratch"
-      "tag +float_md, match:class ghostty.scratch"
-      "tag +float_side, match:class io.github.xiaoyifang.goldendict_ng"
-      "stay_focused on, match:class io.github.xiaoyifang.goldendict_ng"
-      "no_anim on, match:class foot-scratch"
-      "no_anim on, match:class io.github.xiaoyifang.goldendict_ng"
+      "tag +scratch_md, match:class ^(foot-scratch)$|^(ghostty-scratch)$|^(kitty-scratch)$|^(wiremix-scratch)$"
+      "tag +scratch_side, match:class ^(io.github.xiaoyifang.goldendict_ng)$"
+      "float on, no_anim on, size 1280 720, match:tag scratch_md"
+      "float on, no_anim on, stay_focused on, move 1468 67, size 564 1068, match:tag scratch_side"
     ];
   };
 }

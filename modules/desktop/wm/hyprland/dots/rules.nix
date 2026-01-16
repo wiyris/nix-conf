@@ -8,12 +8,6 @@
       "float on, match:tag float_side"
 
       "size 1280 720, match:tag float_md"
-      # "move 100%-w-15, match:tag float_side"
-      "move 1468 67, match:tag float_side"
-      # "size 30% 93%, match:tag float_side"
-      "size 564 1068, match:tag float_side"
-      # "animation slide bottom match:tag:float_md"
-      # "animation slide right match:tag:float_side"
 
       "tag +float, match:title ^(.*Open Folder.*)$|^(.*Open File.*)$|^(.*Save File.*)$|^(.*Save Folder.*)$|^(.*Save Image.*)$|^(.*Save As.*)$|^(.*Open As.*)$|^(.*File Operation.*)$|^(.*File Upload.*)$|(.*Extract.*)$|(.*Extension.)$"
       "tag +float_md, match:class ^(mpv)$|^(pqiv)$"
@@ -21,7 +15,7 @@
 
       "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
       "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
-      "tag +game, match:class ^(.*steam_app.*)$|(.*gamescope.*)$|(cs2)$"
+      "tag +game, match:class ^(.*steam_app.*)$|^(.*gamescope.*)$|^(cs2)$"
       "tag +music, match:class ^(spotify)$|^(feishin)$"
 
       "tag +game_launcher, match:class ^([Ss]team)$|^(net.lutris.Lutris)$"

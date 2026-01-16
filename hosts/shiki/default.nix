@@ -60,6 +60,7 @@ in
     programs' = {
       # general
       goldendict.enable = true;
+      gpu-screen-recorder.enable = true;
       hyprlock.enable = true;
       rofi.enable = true;
       thunar.enable = true;

@@ -16,7 +16,7 @@ in
     };
     hm'.home.packages = with pkgs; [
       # dolphin-emu
-      melonDS
+      # melonDS
     ];
   };
 }

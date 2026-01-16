@@ -38,11 +38,13 @@ in
       };
 
       programs.fzf.tmux.enableShellIntegration = true;
+
       programs.fish.shellAbbrs = {
-        t = "tmux new-session";
+        t = "tmux";
         ta = "tmux attach";
         tl = "tmux list-sessions";
         tk = "tmux kill-session -t";
+        tn = "tmux new-session -s";
         tks = "tmux kill-server";
       };
     };

@@ -1,6 +1,7 @@
 {
   config,
   inputs,
+  lib,
   pkgs,
   ...
 }:
@@ -30,8 +31,8 @@ in
   ];
 
   nixpkgs.config = {
-    allowBroken = false;
-    allowUnfree = true;
+    allowBroken = lib.mkDefault false;
+    allowUnfree = lib.mkDefault false;
   };
 
   nix = {

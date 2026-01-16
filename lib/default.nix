@@ -47,7 +47,6 @@ lib
         (../. + "/hosts/${hostName}")
         {
           imports = builtins.attrValues (defaultFilesToAttrset ../modules);
-          nixpkgs.config.allowUnfree = true;
           networking.hostName = hostName;
         }
       ];

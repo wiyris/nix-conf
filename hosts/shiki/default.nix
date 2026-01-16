@@ -82,6 +82,7 @@ in
       # cava.enable = true;
       mpv.enable = true;
       pqiv.enable = true;
+      # spotify.enable = true;
       zathura.enable = true;
 
       extraPackages.enable = true;

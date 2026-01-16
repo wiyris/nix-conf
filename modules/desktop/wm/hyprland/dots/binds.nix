@@ -9,7 +9,7 @@
       # Apps
       # "$mod, Return, exec, uwsm-app -- $terminal"
       "$mod, Return, exec, uwsm-app -- footclient"
-      "$mod, Backspace, exec, uwsm-app -- $editor"
+      # "$mod, Backspace, exec, uwsm-app -- $editor"
       "$mod, J, exec, uwsm-app -- $browser"
       # "$mod SHIFT, X, exec, uwsm-app -- thunderbird"
       "$mod, M, exec, uwsm-app -- $explorer"
@@ -22,7 +22,7 @@
       "$mod, S, exec, $launcher"
       "$mod, K, exec, $clipboard"
       ", Print, exec, $screenshot"
-      "$mod SHIFT, X, exec, pkill rofi || uwsm-app -- wallpaper"
+      # "$mod SHIFT, X, exec, pkill rofi || uwsm-app -- wallpaper"
 
       # Misc
       "$mod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"

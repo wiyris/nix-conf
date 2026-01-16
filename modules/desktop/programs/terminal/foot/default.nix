@@ -13,7 +13,7 @@ in
     isDefault = lib.mkEnableOption { };
   };
   config = lib.mkMerge [
-    (lib.mkIf cfg.isDefault { globals.defaultTerminal = "foot"; })
+    (lib.mkIf cfg.isDefault { globals.defaultTerminal = "footclient"; })
     (lib.mkIf cfg.enable {
       hm'.programs.foot = {
         enable = true;

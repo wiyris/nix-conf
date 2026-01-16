@@ -16,7 +16,7 @@ let
     # QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     # MOZ_ENABLE_WAYLAND = "1";
     # XDG_SESSION_TYPE = lib.mkDefault "wayland";
-    # NIXOS_OZONE_WL = "1";
+    NIXOS_OZONE_WL = "1";
   };
 in
 {
@@ -46,7 +46,7 @@ in
           ## qt
 
           ## electron
-          obsidian
+          # obsidian
         ];
       };
     };

@@ -11,7 +11,6 @@ in
 {
   options.programs'.extraPackages.enable = lib.mkEnableOption { };
   config = lib.mkIf cfg.enable {
-    programs.gpu-screen-recorder.enable = true; # For promptless recording on both CLI and GUI
     hm'.home.packages = with pkgs; [
       gowall
       microfetch
@@ -20,18 +19,19 @@ in
       tealdeer
       yt-dlp
       wiremix
+      libnotify
       # bluetui
 
       ## gtk
-      # d-spy # dbus gui
-      # easyeffects
-      # easytag
-      # gimp3
+      d-spy # dbus gui
+      easyeffects
+      easytag
+      gimp3
       # pavucontrol
       librewolf
 
       ## qt
-      # kdePackages.kdenlive
+      kdePackages.kdenlive
       # krita
       puddletag
       jellyfin-desktop
@@ -43,12 +43,11 @@ in
       # grayjay
       # vpkedit
       feishin
-      libnotify
       melonDS
       mgba
-      grayjay
       anki
       inputs.helium.packages.${stdenv.hostPlatform.system}.default
+      ironbar
     ];
   };
 }

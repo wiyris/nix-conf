@@ -57,6 +57,8 @@ in
         in
         {
           "video/x-matroska" = [ mpv ];
+          "audio/mp3" = [ mpv ];
+          "audio/vsnd_c" = [ mpv ];
           "audio/mp4" = [ mpv ];
           "audio/flac" = [ mpv ];
           "video/x-msvideo" = [ mpv ];

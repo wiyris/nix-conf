@@ -18,6 +18,7 @@ in
       globals.defaultShell = "fish";
       user'.shell = pkgs.fish;
     })
+
     (lib.mkIf cfg.enable {
       programs.fish.enable = true;
       environment.systemPackages = with pkgs.fishPlugins; [
@@ -36,7 +37,6 @@ in
 
         programs.fish = {
           enable = true;
-
           shellInit =
             # fish
             ''
@@ -56,34 +56,6 @@ in
 
               export PATH="$HOME/.local/bin:$PATH"
             '';
-
-          functions = {
-            f = # wav to flac
-              # fish
-              ''
-                set ORIGINAL_SIZE (du -hs | cut -f1)
-
-                fd -e wav -x ffmpeg -i "file:{}" -loglevel quiet -stats "file:{.}.flac"
-                fd -e wav -X trash
-
-                set NEW_SIZE (du -hs | cut -f1)
-
-                echo "Done. Reduced file size from $ORIGINAL_SIZE to $NEW_SIZE"
-              '';
-
-            opus =
-              # fish
-              ''
-                set ORIGINAL_SIZE (du -hs | cut -f1)
-
-                fd -e wav -e flac -x ffmpeg -i "file:{}" -c:a libopus -b:a 128K -loglevel quiet -stats "file:{.}.opus"
-                fd -e wav -e flac -X rm -I
-
-                set NEW_SIZE (du -hs | cut -f1)
-
-                echo "Done. Reduced file size from $ORIGINAL_SIZE to $NEW_SIZE"
-              '';
-          };
         };
       };
     })

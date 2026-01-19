@@ -32,6 +32,8 @@ in
           ];
 
           modules-right = [
+            "clock"
+            "tray"
             "pulseaudio"
           ];
         };

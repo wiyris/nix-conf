@@ -20,7 +20,7 @@ in
     hm'.home.packages = with pkgs; [
       gamescope
       steamcmd
-      # steam-tui
+      steam-tui
     ];
   };
 }

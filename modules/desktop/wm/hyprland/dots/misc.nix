@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     misc = {
       vrr = 0;
-      vfr = true;
+      vfr = false;
       disable_hyprland_logo = true;
     };
 

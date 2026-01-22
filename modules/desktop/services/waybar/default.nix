@@ -32,9 +32,9 @@ in
           ];
 
           modules-right = [
-            "clock"
-            "tray"
+            # "clock"
             "pulseaudio"
+            "tray"
           ];
         };
       };

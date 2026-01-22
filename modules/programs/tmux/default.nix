@@ -20,9 +20,11 @@ in
       ];
       programs.tmux = {
         enable = true;
+        tmuxp.enable = true;
         inherit shell;
         mouse = true;
         escapeTime = 0;
+        baseIndex = 1;
         # aggressiveResize = true;
         # terminal = "screen-256color";
         focusEvents = true;
@@ -43,9 +45,12 @@ in
         t = "tmux";
         ta = "tmux attach";
         tl = "tmux list-sessions";
-        tk = "tmux kill-session -t";
-        tn = "tmux new-session -s";
+        tk = "tmux kill-session -t ";
+        tn = "tmux new-session -s ";
         tks = "tmux kill-server";
+
+        tasks = "tmuxp load -y tasks";
+        notes = "tmuxp load -y notes";
       };
     };
   };

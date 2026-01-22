@@ -54,6 +54,13 @@
       bind -n M-"<" swap-window -d -t -1
       bind -n M-">" swap-window -d -t +1
 
+      # Session and Window Switcher
+      unbind s
+      bind s choose-tree -Z -s -f '#{&&:#{!=:#{session_name},opencode},#{!=:#{session_name},notes},#{!=:#{session_name},news},#{!=:#{session_name},music},#{!=:#{session_name},mail},#{!=:#{session_name},tasks}}'
+
+      unbind w
+      bind-key -r -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
+
       # Toggle Bar
       bind-key -n M-b set -g status
     '';

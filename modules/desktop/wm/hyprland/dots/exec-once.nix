@@ -1,7 +1,8 @@
 {
   wayland.windowManager.hyprland.settings.exec-once = [
     # "uwsm finalize XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XDG_SESSION_DESKTOP"
-    "$bar"
+    # "$bar"
+    "uwsm app -- noctaria-shell"
     # "uwsm app -- steam"
     # "uwsm app -- thunar --daemon"
     # "uwsm app -- obsidian"

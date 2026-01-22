@@ -23,7 +23,7 @@ in
     ]
     ++ lib.optionals osConfig.programs'.foot.isDefault [
       "$mod, F, exec, hyprland-scratchpad --raise-or-run-uwsm foot-scratch 'footclient --app-id foot-scratch'"
-      "$mod CTRL, S, exec, hyprland-scratchpad --raise-or-run-uwsm wiremix-scratch 'footclient --app-id wiremix-scratch -e wiremix -v output'"
+      "$mod SHIFT, S, exec, hyprland-scratchpad --raise-or-run-uwsm wiremix-scratch 'footclient --app-id wiremix-scratch -e wiremix -v output'"
     ]
     ++ lib.optionals osConfig.programs'.ghostty.isDefault [
       "$mod, F, exec, hyprland-scratchpad --raise-or-run-uwsm ghostty.scratch 'ghostty --class=ghostty.scratch --background-opacity=${opacity} -e ${defaultShell}'"

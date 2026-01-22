@@ -23,7 +23,7 @@ in
           main = {
             horizontal-letter-offset = 0;
             vertical-letter-offset = 0;
-            pad = "8x4 center";
+            pad = "10x10 center";
             selection-target = "clipboard";
           };
 
@@ -32,9 +32,9 @@ in
             notify = "yes";
           };
 
-          # desktop-notifications = {
-          #   command = "${lib.getExe pkgs.libnotify} -a \${app-id} -i \${app-id} \${title} \${body}";
-          # };
+          desktop-notifications = {
+            command = "${lib.getExe pkgs.libnotify} -a \${app-id} -i \${app-id} \${title} \${body}";
+          };
 
           scrollback = {
             lines = 10000;

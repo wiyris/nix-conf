@@ -1,3 +1,14 @@
+{ pkgs, ... }:
+let
+  noctalia =
+    cmd:
+    [
+      "noctalia-shell"
+      "ipc"
+      "call"
+    ]
+    ++ (pkgs.lib.splitString " " cmd);
+in
 {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
@@ -7,27 +18,27 @@
     "$right" = "c";
     bind = [
       # Apps
-      # "$mod, Return, exec, uwsm-app -- $terminal"
-      "$mod, Return, exec, uwsm-app -- footclient"
-      # "$mod, Backspace, exec, uwsm-app -- $editor"
+      "$mod, Return, exec, uwsm-app -- $terminal"
+      "$mod, Space, exec, $launcher"
+      "$mod, Backspace, exec, uwsm-app -- $editor"
       "$mod, J, exec, uwsm-app -- $browser"
-      # "$mod SHIFT, X, exec, uwsm-app -- thunderbird"
       "$mod, M, exec, uwsm-app -- $explorer"
+      ", Print, exec, $screenshot"
 
       # Bar
       "$mod CTRL,  B, exec, $bar-reload"
       "$mod SHIFT, B, exec, $bar-toggle"
 
-      # Launcher
-      "$mod, S, exec, $launcher"
+      # Noctalia-shell
       "$mod, K, exec, $clipboard"
-      ", Print, exec, $screenshot"
-      # "$mod SHIFT, X, exec, pkill rofi || uwsm-app -- wallpaper"
+      # "$mod SHIFT, K, exec, $emoji"
+      # "$mod CTRL, L, exec, $logout"
+      # "$mod CTRL, N, exec, $notify"
+      # "$mod SHIFT, X, exec, $wallpaper"
 
       # Misc
-      "$mod CTRL SHIFT, L, exec, uwsm-app -- hyprlock"
-      "$mod SHIFT, W, killactive"
-      "$mod CTRL SHIFT, W, forcekillactive"
+      "$mod, Q, killactive"
+      "$mod SHIFT, Q, forcekillactive"
 
       "$mod, V, togglefloating"
       "$mod CTRL, V, exec, hyprctl dispatch centerwindow 1"
@@ -156,6 +167,10 @@
       ", XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       ", XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
       ", XF86AudioMicMute,      exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+      # ", XF86AudioRaiseVolume,  exec, noctalia-shell ipc call volume increase"
+      # ", XF86AudioLowerVolume,  exec, noctalia-shell ipc call volume decrease"
+      # ", XF86AudioMute,         exec, noctalia-shell ipc call volume muteOutput"
+      # ", XF86AudioMicMute,      exec, noctalia-shell ipc call volume muteInput"
     ];
 
     # Audio playback
@@ -164,6 +179,10 @@
       ", XF86AudioPause, exec, playerctl play-pause"
       ", XF86AudioPlay,  exec, playerctl play-pause"
       ", XF86AudioPrev,  exec, playerctl previous"
+      # ", XF86AudioNext,  exec, noctalia-shell ipc call media next"
+      # ", XF86AudioPause, exec, noctalia-shell ipc call media playPause"
+      # ", XF86AudioPlay,  exec, noctalia-shell ipc call media playPause"
+      # ", XF86AudioPrev,  exec, noctalia-shell ipc call media previous"
     ];
 
     bindm = [

@@ -14,7 +14,6 @@
       "tag +float_pin, match:title ^(.*Picture-in-Picture.*)$"
 
       "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
-      "tag +browser, match:class ^(.*firefox.*)$|^(.*librewolf.*)$|^(.*zen-beta.*)$"
       "tag +game, match:class ^(.*steam_app.*)$|^(.*gamescope.*)$|^(cs2)$"
       "tag +music, match:class ^(spotify)$|^(feishin)$"
 

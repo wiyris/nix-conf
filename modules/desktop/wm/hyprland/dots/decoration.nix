@@ -1,7 +1,8 @@
 { lib, ... }:
 {
   wayland.windowManager.hyprland.settings.decoration = {
-    rounding = 20;
+    rounding = 7;
+    # rounding_power = 2;
     active_opacity = 1.0;
     inactive_opacity = 1.0;
     fullscreen_opacity = 1.0;
@@ -25,12 +26,12 @@
     };
 
     shadow = {
-      enabled = true;
-      range = 42;
-      render_power = 4;
+      enabled = false;
+      range = 4;
+      render_power = 3;
       # ignore_window = true;
       # scale = 1.0;
-      # color = lib.mkForce "rgba(181825EE)";
+      # color = lib.mkForce "rgba(1a1a1aee)";
       # color_inactive = lib.mkForce "rgba(181825EE)";
     };
   };

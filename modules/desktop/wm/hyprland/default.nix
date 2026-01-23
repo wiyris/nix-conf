@@ -47,6 +47,7 @@ in
 
         home.packages = [
           pkgs.hyprshot
+          pkgs.hyprpaper
           pkgs.rose-pine-hyprcursor
 
           # Scripts

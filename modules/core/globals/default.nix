@@ -25,6 +25,12 @@
       example = "bash";
       description = "Default Command-line shell";
     };
+    defaultWM = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+      example = "hyprland";
+      description = "Default Window Manager";
+    };
     defaultTerminal = lib.mkOption {
       type = lib.types.str;
       default = "foot";
@@ -33,7 +39,7 @@
     };
     defaultBrowser = lib.mkOption {
       type = lib.types.str;
-      default = "firefox";
+      default = "librewolf";
       example = "firefox";
       description = "Default browser";
     };

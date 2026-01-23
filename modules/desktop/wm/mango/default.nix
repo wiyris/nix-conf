@@ -28,11 +28,12 @@ in
       enable = true;
     };
 
-    # environment.systemPackages = with pkgs; [];
-    # xdg.portal.config.mango.default = [];
-
     hm' = {
       imports = [ inputs.mango.hmModules.mango ];
+      home.packages = with pkgs; [
+        noctalia-shell
+        app2unit
+      ];
     };
   };
 }

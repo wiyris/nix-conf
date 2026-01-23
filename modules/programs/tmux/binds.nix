@@ -1,18 +1,25 @@
 {
   programs.tmux = {
-    keyMode = "vi";
-    prefix = "M-Space";
+    # keyMode = "vi";
+    # prefix = "M-Space";
     extraConfig = ''
-      # bind 'v' copy-mode
+
+      # Set new prefix (Alt+Space)
+      unbind C-b
+      set -g prefix M-Space
+      bind Space send-prefix
+
+      # Vim mode
+      setw -g mode-keys vi
+      set -g status-keys vi
+
+      bind 'v' copy-mode
       # bind -n M-v copy-mode
       bind -T copy-mode-vi v send -X begin-selection
       bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
       bind -T copy-mode-vi Escape send-keys -X copy-pipe-and-cancel "wl-copy"
       bind p paste-buffer
       bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "wl-copy"
-
-      # bind -n M-";" command-prompt
-      # bind -n M-w choose-tree -Zw
 
       # Config reload
       bind -n M-r source-file ~/.config/tmux/tmux.conf \; display-message "tmux.conf reloaded"
@@ -57,7 +64,6 @@
       # Session and Window Switcher
       unbind s
       bind s choose-tree -Z -s -f '#{&&:#{!=:#{session_name},opencode},#{!=:#{session_name},notes},#{!=:#{session_name},news},#{!=:#{session_name},music},#{!=:#{session_name},mail},#{!=:#{session_name},tasks}}'
-
       unbind w
       bind-key -r -T prefix w run-shell 'tmux choose-tree -Nwf"##{==:##{session_name},#{session_name}}"'
 

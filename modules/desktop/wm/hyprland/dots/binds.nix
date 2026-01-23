@@ -1,14 +1,3 @@
-{ pkgs, ... }:
-let
-  noctalia =
-    cmd:
-    [
-      "noctalia-shell"
-      "ipc"
-      "call"
-    ]
-    ++ (pkgs.lib.splitString " " cmd);
-in
 {
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";

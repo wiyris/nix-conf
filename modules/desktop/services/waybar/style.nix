@@ -17,6 +17,8 @@
         #workspaces button { color: @base04; }
         #workspaces button.empty { color: @base02; }
         /* #workspaces button.active { color: @base07; } */
+        /* #workspaces button.focused { color: @base07; } */
+        #workspaces button.focused { color: #f5c2e7; }
         #workspaces button.active { color: #f5c2e7; }
         #network.disconnected { color: @base0E; }
         #pulseaudio { min-width: 65px; }

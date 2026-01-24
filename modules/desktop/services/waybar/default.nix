@@ -24,7 +24,7 @@ in
 
           modules-left = [
             "idle_inhibitor"
-            "hyprland/workspaces"
+            "sway/workspaces"
           ];
 
           modules-center = [
@@ -32,7 +32,7 @@ in
           ];
 
           modules-right = [
-            # "clock"
+            "clock"
             "pulseaudio"
             "tray"
           ];

@@ -23,23 +23,22 @@ in
     "$explorer" = "${defaultExplorer}";
     "$browser" = "${defaultBrowser}";
 
-    "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
     # "$clipboard" = "cliphist-rofi | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | cliphist decode | wl-copy";
+
+    "$launcher" = "rofi -show drun -run-command 'uwsm app -- {cmd}'";
     "$clipboard" =
       "stash list | rofi -dmenu -theme .config/rofi/theme/cliphist.rasi | stash decode | wl-copy";
     "$wallpaper" = "wallpaper";
-
-    # "$launcher" = "noctalia-shell ipc call launcher toggle";
-    # "$wallpaper" = "noctalia-shell ipc call wallpaper toggle";
-    # "$clipboard" = "noctalia-shell ipc call launcher clipboard";
-    # "$emoji" = "noctalia-shell ipc call launcher emoji";
-    # "$logout" = "noctalia-shell ipc call sessionMenu toggle";
-    # "$notify" = "noctalia-shell ipc call notifications toggleHistory";
-  }
-  // lib.optionalAttrs osConfig.programs'.tofi.isDefault {
-    "$launcher" = "pkill tofi || tofi-launcher --uwsm";
-    "$clipboard" =
-      "pkill tofi || cliphist-rofi | tofi --width 640 --prompt-text '' | cliphist decode | wl-copy";
-    "$screenshot" = "pkill tofi || uwsm-app -- tofi-screenshot";
+    # }
+    # // lib.optionalAttrs osConfig.programs'.noctalia-shell.enable {
+    #   "$launcher" = "noctalia-shell ipc call launcher toggle";
+    #   "$wallpaper" = "noctalia-shell ipc call wallpaper toggle";
+    #   "$randomwal" = "noctalia-shell ipc call wallpaper random";
+    #   # "$togglewal" = "";
+    #   "$clipboard" = "noctalia-shell ipc call launcher clipboard";
+    #   "$emoji" = "noctalia-shell ipc call launcher emoji";
+    #   "$logout" = "noctalia-shell ipc call sessionMenu toggle";
+    #   "$notify" = "noctalia-shell ipc call notifications toggleHistory";
+    #   "$bar-toggle" = "noctalia-shell ipc call bar toggle";
   };
 }

@@ -11,19 +11,20 @@
       "$mod, Space, exec, $launcher"
       "$mod, Backspace, exec, uwsm-app -- $editor"
       "$mod, J, exec, uwsm-app -- $browser"
-      "$mod, M, exec, uwsm-app -- $explorer"
+      # "$mod, M, exec, uwsm-app -- $explorer"
       ", Print, exec, $screenshot"
-
-      # Bar
-      "$mod CTRL,  B, exec, $bar-reload"
-      "$mod SHIFT, B, exec, $bar-toggle"
 
       # Noctalia-shell
       "$mod, K, exec, $clipboard"
       # "$mod SHIFT, K, exec, $emoji"
       # "$mod CTRL, L, exec, $logout"
       # "$mod CTRL, N, exec, $notify"
-      # "$mod SHIFT, X, exec, $wallpaper"
+      "$mod SHIFT, w, exec, $wallpaper"
+      # "$mod CTRL, w, exec, $randomwal"
+      # "$mod ALT, w, exec, $togglewal"
+
+      "$mod CTRL,  B, exec, $bar-reload"
+      "$mod SHIFT, B, exec, $bar-toggle"
 
       # Misc
       "$mod, Q, killactive"

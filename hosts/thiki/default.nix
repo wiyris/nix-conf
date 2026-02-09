@@ -43,27 +43,33 @@ in
 
     ## DESKTOP
     programs'.dwl.isDefault = true; # dwl, hyprland, niri
-    programs'.dwl.enable = true;
 
-    desktop.fonts.enable = true;
-    desktop.gtk.enable = true;
-    desktop.wayland.enable = true;
+    programs'.dwl.enable = true;
+    programs'.hyprland.enable = true;
+    programs'.noctalia-shell.enable = true;
+
+    desktop = {
+      fonts.enable = true;
+      gtk.enable = true;
+      uwsm.enable = true;
+      wayland.enable = true;
+    };
 
     ## default programs
     programs'.foot.isDefault = true; # foot, ghostty, kitty
     programs'.librewolf.isDefault = true; # firefox, librewolf, zen-browser
-    programs'.tofi.isDefault = true;
+    # programs'.tofi.isDefault = true;
 
     programs' = {
       foot.enable = true;
-      tofi.enable = true;
+      # tofi.enable = true;
       # librewolf.enable = true;
       # mpv.enable = true;
     };
 
     services' = {
       keyd.enable = true;
-      mako.enable = true;
+      # mako.enable = true;
       pipewire.enable = true;
     };
 

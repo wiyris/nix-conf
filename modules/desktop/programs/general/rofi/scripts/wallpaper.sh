@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wallpapers_dir="$HOME/Pictures/wal/catppuccin/"
+wallpapers_dir="$HOME/wal/catppuccin/"
 
 build_theme() {
   rows=$1

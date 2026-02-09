@@ -19,8 +19,8 @@ in
         # pkgs.rofi-calc
         # pkgs.procps # for uptime --pretty
 
-        powermenu
-        screenshot
+        # powermenu
+        # screenshot
         wallpaper
       ];
       xdg.configFile = {

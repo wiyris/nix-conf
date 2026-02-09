@@ -92,6 +92,16 @@ in
         terminal = lib.mkForce 1.0;
         popups = lib.mkForce 1.0;
       };
+      sizes =
+        let
+          fontSize = 12;
+        in
+        {
+          applications = lib.mkForce fontSize;
+          desktop = lib.mkForce fontSize;
+          popups = lib.mkForce fontSize;
+          terminal = lib.mkForce fontSize;
+        };
     };
 
     console = {
